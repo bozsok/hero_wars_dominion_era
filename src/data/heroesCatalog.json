@@ -1,0 +1,4674 @@
+[
+  {
+    "id": "1",
+    "name": "Aurora",
+    "faction": "Way of Nature",
+    "icon": "shield",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "2",
+    "name": "Galahad",
+    "faction": "Way of Honor",
+    "icon": "shield",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCJWdjqVR16gmVVIQg7veILNyZstyoJ-crF-7gf3iP_6kjlQxoFgtV4muW5u0eNIUjP0cKm8UhCkYJg19gV0kfkHPd7t2VacY1kcnYCSdm2jB0boBehlnktD1nE8ynyKSqVA6aQAFHa1SBmMgSF0cvBp79CHw1W7VlyfwQ7ZaxuTakeR7EvOF2HMm5q0Blk8ucsB67x61JMmDrPo9AjSr7LlYYjFk5SLEIfF_TePjG93yC8JJT39txxdeGBJ9axhr1-OS2zG_yCFVc",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "3",
+    "name": "Keira",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "4",
+    "name": "Astaroth",
+    "faction": "Way of Honor",
+    "icon": "shield",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDNYpnKVr0KISVEDtpmRljl9K0ZJeufJfSVBUxShQ0cgQ8uPkM109D4PGoPSARKjUzWgawAyvckIqTyjdMh8MHxK3jvr9Vzng8YF14BrVIdNQrjB2H1g5z8mftbkCYlBOsyk2ykO3UeUZD8gQrUOCz6ewbPTMj4Gz9wDSYB4YIT5zZWCWn-kZxJU1SlYakNkKSfSFDYmtW7ze8_BksoKRxTOhqS6FuehWZjvwuAhm-SLmjNIf9AvXJ4vvSGbWUPX4oUDh4y3C_KSQI",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "5",
+    "name": "Kai",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "6",
+    "name": "Phobos",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "7",
+    "name": "Thea",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "8",
+    "name": "Daredevil",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "9",
+    "name": "Heidi",
+    "faction": "Way of Nature",
+    "icon": "colorize",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDjozmsBdGysuhnT3x-Q5McEvZr0Yrsw22K0pypkhV7mDMLv3stlMDHuARTraNKyLan1EPrxhdAe9DUPs7fslURk8zASlcfGF7yzv4UurmF-Iifny5K9rZCO4K27vfAUOopX2Jtd7QsHORfktNjweuLHOxStPQikaTiOK0oikJ3uKWJqFuUMTW12iWDRuLnfRpBHpPImeR8RT_4kSPxRIUwlegvJ06toVEAWMySPr7FbwLMdrFSDh9l75bnE0DEPAIyH3ST-SLcFso",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "10",
+    "name": "Faceless",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "11",
+    "name": "Chabba",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "/ui/hero.png",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Physical Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Physical Attack",
+      "Intelligence",
+      "Armor Penetration"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "12",
+    "name": "Arachne",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "13",
+    "name": "Orion",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "14",
+    "name": "Fox",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "15",
+    "name": "Ginger",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "16",
+    "name": "Dante",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "17",
+    "name": "Mojo",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "18",
+    "name": "Judge",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "19",
+    "name": "Dark Star",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "20",
+    "name": "Artemis",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "21",
+    "name": "Markus",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "22",
+    "name": "Peppy",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "23",
+    "name": "Lian",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "24",
+    "name": "Cleaver",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "/ui/hero.png",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Physical Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Physical Attack",
+      "Intelligence",
+      "Armor Penetration"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "25",
+    "name": "Ishmael",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "26",
+    "name": "Lilith",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "27",
+    "name": "Luther",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "28",
+    "name": "Qing Mao",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "29",
+    "name": "Dorian",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "30",
+    "name": "Cornelius",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "31",
+    "name": "Jet",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "/ui/hero.png",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Physical Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Physical Attack",
+      "Intelligence",
+      "Armor Penetration"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "32",
+    "name": "Helios",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "33",
+    "name": "Lars",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "34",
+    "name": "Krista",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "35",
+    "name": "Jorgen",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "36",
+    "name": "Maya",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "37",
+    "name": "Jhu",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "38",
+    "name": "Elmir",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "/ui/hero.png",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Agility",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Physical Attack",
+      "Armor Penetration",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Physical Attack",
+      "Agility",
+      "Armor Penetration"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "39",
+    "name": "Ziri",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "40",
+    "name": "Nebula",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "41",
+    "name": "K’arkh",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "42",
+    "name": "Rufus",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "43",
+    "name": "Celeste",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "44",
+    "name": "Astrid and Lucas",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "45",
+    "name": "Satori",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "46",
+    "name": "Martha",
+    "faction": "Way of Honor",
+    "icon": "medical_services",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCG6lxJJqTNYgKQaAhBBIve6sP48WtQ79wXwB31STYvS_fJ-ifLu8DamgyQBCks8L6yJCUPYGDeGhoKc1ZTU9wFJ35yJj1DceIANTHeZ0bHH3lcpqChQUe7GZzWpBn07B7_UA-kFqqPHzDAN27y81N_JvaeNvhZhoAWUvjU1CreCQzaYjZdB_LMKmhLwsEpyGefKvWnu4kl-Z7IOpOZdIzuK3gMD5RoTFrnr98rrlHtQaULRrhMQP7Xpm5anIhHSstuGa2rWDxSfXg",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "47",
+    "name": "Andavari",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "48",
+    "name": "Sebastian",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "49",
+    "name": "Yasmine",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "50",
+    "name": "Corvus",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "51",
+    "name": "Morrigan",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "52",
+    "name": "Isaac",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "53",
+    "name": "Alvanor",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "54",
+    "name": "Tristan",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "/ui/hero.png",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Physical Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Physical Attack",
+      "Intelligence",
+      "Armor Penetration"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "55",
+    "name": "Iris",
+    "faction": "Way of Nature",
+    "icon": "magic_button",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBtRWzAI2aYdJV9CeXCwMkyUPirthWEPfx4-0Uxlphp8QzrQDS5othg7MyhSvql5Y78JieXgwnQXUlE9bG7ygcSMTreD6rZ6owmxkQgcCZOZbwoqWN7lXIqiiKySLBMknW7RMNh3vSwUoLCdn7NhrDx2rVP1Wu7vUOiAhPHKEKqnTKhiG6qyoq46EsNs3u3QGCk8In4OiU3VDRrmKBHOACF7SXHGU_Fc4xagMVBF3O2QBlEagTCWIFBWYpWpvWH4eGxbux2LRNv9Gw",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "56",
+    "name": "Amira",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "/ui/hero.png",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Physical Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Physical Attack",
+      "Intelligence",
+      "Armor Penetration"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "57",
+    "name": "Fafnir",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "58",
+    "name": "Aidan",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "59",
+    "name": "Kayla",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "60",
+    "name": "Mushy and Shroom",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "61",
+    "name": "Julius",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "62",
+    "name": "Polaris",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "/ui/hero.png",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Physical Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Physical Attack",
+      "Intelligence",
+      "Armor Penetration"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "63",
+    "name": "Lara Croft",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "/ui/hero.png",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Physical Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Physical Attack",
+      "Intelligence",
+      "Armor Penetration"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "64",
+    "name": "Augustus",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "/ui/hero.png",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Physical Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Physical Attack",
+      "Intelligence",
+      "Armor Penetration"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "65",
+    "name": "Ninja Turtles",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "/ui/hero.png",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Physical Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Physical Attack",
+      "Intelligence",
+      "Armor Penetration"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "66",
+    "name": "Folio",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "67",
+    "name": "Lyria",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "68",
+    "name": "Guus",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "/ui/hero.png",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Physical Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Physical Attack",
+      "Intelligence",
+      "Armor Penetration"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "69",
+    "name": "Cascade",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "70",
+    "name": "Electra von Grave",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "71",
+    "name": "Fluffy",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "72",
+    "name": "Byrma",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  },
+  {
+    "id": "73",
+    "name": "Adam",
+    "faction": "Unknown",
+    "icon": "person",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
+    "description": "Nincs leírás megadva.",
+    "roles": [
+      "Ismeretlen"
+    ],
+    "mainStat": "Intelligence",
+    "communityStats": [
+      "Health",
+      "Armor",
+      "Magic Attack",
+      "Magic Defense",
+      "Dodge"
+    ],
+    "staticSkills": [
+      {
+        "name": "Skill 1",
+        "max": 130
+      },
+      {
+        "name": "Skill 2",
+        "max": 130
+      },
+      {
+        "name": "Skill 3",
+        "max": 110
+      },
+      {
+        "name": "Skill 4",
+        "max": 90
+      }
+    ],
+    "staticSkins": [
+      {
+        "id": "default",
+        "name": "Default",
+        "stat": "Alap statisztika",
+        "max": 60
+      }
+    ],
+    "staticGlyphs": [
+      "Health",
+      "Armor",
+      "Magic Defense",
+      "Intelligence",
+      "Dodge"
+    ],
+    "staticArtifacts": {
+      "weapon": {
+        "name": "Alap Fegyver",
+        "buff": "Alap Buff"
+      },
+      "book": {
+        "name": "Alap Könyv"
+      },
+      "ring": {
+        "name": "Alap Gyűrű"
+      }
+    }
+  }
+]

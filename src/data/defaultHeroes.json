@@ -1,0 +1,3798 @@
+{
+  "1": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "2": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "3": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "4": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "5": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "6": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "7": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "8": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "9": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "10": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "11": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "12": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "13": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "14": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "15": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "16": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "17": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "18": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "19": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "20": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "21": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "22": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "23": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "24": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "25": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "26": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "27": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "28": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "29": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "30": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "31": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "32": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "33": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "34": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "35": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "36": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "37": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "38": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "39": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "40": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "41": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "42": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "43": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "44": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "45": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "46": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "47": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "48": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "49": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "50": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "51": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "52": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "53": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "54": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "55": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "56": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "57": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "58": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "59": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "60": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "61": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "62": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "63": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "64": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "65": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "66": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "67": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "68": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "69": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "70": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "71": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "72": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  },
+  "73": {
+    "general": {
+      "level": 1,
+      "stars": 1,
+      "soulStones": 0,
+      "power": 100
+    },
+    "stats": {
+      "health": 0,
+      "armor": 0,
+      "magicAttack": 0,
+      "physicalAttack": 0,
+      "magicDefense": 0,
+      "dodge": 0
+    },
+    "items": {
+      "rank": "White"
+    },
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "artifacts": {
+      "weapon": {
+        "level": 0,
+        "stars": 0
+      },
+      "book": {
+        "level": 0,
+        "stars": 0
+      },
+      "ring": {
+        "level": 0,
+        "stars": 0
+      }
+    },
+    "skins": {},
+    "glyphs": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "giftOfElements": 0,
+    "ascension": {
+      "rank": "I",
+      "branch": 0
+    }
+  }
+}

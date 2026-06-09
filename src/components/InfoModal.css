@@ -1,0 +1,108 @@
+.info-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
+  backdrop-filter: blur(2px);
+}
+
+.info-modal-content {
+  background-color: var(--surface);
+  border: 1px solid var(--outline);
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+.info-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: var(--surface-light);
+  border-bottom: 1px solid var(--outline);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.info-modal-header h3 {
+  margin: 0;
+  color: var(--primary-fixed);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.info-close-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.info-close-btn:hover {
+  color: var(--text-primary);
+}
+
+.info-modal-body {
+  padding: 24px;
+  overflow-y: auto;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.info-modal-body p {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.info-modal-body ul {
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-left: 20px;
+}
+
+.info-modal-body li {
+  margin-bottom: 6px;
+}
+
+.info-modal-body strong {
+  color: var(--text-primary);
+}
+
+/* Kérdőjel ikon stílusa a címek mellett */
+.help-icon-btn {
+  background: transparent;
+  border: none;
+  color: var(--outline);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  padding: 0;
+  transition: color 0.2s;
+  vertical-align: middle;
+}
+
+.help-icon-btn .material-symbols-outlined {
+  font-size: 18px;
+}
+
+.help-icon-btn:hover {
+  color: var(--primary-fixed);
+}
