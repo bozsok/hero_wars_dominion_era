@@ -4,7 +4,6 @@ import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
 import { HeroProvider, HeroContext } from './context/HeroContext';
 import ImportModal from './components/ImportModal';
-
 const ParticlesBackground = () => {
   useEffect(() => {
     const canvas = document.getElementById('particle-canvas');
@@ -78,7 +77,9 @@ function AppContent() {
   return (
     <div className="layout-app">
       <ParticlesBackground />
-      <Header onOpenImport={() => setIsImportOpen(true)} />
+      <Header 
+        onOpenImport={() => setIsImportOpen(true)} 
+      />
       <Sidebar />
       <Dashboard />
       <ImportModal 
@@ -86,7 +87,6 @@ function AppContent() {
         onClose={() => setIsImportOpen(false)} 
         onImport={(data) => {
           importBulkData(data);
-          // Opcionálisan: értesítés a sikeres importálásról
         }} 
       />
     </div>

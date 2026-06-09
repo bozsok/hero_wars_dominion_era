@@ -110,10 +110,37 @@ export const HeroProvider = ({ children }) => {
 
   const importBulkData = (newHeroesObj) => {
     if (isViewMode) return;
-    setMyHeroes(prev => ({
-      ...prev,
-      ...newHeroesObj
-    }));
+    setMyHeroes(prev => {
+      const updated = { ...prev };
+      
+      // 1. Minden létező hőst inaktívra állítunk (szint=0, csillag=1, erő=0)
+      for (const key in updated) {
+        updated[key] = {
+          ...updated[key],
+          general: { 
+            ...(updated[key].general || {}), 
+            level: 0, 
+            stars: 1, 
+            power: 0, 
+            soulStones: 0 
+          }
+        };
+      }
+      
+      // 2. Rátöltjük a beimportált, ténylegesen birtokolt hősöket
+      for (const key in newHeroesObj) {
+        updated[key] = {
+           ...updated[key],
+           ...newHeroesObj[key],
+           general: {
+             ...(updated[key]?.general || {}),
+             ...(newHeroesObj[key]?.general || {})
+           }
+        };
+      }
+      
+      return updated;
+    });
   };
 
   const exportData = () => {

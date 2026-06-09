@@ -2,6 +2,15 @@
 
 Minden említésre méltó változtatás a projektben ebben a fájlban lesz rögzítve.
 
+## [0.3.6] - 2026-06-10
+
+### Hozzáadva (Added)
+- **Gyors és pontos HAR importálás:** Egy új, villámgyors megoldás került bevezetésre a hősök frissítésére. A böngésző hálózati forgalmának (HAR fájl) betöltésével az alkalmazás azonnal kinyeri az adatokat a szerver hívása és bonyolult aláírási (signature) kódok generálása nélkül.
+- **Inaktív hősök automatikus nullázása:** Adat importálásakor az alkalmazás mostantól minden, az importfájlban nem szereplő hőst inaktív (0-s) szintre állít vissza ahelyett, hogy megtartaná a korábbi állapotukat.
+
+### Eltávolítva (Removed)
+- **Manuális CSV bekérés és régi szerver letöltés:** A "Letöltés a szerverről" funkció (SyncModal), a régi proxy API megoldások (`proxy.php`, `HeroKinyero.bat`), valamint a kézi CSV kimásolás lehetősége az importálásból eltávolításra került az új, megbízhatóbb HAR fájl importálás javára.
+
 ## [0.3.5] - 2026-06-09
 
 ### Megváltoztatva (Changed)
