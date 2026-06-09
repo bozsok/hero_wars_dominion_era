@@ -442,7 +442,7 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('./ui/sort.png');
+  background-image: url('/ui/sort.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -800,7 +800,7 @@ body::before {
 .image-btn {
   width: 100%;
   aspect-ratio: 210 / 57;
-  background-image: url('./ui/button.png');
+  background-image: url('/ui/button.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: transparent;

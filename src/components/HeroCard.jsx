@@ -5,11 +5,11 @@ const HeroCard = ({ hero, onClick }) => {
   const isOwned = heroLevel > 0;
   const starsCount = hero.general?.stars || 1;
 
-  const [imgSrc, setImgSrc] = useState(`/heroes/${hero.name}.png`);
+  const [imgSrc, setImgSrc] = useState(`./heroes/${hero.id}.png`);
 
   useEffect(() => {
-    setImgSrc(`/heroes/${hero.name}.png`);
-  }, [hero.name]);
+    setImgSrc(`./heroes/${hero.id}.png`);
+  }, [hero.id]);
 
   const handleImageError = () => {
     if (imgSrc !== hero.img) {
