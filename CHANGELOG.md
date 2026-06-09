@@ -5,11 +5,16 @@ Minden említésre méltó változtatás a projektben ebben a fájlban lesz rög
 ## [0.3.6] - 2026-06-10
 
 ### Hozzáadva (Added)
-- **Gyors és pontos HAR importálás:** Egy új, villámgyors megoldás került bevezetésre a hősök frissítésére. A böngésző hálózati forgalmának (HAR fájl) betöltésével az alkalmazás azonnal kinyeri az adatokat a szerver hívása és bonyolult aláírási (signature) kódok generálása nélkül.
-- **Inaktív hősök automatikus nullázása:** Adat importálásakor az alkalmazás mostantól minden, az importfájlban nem szereplő hőst inaktív (0-s) szintre állít vissza ahelyett, hogy megtartaná a korábbi állapotukat.
+- **Gyors és pontos HAR-importálás:** Egy új, villámgyors megoldás került bevezetésre a hősök frissítésére. A böngésző hálózati forgalmának (HAR-fájl) betöltésével az alkalmazás azonnal kinyeri az adatokat a szerver hívása és bonyolult aláírási (signature) kódok generálása nélkül.
+- **Inaktív hősök automatikus nullázása:** Adatimportáláskor az alkalmazás mostantól minden, az importfájlban nem szereplő hőst inaktív (0-s) szintre állít vissza ahelyett, hogy megtartaná a korábbi állapotukat.
+
+### Megváltoztatva (Changed)
+- **Egységesített adatkezelés (Data Sync):** Az "Importálás" és "Exportálás" funkciók egyetlen letisztult felületen, egy varázslószerű "Adatkezelés" ablakban kaptak helyet. A HAR-fájl betöltése után a rendszer azonnal felkínálja az új állapot lementését JSON-formátumban.
+- **Megtekintő mód és fejléc (Header):** A "Megtekintő mód" a bal oldali menüből a fejlécbe költözött. Amikor egy idegen adat van betöltve, a fejléc piros figyelmeztetéssel jelzi ezt ("MEGTEKINTŐ MÓD AKTÍV"), az Adatkezelés gomb pedig eltűnik, nehogy a felhasználó véletlenül felülírja a sajátját. A kilépés egy hatalmas piros/arany "VISSZA A SAJÁTHOZ" gombbal lehetséges.
+- **Letisztult navigáció (Sidebar):** Az oldalsáv teljesen mentesült minden gomb- és adatkezelési funkciótól, így letisztultan csak a menüpontokat (Dashboard, Heroes, Titans stb.) jeleníti meg.
 
 ### Eltávolítva (Removed)
-- **Manuális CSV bekérés és régi szerver letöltés:** A "Letöltés a szerverről" funkció (SyncModal), a régi proxy API megoldások (`proxy.php`, `HeroKinyero.bat`), valamint a kézi CSV kimásolás lehetősége az importálásból eltávolításra került az új, megbízhatóbb HAR fájl importálás javára.
+- **Manuális CSV-bekérés és régi szerver-letöltés:** A "Letöltés a szerverről" funkció (SyncModal), a régi proxy-API megoldások (`proxy.php`, `HeroKinyero.bat`), valamint a kézi CSV-kimásolás lehetősége az importálásból eltávolításra került az új, megbízhatóbb HAR-fájl importálásának javára.
 
 ## [0.3.5] - 2026-06-09
 

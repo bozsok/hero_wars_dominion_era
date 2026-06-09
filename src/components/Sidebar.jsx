@@ -1,20 +1,6 @@
-import React, { useContext, useRef } from 'react';
-import { HeroContext } from '../context/HeroContext';
+import React from 'react';
 
 const Sidebar = () => {
-  const { exportData, loadViewData, isViewMode, exitViewMode } = useContext(HeroContext);
-  const fileInputRef = useRef(null);
-
-  const handleFileChange = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = (event) => {
-        loadViewData(event.target.result);
-      };
-      reader.readAsText(file);
-    }
-  };
 
   return (
     <aside className="layout-sidebar">
@@ -42,38 +28,7 @@ const Sidebar = () => {
         </a>
       </nav>
 
-      <div className="sidebar-actions">
-        {isViewMode ? (
-          <button
-            className="gold-gradient-btn return-btn"
-            onClick={exitViewMode}
-          >
-            VISSZA A SAJÁTHOZ
-          </button>
-        ) : (
-          <>
-            <button
-              className="image-btn"
-              onClick={exportData}
-            >
-              Exportálás
-            </button>
-            <input
-              type="file"
-              accept=".json"
-              ref={fileInputRef}
-              style={{ display: 'none' }}
-              onChange={handleFileChange}
-            />
-            <button
-              className="image-btn"
-              onClick={() => fileInputRef.current?.click()}
-            >
-              Megtekintő mód
-            </button>
-          </>
-        )}
-      </div>
+
     </aside>
   );
 };

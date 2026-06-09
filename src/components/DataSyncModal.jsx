@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { HeroContext } from '../context/HeroContext';
 import './ImportModal.css';
 
 const RANKS = [
@@ -23,9 +24,10 @@ const RANKS = [
   'Red+2'       // 18
 ];
 
-const ImportModal = ({ isOpen, onClose, onImport, heroes }) => {
+const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
   const [error, setError] = useState(null);
   const [successMessage, setSuccessMessage] = useState('');
+  const { exportData } = useContext(HeroContext);
 
   if (!isOpen) return null;
 
@@ -139,11 +141,7 @@ const ImportModal = ({ isOpen, onClose, onImport, heroes }) => {
           }
 
           onImport(newHeroesObj);
-          setSuccessMessage("Sikeres importálás! Az ablak hamarosan bezárul...");
-          setTimeout(() => {
-            setSuccessMessage("");
-            onClose();
-          }, 1500);
+          setSuccessMessage("Sikeres frissítés! Az adataid betöltődtek.");
         } else {
           setError("Nem találtam hős adatokat (heroGetAll) a HAR fájlban! Biztosan újratöltötted a játékot a mentés előtt?");
         }
@@ -159,7 +157,7 @@ const ImportModal = ({ isOpen, onClose, onImport, heroes }) => {
     <div className="import-modal-overlay">
       <div className="import-modal-content">
         <div className="import-modal-header">
-          <h2>Adatok Importálása</h2>
+          <h2>Adatkezelés (Szinkronizáció)</h2>
           <button className="import-close-btn" onClick={onClose}>
             <span className="material-symbols-outlined">close</span>
           </button>
@@ -167,20 +165,39 @@ const ImportModal = ({ isOpen, onClose, onImport, heroes }) => {
         
         <div className="import-modal-body">
           {successMessage ? (
-            <div style={{ backgroundColor: '#059669', color: '#fff', padding: '20px', borderRadius: '8px', textAlign: 'center', fontSize: '1.2em' }}>
-              <span className="material-symbols-outlined" style={{ fontSize: '2em', display: 'block', marginBottom: '10px' }}>check_circle</span>
-              {successMessage}
+            <div style={{ padding: '20px', borderRadius: '8px', textAlign: 'center' }}>
+              <div style={{ backgroundColor: '#059669', color: '#fff', padding: '20px', borderRadius: '8px', marginBottom: '20px', fontSize: '1.2em' }}>
+                <span className="material-symbols-outlined" style={{ fontSize: '2em', display: 'block', marginBottom: '10px' }}>check_circle</span>
+                {successMessage}
+              </div>
+              <p style={{ color: '#cbd5e1', marginBottom: '20px' }}>Szeretnéd kimenteni az új állapotot egy JSON fájlba, hogy megoszd másokkal?</p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                <button 
+                  className="import-process-btn gold-gradient-btn" 
+                  onClick={() => { exportData(); setSuccessMessage(''); onClose(); }}
+                  style={{ width: '100%', padding: '12px' }}
+                >
+                  Új állapot kimentése (JSON Export)
+                </button>
+                <button 
+                  className="import-cancel-btn" 
+                  onClick={() => { setSuccessMessage(''); onClose(); }}
+                  style={{ width: '100%', padding: '12px' }}
+                >
+                  Bezárás (Csak a saját gépemen használom)
+                </button>
+              </div>
             </div>
           ) : (
             <>
               <div style={{ marginBottom: '20px', padding: '15px', backgroundColor: '#1e293b', borderRadius: '8px', border: '1px solid #334155' }}>
-                <h4 style={{ margin: '0 0 15px 0', color: '#10b981' }}>Importálás HAR fájlból</h4>
+                <h4 style={{ margin: '0 0 15px 0', color: '#10b981' }}>Importálás HAR-fájlból</h4>
                 
                 <div style={{ 
                   backgroundColor: '#334155', color: '#f8fafc',
                   padding: '15px', borderRadius: '8px', marginBottom: '20px', fontSize: '0.85em', border: '1px solid #475569'
                 }}>
-                  <strong style={{ display: 'block', marginBottom: '8px', color: '#f59e0b' }}>Hogyan készíts HAR fájlt?</strong>
+                  <strong style={{ display: 'block', marginBottom: '8px', color: '#f59e0b' }}>Hogyan készíts HAR-fájlt?</strong>
                   <ul style={{ margin: '0', paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '5px' }}>
                     <li>Nyisd meg a játékot (várd meg amíg betölt).</li>
                     <li>Nyomj <strong>F12</strong>-t a billentyűzeteden, és válaszd a <strong>Network (Hálózat)</strong> fület.</li>
@@ -199,16 +216,29 @@ const ImportModal = ({ isOpen, onClose, onImport, heroes }) => {
               </div>
 
               {error && <div className="import-error">{error}</div>}
+
+              <div style={{ marginTop: '20px', paddingTop: '20px', borderTop: '1px solid #334155', textAlign: 'center' }}>
+                <p style={{ margin: '0 0 10px 0', fontSize: '0.9em', color: '#94a3b8' }}>Ha csak le szeretnéd menteni a jelenlegi állásodat:</p>
+                <button 
+                  className="import-process-btn gold-gradient-btn" 
+                  onClick={() => { exportData(); onClose(); }}
+                  style={{ padding: '10px 20px', fontSize: '0.9em' }}
+                >
+                  Jelenlegi adatok mentése (Export)
+                </button>
+              </div>
             </>
           )}
         </div>
         
-        <div className="import-modal-footer">
-          <button className="import-cancel-btn" onClick={onClose}>Bezárás</button>
-        </div>
+        {!successMessage && (
+          <div className="import-modal-footer">
+            <button className="import-cancel-btn" onClick={onClose}>Bezárás</button>
+          </div>
+        )}
       </div>
     </div>
   );
 };
 
-export default ImportModal;
+export default DataSyncModal;

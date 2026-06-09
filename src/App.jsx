@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
 import { HeroProvider, HeroContext } from './context/HeroContext';
-import ImportModal from './components/ImportModal';
+import DataSyncModal from './components/DataSyncModal';
 const ParticlesBackground = () => {
   useEffect(() => {
     const canvas = document.getElementById('particle-canvas');
@@ -82,7 +82,7 @@ function AppContent() {
       />
       <Sidebar />
       <Dashboard />
-      <ImportModal 
+      <DataSyncModal 
         isOpen={isImportOpen} 
         onClose={() => setIsImportOpen(false)} 
         onImport={(data) => {
