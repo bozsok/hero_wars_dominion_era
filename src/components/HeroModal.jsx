@@ -17,6 +17,15 @@ const GlyphTypes = [
   'Strength', 'Agility', 'Intelligence'
 ];
 
+const FactionTranslations = {
+  'Way of Nature': 'A természet útja',
+  'Way of Honor': 'A becsület útja',
+  'Way of Progress': 'A fejlődés útja',
+  'Way of Chaos': 'A káosz útja',
+  'Way of Eternity': 'Az örökkévalóság útja',
+  'Way of Mystery': 'A rejtély útja'
+};
+
 const HeroModal = ({ hero, onClose }) => {
   const { updateHeroData, isViewMode } = useContext(HeroContext);
   const [heroData, setHeroData] = useState({ ...hero });
@@ -326,66 +335,72 @@ const HeroModal = ({ hero, onClose }) => {
       if(e.target === e.currentTarget) onClose();
     }}>
       <div className="modal-content gold-frame">
-        <div className="modal-header">
-          <div className="modal-hero-info">
-            <div className={`hero-card-image-wrapper ${isOwned ? baseColorClass : 'hero-rank-gray'}`} style={{ margin: 0, alignSelf: 'center', minWidth: '132px', minHeight: '132px', flexShrink: 0 }}>
-              {isOwned && <div className="hero-level-badge" style={{ zIndex: 10 }}>{heroLevel}</div>}
-              <div className="hero-card-image-inner">
-                <img src={`./heroes/${hero.id}.png`} alt={hero.name} className="hero-card-image" />
-              </div>
-              <img
-                src={`./hero_borders/${!isOwned ? 'white' : rankStr.toLowerCase()}.png`}
-                alt={`${!isOwned ? 'white' : rankStr} frame`}
-                className="hero-card-frame"
-              />
-              {isOwned && (
-                <div className="hero-card-stars" style={{ zIndex: 10 }}>
-                  {starsCount === 6 ? (
-                    <img src="./hero_borders/6stars.png" alt="Absolute Star" className="hero-card-6stars" />
-                  ) : (
-                    [...Array(starsCount)].map((_, i) => (
-                      <img key={i} src="./hero_borders/star.png" alt="Star" className="hero-card-star" />
-                    ))
-                  )}
+        <button className="modal-close-icon" onClick={onClose}></button>
+        <div className="modal-title-banner">Hős adatlap</div>
+        <div className="modal-body-landscape">
+          <div className="modal-left-column modal-panel">
+            <div className="modal-hero-info" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', textAlign: 'left', marginBottom: '20px', width: '100%' }}>
+              <div className={`hero-card-image-wrapper ${isOwned ? baseColorClass : 'hero-rank-gray'}`} style={{ margin: '0 15px 0 0', minWidth: '132px', minHeight: '132px', flexShrink: 0 }}>
+                {isOwned && <div className="hero-level-badge" style={{ zIndex: 10 }}>{heroLevel}</div>}
+                <div className="hero-card-image-inner">
+                  <img src={`./heroes/${hero.id}.png`} alt={hero.name} className="hero-card-image" />
                 </div>
+                <img
+                  src={`./hero_borders/${!isOwned ? 'white' : rankStr.toLowerCase()}.png`}
+                  alt={`${!isOwned ? 'white' : rankStr} frame`}
+                  className="hero-card-frame"
+                />
+                {isOwned && (
+                  <div className="hero-card-stars" style={{ zIndex: 10 }}>
+                    {starsCount === 6 ? (
+                      <img src="./hero_borders/6stars.png" alt="Absolute Star" className="hero-card-6stars" />
+                    ) : (
+                      [...Array(starsCount)].map((_, i) => (
+                        <img key={i} src="./hero_borders/star.png" alt="Star" className="hero-card-star" />
+                      ))
+                    )}
+                  </div>
+                )}
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                <h2 className="modal-hero-name" style={{ fontSize: '24px', margin: '0 0 4px 0' }}>
+                  {hero.name} 
+                </h2>
+                <div style={{ color: 'var(--outline)', fontSize: '16px' }}>
+                  #{hero.id}
+                </div>
+                <div style={{ color: 'var(--outline)', fontSize: '14px', marginTop: '4px', textTransform: 'uppercase' }}>
+                  {FactionTranslations[hero.faction] || hero.faction || 'Ismeretlen frakció'}
+                </div>
+              </div>
+            </div>
+
+            <div className="modal-tabs-vertical">
+              <button className={`modal-tab-vertical ${activeTab === 'lore' ? 'active' : ''}`} onClick={() => setActiveTab('lore')}>Leírás és értékelés</button>
+              <button className={`modal-tab-vertical ${activeTab === 'general' ? 'active' : ''}`} onClick={() => setActiveTab('general')}>Általános és statisztikák</button>
+              <button className={`modal-tab-vertical ${activeTab === 'skills' ? 'active' : ''}`} onClick={() => setActiveTab('skills')}>Képességek és kinézetek</button>
+              <button className={`modal-tab-vertical ${activeTab === 'artifacts' ? 'active' : ''}`} onClick={() => setActiveTab('artifacts')}>Ereklyék és elemek ajándéka</button>
+              <button className={`modal-tab-vertical ${activeTab === 'glyphs' ? 'active' : ''}`} onClick={() => setActiveTab('glyphs')}>Rúnák és felemelkedés</button>
+            </div>
+
+            <div style={{ marginTop: 'auto', display: 'flex', justifyContent: 'center', width: '100%', paddingTop: '15px' }}>
+              {!isViewMode && (
+                <button className="action-btn btn-save" onClick={handleSave} disabled={isSaving}>
+                  {isSaving ? 'Mentés...' : 'Mentés'}
+                </button>
               )}
             </div>
-            <div>
-              <h2 className="modal-hero-name">
-                {hero.name.toUpperCase()} 
-                <span style={{ color: 'var(--outline)', fontSize: '18px', marginLeft: '8px' }}>
-                  #{hero.id}
-                </span>
-              </h2>
+          </div>
 
+          <div className="modal-right-column modal-panel">
+            <div className="modal-scroll-container" style={{ height: '100%', overflowY: 'auto' }}>
+              {activeTab === 'lore' && renderLoreTab()}
+              {activeTab === 'general' && renderGeneralTab()}
+              {activeTab === 'skills' && renderSkillsTab()}
+              {activeTab === 'artifacts' && renderArtifactsTab()}
+              {activeTab === 'glyphs' && renderGlyphsTab()}
             </div>
           </div>
-          <button className="modal-close-btn" onClick={onClose}>
-            <span className="material-symbols-outlined" style={{ fontSize: '30px' }}>close</span>
-          </button>
-        </div>
-
-        {renderTabNavigation()}
-
-        <hr className="modal-divider" />
-
-        <div className="modal-scroll-container">
-          {activeTab === 'lore' && renderLoreTab()}
-          {activeTab === 'general' && renderGeneralTab()}
-          {activeTab === 'skills' && renderSkillsTab()}
-          {activeTab === 'artifacts' && renderArtifactsTab()}
-          {activeTab === 'glyphs' && renderGlyphsTab()}
-        </div>
-
-        <div className="modal-footer">
-          <button onClick={onClose} className="modal-cancel-btn">
-            {isViewMode ? 'CLOSE' : 'CANCEL'}
-          </button>
-          {!isViewMode && (
-            <button className={`gold-gradient-btn ${isSaving ? 'saving' : ''}`} onClick={handleSave} disabled={isSaving}>
-              {saveText}
-            </button>
-          )}
         </div>
       </div>
       

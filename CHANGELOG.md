@@ -2,6 +2,21 @@
 
 Minden említésre méltó változtatás a projektben ebben a fájlban lesz rögzítve.
 
+## [0.3.8] - 2026-06-10
+
+### Hozzáadva (Added)
+- **Képalapú aranykeret (9-slice):** A modális ablak megkapta a hivatalos, játékhoz hű aranykeretet a `modal_frame.png` felhasználásával, amely dinamikusan, nyújtás és torzulás nélkül öleli körbe a tartalmat.
+- **Grafikus címszalag (banner):** A modal címe ("Hős adatlap") mostantól egy felső, grafikusan ráillesztett címszalagon (`modal_title.png`) jelenik meg, tökéletesen megegyezve a bal oldali menü tipográfiájával.
+- **Frakciók magyarítása és megjelenítése:** A hős neve mellett a bal oldali panelen helyet kapott a hős frakciója is, amelyet az alkalmazás automatikusan lefordít a hivatalos angol frakciónevek alapján (pl. "A természet útja").
+
+### Megváltoztatva (Changed)
+- **Modális ablak elrendezése (fekvő nézet):** A korábbi keskeny, egyoszlopos HeroModal egy széles, fekvő (landscape) 1200x700 pixeles elrendezéssé alakult át. A felület egy 30%-os bal oldali (profil és menü) és egy 70%-os jobb oldali (görgethető tartalom) részre bomlott, halványabb, elkülönített háttérpanelekkel.
+- **Navigációs fülek (tabs) és helyesírás:** A fülek balra igazítottak lettek, fixen `#f7e1b6` színnel, hover alatti színváltás nélkül. A felirataik az MTA 12. kiadásának megfelelő, magyaros helyesírást (csak az első szó nagybetűs, kötőszók rendbe rakva, pl. "Képességek és kinézetek") kaptak.
+- **Gombok és interakciók (fehér fátyol):** A gombok a játék eredeti grafikáit használják. Kifejlesztésre került egy egyedi, tejszerű "fehér fátyol" hover-effekt (`brightness` és `contrast` együttes CSS manipulációja), amely anélkül emeli ki a gombot, hogy elrontaná a PNG-k átlátszóságát. A "Mentés" gomb szövege fixen `#e4ff59` színkódot kapott és átkerült a bal oszlop aljára.
+
+### Eltávolítva (Removed)
+- **"Mégse" gomb:** A dupla gombos rendszerből kikerült a "Mégse" gomb. A kilépés ezentúl a jobb felső sarokban elhelyezett, egyedi grafikájú `close.png` "X" ikonnal lehetséges.
+
 ## [0.3.7] - 2026-06-10
 
 ### Hozzáadva (Added)
