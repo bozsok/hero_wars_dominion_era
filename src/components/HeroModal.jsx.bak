@@ -29,7 +29,7 @@ const FactionTranslations = {
 const HeroModal = ({ hero, onClose }) => {
   const { updateHeroData, isViewMode } = useContext(HeroContext);
   const [heroData, setHeroData] = useState({ ...hero });
-  const [activeTab, setActiveTab] = useState('info');
+  const [activeTab, setActiveTab] = useState('lore');
   const [isSaving, setIsSaving] = useState(false);
   const [saveText, setSaveText] = useState('SAVE HERO DATA');
   const [infoType, setInfoType] = useState(null);
@@ -92,46 +92,20 @@ const HeroModal = ({ hero, onClose }) => {
     }, 500);
   };
 
-  const renderInfoTab = () => {
+  const renderTabNavigation = () => (
+    <div className="modal-tabs">
+      <button className={`modal-tab ${activeTab === 'lore' ? 'active' : ''}`} onClick={() => setActiveTab('lore')}>Leírás & Értékelés</button>
+      <button className={`modal-tab ${activeTab === 'general' ? 'active' : ''}`} onClick={() => setActiveTab('general')}>Általános & Statisztikák</button>
+      <button className={`modal-tab ${activeTab === 'skills' ? 'active' : ''}`} onClick={() => setActiveTab('skills')}>Képességek & Kinézetek</button>
+      <button className={`modal-tab ${activeTab === 'artifacts' ? 'active' : ''}`} onClick={() => setActiveTab('artifacts')}>Ereklyék & Elemek Ajándéka</button>
+      <button className={`modal-tab ${activeTab === 'glyphs' ? 'active' : ''}`} onClick={() => setActiveTab('glyphs')}>Rúnák & Felemelkedés</button>
+    </div>
+  );
+
+  const renderLoreTab = () => {
     const desc = hero.description || {};
     return (
       <div className="modal-tab-content">
-        <div className="modal-hero-info" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', textAlign: 'left', marginBottom: '20px', width: '100%', borderBottom: '1px solid rgba(254, 206, 134, 0.3)', paddingBottom: '20px' }}>
-          <div className={`hero-card-image-wrapper ${isOwned ? baseColorClass : 'hero-rank-gray'}`} style={{ margin: '0 15px 0 0', minWidth: '132px', minHeight: '132px', flexShrink: 0 }}>
-            {isOwned && <div className="hero-level-badge" style={{ zIndex: 10 }}>{heroLevel}</div>}
-            <div className="hero-card-image-inner">
-              <img src={`./heroes/${hero.id}.png`} alt={hero.name} className="hero-card-image" />
-            </div>
-            <img
-              src={`./hero_borders/${!isOwned ? 'white' : rankStr.toLowerCase()}.png`}
-              alt={`${!isOwned ? 'white' : rankStr} frame`}
-              className="hero-card-frame"
-            />
-            {isOwned && (
-              <div className="hero-card-stars" style={{ zIndex: 10 }}>
-                {starsCount === 6 ? (
-                  <img src="./hero_borders/6stars.png" alt="Absolute Star" className="hero-card-6stars" />
-                ) : (
-                  [...Array(starsCount)].map((_, i) => (
-                    <img key={i} src="./hero_borders/star.png" alt="Star" className="hero-card-star" />
-                  ))
-                )}
-              </div>
-            )}
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <h2 className="modal-hero-name" style={{ fontSize: '24px', margin: '0 0 4px 0' }}>
-              {hero.name} 
-            </h2>
-            <div style={{ color: 'var(--outline)', fontSize: '16px' }}>
-              #{hero.id}
-            </div>
-            <div style={{ color: 'var(--outline)', fontSize: '14px', marginTop: '4px', textTransform: 'uppercase' }}>
-              {FactionTranslations[hero.faction] || hero.faction || 'Ismeretlen frakció'}
-            </div>
-          </div>
-        </div>
-
         <h3 className="tab-section-title">Ismertető</h3>
         <p style={{ color: '#ccc', fontSize: '16px', lineHeight: '1.5', marginBottom: '20px' }}>
           {desc.summary || "Nincs elérhető leírás erről a hősről."}
@@ -240,126 +214,117 @@ const HeroModal = ({ hero, onClose }) => {
     </div>
   );
 
-  const renderSkillsOnlyTab = () => (
+  const renderSkillsTab = () => (
     <div className="modal-tab-content">
-      <div className="modal-stat-column" style={{ maxWidth: '50%' }}>
-        <h3 className="tab-section-title">Skills</h3>
-        {heroData.staticSkills?.map((s, idx) => (
-          <div className="stat-input-group" key={`skill-${idx}`}>
-            <label>{s.name} (Max: {s.max})</label>
-            <input type="number" className="stat-input" value={heroData.skills?.[idx] || 0} onChange={e => handleArrayChange('skills', idx, e.target.value)} disabled={isViewMode} />
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-
-  const renderSkinsOnlyTab = () => (
-    <div className="modal-tab-content">
-      <div className="modal-stat-column" style={{ maxWidth: '50%' }}>
-        <h3 className="tab-section-title">Skins</h3>
-        {heroData.staticSkins?.map(skin => (
-          <div className="stat-input-group" key={skin.id}>
-            <label>{skin.name} - {skin.stat} (Max: {skin.max})</label>
-            <input type="number" className="stat-input" value={heroData.skins?.[skin.id] || 0} onChange={e => handleChange(`skins.${skin.id}`, e.target.value)} disabled={isViewMode} />
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-
-  const renderArtifactsOnlyTab = () => (
-    <div className="modal-tab-content">
-      <div className="modal-stat-column" style={{ maxWidth: '50%' }}>
-        <h3 className="tab-section-title">Artifacts</h3>
-        {['weapon', 'book', 'ring'].map(type => (
-          <div className="stat-group-box" key={type}>
-            <h4>{heroData.staticArtifacts?.[type]?.name || type.toUpperCase()}</h4>
-            <div style={{ display: 'flex', gap: '8px' }}>
-              <div className="stat-input-group">
-                <label>Level (0-100)</label>
-                <input type="number" className="stat-input" value={heroData.artifacts?.[type]?.level || 0} onChange={e => handleChange(`artifacts.${type}.level`, e.target.value)} disabled={isViewMode} />
-              </div>
-              <div className="stat-input-group">
-                <label>Stars (0-6)</label>
-                <input type="number" className="stat-input" value={heroData.artifacts?.[type]?.stars || 0} onChange={e => handleChange(`artifacts.${type}.stars`, e.target.value)} disabled={isViewMode} />
-              </div>
+      <div className="modal-stat-grid">
+        <div className="modal-stat-column">
+          <h3 className="tab-section-title">Skills</h3>
+          {heroData.staticSkills?.map((s, idx) => (
+            <div className="stat-input-group" key={`skill-${idx}`}>
+              <label>{s.name} (Max: {s.max})</label>
+              <input type="number" className="stat-input" value={heroData.skills?.[idx] || 0} onChange={e => handleArrayChange('skills', idx, e.target.value)} disabled={isViewMode} />
             </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-
-  const renderGoEOnlyTab = () => (
-    <div className="modal-tab-content">
-      <div className="modal-stat-column" style={{ maxWidth: '50%' }}>
-        <h3 className="tab-section-title">Gift of the Elements</h3>
-        <div className="stat-input-group">
-          <label>Level (0-30)</label>
-          <input type="number" className="stat-input" value={heroData.giftOfElements || 0} onChange={e => handleChange('giftOfElements', e.target.value)} disabled={isViewMode} />
+          ))}
+        </div>
+        <div className="modal-stat-column">
+          <h3 className="tab-section-title">Skins</h3>
+          {heroData.staticSkins?.map(skin => (
+            <div className="stat-input-group" key={skin.id}>
+              <label>{skin.name} - {skin.stat} (Max: {skin.max})</label>
+              <input type="number" className="stat-input" value={heroData.skins?.[skin.id] || 0} onChange={e => handleChange(`skins.${skin.id}`, e.target.value)} disabled={isViewMode} />
+            </div>
+          ))}
         </div>
       </div>
     </div>
   );
 
-  const renderGlyphsOnlyTab = () => (
+  const renderArtifactsTab = () => (
     <div className="modal-tab-content">
-      <div className="modal-stat-column" style={{ maxWidth: '50%' }}>
-        <h3 className="tab-section-title">
-          Glyphs
-          <button className="help-icon-btn" onClick={() => setInfoType('glyphs')} title="Számolási módszer">
-            <span className="material-symbols-outlined">help</span>
-          </button>
-        </h3>
-        {heroData.staticGlyphs?.map((defaultName, idx) => {
-          const currentName = heroData.glyphNames?.[idx] || defaultName;
-          return (
-            <div className="stat-input-group" key={`glyph-${idx}`}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '4px' }}>
-                <select 
+      <div className="modal-stat-grid">
+        <div className="modal-stat-column">
+          <h3 className="tab-section-title">Artifacts</h3>
+          {['weapon', 'book', 'ring'].map(type => (
+            <div className="stat-group-box" key={type}>
+              <h4>{heroData.staticArtifacts?.[type]?.name || type.toUpperCase()}</h4>
+              <div style={{ display: 'flex', gap: '8px' }}>
+                <div className="stat-input-group">
+                  <label>Level (0-100)</label>
+                  <input type="number" className="stat-input" value={heroData.artifacts?.[type]?.level || 0} onChange={e => handleChange(`artifacts.${type}.level`, e.target.value)} disabled={isViewMode} />
+                </div>
+                <div className="stat-input-group">
+                  <label>Stars (0-6)</label>
+                  <input type="number" className="stat-input" value={heroData.artifacts?.[type]?.stars || 0} onChange={e => handleChange(`artifacts.${type}.stars`, e.target.value)} disabled={isViewMode} />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="modal-stat-column">
+          <h3 className="tab-section-title">Gift of the Elements</h3>
+          <div className="stat-input-group">
+            <label>Level (0-30)</label>
+            <input type="number" className="stat-input" value={heroData.giftOfElements || 0} onChange={e => handleChange('giftOfElements', e.target.value)} disabled={isViewMode} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderGlyphsTab = () => (
+    <div className="modal-tab-content">
+      <div className="modal-stat-grid">
+        <div className="modal-stat-column">
+          <h3 className="tab-section-title">
+            Glyphs
+            <button className="help-icon-btn" onClick={() => setInfoType('glyphs')} title="Számolási módszer">
+              <span className="material-symbols-outlined">help</span>
+            </button>
+          </h3>
+          {heroData.staticGlyphs?.map((defaultName, idx) => {
+            const currentName = heroData.glyphNames?.[idx] || defaultName;
+            return (
+              <div className="stat-input-group" key={`glyph-${idx}`}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '4px' }}>
+                  <select 
+                    className="stat-input" 
+                    style={{ width: '60%', padding: '2px', fontSize: '12px' }}
+                    value={currentName}
+                    onChange={e => handleArrayChange('glyphNames', idx, e.target.value, false)}
+                    disabled={isViewMode}
+                  >
+                    {GlyphTypes.map(gt => <option key={gt} value={gt}>{gt}</option>)}
+                  </select>
+                  <label style={{ margin: 0, alignSelf: 'center' }}>(0-40/50)</label>
+                </div>
+                <input 
+                  type="number" 
                   className="stat-input" 
-                  style={{ width: '60%', padding: '2px', fontSize: '12px' }}
-                  value={currentName}
-                  onChange={e => handleArrayChange('glyphNames', idx, e.target.value, false)}
-                  disabled={isViewMode}
-                >
-                  {GlyphTypes.map(gt => <option key={gt} value={gt}>{gt}</option>)}
-                </select>
-                <label style={{ margin: 0, alignSelf: 'center' }}>(0-40/50)</label>
+                  value={heroData.glyphs?.[idx] || 0} 
+                  onChange={e => handleArrayChange('glyphs', idx, e.target.value)} 
+                  disabled={isViewMode} 
+                />
               </div>
-              <input 
-                type="number" 
-                className="stat-input" 
-                value={heroData.glyphs?.[idx] || 0} 
-                onChange={e => handleArrayChange('glyphs', idx, e.target.value)} 
-                disabled={isViewMode} 
-              />
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
-
-  const renderAscensionOnlyTab = () => (
-    <div className="modal-tab-content">
-      <div className="modal-stat-column" style={{ maxWidth: '50%' }}>
-        <h3 className="tab-section-title">
-          Ascension
-          <button className="help-icon-btn" onClick={() => setInfoType('ascension')} title="Becslés és számolás">
-            <span className="material-symbols-outlined">help</span>
-          </button>
-        </h3>
-        <div className="stat-input-group">
-          <label>Ascension Rank</label>
-          <select className="stat-input" value={heroData.ascension?.rank || 'I'} onChange={e => handleChange('ascension.rank', e.target.value, false)} disabled={isViewMode}>
-            {AscensionRanks.map(r => <option key={r} value={r}>{r}</option>)}
-          </select>
+            );
+          })}
         </div>
-        <div className="stat-input-group">
-          <label>Role Branch Nodes</label>
-          <input type="number" className="stat-input" value={heroData.ascension?.branch || 0} onChange={e => handleChange('ascension.branch', e.target.value)} disabled={isViewMode} />
+        <div className="modal-stat-column">
+          <h3 className="tab-section-title">
+            Ascension
+            <button className="help-icon-btn" onClick={() => setInfoType('ascension')} title="Becslés és számolás">
+              <span className="material-symbols-outlined">help</span>
+            </button>
+          </h3>
+          <div className="stat-input-group">
+            <label>Ascension Rank</label>
+            <select className="stat-input" value={heroData.ascension?.rank || 'I'} onChange={e => handleChange('ascension.rank', e.target.value, false)} disabled={isViewMode}>
+              {AscensionRanks.map(r => <option key={r} value={r}>{r}</option>)}
+            </select>
+          </div>
+          <div className="stat-input-group">
+            <label>Role Branch Nodes</label>
+            <input type="number" className="stat-input" value={heroData.ascension?.branch || 0} onChange={e => handleChange('ascension.branch', e.target.value)} disabled={isViewMode} />
+          </div>
         </div>
       </div>
     </div>
@@ -369,41 +334,71 @@ const HeroModal = ({ hero, onClose }) => {
     <div className="modal-overlay" onClick={(e) => {
       if(e.target === e.currentTarget) onClose();
     }}>
-      <div className="modal-wrapper">
-        <div className="modal-outside-tabs">
-          <div className={`modal-flag ${activeTab === 'info' ? 'active' : ''}`} onClick={() => setActiveTab('info')}>Info</div>
-          <div className={`modal-flag ${activeTab === 'stats' ? 'active' : ''}`} onClick={() => setActiveTab('stats')}>Stats</div>
-          <div className={`modal-flag ${activeTab === 'skills' ? 'active' : ''}`} onClick={() => setActiveTab('skills')}>Skills</div>
-          <div className={`modal-flag ${activeTab === 'skins' ? 'active' : ''}`} onClick={() => setActiveTab('skins')}>Skins</div>
-          <div className={`modal-flag ${activeTab === 'artifacts' ? 'active' : ''}`} onClick={() => setActiveTab('artifacts')}>Artifacts</div>
-          <div className={`modal-flag modal-flag-small-text ${activeTab === 'goe' ? 'active' : ''}`} onClick={() => setActiveTab('goe')}>Gift of the Elements</div>
-          <div className={`modal-flag ${activeTab === 'glyphs' ? 'active' : ''}`} onClick={() => setActiveTab('glyphs')}>Glyphs</div>
-          <div className={`modal-flag ${activeTab === 'ascension' ? 'active' : ''}`} onClick={() => setActiveTab('ascension')}>Ascension</div>
-          
-          <div className="modal-save-container">
-            {!isViewMode && (
-              <button className="action-btn btn-save" onClick={handleSave} disabled={isSaving}>
-                {isSaving ? 'Mentés...' : 'Mentés'}
-              </button>
-            )}
-          </div>
-        </div>
-
-        <div className="modal-content gold-frame">
-          <button className="modal-close-icon" onClick={onClose}></button>
-          <div className="modal-title-banner">Hős adatlap</div>
-          <div className="modal-body-landscape">
-            <div className="modal-panel">
-              <div className="modal-scroll-container">
-                {activeTab === 'info' && renderInfoTab()}
-                {activeTab === 'stats' && renderGeneralTab()}
-                {activeTab === 'skills' && renderSkillsOnlyTab()}
-                {activeTab === 'skins' && renderSkinsOnlyTab()}
-                {activeTab === 'artifacts' && renderArtifactsOnlyTab()}
-                {activeTab === 'goe' && renderGoEOnlyTab()}
-                {activeTab === 'glyphs' && renderGlyphsOnlyTab()}
-                {activeTab === 'ascension' && renderAscensionOnlyTab()}
+      <div className="modal-content gold-frame">
+        <button className="modal-close-icon" onClick={onClose}></button>
+        <div className="modal-title-banner">Hős adatlap</div>
+        <div className="modal-body-landscape">
+          <div className="modal-left-column modal-panel">
+            <div className="modal-hero-info" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', textAlign: 'left', marginBottom: '20px', width: '100%' }}>
+              <div className={`hero-card-image-wrapper ${isOwned ? baseColorClass : 'hero-rank-gray'}`} style={{ margin: '0 15px 0 0', minWidth: '132px', minHeight: '132px', flexShrink: 0 }}>
+                {isOwned && <div className="hero-level-badge" style={{ zIndex: 10 }}>{heroLevel}</div>}
+                <div className="hero-card-image-inner">
+                  <img src={`./heroes/${hero.id}.png`} alt={hero.name} className="hero-card-image" />
+                </div>
+                <img
+                  src={`./hero_borders/${!isOwned ? 'white' : rankStr.toLowerCase()}.png`}
+                  alt={`${!isOwned ? 'white' : rankStr} frame`}
+                  className="hero-card-frame"
+                />
+                {isOwned && (
+                  <div className="hero-card-stars" style={{ zIndex: 10 }}>
+                    {starsCount === 6 ? (
+                      <img src="./hero_borders/6stars.png" alt="Absolute Star" className="hero-card-6stars" />
+                    ) : (
+                      [...Array(starsCount)].map((_, i) => (
+                        <img key={i} src="./hero_borders/star.png" alt="Star" className="hero-card-star" />
+                      ))
+                    )}
+                  </div>
+                )}
               </div>
+              <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                <h2 className="modal-hero-name" style={{ fontSize: '24px', margin: '0 0 4px 0' }}>
+                  {hero.name} 
+                </h2>
+                <div style={{ color: 'var(--outline)', fontSize: '16px' }}>
+                  #{hero.id}
+                </div>
+                <div style={{ color: 'var(--outline)', fontSize: '14px', marginTop: '4px', textTransform: 'uppercase' }}>
+                  {FactionTranslations[hero.faction] || hero.faction || 'Ismeretlen frakció'}
+                </div>
+              </div>
+            </div>
+
+            <div className="modal-tabs-vertical">
+              <button className={`modal-tab-vertical ${activeTab === 'lore' ? 'active' : ''}`} onClick={() => setActiveTab('lore')}>Leírás és értékelés</button>
+              <button className={`modal-tab-vertical ${activeTab === 'general' ? 'active' : ''}`} onClick={() => setActiveTab('general')}>Általános és statisztikák</button>
+              <button className={`modal-tab-vertical ${activeTab === 'skills' ? 'active' : ''}`} onClick={() => setActiveTab('skills')}>Képességek és kinézetek</button>
+              <button className={`modal-tab-vertical ${activeTab === 'artifacts' ? 'active' : ''}`} onClick={() => setActiveTab('artifacts')}>Ereklyék és elemek ajándéka</button>
+              <button className={`modal-tab-vertical ${activeTab === 'glyphs' ? 'active' : ''}`} onClick={() => setActiveTab('glyphs')}>Rúnák és felemelkedés</button>
+            </div>
+
+            <div style={{ marginTop: 'auto', display: 'flex', justifyContent: 'center', width: '100%', paddingTop: '15px' }}>
+              {!isViewMode && (
+                <button className="action-btn btn-save" onClick={handleSave} disabled={isSaving}>
+                  {isSaving ? 'Mentés...' : 'Mentés'}
+                </button>
+              )}
+            </div>
+          </div>
+
+          <div className="modal-right-column modal-panel">
+            <div className="modal-scroll-container" style={{ height: '100%', overflowY: 'auto' }}>
+              {activeTab === 'lore' && renderLoreTab()}
+              {activeTab === 'general' && renderGeneralTab()}
+              {activeTab === 'skills' && renderSkillsTab()}
+              {activeTab === 'artifacts' && renderArtifactsTab()}
+              {activeTab === 'glyphs' && renderGlyphsTab()}
             </div>
           </div>
         </div>
