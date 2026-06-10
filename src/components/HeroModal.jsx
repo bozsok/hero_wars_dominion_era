@@ -51,6 +51,14 @@ const HeroModal = ({ hero, onClose }) => {
     setHeroData(JSON.parse(JSON.stringify(hero)));
   }, [hero]);
 
+  // Prevent background scrolling while modal is open
+  useEffect(() => {
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = originalOverflow;
+    };
+  }, []);
   // Általános String vagy Szám kezelő bármilyen mélységhez
   const handleChange = (path, value, isNumber = true) => {
     if (isViewMode) return;
@@ -96,9 +104,9 @@ const HeroModal = ({ hero, onClose }) => {
     const desc = hero.description || {};
     return (
       <div className="modal-tab-content">
-        <div className="modal-hero-info" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', textAlign: 'left', marginBottom: '20px', width: '100%', borderBottom: '1px solid rgba(254, 206, 134, 0.3)', paddingBottom: '20px' }}>
-          <div className={`hero-card-image-wrapper ${isOwned ? baseColorClass : 'hero-rank-gray'}`} style={{ margin: '0 15px 0 0', minWidth: '132px', minHeight: '132px', flexShrink: 0 }}>
-            {isOwned && <div className="hero-level-badge" style={{ zIndex: 10 }}>{heroLevel}</div>}
+        <div className="modal-hero-info">
+          <div className={`hero-card-image-wrapper ${isOwned ? baseColorClass : 'hero-rank-gray'} modal-hero-avatar-wrapper`}>
+            {isOwned && <div className="hero-level-badge">{heroLevel}</div>}
             <div className="hero-card-image-inner">
               <img src={`./heroes/${hero.id}.png`} alt={hero.name} className="hero-card-image" />
             </div>
@@ -108,7 +116,7 @@ const HeroModal = ({ hero, onClose }) => {
               className="hero-card-frame"
             />
             {isOwned && (
-              <div className="hero-card-stars" style={{ zIndex: 10 }}>
+              <div className="hero-card-stars">
                 {starsCount === 6 ? (
                   <img src="./hero_borders/6stars.png" alt="Absolute Star" className="hero-card-6stars" />
                 ) : (
@@ -119,62 +127,61 @@ const HeroModal = ({ hero, onClose }) => {
               </div>
             )}
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <h2 className="modal-hero-name" style={{ fontSize: '24px', margin: '0 0 4px 0' }}>
+          <div className="modal-hero-text-wrapper">
+            <h2 className="modal-hero-name">
               {hero.name} 
             </h2>
-            <div style={{ color: 'var(--outline)', fontSize: '16px' }}>
+            <div className="modal-hero-id">
               #{hero.id}
             </div>
-            <div style={{ color: 'var(--outline)', fontSize: '14px', marginTop: '4px', textTransform: 'uppercase' }}>
+            <div className="modal-hero-faction">
               {FactionTranslations[hero.faction] || hero.faction || 'Ismeretlen frakció'}
             </div>
           </div>
         </div>
 
-        <h3 className="tab-section-title">Ismertető</h3>
-        <p style={{ color: '#ccc', fontSize: '16px', lineHeight: '1.5', marginBottom: '20px' }}>
+        <p className="modal-hero-summary">
           {desc.summary || "Nincs elérhető leírás erről a hősről."}
         </p>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+        <div className="modal-hero-pros-cons">
           <div className="modal-stat-column">
-            <h4 style={{ color: '#4caf50', marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '8px', fontSize: '18px' }}>
+            <h4 className="pros-title">
               <span className="material-symbols-outlined">check_circle</span> Erősségek
             </h4>
-            <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
+            <ul className="pros-cons-list">
               {(desc.strengths || []).map((s, idx) => (
-                <li key={idx} style={{ color: '#ccc', marginBottom: '8px', display: 'flex', gap: '8px', alignItems: 'flex-start', lineHeight: '1.4' }}>
-                  <span style={{ color: '#4caf50', marginTop: '2px' }}>✅</span> <span>{s}</span>
+                <li key={idx} className="pros-cons-item">
+                  <span className="pros-icon">✅</span> <span>{s}</span>
                 </li>
               ))}
-              {(!desc.strengths || desc.strengths.length === 0) && <li style={{ color: '#777' }}>Nincs adat</li>}
+              {(!desc.strengths || desc.strengths.length === 0) && <li className="pros-cons-empty">Nincs adat</li>}
             </ul>
           </div>
 
           <div className="modal-stat-column">
-            <h4 style={{ color: '#f44336', marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '8px', fontSize: '18px' }}>
+            <h4 className="cons-title">
               <span className="material-symbols-outlined">cancel</span> Gyengeségek
             </h4>
-            <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
+            <ul className="pros-cons-list">
               {(desc.weaknesses || []).map((w, idx) => (
-                <li key={idx} style={{ color: '#ccc', marginBottom: '8px', display: 'flex', gap: '8px', alignItems: 'flex-start', lineHeight: '1.4' }}>
-                  <span style={{ color: '#f44336', marginTop: '2px' }}>❌</span> <span>{w}</span>
+                <li key={idx} className="pros-cons-item">
+                  <span className="cons-icon">❌</span> <span>{w}</span>
                 </li>
               ))}
-              {(!desc.weaknesses || desc.weaknesses.length === 0) && <li style={{ color: '#777' }}>Nincs adat</li>}
+              {(!desc.weaknesses || desc.weaknesses.length === 0) && <li className="pros-cons-empty">Nincs adat</li>}
             </ul>
           </div>
         </div>
         
-        <div style={{ marginTop: '30px', display: 'flex', gap: '20px', borderTop: '1px solid #3a3f58', paddingTop: '20px' }}>
-          <div style={{ backgroundColor: '#1e2130', padding: '10px 15px', borderRadius: '5px', border: '1px solid #3a3f58' }}>
-            <strong style={{ color: '#fece86', display: 'block', marginBottom: '4px', fontSize: '12px', textTransform: 'uppercase' }}>Fő Statisztika</strong>
-            <span style={{ color: '#ccc', fontSize: '16px' }}>{hero.mainStat || 'Ismeretlen'}</span>
+        <div className="modal-hero-bottom-stats">
+          <div className="bottom-stat-box">
+            <strong className="bottom-stat-title">Fő Statisztika</strong>
+            <span className="bottom-stat-value">{hero.mainStat || 'Ismeretlen'}</span>
           </div>
-          <div style={{ backgroundColor: '#1e2130', padding: '10px 15px', borderRadius: '5px', border: '1px solid #3a3f58' }}>
-            <strong style={{ color: '#fece86', display: 'block', marginBottom: '4px', fontSize: '12px', textTransform: 'uppercase' }}>Szerepkörök</strong>
-            <span style={{ color: '#ccc', fontSize: '16px' }}>{(hero.roles || []).join(', ') || 'Ismeretlen'}</span>
+          <div className="bottom-stat-box">
+            <strong className="bottom-stat-title">Szerepkörök</strong>
+            <span className="bottom-stat-value">{(hero.roles || []).join(', ') || 'Ismeretlen'}</span>
           </div>
         </div>
       </div>
@@ -242,7 +249,7 @@ const HeroModal = ({ hero, onClose }) => {
 
   const renderSkillsOnlyTab = () => (
     <div className="modal-tab-content">
-      <div className="modal-stat-column" style={{ maxWidth: '50%' }}>
+      <div className="modal-stat-column modal-stat-column-half">
         <h3 className="tab-section-title">Skills</h3>
         {heroData.staticSkills?.map((s, idx) => (
           <div className="stat-input-group" key={`skill-${idx}`}>
@@ -256,7 +263,7 @@ const HeroModal = ({ hero, onClose }) => {
 
   const renderSkinsOnlyTab = () => (
     <div className="modal-tab-content">
-      <div className="modal-stat-column" style={{ maxWidth: '50%' }}>
+      <div className="modal-stat-column modal-stat-column-half">
         <h3 className="tab-section-title">Skins</h3>
         {heroData.staticSkins?.map(skin => (
           <div className="stat-input-group" key={skin.id}>
@@ -270,12 +277,12 @@ const HeroModal = ({ hero, onClose }) => {
 
   const renderArtifactsOnlyTab = () => (
     <div className="modal-tab-content">
-      <div className="modal-stat-column" style={{ maxWidth: '50%' }}>
+      <div className="modal-stat-column modal-stat-column-half">
         <h3 className="tab-section-title">Artifacts</h3>
         {['weapon', 'book', 'ring'].map(type => (
           <div className="stat-group-box" key={type}>
             <h4>{heroData.staticArtifacts?.[type]?.name || type.toUpperCase()}</h4>
-            <div style={{ display: 'flex', gap: '8px' }}>
+            <div className="artifact-input-row">
               <div className="stat-input-group">
                 <label>Level (0-100)</label>
                 <input type="number" className="stat-input" value={heroData.artifacts?.[type]?.level || 0} onChange={e => handleChange(`artifacts.${type}.level`, e.target.value)} disabled={isViewMode} />
@@ -293,7 +300,7 @@ const HeroModal = ({ hero, onClose }) => {
 
   const renderGoEOnlyTab = () => (
     <div className="modal-tab-content">
-      <div className="modal-stat-column" style={{ maxWidth: '50%' }}>
+      <div className="modal-stat-column modal-stat-column-half">
         <h3 className="tab-section-title">Gift of the Elements</h3>
         <div className="stat-input-group">
           <label>Level (0-30)</label>
@@ -305,7 +312,7 @@ const HeroModal = ({ hero, onClose }) => {
 
   const renderGlyphsOnlyTab = () => (
     <div className="modal-tab-content">
-      <div className="modal-stat-column" style={{ maxWidth: '50%' }}>
+      <div className="modal-stat-column modal-stat-column-half">
         <h3 className="tab-section-title">
           Glyphs
           <button className="help-icon-btn" onClick={() => setInfoType('glyphs')} title="Számolási módszer">
@@ -316,17 +323,16 @@ const HeroModal = ({ hero, onClose }) => {
           const currentName = heroData.glyphNames?.[idx] || defaultName;
           return (
             <div className="stat-input-group" key={`glyph-${idx}`}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '4px' }}>
+              <div className="glyph-row-header">
                 <select 
-                  className="stat-input" 
-                  style={{ width: '60%', padding: '2px', fontSize: '12px' }}
+                  className="stat-input glyph-select"
                   value={currentName}
                   onChange={e => handleArrayChange('glyphNames', idx, e.target.value, false)}
                   disabled={isViewMode}
                 >
                   {GlyphTypes.map(gt => <option key={gt} value={gt}>{gt}</option>)}
                 </select>
-                <label style={{ margin: 0, alignSelf: 'center' }}>(0-40/50)</label>
+                <label className="glyph-label-center">(0-40/50)</label>
               </div>
               <input 
                 type="number" 
@@ -344,7 +350,7 @@ const HeroModal = ({ hero, onClose }) => {
 
   const renderAscensionOnlyTab = () => (
     <div className="modal-tab-content">
-      <div className="modal-stat-column" style={{ maxWidth: '50%' }}>
+      <div className="modal-stat-column modal-stat-column-half">
         <h3 className="tab-section-title">
           Ascension
           <button className="help-icon-btn" onClick={() => setInfoType('ascension')} title="Becslés és számolás">
@@ -366,9 +372,7 @@ const HeroModal = ({ hero, onClose }) => {
   );
 
   return (
-    <div className="modal-overlay" onClick={(e) => {
-      if(e.target === e.currentTarget) onClose();
-    }}>
+    <div className="modal-overlay">
       <div className="modal-wrapper">
         <div className="modal-outside-tabs">
           <div className={`modal-flag ${activeTab === 'info' ? 'active' : ''}`} onClick={() => setActiveTab('info')}>Info</div>

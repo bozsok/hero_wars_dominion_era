@@ -165,24 +165,22 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
         
         <div className="import-modal-body">
           {successMessage ? (
-            <div style={{ padding: '20px', borderRadius: '8px', textAlign: 'center' }}>
-              <div style={{ backgroundColor: '#059669', color: '#fff', padding: '20px', borderRadius: '8px', marginBottom: '20px', fontSize: '1.2em' }}>
-                <span className="material-symbols-outlined" style={{ fontSize: '2em', display: 'block', marginBottom: '10px' }}>check_circle</span>
+            <div className="sync-success-container">
+              <div className="sync-success-message">
+                <span className="material-symbols-outlined sync-success-icon">check_circle</span>
                 {successMessage}
               </div>
-              <p style={{ color: '#cbd5e1', marginBottom: '20px' }}>Szeretnéd kimenteni az új állapotot egy JSON fájlba, hogy megoszd másokkal?</p>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              <p className="sync-success-prompt">Szeretnéd kimenteni az új állapotot egy JSON fájlba, hogy megoszd másokkal?</p>
+              <div className="sync-success-actions">
                 <button 
-                  className="import-process-btn gold-gradient-btn" 
+                  className="import-process-btn gold-gradient-btn sync-action-btn" 
                   onClick={() => { exportData(); setSuccessMessage(''); onClose(); }}
-                  style={{ width: '100%', padding: '12px' }}
                 >
                   Új állapot kimentése (JSON Export)
                 </button>
                 <button 
-                  className="import-cancel-btn" 
+                  className="import-cancel-btn sync-action-btn" 
                   onClick={() => { setSuccessMessage(''); onClose(); }}
-                  style={{ width: '100%', padding: '12px' }}
                 >
                   Bezárás (Csak a saját gépemen használom)
                 </button>
@@ -190,15 +188,12 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
             </div>
           ) : (
             <>
-              <div style={{ marginBottom: '20px', padding: '15px', backgroundColor: '#1e293b', borderRadius: '8px', border: '1px solid #334155' }}>
-                <h4 style={{ margin: '0 0 15px 0', color: '#10b981' }}>Importálás HAR-fájlból</h4>
+              <div className="sync-import-box">
+                <h4 className="sync-import-title">Importálás HAR-fájlból</h4>
                 
-                <div style={{ 
-                  backgroundColor: '#334155', color: '#f8fafc',
-                  padding: '15px', borderRadius: '8px', marginBottom: '20px', fontSize: '0.85em', border: '1px solid #475569'
-                }}>
-                  <strong style={{ display: 'block', marginBottom: '8px', color: '#f59e0b' }}>Hogyan készíts HAR-fájlt?</strong>
-                  <ul style={{ margin: '0', paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '5px' }}>
+                <div className="sync-instruction-box">
+                  <strong className="sync-instruction-title">Hogyan készíts HAR-fájlt?</strong>
+                  <ul className="sync-instruction-list">
                     <li>Nyisd meg a játékot (várd meg amíg betölt).</li>
                     <li>Nyomj <strong>F12</strong>-t a billentyűzeteden, és válaszd a <strong>Network (Hálózat)</strong> fület.</li>
                     <li>Nyomj egy <strong>F5</strong>-öt (Újratöltés), és várd meg amíg újra betölt a játék.</li>
@@ -206,23 +201,22 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
                   </ul>
                 </div>
                 
-                <p style={{ margin: '0 0 15px 0', fontSize: '0.9em', color: '#94a3b8' }}>Válaszd ki a böngészőből lementett <code>hero-wars.com.har</code> fájlt az azonnali betöltéshez.</p>
+                <p className="sync-import-desc">Válaszd ki a böngészőből lementett <code>hero-wars.com.har</code> fájlt az azonnali betöltéshez.</p>
                 <input 
                   type="file" 
                   accept=".har" 
                   onChange={handleFileUpload}
-                  style={{ color: '#fff', width: '100%' }}
+                  className="sync-file-input"
                 />
               </div>
 
               {error && <div className="import-error">{error}</div>}
 
-              <div style={{ marginTop: '20px', paddingTop: '20px', borderTop: '1px solid #334155', textAlign: 'center' }}>
-                <p style={{ margin: '0 0 10px 0', fontSize: '0.9em', color: '#94a3b8' }}>Ha csak le szeretnéd menteni a jelenlegi állásodat:</p>
+              <div className="sync-export-box">
+                <p className="sync-export-desc">Ha csak le szeretnéd menteni a jelenlegi állásodat:</p>
                 <button 
-                  className="import-process-btn gold-gradient-btn" 
+                  className="import-process-btn gold-gradient-btn sync-export-btn" 
                   onClick={() => { exportData(); onClose(); }}
-                  style={{ padding: '10px 20px', fontSize: '0.9em' }}
                 >
                   Jelenlegi adatok mentése (Export)
                 </button>

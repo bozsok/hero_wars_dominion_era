@@ -45,33 +45,23 @@ const Dashboard = () => {
             <p className="dashboard-subtitle">A hősök tulajdonságai kattintással módosíthatók</p>
           </div>
           <div className="dashboard-stats">
-            <div className="stat-chip" style={{ padding: '0', overflow: 'hidden' }}>
-              <span className="material-symbols-outlined stat-icon" style={{ paddingLeft: 'var(--md)' }}>sort</span>
+            <div className="stat-chip dashboard-action-bar-inner">
+              <span className="material-symbols-outlined stat-icon dashboard-filter-group">sort</span>
               <select
-                className="stat-label"
-                style={{
-                  background: 'transparent',
-                  border: 'none',
-                  color: 'inherit',
-                  padding: 'var(--sm) var(--md)',
-                  paddingLeft: 'var(--xs)',
-                  outline: 'none',
-                  cursor: 'pointer',
-                  appearance: 'none'
-                }}
+                className="stat-label dashboard-sort-select"
                 value={sortMode}
                 onChange={e => setSortMode(e.target.value)}
               >
-                <option value="default" style={{ background: '#1a1009' }}>Rendezés: Alap</option>
-                <option value="name_asc" style={{ background: '#1a1009' }}>Név (A-Z)</option>
-                <option value="name_desc" style={{ background: '#1a1009' }}>Név (Z-A)</option>
-                <option value="power_desc" style={{ background: '#1a1009' }}>Erő (Csökkenő)</option>
-                <option value="power_asc" style={{ background: '#1a1009' }}>Erő (Növekvő)</option>
+                <option value="default" className="dashboard-select-option">Rendezés: Alap</option>
+                <option value="name_asc" className="dashboard-select-option">Név (A-Z)</option>
+                <option value="name_desc" className="dashboard-select-option">Név (Z-A)</option>
+                <option value="power_desc" className="dashboard-select-option">Erő (Csökkenő)</option>
+                <option value="power_asc" className="dashboard-select-option">Erő (Növekvő)</option>
               </select>
             </div>
             <div className="stat-chip">
-              <img src="./ui/hero.png" alt="Heroes" style={{ width: '18px', height: '18px', marginRight: '4px', display: 'block' }} />
-              <span className="stat-label" style={{ position: 'relative', top: '2px' }}>Összesen: {heroes.length}</span>
+              <img src="./ui/hero.png" alt="Heroes" className="dashboard-stat-icon" />
+              <span className="stat-label dashboard-stat-value-inner">Összesen: {heroes.length}</span>
             </div>
           </div>
         </div>

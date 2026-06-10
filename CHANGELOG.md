@@ -10,9 +10,15 @@ Minden említésre méltó változtatás a projektben ebben a fájlban lesz rög
 - **Angol zászlófeliratok:** A zászlók szövege az eredeti játék alapján került meghatározásra (Info, Stats, Skills, Skins, Artifacts, Gift of the Elements, Glyphs, Ascension).
 
 ### Megváltoztatva (Changed)
+- **Teljes CSS tisztítás:** Az összes beégetett (inline) `style={{...}}` tulajdonság eltávolításra került a projekt összes fájljából (`Sidebar.jsx`, `Header.jsx`, `HeroModal.jsx`, `DataSyncModal.jsx`, `Dashboard.jsx`). A formázások kizárólag dedikált, tiszta CSS osztályokba kerültek az `index.css`-ben.
+- **Hős adatlap dizájn-szinkron:** Az Info panel CSS osztályokba lett kiszervezve, és az elválasztó vonal dizájnja szinkronba került a főképernyő fejlécének arany színátmenetes (`linear-gradient`) keretével.
 - **Karakter információk mozgatása:** A hős képe, azonosítója (ID), neve és frakciója lekerült a bal oldali sávból, és most már a belső "Info" (Leírás és értékelés) fül szerves részét képezi.
 - **CSS architektúra optimalizálása:** Számos beégetett (inline) CSS tulajdonság (`HeroModal.jsx`-ből) átszervezésre került különálló, dedikált osztályokba (pl. `.modal-save-container`, `.btn-save` finomhangolása).
 - **Címszalag javítása:** A `.modal-title-banner` esetében a kerekítési hibát okozó `transform` és `left: 50%` alapú középre igazítás lecserélődött `margin: 0 auto` pozicionálásra a képi folytonossági hiba megszüntetése érdekében.
+
+
+### Eltávolítva (Removed)
+- **Ismertető alcím:** Az Info fülön lévő felesleges "Ismertető" címke (`tab-section-title`) véglegesen törlésre került a kódbázisból.
 
 ## [0.3.8] - 2026-06-10
 

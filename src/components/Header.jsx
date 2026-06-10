@@ -24,7 +24,7 @@ const Header = ({ onOpenImport }) => {
 
       <div className="header-title-container">
         {isViewMode ? (
-          <span className="header-title" style={{ color: '#ef4444' }}>MEGTEKINTŐ MÓD AKTÍV</span>
+          <span className="header-title header-title-view-mode">MEGTEKINTŐ MÓD AKTÍV</span>
         ) : (
           <span className="header-title">Fejlődésmérő és összehasonlító</span>
         )}
@@ -35,7 +35,6 @@ const Header = ({ onOpenImport }) => {
           <button 
             className="gold-gradient-btn return-btn" 
             onClick={exitViewMode}
-            style={{ padding: '8px 16px', marginRight: '15px' }}
           >
             VISSZA A SAJÁTHOZ
           </button>
@@ -45,14 +44,13 @@ const Header = ({ onOpenImport }) => {
               type="file"
               accept=".json"
               ref={fileInputRef}
-              style={{ display: 'none' }}
+              className="hidden-file-input"
               onChange={handleFileChange}
             />
             <button 
-              className="import-icon-btn" 
+              className="import-icon-btn view-mode-btn" 
               onClick={() => fileInputRef.current?.click()} 
               title="Megtekintő mód (Más JSON fájljának betöltése)"
-              style={{ marginRight: '10px' }}
             >
               <span className="material-symbols-outlined">visibility</span>
             </button>
@@ -61,7 +59,7 @@ const Header = ({ onOpenImport }) => {
             </button>
           </>
         )}
-        <span className="material-symbols-outlined header-profile-icon" style={{ marginLeft: isViewMode ? '0' : '10px' }}>
+        <span className={`material-symbols-outlined header-profile-icon ${isViewMode ? 'view-mode' : ''}`}>
           account_circle
         </span>
       </div>

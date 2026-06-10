@@ -36,17 +36,7 @@ const Sidebar = () => {
           <span className="nav-text">Settings</span>
         </a>
 
-        <div style={{
-          marginTop: 'auto',
-          marginBottom: '30px',
-          padding: '20px',
-          color: '#fece86',
-          fontSize: '26px',
-          textAlign: 'left',
-          fontFamily: "'Roboto Condensed', sans-serif",
-          fontWeight: '700',
-          textShadow: '0px 2px 2px rgba(0, 0, 0, 0.8)'
-        }}>
+        <div className="sidebar-footer-text">
           {NAV_TEXTS[activeTab]}
         </div>
       </nav>

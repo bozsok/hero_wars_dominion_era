@@ -296,8 +296,8 @@ body::before {
 }
 
 .modal-panel {
-  background-color: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(254, 206, 134, 0.3);
+  /* background-color: rgba(255, 255, 255, 0.04); */
+  /* border: 1px solid rgba(254, 206, 134, 0.3); */
   border-radius: 8px;
   width: 100%;
   height: 100%;
@@ -834,36 +834,55 @@ body::before {
 
 .modal-hero-info {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  gap: var(--md);
-}
-
-.modal-hero-avatar {
-  width: 96px;
-  height: 96px;
-}
-
-.modal-hero-avatar-inner {
+  text-align: left;
+  margin-bottom: 20px;
   width: 100%;
-  height: 100%;
-  background-color: var(--surface-variant);
+  padding-bottom: 20px;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, transparent, #fcef5f, transparent) 1;
+}
+
+.modal-hero-avatar-wrapper {
+  margin: 0 15px 0 0;
+  min-width: 132px;
+  min-height: 132px;
+  flex-shrink: 0;
+}
+
+.modal-hero-text-wrapper {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-}
-
-.modal-hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .modal-hero-name {
   font-family: var(--font-headline-lg);
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 1.2;
+  margin: 0 0 4px 0;
   color: var(--primary-fixed);
+}
+
+.modal-hero-id {
+  color: var(--outline);
+  font-size: 16px;
+}
+
+.modal-hero-faction {
+  color: var(--outline);
+  font-size: 14px;
+  margin-top: 4px;
+  text-transform: uppercase;
+}
+
+.modal-hero-summary {
+  color: #ccc;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .modal-hero-faction {
@@ -1094,4 +1113,254 @@ body::before {
 
 .import-icon-btn:hover {
   color: var(--text-primary);
+}
+/* Hero Pros/Cons */
+.modal-hero-pros-cons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.pros-title {
+  color: #4caf50;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+}
+.cons-title {
+  color: #f44336;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+}
+.pros-cons-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.pros-cons-item {
+  color: #ccc;
+  margin-bottom: 8px;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  line-height: 1.4;
+}
+.pros-icon {
+  color: #4caf50;
+  margin-top: 2px;
+}
+.cons-icon {
+  color: #f44336;
+  margin-top: 2px;
+}
+.pros-cons-empty {
+  color: #777;
+}
+
+/* Bottom Stats */
+.modal-hero-bottom-stats {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  border-top: 1px solid #3a3f58;
+  padding-top: 20px;
+}
+.bottom-stat-box {
+  background-color: #1e2130;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #3a3f58;
+}
+.bottom-stat-title {
+  color: #fece86;
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.bottom-stat-value {
+  color: #ccc;
+  font-size: 16px;
+}
+
+/* Modal specific inputs */
+.modal-stat-column-half {
+  max-width: 50%;
+}
+.artifact-input-row {
+  display: flex;
+  gap: 8px;
+}
+.glyph-row-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+.glyph-select {
+  width: 60%;
+  padding: 2px;
+  font-size: 12px;
+}
+.glyph-label-center {
+  margin: 0;
+  align-self: center;
+}
+
+/* Sidebar additions */
+.sidebar-footer-text {
+  margin-top: auto;
+  margin-bottom: 30px;
+  padding: 20px;
+  color: #fece86;
+  font-size: 26px;
+  text-align: left;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Header additions */
+.header-title-view-mode {
+  color: #ef4444;
+}
+.return-btn {
+  padding: 8px 16px;
+  margin-right: 15px;
+}
+.hidden-file-input {
+  display: none;
+}
+.view-mode-btn {
+  margin-right: 10px;
+}
+.header-profile-icon:not(.view-mode) {
+  margin-left: 10px;
+}
+.header-profile-icon.view-mode {
+  margin-left: 0;
+}
+
+/* Dashboard additions */
+.dashboard-action-bar-inner {
+  padding: 0;
+  overflow: hidden;
+}
+.dashboard-filter-group {
+  padding-left: var(--md);
+}
+.dashboard-select-option {
+  background: #1a1009;
+}
+.dashboard-stat-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+  display: block;
+}
+.dashboard-stat-value-inner {
+  position: relative;
+  top: 2px;
+}
+
+/* DataSyncModal additions */
+.sync-success-container {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+.sync-success-message {
+  background-color: #059669;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+.sync-success-icon {
+  font-size: 2em;
+  display: block;
+  margin-bottom: 10px;
+}
+.sync-success-prompt {
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+.sync-success-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sync-action-btn {
+  width: 100%;
+  padding: 12px;
+}
+.sync-import-box {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #1e293b;
+  border-radius: 8px;
+  border: 1px solid #334155;
+}
+.sync-import-title {
+  margin: 0 0 15px 0;
+  color: #10b981;
+}
+.sync-instruction-box {
+  margin-bottom: 20px;
+  font-size: 0.85em;
+  color: #f8fafc;
+  background-color: #334155;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #475569;
+}
+.sync-instruction-title {
+  display: block;
+  margin-bottom: 8px;
+  color: #f59e0b;
+}
+.sync-instruction-list {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.sync-import-desc {
+  margin: 0 0 15px 0;
+  font-size: 0.9em;
+  color: #94a3b8;
+}
+.sync-file-input {
+  color: #fff;
+  width: 100%;
+}
+.sync-export-box {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #334155;
+  text-align: center;
+}
+.sync-export-desc {
+  margin: 0 0 10px 0;
+  font-size: 0.9em;
+  color: #94a3b8;
+}
+.sync-export-btn {
+  padding: 10px 20px;
+  font-size: 0.9em;
+}
+.dashboard-sort-select {
+  background: transparent;
+  border: none;
+  color: inherit;
+  padding: var(--sm) var(--md);
+  padding-left: var(--xs);
+  outline: none;
+  cursor: pointer;
+  appearance: none;
 }
