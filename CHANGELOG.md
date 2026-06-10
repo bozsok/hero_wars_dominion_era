@@ -11,7 +11,7 @@ Minden említésre méltó változtatás a projektben ebben a fájlban lesz rög
 ### Megváltoztatva (Changed)
 - **Egységesített adatkezelés (Data Sync):** Az "Importálás" és "Exportálás" funkciók egyetlen letisztult felületen, egy varázslószerű "Adatkezelés" ablakban kaptak helyet. A HAR-fájl betöltése után a rendszer azonnal felkínálja az új állapot lementését JSON-formátumban.
 - **Megtekintő mód és fejléc (Header):** A "Megtekintő mód" a bal oldali menüből a fejlécbe költözött. Amikor egy idegen adat van betöltve, a fejléc piros figyelmeztetéssel jelzi ezt ("MEGTEKINTŐ MÓD AKTÍV"), az Adatkezelés gomb pedig eltűnik, nehogy a felhasználó véletlenül felülírja a sajátját. A kilépés egy hatalmas piros/arany "VISSZA A SAJÁTHOZ" gombbal lehetséges.
-- **Letisztult navigáció (Sidebar):** Az oldalsáv teljesen mentesült minden gomb- és adatkezelési funkciótól, így letisztultan csak a menüpontokat (Dashboard, Heroes, Titans stb.) jeleníti meg.
+- **Interaktív és letisztult navigáció (Sidebar):** Az oldalsáv mentesült az adatkezelési funkcióktól, a menüpontok (Dashboard, Heroes, Titans stb.) pedig kattinthatóvá váltak, vizuálisan is jelezve az aktív fület. Ezen felül az oldalsáv alján egy új, dinamikusan változó felirat jelent meg, amely a kiválasztott menüponthoz illeszkedő rövid ismertetőt ad (pl. "Pets provide great help in battle.").
 
 ### Eltávolítva (Removed)
 - **Manuális CSV-bekérés és régi szerver-letöltés:** A "Letöltés a szerverről" funkció (SyncModal), a régi proxy-API megoldások (`proxy.php`, `HeroKinyero.bat`), valamint a kézi CSV-kimásolás lehetősége az importálásból eltávolításra került az új, megbízhatóbb HAR-fájl importálásának javára.
