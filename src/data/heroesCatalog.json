@@ -5,11 +5,23 @@
     "faction": "Way of Nature",
     "icon": "shield",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Aurora az egyik legjobb kitérő (Dodge) tank a játékban, aki a varázssebzést is kiválóan elnyeli a pajzsával. A 'Way of Nature' frakció alapköve.",
+      "strengths": [
+        "Extrém magas kitérési (Dodge) esély",
+        "Képes elnyelni és visszaverni a mágikus sebzést",
+        "Kiváló szinergia más 'Way of Nature' hősökkel (pl. Mushy, Alvanor)"
+      ],
+      "weaknesses": [
+        "Nagyon alacsony alap páncél (Armor)",
+        "Kezdetben gyenge, hatalmas nyersanyag-befektetést igényel (Late-game hős)"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Tank",
+      "Dodge"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Strength",
     "communityStats": [
       "Health",
       "Armor",
@@ -69,11 +81,23 @@
     "faction": "Way of Honor",
     "icon": "shield",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCJWdjqVR16gmVVIQg7veILNyZstyoJ-crF-7gf3iP_6kjlQxoFgtV4muW5u0eNIUjP0cKm8UhCkYJg19gV0kfkHPd7t2VacY1kcnYCSdm2jB0boBehlnktD1nE8ynyKSqVA6aQAFHa1SBmMgSF0cvBp79CHw1W7VlyfwQ7ZaxuTakeR7EvOF2HMm5q0Blk8ucsB67x61JMmDrPo9AjSr7LlYYjFk5SLEIfF_TePjG93yC8JJT39txxdeGBJ9axhr1-OS2zG_yCFVc",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Galahad egy agresszív, sebzésre fókuszáló tank, aki hatalmas területre ható (AoE) fizikai sebzést oszt ki, miközben az első vonalban harcol.",
+      "strengths": [
+        "Magas területi (AoE) fizikai sebzés",
+        "Vámpírizmus (Vampirism) révén képes gyógyítani magát sebzésből",
+        "Kiváló Armor Penetration támogatással nagyon veszélyes"
+      ],
+      "weaknesses": [
+        "Nincs olyan képessége, amivel a csapatát védené",
+        "Nem a legszívósabb tank a játékban"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Tank",
+      "Fighter"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Strength",
     "communityStats": [
       "Health",
       "Armor",
@@ -133,11 +157,22 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Keira egy pusztító, gyors lövész, akinek a támadásai átpattannak a célpontokon, így hatalmas területi (AoE) sebzést okoz.",
+      "strengths": [
+        "Folyamatos és hatalmas területi (AoE) fizikai sebzés",
+        "Képességeivel elnémítja (Silence) az ellenfeleket",
+        "Nagyon gyors támadási sebesség (Armor Penetration buffal pusztító)"
+      ],
+      "weaknesses": [
+        "Nagyon törékeny (squishy), könnyen meghal",
+        "Sok energiát ad az ellenfél csapatának a területi támadásaival"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Marksman"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Agility",
     "communityStats": [
       "Health",
       "Armor",
@@ -197,11 +232,24 @@
     "faction": "Way of Honor",
     "icon": "shield",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDNYpnKVr0KISVEDtpmRljl9K0ZJeufJfSVBUxShQ0cgQ8uPkM109D4PGoPSARKjUzWgawAyvckIqTyjdMh8MHxK3jvr9Vzng8YF14BrVIdNQrjB2H1g5z8mftbkCYlBOsyk2ykO3UeUZD8gQrUOCz6ewbPTMj4Gz9wDSYB4YIT5zZWCWn-kZxJU1SlYakNkKSfSFDYmtW7ze8_BksoKRxTOhqS6FuehWZjvwuAhm-SLmjNIf9AvXJ4vvSGbWUPX4oUDh4y3C_KSQI",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Astaroth az egyik legnépszerűbb és legsokoldalúbb tank. Pajzzsal védi a csapatot, és képes feltámasztani egy elesett társát (vagy önmagát).",
+      "strengths": [
+        "Újraéledés (Resurrection) képesség",
+        "Csapattársak fizikai sebzésének átvállalása",
+        "Démoni szinergia, energia-égetés az ellenféltől",
+        "Páncél (Armor) buffot ad a csapatnak"
+      ],
+      "weaknesses": [
+        "Morrigan megakadályozhatja a feltámasztását",
+        "A sebzés-átvállalás miatt gyorsan meghalhat, ha a hátsó sor nagy sebzést kap"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Tank",
+      "Support"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Strength",
     "communityStats": [
       "Health",
       "Armor",
@@ -261,9 +309,20 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Kai egy mágus, aki fellöki az ellenfeleket a levegőbe, hatalmas varázssebzést okozva. Kiváló szinergiája van K'arkh-hal.",
+      "strengths": [
+        "Területi fellökés (Knockup) és mágia sebzés",
+        "Vámpírizmus (Vampirism) varázssebzésből",
+        "Kiváló kombó K'arkh-hal"
+      ],
+      "weaknesses": [
+        "Nagyon lassú energia-töltődés",
+        "Önmagában (szinergia nélkül) kevés a sebzése a modern meta mágusokhoz képest"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Mage"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -325,9 +384,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Phobos egy irányító mágus, aki az ellenfél legnagyobb varázssebzésű hősére (Magic Attack) fókuszál, megbénítja és elszívja az energiáját.",
+      "strengths": [
+        "Célzottan blokkolja az ellenfél legerősebb mágusát",
+        "Energia és életerő elszívása",
+        "Nagy mágikus védelem (Magic Defense) bónuszt ad"
+      ],
+      "weaknesses": [
+        "Fizikai (Physical) sebzők ellen sokkal kevésbé hatékony",
+        "Kevés területi sebzés"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Control",
+      "Mage"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -389,9 +460,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Thea a játék alap gyógyítója, aki területi gyógyítást és csendesítést (Silence) biztosít a csapatának, valamint felgyorsítja az alacsony életerejű társakat.",
+      "strengths": [
+        "Csendesíti (Silence) a varázslókat",
+        "Megnöveli a sebességét a haldokló csapattársaknak",
+        "Jó területi és egyéni gyógyítás"
+      ],
+      "weaknesses": [
+        "Gyógyítása gyengébb, mint a prémium gyógyítóké (Martha, Celeste)",
+        "Nagyon törékeny"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Healer",
+      "Support"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -453,11 +536,22 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Daredevil egy robbanékony sebzésű (Crit) lövész. Minél többször támadnak a csapattársai mögötte, annál többet lő ő is.",
+      "strengths": [
+        "Hatalmas kritikus (Critical) sebzés",
+        "Kiváló szinergia gyorsan támadó hősökkel (pl. Elmir, Dark Star)",
+        "Gyorsan kiiktatja az első vonalat"
+      ],
+      "weaknesses": [
+        "Nagyon függ a csapatösszeállítástól",
+        "Törékeny, védelemre szorul"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Marksman"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Agility",
     "communityStats": [
       "Health",
       "Armor",
@@ -517,9 +611,21 @@
     "faction": "Way of Nature",
     "icon": "colorize",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDjozmsBdGysuhnT3x-Q5McEvZr0Yrsw22K0pypkhV7mDMLv3stlMDHuARTraNKyLan1EPrxhdAe9DUPs7fslURk8zASlcfGF7yzv4UurmF-Iifny5K9rZCO4K27vfAUOopX2Jtd7QsHORfktNjweuLHOxStPQikaTiOK0oikJ3uKWJqFuUMTW12iWDRuLnfRpBHpPImeR8RT_4kSPxRIUwlegvJ06toVEAWMySPr7FbwLMdrFSDh9l75bnE0DEPAIyH3ST-SLcFso",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Heidi egy kitérő varázsló, aki tiszta (Pure) sebzést okoz méreggel. Mivel tiszta sebzést oszt, a páncél és a varázsvédelem sem véd ellene.",
+      "strengths": [
+        "Területi Tiszta sebzés (Pure damage)",
+        "Nagyon magas kitérés (Dodge)",
+        "Vakítja (Blind) az ellenfeleket"
+      ],
+      "weaknesses": [
+        "Rendkívül alacsony életerő",
+        "Ha eltalálják egy mágia támadással (ami nem tud kitérni), azonnal meghal"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Mage",
+      "Dodge"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -581,9 +687,20 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Faceless egy sokoldalú irányító, aki képes lemásolni bárki (akár ellenfél) utolsó ultimétjét (Ultimate). Szinergiája K'arkh-hal legendás.",
+      "strengths": [
+        "Képes lemásolni a legerősebb Ultimate képességeket",
+        "Fellöki (Knockup) az első vonalat",
+        "Hatalmas Magic Penetration buffot ad a csapatnak"
+      ],
+      "weaknesses": [
+        "Kiszámíthatatlan lehet automatikus harcban (rossz képességet másol)"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Control",
+      "Mage"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -645,11 +762,23 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "./ui/hero.png",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Chabba egy masszív tank, akinek a különlegessége, hogy szó szerint lenyeli az ellenfél első vonalbeli hősét, kivonva őt a harcból pár másodpercre.",
+      "strengths": [
+        "Az ellenfél tankjának 'lenyelése', így az 1. vonal megnyílik",
+        "Nagyon magas alappáncél (Armor)",
+        "Tiszta sebzés (Pure) okozása"
+      ],
+      "weaknesses": [
+        "Lenyelés alatt nem tud mozogni",
+        "Nincs csapatot védő képessége (mint Astaroth)"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Tank",
+      "Control"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Strength",
     "communityStats": [
       "Health",
       "Armor",
@@ -709,11 +838,23 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Arachne egy irányító (Control) hős, aki folyamatos kábítás (Stun) alatt tartja az ellenfelet, és képes a legalacsonyabb életerejű célponthoz ugrani.",
+      "strengths": [
+        "Folyamatos területi kábítás (Stun)",
+        "Képességeivel varázssebzést oszt (bár Agility hős)",
+        "Vámpírizmus a túléléshez"
+      ],
+      "weaknesses": [
+        "Nehéz pozicionálni a csapatban",
+        "Sebzése végjátékra (Late-game) elmarad a tiszta sebzőkétől"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Control",
+      "Warrior"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Agility",
     "communityStats": [
       "Health",
       "Armor",
@@ -773,9 +914,20 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Orion egy tüzérségi mágus, aki rendkívül gyorsan tölti az energiáját, és másodpercenként rakétákat zúdít az ellenfélre.",
+      "strengths": [
+        "Extrém gyors energia-visszatöltés",
+        "Gyakori területi (AoE) mágikus sebzés",
+        "Kiváló Magic Penetration buffot ad a teljes csapatnak"
+      ],
+      "weaknesses": [
+        "Sebzése szóródik (sok célpont között oszlik el)",
+        "Könnyen 'tölti' az ellenfél csapatának energiáját a kis sebzésű területi csapásaival"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Mage"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -837,11 +989,23 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Fox egy lövész, aki az ellenfél hátralökésével (Knockback) és megvakításával (Blind) operál. Erős fizikai sebzést biztosít a frontvonalra.",
+      "strengths": [
+        "Képes hátralökni az ellenséges tankot",
+        "Vakítás (Blind) a fizikai sebzők ellen",
+        "Páncéltörés (Armor Penetration) buff"
+      ],
+      "weaknesses": [
+        "Alacsony túlélési esély (squishy)",
+        "Támadása lassabb a többi lövésznél"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Marksman",
+      "Control"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Agility",
     "communityStats": [
       "Health",
       "Armor",
@@ -901,11 +1065,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Ginger egy pusztító területi (AoE) sebző, aki az egész ellenséges csapatot ólomzáporral (Lead Storm) szórja meg.",
+      "strengths": [
+        "Hatalmas területi (AoE) fizikai sebzés",
+        "Kiváló szinergia páncéltörő hősökkel és Isaac-kel"
+      ],
+      "weaknesses": [
+        "Folyamatos sebzése hamar felölti az ellenfelek energiáját (ha nem halnak meg)",
+        "Armor Penetration nélkül sebzése jelentősen visszaesik"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Marksman"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Agility",
     "communityStats": [
       "Health",
       "Armor",
@@ -965,11 +1139,23 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Dante egy kitérő (Dodge) lövész, akinek lándzsái átütnek az ellenséges csapaton, miközben folyamatosan csökkentik azok fő statisztikáját.",
+      "strengths": [
+        "Hatalmas kitérési (Dodge) képesség és buff a csapatnak",
+        "A lándzsák ellökik (Push back) az első vonalat",
+        "Csökkenti az ellenfél fő statisztikáját"
+      ],
+      "weaknesses": [
+        "Fizikai sebzést oszt, de sok ellenfél páncélja felfoghatja",
+        "Varázslók ellen sérülékeny"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Marksman",
+      "Dodge"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Agility",
     "communityStats": [
       "Health",
       "Armor",
@@ -1029,9 +1215,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Mojo egy támadó mágus, aki Voodoo varázslattal és Hex-szel bűvöli el az ellenfeleket, másolva az elszenvedett sebzésüket.",
+      "strengths": [
+        "A Hex képessége megsokszorozza a csapat sebzését",
+        "Folyamatos területi sebzés",
+        "Kisebb gyógyítás a csapatnak"
+      ],
+      "weaknesses": [
+        "Lassú animációk",
+        "Nem kiemelkedő sem gyógyításban, sem nyers sebzésben"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Mage",
+      "Healer"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -1093,9 +1291,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Judge egy támogató hős, aki pajzsokat ad a csapattársainak, és területre ható mágikus sebzést, valamint lassítást oszt.",
+      "strengths": [
+        "Erős védőpajzsok a csapattársaknak",
+        "Lassítja az ellenfél csapatát",
+        "Jó szinergia Julius-szal és Isaac-kel (Way of Progress)"
+      ],
+      "weaknesses": [
+        "Sebzése nagyon alacsony",
+        "A pajzsai varázssebzésen alapulnak, amit könnyű törni"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Support",
+      "Mage"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -1157,11 +1367,23 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Dark Star egy íjász, aki a sötét mágiát ötvözi a fizikális sebzéssel. Képes átvenni az irányítást (Mind Control) egy ellenfél felett.",
+      "strengths": [
+        "Ellenfelek elméjének irányítása (Mind Control)",
+        "Illúziót (klónt) hoz létre, amely sebzést okoz",
+        "Jó szinergia Daredevil-lel"
+      ],
+      "weaknesses": [
+        "Rendkívül alacsony életerő és páncél",
+        "Az elmeirányítás (Mind Control) nagyon esetleges lehet"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Marksman",
+      "Control"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Agility",
     "communityStats": [
       "Health",
       "Armor",
@@ -1221,11 +1443,22 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Artemis egy nyílzáport szóró lövész, akinek a sebzése drasztikusan nő, ha a Fafnir nevű hőssel használják (F.A.R.T. csapat).",
+      "strengths": [
+        "Brutális területi (AoE) kritikus sebzés",
+        "Képes megtisztítani magát a debuffoktól",
+        "A játék egyik legnagyobb DPS-e a megfelelő buffokkal"
+      ],
+      "weaknesses": [
+        "Lassú az elején, fel kell töltenie az energiáját",
+        "Vakítás (Blind) és kitérés (Dodge) ellen hatástalan"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Marksman"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Agility",
     "communityStats": [
       "Health",
       "Armor",
@@ -1285,9 +1518,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Markus egy szent lovag, aki a frontvonalból gyógyít, és halála esetén egy áttetsző szellemként továbbra is a pályán marad és gyógyítja a csapatot.",
+      "strengths": [
+        "Halála után is tovább gyógyítja a csapatot (Szellemként)",
+        "Célzott immunitás (Invulnerability) pajzs",
+        "Támogató tank funkciót is betölt"
+      ],
+      "weaknesses": [
+        "Gyógyítóként nagyon előre áll, így hamar meghal",
+        "Kevés hasznot hoz támadó összeállításokban"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Healer",
+      "Tank"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -1349,9 +1594,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Peppy egy kaotikus mágus, aki pajzsokat ad az első vonalnak. Híres a Cleaver-rel alkotott 'Cleppy' kombójáról.",
+      "strengths": [
+        "Boldness (Pajzs) képessége folyamatos sebzést ad a tanknak",
+        "Kiváló szinergia Cleaver-rel",
+        "Területi kábítás és mágikus sebzés"
+      ],
+      "weaknesses": [
+        "Nagyon függ a szerencsétől (RNG) a sebzése",
+        "Kiszámíthatatlan automatikus harcban"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Mage",
+      "Support"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -1413,9 +1670,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Lian egy varázsló, akinek a specialitása, hogy mindenkit elaltat (Sleep), aki sebzést okoz neki. A területi (AoE) hősök rémálma.",
+      "strengths": [
+        "Automatikus altatás (Sleep) minden sebző ellenfelére",
+        "Kiváló védekezés Keira vagy K'arkh ellen",
+        "Tiszta (Pure) sebzés az altatott ellenfeleken"
+      ],
+      "weaknesses": [
+        "Ha csapattárs sebzi meg az altatott célt, felébred",
+        "Csak védekező stratégiában igazán hatékony"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Mage",
+      "Control"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -1477,11 +1746,23 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "./ui/hero.png",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Cleaver a játék egyik legritkább tankja. Egy hatalmas horgonnyal maga elé húzza az ellenfél leghátsó hősét.",
+      "strengths": [
+        "Húskampó (Hook) megszakítja az ellenfél formációját",
+        "Tiszta (Pure) területi sebzés önmaga körül",
+        "Kiváló szinergia Peppy-vel (Cleppy)"
+      ],
+      "weaknesses": [
+        "Nincs csapatot védő képessége",
+        "Bizonyos hátsó soros hősöket (pl. Dorian) pont, hogy segít, ha előre húzza"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Tank",
+      "Control"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Strength",
     "communityStats": [
       "Health",
       "Armor",
@@ -1541,11 +1822,22 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Ishmael egy rendkívül gyorsan támadó harcos, aki démoni formát (Demon Form) öltve megnöveli a kritikus találatát és vámpírizmusát.",
+      "strengths": [
+        "Hatalmas egyéni (Single-target) kritikus sebzés",
+        "Extrém magas vámpírizmus (Vampirism) túléli a harcokat",
+        "Gyorsan bontja az első vonalat"
+      ],
+      "weaknesses": [
+        "Nagyon sebezhető kábítás (Stun) és vakítás (Blind) ellen",
+        "Armor Penetration támogatás nélkül gyenge a tankok ellen"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Warrior"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Agility",
     "communityStats": [
       "Health",
       "Armor",
@@ -1605,11 +1897,23 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Lilith egy démoni tank és mágia-sebző hős, aki folyamatosan növeli a saját maximális életerejét (Health) a harc során.",
+      "strengths": [
+        "Folyamatosan növekvő maximális HP a harc végéig",
+        "Hatalmas területi (AoE) mágikus sebzés elölről",
+        "Jó szinergia a Kaos (Chaos) frakcióval (pl. Xesha, Dorian)"
+      ],
+      "weaknesses": [
+        "Kezdetben nagyon alacsony az életereje, időre van szüksége",
+        "Képességei a saját HP-jába kerülnek"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Tank",
+      "Mage"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Strength",
     "communityStats": [
       "Health",
       "Armor",
@@ -1669,11 +1973,23 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Luther egy ugró tank, aki az Ultimate képességével egyből az ellenség formációjának a közepébe veti magát, hogy káoszt okozzon.",
+      "strengths": [
+        "A beugrása teljesen megbontja az ellenfél védekezését",
+        "Folyamatos területi kábítás (Stun) a hátsó sorban",
+        "Elvonja a lövészek figyelmét az első vonalról"
+      ],
+      "weaknesses": [
+        "Ha beugrik, a te első vonalad (pl. a lövészeid) védelem nélkül maradhat",
+        "Egyedül hamar fókuszált sebzést kap és meghal"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Tank",
+      "Control"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Strength",
     "communityStats": [
       "Health",
       "Armor",
@@ -1733,11 +2049,23 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Qing Mao egy fürge harcos, akinek a lándzsája az ellenfél maximális életereje (HP) arányában okoz sebzést, így a tankok réme.",
+      "strengths": [
+        "Százalékos (%-os) sebzés, ami zúzza a magas HP-jú tankokat (pl. Chabba, Cleaver)",
+        "Páncéltörő (Armor Penetration) buffot ad a csapatnak",
+        "Hátralöki az ellenséges tankot"
+      ],
+      "weaknesses": [
+        "Nagyon törékeny, hamar meghal az első vonalban",
+        "A Dodge (kitérő) hősök ellen sokat hibázik"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Warrior",
+      "Marksman"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Agility",
     "communityStats": [
       "Health",
       "Armor",
@@ -1797,9 +2125,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Dorian egy különleges gyógyító. A körülötte lévő csapattársaknak hatalmas Vámpírizmus (Vampirism) aurát ad, így azok a saját sebzésükkel gyógyítják magukat.",
+      "strengths": [
+        "Brutális Vámpírizmus (Vampirism) aura a körülötte állóknak",
+        "Még akkor is gyógyít (az aura megmarad), ha ő maga már meghalt!",
+        "Démoni szinergia"
+      ],
+      "weaknesses": [
+        "Csak a közvetlen közelében lévőket gyógyítja",
+        "A csapat pozicionálása kulcsfontosságú (pl. nem jó olyanokkal, akik kiugranak az aurájából)"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Support",
+      "Healer"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -1861,9 +2201,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Cornelius egy speciális varázsló, aki a játék legmagasabb intelligenciájú (Intelligence) hősére ejt egy hatalmas monolitot.",
+      "strengths": [
+        "Képes egyetlen ütéssel megölni az ellenség legerősebb mágusát",
+        "Csökkenti az ellenfél varázserejét",
+        "Mágikus védelmet (Magic Defense) ad a csapatnak"
+      ],
+      "weaknesses": [
+        "Nagyon szituációs hős (csak mágusok ellen hasznos)",
+        "Fizikai csapatok ellen szinte teljesen haszontalan"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Mage",
+      "Support"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -1925,9 +2277,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "./ui/hero.png",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Jet egy exkluzív (és drága) támogató hős, akinek a specialitása, hogy minden csapattársának megengedi, hogy kritikus sebzést (Critical Hit) okozzanak.",
+      "strengths": [
+        "Bármelyik hőst kritikussá tudja tenni (pl. Keira, K'arkh)",
+        "Gyorsítja és gyógyítja az első vonalat",
+        "Megakadályozza az ellenfél gyógyulását"
+      ],
+      "weaknesses": [
+        "Nehéz hozzájutni (csak Soul Coin boltban)",
+        "Az életereje elenyésző, könnyen meghal"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Support",
+      "Healer"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -1989,9 +2353,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Helios a nap mágusa, aki a kritikus (Critical Hit) sebzést okozó hősök legfőbb természetes ellensége (counter).",
+      "strengths": [
+        "Valahányszor az ellenfél kritikus ütést mér, Helios egy lángoló gömböt lő ki rá büntetésül",
+        "Jó területi varázssebzés",
+        "Páncélt (Armor) ad a csapatnak"
+      ],
+      "weaknesses": [
+        "Sebzése szóródik",
+        "Olyan csapatok ellen, ahol nincs kritikus hős (pl. tiszta mágusok), sokkal kevésbé hatékony"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Mage",
+      "Support"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -2053,9 +2429,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Lars a híres 'Iker' (Twins) formáció férfi tagja (Krista testvére). Villámmal sebez, és egy hatalmas tornádóval összehúzza az ellenfél formációját.",
+      "strengths": [
+        "Vízjelekkel (Water mark) megnöveli a villámsebzését",
+        "A tornádója megszakítja az ellenfelek pozícióját",
+        "Brutális szinergia Krista-val"
+      ],
+      "weaknesses": [
+        "Krista nélkül a sebzése nagyon alacsony",
+        "Sérülékeny a hátsó sorba célzó sebzések (pl. Jhu) ellen"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Mage",
+      "Control"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -2117,9 +2505,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Krista a híres 'Iker' (Twins) formáció női tagja. Félig tank, félig mágus, aki jégcsapokat (Ice Spikes) idéz az ellenfél lába alá.",
+      "strengths": [
+        "Ha Lars tornádója áthúzza az ellenfelet a jégcsapokon, a sebzés megsokszorozódik",
+        "Pajzsot idéz magára, így képes tankolni",
+        "Jégtömbbe fagyasztja magát, ha kevés az élete"
+      ],
+      "weaknesses": [
+        "Lars nélkül a jégcsapjai szinte ártalmatlanok",
+        "Lassú az elején"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Mage",
+      "Tank"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -2181,11 +2581,24 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Jorgen az egyik legjobb irányító hős, aki képes megakadályozni, hogy az ellenfél energiát (Energy) termeljen, így nem tudnak ultimate képességet használni.",
+      "strengths": [
+        "Energia-blokkoló Ultimate (Leper's Curse)",
+        "Képes ellopni a legelső hős energiáját",
+        "A sebzést az ellenfél hátsó sorára irányítja át",
+        "Kiváló pajzs a legsebezhetőbb csapattársnak"
+      ],
+      "weaknesses": [
+        "A sebzése teljesen elhanyagolható",
+        "Gyakran az ellenfelet segíti, ha a pajzsa nem a megfelelő hősre megy"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Control",
+      "Support"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Strength",
     "communityStats": [
       "Health",
       "Armor",
@@ -2245,9 +2658,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Maya egy varázslatos virágot ültet a pálya közepére, amely hatalmas területi gyógyítást ad a csapatnak és méreggel (Pure damage) öli az ellenfelet.",
+      "strengths": [
+        "Hatalmas folyamatos gyógyítás, amíg a virág él",
+        "Tiszta (Pure) sebzés az ellenfeleknek",
+        "Összehúzza az ellenfeleket a pálya közepére"
+      ],
+      "weaknesses": [
+        "A virága elpusztítható, és akkor a gyógyítás megszűnik",
+        "A gyógyítás lassan pörög fel"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Healer",
+      "Mage"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -2309,11 +2734,22 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Jhu egy vadász, aki mindig az ellenfél leghátsó emberét (Support/Healer) támadja, miközben képes sebezhetetlenné válni (I will not die!).",
+      "strengths": [
+        "Célzottan lövi a hátsó sort",
+        "Az Ultimate képessége alatt nem tud meghalni (Sebezhetetlen)",
+        "A Guild Raid (Hydra) legjobb sebzője"
+      ],
+      "weaknesses": [
+        "Képes a saját életerejét elégetni a támadásaihoz",
+        "Ha az ellenfél hátsó sora jól védett (pl. Martha), Jhu elakad"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Marksman"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Strength",
     "communityStats": [
       "Health",
       "Armor",
@@ -2373,9 +2809,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "./ui/hero.png",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Elmir egy mozgékony harcos, aki a harc elején elöl küzd, majd hátraszaltózik, és klónokat (Mirage) hoz létre maga elé.",
+      "strengths": [
+        "A klónok elnyelik az ellenfél sebzését és becsapják a célzó rendszert",
+        "Armor Penetration (Páncéltörő) buff a csapatnak",
+        "Kiváló szinergia Daredevil-lel (E.D.D. csapat)"
+      ],
+      "weaknesses": [
+        "Rendkívül törékeny, ha kábítást (Stun) kap mielőtt hátraszaltózna",
+        "Klónjai hamar eltűnnek területre ható (AoE) sebzésnél"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Warrior",
+      "Marksman"
     ],
     "mainStat": "Agility",
     "communityStats": [
@@ -2437,11 +2885,22 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Ziri egy skorpió-királynő tank, aki elássa magát a föld alá, amikor az életereje alacsonyra csökken, hogy regenerálódjon.",
+      "strengths": [
+        "A játék legmagasabb alappáncéljával (Armor) rendelkezik",
+        "Hatalmas regeneráció, amikor elássa magát",
+        "Kiváló túlélő (Survivor) képességek"
+      ],
+      "weaknesses": [
+        "Amikor elássa magát, a csapat többi tagja védtelen marad az első vonalban",
+        "Kevés hasznot hoz az ellenfél irányításában (Control)"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Tank"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Strength",
     "communityStats": [
       "Health",
       "Armor",
@@ -2501,11 +2960,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Nebula a játék legfontosabb támogatója. Egy varázslatos gömbbel extrém mértékben felerősíti (Buff) a mellette álló két hős sebzését.",
+      "strengths": [
+        "Gigantikus bónusz a fizikai és mágikus sebzésre az előtte és mögötte állónak",
+        "Képes gyógyítani és lemosni a negatív (Debuff) hatásokat",
+        "Csökkenti az ellenfelek energiáját"
+      ],
+      "weaknesses": [
+        "Nagyon függ a csapat pozíciójától, ha rossz helyen áll, haszontalan hőst erősít (pl. egy gyógyítót a sebző helyett)"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Support"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Agility",
     "communityStats": [
       "Health",
       "Armor",
@@ -2565,11 +3034,22 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "K'arkh az egyik legrettegettebb fizikai sebző. Felemeli a levegőbe az ellenfeleit (Knockup), majd csápjaival hatalmas sebzést oszt ki rajtuk.",
+      "strengths": [
+        "Brutális, egy csapásból ölő (One-shot) fizikai sebzés a levegőben lévőkön",
+        "Kiváló szinergia Faceless-szel vagy Kai-val",
+        "Gyors energia-töltés blokkoláskor"
+      ],
+      "weaknesses": [
+        "Andavari teljes mértékben blokkolja a fellökését, ezáltal a sebzését",
+        "A Vakítás (Blind) hatástalanítja"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Warrior"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Agility",
     "communityStats": [
       "Health",
       "Armor",
@@ -2629,11 +3109,23 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Rufus a mágusok rémálma. A varázslatok sebzéséből nem meghal, hanem gyógyul, és mágikus pajzsokkal védi a csapatot.",
+      "strengths": [
+        "Fizikailag lehetetlen varázssebzéssel vagy tiszta sebzéssel (Pure) megölni",
+        "Pajzsa elnyeli a mágiát és gyógyítja a csapatot",
+        "Rakhi buff a mágus-csapatok ellen"
+      ],
+      "weaknesses": [
+        "Fizikai sebzéssel nagyon könnyen és gyorsan elpusztítható",
+        "Nagyon specifikus hős (Niche)"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Tank",
+      "Support"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Strength",
     "communityStats": [
       "Health",
       "Armor",
@@ -2693,9 +3185,22 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Celeste két formával (Fény és Sötétség) rendelkezik. Fény formában gyógyít és debuffokat mos le, Sötét formában brutális mágia sebzést oszt és megakadályozza az ellenfél gyógyulását.",
+      "strengths": [
+        "Gyors formaváltás, extrém sokoldalúság",
+        "Blokkolja a teljes ellenséges gyógyulást (Cursed Flame)",
+        "Erős egyszemélyes gyógyítás és tiszta sebzés",
+        "Folyamatosan tölti a Magic Attack artifact buffját"
+      ],
+      "weaknesses": [
+        "Kézi vezérlés nélkül (Auto harcban) kevésbé hatékony, mert rosszkor válthat formát",
+        "Rendkívül törékeny"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Healer",
+      "Mage"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -2757,11 +3262,23 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Astrid és Lucas egy egyedi páros. Astrid távolról lő, majd ha betelik az energiája, Lucas (a kedvence) átváltozik egy hatalmas dühös bestiává, és tankol/sebez elöl.",
+      "strengths": [
+        "Lucas immunis a kábításra és sebzést nyel el az első vonalban",
+        "Kiváló Armor Penetration buff a csapatnak",
+        "Gyors támadások"
+      ],
+      "weaknesses": [
+        "Amíg Lucas nincs dühöngő formában, a sebzésük alacsony",
+        "Lassú tempójú harcot igényelnek"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Marksman",
+      "Warrior"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Agility",
     "communityStats": [
       "Health",
       "Armor",
@@ -2821,9 +3338,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Satori egy rókaszellem, aki rókatüzeket (Fox Fire) helyez az ellenfelekre. Amikor elsüti az ultimate-jét, ezek a tüzek egyszerre robbannak fel hatalmas sebzéssel.",
+      "strengths": [
+        "Képes egy pillanat alatt megölni az egész ellenséges csapatot",
+        "Bünteti (Fox fire-t tesz) azokat, akik bónusz energiát kapnak (pl. Jorgen, Orion)",
+        "Erős Armor buffot ad"
+      ],
+      "weaknesses": [
+        "Lassú: sokáig tart, mire felrakja a tüzeket",
+        "Ha meghal az ultimate előtt, a sebzése nulla",
+        "Nebula le tudja tisztítani a tüzeket"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Mage"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -2885,9 +3414,21 @@
     "faction": "Way of Honor",
     "icon": "medical_services",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCG6lxJJqTNYgKQaAhBBIve6sP48WtQ79wXwB31STYvS_fJ-ifLu8DamgyQBCks8L6yJCUPYGDeGhoKc1ZTU9wFJ35yJj1DceIANTHeZ0bHH3lcpqChQUe7GZzWpBn07B7_UA-kFqqPHzDAN27y81N_JvaeNvhZhoAWUvjU1CreCQzaYjZdB_LMKmhLwsEpyGefKvWnu4kl-Z7IOpOZdIzuK3gMD5RoTFrnr98rrlHtQaULRrhMQP7Xpm5anIhHSstuGa2rWDxSfXg",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Martha a játék legjobb gyógyítója. A hátsó sorban ücsörögve teát főz, amivel extrém területi gyógyítást (Tea Party) biztosít, és felgyorsítja az egész csapatot.",
+      "strengths": [
+        "A legerősebb és legmegbízhatóbb területi gyógyítás a játékban",
+        "Hatalmas sebesség-bónuszt (Speed) ad a csapatnak",
+        "Hihetetlenül szívós (Tanky) a hátsó sorban, ellenáll Jhu és Cleaver támadásainak"
+      ],
+      "weaknesses": [
+        "Ha elpusztítják a teáskannáját (területi sebzéssel), a gyógyítás leáll",
+        "Nem oszt ki sebzést"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Healer",
+      "Support"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -2949,11 +3490,23 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Andavari a K'arkh- és Lars-formációk tökéletes ellenszere. Egy pajzzsal megvédi a legelső hőst minden fellökéstől és húzástól.",
+      "strengths": [
+        "Tökéletesen blokkolja a helyváltoztató effekteket (Knockup, Pull)",
+        "Masszív pajzsot ad magának vagy a tanknak",
+        "Másodlagos tankként is kiválóan funkcionál"
+      ],
+      "weaknesses": [
+        "Armor Penetration nélkül a saját sebzése nagyon alacsony",
+        "Lövész-alapú csapatok (akik nem lökdösődnek) ellen kevesebb haszna van"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Support",
+      "Control"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Strength",
     "communityStats": [
       "Health",
       "Armor",
@@ -3013,11 +3566,22 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Sebastian a kritikus találatot (Critical Hit) okozó hősök legjobb barátja. Ezenkívül pajzsával megvédi a csapatot minden átoktól (Stun, Silence, Mind Control).",
+      "strengths": [
+        "Extrém mértékben növeli a csapattársak kritikus sebzését (Extra pure damage)",
+        "Lemos és megelőz minden negatív (Control) debuffot a csapatról",
+        "Kiváló szinergia Jet-tel, Daredevil-lel, Yasmine-nal"
+      ],
+      "weaknesses": [
+        "Kritikus sebző nélkül a sebzés-növelő képessége haszontalan",
+        "Nem tud gyógyítani"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Support"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Agility",
     "communityStats": [
       "Health",
       "Armor",
@@ -3077,11 +3641,23 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Yasmine egy bérgyilkos, aki az ellenfél legalacsonyabb páncélzatú hőséhez ugrik, megbénítja, és folyamatos kritikus ütéseivel mérgezi.",
+      "strengths": [
+        "Egyedül képes kiiktatni az ellenfél hátul álló mágusait és gyógyítóit",
+        "Extrém magas kitérési (Dodge) esély",
+        "Kiváló kritikus és tiszta (Méreggel való) sebzés"
+      ],
+      "weaknesses": [
+        "Corvus oltára (Altar) pillanatok alatt megöli",
+        "Helios lánggömbjei a sok kritikus találat miatt azonnal elégetik Yasmine-t"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Warrior",
+      "Assassin"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Agility",
     "communityStats": [
       "Health",
       "Armor",
@@ -3141,11 +3717,23 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Corvus az Élőholtak (Eternity) királya. Egy oltárt (Altar of Souls) idéz meg, amely minden ellenfelet tiszta sebzéssel (Pure damage) büntet, aki megüti a csapatát.",
+      "strengths": [
+        "Az oltár brutálisan bünteti a területi (AoE) és gyors támadókat (pl. Keira, Yasmine)",
+        "Csökkenti az ellenség Armor és Magic Defense értékét",
+        "Kiváló szinergia lányával, Morrigan-nel"
+      ],
+      "weaknesses": [
+        "Az oltár megsemmisül, ha Corvus sebzést kap",
+        "A tankolási képessége (szívóssága) elmarad Astaroth-tól vagy Cleaver-től"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Tank",
+      "Support"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Strength",
     "communityStats": [
       "Health",
       "Armor",
@@ -3205,9 +3793,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Morrigan Corvus lánya. Képes csontvázakat idézni, amik elöl tankolnak, és a legfontosabb: megakadályozza az ellenfél (pl. Astaroth) újraéledését.",
+      "strengths": [
+        "Blokkolja a Resurrection (újraéledés) képességeket",
+        "A csontvázak felfogják az egycélpontú lövéseket (pl. Jhu, K'arkh)",
+        "Gyógyítja a csontvázakat és az Élőholt (Eternity) társait"
+      ],
+      "weaknesses": [
+        "Ha nincs Eternity frakciós csapattársa, sokkal kevesebbet ér",
+        "A csontvázak adhatnak energiát és vámpírizmust a sebző ellenfeleknek"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Healer",
+      "Support"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -3269,11 +3869,23 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Isaac egy zseniális mérnök (Way of Progress), akit kifejezetten a varázsló-csapatok megsemmisítésére alkottak. Elnyeli a mágiát, majd rakéták formájában visszalövi.",
+      "strengths": [
+        "Minden mágikus támadással egyre erősebb lesz",
+        "Hatalmas Armor Penetration (Páncéltörés) buff a társaknak",
+        "Az ultimate képessége elnémítja a mágusokat",
+        "Progress csapatokban (pl. Julius, Ginger) megállíthatatlan"
+      ],
+      "weaknesses": [
+        "Ha nincsenek mágusok az ellenséges csapatban, Isaac alig tud energiát tölteni és nagyon lassú lesz"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Support",
+      "Marksman"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Agility",
     "communityStats": [
       "Health",
       "Armor",
@@ -3333,9 +3945,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Alvanor a Természet (Way of Nature) frakció védelmezője. Folyamatosan gyógyítja a társait, és egy rúnapajzzsal blokkolja az alapvető (Basic) támadásokat.",
+      "strengths": [
+        "Rendkívüli szinergia Mushy-val és Aurorával",
+        "Duplán gyógyítja a Nature frakció hőseit",
+        "A rúnapajzs felfogja az egyszerű támadások sebzését"
+      ],
+      "weaknesses": [
+        "Nature társak nélkül a képességei csak fele olyan erősek",
+        "Lassú gyógyító, nem tud megvédeni a gyors, nagy sebzésektől (Burst)"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Support",
+      "Mage"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -3397,11 +4021,23 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "./ui/hero.png",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Tristan egy démonvadász pap, aki Armor Penetration (Páncéltörés) buffot ad minden mögötte állónak, és folyamatosan elszívja az ellenfél energiáját.",
+      "strengths": [
+        "Kiváló szinergia Oya-val, Fafnirral, Yasmine-nal",
+        "Folyamatos energiaelszívás (Energy drain)",
+        "Nagyon gyorsan képes Ultimate-et használni, ha a tankja elöl sok sebzést kap"
+      ],
+      "weaknesses": [
+        "Közelharcos létére meglehetősen kevés az életereje",
+        "Kevés az önálló (nyers) sebzése"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Warrior",
+      "Support"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Strength",
     "communityStats": [
       "Health",
       "Armor",
@@ -3461,9 +4097,21 @@
     "faction": "Way of Nature",
     "icon": "magic_button",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBtRWzAI2aYdJV9CeXCwMkyUPirthWEPfx4-0Uxlphp8QzrQDS5othg7MyhSvql5Y78JieXgwnQXUlE9bG7ygcSMTreD6rZ6owmxkQgcCZOZbwoqWN7lXIqiiKySLBMknW7RMNh3vSwUoLCdn7NhrDx2rVP1Wu7vUOiAhPHKEKqnTKhiG6qyoq46EsNs3u3QGCk8In4OiU3VDRrmKBHOACF7SXHGU_Fc4xagMVBF3O2QBlEagTCWIFBWYpWpvWH4eGxbux2LRNv9Gw",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Iris a varázslók gyilkosa. Kitépi az ellenfél lelkét, amelynek nincsenek védelmei (Armor/Magic Defense), és ha azt sebzi, az ellenfél valódi teste sérül.",
+      "strengths": [
+        "A lélek-kitépés (Expose Soul) miatt a tankok páncélja semmit sem ér ellene",
+        "Tiszta (Pure) sebzést oszt az ellenség frontvonalára",
+        "Mágikus sebzés-felfogó (Familiar) pajzs"
+      ],
+      "weaknesses": [
+        "Nagyon sérülékeny hátulról jövő sebzésekre (pl. Jhu)",
+        "Ha a lélek-állapot lejár mielőtt megölnék, az ellenfél túlélheti"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Mage",
+      "Control"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -3525,9 +4173,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "./ui/hero.png",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Amira a sivatag dzsinnje (Mystery frakció). Hatalmas aranyesőt hullajt az ellenfélre, ami csökkenti a sebzésüket, majd felrobban.",
+      "strengths": [
+        "Csökkenti a kritikus ütés (Critical) sebzését",
+        "A mágusok (Intelligence hősök) ellenfele",
+        "Extrém magas területi varázssebzés a harc végén (ha túléli)"
+      ],
+      "weaknesses": [
+        "Borzasztóan lassú: nagyon sok idő kell neki, mire az illúziók felrobbannak",
+        "A gyors burst csapatok hamarabb megölik, minthogy érvényesülne"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Support",
+      "Mage"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -3589,11 +4249,22 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Fafnir egy törp kovács (Honor frakció), aki pajzsot kovácsol a csapat fő Agility-sebzőjének (pl. Artemis, Yasmine, Keira), és megakadályozza, hogy az meghaljon.",
+      "strengths": [
+        "Gyakorlatilag halhatatlanná teszi a célpontját (ha a pajzs rajta van)",
+        "Brutális fizikai sebzés buffot ad (Blacksmith's Art)",
+        "Megbénítja (Stun) a pajzs támadóit"
+      ],
+      "weaknesses": [
+        "Nem tud mindenkit megvédeni, csak egy (Agility) célpontot fókuszál",
+        "Lassú tempója miatt sebzéstípusfüggő"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Support"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Strength",
     "communityStats": [
       "Health",
       "Armor",
@@ -3653,9 +4324,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Aidan egy tüzes mágus (Kayla testvére). A saját életerejét áldozza fel, hogy a társait (elsősorban Kaylát) megvédje és gyógyítsa. A Kaos (Chaos) frakció motorja.",
+      "strengths": [
+        "Képes túlélni a halálos sebzéseket, ha a kötött társa (Kayla) még él",
+        "Brutális szinergia Kaylával",
+        "Pajzsot ad az egész csapatnak"
+      ],
+      "weaknesses": [
+        "Sok életerőt áldoz fel, így rossz szinergia esetén hamar meghalhat",
+        "Csak Chaos csapattal vagy Kaylával igazán kiemelkedő"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Healer",
+      "Mage"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -3717,11 +4400,23 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Kayla egy tüzes bérgyilkos (Aidan testvére), aki a csata elején azonnal beugrik az ellenfél formációjába, és lángoló sebzést okoz.",
+      "strengths": [
+        "Azonnal nyomást gyakorol a hátsó sorra (Mage/Healer)",
+        "Aidan-nal együtt szinte halhatatlan párost alkotnak",
+        "Hatalmas Magic Defense buffot ad a túléléshez"
+      ],
+      "weaknesses": [
+        "Beugrása után könnyen fókuszba kerül",
+        "Irányító (Control) hősök, kábítás (Stun) megállítják"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Warrior",
+      "Assassin"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Agility",
     "communityStats": [
       "Health",
       "Armor",
@@ -3781,9 +4476,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Mushy and Shroom a Természet (Way of Nature) tankja/mágusa. Egy élő gomba, amely gombaspórákat szaporít, amik gyógyítanak és sebeznek.",
+      "strengths": [
+        "Alvanorral kiegészítve elpusztíthatatlan gombaerdőt hoz létre",
+        "A klónok (kis gombák) felfogják a sebzést",
+        "Brutális mágikus területi sebzés a harc elhúzódásával"
+      ],
+      "weaknesses": [
+        "Jorgen, aki blokkolja az energiát, nagyon lelassítja a szaporodást",
+        "Kevés a fizikai védelme a klónok megjelenése előtt"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Mage",
+      "Tank"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -3845,11 +4552,23 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Julius egy kiborg macska, aki energiapajzsokat ad az egész csapatnak (különösen a Way of Progress tagjainak, mint Isaac és Judge), ami tisztítja a negatív effekteket.",
+      "strengths": [
+        "Minden pajzs levételi kísérletnél lemos (Cleanse) egy debuffot",
+        "Isaac-kel és Judge-dzsal áthatolhatatlan (Shield) csapatot alkotnak",
+        "Gyorsítja a Progress társakat"
+      ],
+      "weaknesses": [
+        "Iris, aki ignorálja a pajzsokat és páncélt, könnyen kivégzi",
+        "A pajzstörő mechanikák ellen sebezhető"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Tank",
+      "Support"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Strength",
     "communityStats": [
       "Health",
       "Armor",
@@ -3909,9 +4628,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "./ui/hero.png",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Polaris a sarkcsillag mágusa, aki megfagyasztja (Freeze) az időt és teret az ellenfelek számára, miközben folyamatos hideg sebzést oszt.",
+      "strengths": [
+        "Többszörös fagyasztás, amely lelassítja az ellenfél teljes csapatát",
+        "Extrém magas Control hatás",
+        "A fagyasztott ellenfelek nem tudnak kitérni (Dodge)"
+      ],
+      "weaknesses": [
+        "Sebastian pajzsa teljesen immunissá teszi a csapatot a fagyasztása ellen",
+        "Viszonylag alacsony saját sebzés"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Control",
+      "Mage"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -3973,11 +4704,22 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "./ui/hero.png",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Lara Croft egy legendás vendéghős (Tomb Raider). Két pisztolyával és ősi ereklyékkel operál, hatalmas sebzést kiosztva, miközben kitér a támadások elől.",
+      "strengths": [
+        "Erős kitérés (Dodge)",
+        "Hatalmas fizikai sebzés és relikvia képességek",
+        "Folyamatos nyomás a középső/hátsó soron"
+      ],
+      "weaknesses": [
+        "A megszerzése (limitált esemény) miatt nehéz fejleszteni a csillagait",
+        "Sérülékeny a célzott mágia (pl. Satori) ellen"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Marksman"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Agility",
     "communityStats": [
       "Health",
       "Armor",
@@ -4037,11 +4779,22 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "./ui/hero.png",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Augustus egy gladiátor harcos. A láncával magához tudja húzni az ellenfeleket, és a tömegbe csapva területi (AoE) kábítást (Stun) okoz.",
+      "strengths": [
+        "Formáció megbontása a húzással (Pull)",
+        "Területi (AoE) kábítás az első vonalban",
+        "Kiváló túlélő képesség"
+      ],
+      "weaknesses": [
+        "Egy okos ellenfél-pozicionálás (pl. Andavari) semlegesítheti a képességeit"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Warrior",
+      "Control"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Strength",
     "communityStats": [
       "Health",
       "Armor",
@@ -4101,11 +4854,22 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "./ui/hero.png",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Ninja Turtles (Tini Nindzsa Teknőcök) egy különleges, több karaktert egybefogó egység, akik a pizzahatalommal és kombóikkal pusztítják a gonoszt.",
+      "strengths": [
+        "Sokoldalú kombó képességek (védekezés és támadás egyszerre)",
+        "Területi sebzések",
+        "Kiváló szinergia"
+      ],
+      "weaknesses": [
+        "Nagyon függnek az Ultimate beindításától",
+        "Sebezhetőek az energiablokkoló hősök ellen (pl. Jorgen)"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Warrior"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Strength",
     "communityStats": [
       "Health",
       "Armor",
@@ -4165,9 +4929,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Folio egy lebegő varázskönyv, aki a szavak mágiájával operál. Képes elnémítani az ellenfelet és csökkenteni a varázserejüket.",
+      "strengths": [
+        "Célzott Silence (Némítás)",
+        "Mágia-csökkentés (Magic Attack debuff)",
+        "Területi (AoE) sebzés a harc közepén"
+      ],
+      "weaknesses": [
+        "Törékeny",
+        "Fizikai csapatok (pl. Yasmine, Keira) ellen gyenge, mert ők nem használnak varázserejét"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Mage",
+      "Control"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -4229,9 +5005,20 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Lyria egy misztikus dalnok, akinek a hangja gyógyítja a társait és pajzzsal veszi körül őket, miközben az ellenfél pontosságát rontja.",
+      "strengths": [
+        "Dalok (Songs) alapján buffolja a csapatot",
+        "Gyógyítás és pajzs",
+        "Csökkenti az ellenség sebzését"
+      ],
+      "weaknesses": [
+        "Lassú gyógyítás a robbanékony (burst) sebzések ellen",
+        "Nincs támadóereje"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Healer"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -4293,11 +5080,23 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "./ui/hero.png",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Guus egy varázslatos liba, ami/aki minden képzeletet felülmúló, idegesítő gágogásával elvonja az ellenfelek figyelmét (Taunt) és kábít.",
+      "strengths": [
+        "Taunt (Figyelemelterelés): mindenki őt támadja, védve a csapatot",
+        "Magas Armor és Dodge buffok",
+        "Ijesztő Gágogás (Kábítás)"
+      ],
+      "weaknesses": [
+        "A Taunt miatt hamar meghalhat, ha túl sok sebzést kap egyszerre",
+        "Szigorúan védekező karakter"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Control",
+      "Tank"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Strength",
     "communityStats": [
       "Health",
       "Armor",
@@ -4357,11 +5156,23 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Cascade egy víz-alapú harcos, akinek a vízsugarai mindenkit hátralöknek, miközben folyamatosan lassítja (Slow) a mozgásukat.",
+      "strengths": [
+        "Folyamatos Knockback (Hátralökés)",
+        "Lassítja az ellenfél támadási sebességét",
+        "Víz alapú szinergiák"
+      ],
+      "weaknesses": [
+        "Gyenge alapsebzés",
+        "A hátralökés néha pont rosszkor mozdítja ki az ellenfelet egy területi sebzésből (pl. Orionéból)"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Warrior",
+      "Control"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Agility",
     "communityStats": [
       "Health",
       "Armor",
@@ -4421,9 +5232,20 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Electra von Grave a viharok úrnője, aki folyamatos láncvillámokkal ritkítja az ellenfelek sorait.",
+      "strengths": [
+        "A láncvillám átszalad a teljes csapaton",
+        "Bénulást (Paralysis) okoz",
+        "Kiváló sebzés osztó (DPS)"
+      ],
+      "weaknesses": [
+        "Törékeny, védelemre szorul",
+        "Ha csak egy ellenfél marad, a láncvillám sokat veszít az erejéből"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Mage"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -4485,9 +5307,20 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Fluffy egy varázslatos házi kedvenc formájú hős, aki puha bundájával pajzsot biztosít, és dorombolásával gyógyít.",
+      "strengths": [
+        "Védi és gyógyítja a legalacsonyabb életerejű társat",
+        "Dorombolás (Regeneráció)"
+      ],
+      "weaknesses": [
+        "Nagyon specifikus szerepkör",
+        "Nincs érdemi sebzése"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Support",
+      "Healer"
     ],
     "mainStat": "Intelligence",
     "communityStats": [
@@ -4549,11 +5382,21 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Byrma egy robbanószer-szakértő (Demolitionist), aki aknákat telepít és gránátokat dobál a pályára.",
+      "strengths": [
+        "Az aknák a lépések hatására felrobbannak",
+        "Hatalmas területi (AoE) fizikai sebzés",
+        "Armor Penetration (Páncéltörés)"
+      ],
+      "weaknesses": [
+        "Ha az ellenfél nem mozog sokat (nem lépnek az aknára), a sebzése lassabban jön ki"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Marksman"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Agility",
     "communityStats": [
       "Health",
       "Armor",
@@ -4613,11 +5456,23 @@
     "faction": "Unknown",
     "icon": "person",
     "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuASGUs5uCqmWmEFcV80jDmRY9nfWXDT6c1JxPxPT6-zvQatHUvyx46ZBmlpxo2PdcmY0X4tXL8fVPDh7hPRtw1TkB6y_5FLChaR8s_9pzxfhRszH4riJFI433G3ond0pEBJfUatkfV48szH6Wlti-8Da-KsmIqRCKGO9hrO9y5OEMs4D-Kqt3LSl7OkElW_4iD0-ibIxaE_TS_Mq-McGGLyMrqeEKMv6Il7ayqsRjuShKWkbdfX1w8OmOVPJcCNKUeVoZOUl_XlX2A",
-    "description": "Nincs leírás megadva.",
+    "description": {
+      "summary": "Adam a teremtés erejével felruházott harcos, aki pajzsokkal és földrengéssel dominálja az első vonalat.",
+      "strengths": [
+        "Földrengés (Earthquake) kábítás",
+        "Magas Health és Armor",
+        "Fizikai sebzés szinergiák"
+      ],
+      "weaknesses": [
+        "Lassú mozgás és támadási sebesség",
+        "Kiszolgáltatott a mágikus sebzéseknek"
+      ]
+    },
     "roles": [
-      "Ismeretlen"
+      "Warrior",
+      "Tank"
     ],
-    "mainStat": "Intelligence",
+    "mainStat": "Strength",
     "communityStats": [
       "Health",
       "Armor",

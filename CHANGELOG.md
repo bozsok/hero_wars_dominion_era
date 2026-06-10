@@ -2,6 +2,20 @@
 
 Minden említésre méltó változtatás a projektben ebben a fájlban lesz rögzítve.
 
+## [0.3.7] - 2026-06-10
+
+### Hozzáadva (Added)
+- **Hősismertető és -értékelés:** A `HeroModal`-ba bekerült egy vadonatúj, magyar nyelvű „Leírás & Értékelés” fül, amely mostantól az alapértelmezett nézet. Itt olvasható a hősök részletes története, valamint vizuálisan (✅ és ❌ ikonokkal) kiemelve láthatók az erősségek, a gyengeségek, a fő statisztika és a szerepkör. Ez mind a 73 hős számára legenerált, magas minőségű szövegekre épül.
+- **Részletes hőskártyafejléc a modális ablakban:** A `HeroModal` fejléce kibővült. A hősök képe körül immár pontosan ugyanaz a minőségi keret, szintjelvény és csillagozás jelenik meg, mint a főoldalon lévő hőskártyákon.
+
+### Megváltoztatva (Changed)
+- **Magyar nyelvű fülek:** A `HeroModal`-ban az összes fül neve (pl. *General & Stats* -> *Általános & Statisztikák*) teljesen magyarosítva lett.
+- **Szerepkörök megjelenítése a frakciók helyett:** A főoldali hőskártyákon a hősök neve alatt eddig látható, sokszor zavaró angol nyelvű frakciók (pl. „Way of Nature”) helyére a frissen legenerált és hasznosabb szerepkörök (pl. Tank, Marksman) kerültek.
+- **Lokális képbetöltés:** Az alkalmazás mostantól teljesen függetlenedett a külső Google Drive-képlinkektől (`hero.img`). A `HeroModal` és a `HeroCard` kizárólag a `public/heroes/` mappában lévő, azonosító alapján hivatkozott lokális képeket (`./heroes/{id}.png`) használja, a hiba esetén lefutó felesleges fallback-logikák pedig eltávolításra kerültek.
+
+### Eltávolítva (Removed)
+- **Frakciók a modális ablak fejlécéből:** A `HeroModal` fejlécéből kikerült a frakciónév és az ikon, mivel az angol nyelvű szöveg zavaró volt, és a fontos információk (szerepkör, statisztika) már az új „Leírás & Értékelés” fülön kaptak helyet.
+
 ## [0.3.6] - 2026-06-10
 
 ### Hozzáadva (Added)

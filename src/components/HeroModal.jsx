@@ -20,10 +20,22 @@ const GlyphTypes = [
 const HeroModal = ({ hero, onClose }) => {
   const { updateHeroData, isViewMode } = useContext(HeroContext);
   const [heroData, setHeroData] = useState({ ...hero });
-  const [activeTab, setActiveTab] = useState('general');
+  const [activeTab, setActiveTab] = useState('lore');
   const [isSaving, setIsSaving] = useState(false);
   const [saveText, setSaveText] = useState('SAVE HERO DATA');
   const [infoType, setInfoType] = useState(null);
+
+  const heroLevel = heroData.general?.level || 0;
+  const starsCount = heroData.general?.stars || 1;
+  const rankStr = heroData.items?.rank || 'White';
+  const isOwned = heroLevel > 0;
+  
+  let baseColorClass = 'hero-rank-gray';
+  if (rankStr.includes('Green')) baseColorClass = 'hero-rank-green';
+  else if (rankStr.includes('Blue')) baseColorClass = 'hero-rank-blue';
+  else if (rankStr.includes('Violet')) baseColorClass = 'hero-rank-violet';
+  else if (rankStr.includes('Orange')) baseColorClass = 'hero-rank-orange';
+  else if (rankStr.includes('Red')) baseColorClass = 'hero-rank-red';
 
   useEffect(() => {
     // A HeroContext által átadott teljesen egyesített objektumot lemásoljuk a lokális state-be
@@ -73,12 +85,66 @@ const HeroModal = ({ hero, onClose }) => {
 
   const renderTabNavigation = () => (
     <div className="modal-tabs">
-      <button className={`modal-tab ${activeTab === 'general' ? 'active' : ''}`} onClick={() => setActiveTab('general')}>General & Stats</button>
-      <button className={`modal-tab ${activeTab === 'skills' ? 'active' : ''}`} onClick={() => setActiveTab('skills')}>Skills & Skins</button>
-      <button className={`modal-tab ${activeTab === 'artifacts' ? 'active' : ''}`} onClick={() => setActiveTab('artifacts')}>Artifacts & GoE</button>
-      <button className={`modal-tab ${activeTab === 'glyphs' ? 'active' : ''}`} onClick={() => setActiveTab('glyphs')}>Glyphs & Ascension</button>
+      <button className={`modal-tab ${activeTab === 'lore' ? 'active' : ''}`} onClick={() => setActiveTab('lore')}>Leírás & Értékelés</button>
+      <button className={`modal-tab ${activeTab === 'general' ? 'active' : ''}`} onClick={() => setActiveTab('general')}>Általános & Statisztikák</button>
+      <button className={`modal-tab ${activeTab === 'skills' ? 'active' : ''}`} onClick={() => setActiveTab('skills')}>Képességek & Kinézetek</button>
+      <button className={`modal-tab ${activeTab === 'artifacts' ? 'active' : ''}`} onClick={() => setActiveTab('artifacts')}>Ereklyék & Elemek Ajándéka</button>
+      <button className={`modal-tab ${activeTab === 'glyphs' ? 'active' : ''}`} onClick={() => setActiveTab('glyphs')}>Rúnák & Felemelkedés</button>
     </div>
   );
+
+  const renderLoreTab = () => {
+    const desc = hero.description || {};
+    return (
+      <div className="modal-tab-content">
+        <h3 className="tab-section-title">Ismertető</h3>
+        <p style={{ color: '#ccc', fontSize: '16px', lineHeight: '1.5', marginBottom: '20px' }}>
+          {desc.summary || "Nincs elérhető leírás erről a hősről."}
+        </p>
+
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+          <div className="modal-stat-column">
+            <h4 style={{ color: '#4caf50', marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '8px', fontSize: '18px' }}>
+              <span className="material-symbols-outlined">check_circle</span> Erősségek
+            </h4>
+            <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
+              {(desc.strengths || []).map((s, idx) => (
+                <li key={idx} style={{ color: '#ccc', marginBottom: '8px', display: 'flex', gap: '8px', alignItems: 'flex-start', lineHeight: '1.4' }}>
+                  <span style={{ color: '#4caf50', marginTop: '2px' }}>✅</span> <span>{s}</span>
+                </li>
+              ))}
+              {(!desc.strengths || desc.strengths.length === 0) && <li style={{ color: '#777' }}>Nincs adat</li>}
+            </ul>
+          </div>
+
+          <div className="modal-stat-column">
+            <h4 style={{ color: '#f44336', marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '8px', fontSize: '18px' }}>
+              <span className="material-symbols-outlined">cancel</span> Gyengeségek
+            </h4>
+            <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
+              {(desc.weaknesses || []).map((w, idx) => (
+                <li key={idx} style={{ color: '#ccc', marginBottom: '8px', display: 'flex', gap: '8px', alignItems: 'flex-start', lineHeight: '1.4' }}>
+                  <span style={{ color: '#f44336', marginTop: '2px' }}>❌</span> <span>{w}</span>
+                </li>
+              ))}
+              {(!desc.weaknesses || desc.weaknesses.length === 0) && <li style={{ color: '#777' }}>Nincs adat</li>}
+            </ul>
+          </div>
+        </div>
+        
+        <div style={{ marginTop: '30px', display: 'flex', gap: '20px', borderTop: '1px solid #3a3f58', paddingTop: '20px' }}>
+          <div style={{ backgroundColor: '#1e2130', padding: '10px 15px', borderRadius: '5px', border: '1px solid #3a3f58' }}>
+            <strong style={{ color: '#fece86', display: 'block', marginBottom: '4px', fontSize: '12px', textTransform: 'uppercase' }}>Fő Statisztika</strong>
+            <span style={{ color: '#ccc', fontSize: '16px' }}>{hero.mainStat || 'Ismeretlen'}</span>
+          </div>
+          <div style={{ backgroundColor: '#1e2130', padding: '10px 15px', borderRadius: '5px', border: '1px solid #3a3f58' }}>
+            <strong style={{ color: '#fece86', display: 'block', marginBottom: '4px', fontSize: '12px', textTransform: 'uppercase' }}>Szerepkörök</strong>
+            <span style={{ color: '#ccc', fontSize: '16px' }}>{(hero.roles || []).join(', ') || 'Ismeretlen'}</span>
+          </div>
+        </div>
+      </div>
+    );
+  };
 
   const renderGeneralTab = () => (
     <div className="modal-tab-content">
@@ -262,10 +328,27 @@ const HeroModal = ({ hero, onClose }) => {
       <div className="modal-content gold-frame">
         <div className="modal-header">
           <div className="modal-hero-info">
-            <div className="mythic-border modal-hero-avatar">
-              <div className="modal-hero-avatar-inner">
-                <img src={hero.img} alt={hero.name} className="modal-hero-image" />
+            <div className={`hero-card-image-wrapper ${isOwned ? baseColorClass : 'hero-rank-gray'}`} style={{ margin: 0, alignSelf: 'center', minWidth: '132px', minHeight: '132px', flexShrink: 0 }}>
+              {isOwned && <div className="hero-level-badge" style={{ zIndex: 10 }}>{heroLevel}</div>}
+              <div className="hero-card-image-inner">
+                <img src={`./heroes/${hero.id}.png`} alt={hero.name} className="hero-card-image" />
               </div>
+              <img
+                src={`./hero_borders/${!isOwned ? 'white' : rankStr.toLowerCase()}.png`}
+                alt={`${!isOwned ? 'white' : rankStr} frame`}
+                className="hero-card-frame"
+              />
+              {isOwned && (
+                <div className="hero-card-stars" style={{ zIndex: 10 }}>
+                  {starsCount === 6 ? (
+                    <img src="./hero_borders/6stars.png" alt="Absolute Star" className="hero-card-6stars" />
+                  ) : (
+                    [...Array(starsCount)].map((_, i) => (
+                      <img key={i} src="./hero_borders/star.png" alt="Star" className="hero-card-star" />
+                    ))
+                  )}
+                </div>
+              )}
             </div>
             <div>
               <h2 className="modal-hero-name">
@@ -274,12 +357,7 @@ const HeroModal = ({ hero, onClose }) => {
                   #{hero.id}
                 </span>
               </h2>
-              <div className="modal-hero-faction">
-                <span className="material-symbols-outlined modal-faction-icon">
-                  {hero.faction?.includes('Honor') ? 'military_tech' : 'eco'}
-                </span>
-                <span className="modal-faction-text">{hero.faction?.toUpperCase() || 'UNKNOWN'}</span>
-              </div>
+
             </div>
           </div>
           <button className="modal-close-btn" onClick={onClose}>
@@ -292,6 +370,7 @@ const HeroModal = ({ hero, onClose }) => {
         <hr className="modal-divider" />
 
         <div className="modal-scroll-container">
+          {activeTab === 'lore' && renderLoreTab()}
           {activeTab === 'general' && renderGeneralTab()}
           {activeTab === 'skills' && renderSkillsTab()}
           {activeTab === 'artifacts' && renderArtifactsTab()}

@@ -5,17 +5,7 @@ const HeroCard = ({ hero, onClick }) => {
   const isOwned = heroLevel > 0;
   const starsCount = hero.general?.stars || 1;
 
-  const [imgSrc, setImgSrc] = useState(`./heroes/${hero.id}.png`);
 
-  useEffect(() => {
-    setImgSrc(`./heroes/${hero.id}.png`);
-  }, [hero.id]);
-
-  const handleImageError = () => {
-    if (imgSrc !== hero.img) {
-      setImgSrc(hero.img);
-    }
-  };
 
   const rankStr = hero.items?.rank || 'White';
   let baseColorClass = 'hero-rank-gray';
@@ -38,10 +28,9 @@ const HeroCard = ({ hero, onClick }) => {
         {isOwned && <div className="hero-level-badge">{heroLevel}</div>}
         <div className="hero-card-image-inner">
           <img 
-            src={imgSrc} 
+            src={`./heroes/${hero.id}.png`} 
             alt={hero.name} 
             className="hero-card-image"
-            onError={handleImageError}
           />
         </div>
         <img
@@ -63,7 +52,7 @@ const HeroCard = ({ hero, onClick }) => {
       </div>
       <div className="hero-card-info">
         <p className="hero-card-name">{hero.name}</p>
-        <p className="hero-card-faction">{hero.faction}</p>
+        <p className="hero-card-faction">{(hero.roles || []).join(', ') || ''}</p>
       </div>
     </div>
   );
