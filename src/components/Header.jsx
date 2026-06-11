@@ -26,14 +26,14 @@ const Header = ({ onOpenImport }) => {
         {isViewMode ? (
           <span className="header-title header-title-view-mode">MEGTEKINTŐ MÓD AKTÍV</span>
         ) : (
-          <span className="header-title">Fejlődésmérő és összehasonlító</span>
+          <span className="header-title">Fejlődésmérő</span>
         )}
       </div>
 
       <div className="header-actions">
         {isViewMode ? (
-          <button 
-            className="gold-gradient-btn return-btn" 
+          <button
+            className="gold-gradient-btn return-btn"
             onClick={exitViewMode}
           >
             VISSZA A SAJÁTHOZ
@@ -47,9 +47,9 @@ const Header = ({ onOpenImport }) => {
               className="hidden-file-input"
               onChange={handleFileChange}
             />
-            <button 
-              className="import-icon-btn view-mode-btn" 
-              onClick={() => fileInputRef.current?.click()} 
+            <button
+              className="import-icon-btn view-mode-btn"
+              onClick={() => fileInputRef.current?.click()}
               title="Megtekintő mód (Más JSON fájljának betöltése)"
             >
               <span className="material-symbols-outlined">visibility</span>

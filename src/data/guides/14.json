@@ -1,0 +1,26 @@
+{
+  "id": "14",
+  "name": "Fox",
+  "sections": [
+    {
+      "title": "Általános áttekintés",
+      "content": "A Fox egyfajta irányító lövöldözős játék, amelyhez speciális csomagra van szükség. Egyrészt a Foxban minden megvan, amire egy lövöldözősnek szüksége van: sebzés, kritikus. ütés, ütés. páncél. Másrészt nagyon rosszul birkózik meg a lövöldöző szerepével a támadásokból származó sebzés hiánya miatt. Rendelkezik a Mérnök funkcióval, amely lehetővé teszi, hogy kapcsolatba léphessen Isaac-kel, aki ugyanazzal a funkcióval rendelkezik, és bónuszokat ad a „mérnököknek”. \n\nFőszerep: Lövő Fő statisztika: Agility vonal: Harcok a hátsó vonalban Sebzés típusa: Fizikai sebzés\n\nProfik\n\n✓ Releváns a játék kezdeti és középső szakaszában;✓ Irányító készségekkel rendelkezik;✓ Jól mutatja magát fizikai ellenfelekkel szemben. csomagok;✓ Könnyen beszerezhető és frissíthető a maximális csillagra;✓ Jó védekezési tulajdonságok;✓ Első képessége sok sebzést okoz a tankban;✓ Nem rossz hős Asgard számára az Artifact és a harmadik képesség miatt. \n\nHátrányok\n\n✗ Rosszabbul mutat a varázscsomagok ellen;✗ Ez egy olyan karakter, amelyet képességekből, nem pedig rendszeres támadásokból származó sebzésre terveztek;✗ Sebastian blokkolja az irányító hatásokat;✗ Gyenge sebzés a többi népszerű lövöldözőhöz képest;✗ Vesztes a többi támadó hőssel szemben, akiket a csomagokban használnak: nincs vámpírizmus/kerülés/halhatatlanság/sérülés ✗ nincs masszív egészségkárosodás."
+    },
+    {
+      "title": "A készségek szintre emelése",
+      "content": "Röviden:"
+    },
+    {
+      "title": "Skinek",
+      "content": "Javasoljuk, hogy először frissítse a Winter Skin for Physical attackot. A második lendület a Keleti megjelenés az áttörésen. páncél. A harmadik az Agility Basic megjelenése. Az utolsó frissítendő dolog az egészségügyi skinek: Spring Health Skin és Cybernetic Health Skin. Az egészségügyi skineket csak akkor frissítik, ha a hősnek túl kell élnie, és nincs ideje használni a képességeit. Fox a fő sebzést az első készségtől kezdve okozza, és ha azonnal javítja az egészségi megjelenését, lassabban kezd tölteni, és ritkábban használja."
+    },
+    {
+      "title": "Szimbólum",
+      "content": "A karakterfrissítések prioritása a következő:"
+    },
+    {
+      "title": "Műtárgyak",
+      "content": "Ha Foxot használnak a sebzésre, akkor Vexet használnak. Ha a Vexeket egy másik hős foglalja el, Fenrist használják. Más esetekben a Mara-t használják, amikor az ellenséges csapatban a tank szerepét egy vadász/lövő tölti be. \n\nSebastian – The Ode of Serenity készség blokkolja az irányító hatásokat (vakító és lenyűgöző). \n\nJorgen – A Powerless Torture készség nem teszi lehetővé, hogy Fox energiát kapjon, ezáltal a hős haszna minimálisra csökken, mert szinte minden képesség az első képességhez kötődik. \n\nHelios – A Flame Retribution készség sok sebzést okoz Fox-nak, amikor kritizál. kár. A Pet Horus Blocks remekül működik a kábító/vakhatások ellen\n\nElső ránézésre nem rossz karakter, aki egyszerre rendelkezik kontrolleffektusokkal és kiváló sebzésnövekedéssel (+150% a fizikai támadástól az első képességig), egy artefakt a behatoláshoz. páncél és crit. találat. De a hős jelenleg túl gyenge. Sebastian blokkolja az irányítási effektusokat, és minden tekintetben alulmúlja a többi lövöldözőt: nincs olyan túlélőképessége és sebzése, mint Ju és Dante. A hősök elhelyezkedése szerint Sebastian után van, így nem kerülhet egy klasszikus csapatba Nebulával és Sebastiannal. A nagy arénában gyengébb a klasszikus csapatoknál, nincs egészségszimbólum és gyenge a mágia elleni védelem. \n\nKezdőnek nem ajánlott."
+    }
+  ]
+}

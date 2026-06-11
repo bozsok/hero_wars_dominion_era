@@ -45,6 +45,9 @@ const Dashboard = () => {
             <p className="dashboard-subtitle">A hősök tulajdonságai kattintással módosíthatók</p>
           </div>
           <div className="dashboard-stats">
+            <div className="dashboard-total">
+              <span className="stat-label dashboard-stat-value-inner">Összesen: {heroes.length}</span>
+            </div>
             <div className="stat-chip dashboard-action-bar-inner">
               <span className="material-symbols-outlined stat-icon dashboard-filter-group">sort</span>
               <select
@@ -58,10 +61,6 @@ const Dashboard = () => {
                 <option value="power_desc" className="dashboard-select-option">Erő (Csökkenő)</option>
                 <option value="power_asc" className="dashboard-select-option">Erő (Növekvő)</option>
               </select>
-            </div>
-            <div className="stat-chip">
-              <img src="./ui/hero.png" alt="Heroes" className="dashboard-stat-icon" />
-              <span className="stat-label dashboard-stat-value-inner">Összesen: {heroes.length}</span>
             </div>
           </div>
         </div>

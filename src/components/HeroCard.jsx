@@ -20,16 +20,16 @@ const HeroCard = ({ hero, onClick }) => {
 
 
   return (
-    <div 
-      className={`hero-card-container ${!isOwned ? 'hero-card-inactive' : ''}`} 
+    <div
+      className={`hero-card-container ${!isOwned ? 'hero-card-inactive' : ''}`}
       onClick={() => isOwned && onClick && onClick(hero)}
     >
       <div className={`hero-card-image-wrapper ${isOwned ? baseColorClass : 'hero-rank-gray'}`}>
         {isOwned && <div className="hero-level-badge">{heroLevel}</div>}
         <div className="hero-card-image-inner">
-          <img 
-            src={`./heroes/${hero.id}.png`} 
-            alt={hero.name} 
+          <img
+            src={`./heroes/${hero.id}.png`}
+            alt={hero.name}
             className="hero-card-image"
           />
         </div>

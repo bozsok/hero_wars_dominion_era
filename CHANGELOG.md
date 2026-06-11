@@ -2,6 +2,19 @@
 
 Minden említésre méltó változtatás a projektben ebben a fájlban lesz rögzítve.
 
+## [0.4.1] - 2026-06-11
+
+### Hozzáadva (Added)
+- **Hősútmutatók:** Egy Node.js-alapú adatkinyerő szkript (`scrape_heroes.js`) került a projektbe, amely automatikusan lementi, feldolgozza és a Google Translate API segítségével oroszról magyarra fordítja a hősök részletes útmutatóit a `moon-hero.site` oldalról. A generált adatok az `src/data/guides/` mappában tárolódnak független JSON-fájlokként.
+- **Útmutató fül a hősadatlapon:** A `HeroModal.jsx` kibővült egy dinamikus „Útmutató” füllel, amely megnyitáskor automatikusan betölti a hős azonosítója (ID) alapján a kinyert és magyarított gyakorlati tapasztalatokat, kinézeteket és műtárgyleírásokat. Nem minden hőshöz tartozik Útmutató, mert a weboldalon mindössze 65 hőst találunk a jelenlegi 73-ból.
+
+### Megváltoztatva (Changed)
+- **Fejléc szövege:** A fejléc (Header) címe "Fejlődésmérő és összehasonlító"-ról "Fejlődésmérő"-re rövidült.
+- **Hősavatár javítása:** Az `index.css`-ben lévő `.hero-card-image-wrapper` és a keretek igazítása javításra került. A korábbi fix `min-width` és `min-height` értékek eltávolításával és a dimenziók szinkronizálásával megszűnt a képkeret levágása a hősadatlapon.
+
+### Eltávolítva (Removed)
+- **Felesleges munka- és tesztfájlok:** A gyökérmappából és az `src/scripts` mappából törlésre került több mint 15 darab korábbi ideiglenes, egyszer használatos és tesztelésre szánt `.cjs` és `.js` szkript a kódbázis tisztán tartása érdekében.
+
 ## [0.4.0] - 2026-06-11
 
 ### Hozzáadva (Added)

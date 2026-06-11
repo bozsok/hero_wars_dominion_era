@@ -33,12 +33,15 @@ const HeroModal = ({ hero, onClose }) => {
   const [isSaving, setIsSaving] = useState(false);
   const [saveText, setSaveText] = useState('SAVE HERO DATA');
   const [infoType, setInfoType] = useState(null);
+  
+  const [guideData, setGuideData] = useState(null);
+  const [isGuideLoading, setIsGuideLoading] = useState(false);
 
   const heroLevel = heroData.general?.level || 0;
   const starsCount = heroData.general?.stars || 1;
   const rankStr = heroData.items?.rank || 'White';
   const isOwned = heroLevel > 0;
-  
+
   let baseColorClass = 'hero-rank-gray';
   if (rankStr.includes('Green')) baseColorClass = 'hero-rank-green';
   else if (rankStr.includes('Blue')) baseColorClass = 'hero-rank-blue';
@@ -48,8 +51,24 @@ const HeroModal = ({ hero, onClose }) => {
 
   useEffect(() => {
     // A HeroContext által átadott teljesen egyesített objektumot lemásoljuk a lokális state-be
-    setHeroData(JSON.parse(JSON.stringify(hero)));
+    setHeroData({ ...hero });
   }, [hero]);
+
+  useEffect(() => {
+    if (activeTab === 'guide' && !guideData && !isGuideLoading) {
+      setIsGuideLoading(true);
+      import(`../data/guides/${hero.id}.json`)
+        .then(module => {
+          setGuideData(module.default || module);
+          setIsGuideLoading(false);
+        })
+        .catch(err => {
+          console.error("Guide load error:", err);
+          setGuideData({ error: "Nincs elérhető útmutató ehhez a hőshöz (vagy a fordítás még folyamatban van)." });
+          setIsGuideLoading(false);
+        });
+    }
+  }, [activeTab, hero.id, guideData, isGuideLoading]);
 
   // Prevent background scrolling while modal is open
   useEffect(() => {
@@ -63,7 +82,7 @@ const HeroModal = ({ hero, onClose }) => {
   const handleChange = (path, value, isNumber = true) => {
     if (isViewMode) return;
     const finalValue = isNumber ? Number(value) : value;
-    
+
     setHeroData(prev => {
       const copy = { ...prev };
       const keys = path.split('.');
@@ -92,7 +111,7 @@ const HeroModal = ({ hero, onClose }) => {
     if (isViewMode) return;
     setIsSaving(true);
     setSaveText('SAVING...');
-    
+
     setTimeout(() => {
       updateHeroData(hero.id, heroData);
       setSaveText('SAVED!');
@@ -105,37 +124,42 @@ const HeroModal = ({ hero, onClose }) => {
     return (
       <div className="modal-tab-content">
         <div className="modal-hero-info">
-          <div className={`hero-card-image-wrapper ${isOwned ? baseColorClass : 'hero-rank-gray'} modal-hero-avatar-wrapper`}>
-            {isOwned && <div className="hero-level-badge">{heroLevel}</div>}
-            <div className="hero-card-image-inner">
-              <img src={`./heroes/${hero.id}.png`} alt={hero.name} className="hero-card-image" />
-            </div>
-            <img
-              src={`./hero_borders/${!isOwned ? 'white' : rankStr.toLowerCase()}.png`}
-              alt={`${!isOwned ? 'white' : rankStr} frame`}
-              className="hero-card-frame"
-            />
-            {isOwned && (
-              <div className="hero-card-stars">
-                {starsCount === 6 ? (
-                  <img src="./hero_borders/6stars.png" alt="Absolute Star" className="hero-card-6stars" />
-                ) : (
-                  [...Array(starsCount)].map((_, i) => (
-                    <img key={i} src="./hero_borders/star.png" alt="Star" className="hero-card-star" />
-                  ))
-                )}
+          <div className="modal-hero-avatar-container">
+            <div className={`hero-card-image-wrapper ${isOwned ? baseColorClass : 'hero-rank-gray'} modal-hero-avatar-wrapper`}>
+              {isOwned && <div className="hero-level-badge">{heroLevel}</div>}
+              <div className="hero-card-image-inner">
+                <img src={`./heroes/${hero.id}.png`} alt={hero.name} className="hero-card-image" />
               </div>
-            )}
+              <img
+                src={`./hero_borders/${!isOwned ? 'white' : rankStr.toLowerCase()}.png`}
+                alt={`${!isOwned ? 'white' : rankStr} frame`}
+                className="hero-card-frame"
+              />
+              {isOwned && (
+                <div className="hero-card-stars">
+                  {starsCount === 6 ? (
+                    <img src="./hero_borders/6stars.png" alt="Absolute Star" className="hero-card-6stars" />
+                  ) : (
+                    [...Array(starsCount)].map((_, i) => (
+                      <img key={i} src="./hero_borders/star.png" alt="Star" className="hero-card-star" />
+                    ))
+                  )}
+                </div>
+              )}
+            </div>
           </div>
           <div className="modal-hero-text-wrapper">
             <h2 className="modal-hero-name">
-              {hero.name} 
+              {hero.name}
             </h2>
             <div className="modal-hero-id">
               #{hero.id}
             </div>
-            <div className="modal-hero-faction">
-              {FactionTranslations[hero.faction] || hero.faction || 'Ismeretlen frakció'}
+            <div className="modal-hero-roles-header">
+              <span className="hero-role-chip">{hero.mainStat || 'Ismeretlen'}</span>
+              {(hero.roles || []).map(role => (
+                <span key={role} className="hero-role-chip">{role}</span>
+              ))}
             </div>
           </div>
         </div>
@@ -173,7 +197,7 @@ const HeroModal = ({ hero, onClose }) => {
             </ul>
           </div>
         </div>
-        
+
         <div className="modal-hero-bottom-stats">
           <div className="bottom-stat-box">
             <strong className="bottom-stat-title">Fő Statisztika</strong>
@@ -184,6 +208,44 @@ const HeroModal = ({ hero, onClose }) => {
             <span className="bottom-stat-value">{(hero.roles || []).join(', ') || 'Ismeretlen'}</span>
           </div>
         </div>
+      </div>
+    );
+  };
+
+  const renderGuideTab = () => {
+    return (
+      <div className="modal-tab-content">
+        <h3 className="modal-section-title">Útmutató és gyakorlati tapasztalatok</h3>
+        {isGuideLoading ? (
+          <p style={{ color: 'var(--on-surface-variant)' }}>Útmutató betöltése folyamatban...</p>
+        ) : guideData?.error ? (
+          <p style={{ color: 'var(--error)' }}>{guideData.error}</p>
+        ) : guideData?.sections ? (
+          <div className="guide-sections">
+            {guideData.sections.map((sec, idx) => (
+              <div key={idx} className="guide-section" style={{ marginBottom: '24px' }}>
+                <h4 style={{ 
+                  color: 'var(--primary)', 
+                  fontFamily: 'var(--font-title-md)', 
+                  fontSize: '18px', 
+                  borderBottom: '1px solid var(--surface-variant)', 
+                  paddingBottom: '8px', 
+                  marginBottom: '12px' 
+                }}>{sec.title}</h4>
+                <div style={{ 
+                  whiteSpace: 'pre-wrap', 
+                  color: 'var(--on-surface)', 
+                  lineHeight: '1.5',
+                  fontSize: '14px'
+                }}>
+                  {sec.content}
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p style={{ color: 'var(--on-surface-variant)' }}>Kattints egy útmutató megtekintéséhez.</p>
+        )}
       </div>
     );
   };
@@ -324,7 +386,7 @@ const HeroModal = ({ hero, onClose }) => {
           return (
             <div className="stat-input-group" key={`glyph-${idx}`}>
               <div className="glyph-row-header">
-                <select 
+                <select
                   className="stat-input glyph-select"
                   value={currentName}
                   onChange={e => handleArrayChange('glyphNames', idx, e.target.value, false)}
@@ -334,12 +396,12 @@ const HeroModal = ({ hero, onClose }) => {
                 </select>
                 <label className="glyph-label-center">(0-40/50)</label>
               </div>
-              <input 
-                type="number" 
-                className="stat-input" 
-                value={heroData.glyphs?.[idx] || 0} 
-                onChange={e => handleArrayChange('glyphs', idx, e.target.value)} 
-                disabled={isViewMode} 
+              <input
+                type="number"
+                className="stat-input"
+                value={heroData.glyphs?.[idx] || 0}
+                onChange={e => handleArrayChange('glyphs', idx, e.target.value)}
+                disabled={isViewMode}
               />
             </div>
           );
@@ -376,6 +438,7 @@ const HeroModal = ({ hero, onClose }) => {
       <div className="modal-wrapper">
         <div className="modal-outside-tabs">
           <div className={`modal-flag ${activeTab === 'info' ? 'active' : ''}`} onClick={() => setActiveTab('info')}>Info</div>
+          <div className={`modal-flag ${activeTab === 'guide' ? 'active' : ''}`} onClick={() => setActiveTab('guide')}>Útmutató</div>
           <div className={`modal-flag ${activeTab === 'stats' ? 'active' : ''}`} onClick={() => setActiveTab('stats')}>Stats</div>
           <div className={`modal-flag ${activeTab === 'skills' ? 'active' : ''}`} onClick={() => setActiveTab('skills')}>Skills</div>
           <div className={`modal-flag ${activeTab === 'skins' ? 'active' : ''}`} onClick={() => setActiveTab('skins')}>Skins</div>
@@ -383,7 +446,7 @@ const HeroModal = ({ hero, onClose }) => {
           <div className={`modal-flag modal-flag-small-text ${activeTab === 'goe' ? 'active' : ''}`} onClick={() => setActiveTab('goe')}>Gift of the Elements</div>
           <div className={`modal-flag ${activeTab === 'glyphs' ? 'active' : ''}`} onClick={() => setActiveTab('glyphs')}>Glyphs</div>
           <div className={`modal-flag ${activeTab === 'ascension' ? 'active' : ''}`} onClick={() => setActiveTab('ascension')}>Ascension</div>
-          
+
           <div className="modal-save-container">
             {!isViewMode && (
               <button className="action-btn btn-save" onClick={handleSave} disabled={isSaving}>
@@ -400,6 +463,7 @@ const HeroModal = ({ hero, onClose }) => {
             <div className="modal-panel">
               <div className="modal-scroll-container">
                 {activeTab === 'info' && renderInfoTab()}
+                {activeTab === 'guide' && renderGuideTab()}
                 {activeTab === 'stats' && renderGeneralTab()}
                 {activeTab === 'skills' && renderSkillsOnlyTab()}
                 {activeTab === 'skins' && renderSkinsOnlyTab()}
@@ -412,7 +476,7 @@ const HeroModal = ({ hero, onClose }) => {
           </div>
         </div>
       </div>
-      
+
       <InfoModal isOpen={infoType === 'glyphs'} onClose={() => setInfoType(null)} title="Rúnák (Glyphs) Számolási Módszere">
         <p>A játék motorja a rúnák fejlettségét nem szintként (pl. Level 47) tárolja, hanem egyetlen összesített számként, amely a rúnába a legelső szinttől kezdve befektetett összes <strong>Rúnakövet / Tapasztalati Pontot (XP)</strong> jelöli.</p>
         <p>Egyetlen rúna 0-ról 40-es szintre történő fejlesztése összesen <strong>49 650 Rúnakőbe</strong> kerül. A szintek árai blokkonként növekednek:</p>
