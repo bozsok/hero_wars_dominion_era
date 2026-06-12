@@ -55,11 +55,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
-      "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Magic Penetration",
+      "Dodge",
+      "Strength"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -130,11 +130,11 @@
       }
     ],
     "staticGlyphs": [
-      "Health",
+      "Physical Attack",
       "Armor",
+      "Health",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Strength"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -204,11 +204,11 @@
       }
     ],
     "staticGlyphs": [
+      "Physical Attack",
       "Health",
       "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Armor Penetration",
+      "Agility"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -280,11 +280,11 @@
       }
     ],
     "staticGlyphs": [
-      "Health",
+      "Magic Attack",
       "Armor",
+      "Health",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Strength"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -354,11 +354,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
-      "Armor",
+      "Magic Penetration",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -429,11 +429,11 @@
       }
     ],
     "staticGlyphs": [
-      "Health",
+      "Magic Attack",
       "Armor",
+      "Health",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -504,11 +504,11 @@
       }
     ],
     "staticGlyphs": [
-      "Health",
+      "Magic Attack",
       "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Health",
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -578,11 +578,11 @@
       }
     ],
     "staticGlyphs": [
+      "Physical Attack",
       "Health",
-      "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Armor Penetration",
+      "Crit Hit Chance",
+      "Agility"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -653,11 +653,11 @@
       }
     ],
     "staticGlyphs": [
-      "Health",
+      "Magic Attack",
       "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Dodge",
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -727,11 +727,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
-      "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Physical Attack",
+      "Magic Penetration",
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -802,11 +802,11 @@
       }
     ],
     "staticGlyphs": [
-      "Health",
-      "Armor",
       "Physical Attack",
-      "Intelligence",
-      "Armor Penetration"
+      "Armor",
+      "Magic Defense",
+      "Health",
+      "Strength"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -877,11 +877,11 @@
       }
     ],
     "staticGlyphs": [
+      "Physical Attack",
       "Health",
       "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Magic Attack",
+      "Agility"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -951,11 +951,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
-      "Armor",
+      "Magic Penetration",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -1026,11 +1026,11 @@
       }
     ],
     "staticGlyphs": [
-      "Health",
+      "Physical Attack",
       "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Armor Penetration",
+      "Crit Hit Chance",
+      "Agility"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -1099,11 +1099,11 @@
       }
     ],
     "staticGlyphs": [
+      "Physical Attack",
       "Health",
-      "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Armor Penetration",
+      "Agility"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -1174,11 +1174,11 @@
       }
     ],
     "staticGlyphs": [
-      "Health",
+      "Physical Attack",
       "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Dodge",
+      "Armor Penetration",
+      "Agility"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -1249,11 +1249,11 @@
       }
     ],
     "staticGlyphs": [
-      "Health",
-      "Armor",
+      "Magic Attack",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Magic Penetration",
+      "Health",
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -1324,11 +1324,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
-      "Armor",
+      "Magic Penetration",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -1399,11 +1399,11 @@
       }
     ],
     "staticGlyphs": [
+      "Physical Attack",
       "Health",
-      "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Armor Penetration",
+      "Dodge",
+      "Agility"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -1473,11 +1473,11 @@
       }
     ],
     "staticGlyphs": [
+      "Physical Attack",
       "Health",
-      "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Armor Penetration",
+      "Crit Hit Chance",
+      "Agility"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -1548,11 +1548,11 @@
       }
     ],
     "staticGlyphs": [
+      "Physical Attack",
       "Health",
       "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Magic Attack",
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -1623,11 +1623,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
-      "Armor",
+      "Magic Penetration",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -1698,11 +1698,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
       "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -1773,11 +1773,11 @@
       }
     ],
     "staticGlyphs": [
-      "Health",
-      "Armor",
       "Physical Attack",
-      "Intelligence",
-      "Armor Penetration"
+      "Armor",
+      "Magic Defense",
+      "Health",
+      "Strength"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -1847,11 +1847,11 @@
       }
     ],
     "staticGlyphs": [
+      "Physical Attack",
       "Health",
-      "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Armor Penetration",
+      "Crit Hit Chance",
+      "Agility"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -1922,11 +1922,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
-      "Armor",
+      "Magic Penetration",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -1997,11 +1997,11 @@
       }
     ],
     "staticGlyphs": [
+      "Physical Attack",
       "Health",
-      "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Armor",
+      "Strength"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -2072,11 +2072,11 @@
       }
     ],
     "staticGlyphs": [
+      "Physical Attack",
       "Health",
-      "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Armor Penetration",
+      "Dodge",
+      "Agility"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -2147,11 +2147,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
       "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -2222,11 +2222,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
       "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -2297,11 +2297,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
-      "Armor",
-      "Physical Attack",
-      "Intelligence",
-      "Armor Penetration"
+      "Magic Defense",
+      "Dodge",
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -2372,11 +2372,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
-      "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Armor",
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -2447,11 +2447,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
-      "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Magic Penetration",
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -2522,11 +2522,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
       "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -2598,11 +2598,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
       "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Strength"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -2673,11 +2673,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
       "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -2747,11 +2747,11 @@
       }
     ],
     "staticGlyphs": [
+      "Physical Attack",
       "Health",
-      "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Armor Penetration",
+      "Crit Hit Chance",
+      "Strength"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -2822,11 +2822,11 @@
       }
     ],
     "staticGlyphs": [
-      "Health",
-      "Armor",
       "Physical Attack",
-      "Agility",
-      "Armor Penetration"
+      "Health",
+      "Armor Penetration",
+      "Dodge",
+      "Agility"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -2896,11 +2896,11 @@
       }
     ],
     "staticGlyphs": [
+      "Physical Attack",
       "Health",
-      "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Armor",
+      "Strength"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -2969,11 +2969,11 @@
       }
     ],
     "staticGlyphs": [
-      "Health",
+      "Physical Attack",
       "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Health",
+      "Agility"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -3043,11 +3043,11 @@
       }
     ],
     "staticGlyphs": [
+      "Physical Attack",
       "Health",
+      "Armor Penetration",
       "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Agility"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -3118,11 +3118,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
-      "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Armor",
+      "Strength"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -3194,11 +3194,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
-      "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Magic Penetration",
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -3269,11 +3269,11 @@
       }
     ],
     "staticGlyphs": [
+      "Physical Attack",
       "Health",
       "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Armor Penetration",
+      "Agility"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -3344,11 +3344,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
       "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Magic Penetration",
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -3419,11 +3419,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
-      "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Armor",
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -3494,11 +3494,11 @@
       }
     ],
     "staticGlyphs": [
+      "Physical Attack",
       "Health",
+      "Armor Penetration",
       "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Strength"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -3568,11 +3568,11 @@
       }
     ],
     "staticGlyphs": [
+      "Physical Attack",
       "Health",
-      "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Crit Hit Chance",
+      "Agility"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -3643,11 +3643,11 @@
       }
     ],
     "staticGlyphs": [
+      "Physical Attack",
       "Health",
-      "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Crit Hit Chance",
+      "Dodge",
+      "Agility"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -3718,11 +3718,11 @@
       }
     ],
     "staticGlyphs": [
+      "Physical Attack",
       "Health",
       "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Strength"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -3793,11 +3793,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
-      "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Armor",
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -3868,11 +3868,11 @@
       }
     ],
     "staticGlyphs": [
+      "Physical Attack",
       "Health",
       "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Agility"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -3943,11 +3943,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
-      "Armor",
+      "Magic Penetration",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -4018,11 +4018,11 @@
       }
     ],
     "staticGlyphs": [
+      "Physical Attack",
       "Health",
       "Armor",
-      "Physical Attack",
-      "Intelligence",
-      "Armor Penetration"
+      "Armor Penetration",
+      "Strength"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -4093,11 +4093,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
-      "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Armor Penetration",
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -4168,11 +4168,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
       "Armor",
-      "Physical Attack",
-      "Intelligence",
-      "Armor Penetration"
+      "Magic Penetration",
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -4242,11 +4242,11 @@
       }
     ],
     "staticGlyphs": [
+      "Physical Attack",
       "Health",
       "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Strength"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -4317,11 +4317,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
-      "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Magic Penetration",
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -4392,11 +4392,11 @@
       }
     ],
     "staticGlyphs": [
+      "Physical Attack",
       "Health",
-      "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Armor Penetration",
+      "Agility"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -4467,11 +4467,11 @@
       }
     ],
     "staticGlyphs": [
-      "Health",
+      "Magic Attack",
       "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Health",
+      "Magic Penetration",
+      "Strength"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -4542,11 +4542,11 @@
       }
     ],
     "staticGlyphs": [
+      "Physical Attack",
       "Health",
+      "Crit Hit Chance",
       "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Strength"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -4617,11 +4617,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
       "Armor",
-      "Physical Attack",
-      "Intelligence",
-      "Armor Penetration"
+      "Magic Penetration",
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -4691,11 +4691,11 @@
       }
     ],
     "staticGlyphs": [
-      "Health",
-      "Armor",
       "Physical Attack",
-      "Intelligence",
-      "Armor Penetration"
+      "Health",
+      "Crit Hit Chance",
+      "Armor Penetration",
+      "Agility"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -4765,11 +4765,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
       "Armor",
-      "Physical Attack",
-      "Intelligence",
-      "Armor Penetration"
+      "Magic Penetration",
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -4839,11 +4839,11 @@
       }
     ],
     "staticGlyphs": [
-      "Health",
-      "Armor",
       "Physical Attack",
-      "Intelligence",
-      "Armor Penetration"
+      "Armor",
+      "Crit Hit Chance",
+      "Armor Penetration",
+      "Agility"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -4914,11 +4914,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
       "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Magic Penetration",
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -4988,11 +4988,11 @@
       }
     ],
     "staticGlyphs": [
-      "Health",
+      "Physical Attack",
       "Armor",
+      "Health",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Strength"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -5063,11 +5063,11 @@
       }
     ],
     "staticGlyphs": [
-      "Health",
-      "Armor",
       "Physical Attack",
-      "Intelligence",
-      "Armor Penetration"
+      "Health",
+      "Armor Penetration",
+      "Armor",
+      "Strength"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -5138,11 +5138,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
-      "Armor",
+      "Magic Penetration",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -5212,11 +5212,11 @@
       }
     ],
     "staticGlyphs": [
-      "Health",
+      "Magic Attack",
       "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Health",
+      "Magic Penetration",
+      "Strength"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -5286,11 +5286,11 @@
       }
     ],
     "staticGlyphs": [
+      "Magic Attack",
       "Health",
       "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Magic Penetration",
+      "Intelligence"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -5359,11 +5359,11 @@
       }
     ],
     "staticGlyphs": [
-      "Health",
+      "Magic Attack",
+      "Magic Penetration",
       "Armor",
       "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Strength"
     ],
     "staticArtifacts": {
       "weapon": {
@@ -5434,11 +5434,11 @@
       }
     ],
     "staticGlyphs": [
-      "Health",
+      "Physical Attack",
+      "Armor Penetration",
+      "Dodge",
       "Armor",
-      "Magic Defense",
-      "Intelligence",
-      "Dodge"
+      "Agility"
     ],
     "staticArtifacts": {
       "weapon": {

@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { HeroContext } from '../context/HeroContext';
 import InfoModal from './InfoModal';
+import { calculateHeroStats } from '../utils/statCalculator';
+import gameDictionary from '../data/gameDictionary.json' with { type: 'json' };
 
 const Ranks = [
   'White', 'Green', 'Green+1', 'Blue', 'Blue+1', 'Blue+2',
@@ -26,12 +28,17 @@ const FactionTranslations = {
   'Way of Mystery': 'A rejtély útja'
 };
 
+const GLYPH_XP_PER_LEVEL = [
+  50,50,50,50,50, 80,80,80,80,80, 190,190,190,190,190,
+  220,220,220,220,220, 520,520,520,520,520, 590,590,590,590,590,
+  790,790,790,790,790, 870,870,870,870,870,
+  1970, 1970,1970,1970,1970, 3470,3470,3470,3470,3470
+];
+
 const HeroModal = ({ hero, onClose }) => {
-  const { updateHeroData, isViewMode } = useContext(HeroContext);
+  const { isViewMode } = useContext(HeroContext);
   const [heroData, setHeroData] = useState({ ...hero });
   const [activeTab, setActiveTab] = useState('info');
-  const [isSaving, setIsSaving] = useState(false);
-  const [saveText, setSaveText] = useState('SAVE HERO DATA');
   const [infoType, setInfoType] = useState(null);
   
   const [guideData, setGuideData] = useState(null);
@@ -50,7 +57,6 @@ const HeroModal = ({ hero, onClose }) => {
   else if (rankStr.includes('Red')) baseColorClass = 'hero-rank-red';
 
   useEffect(() => {
-    // A HeroContext által átadott teljesen egyesített objektumot lemásoljuk a lokális state-be
     setHeroData({ ...hero });
   }, [hero]);
 
@@ -78,46 +84,6 @@ const HeroModal = ({ hero, onClose }) => {
       document.body.style.overflow = originalOverflow;
     };
   }, []);
-  // Általános String vagy Szám kezelő bármilyen mélységhez
-  const handleChange = (path, value, isNumber = true) => {
-    if (isViewMode) return;
-    const finalValue = isNumber ? Number(value) : value;
-
-    setHeroData(prev => {
-      const copy = { ...prev };
-      const keys = path.split('.');
-      let current = copy;
-      for (let i = 0; i < keys.length - 1; i++) {
-        if (!current[keys[i]]) current[keys[i]] = {};
-        current = current[keys[i]];
-      }
-      current[keys[keys.length - 1]] = finalValue;
-      return copy;
-    });
-  };
-
-  const handleArrayChange = (pathArrayName, index, value, isNumber = true) => {
-    if (isViewMode) return;
-    setHeroData(prev => {
-      const copy = { ...prev };
-      if (!copy[pathArrayName]) copy[pathArrayName] = [];
-      copy[pathArrayName] = [...copy[pathArrayName]];
-      copy[pathArrayName][index] = isNumber ? Number(value) : value;
-      return copy;
-    });
-  };
-
-  const handleSave = () => {
-    if (isViewMode) return;
-    setIsSaving(true);
-    setSaveText('SAVING...');
-
-    setTimeout(() => {
-      updateHeroData(hero.id, heroData);
-      setSaveText('SAVED!');
-      setTimeout(() => onClose(), 800);
-    }, 500);
-  };
 
   const renderInfoTab = () => {
     const desc = hero.description || {};
@@ -250,188 +216,571 @@ const HeroModal = ({ hero, onClose }) => {
     );
   };
 
-  const renderGeneralTab = () => (
-    <div className="modal-tab-content">
-      <div className="modal-stat-grid">
-        <div className="modal-stat-column">
-          <h3 className="tab-section-title">General Info</h3>
-          <div className="stat-input-group">
-            <label>Level</label>
-            <input type="number" className="stat-input" value={heroData.general?.level || 0} onChange={e => handleChange('general.level', e.target.value)} disabled={isViewMode} />
-          </div>
-          <div className="stat-input-group">
-            <label>Stars (1-6)</label>
-            <input type="number" className="stat-input" value={heroData.general?.stars || 1} onChange={e => handleChange('general.stars', e.target.value)} disabled={isViewMode} />
-          </div>
-          <div className="stat-input-group">
-            <label>Soul Stones (0-300)</label>
-            <input type="number" className="stat-input" value={heroData.general?.soulStones || 0} onChange={e => handleChange('general.soulStones', e.target.value)} disabled={isViewMode} />
-          </div>
-          <div className="stat-input-group">
-            <label>Power</label>
-            <input type="number" className="stat-input" value={heroData.general?.power || 0} onChange={e => handleChange('general.power', e.target.value)} disabled={isViewMode} />
-          </div>
-          <div className="stat-input-group">
-            <label>Item Rank</label>
-            <select className="stat-input" value={heroData.items?.rank || 'White'} onChange={e => handleChange('items.rank', e.target.value, false)} disabled={isViewMode}>
-              {Ranks.map(r => <option key={r} value={r}>{r}</option>)}
-            </select>
-          </div>
-        </div>
-        <div className="modal-stat-column">
-          <h3 className="tab-section-title">Base Stats</h3>
-          <div className="stat-input-group">
-            <label>Health</label>
-            <input type="number" className="stat-input" value={heroData.stats?.health || 0} onChange={e => handleChange('stats.health', e.target.value)} disabled={isViewMode} />
-          </div>
-          <div className="stat-input-group">
-            <label>Armor</label>
-            <input type="number" className="stat-input" value={heroData.stats?.armor || 0} onChange={e => handleChange('stats.armor', e.target.value)} disabled={isViewMode} />
-          </div>
-          <div className="stat-input-group">
-            <label>Magic Defense</label>
-            <input type="number" className="stat-input" value={heroData.stats?.magicDefense || 0} onChange={e => handleChange('stats.magicDefense', e.target.value)} disabled={isViewMode} />
-          </div>
-          <div className="stat-input-group">
-            <label>Physical Attack</label>
-            <input type="number" className="stat-input" value={heroData.stats?.physicalAttack || 0} onChange={e => handleChange('stats.physicalAttack', e.target.value)} disabled={isViewMode} />
-          </div>
-          <div className="stat-input-group">
-            <label>Magic Attack</label>
-            <input type="number" className="stat-input" value={heroData.stats?.magicAttack || 0} onChange={e => handleChange('stats.magicAttack', e.target.value)} disabled={isViewMode} />
-          </div>
-          <div className="stat-input-group">
-            <label>Dodge</label>
-            <input type="number" className="stat-input" value={heroData.stats?.dodge || 0} onChange={e => handleChange('stats.dodge', e.target.value)} disabled={isViewMode} />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+  const renderGeneralTab = () => {
+    const calculatedStats = calculateHeroStats(hero.id, heroData);
+    
+    const rankStr = heroData.items?.rank || 'White';
+    let rankColorClass = 'white';
+    if (rankStr.toLowerCase().includes('green')) rankColorClass = 'green';
+    else if (rankStr.toLowerCase().includes('blue')) rankColorClass = 'blue';
+    else if (rankStr.toLowerCase().includes('violet')) rankColorClass = 'violet';
+    else if (rankStr.toLowerCase().includes('orange')) rankColorClass = 'orange';
+    else if (rankStr.toLowerCase().includes('red')) rankColorClass = 'red';
 
-  const renderSkillsOnlyTab = () => (
-    <div className="modal-tab-content">
-      <div className="modal-stat-column modal-stat-column-half">
-        <h3 className="tab-section-title">Skills</h3>
-        {heroData.staticSkills?.map((s, idx) => (
-          <div className="stat-input-group" key={`skill-${idx}`}>
-            <label>{s.name} (Max: {s.max})</label>
-            <input type="number" className="stat-input" value={heroData.skills?.[idx] || 0} onChange={e => handleArrayChange('skills', idx, e.target.value)} disabled={isViewMode} />
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+    const starsCount = heroData.general?.stars || 1;
 
-  const renderSkinsOnlyTab = () => (
-    <div className="modal-tab-content">
-      <div className="modal-stat-column modal-stat-column-half">
-        <h3 className="tab-section-title">Skins</h3>
-        {heroData.staticSkins?.map(skin => (
-          <div className="stat-input-group" key={skin.id}>
-            <label>{skin.name} - {skin.stat} (Max: {skin.max})</label>
-            <input type="number" className="stat-input" value={heroData.skins?.[skin.id] || 0} onChange={e => handleChange(`skins.${skin.id}`, e.target.value)} disabled={isViewMode} />
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+    return (
+      <div className="modal-tab-content">
+        <div className="modal-stat-grid" style={{ gridTemplateColumns: '1fr 1.5fr' }}>
+          {/* Bal oszlop: Alapadatok és Power banner */}
+          <div className="modal-stat-column">
+            <h3 className="tab-section-title">Hős állapota</h3>
+            
+            {/* Játékbeli erő banner */}
+            <div className="power-banner-card">
+              <span className="premium-card-subtitle" style={{ color: '#fece86' }}>Játékbeli Erő (Power)</span>
+              <div className="power-banner-value">{(heroData.general?.power || 0).toLocaleString()}</div>
+              {calculatedStats && (
+                <div style={{ fontSize: '12px', color: '#ccc', marginTop: '8px' }}>
+                  Számított tiszta erő: {calculatedStats.power.toLocaleString()}
+                </div>
+              )}
+            </div>
 
-  const renderArtifactsOnlyTab = () => (
-    <div className="modal-tab-content">
-      <div className="modal-stat-column modal-stat-column-half">
-        <h3 className="tab-section-title">Artifacts</h3>
-        {['weapon', 'book', 'ring'].map(type => (
-          <div className="stat-group-box" key={type}>
-            <h4>{heroData.staticArtifacts?.[type]?.name || type.toUpperCase()}</h4>
-            <div className="artifact-input-row">
-              <div className="stat-input-group">
-                <label>Level (0-100)</label>
-                <input type="number" className="stat-input" value={heroData.artifacts?.[type]?.level || 0} onChange={e => handleChange(`artifacts.${type}.level`, e.target.value)} disabled={isViewMode} />
-              </div>
-              <div className="stat-input-group">
-                <label>Stars (0-6)</label>
-                <input type="number" className="stat-input" value={heroData.artifacts?.[type]?.stars || 0} onChange={e => handleChange(`artifacts.${type}.stars`, e.target.value)} disabled={isViewMode} />
+            {/* Alapadatok kártya */}
+            <div className="premium-card" style={{ marginTop: '12px' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <span style={{ color: '#ccc' }}>Szint:</span>
+                  <span style={{ fontSize: '18px', fontWeight: 'bold', color: '#fff' }}>{heroData.general?.level || 1}</span>
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <span style={{ color: '#ccc' }}>Felszerelés Rang:</span>
+                  <span className={`rank-badge-pill ${rankColorClass}`}>{rankStr}</span>
+                </div>
+                
+                {/* Soul Stones progress bar */}
+                <div style={{ marginTop: '4px' }}>
+                  <div className="premium-progress-label">
+                    <span>Lélekkövek (Soul Stones):</span>
+                    <span>{starsCount === 6 ? 'MAX' : `${heroData.general?.soulStones || 0} / 300`}</span>
+                  </div>
+                  {starsCount < 6 && (
+                    <div className="premium-progress-bar" style={{ marginTop: '4px' }}>
+                      <div 
+                        className="premium-progress-fill"
+                        style={{ width: `${((heroData.general?.soulStones || 0) / 300) * 100}%` }}
+                      ></div>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           </div>
-        ))}
-      </div>
-    </div>
-  );
+          
+          {/* Jobb oszlop: Kalkulált tiszta passzív statisztikák */}
+          <div className="modal-stat-column">
+            <h3 className="tab-section-title">Kalkulált Tiszta Statisztikák (Felszerelések nélkül)</h3>
+            
+            {calculatedStats ? (
+              <div className="premium-stat-grid-2col">
+                <div className="premium-stat-row">
+                  <span className="premium-stat-label-with-icon">
+                    <span className="material-symbols-outlined premium-stat-icon">favorite</span>
+                    Egészség (Health)
+                  </span>
+                  <span className="premium-stat-value">{calculatedStats.secondary.health.toLocaleString()}</span>
+                </div>
 
-  const renderGoEOnlyTab = () => (
-    <div className="modal-tab-content">
-      <div className="modal-stat-column modal-stat-column-half">
-        <h3 className="tab-section-title">Gift of the Elements</h3>
-        <div className="stat-input-group">
-          <label>Level (0-30)</label>
-          <input type="number" className="stat-input" value={heroData.giftOfElements || 0} onChange={e => handleChange('giftOfElements', e.target.value)} disabled={isViewMode} />
+                <div className="premium-stat-row">
+                  <span className="premium-stat-label-with-icon">
+                    <span className="material-symbols-outlined premium-stat-icon">fitness_center</span>
+                    Erő (Strength)
+                  </span>
+                  <span className="premium-stat-value">{calculatedStats.primary.strength.toLocaleString()}</span>
+                </div>
+
+                <div className="premium-stat-row">
+                  <span className="premium-stat-label-with-icon">
+                    <span className="material-symbols-outlined premium-stat-icon">bolt</span>
+                    Ügyesség (Agility)
+                  </span>
+                  <span className="premium-stat-value">{calculatedStats.primary.agility.toLocaleString()}</span>
+                </div>
+
+                <div className="premium-stat-row">
+                  <span className="premium-stat-label-with-icon">
+                    <span className="material-symbols-outlined premium-stat-icon">psychology</span>
+                    Intelligencia (Int.)
+                  </span>
+                  <span className="premium-stat-value">{calculatedStats.primary.intelligence.toLocaleString()}</span>
+                </div>
+
+                <div className="premium-stat-row">
+                  <span className="premium-stat-label-with-icon">
+                    <span className="material-symbols-outlined premium-stat-icon">swords</span>
+                    Fizikai támadás
+                  </span>
+                  <span className="premium-stat-value">{calculatedStats.secondary.physicalAttack.toLocaleString()}</span>
+                </div>
+
+                <div className="premium-stat-row">
+                  <span className="premium-stat-label-with-icon">
+                    <span className="material-symbols-outlined premium-stat-icon">auto_awesome</span>
+                    Mágikus támadás
+                  </span>
+                  <span className="premium-stat-value">{calculatedStats.secondary.magicAttack.toLocaleString()}</span>
+                </div>
+
+                <div className="premium-stat-row">
+                  <span className="premium-stat-label-with-icon">
+                    <span className="material-symbols-outlined premium-stat-icon">shield</span>
+                    Páncél (Armor)
+                  </span>
+                  <span className="premium-stat-value">{calculatedStats.secondary.armor.toLocaleString()}</span>
+                </div>
+
+                <div className="premium-stat-row">
+                  <span className="premium-stat-label-with-icon">
+                    <span className="material-symbols-outlined premium-stat-icon">shield_moon</span>
+                    Mágikus védelem
+                  </span>
+                  <span className="premium-stat-value">{calculatedStats.secondary.magicDefense.toLocaleString()}</span>
+                </div>
+
+                {calculatedStats.secondary.dodge > 0 && (
+                  <div className="premium-stat-row">
+                    <span className="premium-stat-label-with-icon">
+                      <span className="material-symbols-outlined premium-stat-icon">keyboard_double_arrow_right</span>
+                      Kitérés (Dodge)
+                    </span>
+                    <span className="premium-stat-value">{calculatedStats.secondary.dodge.toLocaleString()}</span>
+                  </div>
+                )}
+
+                {calculatedStats.secondary.critHitChance > 0 && (
+                  <div className="premium-stat-row">
+                    <span className="premium-stat-label-with-icon">
+                      <span className="material-symbols-outlined premium-stat-icon">star</span>
+                      Kritikus esély
+                    </span>
+                    <span className="premium-stat-value">{calculatedStats.secondary.critHitChance.toLocaleString()}</span>
+                  </div>
+                )}
+
+                {calculatedStats.secondary.armorPenetration > 0 && (
+                  <div className="premium-stat-row">
+                    <span className="premium-stat-label-with-icon">
+                      <span className="material-symbols-outlined premium-stat-icon">heart_broken</span>
+                      Páncéláttörés
+                    </span>
+                    <span className="premium-stat-value">{calculatedStats.secondary.armorPenetration.toLocaleString()}</span>
+                  </div>
+                )}
+
+                {calculatedStats.secondary.magicPenetration > 0 && (
+                  <div className="premium-stat-row">
+                    <span className="premium-stat-label-with-icon">
+                      <span className="material-symbols-outlined premium-stat-icon">auto_fix_high</span>
+                      Mágikus áttörés
+                    </span>
+                    <span className="premium-stat-value">{calculatedStats.secondary.magicPenetration.toLocaleString()}</span>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <div style={{ padding: '15px', backgroundColor: 'var(--surface-variant)', borderRadius: '8px' }}>
+                <p style={{ color: 'var(--on-surface-variant)', margin: 0 }}>
+                  Ehhez a hőshöz még nincs felvéve szimulációs profil a gameDictionary.json-be.
+                </p>
+              </div>
+            )}
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  };
 
-  const renderGlyphsOnlyTab = () => (
-    <div className="modal-tab-content">
-      <div className="modal-stat-column modal-stat-column-half">
-        <h3 className="tab-section-title">
-          Glyphs
+  const renderSkinsOnlyTab = () => {
+    const heroSkins = gameDictionary.heroes[heroData.id]?.skins || [];
+    const defaultSkinInput = heroData.skins?.['default'] || 0;
+    
+    return (
+      <div className="modal-tab-content">
+        <h3 className="tab-section-title">Skins (Kinézetek)</h3>
+        <div className="premium-card-grid">
+          {/* Default Skin kártya */}
+          <div className="premium-card">
+            <div className="premium-card-header">
+              <span className="premium-card-title">Default Skin</span>
+              <span className="premium-card-subtitle">{heroData.mainStat || 'Fő statisztika'}</span>
+            </div>
+            <div className="premium-progress-container" style={{ marginTop: '12px' }}>
+              <div className="premium-progress-label">
+                <span>Szint: {defaultSkinInput} / 60</span>
+                <span>{defaultSkinInput === 60 ? 'MAX' : ''}</span>
+              </div>
+              <div className="premium-progress-bar">
+                <div 
+                  className={`premium-progress-fill ${defaultSkinInput === 60 ? 'max' : ''}`}
+                  style={{ width: `${(defaultSkinInput / 60) * 100}%` }}
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          {/* Egyedi skinek kártyái */}
+          {heroSkins.map(skin => {
+            const skinVal = heroData.skins?.[skin.id || skin.name] || 0;
+            const isMax = skinVal === 60;
+            return (
+              <div className="premium-card" key={skin.id || skin.name}>
+                <div className="premium-card-header">
+                  <span className="premium-card-title">{skin.name}</span>
+                  <span className="premium-card-subtitle">{skin.attribute}</span>
+                </div>
+                <div className="premium-progress-container" style={{ marginTop: '12px' }}>
+                  <div className="premium-progress-label">
+                    <span>Szint: {skinVal} / 60</span>
+                    <span>{isMax ? 'MAX' : ''}</span>
+                  </div>
+                  <div className="premium-progress-bar">
+                    <div 
+                      className={`premium-progress-fill ${isMax ? 'max' : ''}`}
+                      style={{ width: `${(skinVal / 60) * 100}%` }}
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  };
+
+  const renderArtifactsOnlyTab = () => {
+    const artifactWeapon = gameDictionary.heroes[heroData.id]?.artifactWeapon || {};
+    
+    const weaponLvl = heroData.artifacts?.weapon?.level || 0;
+    const weaponStars = heroData.artifacts?.weapon?.stars || 0;
+    
+    const bookLvl = heroData.artifacts?.book?.level || 0;
+    const bookStars = heroData.artifacts?.book?.stars || 0;
+    const bookAttr1 = heroData.artifacts?.book?.attribute1 || 'armor';
+    const bookAttr2 = heroData.artifacts?.book?.attribute2 || 'magicDefense';
+    
+    const ringLvl = heroData.artifacts?.ring?.level || 0;
+    const ringStars = heroData.artifacts?.ring?.stars || 0;
+    const ringAttr = heroData.artifacts?.ring?.attribute || heroData.mainStat || 'Strength';
+
+    const renderStars = (count) => {
+      return (
+        <div className="gold-star-rating">
+          {[...Array(6)].map((_, i) => (
+            <span key={i} className="gold-star" style={{ opacity: i < count ? 1 : 0.2 }}>
+              ★
+            </span>
+          ))}
+        </div>
+      );
+    };
+
+    return (
+      <div className="modal-tab-content">
+        <h3 className="tab-section-title">Artifacts (Ereklyék)</h3>
+        <div className="premium-card-grid">
+          {/* Weapon (1. Ereklye) */}
+          <div className="premium-card">
+            <div className="premium-card-header">
+              <span className="premium-card-title">Weapon (1. ereklye)</span>
+              {renderStars(weaponStars)}
+            </div>
+            <p style={{ fontSize: '13px', margin: '4px 0 12px 0', color: 'var(--primary)' }}>
+              {artifactWeapon.attribute ? `${artifactWeapon.attribute} buff a csapatnak` : 'Csapat buff'}
+            </p>
+            <div className="premium-progress-container">
+              <div className="premium-progress-label">
+                <span>Szint: {weaponLvl} / 100</span>
+                <span>{weaponLvl === 100 ? 'MAX' : ''}</span>
+              </div>
+              <div className="premium-progress-bar">
+                <div 
+                  className={`premium-progress-fill ${weaponLvl === 100 ? 'max' : ''}`}
+                  style={{ width: `${(weaponLvl / 100) * 100}%` }}
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          {/* Book (2. Ereklye) */}
+          <div className="premium-card">
+            <div className="premium-card-header">
+              <span className="premium-card-title">Book (2. ereklye)</span>
+              {renderStars(bookStars)}
+            </div>
+            <p style={{ fontSize: '13px', margin: '4px 0 12px 0', color: 'var(--primary)' }}>
+              Bónuszok: {bookAttr1}, {bookAttr2}
+            </p>
+            <div className="premium-progress-container">
+              <div className="premium-progress-label">
+                <span>Szint: {bookLvl} / 100</span>
+                <span>{bookLvl === 100 ? 'MAX' : ''}</span>
+              </div>
+              <div className="premium-progress-bar">
+                <div 
+                  className={`premium-progress-fill ${bookLvl === 100 ? 'max' : ''}`}
+                  style={{ width: `${(bookLvl / 100) * 100}%` }}
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          {/* Ring (3. Ereklye) */}
+          <div className="premium-card">
+            <div className="premium-card-header">
+              <span className="premium-card-title">Ring (3. ereklye)</span>
+              {renderStars(ringStars)}
+            </div>
+            <p style={{ fontSize: '13px', margin: '4px 0 12px 0', color: 'var(--primary)' }}>
+              Bónusz: +{ringAttr} a hősnek
+            </p>
+            <div className="premium-progress-container">
+              <div className="premium-progress-label">
+                <span>Szint: {ringLvl} / 100</span>
+                <span>{ringLvl === 100 ? 'MAX' : ''}</span>
+              </div>
+              <div className="premium-progress-bar">
+                <div 
+                  className={`premium-progress-fill ${ringLvl === 100 ? 'max' : ''}`}
+                  style={{ width: `${(ringLvl / 100) * 100}%` }}
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  const renderGoEOnlyTab = () => {
+    const goeLevel = heroData.items?.goe || 0;
+    const isMax = goeLevel === 30;
+    return (
+      <div className="modal-tab-content">
+        <h3 className="tab-section-title">Gift of the Elements (Elemek ajándéka)</h3>
+        <div className="premium-card" style={{ maxWidth: '450px' }}>
+          <div className="premium-card-header">
+            <span className="premium-card-title">Gift of the Elements</span>
+            <span className="premium-card-subtitle">Fő statisztika bónusz</span>
+          </div>
+          <div className="premium-progress-container" style={{ marginTop: '16px' }}>
+            <div className="premium-progress-label">
+              <span>Szint: {goeLevel} / 30</span>
+              <span>{isMax ? 'MAX' : ''}</span>
+            </div>
+            <div className="premium-progress-bar">
+              <div 
+                className={`premium-progress-fill ${isMax ? 'max' : ''}`}
+                style={{ width: `${(goeLevel / 30) * 100}%` }}
+              ></div>
+            </div>
+          </div>
+          <p style={{ fontSize: '13px', color: '#ccc', marginTop: '12px', lineHeight: '1.4' }}>
+            Növeli a hős összes elsődleges statisztikáját (Strength, Agility, Intelligence). A fő statisztika dupla bónuszt kap.
+          </p>
+        </div>
+      </div>
+    );
+  };
+
+  const renderSkillsOnlyTab = () => {
+    const heroLevel = parseInt(heroData.general?.level) || 1;
+    const maxLevels = [
+      heroLevel,
+      heroLevel,
+      Math.max(0, heroLevel - 20),
+      Math.max(0, heroLevel - 40)
+    ];
+    const skillNames = ['1. Képesség (White)', '2. Képesség (Green)', '3. Képesség (Blue)', '4. Képesség (Violet)'];
+    
+    return (
+      <div className="modal-tab-content">
+        <h3 className="tab-section-title">Képességek (Skills)</h3>
+        <div className="premium-card-grid">
+          {skillNames.map((name, idx) => {
+            const skillLevel = heroData.skills?.[idx] || 0;
+            const maxLvl = maxLevels[idx];
+            const isMax = maxLvl > 0 && skillLevel >= maxLvl;
+            const isUnlocked = maxLvl > 0;
+            
+            return (
+              <div className="premium-card" key={idx} style={{ opacity: isUnlocked ? 1 : 0.5 }}>
+                <div className="premium-card-header">
+                  <span className="premium-card-title">{name}</span>
+                  <span className="premium-card-subtitle">{isUnlocked ? 'Feloldva' : 'Lezárva'}</span>
+                </div>
+                {isUnlocked ? (
+                  <div className="premium-progress-container" style={{ marginTop: '12px' }}>
+                    <div className="premium-progress-label">
+                      <span>Szint: {skillLevel} / {maxLvl}</span>
+                      <span>{isMax ? 'MAX' : ''}</span>
+                    </div>
+                    <div className="premium-progress-bar">
+                      <div 
+                        className={`premium-progress-fill ${isMax ? 'max' : ''}`}
+                        style={{ width: `${maxLvl > 0 ? (skillLevel / maxLvl) * 100 : 0}%` }}
+                      ></div>
+                    </div>
+                  </div>
+                ) : (
+                  <p style={{ fontSize: '13px', color: 'var(--error)', margin: '12px 0 0 0' }}>
+                    A hős szintje ({heroLevel}) túl alacsony a feloldáshoz.
+                  </p>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  };
+
+  const renderGlyphsOnlyTab = () => {
+    const catalogHero = gameDictionary.heroes[heroData.id];
+    const glyphNames = heroData.staticGlyphs || (catalogHero ? catalogHero.staticGlyphs : []);
+    const glyphsXpValues = heroData.glyphs || [0, 0, 0, 0, 0];
+
+    const getGlyphLevel = (xp) => {
+      let remainingXp = xp;
+      let level = 0;
+      for (let i = 0; i < GLYPH_XP_PER_LEVEL.length; i++) {
+        if (remainingXp >= GLYPH_XP_PER_LEVEL[i]) {
+          remainingXp -= GLYPH_XP_PER_LEVEL[i];
+          level = i + 1;
+        } else {
+          break;
+        }
+      }
+      return level;
+    };
+
+    return (
+      <div className="modal-tab-content">
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
+          <h3 className="tab-section-title" style={{ margin: 0 }}>Rúnák (Glyphs)</h3>
           <button className="help-icon-btn" onClick={() => setInfoType('glyphs')} title="Számolási módszer">
             <span className="material-symbols-outlined">help</span>
           </button>
-        </h3>
-        {heroData.staticGlyphs?.map((defaultName, idx) => {
-          const currentName = heroData.glyphNames?.[idx] || defaultName;
-          return (
-            <div className="stat-input-group" key={`glyph-${idx}`}>
-              <div className="glyph-row-header">
-                <select
-                  className="stat-input glyph-select"
-                  value={currentName}
-                  onChange={e => handleArrayChange('glyphNames', idx, e.target.value, false)}
-                  disabled={isViewMode}
-                >
-                  {GlyphTypes.map(gt => <option key={gt} value={gt}>{gt}</option>)}
-                </select>
-                <label className="glyph-label-center">(0-40/50)</label>
+        </div>
+        <div className="premium-card-grid">
+          {glyphNames.map((glyphName, idx) => {
+            const rawXp = parseInt(glyphsXpValues[idx]) || 0;
+            const lvl = getGlyphLevel(rawXp);
+            const isMax = lvl === 50;
+            
+            return (
+              <div className="premium-card" key={idx}>
+                <div className="premium-card-header">
+                  <span className="premium-card-title">{glyphName}</span>
+                  <span className="premium-card-subtitle">Szint: {lvl} / 50</span>
+                </div>
+                <div className="premium-progress-container" style={{ marginTop: '12px' }}>
+                  <div className="premium-progress-label">
+                    <span>{rawXp.toLocaleString()} / 33,850 XP</span>
+                    <span>{isMax ? 'MAX' : ''}</span>
+                  </div>
+                  <div className="premium-progress-bar">
+                    <div 
+                      className={`premium-progress-fill ${isMax ? 'max' : ''}`}
+                      style={{ width: `${(lvl / 50) * 100}%` }}
+                    ></div>
+                  </div>
+                </div>
               </div>
-              <input
-                type="number"
-                className="stat-input"
-                value={heroData.glyphs?.[idx] || 0}
-                onChange={e => handleArrayChange('glyphs', idx, e.target.value)}
-                disabled={isViewMode}
-              />
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
-    </div>
-  );
+    );
+  };
 
-  const renderAscensionOnlyTab = () => (
-    <div className="modal-tab-content">
-      <div className="modal-stat-column modal-stat-column-half">
-        <h3 className="tab-section-title">
-          Ascension
+  const renderAscensionOnlyTab = () => {
+    const ascensionRank = heroData.ascension?.rank || '0';
+    const branchLevel = parseInt(heroData.ascension?.branch) || 0;
+    const activeNodes = heroData.ascension?.nodes || [];
+    const activeNodesCount = activeNodes.length;
+    
+    const maxNodesPerRank = { '0': 0, 'I': 10, 'II': 11, 'III': 10, 'IV': 10, 'V': 10 };
+    const maxNodes = maxNodesPerRank[ascensionRank] || 0;
+    
+    const catalogHero = gameDictionary.heroes[heroData.id];
+    const roles = catalogHero?.roles || heroData.roles || [];
+    const primaryRole = roles[0] || 'Ismeretlen';
+    
+    return (
+      <div className="modal-tab-content">
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
+          <h3 className="tab-section-title" style={{ margin: 0 }}>Ascension (Felemelkedés)</h3>
           <button className="help-icon-btn" onClick={() => setInfoType('ascension')} title="Becslés és számolás">
             <span className="material-symbols-outlined">help</span>
           </button>
-        </h3>
-        <div className="stat-input-group">
-          <label>Ascension Rank</label>
-          <select className="stat-input" value={heroData.ascension?.rank || 'I'} onChange={e => handleChange('ascension.rank', e.target.value, false)} disabled={isViewMode}>
-            {AscensionRanks.map(r => <option key={r} value={r}>{r}</option>)}
-          </select>
         </div>
-        <div className="stat-input-group">
-          <label>Role Branch Nodes</label>
-          <input type="number" className="stat-input" value={heroData.ascension?.branch || 0} onChange={e => handleChange('ascension.branch', e.target.value)} disabled={isViewMode} />
+        
+        <div className="premium-card-grid">
+          {/* Felemelkedési szint és csomópontok */}
+          <div className="premium-card">
+            <div className="premium-card-header">
+              <span className="premium-card-title">Ascension Rank</span>
+              <span className="premium-card-subtitle" style={{ fontSize: '16px', fontWeight: 'bold', color: '#feec5f' }}>
+                {ascensionRank === '0' ? 'Nincs' : `Rank ${ascensionRank}`}
+              </span>
+            </div>
+            
+            {ascensionRank !== '0' && (
+              <div style={{ marginTop: '12px' }}>
+                <div className="premium-progress-label">
+                  <span>Csomópontok (Nodes): {activeNodesCount} / {maxNodes}</span>
+                </div>
+                <div className="ascension-node-indicator" style={{ marginTop: '8px' }}>
+                  {[...Array(maxNodes)].map((_, i) => (
+                    <div 
+                      key={i} 
+                      className={`ascension-node-dot ${i < activeNodesCount ? 'active' : ''}`}
+                      title={i < activeNodesCount ? 'Feloldott csomópont' : 'Lezárt csomópont'}
+                    ></div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Bölcsesség Fája ág */}
+          <div className="premium-card">
+            <div className="premium-card-header">
+              <span className="premium-card-title">Bölcsesség Fája (Szerepkör)</span>
+              <span className="premium-card-subtitle">{primaryRole} ág</span>
+            </div>
+            <div className="premium-progress-container" style={{ marginTop: '16px' }}>
+              <div className="premium-progress-label">
+                <span>Szint: {branchLevel} / 50</span>
+                <span>{branchLevel === 50 ? 'MAX' : ''}</span>
+              </div>
+              <div className="premium-progress-bar">
+                <div 
+                  className={`premium-progress-fill ${branchLevel === 50 ? 'max' : ''}`}
+                  style={{ width: `${(branchLevel / 50) * 100}%` }}
+                ></div>
+              </div>
+            </div>
+            <p style={{ fontSize: '13px', color: '#ccc', marginTop: '12px', lineHeight: '1.4' }}>
+              A Bölcsesség Fájában a **{primaryRole}** szerepkörű hősök fejlesztései érvényesek erre a hősre.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  };
 
   return (
     <div className="modal-overlay">
@@ -447,12 +796,18 @@ const HeroModal = ({ hero, onClose }) => {
           <div className={`modal-flag ${activeTab === 'glyphs' ? 'active' : ''}`} onClick={() => setActiveTab('glyphs')}>Glyphs</div>
           <div className={`modal-flag ${activeTab === 'ascension' ? 'active' : ''}`} onClick={() => setActiveTab('ascension')}>Ascension</div>
 
-          <div className="modal-save-container">
-            {!isViewMode && (
-              <button className="action-btn btn-save" onClick={handleSave} disabled={isSaving}>
-                {isSaving ? 'Mentés...' : 'Mentés'}
-              </button>
-            )}
+          <div className="modal-save-container" style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            <button 
+              className="action-btn btn-save" 
+              style={{ background: '#b67532', color: '#fff', border: '1px solid #feec5f' }}
+              onClick={() => {
+                navigator.clipboard.writeText(JSON.stringify(heroData, null, 2))
+                  .then(() => alert('Adatok másolva a vágólapra!'))
+                  .catch(err => console.error('Hiba a másoláskor: ', err));
+              }}
+            >
+              Adatok Másolása
+            </button>
           </div>
         </div>
 
@@ -465,10 +820,10 @@ const HeroModal = ({ hero, onClose }) => {
                 {activeTab === 'info' && renderInfoTab()}
                 {activeTab === 'guide' && renderGuideTab()}
                 {activeTab === 'stats' && renderGeneralTab()}
-                {activeTab === 'skills' && renderSkillsOnlyTab()}
                 {activeTab === 'skins' && renderSkinsOnlyTab()}
                 {activeTab === 'artifacts' && renderArtifactsOnlyTab()}
                 {activeTab === 'goe' && renderGoEOnlyTab()}
+                {activeTab === 'skills' && renderSkillsOnlyTab()}
                 {activeTab === 'glyphs' && renderGlyphsOnlyTab()}
                 {activeTab === 'ascension' && renderAscensionOnlyTab()}
               </div>
@@ -502,8 +857,8 @@ const HeroModal = ({ hero, onClose }) => {
           <li>A feloldott csomópontok összesített darabszámát (hosszát) veszi alapul.</li>
           <li>Minden 5. csomópont után növeli a <strong>Rankot (I-V)</strong>.</li>
           <li>A maradék csomópontokat a <strong>Branch</strong> (ág) pontokhoz adja hozzá.</li>
+          <li>A Bölcsesség Fája szerepkör szintjét a játékszerver válaszából automatikusan beolvassuk.</li>
         </ul>
-        <p><strong>Figyelem:</strong> Ez a jelenlegi számolás csak becslés! A pontos algoritmus és ID-térkép felderítése folyamatban van. Addig is lehetőséged van a becsült értékeket a felületen manuálisan felülírni a pontos adatokkal.</p>
       </InfoModal>
     </div>
   );

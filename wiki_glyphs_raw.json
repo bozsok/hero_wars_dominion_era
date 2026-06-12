@@ -1,0 +1,516 @@
+{
+  "Aurora": [
+    "Magic attack",
+    "Health",
+    "Magic penetration",
+    "Dodge",
+    "Strength"
+  ],
+  "Galahad": [
+    "Physical attack",
+    "Armor",
+    "Health",
+    "Magic defense",
+    "Strength"
+  ],
+  "Keira": [
+    "Physical attack",
+    "Health",
+    "Armor",
+    "Armor penetration",
+    "Agility"
+  ],
+  "Astaroth": [
+    "Magic attack",
+    "Armor",
+    "Health",
+    "Magic defense",
+    "Strength"
+  ],
+  "Kai": [
+    "Magic attack",
+    "Health",
+    "Magic penetration",
+    "Magic defense",
+    "Intelligence"
+  ],
+  "Phobos": [
+    "Magic attack",
+    "Armor",
+    "Health",
+    "Magic defense",
+    "Intelligence"
+  ],
+  "Thea": [
+    "Magic attack",
+    "Armor",
+    "Magic defense",
+    "Health",
+    "Intelligence"
+  ],
+  "Daredevil": [
+    "Physical attack",
+    "Health",
+    "Armor penetration",
+    "Crit hit chance",
+    "Agility"
+  ],
+  "Heidi": [
+    "Magic attack",
+    "Armor",
+    "Magic defense",
+    "Dodge",
+    "Intelligence"
+  ],
+  "Faceless": [
+    "Magic attack",
+    "Health",
+    "Physical attack",
+    "Magic penetration",
+    "Intelligence"
+  ],
+  "Chabba": [
+    "Physical attack",
+    "Armor",
+    "Magic defense",
+    "Health",
+    "Strength"
+  ],
+  "Arachne": [
+    "Physical attack",
+    "Health",
+    "Armor",
+    "Magic attack",
+    "Agility"
+  ],
+  "Orion": [
+    "Magic attack",
+    "Health",
+    "Magic penetration",
+    "Magic defense",
+    "Intelligence"
+  ],
+  "Fox": [
+    "Physical attack",
+    "Armor",
+    "Armor penetration",
+    "Crit hit chance",
+    "Agility"
+  ],
+  "Ginger": [
+    "Physical attack",
+    "Health",
+    "Magic defense",
+    "Armor penetration",
+    "Agility"
+  ],
+  "Dante": [
+    "Physical attack",
+    "Armor",
+    "Dodge",
+    "Armor penetration",
+    "Agility"
+  ],
+  "Mojo": [
+    "Magic attack",
+    "Magic defense",
+    "Magic penetration",
+    "Health",
+    "Intelligence"
+  ],
+  "Judge": [
+    "Magic attack",
+    "Health",
+    "Magic penetration",
+    "Magic defense",
+    "Intelligence"
+  ],
+  "Dark Star": [
+    "Physical attack",
+    "Health",
+    "Armor penetration",
+    "Dodge",
+    "Agility"
+  ],
+  "Artemis": [
+    "Physical attack",
+    "Health",
+    "Armor penetration",
+    "Crit hit chance",
+    "Agility"
+  ],
+  "Markus": [
+    "Physical attack",
+    "Health",
+    "Armor",
+    "Magic attack",
+    "Intelligence"
+  ],
+  "Peppy": [
+    "Magic attack",
+    "Health",
+    "Magic penetration",
+    "Magic defense",
+    "Intelligence"
+  ],
+  "Lian": [
+    "Magic attack",
+    "Health",
+    "Armor",
+    "Magic defense",
+    "Intelligence"
+  ],
+  "Cleaver": [
+    "Physical attack",
+    "Armor",
+    "Magic defense",
+    "Health",
+    "Strength"
+  ],
+  "Ishmael": [
+    "Physical attack",
+    "Health",
+    "Armor penetration",
+    "Crit hit chance",
+    "Agility"
+  ],
+  "Lilith": [
+    "Magic attack",
+    "Health",
+    "Magic penetration",
+    "Magic defense",
+    "Intelligence"
+  ],
+  "Luther": [
+    "Physical attack",
+    "Health",
+    "Magic defense",
+    "Armor",
+    "Strength"
+  ],
+  "Qing Mao": [
+    "Physical attack",
+    "Health",
+    "Armor penetration",
+    "Dodge",
+    "Agility"
+  ],
+  "Dorian": [
+    "Magic attack",
+    "Health",
+    "Armor",
+    "Magic defense",
+    "Intelligence"
+  ],
+  "Cornelius": [
+    "Magic attack",
+    "Health",
+    "Armor",
+    "Magic defense",
+    "Intelligence"
+  ],
+  "Jet": [
+    "Magic attack",
+    "Health",
+    "Magic defense",
+    "Dodge",
+    "Intelligence"
+  ],
+  "Helios": [
+    "Magic attack",
+    "Health",
+    "Magic defense",
+    "Armor",
+    "Intelligence"
+  ],
+  "Lars": [
+    "Magic attack",
+    "Health",
+    "Magic defense",
+    "Magic penetration",
+    "Intelligence"
+  ],
+  "Krista": [
+    "Magic attack",
+    "Health",
+    "Armor",
+    "Magic defense",
+    "Intelligence"
+  ],
+  "Jorgen": [
+    "Magic attack",
+    "Health",
+    "Armor",
+    "Magic defense",
+    "Strength"
+  ],
+  "Maya": [
+    "Magic attack",
+    "Health",
+    "Armor",
+    "Magic defense",
+    "Intelligence"
+  ],
+  "Jhu": [
+    "Physical attack",
+    "Health",
+    "Armor penetration",
+    "Crit hit chance",
+    "Strength"
+  ],
+  "Elmir": [
+    "Physical attack",
+    "Health",
+    "Armor penetration",
+    "Dodge",
+    "Agility"
+  ],
+  "Ziri": [
+    "Physical attack",
+    "Health",
+    "Magic defense",
+    "Armor",
+    "Strength"
+  ],
+  "Nebula": [
+    "Physical attack",
+    "Armor",
+    "Magic defense",
+    "Health",
+    "Agility"
+  ],
+  "K’arkh": {
+    "error": "The page you specified doesn't exist."
+  },
+  "Rufus": [
+    "Magic attack",
+    "Health",
+    "Magic defense",
+    "Armor",
+    "Strength"
+  ],
+  "Celeste": [
+    "Magic attack",
+    "Health",
+    "Magic defense",
+    "Magic penetration",
+    "Intelligence"
+  ],
+  "Astrid and Lucas": [
+    "Physical attack",
+    "Health",
+    "Armor",
+    "Armor penetration",
+    "Agility"
+  ],
+  "Satori": [
+    "Magic attack",
+    "Health",
+    "Armor",
+    "Magic penetration",
+    "Intelligence"
+  ],
+  "Martha": [
+    "Magic attack",
+    "Health",
+    "Magic defense",
+    "Armor",
+    "Intelligence"
+  ],
+  "Andavari": [
+    "Physical attack",
+    "Health",
+    "Armor penetration",
+    "Armor",
+    "Strength"
+  ],
+  "Sebastian": [
+    "Physical attack",
+    "Health",
+    "Magic defense",
+    "Crit hit chance",
+    "Agility"
+  ],
+  "Yasmine": [
+    "Physical attack",
+    "Health",
+    "Crit hit chance",
+    "Dodge",
+    "Agility"
+  ],
+  "Corvus": [
+    "Physical attack",
+    "Health",
+    "Armor",
+    "Magic defense",
+    "Strength"
+  ],
+  "Morrigan": [
+    "Magic attack",
+    "Health",
+    "Magic defense",
+    "Armor",
+    "Intelligence"
+  ],
+  "Isaac": [
+    "Physical attack",
+    "Health",
+    "Armor",
+    "Magic defense",
+    "Agility"
+  ],
+  "Alvanor": [
+    "Magic attack",
+    "Health",
+    "Magic penetration",
+    "Magic defense",
+    "Intelligence"
+  ],
+  "Tristan": [
+    "Physical attack",
+    "Health",
+    "Armor",
+    "Armor penetration",
+    "Strength"
+  ],
+  "Iris": [
+    "Magic attack",
+    "Health",
+    "Magic defense",
+    "Armor penetration",
+    "Intelligence"
+  ],
+  "Amira": [
+    "Magic attack",
+    "Health",
+    "Armor",
+    "Magic penetration",
+    "Intelligence"
+  ],
+  "Fafnir": [
+    "Physical attack",
+    "Health",
+    "Armor",
+    "Magic defense",
+    "Strength"
+  ],
+  "Aidan": [
+    "Magic attack",
+    "Health",
+    "Magic defense",
+    "Magic penetration",
+    "Intelligence"
+  ],
+  "Kayla": [
+    "Physical attack",
+    "Health",
+    "Magic defense",
+    "Armor penetration",
+    "Agility"
+  ],
+  "Mushy and Shroom": [
+    "Magic attack",
+    "Armor",
+    "Health",
+    "Magic penetration",
+    "Strength"
+  ],
+  "Julius": [
+    "Physical attack",
+    "Health",
+    "Crit hit chance",
+    "Armor",
+    "Strength"
+  ],
+  "Polaris": [
+    "Magic attack",
+    "Health",
+    "Armor",
+    "Magic penetration",
+    "Intelligence"
+  ],
+  "Lara Croft": [
+    "Physical attack",
+    "Health",
+    "Crit hit chance",
+    "Armor penetration",
+    "Agility"
+  ],
+  "Augustus": [
+    "Magic attack",
+    "Health",
+    "Armor",
+    "Magic penetration",
+    "Intelligence"
+  ],
+  "Ninja Turtles": [
+    "Physical attack",
+    "Armor",
+    "Crit hit chance",
+    "Armor penetration",
+    "Agility"
+  ],
+  "Folio": [
+    "Magic attack",
+    "Health",
+    "Armor",
+    "Magic penetration",
+    "Intelligence"
+  ],
+  "Lyria": [
+    "Physical attack",
+    "Armor",
+    "Health",
+    "Magic defense",
+    "Strength"
+  ],
+  "Guus": [
+    "Physical attack",
+    "Health",
+    "Armor penetration",
+    "Armor",
+    "Strength"
+  ],
+  "Cascade": [
+    "Magic attack",
+    "Health",
+    "Magic penetration",
+    "Magic defense",
+    "Intelligence"
+  ],
+  "Electra von Grave": [
+    "Magic attack",
+    "Armor",
+    "Health",
+    "Magic penetration",
+    "Strength"
+  ],
+  "Fluffy": [
+    "Magic attack",
+    "Health",
+    "Armor",
+    "Magic penetration",
+    "Intelligence"
+  ],
+  "Byrma": [
+    "Magic attack",
+    "Magic penetration",
+    "Armor",
+    "Magic defense",
+    "Strength"
+  ],
+  "Adam": [
+    "Physical attack",
+    "Armor penetration",
+    "Dodge",
+    "Armor",
+    "Agility"
+  ],
+  "K'arkh": [
+    "Physical attack",
+    "Health",
+    "Armor penetration",
+    "Armor",
+    "Agility"
+  ]
+}

@@ -1,6 +1,8 @@
 import React, { useState, useContext } from 'react';
 import { HeroContext } from '../context/HeroContext';
 import './ImportModal.css';
+import { calculateHeroStats } from '../utils/statCalculator.js';
+import heroesCatalog from '../data/heroesCatalog.json';
 
 const RANKS = [
   'Ismeretlen', // 0 (nem használt)
@@ -43,18 +45,26 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
         const harData = JSON.parse(e.target.result);
         
         let heroData = null;
+        let roleAscensionData = null;
         if (harData.log && harData.log.entries) {
           for (const entry of harData.log.entries) {
             if (entry.response && entry.response.content && entry.response.content.text) {
               const text = entry.response.content.text;
-              if (text.includes('"ident":"heroGetAll"') || text.includes('"ident": "heroGetAll"')) {
-                const parsed = JSON.parse(text);
-                if (parsed.results) {
-                  const heroResult = parsed.results.find(r => r.ident === 'heroGetAll');
-                  if (heroResult && heroResult.result && heroResult.result.response) {
-                    heroData = heroResult.result.response;
-                    break;
+              if (text.includes('"ident":')) {
+                try {
+                  const parsed = JSON.parse(text);
+                  if (parsed.results) {
+                    const heroResult = parsed.results.find(r => r.ident === 'heroGetAll');
+                    if (heroResult && heroResult.result && heroResult.result.response) {
+                      heroData = heroResult.result.response;
+                    }
+                    const roleAscensionResult = parsed.results.find(r => r.ident === 'roleAscension_getAll');
+                    if (roleAscensionResult && roleAscensionResult.result && roleAscensionResult.result.response) {
+                      roleAscensionData = roleAscensionResult.result.response;
+                    }
                   }
+                } catch (e) {
+                  // JSON parse error
                 }
               }
             }
@@ -94,7 +104,11 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
             if (hero.skills) {
               const sVals = Object.values(hero.skills);
               for (let s = 0; s < Math.min(sVals.length, 4); s++) {
-                parsedHero.skills[s] = parseInt(sVals[s], 10) || 0;
+                const rawVal = parseInt(sVals[s], 10) || 0;
+                let val = rawVal;
+                if (s === 2) val = Math.max(0, rawVal - 20);      // Blue szint korrekció (-20)
+                else if (s === 3) val = Math.max(0, rawVal - 40); // Violet szint korrekció (-40)
+                parsedHero.skills[s] = val;
               }
             }
 
@@ -106,36 +120,66 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
             }
 
             if (hero.skins) {
+              const defaultSkinId = (id === '50' || id == 50) ? '105' : id.toString();
               for (const [skinId, skinLevel] of Object.entries(hero.skins)) {
-                parsedHero.skins[skinId] = parseInt(skinLevel, 10) || 0;
+                if (skinId === defaultSkinId) {
+                  parsedHero.skins['default'] = parseInt(skinLevel, 10) || 0;
+                } else {
+                  parsedHero.skins[skinId] = parseInt(skinLevel, 10) || 0;
+                }
               }
             }
+
+            // GoE szint mentése (az items.goe kulcsba, amit a statCalculator vár)
+            parsedHero.items = parsedHero.items || {};
+            parsedHero.items.goe = hero.titanGiftLevel || 0;
 
             if (hero.artifacts) {
-              if (hero.artifacts["1"]) {
-                parsedHero.artifacts.weapon = { stars: hero.artifacts["1"].star || 0, level: hero.artifacts["1"].level || 0 };
+              if (hero.artifacts[0]) {
+                parsedHero.artifacts.weapon = { stars: hero.artifacts[0].star || 0, level: hero.artifacts[0].level || 0 };
               }
-              if (hero.artifacts["2"]) {
-                parsedHero.artifacts.book = { stars: hero.artifacts["2"].star || 0, level: hero.artifacts["2"].level || 0 };
+              if (hero.artifacts[1]) {
+                parsedHero.artifacts.book = { stars: hero.artifacts[1].star || 0, level: hero.artifacts[1].level || 0 };
               }
-              if (hero.artifacts["3"]) {
-                parsedHero.artifacts.ring = { stars: hero.artifacts["3"].star || 0, level: hero.artifacts["3"].level || 0 };
+              if (hero.artifacts[2]) {
+                parsedHero.artifacts.ring = { stars: hero.artifacts[2].star || 0, level: hero.artifacts[2].level || 0 };
               }
             }
 
-            if (hero.ascensions) {
-              const ascArr = Object.values(hero.ascensions).map(x => parseInt(x, 10));
-              parsedHero.ascension.nodes = ascArr;
-              
-              const nodeCount = ascArr.length;
-              if (nodeCount >= 25) parsedHero.ascension.rank = 'V';
-              else if (nodeCount >= 20) parsedHero.ascension.rank = 'IV';
-              else if (nodeCount >= 15) parsedHero.ascension.rank = 'III';
-              else if (nodeCount >= 10) parsedHero.ascension.rank = 'II';
-              else parsedHero.ascension.rank = 'I';
-              
-              parsedHero.ascension.branch = nodeCount % 5;
+            if (hero.ascensions && typeof hero.ascensions === 'object') {
+              const rankKeys = Object.keys(hero.ascensions).map(k => parseInt(k, 10));
+              if (rankKeys.length > 0) {
+                const maxRank = Math.max(...rankKeys);
+                const rankMap = { 1: 'I', 2: 'II', 3: 'III', 4: 'IV', 5: 'V' };
+                parsedHero.ascension.rank = rankMap[maxRank] || '0';
+                parsedHero.ascension.nodes = hero.ascensions[maxRank] || [];
+              } else {
+                parsedHero.ascension.rank = '0';
+                parsedHero.ascension.nodes = [];
+              }
             }
+
+            // Szerepkör fa (Bölcsesség Fája) automatikus importálása
+            const roleIdMap = {
+              'mage': '1',
+              'tank': '2',
+              'marksman': '3',
+              'healer': '4',
+              'support': '5',
+              'warrior': '6',
+              'control': '7'
+            };
+            const catalogHero = heroesCatalog.find(h => h.id === id || h.id == id);
+            const primaryRole = catalogHero?.roles?.[0];
+            let branchLevel = 0;
+            if (primaryRole && roleAscensionData) {
+              const roleKey = primaryRole.toLowerCase();
+              const roleId = roleIdMap[roleKey];
+              if (roleId && roleAscensionData[roleId]) {
+                branchLevel = parseInt(roleAscensionData[roleId].level, 10) || 0;
+              }
+            }
+            parsedHero.ascension.branch = branchLevel;
 
             newHeroesObj[id] = parsedHero;
           }

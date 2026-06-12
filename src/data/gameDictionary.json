@@ -1,0 +1,7119 @@
+{
+  "global": {
+    "power": {
+      "intelligence": 2.75,
+      "agility": 2.75,
+      "strength": 2.75,
+      "health": 0.05,
+      "physicalAttack": 0.75,
+      "magicAttack": 0.5,
+      "armor": 0.5,
+      "magicDefense": 0.5,
+      "dodge": 1.8,
+      "armorPenetration": 0.5,
+      "magicPenetration": 0.5,
+      "vampirism": 14.5,
+      "critHitChance": 1.8
+    },
+    "giftOfTheElements": 360,
+    "maxGlyphs": {
+      "intelligence": 1135,
+      "agility": 1135,
+      "strength": 1135,
+      "health": 62200,
+      "physicalAttack": 4340,
+      "magicAttack": 6500,
+      "armor": 6500,
+      "magicDefense": 6500,
+      "dodge": 1995,
+      "armorPenetration": 6500,
+      "magicPenetration": 6500,
+      "critHitChance": 1995
+    },
+    "maxArtifactBook": {
+      "health": 83649,
+      "physicalAttack": 5577,
+      "magicAttack": 16731,
+      "armor": 12546,
+      "magicDefense": 12546,
+      "dodge": 4647,
+      "armorPenetration": 16731,
+      "magicPenetration": 16731,
+      "critHitChance": 4647
+    },
+    "maxArtifactRing": {
+      "intelligence": 6249,
+      "agility": 6249,
+      "strength": 6249
+    }
+  },
+  "heroes": {
+    "1": {
+      "id": 1,
+      "mainStat": "strength",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 15,
+        "physicalAttack": 55,
+        "strength": 20
+      },
+      "growth": {
+        "1": {
+          "agility": 3,
+          "intelligence": 3,
+          "strength": 4
+        },
+        "2": {
+          "agility": 4,
+          "intelligence": 5,
+          "strength": 6
+        },
+        "3": {
+          "agility": 7,
+          "intelligence": 7,
+          "strength": 8
+        },
+        "4": {
+          "agility": 9,
+          "intelligence": 10,
+          "strength": 11
+        },
+        "5": {
+          "agility": 12,
+          "intelligence": 13,
+          "strength": 15
+        },
+        "6": {
+          "agility": 15,
+          "intelligence": 16,
+          "strength": 19
+        }
+      },
+      "skins": [
+        {
+          "name": "Nordic Skin",
+          "attribute": "dodge",
+          "value": 2960
+        },
+        {
+          "name": "Spring Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Demonic Skin",
+          "attribute": "armor",
+          "value": 10650
+        },
+        {
+          "name": "Romantic Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Thunder Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "dodge",
+        "value": 13941
+      },
+      "ascension": {
+        "1": {
+          "health": 5500,
+          "magicAttack": 690,
+          "dodge": 250,
+          "magicPenetration": 1090,
+          "strength": 230
+        },
+        "2": {
+          "health": 16250,
+          "magicAttack": 2260,
+          "dodge": 640,
+          "magicPenetration": 2320,
+          "strength": 545,
+          "Skill": 4
+        },
+        "3": {
+          "health": 33250,
+          "magicAttack": 4210,
+          "dodge": 1250,
+          "magicPenetration": 4770,
+          "strength": 1040,
+          "Skill": 4
+        },
+        "4": {
+          "health": 55000,
+          "magicAttack": 7010,
+          "dodge": 1970,
+          "magicPenetration": 7160,
+          "strength": 1600,
+          "Skill": 4
+        },
+        "5": {
+          "health": 79500,
+          "magicAttack": 9680,
+          "dodge": 2770,
+          "magicPenetration": 10290,
+          "strength": 2210,
+          "Skill": 5
+        }
+      }
+    },
+    "2": {
+      "id": 2,
+      "mainStat": "strength",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 15,
+        "physicalAttack": 55,
+        "strength": 20
+      },
+      "growth": {
+        "1": {
+          "agility": 3,
+          "intelligence": 3,
+          "strength": 4
+        },
+        "2": {
+          "agility": 5,
+          "intelligence": 4,
+          "strength": 6
+        },
+        "3": {
+          "agility": 7,
+          "intelligence": 6,
+          "strength": 9
+        },
+        "4": {
+          "agility": 10,
+          "intelligence": 8,
+          "strength": 12
+        },
+        "5": {
+          "agility": 13,
+          "intelligence": 11,
+          "strength": 16
+        },
+        "6": {
+          "agility": 17,
+          "intelligence": 13,
+          "strength": 20
+        }
+      },
+      "skins": [
+        {
+          "name": "Angel Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        },
+        {
+          "name": "Champion's Skin",
+          "attribute": "health",
+          "value": 106870
+        },
+        {
+          "name": "Romantic Skin",
+          "attribute": "armor",
+          "value": 10650
+        },
+        {
+          "name": "Celestial Skin",
+          "attribute": "magicDefense",
+          "value": 10650
+        },
+        {
+          "name": "Thunder Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "physicalAttack",
+        "value": 33459
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "armor": 690,
+          "health": 9000,
+          "magicDefense": 1090,
+          "strength": 230
+        },
+        "2": {
+          "physicalAttack": 1070,
+          "armor": 2260,
+          "health": 23000,
+          "magicDefense": 2320,
+          "strength": 545,
+          "Skill": 2
+        },
+        "3": {
+          "physicalAttack": 2200,
+          "armor": 4210,
+          "health": 45000,
+          "magicDefense": 4770,
+          "strength": 1040,
+          "Skill": 2
+        },
+        "4": {
+          "physicalAttack": 3640,
+          "armor": 7010,
+          "health": 70750,
+          "magicDefense": 7160,
+          "strength": 1600,
+          "Skill": 2
+        },
+        "5": {
+          "physicalAttack": 5270,
+          "armor": 9680,
+          "health": 99750,
+          "magicDefense": 10290,
+          "strength": 2210,
+          "Skill": 3
+        }
+      }
+    },
+    "3": {
+      "id": 3,
+      "mainStat": "agility",
+      "base": {
+        "agility": 20,
+        "health": 500,
+        "intelligence": 15,
+        "physicalAttack": 60,
+        "strength": 10
+      },
+      "growth": {
+        "1": {
+          "agility": 4,
+          "intelligence": 3,
+          "strength": 3
+        },
+        "2": {
+          "agility": 7,
+          "intelligence": 3,
+          "strength": 5
+        },
+        "3": {
+          "agility": 10,
+          "intelligence": 5,
+          "strength": 7
+        },
+        "4": {
+          "agility": 15,
+          "intelligence": 7,
+          "strength": 8
+        },
+        "5": {
+          "agility": 20,
+          "intelligence": 9,
+          "strength": 11
+        },
+        "6": {
+          "agility": 24,
+          "intelligence": 11,
+          "strength": 15
+        }
+      },
+      "skins": [
+        {
+          "name": "Blooming Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        },
+        {
+          "name": "Winter Skin",
+          "attribute": "armorPenetration",
+          "value": 10665
+        },
+        {
+          "name": "Demonic Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        },
+        {
+          "name": "Romantic Skin",
+          "attribute": "health",
+          "value": 106645
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "physicalAttack",
+        "value": 33459
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "health": 7000,
+          "armor": 200,
+          "armorPenetration": 1090,
+          "agility": 230,
+          "magicDefense": 690
+        },
+        "2": {
+          "physicalAttack": 1730,
+          "health": 25000,
+          "armor": 1110,
+          "armorPenetration": 1090,
+          "agility": 545,
+          "magicDefense": 1180,
+          "Skill": 2
+        },
+        "3": {
+          "physicalAttack": 2860,
+          "health": 44500,
+          "armor": 1890,
+          "armorPenetration": 3540,
+          "agility": 1040,
+          "magicDefense": 2600,
+          "Skill": 2
+        },
+        "4": {
+          "physicalAttack": 5040,
+          "health": 85250,
+          "armor": 3460,
+          "armorPenetration": 3540,
+          "agility": 1600,
+          "magicDefense": 3600,
+          "Skill": 2
+        },
+        "5": {
+          "physicalAttack": 6670,
+          "health": 112000,
+          "armor": 4630,
+          "armorPenetration": 6670,
+          "agility": 2210,
+          "magicDefense": 5330,
+          "Skill": 3
+        }
+      }
+    },
+    "4": {
+      "id": 4,
+      "mainStat": "strength",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 15,
+        "physicalAttack": 55,
+        "strength": 20
+      },
+      "growth": {
+        "2": {
+          "agility": 4,
+          "intelligence": 5,
+          "strength": 6
+        },
+        "3": {
+          "agility": 7,
+          "intelligence": 7,
+          "strength": 8
+        },
+        "4": {
+          "agility": 9,
+          "intelligence": 10,
+          "strength": 11
+        },
+        "5": {
+          "agility": 12,
+          "intelligence": 13,
+          "strength": 15
+        },
+        "6": {
+          "agility": 15,
+          "intelligence": 16,
+          "strength": 19
+        }
+      },
+      "skins": [
+        {
+          "name": "Demonic Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Barbarian Skin",
+          "attribute": "armor",
+          "value": 10650
+        },
+        {
+          "name": "Lunar Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Cybernetic Skin",
+          "attribute": "health",
+          "value": 106645
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "armor",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "armor": 890,
+          "health": 9000,
+          "magicDefense": 890,
+          "strength": 230
+        },
+        "2": {
+          "magicAttack": 1610,
+          "armor": 2290,
+          "health": 23000,
+          "magicDefense": 2290,
+          "strength": 545
+        },
+        "3": {
+          "magicAttack": 3300,
+          "armor": 4490,
+          "health": 45000,
+          "magicDefense": 4490,
+          "strength": 1040
+        },
+        "4": {
+          "magicAttack": 5460,
+          "armor": 7060,
+          "health": 70750,
+          "magicDefense": 7110,
+          "strength": 1600
+        },
+        "5": {
+          "magicAttack": 7910,
+          "armor": 9960,
+          "health": 99750,
+          "magicDefense": 10010,
+          "strength": 2210
+        }
+      }
+    },
+    "5": {
+      "id": 5,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "3": {
+          "agility": 6,
+          "intelligence": 10,
+          "strength": 6
+        },
+        "4": {
+          "agility": 9,
+          "intelligence": 12,
+          "strength": 9
+        },
+        "5": {
+          "agility": 12,
+          "intelligence": 16,
+          "strength": 12
+        },
+        "6": {
+          "agility": 14,
+          "intelligence": 22,
+          "strength": 14
+        }
+      },
+      "skins": [
+        {
+          "name": "Winter Skin",
+          "attribute": "magicAttack",
+          "value": 10665
+        },
+        {
+          "name": "Champion's Skin",
+          "attribute": "health",
+          "value": 106871
+        },
+        {
+          "name": "Solar Skin",
+          "attribute": "magicPenetration",
+          "value": 10650
+        },
+        {
+          "name": "Beach Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicAttack",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "health": 7000,
+          "magicPenetration": 890,
+          "magicDefense": 300,
+          "intelligence": 230,
+          "armor": 790
+        },
+        "2": {
+          "magicAttack": 1610,
+          "health": 19250,
+          "magicPenetration": 2290,
+          "magicDefense": 1290,
+          "intelligence": 545,
+          "armor": 1370,
+          "Skill": 3
+        },
+        "3": {
+          "magicAttack": 3300,
+          "health": 38750,
+          "magicPenetration": 4490,
+          "magicDefense": 2200,
+          "intelligence": 1040,
+          "armor": 2910,
+          "Skill": 3
+        },
+        "4": {
+          "magicAttack": 5460,
+          "health": 62500,
+          "magicPenetration": 7060,
+          "magicDefense": 3890,
+          "intelligence": 1600,
+          "armor": 4020,
+          "Skill": 3
+        },
+        "5": {
+          "magicAttack": 7910,
+          "health": 89250,
+          "magicPenetration": 9960,
+          "magicDefense": 5170,
+          "intelligence": 2210,
+          "armor": 5870,
+          "Skill": 4
+        }
+      }
+    },
+    "6": {
+      "id": 6,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 20
+      },
+      "growth": {
+        "1": {
+          "agility": 3,
+          "intelligence": 4,
+          "strength": 3
+        },
+        "2": {
+          "agility": 4,
+          "intelligence": 7,
+          "strength": 4
+        },
+        "3": {
+          "agility": 6,
+          "intelligence": 10,
+          "strength": 6
+        },
+        "4": {
+          "agility": 9,
+          "intelligence": 12,
+          "strength": 9
+        },
+        "5": {
+          "agility": 12,
+          "intelligence": 16,
+          "strength": 12
+        },
+        "6": {
+          "agility": 14,
+          "intelligence": 22,
+          "strength": 14
+        }
+      },
+      "skins": [
+        {
+          "name": "Illusionist Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Stellar Skin",
+          "attribute": "magicPenetration",
+          "value": 10650
+        },
+        {
+          "name": "Dark Depths Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Winter Skin",
+          "attribute": "armor",
+          "value": 10650
+        },
+        {
+          "name": "Solar Skin",
+          "attribute": "magicPenetration",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicDefense",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "armor": 100,
+          "health": 9000,
+          "magicPenetration": 1090,
+          "intelligence": 230,
+          "magicDefense": 590
+        },
+        "2": {
+          "magicAttack": 2190,
+          "armor": 920,
+          "health": 23000,
+          "magicPenetration": 2080,
+          "intelligence": 545,
+          "magicDefense": 1000
+        },
+        "3": {
+          "magicAttack": 3880,
+          "armor": 1580,
+          "health": 45000,
+          "magicPenetration": 4530,
+          "intelligence": 1040,
+          "magicDefense": 2290
+        },
+        "4": {
+          "magicAttack": 7150,
+          "armor": 3040,
+          "health": 70750,
+          "magicPenetration": 6220,
+          "intelligence": 1600,
+          "magicDefense": 3220
+        },
+        "5": {
+          "magicAttack": 11220,
+          "armor": 4090,
+          "health": 99750,
+          "magicPenetration": 9350,
+          "intelligence": 2210,
+          "magicDefense": 3220
+        }
+      }
+    },
+    "7": {
+      "id": 7,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "1": {
+          "agility": 3,
+          "intelligence": 4,
+          "strength": 3
+        },
+        "2": {
+          "agility": 4,
+          "intelligence": 7,
+          "strength": 4
+        },
+        "3": {
+          "agility": 6,
+          "intelligence": 10,
+          "strength": 6
+        },
+        "4": {
+          "agility": 9,
+          "intelligence": 12,
+          "strength": 9
+        },
+        "5": {
+          "agility": 12,
+          "intelligence": 16,
+          "strength": 12
+        },
+        "6": {
+          "agility": 14,
+          "intelligence": 22,
+          "strength": 14
+        }
+      },
+      "skins": [
+        {
+          "name": "Angel Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Champion's Skin",
+          "attribute": "magicAttack",
+          "value": 10687
+        },
+        {
+          "name": "Winter Skin",
+          "attribute": "armor",
+          "value": 10665
+        },
+        {
+          "name": "Masquerade Skin",
+          "attribute": "health",
+          "value": 106645
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicDefense",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 1430,
+          "armor": 100,
+          "health": 11000,
+          "intelligence": 230,
+          "magicDefense": 590
+        },
+        "2": {
+          "magicAttack": 3410,
+          "armor": 1410,
+          "health": 26750,
+          "intelligence": 545,
+          "magicDefense": 1000,
+          "Skill": 2
+        },
+        "3": {
+          "magicAttack": 7300,
+          "armor": 2070,
+          "health": 51250,
+          "intelligence": 1040,
+          "magicDefense": 2290,
+          "Skill": 2
+        },
+        "4": {
+          "magicAttack": 9460,
+          "armor": 4530,
+          "health": 79250,
+          "intelligence": 1600,
+          "magicDefense": 4790,
+          "Skill": 2
+        },
+        "5": {
+          "magicAttack": 14810,
+          "armor": 5580,
+          "health": 110500,
+          "intelligence": 2210,
+          "magicDefense": 6410,
+          "Skill": 3
+        }
+      }
+    },
+    "8": {
+      "id": 8,
+      "mainStat": "agility",
+      "base": {
+        "agility": 20,
+        "health": 500,
+        "intelligence": 10,
+        "physicalAttack": 60,
+        "strength": 15
+      },
+      "growth": {
+        "2": {
+          "agility": 7,
+          "intelligence": 4,
+          "strength": 4
+        },
+        "3": {
+          "agility": 10,
+          "intelligence": 5,
+          "strength": 7
+        },
+        "4": {
+          "agility": 14,
+          "intelligence": 6,
+          "strength": 10
+        },
+        "5": {
+          "agility": 18,
+          "intelligence": 8,
+          "strength": 14
+        },
+        "6": {
+          "agility": 22,
+          "intelligence": 11,
+          "strength": 17
+        }
+      },
+      "skins": [
+        {
+          "name": "Rowdy Skin",
+          "attribute": "critHitChance",
+          "value": 2960
+        },
+        {
+          "name": "Romantic Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Spring Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Solar Skin",
+          "attribute": "magicDefense",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "physicalAttack",
+        "value": 33459
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "health": 7000,
+          "armorPenetration": 890,
+          "critHitChance": 300,
+          "agility": 230
+        },
+        "2": {
+          "physicalAttack": 1070,
+          "health": 11000,
+          "armorPenetration": 3280,
+          "critHitChance": 690,
+          "agility": 545
+        },
+        "3": {
+          "physicalAttack": 2200,
+          "health": 30500,
+          "armorPenetration": 5480,
+          "critHitChance": 1370,
+          "agility": 1040
+        },
+        "4": {
+          "physicalAttack": 3640,
+          "health": 39750,
+          "armorPenetration": 9740,
+          "critHitChance": 2090,
+          "agility": 1600
+        },
+        "5": {
+          "physicalAttack": 5270,
+          "health": 66500,
+          "armorPenetration": 12640,
+          "critHitChance": 2960,
+          "agility": 2210
+        }
+      }
+    },
+    "9": {
+      "id": 9,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 10
+      },
+      "growth": {
+        "1": {
+          "agility": 3,
+          "intelligence": 4,
+          "strength": 3
+        },
+        "2": {
+          "agility": 4,
+          "intelligence": 7,
+          "strength": 4
+        },
+        "3": {
+          "agility": 6,
+          "intelligence": 10,
+          "strength": 6
+        },
+        "4": {
+          "agility": 9,
+          "intelligence": 12,
+          "strength": 9
+        },
+        "5": {
+          "agility": 12,
+          "intelligence": 16,
+          "strength": 12
+        },
+        "6": {
+          "agility": 14,
+          "intelligence": 22,
+          "strength": 14
+        }
+      },
+      "skins": [
+        {
+          "name": "Winter Skin",
+          "attribute": "dodge",
+          "value": 2965
+        },
+        {
+          "name": "Lunar Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Demonic Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Solar Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Romantic Skin",
+          "attribute": "magicDefense",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "dodge",
+        "value": 13941
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "armor": 690,
+          "dodge": 250,
+          "magicDefense": 1090,
+          "intelligence": 230
+        },
+        "2": {
+          "magicAttack": 1610,
+          "armor": 2260,
+          "dodge": 640,
+          "magicDefense": 2320,
+          "intelligence": 545,
+          "Skill": 4
+        },
+        "3": {
+          "magicAttack": 3300,
+          "armor": 4210,
+          "dodge": 1250,
+          "magicDefense": 4770,
+          "intelligence": 1040,
+          "Skill": 4
+        },
+        "4": {
+          "magicAttack": 5460,
+          "armor": 7010,
+          "dodge": 1970,
+          "magicDefense": 7160,
+          "intelligence": 1600,
+          "Skill": 4
+        },
+        "5": {
+          "magicAttack": 7910,
+          "armor": 9680,
+          "dodge": 2770,
+          "magicDefense": 10290,
+          "intelligence": 2210,
+          "Skill": 5
+        }
+      }
+    },
+    "10": {
+      "id": 10,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "1": {
+          "agility": 3,
+          "intelligence": 4,
+          "strength": 3
+        },
+        "2": {
+          "agility": 4,
+          "intelligence": 7,
+          "strength": 4
+        },
+        "3": {
+          "agility": 6,
+          "intelligence": 10,
+          "strength": 6
+        },
+        "4": {
+          "agility": 9,
+          "intelligence": 12,
+          "strength": 9
+        },
+        "5": {
+          "agility": 12,
+          "intelligence": 16,
+          "strength": 12
+        },
+        "6": {
+          "agility": 14,
+          "intelligence": 22,
+          "strength": 14
+        }
+      },
+      "skins": [
+        {
+          "name": "Stellar Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Masquerade Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Solar Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Demonic Skin",
+          "attribute": "armor",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicPenetration",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "health": 7000,
+          "armor": 200,
+          "magicPenetration": 1090,
+          "intelligence": 230,
+          "magicDefense": 690
+        },
+        "2": {
+          "magicAttack": 1610,
+          "health": 19250,
+          "armor": 1110,
+          "magicPenetration": 2660,
+          "intelligence": 545,
+          "magicDefense": 1180
+        },
+        "3": {
+          "magicAttack": 3300,
+          "health": 38750,
+          "armor": 1890,
+          "magicPenetration": 5110,
+          "intelligence": 1040,
+          "magicDefense": 2600
+        },
+        "4": {
+          "magicAttack": 5460,
+          "health": 62500,
+          "armor": 3460,
+          "magicPenetration": 7910,
+          "intelligence": 1600,
+          "magicDefense": 3600
+        },
+        "5": {
+          "magicAttack": 7910,
+          "health": 89250,
+          "armor": 4630,
+          "magicPenetration": 11040,
+          "intelligence": 2210,
+          "magicDefense": 5330
+        }
+      }
+    },
+    "11": {
+      "id": 11,
+      "mainStat": "strength",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 15,
+        "physicalAttack": 55,
+        "strength": 20
+      },
+      "growth": {
+        "3": {
+          "agility": 7,
+          "intelligence": 6,
+          "strength": 9
+        },
+        "4": {
+          "agility": 10,
+          "intelligence": 8,
+          "strength": 12
+        },
+        "5": {
+          "agility": 13,
+          "intelligence": 11,
+          "strength": 16
+        },
+        "6": {
+          "agility": 15,
+          "intelligence": 13,
+          "strength": 22
+        }
+      },
+      "skins": [
+        {
+          "name": "Demonic Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        },
+        {
+          "name": "Winter Skin",
+          "attribute": "armor",
+          "value": 10665
+        },
+        {
+          "name": "Masquerade Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        },
+        {
+          "name": "Lunar Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "armor",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "armor": 690,
+          "magicDefense": 890,
+          "health": 11000,
+          "strength": 230
+        },
+        "2": {
+          "physicalAttack": 1070,
+          "armor": 2090,
+          "magicDefense": 2120,
+          "health": 26750,
+          "strength": 545
+        },
+        "3": {
+          "physicalAttack": 2200,
+          "armor": 4040,
+          "magicDefense": 4320,
+          "health": 51250,
+          "strength": 1040
+        },
+        "4": {
+          "physicalAttack": 3640,
+          "armor": 6610,
+          "magicDefense": 6710,
+          "health": 79250,
+          "strength": 1600
+        },
+        "5": {
+          "physicalAttack": 5270,
+          "armor": 9280,
+          "magicDefense": 9610,
+          "health": 110500,
+          "strength": 2210
+        }
+      }
+    },
+    "12": {
+      "id": 12,
+      "mainStat": "agility",
+      "base": {
+        "agility": 20,
+        "health": 500,
+        "intelligence": 15,
+        "physicalAttack": 60,
+        "strength": 10
+      },
+      "growth": {
+        "2": {
+          "agility": 6,
+          "intelligence": 5,
+          "strength": 4
+        },
+        "3": {
+          "agility": 8,
+          "intelligence": 7,
+          "strength": 7
+        },
+        "4": {
+          "agility": 11,
+          "intelligence": 10,
+          "strength": 9
+        },
+        "5": {
+          "agility": 15,
+          "intelligence": 13,
+          "strength": 12
+        },
+        "6": {
+          "agility": 20,
+          "intelligence": 16,
+          "strength": 14
+        }
+      },
+      "skins": [
+        {
+          "name": "Mechanical Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Romantic Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Winter Skin",
+          "attribute": "health",
+          "value": 106670
+        },
+        {
+          "name": "Spring Skin",
+          "attribute": "magicPenetration",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicPenetration",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 1330,
+          "health": 7000,
+          "armor": 200,
+          "magicDefense": 300,
+          "agility": 230,
+          "magicPenetration": 690
+        },
+        "2": {
+          "magicAttack": 2400,
+          "health": 19250,
+          "armor": 780,
+          "magicDefense": 790,
+          "agility": 545,
+          "magicPenetration": 2590
+        },
+        "3": {
+          "magicAttack": 5630,
+          "health": 38750,
+          "armor": 1560,
+          "magicDefense": 1700,
+          "agility": 1040,
+          "magicPenetration": 4010
+        },
+        "4": {
+          "magicAttack": 7790,
+          "health": 62500,
+          "armor": 2670,
+          "magicDefense": 2700,
+          "agility": 1600,
+          "magicPenetration": 7270
+        },
+        "5": {
+          "magicAttack": 12090,
+          "health": 89250,
+          "armor": 3840,
+          "magicDefense": 3980,
+          "agility": 2210,
+          "magicPenetration": 9000
+        }
+      }
+    },
+    "13": {
+      "id": 13,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "1": {
+          "agility": 3,
+          "intelligence": 4,
+          "strength": 3
+        },
+        "2": {
+          "agility": 4,
+          "intelligence": 7,
+          "strength": 4
+        },
+        "3": {
+          "agility": 6,
+          "intelligence": 10,
+          "strength": 6
+        },
+        "4": {
+          "agility": 9,
+          "intelligence": 12,
+          "strength": 9
+        },
+        "5": {
+          "agility": 12,
+          "intelligence": 16,
+          "strength": 12
+        },
+        "6": {
+          "agility": 14,
+          "intelligence": 21,
+          "strength": 15
+        }
+      },
+      "skins": [
+        {
+          "name": "Mechanical Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Cybernetic Skin",
+          "attribute": "magicDefense",
+          "value": 10650
+        },
+        {
+          "name": "Romantic Skin",
+          "attribute": "armor",
+          "value": 10650
+        },
+        {
+          "name": "Winter Skin",
+          "attribute": "magicPenetration",
+          "value": 10650
+        },
+        {
+          "name": "Lunar Skin",
+          "attribute": "health",
+          "value": 106645
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicPenetration",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "health": 7000,
+          "magicPenetration": 890,
+          "magicDefense": 300,
+          "intelligence": 230,
+          "armor": 790
+        },
+        "2": {
+          "magicAttack": 1610,
+          "health": 19250,
+          "magicPenetration": 2290,
+          "magicDefense": 1290,
+          "intelligence": 545,
+          "armor": 1370
+        },
+        "3": {
+          "magicAttack": 3300,
+          "health": 38750,
+          "magicPenetration": 4490,
+          "magicDefense": 2200,
+          "intelligence": 1040,
+          "armor": 2910
+        },
+        "4": {
+          "magicAttack": 5460,
+          "health": 62500,
+          "magicPenetration": 7060,
+          "magicDefense": 3890,
+          "intelligence": 1600,
+          "armor": 4020
+        },
+        "5": {
+          "magicAttack": 7910,
+          "health": 89250,
+          "magicPenetration": 9960,
+          "magicDefense": 5170,
+          "intelligence": 2210,
+          "armor": 5870
+        }
+      }
+    },
+    "14": {
+      "id": 14,
+      "mainStat": "agility",
+      "base": {
+        "agility": 20,
+        "health": 500,
+        "intelligence": 15,
+        "physicalAttack": 60,
+        "strength": 10
+      },
+      "growth": {
+        "2": {
+          "agility": 6,
+          "intelligence": 5,
+          "strength": 4
+        },
+        "3": {
+          "agility": 8,
+          "intelligence": 7,
+          "strength": 7
+        },
+        "4": {
+          "agility": 13,
+          "intelligence": 8,
+          "strength": 9
+        },
+        "5": {
+          "agility": 17,
+          "intelligence": 11,
+          "strength": 12
+        },
+        "6": {
+          "agility": 23,
+          "intelligence": 13,
+          "strength": 14
+        }
+      },
+      "skins": [
+        {
+          "name": "Winter Skin",
+          "attribute": "physicalAttack",
+          "value": 7120
+        },
+        {
+          "name": "Spring Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Lunar Skin",
+          "attribute": "armorPenetration",
+          "value": 10650
+        },
+        {
+          "name": "Cybernetic Skin",
+          "attribute": "health",
+          "value": 106645
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "armorPenetration",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "armor": 100,
+          "armorPenetration": 890,
+          "critHitChance": 300,
+          "agility": 230,
+          "magicDefense": 590
+        },
+        "2": {
+          "physicalAttack": 1070,
+          "armor": 920,
+          "armorPenetration": 2290,
+          "critHitChance": 840,
+          "agility": 545,
+          "magicDefense": 590
+        },
+        "3": {
+          "physicalAttack": 2200,
+          "armor": 1580,
+          "armorPenetration": 4490,
+          "critHitChance": 1520,
+          "agility": 1040,
+          "magicDefense": 1880
+        },
+        "4": {
+          "physicalAttack": 3640,
+          "armor": 3040,
+          "armorPenetration": 7060,
+          "critHitChance": 2560,
+          "agility": 1600,
+          "magicDefense": 1880
+        },
+        "5": {
+          "physicalAttack": 5270,
+          "armor": 4090,
+          "armorPenetration": 9960,
+          "critHitChance": 3430,
+          "agility": 2210,
+          "magicDefense": 3500
+        }
+      }
+    },
+    "15": {
+      "id": 15,
+      "mainStat": "agility",
+      "base": {
+        "agility": 20,
+        "health": 500,
+        "intelligence": 15,
+        "physicalAttack": 60,
+        "strength": 10
+      },
+      "growth": {
+        "2": {
+          "agility": 6,
+          "intelligence": 5,
+          "strength": 5
+        },
+        "3": {
+          "agility": 8,
+          "intelligence": 7,
+          "strength": 7
+        },
+        "4": {
+          "agility": 11,
+          "intelligence": 9,
+          "strength": 10
+        },
+        "5": {
+          "agility": 16,
+          "intelligence": 11,
+          "strength": 13
+        },
+        "6": {
+          "agility": 22,
+          "intelligence": 13,
+          "strength": 15
+        }
+      },
+      "skins": [
+        {
+          "name": "Demonic Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        },
+        {
+          "name": "Champion's Skin",
+          "attribute": "physicalAttack",
+          "value": 7117
+        },
+        {
+          "name": "Spring Skin",
+          "attribute": "armorPenetration",
+          "value": 10650
+        },
+        {
+          "name": "Solar Skin",
+          "attribute": "armorPenetration",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "physicalAttack",
+        "value": 33459
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "health": 7000,
+          "magicDefense": 890,
+          "armorPenetration": 1090,
+          "agility": 230
+        },
+        "2": {
+          "physicalAttack": 1670,
+          "health": 19250,
+          "magicDefense": 1470,
+          "armorPenetration": 2570,
+          "agility": 545
+        },
+        "3": {
+          "physicalAttack": 2800,
+          "health": 38750,
+          "magicDefense": 3670,
+          "armorPenetration": 5020,
+          "agility": 1040
+        },
+        "4": {
+          "physicalAttack": 5290,
+          "health": 62500,
+          "magicDefense": 4780,
+          "armorPenetration": 7710,
+          "agility": 1600
+        },
+        "5": {
+          "physicalAttack": 6920,
+          "health": 89250,
+          "magicDefense": 7680,
+          "armorPenetration": 10840,
+          "agility": 2210
+        }
+      }
+    },
+    "16": {
+      "id": 16,
+      "mainStat": "agility",
+      "base": {
+        "agility": 20,
+        "health": 500,
+        "intelligence": 15,
+        "physicalAttack": 60,
+        "strength": 10
+      },
+      "growth": {
+        "2": {
+          "agility": 6,
+          "intelligence": 4,
+          "strength": 5
+        },
+        "3": {
+          "agility": 8,
+          "intelligence": 7,
+          "strength": 7
+        },
+        "4": {
+          "agility": 11,
+          "intelligence": 9,
+          "strength": 10
+        },
+        "5": {
+          "agility": 14,
+          "intelligence": 13,
+          "strength": 13
+        },
+        "6": {
+          "agility": 18,
+          "intelligence": 16,
+          "strength": 16
+        }
+      },
+      "skins": [
+        {
+          "name": "Romantic Skin",
+          "attribute": "dodge",
+          "value": 2960
+        },
+        {
+          "name": "Solar Skin",
+          "attribute": "armorPenetration",
+          "value": 10650
+        },
+        {
+          "name": "Winter Skin",
+          "attribute": "physicalAttack",
+          "value": 7120
+        },
+        {
+          "name": "Spring Skin",
+          "attribute": "health",
+          "value": 106645
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "dodge",
+        "value": 13941
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "magicDefense": 100,
+          "armorPenetration": 990,
+          "dodge": 270,
+          "agility": 230,
+          "armor": 590
+        },
+        "2": {
+          "physicalAttack": 1670,
+          "magicDefense": 920,
+          "armorPenetration": 2560,
+          "dodge": 410,
+          "agility": 545,
+          "armor": 1000
+        },
+        "3": {
+          "physicalAttack": 2800,
+          "magicDefense": 1580,
+          "armorPenetration": 4880,
+          "dodge": 1050,
+          "agility": 1040,
+          "armor": 2290
+        },
+        "4": {
+          "physicalAttack": 5290,
+          "magicDefense": 3040,
+          "armorPenetration": 7680,
+          "dodge": 1330,
+          "agility": 1600,
+          "armor": 3220
+        },
+        "5": {
+          "physicalAttack": 6920,
+          "magicDefense": 4090,
+          "armorPenetration": 10700,
+          "dodge": 2170,
+          "agility": 2210,
+          "armor": 4840
+        }
+      }
+    },
+    "17": {
+      "id": 17,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "2": {
+          "agility": 4,
+          "intelligence": 7,
+          "strength": 4
+        },
+        "3": {
+          "agility": 6,
+          "intelligence": 10,
+          "strength": 6
+        },
+        "4": {
+          "agility": 9,
+          "intelligence": 12,
+          "strength": 9
+        },
+        "5": {
+          "agility": 12,
+          "intelligence": 16,
+          "strength": 12
+        },
+        "6": {
+          "agility": 14,
+          "intelligence": 21,
+          "strength": 15
+        }
+      },
+      "skins": [
+        {
+          "name": "Winter Skin",
+          "attribute": "magicAttack",
+          "value": 10665
+        },
+        {
+          "name": "Cybernetic Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Lunar Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Demonic Skin",
+          "attribute": "armor",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicPenetration",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "magicDefense": 100,
+          "magicPenetration": 890,
+          "health": 11000,
+          "intelligence": 230,
+          "armor": 590
+        },
+        "2": {
+          "magicAttack": 2190,
+          "magicDefense": 920,
+          "magicPenetration": 2290,
+          "health": 21000,
+          "intelligence": 545,
+          "armor": 1000
+        },
+        "3": {
+          "magicAttack": 3880,
+          "magicDefense": 1580,
+          "magicPenetration": 4490,
+          "health": 45500,
+          "intelligence": 1040,
+          "armor": 2290
+        },
+        "4": {
+          "magicAttack": 7150,
+          "magicDefense": 3040,
+          "magicPenetration": 7060,
+          "health": 62500,
+          "intelligence": 1600,
+          "armor": 3220
+        },
+        "5": {
+          "magicAttack": 9600,
+          "magicDefense": 4090,
+          "magicPenetration": 9960,
+          "health": 93750,
+          "intelligence": 2210,
+          "armor": 4840
+        }
+      }
+    },
+    "18": {
+      "id": 18,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "1": {
+          "agility": 2,
+          "intelligence": 5,
+          "strength": 3
+        },
+        "2": {
+          "agility": 3,
+          "intelligence": 8,
+          "strength": 4
+        },
+        "3": {
+          "agility": 5,
+          "intelligence": 11,
+          "strength": 6
+        },
+        "4": {
+          "agility": 7,
+          "intelligence": 14,
+          "strength": 9
+        },
+        "5": {
+          "agility": 9,
+          "intelligence": 19,
+          "strength": 12
+        },
+        "6": {
+          "agility": 13,
+          "intelligence": 22,
+          "strength": 15
+        }
+      },
+      "skins": [
+        {
+          "name": "Mechanical Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Champion's Skin",
+          "attribute": "health",
+          "value": 106870
+        },
+        {
+          "name": "Lunar Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Masquerade Skin",
+          "attribute": "armor",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicAttack",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 1630,
+          "magicPenetration": 690,
+          "health": 9000,
+          "intelligence": 230
+        },
+        "2": {
+          "magicAttack": 4180,
+          "magicPenetration": 1270,
+          "health": 18000,
+          "intelligence": 545,
+          "magicDefense": 1230,
+          "Skill": 2
+        },
+        "3": {
+          "magicAttack": 6780,
+          "magicPenetration": 3220,
+          "health": 40000,
+          "intelligence": 1040,
+          "magicDefense": 2770,
+          "Skill": 2
+        },
+        "4": {
+          "magicAttack": 9940,
+          "magicPenetration": 4330,
+          "health": 55750,
+          "intelligence": 1600,
+          "magicDefense": 6850,
+          "Skill": 2
+        },
+        "5": {
+          "magicAttack": 15520,
+          "magicPenetration": 7000,
+          "health": 84750,
+          "intelligence": 2210,
+          "magicDefense": 6850,
+          "Skill": 3
+        }
+      }
+    },
+    "19": {
+      "id": 19,
+      "mainStat": "agility",
+      "base": {
+        "agility": 20,
+        "health": 500,
+        "intelligence": 15,
+        "physicalAttack": 60,
+        "strength": 10
+      },
+      "growth": {
+        "2": {
+          "agility": 6,
+          "intelligence": 4,
+          "strength": 5
+        },
+        "3": {
+          "agility": 8,
+          "intelligence": 7,
+          "strength": 7
+        },
+        "4": {
+          "agility": 11,
+          "intelligence": 9,
+          "strength": 10
+        },
+        "5": {
+          "agility": 15,
+          "intelligence": 12,
+          "strength": 13
+        },
+        "6": {
+          "agility": 21,
+          "intelligence": 14,
+          "strength": 15
+        }
+      },
+      "skins": [
+        {
+          "name": "Nordic Skin",
+          "attribute": "dodge",
+          "value": 2960
+        },
+        {
+          "name": "Spring Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        },
+        {
+          "name": "Lunar Skin",
+          "attribute": "armorPenetration",
+          "value": 10650
+        },
+        {
+          "name": "Romantic Skin",
+          "attribute": "health",
+          "value": 106645
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "physicalAttack",
+        "value": 33459
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "health": 7000,
+          "armorPenetration": 890,
+          "dodge": 300,
+          "agility": 230
+        },
+        "2": {
+          "physicalAttack": 1290,
+          "health": 7000,
+          "armorPenetration": 2780,
+          "dodge": 840,
+          "agility": 545,
+          "Skill": 3
+        },
+        "3": {
+          "physicalAttack": 2420,
+          "health": 26500,
+          "armorPenetration": 4980,
+          "dodge": 1520,
+          "agility": 1040,
+          "Skill": 3
+        },
+        "4": {
+          "physicalAttack": 4140,
+          "health": 26500,
+          "armorPenetration": 8600,
+          "dodge": 2560,
+          "agility": 1600,
+          "Skill": 3
+        },
+        "5": {
+          "physicalAttack": 5770,
+          "health": 53250,
+          "armorPenetration": 11500,
+          "dodge": 3430,
+          "agility": 2210,
+          "Skill": 4
+        }
+      }
+    },
+    "20": {
+      "id": 20,
+      "mainStat": "agility",
+      "base": {
+        "agility": 20,
+        "health": 500,
+        "intelligence": 15,
+        "physicalAttack": 60,
+        "strength": 10
+      },
+      "growth": {
+        "1": {
+          "agility": 4,
+          "intelligence": 3,
+          "strength": 3
+        },
+        "2": {
+          "agility": 6,
+          "intelligence": 5,
+          "strength": 4
+        },
+        "3": {
+          "agility": 8,
+          "intelligence": 7,
+          "strength": 7
+        },
+        "4": {
+          "agility": 11,
+          "intelligence": 10,
+          "strength": 9
+        },
+        "5": {
+          "agility": 15,
+          "intelligence": 13,
+          "strength": 12
+        },
+        "6": {
+          "agility": 22,
+          "intelligence": 14,
+          "strength": 14
+        }
+      },
+      "skins": [
+        {
+          "name": "Angel Skin",
+          "attribute": "critHitChance",
+          "value": 2960
+        },
+        {
+          "name": "Demonic Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        },
+        {
+          "name": "Spring Skin",
+          "attribute": "armorPenetration",
+          "value": 10650
+        },
+        {
+          "name": "Beach Skin",
+          "attribute": "armor",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "physicalAttack",
+        "value": 33459
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "health": 7000,
+          "armorPenetration": 890,
+          "critHitChance": 300,
+          "agility": 230
+        },
+        "2": {
+          "physicalAttack": 360,
+          "health": 19250,
+          "armorPenetration": 2620,
+          "critHitChance": 940,
+          "agility": 545,
+          "Skill": 2
+        },
+        "3": {
+          "physicalAttack": 1490,
+          "health": 38750,
+          "armorPenetration": 4820,
+          "critHitChance": 1620,
+          "agility": 1040,
+          "Skill": 2
+        },
+        "4": {
+          "physicalAttack": 1490,
+          "health": 62500,
+          "armorPenetration": 8210,
+          "critHitChance": 2770,
+          "agility": 1600,
+          "Skill": 2
+        },
+        "5": {
+          "physicalAttack": 3120,
+          "health": 89250,
+          "armorPenetration": 11110,
+          "critHitChance": 3640,
+          "agility": 2210,
+          "Skill": 3
+        }
+      }
+    },
+    "21": {
+      "id": 21,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 60,
+        "strength": 15
+      },
+      "growth": {
+        "2": {
+          "agility": 4,
+          "intelligence": 6,
+          "strength": 5
+        },
+        "3": {
+          "agility": 6,
+          "intelligence": 9,
+          "strength": 7
+        },
+        "4": {
+          "agility": 9,
+          "intelligence": 11,
+          "strength": 10
+        },
+        "5": {
+          "agility": 12,
+          "intelligence": 15,
+          "strength": 13
+        },
+        "6": {
+          "agility": 14,
+          "intelligence": 20,
+          "strength": 16
+        }
+      },
+      "skins": [
+        {
+          "name": "Nordic Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Barbarian Skin",
+          "attribute": "armor",
+          "value": 10650
+        },
+        {
+          "name": "Winter Skin",
+          "attribute": "magicAttack",
+          "value": 10665
+        },
+        {
+          "name": "Stellar Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicDefense",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicDefense": 540,
+          "health": 7000,
+          "armor": 890,
+          "magicAttack": 1090,
+          "intelligence": 230
+        },
+        "2": {
+          "magicDefense": 1940,
+          "health": 19250,
+          "armor": 1960,
+          "magicAttack": 2660,
+          "intelligence": 545
+        },
+        "3": {
+          "magicDefense": 3630,
+          "health": 38750,
+          "armor": 4160,
+          "magicAttack": 5110,
+          "intelligence": 1040
+        },
+        "4": {
+          "magicDefense": 6200,
+          "health": 62500,
+          "armor": 6320,
+          "magicAttack": 7910,
+          "intelligence": 1600
+        },
+        "5": {
+          "magicDefense": 8650,
+          "health": 89250,
+          "armor": 9220,
+          "magicAttack": 11040,
+          "intelligence": 2210
+        }
+      }
+    },
+    "22": {
+      "id": 22,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "2": {
+          "agility": 4,
+          "intelligence": 7,
+          "strength": 4
+        },
+        "3": {
+          "agility": 6,
+          "intelligence": 10,
+          "strength": 6
+        },
+        "4": {
+          "agility": 8,
+          "intelligence": 14,
+          "strength": 8
+        },
+        "5": {
+          "agility": 11,
+          "intelligence": 18,
+          "strength": 11
+        },
+        "6": {
+          "agility": 13,
+          "intelligence": 24,
+          "strength": 13
+        }
+      },
+      "skins": [
+        {
+          "name": "Sweettooth Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Champion's Skin",
+          "attribute": "health",
+          "value": 106872
+        },
+        {
+          "name": "Lunar Skin",
+          "attribute": "magicPenetration",
+          "value": 10650
+        },
+        {
+          "name": "Demonic Skin",
+          "attribute": "health",
+          "value": 106645
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicDefense",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "health": 7000,
+          "magicPenetration": 890,
+          "magicDefense": 300,
+          "intelligence": 230,
+          "armor": 790
+        },
+        "2": {
+          "magicAttack": 1610,
+          "health": 19250,
+          "magicPenetration": 2370,
+          "magicDefense": 300,
+          "intelligence": 545,
+          "armor": 2280
+        },
+        "3": {
+          "magicAttack": 3300,
+          "health": 38750,
+          "magicPenetration": 4570,
+          "magicDefense": 1210,
+          "intelligence": 1040,
+          "armor": 3820
+        },
+        "4": {
+          "magicAttack": 5460,
+          "health": 62500,
+          "magicPenetration": 7260,
+          "magicDefense": 1210,
+          "intelligence": 1600,
+          "armor": 6500
+        },
+        "5": {
+          "magicAttack": 7910,
+          "health": 89250,
+          "magicPenetration": 10160,
+          "magicDefense": 2490,
+          "intelligence": 2210,
+          "armor": 8350
+        }
+      }
+    },
+    "23": {
+      "id": 23,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "3": {
+          "agility": 6,
+          "intelligence": 9,
+          "strength": 7
+        },
+        "4": {
+          "agility": 8,
+          "intelligence": 13,
+          "strength": 9
+        },
+        "5": {
+          "agility": 11,
+          "intelligence": 17,
+          "strength": 12
+        },
+        "6": {
+          "agility": 12,
+          "intelligence": 24,
+          "strength": 14
+        }
+      },
+      "skins": [
+        {
+          "name": "Romantic Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Solar Skin",
+          "attribute": "armor",
+          "value": 10650
+        },
+        {
+          "name": "Demonic Skin",
+          "attribute": "magicDefense",
+          "value": 10650
+        },
+        {
+          "name": "Beach Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Lunar Skin",
+          "attribute": "health",
+          "value": 106645
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicAttack",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "health": 7000,
+          "armor": 890,
+          "magicDefense": 1090,
+          "intelligence": 230
+        },
+        "2": {
+          "magicAttack": 2360,
+          "health": 20250,
+          "armor": 1300,
+          "magicDefense": 2820,
+          "intelligence": 545
+        },
+        "3": {
+          "magicAttack": 4050,
+          "health": 39750,
+          "armor": 3500,
+          "magicDefense": 5270,
+          "intelligence": 1040
+        },
+        "4": {
+          "magicAttack": 8890,
+          "health": 64250,
+          "armor": 4430,
+          "magicDefense": 6960,
+          "intelligence": 1600
+        },
+        "5": {
+          "magicAttack": 11340,
+          "health": 91000,
+          "armor": 7330,
+          "magicDefense": 10090,
+          "intelligence": 2210
+        }
+      }
+    },
+    "24": {
+      "id": 24,
+      "mainStat": "strength",
+      "base": {
+        "agility": 15,
+        "armor": 1000,
+        "health": 500,
+        "intelligence": 10,
+        "magicDefense": 300,
+        "physicalAttack": 50,
+        "strength": 20
+      },
+      "growth": {
+        "6": {
+          "agility": 15,
+          "intelligence": 11,
+          "strength": 24
+        }
+      },
+      "skins": [
+        {
+          "name": "Champion's Skin",
+          "attribute": "physicalAttack",
+          "value": 7117
+        },
+        {
+          "name": "Barbarian Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Masquerade Skin",
+          "attribute": "armor",
+          "value": 10650
+        },
+        {
+          "name": "Beach Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        },
+        {
+          "name": "Lunar Skin",
+          "attribute": "magicDefense",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "armor",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "armor": 690,
+          "health": 9000,
+          "magicDefense": 1090,
+          "strength": 230
+        },
+        "2": {
+          "physicalAttack": 1450,
+          "armor": 1680,
+          "health": 23000,
+          "magicDefense": 2320,
+          "strength": 545,
+          "Skill": 2
+        },
+        "3": {
+          "physicalAttack": 2580,
+          "armor": 3630,
+          "health": 45000,
+          "magicDefense": 4770,
+          "strength": 1040,
+          "Skill": 2
+        },
+        "4": {
+          "physicalAttack": 4760,
+          "armor": 5320,
+          "health": 70750,
+          "magicDefense": 7160,
+          "strength": 1600,
+          "Skill": 2
+        },
+        "5": {
+          "physicalAttack": 6390,
+          "armor": 7990,
+          "health": 99750,
+          "magicDefense": 10290,
+          "strength": 2210,
+          "Skill": 3
+        }
+      }
+    },
+    "25": {
+      "id": 25,
+      "mainStat": "agility",
+      "base": {
+        "agility": 15,
+        "health": 500,
+        "intelligence": 10,
+        "physicalAttack": 50,
+        "strength": 20
+      },
+      "growth": {
+        "1": {
+          "agility": 4,
+          "intelligence": 3,
+          "strength": 3
+        },
+        "2": {
+          "agility": 7,
+          "intelligence": 4,
+          "strength": 4
+        },
+        "3": {
+          "agility": 10,
+          "intelligence": 5,
+          "strength": 7
+        },
+        "4": {
+          "agility": 14,
+          "intelligence": 6,
+          "strength": 10
+        },
+        "5": {
+          "agility": 18,
+          "intelligence": 8,
+          "strength": 14
+        },
+        "6": {
+          "agility": 22,
+          "intelligence": 11,
+          "strength": 17
+        }
+      },
+      "skins": [
+        {
+          "name": "Romantic Skin",
+          "attribute": "critHitChance",
+          "value": 2960
+        },
+        {
+          "name": "Champion's Skin",
+          "attribute": "physicalAttack",
+          "value": 7117
+        },
+        {
+          "name": "Masquerade Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Solar Skin",
+          "attribute": "armorPenetration",
+          "value": 10650
+        },
+        {
+          "name": "Spring Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "critHitChance",
+        "value": 13941
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "health": 7000,
+          "armorPenetration": 890,
+          "critHitChance": 300,
+          "agility": 230
+        },
+        "2": {
+          "physicalAttack": 1400,
+          "health": 19250,
+          "armorPenetration": 890,
+          "critHitChance": 980,
+          "agility": 545,
+          "Skill": 2
+        },
+        "3": {
+          "physicalAttack": 2530,
+          "health": 38750,
+          "armorPenetration": 3090,
+          "critHitChance": 1660,
+          "agility": 1040,
+          "Skill": 2
+        },
+        "4": {
+          "physicalAttack": 4640,
+          "health": 62500,
+          "armorPenetration": 3090,
+          "critHitChance": 2880,
+          "agility": 1600,
+          "Skill": 2
+        },
+        "5": {
+          "physicalAttack": 6270,
+          "health": 89250,
+          "armorPenetration": 5990,
+          "critHitChance": 3750,
+          "agility": 2210,
+          "Skill": 3
+        }
+      }
+    },
+    "26": {
+      "id": 26,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "2": {
+          "agility": 4,
+          "intelligence": 7,
+          "strength": 4
+        },
+        "3": {
+          "agility": 5,
+          "intelligence": 10,
+          "strength": 7
+        },
+        "4": {
+          "agility": 8,
+          "intelligence": 12,
+          "strength": 10
+        },
+        "5": {
+          "agility": 11,
+          "intelligence": 17,
+          "strength": 12
+        },
+        "6": {
+          "agility": 12,
+          "intelligence": 23,
+          "strength": 15
+        }
+      },
+      "skins": [
+        {
+          "name": "Predator Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Stellar Skin",
+          "attribute": "armor",
+          "value": 10650
+        },
+        {
+          "name": "Winter Skin",
+          "attribute": "armor",
+          "value": 10665
+        },
+        {
+          "name": "Demonic Skin",
+          "attribute": "magicPenetration",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicPenetration",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "health": 15000,
+          "magicPenetration": 890,
+          "magicDefense": 300,
+          "intelligence": 230
+        },
+        "2": {
+          "magicAttack": 1610,
+          "health": 33000,
+          "magicPenetration": 2290,
+          "magicDefense": 1290,
+          "intelligence": 545,
+          "Skill": 4
+        },
+        "3": {
+          "magicAttack": 3300,
+          "health": 68000,
+          "magicPenetration": 4490,
+          "magicDefense": 2200,
+          "intelligence": 1040,
+          "Skill": 4
+        },
+        "4": {
+          "magicAttack": 5460,
+          "health": 102750,
+          "magicPenetration": 7060,
+          "magicDefense": 3890,
+          "intelligence": 1600,
+          "Skill": 4
+        },
+        "5": {
+          "magicAttack": 7910,
+          "health": 148000,
+          "magicPenetration": 9960,
+          "magicDefense": 5170,
+          "intelligence": 2210,
+          "Skill": 5
+        }
+      }
+    },
+    "27": {
+      "id": 27,
+      "mainStat": "strength",
+      "base": {
+        "agility": 15,
+        "health": 500,
+        "intelligence": 10,
+        "physicalAttack": 50,
+        "strength": 20
+      },
+      "growth": {
+        "2": {
+          "agility": 5,
+          "intelligence": 4,
+          "strength": 6
+        },
+        "3": {
+          "agility": 7,
+          "intelligence": 6,
+          "strength": 9
+        },
+        "4": {
+          "agility": 10,
+          "intelligence": 8,
+          "strength": 12
+        },
+        "5": {
+          "agility": 13,
+          "intelligence": 12,
+          "strength": 15
+        },
+        "6": {
+          "agility": 16,
+          "intelligence": 14,
+          "strength": 20
+        }
+      },
+      "skins": [
+        {
+          "name": "Stellar Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        },
+        {
+          "name": "Angel Skin",
+          "attribute": "armor",
+          "value": 10650
+        },
+        {
+          "name": "Cybernetic Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Winter Skin",
+          "attribute": "health",
+          "value": 106645
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "armor",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "health": 7000,
+          "magicDefense": 890,
+          "armor": 1090,
+          "strength": 230
+        },
+        "2": {
+          "physicalAttack": 1730,
+          "health": 19250,
+          "magicDefense": 1470,
+          "armor": 2490,
+          "strength": 545
+        },
+        "3": {
+          "physicalAttack": 2860,
+          "health": 38750,
+          "magicDefense": 3670,
+          "armor": 4940,
+          "strength": 1040
+        },
+        "4": {
+          "physicalAttack": 5430,
+          "health": 62500,
+          "magicDefense": 4780,
+          "armor": 7510,
+          "strength": 1600
+        },
+        "5": {
+          "physicalAttack": 7060,
+          "health": 89250,
+          "magicDefense": 7680,
+          "armor": 10640,
+          "strength": 2210
+        }
+      }
+    },
+    "28": {
+      "id": 28,
+      "mainStat": "agility",
+      "base": {
+        "agility": 20,
+        "health": 500,
+        "intelligence": 15,
+        "physicalAttack": 50,
+        "strength": 10
+      },
+      "growth": {
+        "1": {
+          "agility": 4,
+          "intelligence": 3,
+          "strength": 3
+        },
+        "2": {
+          "agility": 6,
+          "intelligence": 5,
+          "strength": 4
+        },
+        "3": {
+          "agility": 8,
+          "intelligence": 7,
+          "strength": 7
+        },
+        "4": {
+          "agility": 11,
+          "intelligence": 10,
+          "strength": 9
+        },
+        "5": {
+          "agility": 15,
+          "intelligence": 13,
+          "strength": 12
+        },
+        "6": {
+          "agility": 20,
+          "intelligence": 15,
+          "strength": 15
+        }
+      },
+      "skins": [
+        {
+          "name": "Phoenix Skin",
+          "attribute": "dodge",
+          "value": 2960
+        },
+        {
+          "name": "Spring Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        },
+        {
+          "name": "Masquerade Skin",
+          "attribute": "armorPenetration",
+          "value": 10650
+        },
+        {
+          "name": "Demonic Skin",
+          "attribute": "health",
+          "value": 106645
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "armorPenetration",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "health": 7000,
+          "armorPenetration": 890,
+          "dodge": 300,
+          "agility": 230
+        },
+        "2": {
+          "physicalAttack": 1070,
+          "health": 16000,
+          "armorPenetration": 2200,
+          "dodge": 840,
+          "agility": 545,
+          "Skill": 4
+        },
+        "3": {
+          "physicalAttack": 2200,
+          "health": 35500,
+          "armorPenetration": 4400,
+          "dodge": 1520,
+          "agility": 1040,
+          "Skill": 4
+        },
+        "4": {
+          "physicalAttack": 3640,
+          "health": 51250,
+          "armorPenetration": 6860,
+          "dodge": 2560,
+          "agility": 1600,
+          "Skill": 4
+        },
+        "5": {
+          "physicalAttack": 5270,
+          "health": 78000,
+          "armorPenetration": 9760,
+          "dodge": 3430,
+          "agility": 2210,
+          "Skill": 5
+        }
+      }
+    },
+    "29": {
+      "id": 29,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "2": {
+          "agility": 4,
+          "intelligence": 6,
+          "strength": 5
+        },
+        "3": {
+          "agility": 6,
+          "intelligence": 9,
+          "strength": 7
+        },
+        "4": {
+          "agility": 9,
+          "intelligence": 11,
+          "strength": 10
+        },
+        "5": {
+          "agility": 12,
+          "intelligence": 15,
+          "strength": 13
+        },
+        "6": {
+          "agility": 14,
+          "intelligence": 21,
+          "strength": 15
+        }
+      },
+      "skins": [
+        {
+          "name": "Champion's Skin",
+          "attribute": "magicAttack",
+          "value": 10687
+        },
+        {
+          "name": "Romantic Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Masquerade Skin",
+          "attribute": "armor",
+          "value": 10650
+        },
+        {
+          "name": "Winter Skin",
+          "attribute": "magicDefense",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "physicalAttack",
+        "value": 33459
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "health": 7000,
+          "armor": 890,
+          "magicDefense": 1090,
+          "intelligence": 230
+        },
+        "2": {
+          "magicAttack": 2520,
+          "health": 19250,
+          "armor": 1470,
+          "magicDefense": 2570,
+          "intelligence": 545
+        },
+        "3": {
+          "magicAttack": 4210,
+          "health": 38750,
+          "armor": 3670,
+          "magicDefense": 5020,
+          "intelligence": 1040
+        },
+        "4": {
+          "magicAttack": 7940,
+          "health": 62500,
+          "armor": 4780,
+          "magicDefense": 7710,
+          "intelligence": 1600
+        },
+        "5": {
+          "magicAttack": 10390,
+          "health": 89250,
+          "armor": 7680,
+          "magicDefense": 10840,
+          "intelligence": 2210
+        }
+      }
+    },
+    "30": {
+      "id": 30,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 15,
+        "health": 500,
+        "intelligence": 10,
+        "physicalAttack": 50,
+        "strength": 20
+      },
+      "growth": {
+        "2": {
+          "agility": 4,
+          "intelligence": 7,
+          "strength": 4
+        },
+        "3": {
+          "agility": 6,
+          "intelligence": 10,
+          "strength": 6
+        },
+        "4": {
+          "agility": 8,
+          "intelligence": 14,
+          "strength": 8
+        },
+        "5": {
+          "agility": 11,
+          "intelligence": 18,
+          "strength": 11
+        },
+        "6": {
+          "agility": 13,
+          "intelligence": 24,
+          "strength": 13
+        }
+      },
+      "skins": [
+        {
+          "name": "Stellar Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Angel Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Masquerade Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Cybernetic Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Demonic Skin",
+          "attribute": "armorPenetration",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicDefense",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 1630,
+          "health": 7000,
+          "armor": 200,
+          "intelligence": 230,
+          "magicDefense": 690
+        },
+        "2": {
+          "magicAttack": 5090,
+          "health": 11000,
+          "armor": 1110,
+          "intelligence": 545,
+          "magicDefense": 1180
+        },
+        "3": {
+          "magicAttack": 9230,
+          "health": 30500,
+          "armor": 1890,
+          "intelligence": 1040,
+          "magicDefense": 2600
+        },
+        "4": {
+          "magicAttack": 15650,
+          "health": 39750,
+          "armor": 3460,
+          "intelligence": 1600,
+          "magicDefense": 3600
+        },
+        "5": {
+          "magicAttack": 21230,
+          "health": 66500,
+          "armor": 4630,
+          "intelligence": 2210,
+          "magicDefense": 5330
+        }
+      }
+    },
+    "31": {
+      "id": 31,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 15,
+        "dodge": 100,
+        "health": 500,
+        "intelligence": 10,
+        "physicalAttack": 50,
+        "strength": 20
+      },
+      "growth": {
+        "2": {
+          "agility": 3,
+          "intelligence": 8,
+          "strength": 4
+        },
+        "3": {
+          "agility": 5,
+          "intelligence": 11,
+          "strength": 6
+        },
+        "4": {
+          "agility": 7,
+          "intelligence": 15,
+          "strength": 8
+        },
+        "5": {
+          "agility": 10,
+          "intelligence": 19,
+          "strength": 11
+        },
+        "6": {
+          "agility": 12,
+          "intelligence": 25,
+          "strength": 13
+        }
+      },
+      "skins": [
+        {
+          "name": "Barbarian Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Lunar Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Romantic Skin",
+          "attribute": "armor",
+          "value": 10650
+        },
+        {
+          "name": "Spring Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "armor",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "health": 7000,
+          "magicDefense": 200,
+          "dodge": 300,
+          "intelligence": 230,
+          "armor": 690
+        },
+        "2": {
+          "magicAttack": 2020,
+          "health": 7000,
+          "magicDefense": 1110,
+          "dodge": 960,
+          "intelligence": 545,
+          "armor": 1180
+        },
+        "3": {
+          "magicAttack": 3710,
+          "health": 26500,
+          "magicDefense": 1890,
+          "dodge": 1640,
+          "intelligence": 1040,
+          "armor": 2600
+        },
+        "4": {
+          "magicAttack": 6800,
+          "health": 26500,
+          "magicDefense": 3460,
+          "dodge": 2830,
+          "intelligence": 1600,
+          "armor": 3600
+        },
+        "5": {
+          "magicAttack": 9250,
+          "health": 53250,
+          "magicDefense": 4630,
+          "dodge": 3700,
+          "intelligence": 2210,
+          "armor": 5330
+        }
+      }
+    },
+    "32": {
+      "id": 32,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 15,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 10
+      },
+      "growth": {
+        "2": {
+          "agility": 4,
+          "intelligence": 7,
+          "strength": 4
+        },
+        "3": {
+          "agility": 6,
+          "intelligence": 10,
+          "strength": 6
+        },
+        "4": {
+          "agility": 8,
+          "intelligence": 14,
+          "strength": 8
+        },
+        "5": {
+          "agility": 11,
+          "intelligence": 18,
+          "strength": 11
+        },
+        "6": {
+          "agility": 13,
+          "intelligence": 24,
+          "strength": 13
+        }
+      },
+      "skins": [
+        {
+          "name": "Champion's Skin",
+          "attribute": "magicAttack",
+          "value": 10687
+        },
+        {
+          "name": "Demonic Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Romantic Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Masquerade Skin",
+          "attribute": "health",
+          "value": 106645
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "armor",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "health": 7000,
+          "magicDefense": 890,
+          "armor": 1090,
+          "intelligence": 230
+        },
+        "2": {
+          "magicAttack": 2520,
+          "health": 19250,
+          "magicDefense": 1470,
+          "armor": 2570,
+          "intelligence": 545
+        },
+        "3": {
+          "magicAttack": 4210,
+          "health": 38750,
+          "magicDefense": 3670,
+          "armor": 5020,
+          "intelligence": 1040
+        },
+        "4": {
+          "magicAttack": 7940,
+          "health": 62500,
+          "magicDefense": 4780,
+          "armor": 7710,
+          "intelligence": 1600
+        },
+        "5": {
+          "magicAttack": 10390,
+          "health": 89250,
+          "magicDefense": 7680,
+          "armor": 10840,
+          "intelligence": 2210
+        }
+      }
+    },
+    "33": {
+      "id": 33,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "3": {
+          "agility": 5,
+          "intelligence": 10,
+          "strength": 7
+        },
+        "4": {
+          "agility": 7,
+          "intelligence": 13,
+          "strength": 10
+        },
+        "5": {
+          "agility": 10,
+          "intelligence": 17,
+          "strength": 13
+        },
+        "6": {
+          "agility": 12,
+          "intelligence": 21,
+          "strength": 17
+        }
+      },
+      "skins": [
+        {
+          "name": "Masquerade Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Demonic Skin",
+          "attribute": "magicPenetration",
+          "value": 10650
+        },
+        {
+          "name": "Cybernetic Skin",
+          "attribute": "armor",
+          "value": 10650
+        },
+        {
+          "name": "Solar Skin",
+          "attribute": "health",
+          "value": 106645
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicPenetration",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "health": 7000,
+          "magicDefense": 890,
+          "magicPenetration": 1090,
+          "intelligence": 230
+        },
+        "2": {
+          "magicAttack": 1360,
+          "health": 20000,
+          "magicDefense": 2450,
+          "magicPenetration": 2660,
+          "intelligence": 545
+        },
+        "3": {
+          "magicAttack": 3050,
+          "health": 39500,
+          "magicDefense": 4650,
+          "magicPenetration": 5110,
+          "intelligence": 1040
+        },
+        "4": {
+          "magicAttack": 4870,
+          "health": 64500,
+          "magicDefense": 7450,
+          "magicPenetration": 7910,
+          "intelligence": 1600
+        },
+        "5": {
+          "magicAttack": 7320,
+          "health": 91250,
+          "magicDefense": 10350,
+          "magicPenetration": 11040,
+          "intelligence": 2210
+        }
+      }
+    },
+    "34": {
+      "id": 34,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 15,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 10
+      },
+      "growth": {
+        "3": {
+          "agility": 7,
+          "intelligence": 9,
+          "strength": 6
+        },
+        "4": {
+          "agility": 9,
+          "intelligence": 13,
+          "strength": 8
+        },
+        "5": {
+          "agility": 12,
+          "intelligence": 17,
+          "strength": 11
+        },
+        "6": {
+          "agility": 15,
+          "intelligence": 22,
+          "strength": 13
+        }
+      },
+      "skins": [
+        {
+          "name": "Masquerade Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Demonic Skin",
+          "attribute": "armor",
+          "value": 10650
+        },
+        {
+          "name": "Cybernetic Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Solar Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicAttack",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "health": 7000,
+          "armor": 890,
+          "magicDefense": 1090,
+          "intelligence": 230
+        },
+        "2": {
+          "magicAttack": 1610,
+          "health": 19250,
+          "armor": 2460,
+          "magicDefense": 2490,
+          "intelligence": 545
+        },
+        "3": {
+          "magicAttack": 3300,
+          "health": 38750,
+          "armor": 4660,
+          "magicDefense": 4940,
+          "intelligence": 1040
+        },
+        "4": {
+          "magicAttack": 5460,
+          "health": 62500,
+          "armor": 7460,
+          "magicDefense": 7510,
+          "intelligence": 1600
+        },
+        "5": {
+          "magicAttack": 7910,
+          "health": 89250,
+          "armor": 10360,
+          "magicDefense": 10640,
+          "intelligence": 2210
+        }
+      }
+    },
+    "35": {
+      "id": 35,
+      "mainStat": "strength",
+      "base": {
+        "agility": 15,
+        "health": 500,
+        "intelligence": 10,
+        "physicalAttack": 50,
+        "strength": 20
+      },
+      "growth": {
+        "2": {
+          "agility": 4,
+          "intelligence": 5,
+          "strength": 6
+        },
+        "3": {
+          "agility": 6,
+          "intelligence": 7,
+          "strength": 9
+        },
+        "4": {
+          "agility": 8,
+          "intelligence": 10,
+          "strength": 12
+        },
+        "5": {
+          "agility": 10,
+          "intelligence": 14,
+          "strength": 16
+        },
+        "6": {
+          "agility": 12,
+          "intelligence": 18,
+          "strength": 20
+        }
+      },
+      "skins": [
+        {
+          "name": "Champion's Skin",
+          "attribute": "health",
+          "value": 106870
+        },
+        {
+          "name": "Demonic Skin",
+          "attribute": "magicDefense",
+          "value": 10650
+        },
+        {
+          "name": "Winter Skin",
+          "attribute": "magicAttack",
+          "value": 10665
+        },
+        {
+          "name": "Romantic Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicAttack",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "health": 7000,
+          "armor": 890,
+          "magicDefense": 1090,
+          "strength": 230
+        },
+        "2": {
+          "magicAttack": 2600,
+          "health": 19250,
+          "armor": 2380,
+          "magicDefense": 1580,
+          "strength": 545
+        },
+        "3": {
+          "magicAttack": 4290,
+          "health": 38750,
+          "armor": 4580,
+          "magicDefense": 4030,
+          "strength": 1040
+        },
+        "4": {
+          "magicAttack": 8140,
+          "health": 62500,
+          "armor": 7260,
+          "magicDefense": 5030,
+          "strength": 1600
+        },
+        "5": {
+          "magicAttack": 10590,
+          "health": 89250,
+          "armor": 10160,
+          "magicDefense": 8160,
+          "strength": 2210
+        }
+      }
+    },
+    "36": {
+      "id": 36,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "2": {
+          "agility": 3,
+          "intelligence": 8,
+          "strength": 4
+        },
+        "3": {
+          "agility": 5,
+          "intelligence": 11,
+          "strength": 6
+        },
+        "4": {
+          "agility": 7,
+          "intelligence": 15,
+          "strength": 8
+        },
+        "5": {
+          "agility": 9,
+          "intelligence": 20,
+          "strength": 11
+        },
+        "6": {
+          "agility": 11,
+          "intelligence": 25,
+          "strength": 14
+        }
+      },
+      "skins": [
+        {
+          "name": "Champion's Skin",
+          "attribute": "magicAttack",
+          "value": 10687
+        },
+        {
+          "name": "Winter Skin",
+          "attribute": "magicAttack",
+          "value": 10665
+        },
+        {
+          "name": "Romantic Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Demonic Skin",
+          "attribute": "armor",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicDefense",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 1330,
+          "health": 7000,
+          "armor": 890,
+          "magicDefense": 300,
+          "intelligence": 230
+        },
+        "2": {
+          "magicAttack": 2400,
+          "health": 19250,
+          "armor": 2380,
+          "magicDefense": 1780,
+          "intelligence": 545
+        },
+        "3": {
+          "magicAttack": 5630,
+          "health": 38750,
+          "armor": 5490,
+          "magicDefense": 1780,
+          "intelligence": 1040
+        },
+        "4": {
+          "magicAttack": 7790,
+          "health": 62500,
+          "armor": 8170,
+          "magicDefense": 4470,
+          "intelligence": 1600
+        },
+        "5": {
+          "magicAttack": 12090,
+          "health": 89250,
+          "armor": 11070,
+          "magicDefense": 5750,
+          "intelligence": 2210
+        }
+      }
+    },
+    "37": {
+      "id": 37,
+      "mainStat": "strength",
+      "base": {
+        "agility": 15,
+        "health": 500,
+        "intelligence": 10,
+        "physicalAttack": 50,
+        "strength": 20
+      },
+      "growth": {
+        "2": {
+          "agility": 6,
+          "intelligence": 3,
+          "strength": 6
+        },
+        "3": {
+          "agility": 7,
+          "intelligence": 5,
+          "strength": 10
+        },
+        "4": {
+          "agility": 10,
+          "intelligence": 7,
+          "strength": 13
+        },
+        "5": {
+          "agility": 13,
+          "intelligence": 10,
+          "strength": 17
+        },
+        "6": {
+          "agility": 17,
+          "intelligence": 12,
+          "strength": 21
+        }
+      },
+      "skins": [
+        {
+          "name": "Winter Skin",
+          "attribute": "armorPenetration",
+          "value": 10665
+        },
+        {
+          "name": "Champion's Skin",
+          "attribute": "magicDefense",
+          "value": 10687
+        },
+        {
+          "name": "Solar Skin",
+          "attribute": "critHitChance",
+          "value": 2960
+        },
+        {
+          "name": "Masquerade Skin",
+          "attribute": "armor",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "critHitChance",
+        "value": 13941
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "health": 7000,
+          "armorPenetration": 890,
+          "critHitChance": 300,
+          "strength": 230
+        },
+        "2": {
+          "physicalAttack": 1070,
+          "health": 11000,
+          "armorPenetration": 3280,
+          "critHitChance": 690,
+          "strength": 545
+        },
+        "3": {
+          "physicalAttack": 2200,
+          "health": 30500,
+          "armorPenetration": 5480,
+          "critHitChance": 1370,
+          "strength": 1040
+        },
+        "4": {
+          "physicalAttack": 3640,
+          "health": 39750,
+          "armorPenetration": 9740,
+          "critHitChance": 2090,
+          "strength": 1600
+        },
+        "5": {
+          "physicalAttack": 5270,
+          "health": 66500,
+          "armorPenetration": 12640,
+          "critHitChance": 2960,
+          "strength": 2210
+        }
+      }
+    },
+    "38": {
+      "id": 38,
+      "mainStat": "agility",
+      "base": {
+        "agility": 20,
+        "health": 500,
+        "intelligence": 10,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "2": {
+          "agility": 7,
+          "intelligence": 3,
+          "strength": 5
+        },
+        "3": {
+          "agility": 10,
+          "intelligence": 5,
+          "strength": 7
+        },
+        "4": {
+          "agility": 13,
+          "intelligence": 8,
+          "strength": 9
+        },
+        "5": {
+          "agility": 18,
+          "intelligence": 10,
+          "strength": 12
+        },
+        "6": {
+          "agility": 23,
+          "intelligence": 13,
+          "strength": 14
+        }
+      },
+      "skins": [
+        {
+          "name": "Winter Skin",
+          "attribute": "physicalAttack",
+          "value": 7120
+        },
+        {
+          "name": "Barbarian Skin",
+          "attribute": "dodge",
+          "value": 2960
+        },
+        {
+          "name": "Demonic Skin",
+          "attribute": "dodge",
+          "value": 2960
+        },
+        {
+          "name": "Cybernetic Skin",
+          "attribute": "armorPenetration",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "armorPenetration",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "health": 7000,
+          "armorPenetration": 890,
+          "dodge": 300,
+          "agility": 230
+        },
+        "2": {
+          "physicalAttack": 1070,
+          "health": 7000,
+          "armorPenetration": 2290,
+          "dodge": 1070,
+          "agility": 545
+        },
+        "3": {
+          "physicalAttack": 2200,
+          "health": 26500,
+          "armorPenetration": 4490,
+          "dodge": 1750,
+          "agility": 1040
+        },
+        "4": {
+          "physicalAttack": 3640,
+          "health": 26500,
+          "armorPenetration": 7060,
+          "dodge": 3200,
+          "agility": 1600
+        },
+        "5": {
+          "physicalAttack": 5270,
+          "health": 53250,
+          "armorPenetration": 9960,
+          "dodge": 4070,
+          "agility": 2210
+        }
+      }
+    },
+    "39": {
+      "id": 39,
+      "mainStat": "strength",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 10,
+        "physicalAttack": 50,
+        "strength": 25
+      },
+      "growth": {
+        "2": {
+          "agility": 3,
+          "intelligence": 3,
+          "strength": 9
+        },
+        "3": {
+          "agility": 5,
+          "intelligence": 5,
+          "strength": 12
+        },
+        "4": {
+          "agility": 6,
+          "intelligence": 6,
+          "strength": 18
+        },
+        "5": {
+          "agility": 9,
+          "intelligence": 8,
+          "strength": 23
+        },
+        "6": {
+          "agility": 12,
+          "intelligence": 11,
+          "strength": 27
+        }
+      },
+      "skins": [
+        {
+          "name": "Cybernetic Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Champion's Skin",
+          "attribute": "health",
+          "value": 106872
+        },
+        {
+          "name": "Demonic Skin",
+          "attribute": "armor",
+          "value": 10650
+        },
+        {
+          "name": "Spring Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Romantic Skin",
+          "attribute": "magicDefense",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "armor",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "health": 7000,
+          "magicDefense": 890,
+          "armor": 1090,
+          "strength": 230
+        },
+        "2": {
+          "physicalAttack": 1070,
+          "health": 29250,
+          "magicDefense": 1470,
+          "armor": 2490,
+          "strength": 545
+        },
+        "3": {
+          "physicalAttack": 2200,
+          "health": 48750,
+          "magicDefense": 3670,
+          "armor": 4940,
+          "strength": 1040
+        },
+        "4": {
+          "physicalAttack": 3640,
+          "health": 89500,
+          "magicDefense": 4780,
+          "armor": 7510,
+          "strength": 1600
+        },
+        "5": {
+          "physicalAttack": 5270,
+          "health": 116250,
+          "magicDefense": 7680,
+          "armor": 10640,
+          "strength": 2210
+        }
+      }
+    },
+    "40": {
+      "id": 40,
+      "mainStat": "agility",
+      "base": {
+        "agility": 20,
+        "health": 500,
+        "intelligence": 15,
+        "physicalAttack": 50,
+        "strength": 10
+      },
+      "growth": {
+        "1": {
+          "agility": 5,
+          "intelligence": 2,
+          "strength": 3
+        },
+        "2": {
+          "agility": 7,
+          "intelligence": 3,
+          "strength": 5
+        },
+        "3": {
+          "agility": 10,
+          "intelligence": 5,
+          "strength": 7
+        },
+        "4": {
+          "agility": 13,
+          "intelligence": 8,
+          "strength": 9
+        },
+        "5": {
+          "agility": 18,
+          "intelligence": 10,
+          "strength": 12
+        },
+        "6": {
+          "agility": 23,
+          "intelligence": 13,
+          "strength": 14
+        }
+      },
+      "skins": [
+        {
+          "name": "Romantic Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        },
+        {
+          "name": "Winter Skin",
+          "attribute": "physicalAttack",
+          "value": 7120
+        },
+        {
+          "name": "Spring Skin",
+          "attribute": "dodge",
+          "value": 2960
+        },
+        {
+          "name": "Celestial Skin",
+          "attribute": "armor",
+          "value": 10665
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "physicalAttack",
+        "value": 33459
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "dodge": 30,
+          "magicDefense": 890,
+          "health": 11000,
+          "agility": 230,
+          "armor": 590
+        },
+        "2": {
+          "physicalAttack": 1070,
+          "dodge": 650,
+          "magicDefense": 1300,
+          "health": 26750,
+          "agility": 545,
+          "armor": 590,
+          "Skill": 2
+        },
+        "3": {
+          "physicalAttack": 2200,
+          "dodge": 830,
+          "magicDefense": 3500,
+          "health": 51250,
+          "agility": 1040,
+          "armor": 1880,
+          "Skill": 2
+        },
+        "4": {
+          "physicalAttack": 3640,
+          "dodge": 1960,
+          "magicDefense": 4430,
+          "health": 79250,
+          "agility": 1600,
+          "armor": 1880,
+          "Skill": 2
+        },
+        "5": {
+          "physicalAttack": 5270,
+          "dodge": 2250,
+          "magicDefense": 7330,
+          "health": 110500,
+          "agility": 2210,
+          "armor": 3500,
+          "Skill": 3
+        }
+      }
+    },
+    "42": {
+      "id": 42,
+      "mainStat": "strength",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 15,
+        "physicalAttack": 50,
+        "strength": 20
+      },
+      "growth": {
+        "2": {
+          "agility": 3,
+          "intelligence": 5,
+          "strength": 7
+        },
+        "3": {
+          "agility": 5,
+          "intelligence": 7,
+          "strength": 10
+        },
+        "4": {
+          "agility": 6,
+          "intelligence": 10,
+          "strength": 14
+        },
+        "5": {
+          "agility": 8,
+          "intelligence": 13,
+          "strength": 19
+        },
+        "6": {
+          "agility": 10,
+          "intelligence": 16,
+          "strength": 24
+        }
+      },
+      "skins": [
+        {
+          "name": "Barbarian Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Angel Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Winter Skin",
+          "attribute": "armor",
+          "value": 10665
+        },
+        {
+          "name": "Beach Skin",
+          "attribute": "magicDefense",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "armor",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "health": 7000,
+          "magicDefense": 890,
+          "armor": 1090,
+          "strength": 230
+        },
+        "2": {
+          "magicAttack": 2520,
+          "health": 29250,
+          "magicDefense": 1470,
+          "armor": 1580,
+          "strength": 545
+        },
+        "3": {
+          "magicAttack": 4210,
+          "health": 48750,
+          "magicDefense": 3670,
+          "armor": 4030,
+          "strength": 1040
+        },
+        "4": {
+          "magicAttack": 7940,
+          "health": 89500,
+          "magicDefense": 4780,
+          "armor": 5030,
+          "strength": 1600
+        },
+        "5": {
+          "magicAttack": 10390,
+          "health": 116250,
+          "magicDefense": 7680,
+          "armor": 8160,
+          "strength": 2210
+        }
+      }
+    },
+    "43": {
+      "id": 43,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "3": {
+          "agility": 5,
+          "intelligence": 11,
+          "strength": 6
+        },
+        "4": {
+          "agility": 7,
+          "intelligence": 15,
+          "strength": 8
+        },
+        "5": {
+          "agility": 9,
+          "intelligence": 20,
+          "strength": 11
+        },
+        "6": {
+          "agility": 11,
+          "intelligence": 25,
+          "strength": 14
+        }
+      },
+      "skins": [
+        {
+          "name": "Winter Skin",
+          "attribute": "magicAttack",
+          "value": 10665
+        },
+        {
+          "name": "Spring Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Romantic Skin",
+          "attribute": "magicDefense",
+          "value": 10650
+        },
+        {
+          "name": "Masquerade Skin",
+          "attribute": "magicPenetration",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicAttack",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "health": 7000,
+          "armor": 890,
+          "magicPenetration": 1090,
+          "intelligence": 230
+        },
+        "2": {
+          "magicAttack": 870,
+          "health": 19250,
+          "armor": 1380,
+          "magicPenetration": 3400,
+          "intelligence": 545,
+          "magicDefense": 910
+        },
+        "3": {
+          "magicAttack": 2560,
+          "health": 38750,
+          "armor": 3580,
+          "magicPenetration": 5850,
+          "intelligence": 1040,
+          "magicDefense": 910
+        },
+        "4": {
+          "magicAttack": 3380,
+          "health": 62500,
+          "armor": 4580,
+          "magicPenetration": 9990,
+          "intelligence": 1600,
+          "magicDefense": 2480
+        },
+        "5": {
+          "magicAttack": 5830,
+          "health": 89250,
+          "armor": 7480,
+          "magicPenetration": 13120,
+          "intelligence": 2210,
+          "magicDefense": 2480
+        }
+      }
+    },
+    "44": {
+      "id": 44,
+      "mainStat": "agility",
+      "base": {
+        "agility": 20,
+        "health": 500,
+        "intelligence": 10,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "2": {
+          "agility": 7,
+          "intelligence": 3,
+          "strength": 5
+        },
+        "3": {
+          "agility": 10,
+          "intelligence": 5,
+          "strength": 7
+        },
+        "4": {
+          "agility": 13,
+          "intelligence": 7,
+          "strength": 10
+        },
+        "5": {
+          "agility": 17,
+          "intelligence": 10,
+          "strength": 13
+        },
+        "6": {
+          "agility": 21,
+          "intelligence": 13,
+          "strength": 16
+        }
+      },
+      "skins": [
+        {
+          "name": "Demonic Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        },
+        {
+          "name": "Spring Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        },
+        {
+          "name": "Romantic Skin",
+          "attribute": "armorPenetration",
+          "value": 10650
+        },
+        {
+          "name": "Solar Skin",
+          "attribute": "health",
+          "value": 106645
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "armor",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "health": 7000,
+          "magicDefense": 200,
+          "armorPenetration": 1090,
+          "agility": 230,
+          "armor": 690
+        },
+        "2": {
+          "physicalAttack": 1070,
+          "health": 21000,
+          "magicDefense": 1110,
+          "armorPenetration": 2490,
+          "agility": 545,
+          "armor": 1180
+        },
+        "3": {
+          "physicalAttack": 2200,
+          "health": 40500,
+          "magicDefense": 1890,
+          "armorPenetration": 4940,
+          "agility": 1040,
+          "armor": 2600
+        },
+        "4": {
+          "physicalAttack": 3640,
+          "health": 66000,
+          "magicDefense": 3460,
+          "armorPenetration": 7560,
+          "agility": 1600,
+          "armor": 3600
+        },
+        "5": {
+          "physicalAttack": 5270,
+          "health": 92750,
+          "magicDefense": 4630,
+          "armorPenetration": 10690,
+          "agility": 2210,
+          "armor": 5330
+        }
+      }
+    },
+    "45": {
+      "id": 45,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "2": {
+          "agility": 3,
+          "intelligence": 7,
+          "strength": 5
+        },
+        "3": {
+          "agility": 5,
+          "intelligence": 10,
+          "strength": 7
+        },
+        "4": {
+          "agility": 7,
+          "intelligence": 13,
+          "strength": 10
+        },
+        "5": {
+          "agility": 10,
+          "intelligence": 17,
+          "strength": 13
+        },
+        "6": {
+          "agility": 12,
+          "intelligence": 21,
+          "strength": 17
+        }
+      },
+      "skins": [
+        {
+          "name": "Cybernetic Skin",
+          "attribute": "armor",
+          "value": 10650
+        },
+        {
+          "name": "Dark Depths Skin",
+          "attribute": "armor",
+          "value": 10650
+        },
+        {
+          "name": "Celestial Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Beach Skin",
+          "attribute": "magicPenetration",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicAttack",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "health": 7000,
+          "armor": 200,
+          "magicPenetration": 1780,
+          "intelligence": 230
+        },
+        "2": {
+          "magicAttack": 1610,
+          "health": 19250,
+          "armor": 1110,
+          "magicPenetration": 3840,
+          "intelligence": 545
+        },
+        "3": {
+          "magicAttack": 3300,
+          "health": 38750,
+          "armor": 1890,
+          "magicPenetration": 7710,
+          "intelligence": 1040
+        },
+        "4": {
+          "magicAttack": 5460,
+          "health": 62500,
+          "armor": 3460,
+          "magicPenetration": 11510,
+          "intelligence": 1600
+        },
+        "5": {
+          "magicAttack": 7910,
+          "health": 89250,
+          "armor": 4630,
+          "magicPenetration": 16370,
+          "intelligence": 2210
+        }
+      }
+    },
+    "46": {
+      "id": 46,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "2": {
+          "agility": 2,
+          "intelligence": 7,
+          "strength": 6
+        },
+        "3": {
+          "agility": 3,
+          "intelligence": 10,
+          "strength": 9
+        },
+        "4": {
+          "agility": 4,
+          "intelligence": 13,
+          "strength": 13
+        },
+        "5": {
+          "agility": 6,
+          "intelligence": 17,
+          "strength": 17
+        },
+        "6": {
+          "agility": 8,
+          "intelligence": 21,
+          "strength": 21
+        }
+      },
+      "skins": [
+        {
+          "name": "Winter Skin",
+          "attribute": "armor",
+          "value": 10665
+        },
+        {
+          "name": "Solar Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Masquerade Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Celestial Skin",
+          "attribute": "health",
+          "value": 106645
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "armor",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "health": 7000,
+          "magicDefense": 890,
+          "armor": 1090,
+          "intelligence": 230
+        },
+        "2": {
+          "magicAttack": 1610,
+          "health": 19250,
+          "magicDefense": 2460,
+          "armor": 2490,
+          "intelligence": 545
+        },
+        "3": {
+          "magicAttack": 3300,
+          "health": 38750,
+          "magicDefense": 4660,
+          "armor": 4940,
+          "intelligence": 1040
+        },
+        "4": {
+          "magicAttack": 5460,
+          "health": 62500,
+          "magicDefense": 7460,
+          "armor": 7510,
+          "intelligence": 1600
+        },
+        "5": {
+          "magicAttack": 7910,
+          "health": 89250,
+          "magicDefense": 10360,
+          "armor": 10640,
+          "intelligence": 2210
+        }
+      }
+    },
+    "48": {
+      "id": 48,
+      "mainStat": "agility",
+      "base": {
+        "agility": 20,
+        "health": 500,
+        "intelligence": 15,
+        "physicalAttack": 50,
+        "crithit_chance": 100,
+        "strength": 10
+      },
+      "growth": {
+        "2": {
+          "agility": 6,
+          "intelligence": 5,
+          "strength": 4
+        },
+        "3": {
+          "agility": 8,
+          "intelligence": 7,
+          "strength": 7
+        },
+        "4": {
+          "agility": 13,
+          "intelligence": 8,
+          "strength": 9
+        },
+        "5": {
+          "agility": 17,
+          "intelligence": 11,
+          "strength": 12
+        },
+        "6": {
+          "agility": 23,
+          "intelligence": 13,
+          "strength": 14
+        }
+      },
+      "skins": [
+        {
+          "name": "Romantic Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        },
+        {
+          "name": "Dark Depths Skin",
+          "attribute": "armor",
+          "value": 10650
+        },
+        {
+          "name": "Spring Skin",
+          "attribute": "magicDefense",
+          "value": 10650
+        },
+        {
+          "name": "Stellar Skin",
+          "attribute": "health",
+          "value": 106645
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "critHitChance",
+        "value": 13941
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "health": 7000,
+          "magicDefense": 200,
+          "critHitChance": 300,
+          "agility": 230,
+          "armorPenetration": 690
+        },
+        "2": {
+          "physicalAttack": 960,
+          "health": 19250,
+          "magicDefense": 1110,
+          "critHitChance": 780,
+          "agility": 545,
+          "armorPenetration": 1180
+        },
+        "3": {
+          "physicalAttack": 2090,
+          "health": 38750,
+          "magicDefense": 1890,
+          "critHitChance": 1460,
+          "agility": 1040,
+          "armorPenetration": 2600
+        },
+        "4": {
+          "physicalAttack": 3380,
+          "health": 62500,
+          "magicDefense": 3460,
+          "critHitChance": 2300,
+          "agility": 1600,
+          "armorPenetration": 3600
+        },
+        "5": {
+          "physicalAttack": 5010,
+          "health": 89250,
+          "magicDefense": 4630,
+          "critHitChance": 3170,
+          "agility": 2210,
+          "armorPenetration": 5330
+        }
+      }
+    },
+    "49": {
+      "id": 49,
+      "mainStat": "agility",
+      "base": {
+        "agility": 20,
+        "health": 500,
+        "intelligence": 10,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "2": {
+          "agility": 8,
+          "intelligence": 3,
+          "strength": 4
+        },
+        "3": {
+          "agility": 11,
+          "intelligence": 5,
+          "strength": 6
+        },
+        "4": {
+          "agility": 15,
+          "intelligence": 7,
+          "strength": 8
+        },
+        "5": {
+          "agility": 21,
+          "intelligence": 9,
+          "strength": 10
+        },
+        "6": {
+          "agility": 25,
+          "intelligence": 12,
+          "strength": 13
+        }
+      },
+      "skins": [
+        {
+          "name": "Demonic Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        },
+        {
+          "name": "Romantic Skin",
+          "attribute": "critHitChance",
+          "value": 2960
+        },
+        {
+          "name": "Masquerade Skin",
+          "attribute": "armor",
+          "value": 10650
+        },
+        {
+          "name": "Cybernetic Skin",
+          "attribute": "dodge",
+          "value": 2960
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "critHitChance",
+        "value": 13941
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "health": 7000,
+          "critHitChance": 250,
+          "dodge": 300,
+          "agility": 230
+        },
+        "2": {
+          "physicalAttack": 1070,
+          "health": 20000,
+          "critHitChance": 250,
+          "dodge": 1100,
+          "agility": 545
+        },
+        "3": {
+          "physicalAttack": 2200,
+          "health": 39500,
+          "critHitChance": 860,
+          "dodge": 1780,
+          "agility": 1040
+        },
+        "4": {
+          "physicalAttack": 3640,
+          "health": 64500,
+          "critHitChance": 860,
+          "dodge": 3250,
+          "agility": 1600
+        },
+        "5": {
+          "physicalAttack": 5270,
+          "health": 91250,
+          "critHitChance": 1660,
+          "dodge": 4120,
+          "agility": 2210
+        }
+      }
+    },
+    "50": {
+      "id": 50,
+      "mainStat": "strength",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 10,
+        "physicalAttack": 50,
+        "strength": 25
+      },
+      "growth": {
+        "3": {
+          "agility": 5,
+          "intelligence": 5,
+          "strength": 12
+        },
+        "4": {
+          "agility": 6,
+          "intelligence": 6,
+          "strength": 18
+        },
+        "5": {
+          "agility": 9,
+          "intelligence": 8,
+          "strength": 23
+        },
+        "6": {
+          "agility": 12,
+          "intelligence": 11,
+          "strength": 27
+        }
+      },
+      "skins": [
+        {
+          "id": 218,
+          "name": "Dark Depths Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        },
+        {
+          "id": 450,
+          "name": "Spring Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        },
+        {
+          "id": 550,
+          "name": "Lunar Skin",
+          "attribute": "magicDefense",
+          "value": 10650
+        },
+        {
+          "id": 333,
+          "name": "Winter Skin",
+          "attribute": "armor",
+          "value": 10665
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "armor",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "health": 7000,
+          "armor": 890,
+          "magicDefense": 1090,
+          "strength": 230
+        },
+        "2": {
+          "physicalAttack": 1890,
+          "health": 7000,
+          "armor": 2460,
+          "magicDefense": 2490,
+          "strength": 545
+        },
+        "3": {
+          "physicalAttack": 3020,
+          "health": 26500,
+          "armor": 4660,
+          "magicDefense": 4940,
+          "strength": 1040
+        },
+        "4": {
+          "physicalAttack": 6050,
+          "health": 26500,
+          "armor": 7460,
+          "magicDefense": 7510,
+          "strength": 1600
+        },
+        "5": {
+          "physicalAttack": 7680,
+          "health": 53250,
+          "armor": 10360,
+          "magicDefense": 10640,
+          "strength": 2210
+        }
+      }
+    },
+    "51": {
+      "id": 51,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "3": {
+          "agility": 5,
+          "intelligence": 11,
+          "strength": 6
+        },
+        "4": {
+          "agility": 7,
+          "intelligence": 15,
+          "strength": 8
+        },
+        "5": {
+          "agility": 9,
+          "intelligence": 20,
+          "strength": 11
+        },
+        "6": {
+          "agility": 11,
+          "intelligence": 25,
+          "strength": 14
+        }
+      },
+      "skins": [
+        {
+          "name": "Dark Depths Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Spring Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Lunar Skin",
+          "attribute": "armor",
+          "value": 10650
+        },
+        {
+          "name": "Winter Skin",
+          "attribute": "magicAttack",
+          "value": 10665
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "armorPenetration",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "health": 7000,
+          "magicDefense": 890,
+          "armor": 1090,
+          "intelligence": 230
+        },
+        "2": {
+          "magicAttack": 2430,
+          "health": 11000,
+          "magicDefense": 2460,
+          "armor": 2490,
+          "intelligence": 545
+        },
+        "3": {
+          "magicAttack": 4120,
+          "health": 30500,
+          "magicDefense": 4660,
+          "armor": 4940,
+          "intelligence": 1040
+        },
+        "4": {
+          "magicAttack": 7740,
+          "health": 39750,
+          "magicDefense": 7460,
+          "armor": 7510,
+          "intelligence": 1600
+        },
+        "5": {
+          "magicAttack": 10190,
+          "health": 66500,
+          "magicDefense": 10360,
+          "armor": 10640,
+          "intelligence": 2210
+        }
+      }
+    },
+    "52": {
+      "id": 52,
+      "mainStat": "agility",
+      "base": {
+        "agility": 20,
+        "health": 500,
+        "intelligence": 10,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "2": {
+          "agility": 7,
+          "intelligence": 3,
+          "strength": 5
+        },
+        "3": {
+          "agility": 10,
+          "intelligence": 5,
+          "strength": 7
+        },
+        "4": {
+          "agility": 14,
+          "intelligence": 7,
+          "strength": 9
+        },
+        "5": {
+          "agility": 19,
+          "intelligence": 9,
+          "strength": 12
+        },
+        "6": {
+          "agility": 24,
+          "intelligence": 11,
+          "strength": 15
+        }
+      },
+      "skins": [
+        {
+          "name": "Masquerade Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        },
+        {
+          "name": "Lunar Skin",
+          "attribute": "magicDefense",
+          "value": 10650
+        },
+        {
+          "name": "Spring Skin",
+          "attribute": "armorPenetration",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "armorPenetration",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 560,
+          "health": 7000,
+          "armor": 890,
+          "agility": 230,
+          "armorPenetration": 790
+        },
+        "2": {
+          "physicalAttack": 2310,
+          "health": 7000,
+          "armor": 890,
+          "agility": 545,
+          "armorPenetration": 2020,
+          "magicDefense": 1400
+        },
+        "3": {
+          "physicalAttack": 4050,
+          "health": 26500,
+          "armor": 3090,
+          "agility": 1040,
+          "armorPenetration": 3560,
+          "magicDefense": 1400
+        },
+        "4": {
+          "physicalAttack": 7360,
+          "health": 26500,
+          "armor": 3090,
+          "agility": 1600,
+          "armorPenetration": 5950,
+          "magicDefense": 3970
+        },
+        "5": {
+          "physicalAttack": 9840,
+          "health": 53250,
+          "armor": 5990,
+          "agility": 2210,
+          "armorPenetration": 7800,
+          "magicDefense": 3970
+        }
+      }
+    },
+    "53": {
+      "id": 53,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "2": {
+          "agility": 3,
+          "intelligence": 8,
+          "strength": 4
+        },
+        "3": {
+          "agility": 5,
+          "intelligence": 12,
+          "strength": 5
+        },
+        "4": {
+          "agility": 7,
+          "intelligence": 15,
+          "strength": 8
+        },
+        "5": {
+          "agility": 8,
+          "intelligence": 19,
+          "strength": 13
+        },
+        "6": {
+          "agility": 10,
+          "intelligence": 26,
+          "strength": 14
+        }
+      },
+      "skins": [
+        {
+          "name": "Spring Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Lunar Skin",
+          "attribute": "armor",
+          "value": 10650
+        },
+        {
+          "name": "Winter Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Dark Depths Skin",
+          "attribute": "health",
+          "value": 106645
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicAttack",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "health": 7000,
+          "armor": 200,
+          "magicDefense": 1090,
+          "intelligence": 230,
+          "magicPenetration": 690
+        },
+        "2": {
+          "magicAttack": 1610,
+          "health": 19250,
+          "armor": 1770,
+          "magicDefense": 1090,
+          "intelligence": 545,
+          "magicPenetration": 2090
+        },
+        "3": {
+          "magicAttack": 3300,
+          "health": 38750,
+          "armor": 2550,
+          "magicDefense": 3540,
+          "intelligence": 1040,
+          "magicPenetration": 3510
+        },
+        "4": {
+          "magicAttack": 5460,
+          "health": 62500,
+          "armor": 5350,
+          "magicDefense": 3540,
+          "intelligence": 1600,
+          "magicPenetration": 6080
+        },
+        "5": {
+          "magicAttack": 7910,
+          "health": 89250,
+          "armor": 6520,
+          "magicDefense": 6670,
+          "intelligence": 2210,
+          "magicPenetration": 7810
+        }
+      }
+    },
+    "54": {
+      "id": 54,
+      "mainStat": "strength",
+      "base": {
+        "agility": 15,
+        "health": 500,
+        "intelligence": 10,
+        "physicalAttack": 50,
+        "strength": 20
+      },
+      "growth": {
+        "2": {
+          "agility": 5,
+          "intelligence": 3,
+          "strength": 7
+        },
+        "3": {
+          "agility": 7,
+          "intelligence": 5,
+          "strength": 10
+        },
+        "4": {
+          "agility": 9,
+          "intelligence": 7,
+          "strength": 14
+        },
+        "5": {
+          "agility": 12,
+          "intelligence": 10,
+          "strength": 18
+        },
+        "6": {
+          "agility": 15,
+          "intelligence": 12,
+          "strength": 23
+        }
+      },
+      "skins": [
+        {
+          "name": "Solar Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        },
+        {
+          "name": "Masquerade Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Stellar Skin",
+          "attribute": "armorPenetration",
+          "value": 10650
+        },
+        {
+          "name": "Dark Depths Skin",
+          "attribute": "armor",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "armorPenetration",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "health": 8000,
+          "armor": 200,
+          "armorPenetration": 1090,
+          "strength": 230,
+          "magicDefense": 590
+        },
+        "2": {
+          "physicalAttack": 1070,
+          "health": 16250,
+          "armor": 1520,
+          "armorPenetration": 2660,
+          "strength": 545,
+          "magicDefense": 1080
+        },
+        "3": {
+          "physicalAttack": 2200,
+          "health": 22750,
+          "armor": 2810,
+          "armorPenetration": 5110,
+          "strength": 1040,
+          "magicDefense": 3280
+        },
+        "4": {
+          "physicalAttack": 3640,
+          "health": 47750,
+          "armor": 3810,
+          "armorPenetration": 7910,
+          "strength": 1600,
+          "magicDefense": 4740
+        },
+        "5": {
+          "physicalAttack": 5270,
+          "health": 64000,
+          "armor": 6590,
+          "armorPenetration": 11040,
+          "strength": 2210,
+          "magicDefense": 5910
+        }
+      }
+    },
+    "55": {
+      "id": 55,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "2": {
+          "agility": 3,
+          "intelligence": 8,
+          "strength": 4
+        },
+        "3": {
+          "agility": 5,
+          "intelligence": 11,
+          "strength": 6
+        },
+        "4": {
+          "agility": 8,
+          "intelligence": 15,
+          "strength": 7
+        },
+        "5": {
+          "agility": 10,
+          "intelligence": 20,
+          "strength": 10
+        },
+        "6": {
+          "agility": 10,
+          "intelligence": 25,
+          "strength": 15
+        }
+      },
+      "skins": [
+        {
+          "name": "Cybernetic Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Beach Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Stellar Skin",
+          "attribute": "armor",
+          "value": 10650
+        },
+        {
+          "name": "Masquerade Skin",
+          "attribute": "armorPenetration",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicAttack",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "health": 7000,
+          "armor": 890,
+          "armorPenetration": 1090,
+          "intelligence": 230
+        },
+        "2": {
+          "magicAttack": 1360,
+          "health": 20000,
+          "armor": 1630,
+          "armorPenetration": 3480,
+          "intelligence": 545
+        },
+        "3": {
+          "magicAttack": 3050,
+          "health": 39500,
+          "armor": 3830,
+          "armorPenetration": 5930,
+          "intelligence": 1040
+        },
+        "4": {
+          "magicAttack": 4870,
+          "health": 64500,
+          "armor": 5170,
+          "armorPenetration": 10190,
+          "intelligence": 1600
+        },
+        "5": {
+          "magicAttack": 7320,
+          "health": 91250,
+          "armor": 8070,
+          "armorPenetration": 13320,
+          "intelligence": 2210
+        }
+      }
+    },
+    "56": {
+      "id": 56,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 15,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 10
+      },
+      "growth": {
+        "2": {
+          "agility": 4,
+          "intelligence": 8,
+          "strength": 3
+        },
+        "3": {
+          "agility": 6,
+          "intelligence": 11,
+          "strength": 5
+        },
+        "4": {
+          "agility": 8,
+          "intelligence": 15,
+          "strength": 7
+        },
+        "5": {
+          "agility": 10,
+          "intelligence": 20,
+          "strength": 10
+        },
+        "6": {
+          "agility": 13,
+          "intelligence": 25,
+          "strength": 12
+        }
+      },
+      "skins": [
+        {
+          "name": "Cybernetic Skin",
+          "attribute": "magicPenetration",
+          "value": 10650
+        },
+        {
+          "name": "Romantic Skin",
+          "attribute": "magicDefense",
+          "value": 10650
+        },
+        {
+          "name": "Demonic Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicAttack",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "health": 7000,
+          "armor": 200,
+          "magicPenetration": 1780,
+          "intelligence": 230
+        },
+        "2": {
+          "magicAttack": 4000,
+          "health": 11000,
+          "armor": 1110,
+          "magicPenetration": 2270,
+          "intelligence": 545
+        },
+        "3": {
+          "magicAttack": 7230,
+          "health": 30500,
+          "armor": 1890,
+          "magicPenetration": 4600,
+          "intelligence": 1040
+        },
+        "4": {
+          "magicAttack": 11960,
+          "health": 39750,
+          "armor": 3460,
+          "magicPenetration": 7290,
+          "intelligence": 1600
+        },
+        "5": {
+          "magicAttack": 16260,
+          "health": 66500,
+          "armor": 4630,
+          "magicPenetration": 10300,
+          "intelligence": 2210
+        }
+      }
+    },
+    "57": {
+      "id": 57,
+      "mainStat": "strength",
+      "base": {
+        "intelligence": 10,
+        "agility": 15,
+        "strength": 20,
+        "health": 500,
+        "physicalAttack": 50
+      },
+      "growth": {
+        "2": {
+          "intelligence": 3,
+          "agility": 5,
+          "strength": 7
+        },
+        "3": {
+          "intelligence": 5,
+          "agility": 7,
+          "strength": 10
+        },
+        "4": {
+          "intelligence": 7,
+          "agility": 9,
+          "strength": 14
+        },
+        "5": {
+          "intelligence": 10,
+          "agility": 12,
+          "strength": 18
+        },
+        "6": {
+          "intelligence": 12,
+          "agility": 15,
+          "strength": 23
+        }
+      },
+      "skins": [
+        {
+          "name": "Winter Skin",
+          "attribute": "physicalAttack",
+          "value": 7120
+        },
+        {
+          "name": "Celestial Skin",
+          "attribute": "armor",
+          "value": 10650
+        },
+        {
+          "name": "Stellar Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Spring Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "armor",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 1090,
+          "health": 8000,
+          "armor": 200,
+          "strength": 230,
+          "magicDefense": 590
+        },
+        "2": {
+          "physicalAttack": 2780,
+          "health": 8000,
+          "armor": 1430,
+          "strength": 545,
+          "magicDefense": 2070
+        },
+        "3": {
+          "physicalAttack": 5460,
+          "health": 17000,
+          "armor": 3380,
+          "strength": 1040,
+          "magicDefense": 3490
+        },
+        "4": {
+          "physicalAttack": 9310,
+          "health": 17000,
+          "armor": 4380,
+          "strength": 1600,
+          "magicDefense": 6640
+        },
+        "5": {
+          "physicalAttack": 14100,
+          "health": 33250,
+          "armor": 5430,
+          "strength": 2210,
+          "magicDefense": 7920
+        }
+      }
+    },
+    "58": {
+      "id": 58,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 1,
+        "health": 500,
+        "intelligence": 25,
+        "physicalAttack": 50,
+        "strength": 10
+      },
+      "growth": {
+        "2": {
+          "agility": 3,
+          "intelligence": 8,
+          "strength": 4
+        },
+        "3": {
+          "agility": 5,
+          "intelligence": 11,
+          "strength": 6
+        },
+        "4": {
+          "agility": 8,
+          "intelligence": 15,
+          "strength": 7
+        },
+        "5": {
+          "agility": 10,
+          "intelligence": 20,
+          "strength": 10
+        },
+        "6": {
+          "agility": 10,
+          "intelligence": 25,
+          "strength": 15
+        }
+      },
+      "skins": [
+        {
+          "name": "Solar Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Cybernetic Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Masquerade Skin",
+          "attribute": "magicDefense",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "armor",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "health": 7000,
+          "armor": 200,
+          "magicPenetration": 1780,
+          "intelligence": 230
+        },
+        "2": {
+          "magicAttack": 4010,
+          "health": 11000,
+          "armor": 1110,
+          "magicPenetration": 2270,
+          "intelligence": 545
+        },
+        "3": {
+          "magicAttack": 7240,
+          "health": 30500,
+          "armor": 1890,
+          "magicPenetration": 4600,
+          "intelligence": 1040
+        },
+        "4": {
+          "magicAttack": 11970,
+          "health": 39750,
+          "armor": 3460,
+          "magicPenetration": 7290,
+          "intelligence": 1600
+        },
+        "5": {
+          "magicAttack": 16270,
+          "health": 66500,
+          "armor": 4630,
+          "magicPenetration": 10310,
+          "intelligence": 2210
+        }
+      }
+    },
+    "59": {
+      "id": 59,
+      "mainStat": "agility",
+      "base": {
+        "agility": 25,
+        "health": 500,
+        "intelligence": 10,
+        "physicalAttack": 60,
+        "strength": 10
+      },
+      "growth": {
+        "2": {
+          "agility": 8,
+          "intelligence": 3,
+          "strength": 4
+        },
+        "3": {
+          "agility": 11,
+          "intelligence": 5,
+          "strength": 6
+        },
+        "4": {
+          "agility": 15,
+          "intelligence": 7,
+          "strength": 8
+        },
+        "5": {
+          "agility": 21,
+          "intelligence": 9,
+          "strength": 10
+        },
+        "6": {
+          "agility": 25,
+          "intelligence": 12,
+          "strength": 13
+        }
+      },
+      "skins": [
+        {
+          "name": "Solar Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Cybernetic Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        },
+        {
+          "name": "Masquerade Skin",
+          "attribute": "armor",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "physicalAttack",
+        "value": 33459
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "health": 7000,
+          "magicDefense": 890,
+          "armorPenetration": 1090,
+          "agility": 230
+        },
+        "2": {
+          "physicalAttack": 1670,
+          "health": 19250,
+          "magicDefense": 1470,
+          "armorPenetration": 2570,
+          "agility": 545
+        },
+        "3": {
+          "physicalAttack": 2800,
+          "health": 38750,
+          "magicDefense": 3670,
+          "armorPenetration": 5020,
+          "agility": 1040
+        },
+        "4": {
+          "physicalAttack": 5290,
+          "health": 62500,
+          "magicDefense": 4780,
+          "armorPenetration": 7710,
+          "agility": 1600
+        },
+        "5": {
+          "physicalAttack": 6920,
+          "health": 89250,
+          "magicDefense": 7680,
+          "armorPenetration": 10840,
+          "agility": 2210
+        }
+      }
+    },
+    "60": {
+      "id": 60,
+      "mainStat": "strength",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 15,
+        "physicalAttack": 55,
+        "strength": 20
+      },
+      "growth": {
+        "2": {
+          "agility": 4,
+          "intelligence": 5,
+          "strength": 6
+        },
+        "3": {
+          "agility": 7,
+          "intelligence": 7,
+          "strength": 8
+        },
+        "4": {
+          "agility": 9,
+          "intelligence": 10,
+          "strength": 11
+        },
+        "5": {
+          "agility": 12,
+          "intelligence": 13,
+          "strength": 15
+        },
+        "6": {
+          "agility": 15,
+          "intelligence": 16,
+          "strength": 19
+        }
+      },
+      "skins": [
+        {
+          "name": "Lunar Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Spring Skin",
+          "attribute": "magicPenetration",
+          "value": 10650
+        },
+        {
+          "name": "Demonic Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "armor",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "armor": 1040,
+          "health": 8300,
+          "strength": 230,
+          "magicAttack": 490,
+          "magicPenetration": 590
+        },
+        "2": {
+          "armor": 3010,
+          "health": 8300,
+          "strength": 545,
+          "magicAttack": 1980,
+          "magicPenetration": 2400
+        },
+        "3": {
+          "armor": 4960,
+          "health": 17300,
+          "strength": 1040,
+          "magicAttack": 5990,
+          "magicPenetration": 3820
+        },
+        "4": {
+          "armor": 8210,
+          "health": 33050,
+          "strength": 1600,
+          "magicAttack": 8030,
+          "magicPenetration": 6970
+        },
+        "5": {
+          "armor": 9260,
+          "health": 67800,
+          "strength": 2210,
+          "magicAttack": 13380,
+          "magicPenetration": 8250
+        }
+      }
+    },
+    "61": {
+      "id": 61,
+      "mainStat": "strength",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 15,
+        "physicalAttack": 50,
+        "strength": 20
+      },
+      "growth": {
+        "3": {
+          "agility": 5,
+          "intelligence": 7,
+          "strength": 10
+        },
+        "4": {
+          "agility": 6,
+          "intelligence": 10,
+          "strength": 14
+        },
+        "5": {
+          "agility": 8,
+          "intelligence": 13,
+          "strength": 19
+        },
+        "6": {
+          "agility": 10,
+          "intelligence": 16,
+          "strength": 24
+        }
+      },
+      "skins": [
+        {
+          "name": "Masquerade Skin",
+          "attribute": "magicDefense",
+          "value": 10650
+        },
+        {
+          "name": "Demonic Skin",
+          "attribute": "health",
+          "value": 106645
+        },
+        {
+          "name": "Romantic Skin",
+          "attribute": "physicalAttack",
+          "value": 7095
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "critHitChance",
+        "value": 13941
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "armor": 690,
+          "health": 9000,
+          "magicDefense": 1090,
+          "strength": 230
+        },
+        "2": {
+          "physicalAttack": 1070,
+          "armor": 2260,
+          "health": 23000,
+          "magicDefense": 2320,
+          "strength": 545
+        },
+        "3": {
+          "physicalAttack": 2200,
+          "armor": 4210,
+          "health": 45000,
+          "magicDefense": 4770,
+          "strength": 1040
+        },
+        "4": {
+          "physicalAttack": 3640,
+          "armor": 7010,
+          "health": 70750,
+          "magicDefense": 7160,
+          "strength": 1600
+        },
+        "5": {
+          "physicalAttack": 5270,
+          "armor": 9680,
+          "health": 99750,
+          "magicDefense": 10290,
+          "strength": 2210
+        }
+      }
+    },
+    "62": {
+      "id": 62,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "2": {
+          "agility": 3,
+          "intelligence": 8,
+          "strength": 4
+        },
+        "3": {
+          "agility": 5,
+          "intelligence": 11,
+          "strength": 6
+        },
+        "4": {
+          "agility": 7,
+          "intelligence": 15,
+          "strength": 8
+        },
+        "5": {
+          "agility": 10,
+          "intelligence": 20,
+          "strength": 10
+        },
+        "6": {
+          "agility": 10,
+          "intelligence": 25,
+          "strength": 15
+        }
+      },
+      "skins": [
+        {
+          "name": "Spring Skin",
+          "attribute": "magicAttack",
+          "value": 10650
+        },
+        {
+          "name": "Cybernetic Skin",
+          "attribute": "magicDefense",
+          "value": 10650
+        },
+        {
+          "name": "Romantic Skin",
+          "attribute": "armor",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicPenetration",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 1040,
+          "health": 6000,
+          "magicPenetration": 990,
+          "intelligence": 230,
+          "armor": 590
+        },
+        "2": {
+          "magicAttack": 2190,
+          "health": 19250,
+          "magicPenetration": 3380,
+          "intelligence": 545,
+          "armor": 1000
+        },
+        "3": {
+          "magicAttack": 5050,
+          "health": 37500,
+          "magicPenetration": 5700,
+          "intelligence": 1040,
+          "armor": 2290
+        },
+        "4": {
+          "magicAttack": 7330,
+          "health": 62000,
+          "magicPenetration": 9960,
+          "intelligence": 1600,
+          "armor": 3220
+        },
+        "5": {
+          "magicAttack": 11280,
+          "health": 87500,
+          "magicPenetration": 12980,
+          "intelligence": 2210,
+          "armor": 4840
+        }
+      }
+    },
+    "63": {
+      "id": 63,
+      "mainStat": "agility",
+      "base": {
+        "agility": 25,
+        "health": 500,
+        "intelligence": 10,
+        "physicalAttack": 60,
+        "strength": 10
+      },
+      "growth": {
+        "1": {
+          "agility": 5,
+          "intelligence": 2,
+          "strength": 3
+        },
+        "2": {
+          "agility": 8,
+          "intelligence": 3,
+          "strength": 4
+        },
+        "3": {
+          "agility": 11,
+          "intelligence": 5,
+          "strength": 6
+        },
+        "4": {
+          "agility": 15,
+          "intelligence": 7,
+          "strength": 8
+        },
+        "5": {
+          "agility": 21,
+          "intelligence": 9,
+          "strength": 10
+        },
+        "6": {
+          "agility": 25,
+          "intelligence": 12,
+          "strength": 13
+        }
+      },
+      "skins": [
+        {
+          "name": "Antarctica Skin",
+          "attribute": "health",
+          "value": 213290
+        },
+        {
+          "name": "Diving Skin",
+          "attribute": "physicalAttack",
+          "value": 14190
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "physicalAttack",
+        "value": 33459
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "health": 7000,
+          "magicDefense": 890,
+          "armorPenetration": 1090,
+          "agility": 230
+        },
+        "2": {
+          "physicalAttack": 1670,
+          "health": 19250,
+          "magicDefense": 1470,
+          "armorPenetration": 2570,
+          "agility": 545,
+          "Skill": 2
+        },
+        "3": {
+          "physicalAttack": 2800,
+          "health": 38750,
+          "magicDefense": 3670,
+          "armorPenetration": 5020,
+          "agility": 1040,
+          "Skill": 2
+        },
+        "4": {
+          "physicalAttack": 5290,
+          "health": 62500,
+          "magicDefense": 4780,
+          "armorPenetration": 7710,
+          "agility": 1600,
+          "Skill": 2
+        },
+        "5": {
+          "physicalAttack": 6920,
+          "health": 89250,
+          "magicDefense": 7680,
+          "armorPenetration": 10840,
+          "agility": 2210,
+          "Skill": 3
+        }
+      }
+    },
+    "64": {
+      "id": 64,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "2": {
+          "agility": 3,
+          "intelligence": 8,
+          "strength": 4
+        },
+        "3": {
+          "agility": 5,
+          "intelligence": 11,
+          "strength": 6
+        },
+        "4": {
+          "agility": 8,
+          "intelligence": 15,
+          "strength": 7
+        },
+        "5": {
+          "agility": 10,
+          "intelligence": 20,
+          "strength": 10
+        },
+        "6": {
+          "agility": 10,
+          "intelligence": 25,
+          "strength": 15
+        }
+      },
+      "skins": [
+        {
+          "name": "Winter Skin",
+          "attribute": "magicAttack",
+          "value": 10665
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicAttack",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "health": 7000,
+          "magicPenetration": 890,
+          "armor": 1090,
+          "intelligence": 230
+        },
+        "2": {
+          "magicAttack": 1610,
+          "health": 19250,
+          "magicPenetration": 2290,
+          "armor": 2660,
+          "intelligence": 545
+        },
+        "3": {
+          "magicAttack": 3300,
+          "health": 38750,
+          "magicPenetration": 4490,
+          "armor": 5110,
+          "intelligence": 1040
+        },
+        "4": {
+          "magicAttack": 5460,
+          "health": 62500,
+          "magicPenetration": 7060,
+          "armor": 7910,
+          "intelligence": 1600
+        },
+        "5": {
+          "magicAttack": 7910,
+          "health": 89250,
+          "magicPenetration": 9960,
+          "armor": 11040,
+          "intelligence": 2210
+        }
+      }
+    },
+    "65": {
+      "id": 65,
+      "mainStat": "agility",
+      "base": {
+        "agility": 20,
+        "health": 500,
+        "intelligence": 10,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "2": {
+          "agility": 7,
+          "intelligence": 3,
+          "strength": 5
+        },
+        "3": {
+          "agility": 10,
+          "intelligence": 5,
+          "strength": 7
+        },
+        "4": {
+          "agility": 14,
+          "intelligence": 8,
+          "strength": 8
+        },
+        "5": {
+          "agility": 20,
+          "intelligence": 9,
+          "strength": 11
+        },
+        "6": {
+          "agility": 24,
+          "intelligence": 11,
+          "strength": 15
+        }
+      },
+      "skins": [],
+      "artifactWeapon": {
+        "attribute": "armorPenetration",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "physicalAttack": 360,
+          "health": 7000,
+          "magicDefense": 890,
+          "armorPenetration": 1090,
+          "agility": 230
+        },
+        "2": {
+          "physicalAttack": 1670,
+          "health": 19250,
+          "magicDefense": 1470,
+          "armorPenetration": 2570,
+          "agility": 545,
+          "Skill": 2
+        },
+        "3": {
+          "physicalAttack": 2800,
+          "health": 38750,
+          "magicDefense": 3670,
+          "armorPenetration": 5020,
+          "agility": 1040,
+          "Skill": 2
+        },
+        "4": {
+          "physicalAttack": 5290,
+          "health": 62500,
+          "magicDefense": 4780,
+          "armorPenetration": 7710,
+          "agility": 1600,
+          "Skill": 2
+        },
+        "5": {
+          "physicalAttack": 6920,
+          "health": 89250,
+          "magicDefense": 7680,
+          "armorPenetration": 10840,
+          "agility": 2210,
+          "Skill": 3
+        }
+      }
+    },
+    "66": {
+      "id": 66,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 15,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 10
+      },
+      "growth": {
+        "2": {
+          "agility": 4,
+          "intelligence": 8,
+          "strength": 3
+        },
+        "3": {
+          "agility": 6,
+          "intelligence": 11,
+          "strength": 5
+        },
+        "4": {
+          "agility": 8,
+          "intelligence": 15,
+          "strength": 7
+        },
+        "5": {
+          "agility": 10,
+          "intelligence": 20,
+          "strength": 10
+        },
+        "6": {
+          "agility": 13,
+          "intelligence": 25,
+          "strength": 12
+        }
+      },
+      "skins": [
+        {
+          "name": "Masquerade Skin",
+          "attribute": "armor",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicAttack",
+        "value": 16730
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 540,
+          "health": 7000,
+          "magicPenetration": 890,
+          "magicDefense": 300,
+          "intelligence": 230,
+          "armor": 790
+        },
+        "2": {
+          "magicAttack": 1610,
+          "health": 19250,
+          "magicPenetration": 2290,
+          "magicDefense": 1290,
+          "intelligence": 545,
+          "armor": 1370
+        },
+        "3": {
+          "magicAttack": 3300,
+          "health": 38750,
+          "magicPenetration": 4490,
+          "magicDefense": 2200,
+          "intelligence": 1040,
+          "armor": 2910
+        },
+        "4": {
+          "magicAttack": 5460,
+          "health": 62500,
+          "magicPenetration": 7060,
+          "magicDefense": 3890,
+          "intelligence": 1600,
+          "armor": 4020
+        },
+        "5": {
+          "magicAttack": 7910,
+          "health": 89250,
+          "magicPenetration": 9960,
+          "magicDefense": 5170,
+          "intelligence": 2210,
+          "armor": 5870
+        }
+      }
+    },
+    "67": {
+      "id": 67,
+      "mainStat": "strength",
+      "base": {
+        "agility": 15,
+        "health": 500,
+        "intelligence": 10,
+        "physicalAttack": 50,
+        "strength": 20
+      },
+      "growth": {
+        "2": {
+          "agility": 4,
+          "intelligence": 4,
+          "strength": 7
+        },
+        "3": {
+          "agility": 5,
+          "intelligence": 5,
+          "strength": 12
+        },
+        "4": {
+          "agility": 6,
+          "intelligence": 6,
+          "strength": 18
+        },
+        "5": {
+          "agility": 9,
+          "intelligence": 8,
+          "strength": 23
+        },
+        "6": {
+          "agility": 12,
+          "intelligence": 11,
+          "strength": 27
+        }
+      },
+      "skins": [],
+      "artifactWeapon": {
+        "attribute": "armorPenetration",
+        "value": 16730
+      },
+      "ascension": {
+        "1": {
+          "magicDefense": 350,
+          "armor": 100,
+          "strength": 180,
+          "physicalAttack": 1710,
+          "health": 5000
+        },
+        "2": {
+          "magicDefense": 350,
+          "armor": 2990,
+          "strength": 510,
+          "physicalAttack": 3250,
+          "health": 5000
+        },
+        "3": {
+          "magicDefense": 1390,
+          "armor": 5980,
+          "strength": 1025,
+          "physicalAttack": 6010,
+          "health": 5000
+        },
+        "4": {
+          "magicDefense": 2850,
+          "armor": 6980,
+          "strength": 1585,
+          "physicalAttack": 10250,
+          "health": 16000
+        },
+        "5": {
+          "magicDefense": 4130,
+          "armor": 6980,
+          "strength": 2195,
+          "physicalAttack": 15740,
+          "health": 32250
+        }
+      }
+    },
+    "68": {
+      "id": 68,
+      "mainStat": "strength",
+      "base": {
+        "agility": 15,
+        "health": 500,
+        "intelligence": 10,
+        "physicalAttack": 50,
+        "strength": 20
+      },
+      "growth": {
+        "2": {
+          "agility": 3,
+          "intelligence": 3,
+          "strength": 9
+        },
+        "3": {
+          "agility": 5,
+          "intelligence": 5,
+          "strength": 12
+        },
+        "4": {
+          "agility": 6,
+          "intelligence": 6,
+          "strength": 18
+        },
+        "5": {
+          "agility": 9,
+          "intelligence": 8,
+          "strength": 23
+        },
+        "6": {
+          "agility": 12,
+          "intelligence": 11,
+          "strength": 27
+        }
+      },
+      "skins": [
+        {
+          "name": "Angelic Skin",
+          "attribute": "magicDefense",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "armor",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "armorPenetration": 350,
+          "armor": 100,
+          "strength": 180,
+          "physicalAttack": 1710,
+          "health": 5000
+        },
+        "2": {
+          "armorPenetration": 350,
+          "armor": 2990,
+          "strength": 510,
+          "physicalAttack": 3250,
+          "health": 5000
+        },
+        "3": {
+          "armorPenetration": 1390,
+          "armor": 5980,
+          "strength": 1025,
+          "physicalAttack": 6010,
+          "health": 5000
+        },
+        "4": {
+          "armorPenetration": 2850,
+          "armor": 6980,
+          "strength": 1585,
+          "physicalAttack": 10250,
+          "health": 16000
+        },
+        "5": {
+          "armorPenetration": 4130,
+          "armor": 6980,
+          "strength": 2195,
+          "physicalAttack": 15740,
+          "health": 32250
+        }
+      }
+    },
+    "69": {
+      "id": 69,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "2": {
+          "agility": 3,
+          "intelligence": 8,
+          "strength": 4
+        },
+        "3": {
+          "agility": 5,
+          "intelligence": 11,
+          "strength": 6
+        },
+        "4": {
+          "agility": 8,
+          "intelligence": 15,
+          "strength": 7
+        },
+        "5": {
+          "agility": 10,
+          "intelligence": 20,
+          "strength": 10
+        },
+        "6": {
+          "agility": 10,
+          "intelligence": 25,
+          "strength": 15
+        }
+      },
+      "skins": [
+        {
+          "name": "Mythic Skin",
+          "attribute": "armor",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicAttack",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 50,
+          "health": 10000,
+          "magicPenetration": 890,
+          "intelligence": 230,
+          "armor": 1280
+        },
+        "2": {
+          "magicAttack": 1780,
+          "health": 24000,
+          "magicPenetration": 2040,
+          "intelligence": 545,
+          "armor": 2270
+        },
+        "3": {
+          "magicAttack": 2310,
+          "health": 52500,
+          "magicPenetration": 4240,
+          "intelligence": 1040,
+          "armor": 4970
+        },
+        "4": {
+          "magicAttack": 5340,
+          "health": 78250,
+          "magicPenetration": 6520,
+          "intelligence": 1600,
+          "armor": 7010
+        },
+        "5": {
+          "magicAttack": 6280,
+          "health": 117750,
+          "magicPenetration": 9420,
+          "intelligence": 2210,
+          "armor": 10370
+        }
+      }
+    },
+    "70": {
+      "id": 70,
+      "mainStat": "strength",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 15,
+        "physicalAttack": 55,
+        "strength": 20
+      },
+      "growth": {
+        "2": {
+          "agility": 4,
+          "intelligence": 5,
+          "strength": 6
+        },
+        "3": {
+          "agility": 7,
+          "intelligence": 7,
+          "strength": 8
+        },
+        "4": {
+          "agility": 9,
+          "intelligence": 10,
+          "strength": 11
+        },
+        "5": {
+          "agility": 12,
+          "intelligence": 13,
+          "strength": 15
+        },
+        "6": {
+          "agility": 15,
+          "intelligence": 16,
+          "strength": 19
+        }
+      },
+      "skins": [
+        {
+          "name": "Demonic Skin",
+          "attribute": "magicDefense",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicAttack",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {},
+        "2": {},
+        "3": {},
+        "4": {},
+        "5": {}
+      }
+    },
+    "71": {
+      "id": 71,
+      "mainStat": "intelligence",
+      "base": {
+        "agility": 10,
+        "health": 500,
+        "intelligence": 20,
+        "physicalAttack": 50,
+        "strength": 15
+      },
+      "growth": {
+        "2": {
+          "agility": 3,
+          "intelligence": 8,
+          "strength": 4
+        },
+        "3": {
+          "agility": 5,
+          "intelligence": 11,
+          "strength": 6
+        },
+        "4": {
+          "agility": 8,
+          "intelligence": 15,
+          "strength": 7
+        },
+        "5": {
+          "agility": 10,
+          "intelligence": 20,
+          "strength": 10
+        },
+        "6": {
+          "agility": 10,
+          "intelligence": 25,
+          "strength": 15
+        }
+      },
+      "skins": [
+        {
+          "name": "Librarian Skin",
+          "attribute": "armor",
+          "value": 10650
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "magicDefense",
+        "value": 50190
+      },
+      "ascension": {
+        "1": {
+          "magicAttack": 50,
+          "health": 10000,
+          "magicPenetration": 890,
+          "intelligence": 230,
+          "armor": 1280
+        },
+        "2": {
+          "magicAttack": 1780,
+          "health": 24000,
+          "magicPenetration": 2040,
+          "intelligence": 545,
+          "armor": 2270
+        },
+        "3": {
+          "magicAttack": 2310,
+          "health": 52500,
+          "magicPenetration": 4240,
+          "intelligence": 1040,
+          "armor": 4970
+        },
+        "4": {
+          "magicAttack": 5340,
+          "health": 78250,
+          "magicPenetration": 6520,
+          "intelligence": 1600,
+          "armor": 7010
+        },
+        "5": {
+          "magicAttack": 6280,
+          "health": 117750,
+          "magicPenetration": 9420,
+          "intelligence": 2210,
+          "armor": 10370
+        }
+      }
+    },
+    "73": {
+      "id": 73,
+      "mainStat": "agility",
+      "base": {
+        "agility": 20,
+        "health": 500,
+        "intelligence": 15,
+        "physicalAttack": 60,
+        "strength": 10
+      },
+      "growth": {
+        "2": {
+          "agility": 6,
+          "intelligence": 4,
+          "strength": 5
+        },
+        "3": {
+          "agility": 8,
+          "intelligence": 7,
+          "strength": 7
+        },
+        "4": {
+          "agility": 11,
+          "intelligence": 9,
+          "strength": 10
+        },
+        "5": {
+          "agility": 14,
+          "intelligence": 13,
+          "strength": 13
+        },
+        "6": {
+          "agility": 18,
+          "intelligence": 16,
+          "strength": 16
+        }
+      },
+      "skins": [
+        {
+          "name": "Ceremonial Skin",
+          "attribute": "health",
+          "value": 106645
+        }
+      ],
+      "artifactWeapon": {
+        "attribute": "physicalAttack",
+        "value": 33459
+      },
+      "ascension": {
+        "1": {
+          "magicDefense": 50,
+          "armorPenetration": 990,
+          "dodge": 250,
+          "agility": 230,
+          "physicalAttack": 860
+        },
+        "2": {
+          "magicDefense": 1780,
+          "armorPenetration": 2390,
+          "dodge": 570,
+          "agility": 545,
+          "physicalAttack": 1510
+        },
+        "3": {
+          "magicDefense": 2310,
+          "armorPenetration": 5250,
+          "dodge": 1180,
+          "agility": 1040,
+          "physicalAttack": 3320
+        },
+        "4": {
+          "magicDefense": 5340,
+          "armorPenetration": 7820,
+          "dodge": 1820,
+          "agility": 1600,
+          "physicalAttack": 4680
+        },
+        "5": {
+          "magicDefense": 6280,
+          "armorPenetration": 11770,
+          "dodge": 2620,
+          "agility": 2210,
+          "physicalAttack": 6910
+        }
+      }
+    }
+  }
+}

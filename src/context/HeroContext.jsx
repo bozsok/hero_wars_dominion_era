@@ -4,13 +4,13 @@ import heroesCatalog from '../data/heroesCatalog.json';
 const defaultHeroState = {
   general: { level: 0, stars: 1, soulStones: 0, power: 0 },
   stats: { health: 0, armor: 0, magicAttack: 0, physicalAttack: 0, magicDefense: 0, dodge: 0 },
-  items: { rank: 'White' },
+  items: { rank: 'White', goe: 0 },
   skills: [0, 0, 0, 0],
   artifacts: { weapon: { level: 0, stars: 0 }, book: { level: 0, stars: 0 }, ring: { level: 0, stars: 0 } },
   skins: {},
   glyphs: [0, 0, 0, 0, 0],
   giftOfElements: 0,
-  ascension: { rank: 'I', branch: 0 }
+  ascension: { rank: 'I', branch: 0, nodes: [] }
 };
 
 export const HeroContext = createContext();
@@ -56,7 +56,8 @@ export const HeroProvider = ({ children }) => {
                  soulStones: oldSoulStones
                },
                items: {
-                 rank: oldHero.items?.rank || oldHero.general?.rank || 'White'
+                 rank: oldHero.items?.rank || oldHero.general?.rank || 'White',
+                 goe: oldHero.items?.goe || 0
                },
                stats: { ...defaultHeroState.stats, ...(oldHero.stats || {}) },
                skills: Array.isArray(oldHero.skills) ? oldHero.skills : [0, 0, 0, 0],
@@ -64,7 +65,8 @@ export const HeroProvider = ({ children }) => {
                glyphs: Array.isArray(oldHero.glyphs) ? oldHero.glyphs : [0, 0, 0, 0, 0],
                ascension: {
                  rank: oldHero.ascension?.rank || 'I',
-                 branch: oldHero.ascension?.branch || oldHero.ascension?.nodes?.length || 0
+                 branch: oldHero.ascension?.branch || 0,
+                 nodes: Array.isArray(oldHero.ascension?.nodes) ? oldHero.ascension.nodes : []
                }
              };
           }
