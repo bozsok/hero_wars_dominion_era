@@ -4,9 +4,8 @@ import HeroCard from './HeroCard';
 import HeroModal from './HeroModal';
 
 const Dashboard = () => {
-  const { heroes, isViewMode } = useContext(HeroContext);
+  const { heroes, isViewMode, sortMode, setSortMode } = useContext(HeroContext);
   const [selectedHero, setSelectedHero] = useState(null);
-  const [sortMode, setSortMode] = useState('default');
 
   const sortedHeroes = [...heroes].sort((a, b) => {
     if (sortMode === 'power_desc') {

@@ -1,5 +1,6 @@
 import React, { createContext, useState, useEffect } from 'react';
 import heroesCatalog from '../data/heroesCatalog.json';
+import gameDictionary from '../data/gameDictionary.json';
 
 const defaultHeroState = {
   general: { level: 0, stars: 1, soulStones: 0, power: 0 },
@@ -13,12 +14,192 @@ const defaultHeroState = {
   ascension: { rank: 'I', branch: 0, nodes: [] }
 };
 
+const GLYPH_XP_PER_LEVEL = [
+  50,50,50,50,50, 80,80,80,80,80, 190,190,190,190,190,
+  220,220,220,220,220, 520,520,520,520,520, 590,590,590,590,590,
+  790,790,790,790,790, 870,870,870,870,870,
+  1970, 1970,1970,1970,1970, 3470,3470,3470,3470,3470
+];
+
+const generateNarrativeSummary = (myHeroes, sortMode) => {
+  let output = "DOMINION HŐSÖK FEJLETTSÉGI ÖSSZEGZŐ\n";
+  output += `Generálva: ${new Date().toLocaleString('hu-HU')}\n`;
+  output += "================================================================================\n\n";
+
+  const ownedHeroIds = Object.keys(myHeroes).filter(id => {
+    const heroData = myHeroes[id];
+    return heroData.general && heroData.general.level > 0;
+  });
+
+  // Rendezés a sortMode alapján
+  ownedHeroIds.sort((idA, idB) => {
+    const heroA = myHeroes[idA];
+    const heroB = myHeroes[idB];
+    const catalogHeroA = heroesCatalog.find(h => h.id === idA || h.id == idA);
+    const catalogHeroB = heroesCatalog.find(h => h.id === idB || h.id == idB);
+    const nameA = catalogHeroA?.name || '';
+    const nameB = catalogHeroB?.name || '';
+
+    if (sortMode === 'power_desc') {
+      const pA = heroA.general?.power || 0;
+      const pB = heroB.general?.power || 0;
+      return pB - pA;
+    }
+    if (sortMode === 'power_asc') {
+      const pA = heroA.general?.power || 0;
+      const pB = heroB.general?.power || 0;
+      return pA - pB;
+    }
+    if (sortMode === 'name_asc') {
+      return nameA.localeCompare(nameB);
+    }
+    if (sortMode === 'name_desc') {
+      return nameB.localeCompare(nameA);
+    }
+    return 0;
+  });
+
+  if (ownedHeroIds.length === 0) {
+    output += "Nincsenek aktivált hősök a mentésben.\n";
+    return output;
+  }
+
+  ownedHeroIds.forEach(id => {
+    const heroUserData = myHeroes[id];
+    const catalogHero = heroesCatalog.find(h => h.id === id || h.id == id);
+    const dictHero = gameDictionary.heroes[id];
+
+    if (!catalogHero) return;
+
+    const name = catalogHero.name;
+    const level = heroUserData.general?.level || 0;
+    const stars = heroUserData.general?.stars || 1;
+    const power = heroUserData.general?.power || 0;
+    const rank = heroUserData.items?.rank || 'White';
+    const mainStat = catalogHero.mainStat || 'Ismeretlen';
+    const roles = (catalogHero.roles || []).join(', ');
+    const goe = heroUserData.items?.goe || 0;
+
+    output += `HŐS: ${name} (Azonosító ID: ${id})\n`;
+    output += "================================================================================\n";
+    output += "* Általános információk:\n";
+    output += `  - Szint: ${level} / 130\n`;
+    output += `  - Csillagszám: ${stars} / 6 csillag\n`;
+    output += `  - Felszerelés rang: ${rank}\n`;
+    output += `  - Fő statisztika: ${mainStat}\n`;
+    output += `  - Szerepkörök: ${roles}\n`;
+    output += `  - Játékbeli erő (Power): ${power.toLocaleString()} Power\n\n`;
+
+    // Képességek
+    output += "* Képességek (Skills):\n";
+    const skillNames = ['1. Képesség (White)', '2. Képesség (Green)', '3. Képesség (Blue)', '4. Képesség (Violet)'];
+    const maxSkills = [level, level, Math.max(0, level - 20), Math.max(0, level - 40)];
+    
+    skillNames.forEach((skillName, idx) => {
+      const skillLevel = heroUserData.skills?.[idx] || 0;
+      const maxLvl = maxSkills[idx];
+      const isMax = maxLvl > 0 && skillLevel >= maxLvl;
+      const maxText = isMax ? " (Maximális)" : "";
+      if (maxLvl > 0) {
+        output += `  - ${skillName}: ${skillLevel} / ${maxLvl} szint${maxText}\n`;
+      } else {
+        output += `  - ${skillName}: Még nincs feloldva\n`;
+      }
+    });
+    output += "\n";
+
+    // Ereklyék
+    output += "* Ereklyék (Artifacts):\n";
+    const weaponLvl = heroUserData.artifacts?.weapon?.level || 0;
+    const weaponStars = heroUserData.artifacts?.weapon?.stars || 0;
+    const weaponBuff = dictHero?.artifactWeapon?.attribute || 'Csapat buff';
+    output += `  - 1. Ereklye (Weapon): Szint: ${weaponLvl} / 100, Csillagok: ${weaponStars} / 6. Buff: ${weaponBuff} a csapatnak\n`;
+
+    const bookLvl = heroUserData.artifacts?.book?.level || 0;
+    const bookStars = heroUserData.artifacts?.book?.stars || 0;
+    const bookAttr1 = heroUserData.artifacts?.book?.attribute1 || 'Armor';
+    const bookAttr2 = heroUserData.artifacts?.book?.attribute2 || 'Magic Defense';
+    output += `  - 2. Ereklye (Book): Szint: ${bookLvl} / 100, Csillagok: ${bookStars} / 6. Bónuszok: ${bookAttr1}, ${bookAttr2}\n`;
+
+    const ringLvl = heroUserData.artifacts?.ring?.level || 0;
+    const ringStars = heroUserData.artifacts?.ring?.stars || 0;
+    const ringAttr = heroUserData.artifacts?.ring?.attribute || mainStat || 'Strength';
+    output += `  - 3. Ereklye (Ring): Szint: ${ringLvl} / 100, Csillagok: ${ringStars} / 6. Bónusz: +${ringAttr} a hősnek\n\n`;
+
+    // Skinek
+    output += "* Skinek (Skins):\n";
+    const defaultSkinInput = heroUserData.skins?.['default'] || 0;
+    const defaultSkinMax = defaultSkinInput === 60 ? " (Maximális)" : "";
+    output += `  - Default Skin (Fő statisztika bónusz): ${defaultSkinInput} / 60 szint${defaultSkinMax}\n`;
+    
+    if (dictHero && dictHero.skins) {
+      dictHero.skins.forEach(skin => {
+        const skinVal = heroUserData.skins?.[skin.id || skin.name] || 0;
+        const isMax = skinVal === 60;
+        const maxText = isMax ? " (Maximális)" : "";
+        output += `  - ${skin.name} (${skin.attribute}): ${skinVal} / 60 szint${maxText}\n`;
+      });
+    }
+    output += "\n";
+
+    // Rúnák
+    output += "* Rúnák (Glyphs):\n";
+    const glyphNames = catalogHero.staticGlyphs || [];
+    const glyphsXpValues = heroUserData.glyphs || [];
+
+    const getGlyphLevel = (xp) => {
+      let remainingXp = xp;
+      let lvl = 0;
+      for (let i = 0; i < GLYPH_XP_PER_LEVEL.length; i++) {
+        if (remainingXp >= GLYPH_XP_PER_LEVEL[i]) {
+          remainingXp -= GLYPH_XP_PER_LEVEL[i];
+          lvl = i + 1;
+        } else {
+          break;
+        }
+      }
+      return lvl;
+    };
+
+    glyphNames.forEach((glyphName, idx) => {
+      const rawXp = parseInt(glyphsXpValues[idx]) || 0;
+      const lvl = getGlyphLevel(rawXp);
+      const isMax = lvl === 50;
+      const maxText = isMax ? " (Maximális)" : "";
+      output += `  - ${glyphName} rúna: ${lvl} / 50 szint (${rawXp.toLocaleString()} / 33,850 XP)${maxText}\n`;
+    });
+    output += "\n";
+
+    // Felemelkedés (Ascension)
+    output += "* Felemelkedés (Ascension):\n";
+    const ascensionRank = heroUserData.ascension?.rank || '0';
+    const branchLevel = parseInt(heroUserData.ascension?.branch) || 0;
+    const activeNodes = heroUserData.ascension?.nodes || [];
+    const maxNodesPerRank = { '0': 0, 'I': 10, 'II': 11, 'III': 10, 'IV': 10, 'V': 10 };
+    const maxNodes = maxNodesPerRank[ascensionRank] || 0;
+    
+    output += `  - Ascension Rank: ${ascensionRank === '0' ? 'Nincs' : `Rank ${ascensionRank}`}\n`;
+    if (ascensionRank !== '0') {
+      output += `  - Feloldott csomópontok: ${activeNodes.length} / ${maxNodes}\n`;
+    }
+    const primaryRole = catalogHero.roles?.[0] || 'Ismeretlen';
+    output += `  - Bölcsesség Fája (${primaryRole} ág): ${branchLevel} / 50 szint\n`;
+    
+    const goeMax = goe === 30 ? " (Maximális)" : "";
+    output += `  - Elemek ajándéka (Gift of the Elements): ${goe} / 30 szint${goeMax}\n`;
+    output += "================================================================================\n\n";
+  });
+
+  return output;
+};
+
 export const HeroContext = createContext();
 
 export const HeroProvider = ({ children }) => {
   const [myHeroes, setMyHeroes] = useState({});
   const [viewHeroes, setViewHeroes] = useState(null);
   const [isViewMode, setIsViewMode] = useState(false);
+  const [sortMode, setSortMode] = useState('default');
 
   // Inicializálás Local Storage-ből és migráció
   useEffect(() => {
@@ -146,13 +327,62 @@ export const HeroProvider = ({ children }) => {
   };
 
   const exportData = () => {
-    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(myHeroes, null, 2));
+    // Rendezzük a JSON kulcsokat a sortMode alapján (új objektum létrehozásával)
+    const sortedHeroesObj = {};
+    const allHeroIds = Object.keys(myHeroes);
+    allHeroIds.sort((idA, idB) => {
+      const heroA = myHeroes[idA];
+      const heroB = myHeroes[idB];
+      const catalogHeroA = heroesCatalog.find(h => h.id === idA || h.id == idA);
+      const catalogHeroB = heroesCatalog.find(h => h.id === idB || h.id == idB);
+      const nameA = catalogHeroA?.name || '';
+      const nameB = catalogHeroB?.name || '';
+
+      if (sortMode === 'power_desc') {
+        const pA = heroA.general?.power || 0;
+        const pB = heroB.general?.power || 0;
+        return pB - pA;
+      }
+      if (sortMode === 'power_asc') {
+        const pA = heroA.general?.power || 0;
+        const pB = heroB.general?.power || 0;
+        return pA - pB;
+      }
+      if (sortMode === 'name_asc') {
+        return nameA.localeCompare(nameB);
+      }
+      if (sortMode === 'name_desc') {
+        return nameB.localeCompare(nameA);
+      }
+      return 0;
+    });
+    
+    allHeroIds.forEach(id => {
+      sortedHeroesObj[id] = myHeroes[id];
+    });
+
+    // 1. JSON export letöltése
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(sortedHeroesObj, null, 2));
     const downloadAnchorNode = document.createElement('a');
     downloadAnchorNode.setAttribute("href", dataStr);
     downloadAnchorNode.setAttribute("download", "dominion_heroes_export.json");
     document.body.appendChild(downloadAnchorNode);
     downloadAnchorNode.click();
     downloadAnchorNode.remove();
+
+    // 2. Narratív TXT export letöltése
+    try {
+      const textSummary = generateNarrativeSummary(myHeroes, sortMode);
+      const textDataStr = "data:text/plain;charset=utf-8," + encodeURIComponent(textSummary);
+      const textAnchorNode = document.createElement('a');
+      textAnchorNode.setAttribute("href", textDataStr);
+      textAnchorNode.setAttribute("download", "dominion_heroes_summary.txt");
+      document.body.appendChild(textAnchorNode);
+      textAnchorNode.click();
+      textAnchorNode.remove();
+    } catch (e) {
+      console.error("Hiba a szöveges export generálása közben: ", e);
+    }
   };
 
   const loadViewData = (jsonData) => {
@@ -207,7 +437,9 @@ export const HeroProvider = ({ children }) => {
       exportData,
       loadViewData,
       isViewMode,
-      exitViewMode
+      exitViewMode,
+      sortMode,
+      setSortMode
     }}>
       {children}
     </HeroContext.Provider>
