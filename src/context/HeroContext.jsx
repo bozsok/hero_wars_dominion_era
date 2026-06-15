@@ -134,7 +134,9 @@ const generateNarrativeSummary = (myHeroes, sortMode) => {
     
     if (dictHero && dictHero.skins) {
       dictHero.skins.forEach(skin => {
-        const skinVal = heroUserData.skins?.[skin.id || skin.name] || 0;
+        const skinVal = heroUserData.skins?.[skin.name] !== undefined 
+          ? heroUserData.skins[skin.name] 
+          : (skin.id !== undefined && heroUserData.skins?.[skin.id] !== undefined ? heroUserData.skins[skin.id] : 0);
         const isMax = skinVal === 60;
         const maxText = isMax ? " (Maximális)" : "";
         output += `  - ${skin.name} (${skin.attribute}): ${skinVal} / 60 szint${maxText}\n`;

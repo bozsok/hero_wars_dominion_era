@@ -3,6 +3,7 @@ import { HeroContext } from '../context/HeroContext';
 import './ImportModal.css';
 import { calculateHeroStats } from '../utils/statCalculator.js';
 import heroesCatalog from '../data/heroesCatalog.json';
+import skinMapping from '../data/skinMapping.json';
 
 const RANKS = [
   'Ismeretlen', // 0 (nem használt)
@@ -120,12 +121,21 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
             }
 
             if (hero.skins) {
-              const defaultSkinId = (id === '50' || id == 50) ? '105' : id.toString();
+              // A default skin ID a legkisebb skin ID a feloldottak közül
+              const skinIds = Object.keys(hero.skins).map(k => parseInt(k, 10)).sort((a, b) => a - b);
+              const defaultSkinId = skinIds.length > 0 ? skinIds[0].toString() : null;
+
               for (const [skinId, skinLevel] of Object.entries(hero.skins)) {
+                const levelVal = parseInt(skinLevel, 10) || 0;
                 if (skinId === defaultSkinId) {
-                  parsedHero.skins['default'] = parseInt(skinLevel, 10) || 0;
+                  parsedHero.skins['default'] = levelVal;
                 } else {
-                  parsedHero.skins[skinId] = parseInt(skinLevel, 10) || 0;
+                  const mapped = skinMapping[skinId];
+                  if (mapped && mapped.name) {
+                    parsedHero.skins[mapped.name] = levelVal;
+                  } else {
+                    parsedHero.skins[skinId] = levelVal;
+                  }
                 }
               }
             }

@@ -1,0 +1,682 @@
+{
+  "1": {
+    "heroId": "1",
+    "name": "default"
+  },
+  "2": {
+    "heroId": "2",
+    "name": "default"
+  },
+  "3": {
+    "heroId": "3",
+    "name": "default"
+  },
+  "4": {
+    "heroId": "4",
+    "name": "default"
+  },
+  "5": {
+    "heroId": "5",
+    "name": "default"
+  },
+  "6": {
+    "heroId": "6",
+    "name": "default"
+  },
+  "7": {
+    "heroId": "7",
+    "name": "default"
+  },
+  "8": {
+    "heroId": "8",
+    "name": "default"
+  },
+  "9": {
+    "heroId": "9",
+    "name": "default"
+  },
+  "10": {
+    "heroId": "10",
+    "name": "default"
+  },
+  "11": {
+    "heroId": "11",
+    "name": "default"
+  },
+  "12": {
+    "heroId": "12",
+    "name": "default"
+  },
+  "13": {
+    "heroId": "13",
+    "name": "default"
+  },
+  "14": {
+    "heroId": "14",
+    "name": "default"
+  },
+  "15": {
+    "heroId": "15",
+    "name": "default"
+  },
+  "16": {
+    "heroId": "16",
+    "name": "default"
+  },
+  "17": {
+    "heroId": "17",
+    "name": "default"
+  },
+  "18": {
+    "heroId": "18",
+    "name": "default"
+  },
+  "19": {
+    "heroId": "19",
+    "name": "default"
+  },
+  "20": {
+    "heroId": "20",
+    "name": "default"
+  },
+  "21": {
+    "heroId": "21",
+    "name": "default"
+  },
+  "22": {
+    "heroId": "22",
+    "name": "default"
+  },
+  "23": {
+    "heroId": "23",
+    "name": "default"
+  },
+  "24": {
+    "heroId": "24",
+    "name": "default"
+  },
+  "25": {
+    "heroId": "25",
+    "name": "default"
+  },
+  "26": {
+    "heroId": "26",
+    "name": "default"
+  },
+  "27": {
+    "heroId": "27",
+    "name": "default"
+  },
+  "28": {
+    "heroId": "28",
+    "name": "default"
+  },
+  "29": {
+    "heroId": "29",
+    "name": "default"
+  },
+  "30": {
+    "heroId": "30",
+    "name": "default"
+  },
+  "31": {
+    "heroId": "7",
+    "name": "Angel Skin"
+  },
+  "32": {
+    "heroId": "2",
+    "name": "Angel Skin"
+  },
+  "33": {
+    "heroId": "20",
+    "name": "Angel Skin"
+  },
+  "34": {
+    "heroId": "15",
+    "name": "Demonic Skin"
+  },
+  "35": {
+    "heroId": "4",
+    "name": "Demonic Skin"
+  },
+  "36": {
+    "heroId": "11",
+    "name": "Demonic Skin"
+  },
+  "37": {
+    "heroId": "12",
+    "name": "Mechanical Skin"
+  },
+  "38": {
+    "heroId": "13",
+    "name": "Mechanical Skin"
+  },
+  "39": {
+    "heroId": "18",
+    "name": "Mechanical Skin"
+  },
+  "40": {
+    "heroId": "5",
+    "name": "Winter Skin"
+  },
+  "41": {
+    "heroId": "9",
+    "name": "Winter Skin"
+  },
+  "42": {
+    "heroId": "14",
+    "name": "Winter Skin"
+  },
+  "43": {
+    "heroId": "17",
+    "name": "Winter Skin"
+  },
+  "44": {
+    "heroId": "31",
+    "name": "default"
+  },
+  "45": {
+    "heroId": "32",
+    "name": "default"
+  },
+  "46": {
+    "heroId": "33",
+    "name": "default"
+  },
+  "47": {
+    "heroId": "34",
+    "name": "default"
+  },
+  "48": {
+    "heroId": "35",
+    "name": "default"
+  },
+  "49": {
+    "heroId": "36",
+    "name": "default"
+  },
+  "50": {
+    "heroId": "37",
+    "name": "default"
+  },
+  "51": {
+    "heroId": "38",
+    "name": "default"
+  },
+  "52": {
+    "heroId": "39",
+    "name": "default"
+  },
+  "53": {
+    "heroId": "40",
+    "name": "default"
+  },
+  "54": {
+    "heroId": "1",
+    "name": "Nordic Skin"
+  },
+  "55": {
+    "heroId": "21",
+    "name": "Nordic Skin"
+  },
+  "56": {
+    "heroId": "19",
+    "name": "Nordic Skin"
+  },
+  "57": {
+    "heroId": "25",
+    "name": "Romantic Skin"
+  },
+  "58": {
+    "heroId": "16",
+    "name": "Romantic Skin"
+  },
+  "59": {
+    "heroId": "23",
+    "name": "Romantic Skin"
+  },
+  "60": {
+    "heroId": "3",
+    "name": "Blooming Skin"
+  },
+  "61": {
+    "heroId": "26",
+    "name": "Predator Skin"
+  },
+  "62": {
+    "heroId": "28",
+    "name": "Phoenix Skin"
+  },
+  "63": {
+    "heroId": "6",
+    "name": "Illusionist Skin"
+  },
+  "64": {
+    "heroId": "8",
+    "name": "Brawler Skin"
+  },
+  "65": {
+    "heroId": "22",
+    "name": "Sweet Tooth Skin"
+  },
+  "66": {
+    "heroId": "10",
+    "name": "Stellar Skin"
+  },
+  "67": {
+    "heroId": "27",
+    "name": "Stellar Skin"
+  },
+  "68": {
+    "heroId": "30",
+    "name": "Stellar Skin"
+  },
+  "69": {
+    "heroId": "2",
+    "name": "Champion's Skin"
+  },
+  "70": {
+    "heroId": "7",
+    "name": "Champion's Skin"
+  },
+  "71": {
+    "heroId": "15",
+    "name": "Champion's Skin"
+  },
+  "72": {
+    "heroId": "29",
+    "name": "Champion's Skin"
+  },
+  "73": {
+    "heroId": "32",
+    "name": "Champion's Skin"
+  },
+  "74": {
+    "heroId": "35",
+    "name": "Champion's Skin"
+  },
+  "75": {
+    "heroId": "24",
+    "name": "Champion's Skin"
+  },
+  "76": {
+    "heroId": "18",
+    "name": "Champion's Skin"
+  },
+  "77": {
+    "heroId": "25",
+    "name": "Champion's Skin"
+  },
+  "78": {
+    "heroId": "36",
+    "name": "Champion's Skin"
+  },
+  "79": {
+    "heroId": "35",
+    "name": "Demonic Skin"
+  },
+  "80": {
+    "heroId": "20",
+    "name": "Demonic Skin"
+  },
+  "81": {
+    "heroId": "32",
+    "name": "Demonic Skin"
+  },
+  "82": {
+    "heroId": "39",
+    "name": "Cybernetic Skin"
+  },
+  "83": {
+    "heroId": "37",
+    "name": "Winter Skin"
+  },
+  "84": {
+    "heroId": "36",
+    "name": "Winter Skin"
+  },
+  "85": {
+    "heroId": "38",
+    "name": "Winter Skin"
+  },
+  "86": {
+    "heroId": "11",
+    "name": "Winter Skin"
+  },
+  "87": {
+    "heroId": "12",
+    "name": "Romantic Skin"
+  },
+  "88": {
+    "heroId": "29",
+    "name": "Romantic Skin"
+  },
+  "89": {
+    "heroId": "40",
+    "name": "Romantic Skin"
+  },
+  "90": {
+    "heroId": "41",
+    "name": "default"
+  },
+  "91": {
+    "heroId": "42",
+    "name": "default"
+  },
+  "92": {
+    "heroId": "4",
+    "name": "Barbarian Skin"
+  },
+  "93": {
+    "heroId": "24",
+    "name": "Barbarian Skin"
+  },
+  "94": {
+    "heroId": "31",
+    "name": "Barbarian Skin"
+  },
+  "95": {
+    "heroId": "1",
+    "name": "Spring Skin"
+  },
+  "96": {
+    "heroId": "19",
+    "name": "Spring Skin"
+  },
+  "97": {
+    "heroId": "28",
+    "name": "Spring Skin"
+  },
+  "98": {
+    "heroId": "43",
+    "name": "default"
+  },
+  "99": {
+    "heroId": "44",
+    "name": "default"
+  },
+  "100": {
+    "heroId": "45",
+    "name": "default"
+  },
+  "101": {
+    "heroId": "46",
+    "name": "default"
+  },
+  "102": {
+    "heroId": "47",
+    "name": "default"
+  },
+  "106": {
+    "heroId": "10",
+    "name": "Masquerade Skin"
+  },
+  "107": {
+    "heroId": "33",
+    "name": "Masquerade Skin"
+  },
+  "108": {
+    "heroId": "34",
+    "name": "Masquerade Skin"
+  },
+  "109": {
+    "heroId": "5",
+    "name": "Champion's Skin"
+  },
+  "110": {
+    "heroId": "22",
+    "name": "Champion's Skin"
+  },
+  "111": {
+    "heroId": "37",
+    "name": "Champion's Skin"
+  },
+  "112": {
+    "heroId": "39",
+    "name": "Champion's Skin"
+  },
+  "113": {
+    "heroId": "21",
+    "name": "Barbarian Skin"
+  },
+  "114": {
+    "heroId": "38",
+    "name": "Barbarian Skin"
+  },
+  "115": {
+    "heroId": "42",
+    "name": "Barbarian Skin"
+  },
+  "116": {
+    "heroId": "6",
+    "name": "Stellar Skin"
+  },
+  "117": {
+    "heroId": "26",
+    "name": "Stellar Skin"
+  },
+  "118": {
+    "heroId": "41",
+    "name": "Stellar Skin"
+  },
+  "119": {
+    "heroId": "27",
+    "name": "Angel Skin"
+  },
+  "120": {
+    "heroId": "30",
+    "name": "Angel Skin"
+  },
+  "121": {
+    "heroId": "42",
+    "name": "Angel Skin"
+  },
+  "122": {
+    "heroId": "33",
+    "name": "Demonic Skin"
+  },
+  "123": {
+    "heroId": "34",
+    "name": "Demonic Skin"
+  },
+  "124": {
+    "heroId": "44",
+    "name": "Demonic Skin"
+  },
+  "127": {
+    "heroId": "3",
+    "name": "Winter Skin"
+  },
+  "128": {
+    "heroId": "7",
+    "name": "Winter Skin"
+  },
+  "129": {
+    "heroId": "40",
+    "name": "Winter Skin"
+  },
+  "130": {
+    "heroId": "43",
+    "name": "Winter Skin"
+  },
+  "131": {
+    "heroId": "18",
+    "name": "Eastern Skin"
+  },
+  "132": {
+    "heroId": "22",
+    "name": "Eastern Skin"
+  },
+  "133": {
+    "heroId": "31",
+    "name": "Eastern Skin"
+  },
+  "134": {
+    "heroId": "2",
+    "name": "Romantic Skin"
+  },
+  "135": {
+    "heroId": "32",
+    "name": "Romantic Skin"
+  },
+  "136": {
+    "heroId": "36",
+    "name": "Romantic Skin"
+  },
+  "140": {
+    "heroId": "14",
+    "name": "Spring Skin"
+  },
+  "141": {
+    "heroId": "15",
+    "name": "Spring Skin"
+  },
+  "142": {
+    "heroId": "44",
+    "name": "Spring Skin"
+  },
+  "145": {
+    "heroId": "24",
+    "name": "Masquerade Skin"
+  },
+  "146": {
+    "heroId": "25",
+    "name": "Masquerade Skin"
+  },
+  "147": {
+    "heroId": "29",
+    "name": "Masquerade Skin"
+  },
+  "148": {
+    "heroId": "13",
+    "name": "Cybernetic Skin"
+  },
+  "149": {
+    "heroId": "17",
+    "name": "Cybernetic Skin"
+  },
+  "150": {
+    "heroId": "45",
+    "name": "Cybernetic Skin"
+  },
+  "151": {
+    "heroId": "5",
+    "name": "Solar Skin"
+  },
+  "152": {
+    "heroId": "23",
+    "name": "Solar Skin"
+  },
+  "153": {
+    "heroId": "37",
+    "name": "Solar Skin"
+  },
+  "154": {
+    "heroId": "1",
+    "name": "Demonic Skin"
+  },
+  "155": {
+    "heroId": "38",
+    "name": "Demonic Skin"
+  },
+  "156": {
+    "heroId": "39",
+    "name": "Demonic Skin"
+  },
+  "199": {
+    "heroId": "13",
+    "name": "Romantic Skin"
+  },
+  "218": {
+    "heroId": "50",
+    "name": "Dark Depths Skin"
+  },
+  "234": {
+    "heroId": "3",
+    "name": "Demonic Skin"
+  },
+  "240": {
+    "heroId": "13",
+    "name": "Winter Skin"
+  },
+  "278": {
+    "heroId": "55",
+    "name": "Cybernetic Skin"
+  },
+  "333": {
+    "heroId": "50",
+    "name": "Winter Skin"
+  },
+  "334": {
+    "heroId": "51",
+    "name": "Winter Skin"
+  },
+  "386": {
+    "heroId": "69",
+    "name": "Mythic Skin"
+  },
+  "398": {
+    "heroId": "72",
+    "name": "Default Skin"
+  },
+  "10001": {
+    "heroId": "4000",
+    "name": "default"
+  },
+  "10002": {
+    "heroId": "4001",
+    "name": "default"
+  },
+  "10003": {
+    "heroId": "4002",
+    "name": "default"
+  },
+  "10004": {
+    "heroId": "4003",
+    "name": "default"
+  },
+  "10005": {
+    "heroId": "4010",
+    "name": "default"
+  },
+  "10006": {
+    "heroId": "4011",
+    "name": "default"
+  },
+  "10007": {
+    "heroId": "4012",
+    "name": "default"
+  },
+  "10008": {
+    "heroId": "4013",
+    "name": "default"
+  },
+  "10009": {
+    "heroId": "4020",
+    "name": "default"
+  },
+  "10010": {
+    "heroId": "4021",
+    "name": "default"
+  },
+  "10011": {
+    "heroId": "4022",
+    "name": "default"
+  },
+  "10012": {
+    "heroId": "4023",
+    "name": "default"
+  },
+  "10013": {
+    "heroId": "4000",
+    "name": "Champion's Skin"
+  },
+  "10014": {
+    "heroId": "4010",
+    "name": "Champion's Skin"
+  },
+  "10015": {
+    "heroId": "4020",
+    "name": "Champion's Skin"
+  }
+}

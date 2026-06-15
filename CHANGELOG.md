@@ -7,10 +7,14 @@ Minden említésre méltó változtatás a projektben ebben a fájlban lesz rög
 ### Hozzáadva (Added)
 - **Narratív szöveges exportálás:** A szinkronizációs panelen elvégzett Exportálás funkció mostantól a `dominion_heroes_export.json` mellett egy `dominion_heroes_summary.txt` fájlt is legenerál és letölt. A szöveges riport narratív formában, érthető megnevezésekkel írja le a birtokolt hősök fejlődési szintjeit, erejét, képességeit, skineit, rúnáit, felemelkedését és a Gift of the Elements szintjét, elősegítve a külső AI rendszerekkel való megosztást és elemzést.
 - **Rendezett export tartalom:** Az exportált JSON és szöveges riport fájlok tartalma pontosan követi a főoldalon aktívan kiválasztott rendezési sorrendet (pl. Erő csökkenő, Név A-Z).
+- **Skin ID leképezés (skinMapping.json):** Új adatfájl hozzáadása, amely 170 hős kinézet (skin) numerikus azonosítóját képezi le a hozzá tartozó hősre és a skin szemantikus angol nevére.
 
 ### Megváltoztatva (Changed)
 - **Globális rendezési állapot:** A hősök listájának rendezési állapota (`sortMode`) a Dashboard-ról a globális `HeroContext`-be került áthelyezésre, hogy az exportáló logika közvetlenül el tudja érni az aktív szűrési/rendezési szempontot.
 - **Passzív, prémium hősadatlap (Read-Only):** A hősök részletes adatlapja (`HeroModal.jsx`) teljesen beviteli mezőktől mentessé, passzív vizuális felületté vált. A korábbi inputok helyét stílusos folyamatjelzők (progress bar), arany csillagok, római számok és rendezett kártyák vették át, amelyek a HAR-fájlból kinyert adatokat jelenítik meg a játékhoz hű sötét-arany stílusban. A felesleges mentési logikát és a mentés gombot eltávolítottuk, az "Adatok Másolása" gomb megmaradt és megújult dizájnt kapott.
+
+### Javítva (Fixed)
+- **HAR-fájl skin importálás és megjelenítés:** Kijavításra került a kinézetek (skins) hibás szinkronizációja a HAR-fájlból. A default skin azonosítása mostantól dinamikusan, a feloldott skinek legkisebb ID-ja alapján történik. A nem-default skinek az új `skinMapping.json` segítségével közvetlenül a megnevezésük szerint mentődnek el a hős adatlapjára. Javításra került a mentett kinézetek megjelenítési és exportálási logikája is a `HeroModal.jsx`, `HeroContext.jsx` és `statCalculator.js` fájlokban: a program mostantól a név alapú leképezést részesíti előnyben, de ha az nem található, visszalép (fallback) az ID-alapú kulcsra. Ez megoldotta a Corvus és más hősök egyedi kinézeteinek (pl. Dark Depths Skin, Winter Skin) 0/60-as hibás kijelzését, mind a felületen (Skins fül), mind a letölthető szöveges riportban (TXT export).
 
 ## [0.4.1] - 2026-06-11
 

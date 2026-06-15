@@ -174,10 +174,10 @@ export const calculateHeroStats = (heroId, userHeroData) => {
       // 1. skin.id alapján a userSkins-ben (pl. "105")
       // 2. skin.name alapján a userSkins-ben (pl. "Dark Depths Skin")
       let rawInput = 0;
-      if (skin.id !== undefined && userSkins[skin.id] !== undefined) {
-        rawInput = parseInt(userSkins[skin.id]) || 0;
-      } else if (userSkins[skin.name] !== undefined) {
+      if (userSkins[skin.name] !== undefined) {
         rawInput = parseInt(userSkins[skin.name]) || 0;
+      } else if (skin.id !== undefined && userSkins[skin.id] !== undefined) {
+        rawInput = parseInt(userSkins[skin.id]) || 0;
       }
       
       // Ha 60 vagy alatti, akkor az szint, tehát arányosítjuk a maximum (skin.value) alapján

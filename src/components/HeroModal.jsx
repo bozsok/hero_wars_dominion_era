@@ -431,7 +431,9 @@ const HeroModal = ({ hero, onClose }) => {
 
           {/* Egyedi skinek kártyái */}
           {heroSkins.map(skin => {
-            const skinVal = heroData.skins?.[skin.id || skin.name] || 0;
+            const skinVal = heroData.skins?.[skin.name] !== undefined 
+              ? heroData.skins[skin.name] 
+              : (skin.id !== undefined && heroData.skins?.[skin.id] !== undefined ? heroData.skins[skin.id] : 0);
             const isMax = skinVal === 60;
             return (
               <div className="premium-card" key={skin.id || skin.name}>
