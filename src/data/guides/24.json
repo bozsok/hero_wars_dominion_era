@@ -4,23 +4,53 @@
   "sections": [
     {
       "title": "Általános áttekintés",
-      "content": "A Cleaver egy hősies tank, amelyet nagyon nehéz megszerezni. A játék egyik legjobb tankjának tartják. Jól megbirkózik az ellenséges falkákkal, ha Peppy vagy Ju van a csapatában. A Slashernek hatalmas egészsége van a legtöbb többi tankhoz képest. Bár nehéz beszerezni, megéri. \n\nFőszerep: Tank, Vezérlés Fő attribútum: Erővonal: Harc a frontvonalon Sebzés típusa: Fizikai sebzés, Pure Damage\n\nProfik\n\n✓ Hatalmas életerő a többi tankhoz képest (még bőr nélkül is);✓ Képes kihúzni a legtávolabbi ellenséges hőst, ezáltal csökkenti az ilyen hősök hatékonyságát;✓ Tiszta sebzést okoz;✓ Irányítókészségekkel rendelkezik;✓ Jó Martha és Helios elleni küzdelemhez;✓ Jó sebzés egy tanknak. \n\nHátrányok\n\n✗ Hőst szerezni meglehetősen nehéz; ✗ Nincsenek olyan képességek, amelyekkel megvédhetné csapatát, mint más népszerű tankoknál (Dodge, resurrection stb.)"
+      "level": 1,
+      "content": "A Cleaver egy hősies tank, amelyet nagyon nehéz megszerezni. A játék egyik legjobb tankjának tartják. Jól megbirkózik az ellenséges falkákkal, ha Peppy vagy Ju van a csapatában. A Slashernek hatalmas egészsége van a legtöbb többi tankhoz képest. Bár nehéz beszerezni, megéri.\nFőszerep: Tank, Vezérlés Fő attribútum: Erővonal: Harc a frontvonalon Sebzés típusa: Fizikai sebzés, Pure Damage\n\n**Előnyök**\n\n✓ Hatalmas életerő a többi tankhoz képest (még bőr nélkül is);\n✓ Képes kihúzni a legtávolabbi ellenséges hőst, ezáltal csökkenti az ilyen hősök hatékonyságát;\n✓ Tiszta sebzést okoz;\n✓ Irányítókészségekkel rendelkezik;\n✓ Jó Martha és Helios elleni küzdelemhez;\n✓ Jó sebzés egy tanknak.\n\n**Hátrányok**\n\n✗ Hőst szerezni meglehetősen nehéz;\n✗ Nincsenek olyan képességek, amelyekkel megvédhetné csapatát, mint más népszerű tankoknál (Dodge, resurrection stb.)"
+    },
+    {
+      "title": "Készségek",
+      "level": 1,
+      "content": "Rusty Hook – Cleaver horgot dob ​​egy távoli ellenfelére, ezzel sebzést okozva magához húzza. Ascension Skill: Massive Rusty Hook (Ascension Skill): Massive Rusty Hook Egy rozsdás horog által rángatott hős ellöki szövetségeseit és tiszta sebzést okoz nekik.\n\nRotting – 5 másodpercen belül. tiszta sebzést okoz a közeli ellenségekre, valamint önmagára. Ascension Skill: Toxic Rot A Rusty Hook által rángatott hős 200%-kal megnövelt sebzést kap Rottól 20 másodpercre.\n\nMutilation – Eltalálja az előtte lévő területet egy ollóval, ami sebzést és elkábítást okoz az ellenfeleknek.\n\nHeavyweight – Passzív készség. Cleaver extra erőre tesz szert"
+    },
+    {
+      "title": "Hős tippek:",
+      "level": 1,
+      "content": ""
     },
     {
       "title": "A készségek szintre emelése",
-      "content": "Röviden:"
+      "level": 2,
+      "content": "Röviden:\n\nKészségek – Megjegyzések\nRusty Hook – Jó készség, ami sok kárt okoz. Javasoljuk, hogy töltse le, ha van extra aranya. Elsőbbségi szempontból a negyedik helyen áll. A képesség nincs szinthez kötve, és a sebzése sem számít.\nRotting – Tiszta sebzést okoz a közeli ellenségeknek. Elsőbbségi szempontból a harmadik helyen áll.\nMutilation – A képesség szinthez van kötve (kábítás esélye). Elsőbbségi szempontból a második helyen áll.\nHeavyweight – Feltétlenül töltse le. Első helyen áll a prioritásban. Az erő egy tankjellemző, amely növeli a sebzést és a túlélést. Feltétlenül töltse le prioritásként."
     },
     {
       "title": "Skinek",
-      "content": "Mint minden tanknak, a Slashernek is szüksége van páncélra, ezért az első bőr, amelyet szintezésre ajánlunk, a Masquerade Skin páncélhoz. A második az Alapvető keresés az erőért, a harmadik pedig a Barbár keresés az egészségért. Az utolsó frissítés az Eastern Appearance a mágia elleni védelem érdekében, ami ebben az esetben csak Celeste ellen segít. De a Cleaver már elég tartós lesz egészségügyi szempontból ahhoz, hogy ez a megjelenés prioritást élvezzen. Ha először frissíti az egészségi bőrét, a Cleaver tovább fog tölteni, hogy magához vonzza a távoli hőst. A Guild War Skin-t, akárcsak a Beach Skin-t, nem ajánlott fizikai támadáshoz frissíteni, akárcsak a szimbólumot. A bárdnak nincs szüksége fizikai támadásra. Ez a megjelenés akkor frissül, ha az egész csomagot már felpumpálták, és valahol el kell költenie Power stone-okat."
+      "level": 2,
+      "content": "Szükséges Skinek\nMasquerade Look – Páncél\nAlapvető megjelenés - Erő\nBarbár forma – Egészség\nKeleti megjelenés - Mágikus védelem\nVálasztható skinek\nGuild War Skin – fizikai támadás\nBeach Skin – fizikai támadás\n\nMint minden tanknak, a Slashernek is szüksége van páncélra, ezért az első bőr, amelyet szintezésre ajánlunk, a Masquerade Skin páncélhoz. A második az Alapvető keresés az erőért, a harmadik pedig a Barbár keresés az egészségért. Az utolsó frissítés az Eastern Appearance a mágia elleni védelem érdekében, ami ebben az esetben csak Celeste ellen segít. De a Cleaver már elég tartós lesz egészségügyi szempontból ahhoz, hogy ez a megjelenés prioritást élvezzen. Ha először frissíti az egészségi bőrét, a Cleaver tovább fog tölteni, hogy magához vonzza a távoli hőst. A Guild War Skin-t, akárcsak a Beach Skin-t, nem ajánlott fizikai támadáshoz frissíteni, akárcsak a szimbólumot. A bárdnak nincs szüksége fizikai támadásra. Ez a megjelenés akkor frissül, ha az egész csomagot már felpumpálták, és valahol el kell költenie Power stone-okat."
     },
     {
       "title": "Szimbólum",
-      "content": "A karakterfrissítések prioritása a következő:"
+      "level": 2,
+      "content": "A karakterfrissítések prioritása a következő:\n\n1. Páncél – Növeli a Cleaver túlélőképességét a fizikai támadásokkal szemben. csapatok, győződjön meg róla, hogy elsőként pumpálja a maximumot. \n2. Erő – Frissítse a maximumra a második szimbólummal. Növeli a hős túlélőképességét, sebzését és csökkenti a kritikus találatok esélyét. találat. \n3. Egészség – maximum harmadára lendít, növeli a hős túlélőképességét. \n4. Védelem a varázslat ellen – Nem a legszükségesebb szimbólum. A kezdeti szakaszban elég lesz felpumpálni a szimbólumot 30-al. Akkor lesz felpumpálva, ha sok bűvész van a szerveren. \n5. Fizikai támadás – Ez a szimbólum akkor frissül, ha már az összes csomagot frissítették. Ez egy opcionális szimbólum a Cleaver számára, és nem frissít, ha van alternatíva."
     },
     {
       "title": "Műtárgyak",
-      "content": "A Tesak legfontosabb mecénása Oliver. \n\nJorgen – A Desecrated Wounds képesség megakadályozza, hogy Cleaver túl korán húzza ki az utolsó vonal hősét, és a magas túlélőképességű hősök használata a hátsó sorokban csökkenti Cleaver húzásának hatékonyságát. Például, ha megvan az utolsó, vagy amelyek jól pumpáltak, a Cleaver nem lesz olyan hatékony. \n\n.Iris - A Soul Exposure készség kiválóan alkalmas egy ellenséges tank megölésére. \n\nPeppy – Courage ügyessége rengeteg sebzést okoz Cleavernek. - Ha Cleaver magához vonzza Doriant, az aurája minden szövetségesre hatni kezd, akik az első sorban vannak, ezáltal növelve a csapat túlélőképességét. \n\nKiválóan strapabíró tank jó tiszta sebzéssel és irányítással, jól teljesít Jupakasban. Sajnos a megszerzési nehézségek miatt ritka hős. Ha lehetősége van a Tesak frissítésére, csak Peppy-vel vagy Ju-val tegye bele egy csomagba. Ellenkező esetben nem fedi fel teljes potenciálját. Második képességével Cleaver sebzést okoz magában, ami lehetővé teszi, hogy Pippi bátorsága nagyon gyakran aktiválódjon. Jelenleg egy csapat Pippivel nem annyira releváns (a hős gyenge túlélőképessége), mint Ju-val (akire Outlandben és Asgardban is van kereslet). Nem a legnépszerűbb hős a főcsapatban, de jól teljesít a Grand Arénában a második csapatban. Csapat Peppy - Peppipak csapat Ju - Jupak csapattal"
+      "level": 2,
+      "content": "A 3 csillagos szintezés után mindhárom műtermék egyidejűleg szintbe kerül. Ha sok Jorgen van a szerveren, akkor a második és harmadik műtermék élvez elsőbbséget. \nLengések az első és harmadik műtárgyakkal együtt. \nEhelyett az első és a második műtermékkel leng. \nA műtermékek szintje növeli Cleaver prioritását. Ha Cleaver elég sokáig él, elsőbbséget élvez a támadó hős. A Cleaver ereklyéinek szintje ismét növekszik, ha a támadó hősnek 130-as szintű műtárgyai vannak, vagy ha a Cleaver túl gyorsan kezd újra meghalni."
+    },
+    {
+      "title": "Háziállatok",
+      "level": 1,
+      "content": "A Tesak legfontosabb mecénása Oliver."
+    },
+    {
+      "title": "Zavaros hősök",
+      "level": 1,
+      "content": "Jorgen – A Desecrated Wounds képesség megakadályozza, hogy Cleaver túl korán húzza ki az utolsó vonal hősét, és a magas túlélőképességű hősök használata a hátsó sorokban csökkenti Cleaver húzásának hatékonyságát. Például, ha megvan az utolsó, vagy amelyek jól pumpáltak, a Cleaver nem lesz olyan hatékony. \n\n.Iris - A Soul Exposure készség kiválóan alkalmas egy ellenséges tank megölésére. \n\nPeppy – Courage ügyessége rengeteg sebzést okoz Cleavernek. - Ha Cleaver magához vonzza Doriant, az aurája minden első sorban lévő szövetségesre hatni kezd, ezáltal növelve a csapat túlélőképességét."
+    },
+    {
+      "title": "Következtetés",
+      "level": 1,
+      "content": "Kiválóan strapabíró tank jó tiszta sebzéssel és irányítással, jól teljesít Jupakasban. Sajnos a megszerzési nehézségek miatt ritka hős. Ha lehetősége van a Tesak frissítésére, csak Peppy-vel vagy Ju-val tegye bele egy csomagba. Ellenkező esetben nem fedi fel teljes potenciálját. Második képességével Cleaver sebzést okoz magában, ami lehetővé teszi, hogy Pippi bátorsága nagyon gyakran aktiválódjon. Jelenleg egy csapat Pippivel nem annyira releváns (a hős gyenge túlélőképessége), mint Ju-val (akire Outlandben és Asgardban is van kereslet). Nem a legnépszerűbb hős a főcsapatban, de jól teljesít a Grand Arénában a második csapatban. Csapat Peppy - Peppipak csapat Ju - Jupak csapattal"
     }
   ]
 }

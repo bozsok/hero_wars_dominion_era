@@ -4,23 +4,53 @@
   "sections": [
     {
       "title": "Általános áttekintés",
-      "content": "Marcus – Jó gyógyító, jó védekezési statisztikáival és képességeivel, hogy eljátssza a tank szerepét. Kiváló gyógyító egyetlen célpont számára, érdekes gyógymóddal a halál után is. Rendelkezik a tulajdonsággal - Áldott. Ennek a tulajdonságának köszönhetően Tristan erősíti a fizikai. támadás és Mágus. Marcus támadása, ami lehetővé teszi Marcusnak, hogy jobban megmutassa magát gyógyítóként. Azonban nem elég jó ahhoz, hogy Marcust teljes értékű gyógyítóvá tegye. \n\nFőszerep: Gyógyító, Támogatás Fő Stat: Intelligencia Vonal: Harc az élvonalban Sebzés típusa: Mágikus sebzés\n\nProfik\n\n✓ Három gyógyító képesség;✓ A gyógyulás azonnali, nem periodikus;✓ Kiváló karakter az Outland számára;✓ Egy szövetségest 5 másodpercre sebezhetetlenné tud tenni;✓ Nagyon jó páncél és mágikus védelmi paraméterek, amelyek lehetővé teszik számára, hogy egyes csapatokban harckocsi szerepét töltse be;✓ Képes gyógyítani a halál után, mert hosszú ideig tud csapatot építeni. hatalmas sebzést okoz saját magának és legyőzi az ellenfeleit;✓ Nem a legnehezebb módja annak, hogy elérje és feljavítsa a maximumot; \n\nHátrányok\n\n✗ Erős függés a látszattól;✗ Kritikusan alacsony egészségi állapota annak, aki az első vonalban áll;✗ Speciális csapat kell hozzá;✗ Gyakran szükség van egy másik gyógyítóra is a csapatban, mivel Marcus csak egyetlen célpontot gyógyít jól, vagy Tristan Marcust erősíti."
+      "level": 1,
+      "content": "Marcus – Jó gyógyító, jó védekezési statisztikáival és képességeivel, hogy eljátssza a tank szerepét. Kiváló gyógyító egyetlen célpont számára, érdekes gyógymóddal a halál után is. Rendelkezik a tulajdonsággal - Áldott. Ennek a tulajdonságának köszönhetően Tristan erősíti a fizikai. támadás és Mágus. Marcus támadása, ami lehetővé teszi Marcusnak, hogy jobban megmutassa magát gyógyítóként. Azonban nem elég jó ahhoz, hogy Marcust teljes értékű gyógyítóvá tegye.\nFőszerep: Gyógyító, Támogatás Fő Stat: Intelligencia Vonal: Harc az élvonalban Sebzés típusa: Mágikus sebzés\n\n**Előnyök**\n\n✓ Három gyógyító képesség;\n✓ A gyógyulás azonnali, nem periodikus;\n✓ Kiváló karakter az Outland számára;\n✓ Egy szövetségest 5 másodpercre sebezhetetlenné tud tenni;\n✓ Nagyon jó páncél és mágikus védelmi paraméterek, amelyek lehetővé teszik számára, hogy egyes csapatokban harckocsi szerepét töltse be;\n✓ Képes gyógyítani a halál után, mert hosszú ideig tud csapatot építeni. hatalmas sebzést okoz saját magának és legyőzi az ellenfeleit;\n✓ Nem a legnehezebb módja annak, hogy elérje és feljavítsa a maximumot;\n\n**Hátrányok**\n\n✗ Erős függés a látszattól;\n✗ Kritikusan alacsony egészségi állapota annak, aki az első vonalban áll;\n✗ Speciális csapat kell hozzá;\n✗ Gyakran szükség van egy másik gyógyítóra is a csapatban, mivel Marcus csak egyetlen célpontot gyógyít jól, vagy Tristan Marcust erősíti."
+    },
+    {
+      "title": "Készségek",
+      "level": 1,
+      "content": "Holy Shield – Markus pajzsot helyez a legalacsonyabb életerővel rendelkező szövetségesre, és 5 másodpercig blokkol minden sebzést. és meggyógyít egy szövetségest.\n\nRighteous Light – Marcus fényhullámokat szabadít fel, meggyógyít minden szövetségest és megsebesít minden ellenséget.\n\nCompassion – Meggyógyítja a legalacsonyabb egészségi állapotú szövetségest.\n\nAscension – Halála után Marcus átmenetileg szellemmé válik, és továbbra is használja a rendelkezésre álló képességeket. Az ellenfelek nem célozhatják meg a szellemet."
+    },
+    {
+      "title": "Hős tippek:",
+      "level": 1,
+      "content": ""
     },
     {
       "title": "A készségek szintre emelése",
-      "content": "Röviden:"
+      "level": 2,
+      "content": "Röviden:\n\nKészségek – Megjegyzések\nHoly Shield – Feltétlenül töltse le. Lehetővé teszi egy haldokló hős (vagy önmaga) megmentését pajzzsal és gyógyítással. Első helyen áll a prioritásban.\nRighteous Light – A készség keveset gyógyít, de az egész csapatot meggyógyítja. A képesség sebzése gyenge. Elsőbbségi szempontból a negyedik helyen áll.\nCompassion – Feltétlenül töltse le. A második képességgel együtt tökéletesen meggyógyítja az egyik karaktert. Elsőbbségi szempontból a harmadik helyen áll.\nAscension – Feltétlenül töltse le. Marcus egyedisége lehetővé teszi számára, hogy halála után meggyógyítsa a célpontot. 130-as szinten Marcus 46 másodpercig gyógyulhat a halál után. Elsőbbségi szempontból a második helyen áll."
     },
     {
       "title": "Skinek",
-      "content": "Tekintettel arra, hogy Marcus az élvonalban áll, és nagyon gyakran játssza a tank szerepét a csapatokban, elsősorban a túlélő skinek frissítését ajánlják neki. Javasoljuk először a Barbarian Appearance for Armour letöltését, mert... Manapság leginkább a fizikai gyakorlatok népszerűek. parancsokat. Ezt követően Northern Appearance on Health. A megjelenést nem lehet felpumpálni, hogy Marcusnak ne tartson túl sokáig a töltés. Marcusnak a lehető legkorábban használnia kell első képességét. Ha nem fejleszted eléggé a megjelenésed, Marcus meghal, mielőtt felhasználná a képességeit. Ezért szükséges az egyensúly fenntartása. A harmadik frissítés az Intelligence Basic megjelenése. Végül a Winter Skin for Magic Attack és a Star Skin for Magic Attack frissítésre került."
+      "level": 2,
+      "content": "Szükséges Skinek\nBarbár megjelenés - Páncél\nÉszaki megjelenés – egészség\nKisebb megjelenések\nBase Skin – Intelligencia\nCsillagforma – Mágikus támadás\nTéli forma - Magic Attack\n\nTekintettel arra, hogy Marcus az élvonalban áll, és nagyon gyakran játssza a tank szerepét a csapatokban, elsősorban a túlélési skinek frissítését ajánlják neki. Javasoljuk először a Barbarian Appearance for Armour letöltését, mert... Manapság leginkább a fizikai gyakorlatok népszerűek. parancsokat. Ezt követően Northern Appearance on Health. A megjelenést nem lehet felpumpálni, hogy Marcusnak ne tartson túl sokáig a töltés. Marcusnak a lehető legkorábban használnia kell első képességét. Ha nem fejleszted eléggé a megjelenésed, Marcus meghal, mielőtt felhasználná a képességeit. Ezért szükséges az egyensúly fenntartása. A harmadik frissítés az Intelligence Basic megjelenése. Végül a Winter Skin for Magic Attack és a Star Skin for Magic Attack frissítésre került."
     },
     {
       "title": "Szimbólum",
-      "content": "A karakterfrissítések prioritása a következő:"
+      "level": 2,
+      "content": "A karakterfrissítések prioritása a következő:\n\n1. Páncél – A páncélszimbólum az első, amelyet a fizikai népszerűsége miatt maximálisra frissítettek. parancs és műtárgy a mágia elleni védelem érdekében. \n2. Egészség - A helyzet az egészség szimbólummal, valamint a megjelenéssel. A szimbólum 30-ig pumpál. Csak akkor pumpál magasabbra, ha Marcus meghal, mielőtt használni tudná első képességét. Ha a szimbólum fel van pumpálva, a hős töltése tovább tart; ha alulpumpálják, gyorsabban meghal, mint ahogy pajzsot tud magára dobni. \n3. Intelligencia – Növeli a gyógyulást és a mágia elleni védelmet. A harmadik szimbólummal a maximumra lendít. \n4.Mágikus támadás - Növeli a képességek gyógyító erejét, maximum négyre nő. \n5. Fizikai támadás – Marcusnak nincs szüksége szimbólumra a fizikai támadáshoz. Csak akkor frissíti, ha az összes főszereplő összes szimbólumát már frissítették."
     },
     {
       "title": "Műtárgyak",
-      "content": "A csapattól függően Marcus pártfogói Oliver, Merlin vagy Axel lehet. Olivert gyakran használják, ha a tank szerepét Ishmael, K'arkh vagy Aurora játssza (Kain alatt). Ha nincs a csapatban Helios, Celeste stb., Merlint adják Marcus patrónusának. Az Axelt más esetekben helyezik el. \n\nA fő problémák akkor merülhetnek fel, amikor harckocsiként működik. Ilyen esetekben Chubba alkalmas Marcus ellen - Wild Hunger vagy Iris - Soul Baring Skill képessége miatt. Gyógyító hatások:\n\nÉs Pet Biscuit, a csökkent gyógyulás miatt. \n\nMarcus ki van téve az irányításnak, ami nem teszi lehetővé számára, hogy szövetségeseit gyógyítsa, így minden irányítással rendelkező hős problémákat okozhat Marcusnak. \n\nMarcus egy nagyon egyedi gyógyító. A karakter mechanikája miatt nem fér be minden csapatba. Egy páncélos gyógyító, aki az első sorban áll, de nagyon kevés az egészsége és gyorsan meghal. Azonban még sokáig folytatja a gyógyulást szellemi formában. Mivel Marcus egy gyógyító, akinek fő feladata az egyes célpontok gyógyítása, ajánlatos a következő karaktereket használni vele:\n\nMarcus egy olyan karakter, aki hosszú időn keresztül képes gyógyítani egy célpontot, és időnként egy célpontot sebezhetetlenné tehet. Tökéletesen párosítható hatalmas sebzett karakterekkel. Kezdőknek nem ajánlott a frissítés Marcus gyógyítói szituációs szerepe miatt. Leggyakrabban nem illik be a főcsapatba, de jól teljesít a Grand Arénában a második csapatban."
+      "level": 2,
+      "content": "Frissítés 3 csillagosra. Ezt követően a sztárság a harmadik műtermékkel párhuzamosan frissül. \nA csillagos értékelés elsőbbséget élvez, miután az első műterméket három csillagosra frissítették\nA sztárság növekszik, miután a második műterméket az első műtermékkel párhuzamosan szintbe hozzuk. \nHa Marcus egy tank szerepét játssza, a tárgyak szintje elsőbbséget élvez Marcushoz képest. Amikor Marcus jól tudja teljesíteni ezt a szerepet, más hősök előtt használja tudását, és jól túlél, akkor a támadó hős kap elsőbbséget a leletek szintre emelésében. Térjen vissza Marcus ereklyéihez, ha a támadó hős már maximalizálta a tárgyak szintjét, vagy Marcus ismét túl gyorsan kezd meghalni."
+    },
+    {
+      "title": "Háziállatok",
+      "level": 1,
+      "content": "A csapattól függően Marcus pártfogói Oliver, Merlin vagy Axel lehet. Olivert gyakran használják, ha a tank szerepét Ishmael, K'arkh vagy Aurora játssza (Kain alatt). Ha nincs a csapatban Helios, Celeste stb., Merlint adják Marcus patrónusának. Az Axelt más esetekben helyezik el."
+    },
+    {
+      "title": "Zavaros hősök",
+      "level": 1,
+      "content": "A fő problémák akkor merülhetnek fel, amikor harckocsiként működik. Ilyen esetekben Chubba alkalmas Marcus ellen - Wild Hunger vagy Iris - Soul Baring Skill képessége miatt. Gyógyító hatások:\n\nÉs Pet Biscuit, a csökkent gyógyulás miatt. \n\nMarcus ki van téve az irányításnak, ami nem teszi lehetővé számára, hogy szövetségeseit gyógyítsa, így minden irányítással rendelkező hős problémákat okozhat Marcusnak."
+    },
+    {
+      "title": "Következtetés",
+      "level": 1,
+      "content": "Marcus egy nagyon egyedi gyógyító. A karakter mechanikája miatt nem fér be minden csapatba. Egy páncélos gyógyító, aki az első sorban áll, de nagyon kevés az egészsége és gyorsan meghal. Azonban még sokáig folytatja a gyógyulást szellemi formában. Mivel Marcus egy gyógyító, akinek fő feladata az egyes célpontok gyógyítása, ajánlatos a következő karaktereket használni vele:\n\nMarcus egy olyan karakter, aki hosszú időn keresztül képes gyógyítani egy célpontot, és időnként egy célpontot sebezhetetlenné tehet. Tökéletesen párosítható hatalmas sebzett karakterekkel. Kezdőknek nem ajánlott a frissítés Marcus gyógyítói szituációs szerepe miatt. Leggyakrabban nem illik be a főcsapatba, de jól teljesít a Grand Arénában a második csapatban."
     }
   ]
 }

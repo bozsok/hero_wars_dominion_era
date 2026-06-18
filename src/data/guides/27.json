@@ -4,23 +4,53 @@
   "sections": [
     {
       "title": "Általános áttekintés",
-      "content": "Luther egy jó tank érdekes mechanikával. Egyedülálló irányító képességekkel rendelkezik, ami lehetővé teszi számára, hogy az ellenséges falka több hősét magára terelje. Átlagos védelmet nyújt a mágia, páncél és egészség ellen, de igényes a csapattal szemben. Rendelkezik a tulajdonsággal - Áldott. Ennek a tulajdonságának köszönhetően Tristan erősíti fizikai erejét. Luther támadása, lehetővé téve számára, hogy több testi sebzést okozzon. Sajnos Luthert nem arra építették, hogy sebzést okozzon, és elsősorban tankként kell szolgálnia, amely túléli, ha ellenségek veszik körül, így nincs szüksége sebzésre. \n\nFőszerep: Tank, Irányító Fő attribútum: Erővonal: Harc a frontvonalon Sebzés típusa: Fizikai sebzés\n\nProfik\n\n✓ Ellenőrző képességekkel rendelkező tank;✓ Képes mélyen beugrani az ellenséges csapatba, elterelve az ellenségek egy részét;✓ Jó védekezési paraméterek egy tankhoz;✓ Átlagos sebzést képes elviselni, ami egy tanknál jó kiegészítő;✓ Jól megbirkózik a varázscsomagokkal.✓ Könnyen beszerezhető és frissíthető a maximális csillagra. \n\nHátrányok\n\n✗ Luther negyedik képessége már a játék közepétől csekély növekedést ad;✗ Az első képesség miatt a csomagod tank nélkül marad, ami sebezhetővé teszi;✗ Arctalan, maják visszahozzák Luthert, ami minimálisra csökkenti Luther fő előnyét;✗ Jorgen nem engedi, hogy hatékonyan használd fő képességedet."
+      "level": 1,
+      "content": "Luther egy jó tank érdekes mechanikával. Egyedülálló irányító képességekkel rendelkezik, ami lehetővé teszi számára, hogy az ellenséges falka több hősét magára terelje. Átlagos védelmet nyújt a mágia, páncél és egészség ellen, de igényes a csapattal szemben. Rendelkezik a tulajdonsággal - Áldott. Ennek a tulajdonságának köszönhetően Tristan erősíti fizikai erejét. Luther támadása, lehetővé téve számára, hogy több testi sebzést okozzon. Sajnos Luthert nem arra építették, hogy sebzést okozzon, és elsősorban tankként kell szolgálnia, amely túléli, ha ellenségek veszik körül, így nincs szüksége sebzésre.\nFőszerep: Tank, Irányító Fő attribútum: Erővonal: Harc a frontvonalon Sebzés típusa: Fizikai sebzés\n\n**Előnyök**\n\n✓ Ellenőrző képességekkel rendelkező tank;\n✓ Képes mélyen beugrani az ellenséges csapatba, elterelve az ellenségek egy részét;\n✓ Jó védekezési paraméterek egy tankhoz;\n✓ Átlagos sebzést képes elviselni, ami egy tanknál jó kiegészítő;\n✓ Jól megbirkózik a varázscsomagokkal.\n✓ Könnyen beszerezhető és frissíthető a maximális csillagra.\n\n**Hátrányok**\n\n✗ Luther negyedik képessége már a játék közepétől csekély növekedést ad;\n✗ Az első képesség miatt a csomagod tank nélkül marad, ami sebezhetővé teszi;\n✗ Arctalan, maják visszahozzák Luthert, ami minimálisra csökkenti Luther fő előnyét;\n✗ Jorgen nem engedi, hogy hatékonyan használd fő képességedet."
+    },
+    {
+      "title": "Készségek",
+      "level": 1,
+      "content": "Sign – Luther mélyen az ellenséges csapatba kerül, és sebzést okoz a körülötte lévő ellenségeknek.\n\nSentence – Elkábítja a közeli ellenségeket, és sebzést okoz nekik.\n\nGehenna – Passzív készség. Amikor Luther leszáll az Ómen használata közben, tűzhullámot kelt, és megsebesít és elkábítja az ellenséget.\n\nDoctrine of Faith – Passzív készség. Növeli a mágia elleni védekezést."
+    },
+    {
+      "title": "Hős tippek:",
+      "level": 1,
+      "content": ""
     },
     {
       "title": "A készségek szintre emelése",
-      "content": "Röviden:"
+      "level": 2,
+      "content": "Röviden:\n\nKészségek – Megjegyzések\nSign – Javasoljuk, hogy töltse le, ha van extra aranya. A készség már a 40. szint után veszít hatékonyságából.\nSentence – Szivattyúzáshoz kötelező. A kábítás a képesség szintjétől függ, ezért szükséges frissíteni.\nGehenna – Szivattyúzáshoz kötelező. A kábítás a képesség szintjétől függ, ezért szükséges frissíteni.\nDoctrine of Faith – Javasoljuk, hogy a legelején töltse le. A jövőben leng, ha van felesleges arany. 10 mágikus védelem növekedést ad minden szinten, ami NAGYON kevés. Nem ajánlott szivattyúzni, ha nincs extra arany"
     },
     {
       "title": "Skinek",
-      "content": "Mert Luther fő célja nem a károkozás, hanem a túlélés képessége; Az első fejlesztések azok, amelyek lehetővé teszik számára, hogy tovább nyelje el az ellenséges sebzést. Ha lehetséges azonnal beszerezni az Angelic Skin-t páncélhoz, töltse le. Ha ez nem lehetséges, töltse le a Basic Appearance-t, amely javítja az egészséget és csökkenti a kritika megszerzésének esélyét. találat. Ezután töltse le a Winter Skin-t vagy a Cybernetic Skin for Health-et (ha az első letöltötte az alaplapot, a második letölti a páncélbőrt). A harmadik a Basic Look for Strength frissítése (ha az alapszintet frissítette először, a harmadik a megjelenés frissítése az Egészséghez). Ezt követően a fennmaradó megjelenést egészségre frissítik. A fizikai támadásra szánt Star Appearance utoljára frissül, amikor az összes hős frissítette fő megjelenését."
+      "level": 2,
+      "content": "Szükséges Skinek\nAngyali forma - Páncél\nKibernetikus megjelenés – egészség\nAlapvető megjelenés - Erő\nTéli bőr - Egészség\nVálasztható skinek\nCsillagforma – Fizikai támadás\n\nMert Luther fő célja nem a károkozás, hanem a túlélés képessége; Az első fejlesztések azok, amelyek lehetővé teszik számára, hogy tovább nyelje el az ellenséges sebzést. Ha lehetséges azonnal beszerezni az Angelic Skin-t páncélhoz, töltse le. Ha ez nem lehetséges, töltse le a Basic Appearance-t, amely javítja az egészséget és csökkenti a kritika megszerzésének esélyét. találat. Ezután töltse le a Winter Skin-t vagy a Cybernetic Skin for Health-et (ha az első letöltötte az alaplapot, a második letölti a páncélbőrt). A harmadik a Basic Look for Strength frissítése (ha az alapszintet frissítette először, a harmadik a megjelenés frissítése az Egészséghez). Ezt követően a fennmaradó megjelenést egészségre frissítik. A fizikai támadásra szánt Star Appearance utoljára frissül, amikor az összes hős frissítette fő megjelenését."
     },
     {
       "title": "Szimbólum",
-      "content": "A karakterfrissítések prioritása a következő:"
+      "level": 2,
+      "content": "A karakterfrissítések prioritása a következő:\n\n1. Egészség – Az elsőt maximálisan pumpálják, hogy növeljék a túlélést. \n2. Erő – A második szimbólummal a maximumra lendít. Növeli az egészséget és csökkenti a kritikus találatok esélyét. ütés\n3. Páncél – Növeli a hős védekező teljesítményét a fizikai támadásokkal szemben. parancsokat\n4. Védelem a mágiával szemben – Növeli a hős védekező teljesítményét a mágiával szemben. negyedikként parancsolja a Swingeket, mert Luthernek van egy kis növekedése a negyedik képességhez képest. \n5. Fizikai támadás – A fizikai támadás bőréhez hasonlóan a Szimbólum is utoljára frissül, amikor az összes hős már frissítette a szimbólumait. Luther egy tank, és szüksége van valamire, ami kitartóvá és erősebbé teszi."
     },
     {
       "title": "Műtárgyak",
-      "content": "Luther számára a legfontosabb háziállat Oliver. \n\nMaya – A Toxic Bond készség egymás felé húzza Luthert és a legtávolabbi ellenséget az ellenséges csapat közepén. Jorgen – A Desecrated Wounds készség jelentősen késlelteti Luther ugrási idejét\n\nLars + Krista – Lars Stormlord képessége egy pontra hozza Luthert és az egész csapatot. \n\nArctalan – A Power Throw készség visszahozza Luthert a csapatába. \n\nFox - Large Gauge képessége visszaüti Luthert a csapatába. \n\nAz Iris - Soul Exposure készség kiválóan alkalmas egy ellenséges tank megölésére. \n\nLuther - Jó tank. Egyedülálló szerelője van, amely elvonja az ellenség figyelmét, ami lehetővé teszi számára, hogy betöltse a tank fő szerepét - kárt okozzon magának. Először is felpumpáljuk a tank paramétereit, például Erő, Páncél, Egészség. A fizikai támadást utoljára frissítik. Pippivel és Marcusszal egy csapatban jó eredményeket mutat fel, erre kell törekednie. Egy második tank vagy egy ideiglenes tankként működő karakter ajánlott a csapatnak (Marcus, Ju, Jorgen, Andvari, K'arkh, Dante, Yasmin), hiszen Luther ugrása után a csapat tank nélkül marad, és az ellenség első sorai gyenge védekezéssel juthatnak el karaktereidhez. A karakter önmagában is érdekes, kiváló a tank szerepének eljátszása és sebzése, de a tank helyett más hősöket ütő hősök (Orion, K’arkh, Dante, Yasmin, Ju, Phobos stb.) népszerűsége miatt nem hoz kézzelfogható hasznot a csapatnak. Nincs neki Dodge a csapatnak (Aurora), Egy szövetséges feltámadása (Astaroth), Pajzs/Védelem a szövetségesnek a mozgás ellen (Andvari), A csapat védelme a varázslat ellen. sérülések (Rufus), stb. Emiatt továbbra is javasolt a többi tank előnyben részesítése. Kezdőknek a fenti okok miatt nem ajánlott főtartályként. A Grand Arénának, mint második csapatnak Pippivel és Marcusszal, tökéletes."
+      "level": 2,
+      "content": "Frissítés 3 csillagosra, ami után le kell töltenie a második műterméket. Utoljára töltődik le. \nFrissítés elsőbbségben, miután 3 csillagot kapott az első műterméktől\nA második műtermék után/egyenlően leng. \nA Luther számára készült tárgyak szintje egyre fontosabbá válik. Ha Luther már elég sokáig képes túlélni, akkor a támadó hős számára a prioritást élvező tárgyak szintje emelkedni kezd, amíg egy ilyen hősnek 130-as műtermékszintje lesz, vagy amíg Luthernek ismét túlélésére van szüksége."
+    },
+    {
+      "title": "Háziállatok",
+      "level": 1,
+      "content": "Luther számára a legfontosabb háziállat Oliver."
+    },
+    {
+      "title": "Zavaros hősök",
+      "level": 1,
+      "content": "Maya – A Toxic Bond készség egymás felé húzza Luthert és a legtávolabbi ellenséget az ellenséges csapat közepén. Jorgen – A Desecrated Wounds készség jelentősen késlelteti Luther ugrási idejét\n\nLars + Krista – Lars Stormlord képessége egy pontra hozza Luthert és az egész csapatot. \n\nArctalan – A Power Throw készség visszahozza Luthert a csapatába. \n\nFox - Large Gauge képessége visszaüti Luthert a csapatába. \n\nAz Iris - Soul Exposure készség kiválóan alkalmas egy ellenséges tank megölésére."
+    },
+    {
+      "title": "Következtetés",
+      "level": 1,
+      "content": "Luther - Jó tank. Egyedülálló szerelője van, amely elvonja az ellenség figyelmét, ami lehetővé teszi számára, hogy betöltse a tank fő szerepét - kárt okozzon magának. Először is felpumpáljuk a tank paramétereit, például Erő, Páncél, Egészség. A fizikai támadást utoljára frissítik. Pippivel és Marcusszal egy csapatban jó eredményeket mutat fel, erre kell törekednie. Egy második tank vagy egy ideiglenes tankként működő karakter ajánlott a csapatnak (Marcus, Ju, Jorgen, Andvari, K'arkh, Dante, Yasmin), hiszen Luther ugrása után a csapat tank nélkül marad, és az ellenség első sorai gyenge védekezéssel juthatnak el karaktereidhez. A karakter önmagában is érdekes, kiváló a tank szerepének eljátszása és sebzése, de a tank helyett más hősöket ütő hősök (Orion, K’arkh, Dante, Yasmin, Ju, Phobos stb.) népszerűsége miatt nem hoz kézzelfogható hasznot a csapatnak. Nincs neki Dodge a csapatnak (Aurora), Egy szövetséges feltámadása (Astaroth), Pajzs/Védelem a szövetségesnek a mozgás ellen (Andvari), A csapat védelme a varázslat ellen. sérülések (Rufus), stb. Emiatt továbbra is javasolt a többi tank előnyben részesítése. Kezdőknek a fenti okok miatt nem ajánlott főtartályként. A Grand Arénának, mint második csapatnak Pippivel és Marcusszal, tökéletes."
     }
   ]
 }

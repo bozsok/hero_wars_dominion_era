@@ -4,23 +4,53 @@
   "sections": [
     {
       "title": "Általános áttekintés",
-      "content": "Az Astaroth egy kiváló tank, az egyik legnépszerűbb és legkeresettebb a játékban. Rengeteg csomag van belőle, ami sokoldalúságának bizonyítéka. Függetlenül attól, hogy a csomag mágikus vagy fizikai, az Astaroth a legtöbben jól teljesít. Támogatói képességei pedig kiváló kiegészítést jelentenek, ami semmiképpen sem akadályozza meg abban, hogy betöltse főszerepét. \n\nFőszerep: Tank, Támogatás Fő attribútum: Erővonal: Harc a frontvonalon Sebzés típusa: Fizikai sebzés\n\nProfik\n\n✓ Gyors lehetőség csillagok fogadására és gyűjtésére;✓ A játék minden szakaszában releváns;✓ Megkönnyíti a kampány és a torony befejezését;✓ univerzális a csomaghoz képest;✓ képes feltámasztani egy halott szövetségest;✓ elégeti a legtávolabbi ellenség energiáját;✓ Csökkenti és elosztja a fizikai energiát. szövetséges sérülése;✓ Kezdőknek ajánlott✓ Kiváló hős egy védekező csapat számára. \n\nHátrányok\n\n✗ Egészségügyi és mágikus védekezésben gyengébb a többi tanknál;✗ Nincsenek irányítási képességek;✗ Rendkívül csekély a sebzése a többi tankhoz képest;✗ Celeste és Morrigan nem engedi, hogy Astaroth felhasználja a feltámadását;✗ Gyengén mutat Amira és Iris ellen; ✗ A hős rosszabbul teljesít a támadó csapatokban."
+      "level": 1,
+      "content": "Az Astaroth egy kiváló tank, az egyik legnépszerűbb és legkeresettebb a játékban. Rengeteg csomag van belőle, ami sokoldalúságának bizonyítéka. Függetlenül attól, hogy a csomag mágikus vagy fizikai, az Astaroth a legtöbben jól teljesít. A támogató képességei pedig kiváló adalékot jelentenek, ami semmiképpen sem akadályozza meg abban, hogy betöltse főszerepét.\nFőszerep: Tank, Támogatás Fő attribútum: Erővonal: Harc a frontvonalon Sebzés típusa: Fizikai sebzés\n\n**Előnyök**\n\n✓ Gyors lehetőség csillagok fogadására és gyűjtésére;\n✓ A játék minden szakaszában releváns;\n✓ Megkönnyíti a kampány és a torony befejezését;\n✓ univerzális a csomaghoz képest;\n✓ képes feltámasztani egy halott szövetségest;\n✓ elégeti a legtávolabbi ellenség energiáját;\n✓ Csökkenti és elosztja a fizikai energiát. szövetséges sérülése;\n✓ Kezdőknek ajánlott\n✓ Kiváló hős egy védekező csapat számára.\n\n**Hátrányok**\n\n✗ Egészségügyi és mágikus védekezésben gyengébb a többi tanknál;\n✗ Nincsenek irányítási képességek;\n✗ Rendkívül csekély a sebzése a többi tankhoz képest;\n✗ Celeste és Morrigan nem engedi, hogy Astaroth felhasználja a feltámadását;\n✗ Gyengén mutat Amira és Iris ellen;\n✗ A hős rosszabbul teljesít a támadó csapatokban."
+    },
+    {
+      "title": "Készségek",
+      "level": 1,
+      "content": "Flame Shroud – Fizikai sebzéspajzsot helyez minden csapattagra\n\nDevastation – Az Astaroth a legtávolabbi ellenségtől felhalmozott energia egy részét égeti el a pokol tüzével\n\nDemonic Contract – Passzív készség. Astaroth kapcsolatot tart fenn a legalacsonyabb egészségi állapotú szövetségesével, és az őt ért fizikai sérülések egy részét önmagára ruházza át.\n\nLast word – Passzív készség. Csatánként egyszer Astaroth feltámaszt egy elesett szövetségest vagy önmagát."
+    },
+    {
+      "title": "Hős tippek:",
+      "level": 1,
+      "content": ""
     },
     {
       "title": "A készségek szintre emelése",
-      "content": "Röviden:"
+      "level": 2,
+      "content": "Röviden:\n\nKészségek – Megjegyzések\nFlame Shroud – Nem lép fel a 130-as szintre. A pajzs nem engedi felhalmozni az energiát. Maga a pajzs ereje 1-2 ütésre elegendő. Egy haszontalan képesség, ami nem kerül aranyba.\nDevastation – A játék késői szakaszához közelebb növekszik (közelebb a 130. szinthez). A 130-as szintig nem ajánlott szintet lépni, mert... A készség szinthez van kötve, és a legtöbb játékos az adományból megelőzi Önt szinten.\nDemonic Contract – Határozottan leng. Hasznos készség, amely legtöbbször a fő támadóhőst védi.\nLast word – Határozottan leng. Lehetővé teszi egy szövetséges feltámasztását nagy mennyiségű egészséggel."
     },
     {
       "title": "Skinek",
-      "content": "Először is, a Barbarian Appearance-t Armorra frissítik, hogy növeljék a hős túlélőképességét a fizikai támadásokkal szemben. parancsok A második az Erőhöz tartozó Basic, mert... az erő a további egészség mellett csökkenti a kritikus találatok valószínűségét. fúj. A következő frissítendő dolog a Cybernetic Skin Health-re, hogy növelje a hős túlélőképességét. Ha van Ju a csapatban, akkor az első két megjelenés elég lesz Astarothnak. A Cybernetic felpörög, ha az Astaroth túl gyorsan kezd esni, vagy Ju már felpumpálta a fontos megjelenéseket. Ha nem lehetséges azonnal megszerezni a barbár megjelenést a páncélhoz, és nincs Jupakod, akkor először frissítsd az alap megjelenést az erősség érdekében, utána spórolj erőköveket a barbár megjelenéshez. Ne költsd az erőköveket démoni megjelenésre és keleti megjelenésre. Mindkét megjelenés szükségtelen Magic Attack-ot ad az Astarothnak, ami minimális növekedést ad. A költségek szempontjából nem igazolja magát. Csak akkor frissítse őket, ha a fő csomagokban lévő összes skint már frissítette."
+      "level": 2,
+      "content": "Szükséges Skinek\nBarbár megjelenés - Páncél\nAlap – Erő\nKibernetikus megjelenés - Egészség\nVálasztható skinek\nDemonic Form - Magic Attack\nKeleti megjelenés - Magic Attack\n\nElőször is, a Barbarian Appearance-t Armorra frissítik, hogy növeljék a hős túlélőképességét a fizikai támadásokkal szemben. parancsok A második az Erőhöz tartozó Basic, mert... az erő a további egészség mellett csökkenti a kritikus találatok valószínűségét. fúj. A következő frissítendő dolog a Cybernetic Skin Health-re, hogy növelje a hős túlélőképességét. Ha van Ju a csapatban, akkor az első két megjelenés elég lesz Astarothnak. A Cybernetic felpörög, ha az Astaroth túl gyorsan kezd esni, vagy Ju már felpumpálta a fontos megjelenéseket. Ha nem lehetséges azonnal megszerezni a barbár megjelenést a páncélhoz, és nincs Jupakod, akkor először frissítsd az alap megjelenést az erősség érdekében, utána spórolj erőköveket a barbár megjelenéshez. Ne költsd az erőköveket démoni megjelenésre és keleti megjelenésre. Mindkét megjelenés szükségtelen Magic Attack-ot ad az Astaroth-nak, ami minimális növekedést ad. A költségek szempontjából nem indokolja magát. Csak akkor frissítse őket, ha a fő csomagokban lévő összes skint már frissítette."
     },
     {
       "title": "Szimbólum",
-      "content": "A karakterfrissítések prioritása a következő:"
+      "level": 2,
+      "content": "A karakterfrissítések prioritása a következő:\n\n1. Erő – Növeli a hős egészségét, csökkenti a kritikus találatok esélyét. ütés, növeli az ütés esélyét (elkerülő hősök ellen)\n2. Egészség - hinták a második, mert segít a varázslat ellen is. csapatok, és a fizikai parancsok ellen\n3. Páncél – harmadszor lendül, növeli a hős túlélőképességét a fizikai támadásokkal szemben. csomag. \n4. Védelem a mágiával szemben – Negyedikként és szinte mindig utolsóként lendül, növeli a hős túlélőképességét a mágiával szemben. csomag. \n5. Mágikus támadás – Ez a szimbólum csak akkor frissül, ha az összes csomagban lévő összes fő szimbólum a maximumra van pumpálva. A látszathoz hasonlóan a Magic attack szimbóluma is túl kevés növekedést ad Astaroth számára, és jobb, ha több szimbólumra költjük az erőforrásokat a fontosabb hősök számára."
     },
     {
       "title": "Műtárgyak",
-      "content": "Astaroth legfontosabb mecénása Oliver. A kekszet jellemzői miatt ritkábban használják\n\nCeleste – Astaroth feltámadása gyógyulásnak számít, amit Celeste blokkol. Ha a körülmények sikeresek, Astaroth (vagy szövetségese) 1 életegységgel feltámad, és azonnal meghal. \n\nMorrigan – A nekromantia képesség megakadályozza, hogy Astaroth (szövetségese) feltámadjon. \n\nAz Iris - Soul Exposure készség kiválóan alkalmas egy ellenséges tank megölésére. \n\nAmira – Az Illusory Alliance készség elvonja a sebzéscsökkentést Astarothtól. Amíg az illúzió aktív, Astaroth nem támaszt fel egy bukott szövetségest. \n\nAstaroth - Egy csodálatos tank. Ahhoz, hogy a lehető legteljesebb mértékben kifejezhesse magát, mindenképpen be kell szerezned a barbár bőrt a páncélodhoz. Ha most kezdi el játszani a Chronicles of Chaost, akkor az Astaroth nagyszerű választás. Elfér az Arénában, a Grand Arénában, a kampányban, a toronyban. Abszolút univerzális tank. Az a tény, hogy nem szabad minden képességet egyszerre frissíteni, csak pluszt ad az arany tekintetében. A hős gyengéi élőhalottak, Amira, Iris. Jelenleg fizikailag gyakrabban használják. csapatok, mint a varázslatosaknál, utat engedve az Aurorának. Tökéletes a Kira, K'arkh, Ju (Tesak hiányában), Ismail, Yasmin, Deer, Lien stb. klasszikus csapatainak. A karakter a játék bármely szakaszában jól teljesít, és könnyen feljebb léphet. Mindig lesz neki helye, ha nem a főcsapatban, akkor a nagy arénában. Kezdőknek ajánlott."
+      "level": 2,
+      "content": "3 csillagig növekszik, majd a csillagszint egyenletesen növekszik a harmadik műtermékkel. \nFrissítés elsőbbséggel, miután 3 csillagot kapott az első műterméktől. \nA második műtárgy után az elsővel párhuzamosan leng. \nA műtermékek szintje a tartály elsőbbségével növekszik. Amint a tank elkezdi jól elnyelni a sebzést, váltson a támadó hősre. Visszatérhet a tank műtárgyainak szintbe állításához, miután a támadó hős műtárgyát 130-ra emelték, vagy ha az Astaroth ismét gyorsan zuhanni kezd."
+    },
+    {
+      "title": "Háziállatok",
+      "level": 1,
+      "content": "Astaroth legfontosabb mecénása Oliver. A kekszet jellemzői miatt ritkábban használják"
+    },
+    {
+      "title": "Zavaros hősök",
+      "level": 1,
+      "content": "Celeste – Astaroth feltámadása gyógyulásnak számít, amit Celeste blokkol. Ha a körülmények sikeresek, Astaroth (vagy szövetségese) 1 életegységgel feltámad, és azonnal meghal. \n\nMorrigan – A nekromantia képesség megakadályozza, hogy Astaroth (szövetségese) feltámadjon. \n\nAz Iris - Soul Exposure készség kiválóan alkalmas egy ellenséges tank megölésére. \n\nAmira – Az Illusory Alliance készség elvonja a sebzéscsökkentést Astarothtól. Amíg az illúzió aktív, Astaroth nem támaszt fel egy bukott szövetségest."
+    },
+    {
+      "title": "Következtetés",
+      "level": 1,
+      "content": "Astaroth - Egy csodálatos tank. Ahhoz, hogy a lehető legteljesebb mértékben kifejezhesse magát, mindenképpen be kell szerezned a barbár bőrt a páncélodhoz. Ha most kezdi el játszani a Chronicles of Chaost, akkor az Astaroth nagyszerű választás. Elfér az Arénában, a Grand Arénában, a kampányban, a toronyban. Abszolút univerzális tank. Az a tény, hogy nem szabad minden képességet egyszerre frissíteni, csak pluszt ad az arany tekintetében. A hős gyengéi élőhalottak, Amira, Iris. Jelenleg fizikailag gyakrabban használják. csapatok, mint a varázslatosaknál, utat engedve az Aurorának. Tökéletes a Kira, K'arkh, Ju (Tesak hiányában), Ismail, Yasmin, Deer, Lien stb. klasszikus csapatainak. A karakter a játék bármely szakaszában jól teljesít, és könnyen feljebb léphet. Mindig lesz neki helye, ha nem a főcsapatban, akkor a nagy arénában. Kezdőknek ajánlott."
     }
   ]
 }

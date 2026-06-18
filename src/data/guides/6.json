@@ -4,23 +4,53 @@
   "sections": [
     {
       "title": "Általános áttekintés",
-      "content": "Phobos az egyik alulértékelt mágus a Káosz krónikáiban. Számos előnye van, és a megfelelő csapatban elképesztő eredményeket produkál. Ideális karakter a fizikai ellen. parancsok Funkció - Undead, amely lehetővé teszi, hogy kapcsolatba léphess a kategória többi hősével: Morrigan, Corvus és Kira (2. felemelkedés után). \n\nFőszerep: Irányító, Mágus Fő statisztika: Intelligencia Vonal: Harcol a hátsó vonalban Sebzés típusa: Mágikus sebzés\n\nProfik\n\n✓ Hatalmas sebzés egy célpontban, a legtöbb esetben a fő képesség megölheti a hőst;✓ Kiváló karakter a fizikai csomagokkal szemben;✓ Gyengíti az ellenségek fizikai támadását;✓ Healer képességei vannak, ami növeli a tank túlélőképességét;✓ Elégeti a célpont energiáját;✓ Kiváló karakter ✓ Grand ✓ ✓ Kiváló karakter ✓ SM Arena, Ar és torony számára; frissítse a maximális csillagra. \n\nHátrányok\n\n✗ Nincs nagy sebzés;✗ Gyenge gyógyulás;✗ Megfelelő csomagra van szükséged, különben nem lesz elég sebzés;✗ Az első képesség a lottó. Eltalálhatja a Fighter/Shooter-t és megölheti, vagy eltalálhatja a hőst a Ködgolyóval;✗ Ha egy kicsit áttört. védelem a varázslat ellen."
+      "level": 1,
+      "content": "Phobos az egyik alulértékelt mágus a Káosz krónikáiban. Számos előnye van, és a megfelelő csapatban elképesztő eredményeket produkál. Ideális karakter a fizikai ellen. parancsok Funkció - Undead, amely lehetővé teszi, hogy kapcsolatba léphess a kategória többi hősével: Morrigan, Corvus és Kira (2. felemelkedés után).\nFőszerep: Irányító, Mágus Fő statisztika: Intelligencia Vonal: Harcol a hátsó vonalban Sebzés típusa: Mágikus sebzés\n\n**Előnyök**\n\n✓ Hatalmas sebzés egy célpontban, a legtöbb esetben a fő képesség megölheti a hőst;\n✓ Kiváló karakter a fizikai csomagokkal szemben;\n✓ Gyengíti az ellenségek fizikai támadását;\n✓ Healer képességei vannak, ami növeli a tank túlélőképességét;\n✓ Elégeti a célpont energiáját;\n✓ Kiváló karakter\n✓ Grand\n✓\n✓ Kiváló karakter\n✓ SM Arena, Ar és torony számára; frissítse a maximális csillagra.\n\n**Hátrányok**\n\n✗ Nincs nagy sebzés;\n✗ Gyenge gyógyulás;\n✗ Megfelelő csomagra van szükséged, különben nem lesz elég sebzés;\n✗ Az első képesség a lottó. Eltalálhatja a Fighter/Shooter-t és megölheti, vagy eltalálhatja a hőst a Ködgolyóval;\n✗ Ha egy kicsit áttört. védelem a varázslat ellen."
+    },
+    {
+      "title": "Készségek",
+      "level": 1,
+      "content": "Paralysis – Phobos a bénulás átkát helyezi a legmagasabb fizikai támadást elérő ellenségre. A bénulás 6,6 másodpercre elkábítja az ellenséget. és károkat okoz.\n\nShaking hands – A Phobos megsebzi a legközelebbi ellenséget, és átkot szór rájuk, így 3 másodperccel csökkenti a fizikai támadásukat.\n\nDark deal – A legközelebbi ellenséget mágikus sebzéssel sújtja, a legalacsonyabb életerővel rendelkező szövetségest pedig meggyógyítja az okozott sebzés mértékéig.\n\nBond of Fear – A bénulás elégeti az ellenség energiáját és további sebzést okoz."
+    },
+    {
+      "title": "Hős tippek:",
+      "level": 1,
+      "content": ""
     },
     {
       "title": "A készségek szintre emelése",
-      "content": "Röviden:"
+      "level": 2,
+      "content": "Röviden:\n\nKészségek – Megjegyzések\nParalysis – Feltétlenül töltse le. Alapvető képesség, amely hatalmas mennyiségű sebzést okoz\nShaking hands – Javasoljuk, hogy töltse le, ha van extra aranya. A képesség gyengíti a fizikai. ellenséges támadás.\nDark deal – Javasoljuk, hogy töltse le, ha van extra aranya. Egy szövetséges gyógyítása és sebzés a játék elején hasznos, de később már nem túl hatékony.\nBond of Fear – Feltétlenül töltse le. Erősíti az első képességet."
     },
     {
       "title": "Skinek",
-      "content": "A Phobos nagyon függ a behatolástól. védelem a mágiával szemben, ezért ahhoz, hogy az első készség egy alkalommal megölje az ellenséges hőst, a Star Form for Breakthrough-val kell kezdened. védelem a varázslat ellen. A következő skinek frissítve vannak a mágikus támadáshoz: Illusionist Skin for Magic attack és Dark Depths Skin for Magic attack. Mindkét bőr növeli az első képesség sebzését. Utánuk a Basic Skin for Intelligence frissítésre kerül. A Winter Skin for Armour frissítésre került utoljára. Nem a legkötelezőbb megjelenés, mert... ha Phobost használunk erős fizikai ellen. hős, és ha Phobosnak túl kell élnie a sebzést, Axelt használja a patrónus. Phobost hősként használni az utolsó sorban pedig hatástalan, mert... Ju/Keyla/Jorgen megöl egy ilyen Phobost, akár megjelenéssel, akár megjelenés nélkül."
+      "level": 2,
+      "content": "Szükséges Skinek\nCsillagforma – Áttörés. védelem a varázslat ellen\nIlluzionist Skin - Magic Attack\nShape of the Dark Depths - Magic Attack\nBase Skin – Intelligencia\nVálasztható skinek\nWinter Skin - Armor\n\nA Phobos nagyon függ a behatolástól. védelem a mágiával szemben, ezért ahhoz, hogy az első készség egy alkalommal megölje az ellenséges hőst, a Star Form for Breakthrough-val kell kezdened. védelem a varázslat ellen. A következő skinek frissítve vannak a mágikus támadáshoz: Illusionist Skin for Magic attack és Dark Depths Skin for Magic attack. Mindkét bőr növeli az első képesség sebzését. Utánuk a Basic Skin for Intelligence frissítésre kerül. A Winter Skin for Armour frissült utoljára. Nem a legkötelezőbb megjelenés, mert... ha Phobost használunk erős fizikai ellen. hős, és ha Phobosnak túl kell élnie a sebzést, Axelt használja a patrónus. Phobost hősként használni az utolsó sorban pedig hatástalan, mert... Ju/Keyla/Jorgen megöl egy ilyen Phobost, akár megjelenéssel, akár megjelenés nélkül."
     },
     {
       "title": "Szimbólum",
-      "content": "A karakterfrissítések prioritása a következő:"
+      "level": 2,
+      "content": "A karakterfrissítések prioritása a következő:\n\n1.Mágikus támadás – Az első, aki maximálisan lendít. A szimbólum növeli az első képesség sebzését. \n2. Intelligencia – Növeli a védelmet a mágia, a mágia ellen. támadást, és csökkenti a kritikus találatok esélyét. találat. A sebzés növekedése kisebb, mint a mágikus szimbólumé. támadásra, tehát másodiknak lendül a maximumig. \n3. Egészség - Nem ajánlott pumpálni a szimbólumot, mert a Phobos töltése tovább tart. Amikor például Phobost használja Dante ellen, akkora egészségre van szüksége ahhoz, hogy túlélje Dante képességeit, és azonnal visszavágjon. Minél több az egészség, annál tovább tart a Phobos töltése. Fontos az egyensúly megőrzése. Első alkalommal elegendő lesz a szimbólumot 30-40-re pumpálni. Folytatjuk a szivattyúzást, ha Phobos nem éli túl. \n4. Páncél – Leng, mint az egészség szimbóluma. Általában elég 30 szintig. Növekszik, ha a Phobos túl gyorsan hal meg. \n5. Védelem a mágiával szemben - Növeli, ha a hősök felpumpálják fő szimbólumaikat, mert van egy műtárgy, amely megvédi a mágiát."
     },
     {
       "title": "Műtárgyak",
-      "content": "Nagyon gyakran Merlin a patrónus a Phobos kiváló tulajdonságai miatt (a mágia elleni védelem áthatolása). Néha Axelt helyezik patrónusnak, ha Phobos nem éli túl a pillanatnyi nagyobb sebzést, és nincs ideje visszaütni a képességeit. \n\nSebastian – Az Ode of Serenity készség blokkolja az energiaégetést. \n\nNebula (Skill Serenity) és Celeste (Skill Limbo) megszünteti a bénulás hatását\n\n.Cornelius - A tudomány Granite képessége megöli a hőst, ha a legtöbb intelligenciával rendelkezik. Az elnyomó rúna csökkenti a mágikus támadást, és a memóriavesztés szinte haszontalan hőssé teheti Phobost. \n\nMorrigan - Morrigan csontvázai a varázslatban. csapat felveszi a Phobos bénulás effektust. \n\nKiváló karakter, képes sok sebzést okozni egy célponton, és könnyen megöli az élvonalbeli harcosokat/lövőket. Nagyon jó kombináció Liennel. Varázscsomagban való használatra ajánlott. Kiváló hős a tankoló lövészek/harcosok ellen. Nagyon jól mutat varázscsapatokban a Köd és az Arachne által irányított/műtárgy alatt, vagy egy csapatban az élőhalottakkal (Corvus, Morrigan, Phobos). \n\nKezdőknek ajánljuk, ha van magic/control/Undead csapatod. Más esetekben jól beilleszkedik a Grand Arena második csapatába."
+      "level": 2,
+      "content": "Legfeljebb 3 csillagot töltünk le, utána egyenletesen töltjük le mindhárom műterméket\nMiután az első műterméket három csillagra pumpálta, egyenletesen pumpálja a többi műtermékkel. \nMiután az első műterméket három csillagra pumpálta, egyenletesen pumpálja a többi műtermékkel. \nA műtermékek szintjének növekedése attól függ, hogy melyik csapatban található Phobos. Ha egy csapatban van az élőhalottakkal, akkor a műtárgy szintje a tank és a támadó hős után növekszik, Morrigan és a támogató/gyógyító előtt. Ha ő az egyetlen támadó hős – a tank után. Ha támadóhősök is vannak a csapatban - egyenletesen/a támadóhősök után."
+    },
+    {
+      "title": "Háziállatok",
+      "level": 1,
+      "content": "Nagyon gyakran Merlin a patrónus a Phobos kiváló tulajdonságai miatt (a mágia elleni védelem áthatolása). Néha Axelt helyezik patrónusnak, ha Phobos nem éli túl a pillanatnyi nagyobb sebzést, és nincs ideje visszaütni a képességeit."
+    },
+    {
+      "title": "Zavaros hősök",
+      "level": 1,
+      "content": "Sebastian – Az Ode of Serenity készség blokkolja az energiaégetést. \n\nNebula (Skill Serenity) és Celeste (Skill Limbo) megszünteti a bénulás hatását\n\n.Cornelius - A tudomány Granite képessége megöli a hőst, ha a legtöbb intelligenciával rendelkezik. Az elnyomó rúna csökkenti a mágikus támadást, és a memóriavesztés szinte haszontalan hőssé teheti Phobost. \n\nMorrigan - Morrigan csontvázai a varázslatban. csapat felveszi a Phobos bénulás effektust."
+    },
+    {
+      "title": "Következtetés",
+      "level": 1,
+      "content": "Kiváló karakter, képes sok sebzést okozni egy célponton, és könnyen megöli az élvonalbeli harcosokat/lövőket. Nagyon jó kombináció Liennel. Varázscsomagban való használatra ajánlott. Kiváló hős a tankoló lövészek/harcosok ellen. Nagyon jól mutat varázscsapatokban a Köd és az Arachne által irányított/műtárgy alatt, vagy egy csapatban az élőhalottakkal (Corvus, Morrigan, Phobos). \n\nKezdőknek ajánljuk, ha van magic/control/Undead csapatod. Más esetekben jól beilleszkedik a Grand Arena második csapatába."
     }
   ]
 }

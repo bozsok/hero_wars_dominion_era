@@ -4,23 +4,53 @@
   "sections": [
     {
       "title": "Általános áttekintés",
-      "content": "Elmir - Egyedülálló közelharcos. Azon kevés harcosok egyike, akiknél hiányzik a kritikus találat, ami a Helios népszerűségét tekintve csak plusz. Az elkészített másolatok tökéletesen veszik a többi hős sérülését, ezáltal biztosítva a hősök túlélését a csapatodban. A páncéltörő műtárgy számos fizikai egység fontos tagjává teszi Elmirt. parancsokat\n\nFőszerep: Fighter, Shooter Fő statisztika: Agility Line: Harcok az élvonalban Sebzés típusa: Fizikai sebzés\n\nProfik\n\n✓ A játék minden szakaszában releváns;✓ Könnyen beszerezhető és frissíthető a maximális csillagra;✓ A másolatok tökéletesen elhárítják a sérüléseket sok karaktertől;✓ A műtárgy behatolást biztosít. páncél az egész csapat számára;✓ A kritika hiánya. a sztrájk kiváló harcossá teszi Helios ellen; ✓ Kiváló számlálók K'arkh ellen a klónoknak köszönhetően, amelyek felvállalják K'arkh dobását. \n\nHátrányok\n\n✗ A másolatok megsemmisülnek az olyan karakterek hatalmas sebzése miatt, mint például Pippi, Kira, Kayla stb.✗ Leggyakrabban szituációs hősök használják, mert helyette Sebastian vagy Nebula használják, akikkel nem tud versenyezni."
+      "level": 1,
+      "content": "Elmir - Egyedülálló közelharcos. Azon kevés harcosok egyike, akiknél hiányzik a kritikus találat, ami a Helios népszerűségét tekintve csak plusz. Az elkészített másolatok tökéletesen veszik a többi hős sérülését, ezáltal biztosítva a hősök túlélését a csapatodban. A páncéltörő műtárgy számos fizikai egység fontos tagjává teszi Elmirt. parancsokat\nFőszerep: Fighter, Shooter Fő statisztika: Agility Line: Harcok az élvonalban Sebzés típusa: Fizikai sebzés\n\n**Előnyök**\n\n✓ A játék minden szakaszában releváns;\n✓ Könnyen beszerezhető és frissíthető a maximális csillagra;\n✓ A másolatok tökéletesen elhárítják a sérüléseket sok karaktertől;\n✓ A műtárgy behatolást biztosít. páncél az egész csapat számára;\n✓ A kritika hiánya. a sztrájk kiváló harcossá teszi Helios ellen;\n✓ Kiváló számlálók K'arkh ellen a klónoknak köszönhetően, amelyek felvállalják K'arkh dobását.\n\n**Hátrányok**\n\n✗ A másolatok megsemmisülnek az olyan karakterek hatalmas sebzése miatt, mint például Pippi, Kira, Kayla stb.\n✗ Leggyakrabban szituációs hősök használják, mert helyette Sebastian vagy Nebula használják, akikkel nem tud versenyezni."
+    },
+    {
+      "title": "Készségek",
+      "level": 1,
+      "content": "Shifting Sands – Elmir átmegy a túlsó sávba, használja a második képességét (ha nyitva van), és a következő 10 másodpercben. távolról támadja az ellenfelet. Amíg a képesség aktív, a hős bónuszt kap a fizikai támadásra.\n\nMirage – Elmir létrehoz egy homokklónt a közelben. A klón nem tudja helyreállítani az egészségét, és nem kaphat segítséget szövetségeseitől. Idővel a klón egészségét veszti, ha más sérülést nem kap, 12 másodpercig él.\n\nPerfect Blades – A homokklónok képesek megtámadni az ellenfeleket. Ugyanakkor az első képesség akciója során létrehozott klónok továbbra is távolról támadják az ellenségeket.\n\nMany Truths – A második képesség használatakor Elmir lehetőséget kap két vagy négy klón létrehozására egyidejűleg."
+    },
+    {
+      "title": "Hős tippek",
+      "level": 1,
+      "content": ""
     },
     {
       "title": "A készségek szintre emelése",
-      "content": "Röviden:"
+      "level": 2,
+      "content": "Röviden:\n\nKészségek – Megjegyzések\nShifting Sands – Jól növelni kell a sebzést, ez kötelező.\nMirage – Kiváló képesség, amely növeli a klónok túlélőképességét. Minél tovább élnek a klónok, annál valószínűbb, hogy az ellenséges hősök eltalálják őket. Határozottan leng.\nPerfect Blades – Növeli a klónok károsodását. Kiváló sebzési képesség, kötelező.\nMany Truths – Növeli a klónok számát, határozottan kileng."
     },
     {
       "title": "Skinek",
-      "content": "Először is ajánlott frissíteni az alapvető megjelenést az Agility érdekében. Utána Téli Forma fizikai támadásra. A harmadik swing a Cybernetic Appearance az áttöréshez. páncél. A Dodge-hoz a Barbaric Appearance és a Dodge-hoz a Demonic Appearance-t frissítik utoljára, mert Elmir tankjai klónjaival és a kitérés nem elsődleges számára."
+      "level": 2,
+      "content": "Szükséges Skinek\nAlapforma - Agility\nTéli forma – fizikai támadás\nKibernetikus megjelenés – áttörés. páncél\nVálasztható skinek\nBarbár forma – Dodge\nDémoni forma – Dodge\n\nElőször is ajánlott frissíteni az alapvető megjelenést az Agility érdekében. Utána Téli Forma fizikai támadásra. A harmadik swing a Cybernetic Appearance az áttöréshez. páncél. A Dodge-hoz a Barbaric Appearance és a Dodge-hoz a Demonic Appearance-t frissítik utoljára, mert Elmir tankjai klónjaival és a kitérés nem elsődleges számára."
     },
     {
       "title": "Szimbólum",
-      "content": "A karakterfrissítések prioritása a következő:"
+      "level": 2,
+      "content": "A karakterfrissítések prioritása a következő:\n\n1. Egészség - először a maximumra lendül, mert a klónok egészsége Elmir egészségétől függ, ami lehetővé teszi számukra, hogy több sebzést nyeljenek el. \n2. Ügyesség – Növeli Elmir páncélját, fizikai. támadás, és növeli annak esélyét, hogy egy kitéréssel sebzést okozz egy hősnek. Második a maximumig. \n3. Fizikai támadás - Növeli Elmir és klónjainak sebzését, harmadára lendít a maximumig. \n4. Áttörés. páncél – Lehetővé teszi, hogy figyelmen kívül hagyja az ellenség páncéljának egy részét, mivel a sebzést leggyakrabban az ellenséges tank okozza. \n5. Dodge – Lengések utoljára. Nem a leginkább szükséges szimbólum, mert Elmir klónokkal tankol."
     },
     {
       "title": "Műtárgyak",
-      "content": "Elmir legjobb patrónusa Vex. A Fenrist ritkábban használják, ha más fizikai támadók is vannak. hősök (például az élőhalottakon alapuló csapatban). Kaint használják patrónusként, ha a csapatnak nincs Nebula, Aurora, Dante vagy Elmyr tankként. \n\nsebezhető hatalmas sebzésekkel, ami nem függ a célponttól: Galahad - Skill Steel Skies Helios - Skill Birth of Stars and Solar Wind. \n\nPippi - Bátorság\n\nLars + Krista - Lars Stormlord és Chain Discharge képességei, Krista Fagyláncok képességei. \n\nKira a támadások hatalmas sebzése miatt. \n\nPhobos - A bénulás képesség megölheti Elmirt, ha nincs több fizikai erővel rendelkező hős a csapatban. támadás (Például egy falka Corneliusszal). - az automatikus támadások hatalmas sebzése miatt. \n\nKiváló frontvonali vadászgép, amely képes egy tank szerepét betölteni egyes csomagokban, vagy tankolni, ha a tankját átveszi az irányítás. Hatalmas mennyiségű sebzést okoz egyetlen célpontnak. A fizikai csomagban nagyon hasznos lesz az Artifactjával. Tökéletesen kombinálható Zirivel (tank, ha fúródik), Doriannal (Gyorsan helyreállítja az egészségét, amikor első képességével Dorian aurájába ugrik), Dantéval. \n\nEgy csapatban az élőhalottakkal, Morrigannel együtt rengeteg további célpontot hoz létre az ellenséges hősök számára (klónok + csontvázak), amelyek lehetővé teszik, hogy csapata azonnal túlélje a hatalmas sebzést (például K'arkha). \n\nÚjoncoknak, ha nem a főcsapatnak, de a Grand Arena második csapatának ajánljuk. Nem a legrosszabb karakter, és néhány csapatban képes jó eredményeket felmutatni."
+      "level": 2,
+      "content": "Frissítünk 3 csillagra, ami után egyenletesen javítjuk mindhárom műterméket. \nEgyenletesen szivattyúzzuk, miután az első műterméket három csillagra pumpáltuk. \nEgyenletesen szivattyúzzuk, miután az első műterméket három csillagra pumpáltuk. \nA tárgyak szintje növekszik a tank és a támadó hős után, egyenletesen a támogató hősökkel. Ha Elmir egy csapatban van az élőhalottakkal, akkor a Corvus után. Ha Elmir szituációs hős - a támogató hősök után, a gyógyító előtt."
+    },
+    {
+      "title": "Háziállatok",
+      "level": 1,
+      "content": "Elmir legjobb pártfogója Vex. A Fenrist ritkábban használják, ha más fizikai támadók is vannak. hősök (például az élőhalottakon alapuló csapatban). Kaint használják patrónusként, ha a csapatnak nincs Nebula, Aurora, Dante vagy Elmyr tankként."
+    },
+    {
+      "title": "Zavaros hősök",
+      "level": 1,
+      "content": "sebezhető hatalmas sebzésekkel, ami nem függ a célponttól: Galahad - Skill Steel Skies Helios - Skill Birth of Stars and Solar Wind. \n\nPippi - Bátorság\n\nLars + Krista - Lars Stormlord és Chain Discharge képességei, Krista Fagyláncok képességei. \n\nKira a támadások hatalmas sebzése miatt. \n\nPhobos - A bénulás képesség megölheti Elmirt, ha nincs több fizikai erővel rendelkező hős a csapatban. támadás (Például egy falka Corneliusszal). - az automatikus támadások hatalmas sebzése miatt."
+    },
+    {
+      "title": "Következtetés",
+      "level": 1,
+      "content": "Kiváló frontvonali vadászgép, amely képes egy tank szerepét betölteni egyes csomagokban, vagy tankolni, ha a tankját átveszi az irányítás. Hatalmas mennyiségű sebzést okoz egyetlen célpontnak. A fizikai csomagban nagyon hasznos lesz az Artifactjával. Tökéletesen kombinálható Zirivel (tank, ha fúródik), Doriannal (Gyorsan helyreállítja az egészségét, amikor első képességével Dorian aurájába ugrik), Dantéval. \n\nEgy csapatban az élőhalottakkal, Morrigannel együtt rengeteg további célpontot hoz létre az ellenséges hősök számára (klónok + csontvázak), amelyek lehetővé teszik, hogy csapata azonnal túlélje a hatalmas sebzést (például K'arkha). \n\nÚjoncoknak, ha nem a főcsapatnak, de a Grand Aréna második csapatának ajánljuk. Nem a legrosszabb karakter, és néhány csapatban képes jó eredményeket felmutatni."
     }
   ]
 }

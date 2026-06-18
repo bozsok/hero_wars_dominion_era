@@ -4,23 +4,53 @@
   "sections": [
     {
       "title": "Általános áttekintés",
-      "content": "Helios azon kevés karakterek egyike, akik sok sebzést tudnak okozni, és jól kiállnak a fizikai csomagokkal szemben. Kiváló karakter, képes ellenállni Jorgen átigazolásának és Ju támadásainak is. Helios képességei kiegyensúlyozottak, ami miatt egyszerre kiváló mágus, aki sok sebzést okoz, és kiváló Support hős a fizikai kritikus csomagokkal szemben. \n\nFőszerep: Mágus, Támogatás Fő Stat: Intelligencia Vonal: Harcol a hátsó vonalban Sebzés típusa: Mágikus sebzés\n\nProfik\n\n✓ Óriási mágikus sebzés;✓ Kiváló túlélési képesség a fizikai csomagokkal szemben;✓ Tökéletesen túléli Jorgen átigazolását;✓ Páncélzattal képes támogatni az egész csapatot;✓ Jól megbirkózik a kritikával foglalkozó hősökkel. sebzés (Yasmin, Ismail, csapatok Jet-tel);✓ Irányítókészség van;✓ Kiváló karakter a védekező csomagokban. \n\nHátrányok\n\n✗ Nehéz megszerezni és szintezni a maximális csillagot;✗ Sebezhető Rufus és Isaac számára;✗ Nincs behatolás. védelem a varázslat ellen;✗ Hatalmas sebzéshez szükséges, hogy legyen a csapatban egy karakter, aki megadja a Mágust. áttörve a védelmet. Az esetek 99%-ában az Orion tartja fenn az Artifact bónuszát a csata során."
+      "level": 1,
+      "content": "Helios azon kevés karakterek egyike, akik sok sebzést tudnak okozni, és jól kiállnak a fizikai csomagokkal szemben. Kiváló karakter, képes ellenállni Jorgen átigazolásának és Ju támadásainak is. Helios képességei kiegyensúlyozottak, ami miatt egyszerre kiváló mágus, aki sok sebzést okoz, és kiváló Support hős a fizikai kritikus csomagokkal szemben.\nFőszerep: Mágus, Támogatás Fő Stat: Intelligencia Vonal: Harcol a hátsó vonalban Sebzés típusa: Mágikus sebzés\n\n**Előnyök**\n\n✓ Óriási mágikus sebzés;\n✓ Kiváló túlélési képesség a fizikai csomagokkal szemben;\n✓ Tökéletesen túléli Jorgen átigazolását;\n✓ Páncélzattal képes támogatni az egész csapatot;\n✓ Jól megbirkózik a kritikával foglalkozó hősökkel. sebzés (Yasmin, Ismail, csapatok Jet-tel);\n✓ Irányítókészség van;\n✓ Kiváló karakter a védekező csomagokban.\n\n**Hátrányok**\n\n✗ Nehéz megszerezni és szintezni a maximális csillagot;\n✗ Sebezhető Rufus és Isaac számára;\n✗ Nincs behatolás. védelem a varázslat ellen;\n✗ Hatalmas sebzéshez szükséges, hogy legyen a csapatban egy karakter, aki megadja a Mágust. áttörve a védelmet. Az esetek 99%-ában az Orion tartja fenn az Artifact bónuszát a csata során."
+    },
+    {
+      "title": "Készségek",
+      "level": 1,
+      "content": "Birth of Stars – A Helios 3 új és az összes rendelkezésre álló napgömböt küld a csatatéren az ellenséges csapat első soraiba, és felrobbantja őket, területi sebzést okozva.\n\nSolar Wind – 10 másodpercig. Megidéz egy lángoló, sebezhetetlen gömböt, amely idővel sebzést okoz a közeli ellenségeknek.\n\nHeavenly Guardians – Idézz 2 védekező gömböt a csapata közepére. A gömbök megvédik a közeli szövetségeseket azáltal, hogy elnyelik a rajtuk ért fizikai sérüléseket.\n\nFiery Retribution – Amíg a Solar Wind képesség aktív, minden alkalommal, amikor Helios szövetségesei kritikus találatot kapnak, egy lángoló gömb tüzes sugárral találja el a sebzést okozó ellenséget."
+    },
+    {
+      "title": "Hős tippek",
+      "level": 1,
+      "content": ""
     },
     {
       "title": "A készségek szintre emelése",
-      "content": "Röviden: varázslatban. csapat: Szituációs hős vagy fizikai hős. parancs:"
+      "level": 2,
+      "content": "Röviden:\n\nKészségek – Megjegyzések\nBirth of Stars – Ha bűvész vagy, feltétlenül töltsd le. csomag. Ha a hős fizikaiban van. csapat – frissítések, ha extra aranyad van.\nSolar Wind – Ha bűvész vagy, feltétlenül töltsd le. csomag. Ha a hős fizikaiban van. csapat – frissítések, ha extra aranyad van.\nHeavenly Guardians – Feltétlenül töltse le. Fizikai sérülések elnyelése a csapattól.\nFiery Retribution – Feltétlenül töltse le. A kriptocsomagok elleni küzdelem fő készsége."
     },
     {
       "title": "Skinek",
-      "content": "Először a Basic Look for Intelligence frissítésre kerül. Fontos, hogy a Helios rendelkezzen a legtöbb intelligenciával a csapatában. Ez Cornelius csomagjai ellen történik, aki képességeivel megöli a játékban a legtöbb varázslót. Nem tudja megölni Helios-t, mivel Cornelius sérülése fizikai. A Guild War Magic támadó skin második frissítésre került. A megjelenés jelentősen megnöveli a Helios sérülését. A harmadik a Health egyik megjelenésének frissítése, hogy növelje a túlélést: Masquerade Appearance for Health vagy Demonic Appearance for Health. A fennmaradó megjelenések frissítésre kerülnek, amikor a többi főszereplő frissítette fő megjelenését. A negyedik megjelenéssel frissítjük a Romantic Appearance-t a Magic Attack számára. Végül frissítjük a fennmaradó megjelenést Healthre."
+      "level": 2,
+      "content": "Szükséges Skinek\nAlapvető megjelenés - Intelligencia\nGuild War Skin - Magic Attack\nMasquerade Look – Egészség\nKisebb megjelenések\nRomantikus megjelenés - Magic Attack\nDémoni forma – egészség\n\nElőször a Basic Look for Intelligence frissítésre kerül. Fontos, hogy a Helios rendelkezzen a legtöbb intelligenciával a csapatában. Ez Cornelius csomagjai ellen történik, aki képességeivel megöli a játékban a legtöbb varázslót. Nem tudja megölni Helios-t, mivel Cornelius sérülése fizikai. A Guild War Magic támadó skin második frissítésre került. A megjelenés jelentősen megnöveli a Helios sérülését. A harmadik a Health egyik megjelenésének frissítése, hogy növelje a túlélést: Masquerade Appearance for Health vagy Demonic Appearance for Health. A fennmaradó megjelenések frissítésre kerülnek, amikor a többi főszereplő frissítette fő megjelenését. A negyedik megjelenéssel frissítjük a Romantic Appearance-t a Magic Attack számára. Végül frissítjük a fennmaradó megjelenést Healthre."
     },
     {
       "title": "Szimbólum",
-      "content": "Szituációs hős vagy fizikai hős. parancs:\n\nHelios a varázscsapatban:"
+      "level": 2,
+      "content": "Szituációs hős vagy fizikai hős. parancs:\n\n1. Egészség – Ha Helios szituációs hős a kritikus csomagokkal szemben, akkor a szimbólum először a maximumra lendül. \n2. Páncél – Ha Helios szituációs hős a kritikus csomagokkal szemben, akkor a szimbólum maximum másodpercre ingadozik. \n3. Mágikus támadás - Fontos szimbólum Helios számára bármely csapatban, mert növeli a képességekből származó sebzést, pl. és gömbsebzés kritikus találat esetén. ütéseket. Maximum harmadikra ​​lendül. \n4. Intelligencia – Növeli az összes Helios képesség okozta sebzést, és csökkenti a kritikus találatok valószínűségét. fúj. \n5. Védelem a mágiával szemben - Utoljára lép fel, ha nehézségei vannak a mágiával. csapatok. Más esetekben jobb, ha más hősök szimbólumait részesítjük előnyben. \n\nHelios a varázscsapatban:\n\n1. Egészség - Ha Helios egy varázscsapatban van, először elég lesz felpumpálni a szimbólumot 30-ra. Frissítsen, ha Helios gyorsan meghal. Ha sok játékos van a szerveren Kaylával, a szimbólum azonnal a maximumra pumpálódik.\n2. Páncél – Ha Helios egy varázscsapatban van, először elég lesz felpumpálni a szimbólumot 30-ra. Frissítsen, ha Helios gyorsan meghal. Ha sok játékos van a szerveren Kaylával, a szimbólum a maximális másodpercig pumpálódik. \n3. Mágikus támadás - Fontos szimbólum Helios számára bármely csapatban, mert növeli a képességekből származó sebzést, pl. és gömbsebzés kritikus találat esetén. ütéseket. Leggyakrabban az első, aki maximumra lendít, mert... az egészséget és a páncélt 30-ra emelik. \n4. Intelligencia – Növeli az összes Helios képesség okozta sebzést, és csökkenti a kritikus találatok valószínűségét. fúj. \n5. Védelem a mágiával szemben - Utoljára lép fel, ha nehézségei vannak a mágiával. csapatok. Más esetekben jobb, ha más hősök szimbólumait részesítjük előnyben."
     },
     {
       "title": "Műtárgyak",
-      "content": "Helios számára a legrelevánsabb patrónus Merlin, aki felgyorsítja a hős képességeit, és kiváló támadási teljesítményt nyújt Helios számára (mágikus védekezés és mágikus támadás behatolása). Az Axelt ritkábban használják (Az Axel használata kifizetődik Jupak ellen, amikor a Helios az utolsó). Ha sok gyógyító van a csapatban, néha a kekszet használják a gyógyulás csökkentésére. \n\nIsaac – Tes'Lin High Voltage Module és Overdrive képességei segítenek megbirkózni a varázssebzést okozó hősökkel. \n\nLien – Az a képesség, amelyet Pacify bájban tart a hatalmas sebzés miatt. A Rufus egy antimágus tank. Problémák lehetnek azzal, ha Helios-t rajzol. \n\nKiváló karakter, akit többször is láthatunk az Aréna és a Grand Arena TOP-jaiban. Túlélő képessége miatt jól teljesít a fizikai csomagokkal szemben. Az Orion mágikus védelme alatt egyszerűen hihetetlen sérüléseket mutat. A hősök legkiválóbb kombinációja: Helios, Orion, Dorian. Fontos, hogy úgy helyezzük el őket, hogy Helios és Orion Dorian aurája alatt legyen. Akkor gyakorlatilag lehetetlen lesz megölni őket. Ennek a karakternek a megszerzésének nehézsége az egyetlen hátránya. Kiválóan mutat Yasmin, Ismail, Ju, Kritopakov (Sebastian + Jet) ellen. Ha nem Helios-t használod főhősként a csapatodban, Yasmine népszerűsége miatt ajánlatos őt hatodik hősként felminősíteni. Kezdőknek ajánlott szintet lépni, ha nem is a főcsapatnak, akkor szituációs hősként a kritikus hősök ellen. fúj. \n\nCsapatbeállítások Helios - Orion + Helios segítségével"
+      "level": 2,
+      "content": "Akár 3 csillagot is pumpál, utána kiemelten letöltjük a második műterméket. A második műtermék teljes pumpálása után egyenletesen felpumpáljuk a harmadikkal. \nElsőbbség a szintlépésben, miután elérte a három csillagot az első műtárgyért. \nA második műtermék pumpálása után egyenletesen pumpál az elsővel. \nHa Helios a mágia főszereplője. csapat, a tárgyak szintje egyenletesen növekszik a másik támadó hőssel a Tank után. Ha Helios szituációs hős, akkor a Tank, Attacking hős után a leletek szintje nő, párhuzamosan a támogató hősökkel."
+    },
+    {
+      "title": "Háziállatok",
+      "level": 1,
+      "content": "Helios számára a legfontosabb patrónus Merlin, aki felgyorsítja a hős képességeit, és kiváló támadási teljesítményt nyújt Helios számára (mágikus védekezés és mágikus támadás behatolása). Az Axelt ritkábban használják (Az Axel használata kifizetődik Jupak ellen, amikor a Helios az utolsó). Ha sok gyógyító van a csapatban, néha a kekszet használják a gyógyulás csökkentésére."
+    },
+    {
+      "title": "Zavaros hősök",
+      "level": 1,
+      "content": "Isaac – Tes'Lin High Voltage Module és Overdrive képességei segítenek megbirkózni a varázssebzést okozó hősökkel. \n\nLien – Az a képesség, amelyet Pacify bájban tart a hatalmas sebzés miatt. A Rufus egy antimágus tank. Problémák lehetnek azzal, ha Helios-t rajzol."
+    },
+    {
+      "title": "Következtetés",
+      "level": 1,
+      "content": "Kiváló karakter, akit többször is láthatunk az Aréna és a Grand Arena TOP-jaiban. Túlélő képessége miatt jól teljesít a fizikai csomagokkal szemben. Az Orion mágikus védelme alatt egyszerűen hihetetlen sérüléseket mutat. A hősök legkiválóbb kombinációja: Helios, Orion, Dorian. Fontos, hogy úgy helyezzük el őket, hogy Helios és Orion Dorian aurája alatt legyen. Akkor gyakorlatilag lehetetlen lesz megölni őket. Ennek a karakternek a megszerzésének nehézsége az egyetlen hátránya. Kiválóan mutat Yasmin, Ismail, Ju, Kritopakov (Sebastian + Jet) ellen. Ha nem Helios-t használod főhősként a csapatodban, Yasmine népszerűsége miatt ajánlatos őt hatodik hőssé felminősíteni. Kezdőknek ajánlott szintet lépni, ha nem is a főcsapatnak, akkor szituációs hősként a kritikus hősök ellen. fúj. \n\nCsapatbeállítások Helios - Orion + Helios segítségével"
     }
   ]
 }

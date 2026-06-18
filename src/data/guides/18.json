@@ -4,23 +4,53 @@
   "sections": [
     {
       "title": "Általános áttekintés",
-      "content": "A bíró a Chronicles of Chaos játék egyik szereplője, aki a Mágus, az Irányító és a Támogatás szerepét tölti be. Sajnos egyetlen szerepben sem sikerült neki. Csak egy képessége van, ami sebzést okozhat, pajzsot dob ​​a tankra (leggyakrabban), és rendelkezik irányító képességekkel (lassítás). Első benyomásra úgy tűnik, hogy a hős hasznos lehet egy csapatban. Kezdjük azzal, hogy elemezzük őt, mint karaktert. \n\nFőszerep: Mágus, Irányítás, Támogatás Fő állapot: Intelligencia Vonal: Harc a középső sávban Sebzés típusa: Magic Damage\n\nProfik\n\n✓ A játék elején releváns;✓ Az első képességgel sok sebzést okoz egyszerre négy hősnek;✓ Jól használható olyan csapatok számára, ahol a tank szerepét egy harcos/lövő (Dante, Ju, Ismail, Yasmin vagy akár Alvanor) játssza a játék korai szakaszában;✓ Vezérlés; Eltávolítja a kontroll képességeket és visszaállítja a negyedik képességet. Sebastian pajzsa;✓ Könnyen beszerezhető és a maximális csillagra fejleszthető;✓ Jó gyenge mágikus védekezéssel vagy alacsony egészségi állapotú csapatokkal szemben;✓ Nagyon jó Sebastian pajzsának leverésében. \n\nHátrányok\n\n✗ A nagy sebzéshez egy Nebula Ball szükséges. Ellenkező esetben egyszerűen megtölti az ellenséges csapatot;✗ A bíró pajzsa túl kevés sebzést nyel el;✗ A harmadik képesség csak egy másodpercig tart;✗ Gyenge előny a csapatnak, mint támogató hősnek, kis kár a hősnek, mint Mágusnak.✗ Nem lehet csapatot építeni a bíró köré, így ő lesz az egyetlen támadó hős. A csapatnak szüksége van egy másik hősre, aki sok sebzést okoz."
+      "level": 1,
+      "content": "A bíró a Chronicles of Chaos játék egyik szereplője, aki a Mágus, az Irányító és a Támogatás szerepét tölti be. Sajnos egyetlen szerepben sem sikerült neki. Csak egy képessége van, ami sebzést okozhat, pajzsot dob ​​a tankra (leggyakrabban), és rendelkezik irányítási képességekkel (lassítás). Első benyomásra úgy tűnik, hogy a hős hasznos lehet egy csapatban. Kezdjük azzal, hogy elemezzük őt, mint karaktert.\nFőszerep: Mágus, Irányítás, Támogatás Fő állapot: Intelligencia Vonal: Harc a középső sávban Sebzés típusa: Magic Damage\n\n**Előnyök**\n\n✓ A játék elején releváns;\n✓ Az első képességgel sok sebzést okoz egyszerre négy hősnek;\n✓ Jól használható olyan csapatok számára, ahol a tank szerepét egy harcos/lövő (Dante, Ju, Ismail, Yasmin vagy akár Alvanor) játssza a játék korai szakaszában;\n✓ Vezérlés; Eltávolítja a kontroll képességeket és visszaállítja a negyedik képességet. Sebastian pajzsa;\n✓ Könnyen beszerezhető és a maximális csillagra fejleszthető;\n✓ Jó gyenge mágikus védekezéssel vagy alacsony egészségi állapotú csapatokkal szemben;\n✓ Nagyon jó Sebastian pajzsának leverésében.\n\n**Hátrányok**\n\n✗ A nagy sebzéshez egy Nebula Ball szükséges. Ellenkező esetben egyszerűen megtölti az ellenséges csapatot;\n✗ A bíró pajzsa túl kevés sebzést nyel el;\n✗ A harmadik képesség csak egy másodpercig tart;\n✗ Gyenge előny a csapatnak, mint támogató hősnek, kis kár a hősnek, mint Mágusnak.\n✗ Nem lehet csapatot építeni a bíró köré, így ő lesz az egyetlen támadó hős. A csapatnak szüksége van egy másik hősre, aki sok sebzést okoz."
     },
     {
-      "title": "A készségek szintre emelése",
-      "content": "Röviden:"
+      "title": "Készségek",
+      "level": 1,
+      "content": "Ionic Cyclone – Villámlást hoz létre, amely minden ellenséget 4-szer sújt le elektromos impulzussal, varázssebzést okozva. Ascension Skill: Resonating Ion Cyclone Az Ion Cyclone vége elektromos impulzust hoz létre, amely kétszer terjed az ellenfelek között. Az impulzus mágikus sebzést okoz, és minden ellenséges találatot 1 másodpercre elkábít.\n\nForce field – Pajzsot helyez az ellenség legközelebbi szövetségesére, elnyeli a sebzést. Felemelkedési készség: Túlterhelt erőtér Amikor az Erőtér megsemmisül, elektromos áram szabadul fel, ami 0,5 másodpercre elkábítja a közeli ellenséget.\n\nHologram – A bíró eltávolítja magáról a negatív hatásokat, és aktiválja a Hologramot. Sérülés vagy negatív hatás esetén a Hologram 1 másodpercre sebezhetetlenné teszi a Bírót, és a kapott sérülést egészséggé alakítja.\n\nJammer – Az Ion Cyclone minden elektromos impulzusa egy másodpercre lelassítja az ellenséget."
     },
     {
-      "title": "Skinek",
-      "content": "Javasoljuk, hogy először frissítse a Magic attack egyik megjelenését: Mechanical Appearance for Magic attack vagy Eastern Appearance for Magic attack. Másodszor, frissítse az Intelligencia alapvető megjelenését. Ezt követően a mágikus támadás hátralévő megjelenése befejeződik. A Masquerade Skin for Armor és a Guild War Skin for Health utoljára frissül, mert befolyásolja az energia felhalmozódási sebességét."
-    },
-    {
-      "title": "Szimbólum",
+      "title": "Hős tippek",
+      "level": 1,
       "content": ""
     },
     {
+      "title": "A készségek szintre emelése",
+      "level": 2,
+      "content": "Röviden:\n\nKészségek – Megjegyzések\nIonic Cyclone – Feltétlenül töltse le. Az egyetlen képesség, ami sebzést okoz.\nForce field – Letöltés ajánlott, néha megmenti a tankot vagy bármely más hőst, aki közelebb van az ellenséges csapathoz.\nHologram – Nem ajánlott letölteni. A sebezhetetlenség csak egy másodpercig tart, és a gyógyulás túl gyenge.\nJammer – Feltétlenül töltse le. A képesség a szinthez kötődik, és nagyszerű Sebastian ellen, hogy leüti a pajzsot."
+    },
+    {
+      "title": "Skinek",
+      "level": 2,
+      "content": "Szükséges Skinek\nMechanikus forma - Magic Attack\nAlapvető megjelenés - Intelligencia\nKeleti megjelenés - Magic Attack\nVálasztható skinek\nMasquerade Look – Páncél\nGuild War Skin - Egészség\n\nJavasoljuk, hogy először frissítse a Magic attack egyik megjelenését: Mechanical Appearance for Magic attack vagy Eastern Appearance for Magic attack. Másodszor, frissítse az Intelligencia alapvető megjelenését. Ezt követően a mágikus támadás hátralévő megjelenése befejeződik. A Masquerade Skin for Armor és a Guild War Skin for Health utoljára frissül, mert befolyásolja az energia felhalmozódási sebességét."
+    },
+    {
+      "title": "Szimbólum",
+      "level": 2,
+      "content": "1. Mágikus támadás - Növeli a sebzést, a pajzs erejét és a helyreállított egészségi állapotot. Lengés először a maximumig. \n2. Áttörés. mágia elleni védelem – Lehetővé teszi, hogy az első képesség több sebzést okozzon, mert a varázslatos részt figyelmen kívül hagyja. védelem. Második a maximumig. \n3. Intelligencia – A szimbólum kis mértékben növeli a varázslatot. támadás és védekezés a mágia ellen, maximum harmadára lendül. \n4. Egészség – Általában 30-ig emelkedik. Emelkedik, ha a hős túl gyorsan hal meg. \n5. Varázslat elleni védelem – A legutolsó szakaszban frissítik, amikor a főszereplők már felpumpálták főszereplőiket, vagy sok varázslat van a szerveren. parancsokat"
+    },
+    {
       "title": "Műtárgyak",
-      "content": "A bíró legnépszerűbb mecénása a Biscuit, Olivert pedig ritkábban használják, ha nem foglalja el más karakter. \n\nIsaac – Tes'Lin High Voltage Module és Overdrive képességei segítenek megbirkózni a varázssebzést okozó hősökkel. \n\nLien – Az a képesség, amelyet Pacify bájban tart a hatalmas sebzés miatt. \n\nJó karakter a játék korai szakaszában. A hős gyorsan maximum csillagra fejleszthető, ami már egyfajta előny. Az átdolgozás után a Bíró megkapta a szükséges behatolást. védelem a mágia ellen, különösen a szimbólum és a második műtárgy. A második képességet most csak a frontvonal hőse kapja, így tank nélkül játszhatsz. De ez is mínusz, mert... Bíró alkalmas bűvésznek. csapatok, és a tank szerepét játszó hősök megverték a fizikait. kár (Kivétel: Alvanor, Marcus stb.). Egy Dante, Ju, Yasmin tankkal rendelkező csapatban a bírónak nincs szüksége műtárgyra és minden képességre, kivéve a pajzsot. De egy hős fejlesztése csak egy nem túl erős képesség kedvéért nem jövedelmező, ha az alternatívák hasznosabbak (Ugyanaz, mint Jorgen). A bíró harmadik képessége csak egy másodpercre ad sebezhetetlenséget, és nincs értelme aranyat költeni erre. Az Ascension képességek, amelyekhez nem olyan könnyű hozzájutni egy új játékos számára, elhanyagolható képességnövekedést biztosítanak bármely más Ascension buffhoz képest, és a 0,5 másodperces kábítást nem kell kommentálni. Hacsak a bírót nem használják Sebastian pajzsának eltávolítására, ebben az esetben ismét vannak hősök, akik több hasznot hoznak a csapatnak. Kisállat által ajánlott keksz. A hős kezdőknek megfelelő, de csak addig, amíg meg nem jelenik egy jobb alternatíva. Például használja a bírót, amíg meg nem szerzi a Helios-t. \n\nEredmény:\n\n- A bíró csak bűvészeknek alkalmas. parancsok; \n- Nagyon gyenge hős, mint támogatás és irányítás; \n- Nem lehet az egyetlen támadóhős a csapatban; \n- Gyorsan megtölti az ellenség Aurora és Isaac; \n- Gyenge bónuszok az Ascension-ból; \n- Jelenleg a legrosszabb támogató hős az összes elérhető közül; \n- Gyakran csak ideiglenes hősként ajánlják, amíg erősebb karaktereket nem szerez. \n\nKezdő játékosoknak nem ajánlott. \n\nCsapatopciók bíróval – csapatok"
+      "level": 2,
+      "content": "Legfeljebb 3 csillagot töltünk le prioritásként. Frissítjük a sztárságot a második műtermékkel együtt. \nLetöltjük a sztárságot az első műalkotással együtt. \nA sztárságot utoljára töltjük le. \nA műtermékek szintjének növelésének prioritása a Bíró csapatban betöltött szerepétől függ. Ha inkább támogató hősként viselkedik (eltávolítja Sebastian pajzsát, pajzsát, műtárgyát varázstámadáshoz stb.), akkor a tárgyak szintje nő, mint minden támogató hősnél - a támadó hős, tank után, párhuzamosan más támogató hősökkel, de Sebastian / Nebula után. Ha a bíró támadó hősként viselkedik, a tárgyak szintje nő a tank után, a többi támadó hőssel együtt (ha vannak)."
+    },
+    {
+      "title": "Háziállatok",
+      "level": 1,
+      "content": "A bíró legnépszerűbb mecénása a Biscuit, Olivert pedig ritkábban használják, ha nem foglalja el más karakter."
+    },
+    {
+      "title": "Zavaros hősök",
+      "level": 1,
+      "content": "Isaac – Tes'Lin High Voltage Module és Overdrive képességei segítenek megbirkózni a varázssebzést okozó hősökkel. \n\nLien – Az a képesség, amelyet Pacify bájban tart a hatalmas sebzés miatt."
+    },
+    {
+      "title": "Következtetés",
+      "level": 1,
+      "content": "Jó karakter a játék korai szakaszában. A hős gyorsan maximum csillagra fejleszthető, ami már egyfajta előny. Az átdolgozás után a Bíró megkapta a szükséges behatolást. védelem a mágia ellen, különösen a szimbólum és a második műtárgy. A második képességet most csak a frontvonal hőse kapja, így tank nélkül játszhatsz. De ez is mínusz, mert... Bíró alkalmas bűvésznek. csapatok, és a tank szerepét játszó hősök megverték a fizikait. kár (Kivétel: Alvanor, Marcus stb.). Egy Dante, Ju, Yasmin tankkal rendelkező csapatban a bírónak nincs szüksége műtárgyra és minden képességre, kivéve a pajzsot. De egy hős fejlesztése csak egy nem túl erős képesség kedvéért nem jövedelmező, ha az alternatívák hasznosabbak (Ugyanaz, mint Jorgen). A bíró harmadik képessége csak egy másodpercre ad sebezhetetlenséget, és nincs értelme aranyat költeni erre. Az Ascension képességek, amelyekhez nem olyan könnyű hozzájutni egy új játékos számára, elhanyagolható képességnövekedést biztosítanak bármely más Ascension buffhoz képest, és a 0,5 másodperces kábítást nem kell kommentálni. Hacsak a bírót nem használják Sebastian pajzsának eltávolítására, ebben az esetben ismét vannak hősök, akik több hasznot hoznak a csapatnak. Kisállat által ajánlott keksz. A hős kezdőknek megfelelő, de csak addig, amíg meg nem jelenik egy jobb alternatíva. Például használja a bírót, amíg meg nem szerzi a Helios-t. \n\nEredmény:\n\n- A bíró csak bűvészeknek alkalmas. parancsok; \n- Nagyon gyenge hős, mint támogatás és irányítás; \n- Nem lehet az egyetlen támadó hős a csapatban; \n- Gyorsan megtölti az ellenség Aurora és Isaac; \n- Gyenge bónuszok az Ascension-ból; \n- Jelenleg a legrosszabb támogató hős az összes elérhető közül; \n- Gyakran csak ideiglenes hősnek ajánlják, amíg erősebb karaktereket nem szerez. \n\nKezdő játékosoknak nem ajánlott. \n\nCsapatopciók bíróval – csapatok"
     }
   ]
 }

@@ -284,7 +284,34 @@ const HeroModal = ({ hero, onClose }) => {
   const renderGuideTab = () => {
     return (
       <div className="modal-tab-content">
-        <h3 className="modal-section-title">Útmutató és gyakorlati tapasztalatok</h3>
+        <h3 className="modal-section-title" style={{
+          fontSize: '28px',
+          fontFamily: 'var(--font-display-lg)',
+          color: 'var(--primary-fixed)',
+          textShadow: '1px 1px 2px rgba(0,0,0,0.8)',
+          lineHeight: '1.3',
+          paddingTop: '10px',
+          marginBottom: '20px',
+          borderBottom: '1px solid rgba(255, 225, 109, 0.2)',
+          paddingBottom: '8px',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '8px'
+        }}>
+          Útmutató és gyakorlati tapasztalatok
+          <span
+            className="material-symbols-outlined"
+            style={{
+              color: 'var(--primary-fixed)',
+              cursor: 'help',
+              fontSize: '28px',
+              opacity: 0.8
+            }}
+            title="Ezek az útmutatók és gyakorlati tapasztalatok a https://moon-hero.site/ weboldalról származnak."
+          >
+            info
+          </span>
+        </h3>
         {isGuideLoading ? (
           <p style={{ color: 'var(--on-surface-variant)' }}>Útmutató betöltése folyamatban...</p>
         ) : guideData?.error ? (
@@ -294,12 +321,13 @@ const HeroModal = ({ hero, onClose }) => {
             {guideData.sections.map((sec, idx) => (
               <div key={idx} className="guide-section" style={{ marginBottom: '24px' }}>
                 <h4 style={{
-                  color: 'var(--primary)',
+                  color: sec.level === 1 ? 'var(--secondary)' : 'var(--primary)',
                   fontFamily: 'var(--font-title-md)',
-                  fontSize: '18px',
-                  borderBottom: '1px solid var(--surface-variant)',
-                  paddingBottom: '8px',
-                  marginBottom: '12px'
+                  fontSize: sec.level === 1 ? '22px' : '17px',
+                  borderBottom: sec.level === 1 ? 'none' : '1px solid var(--surface-variant)',
+                  paddingBottom: sec.level === 1 ? '0' : '6px',
+                  marginBottom: '12px',
+                  marginTop: sec.level === 1 ? '24px' : '12px'
                 }}>{sec.title}</h4>
                 <div style={{
                   whiteSpace: 'pre-wrap',

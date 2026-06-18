@@ -4,23 +4,53 @@
   "sections": [
     {
       "title": "Általános áttekintés",
-      "content": "Kira egy kiváló lövő egyedi harci mechanikával. Óriási sebzése van a védtelen célpontokban, és képes egyszerre több ellenséget is eltalálni egy alaptámadással. Kiválóan bánik a varázsparancsokkal. Mostanában jó eredményeket mutatott fel egy csapatban az élőhalottakkal, mert... halála után újjászületik az élőhalottakká, és interakció jön létre Corvus, Morrigan és Kira között. \n\nFőszerep: Lövő Fő tulajdonság: Ügyességi vonal: Harc a középvonalban Sebzés típusa: Fizikai sebzés\n\nProfik\n\n✓ A játék minden szakaszában releváns;✓ Kiváló hős Asgard számára;✓ Könnyű megszerezni és frissíteni a maximális csillagra;✓ Sok hatalmas sebzés;✓ Az egyik legjobb lövöldözős a játékban;✓ Irányítókészséggel rendelkezik;✓ Csapatot építhetsz e hős köré, mert képes az ellenfél hatalmas sebzésre és sebzésre; az egész ellenséges csapat egyszerre;✓ Az automatikus támadások, nem pedig a képességek okozta sebzés, ami miatt nem függ annyira az energiafelhalmozástól;✓ A felemelkedés 2. fokozata után fel tud támadni, ami miatt nem függ annyira Astarothtól, mint korábban. \n\nHátrányok\n\n✗ Támogatási hősök kellenek;✗ Mindenképpen kell egy Winter skin, amit csak télen lehet beszerezni az akciók idején. események;✗ Elég gyorsan feltölti az ellenséges csapatot, így ha nem öl meg hősöket, akkor önmagában hal meg.✗ Sebezhető a kitérő csapatokkal szemben."
+      "level": 1,
+      "content": "Kira egy kiváló lövő egyedi harci mechanikával. Óriási sebzése van a védtelen célpontokban, és képes egyszerre több ellenséget is eltalálni egy alaptámadással. Kiválóan bánik a varázsparancsokkal. Mostanában jó eredményeket mutatott fel egy csapatban az élőhalottakkal, mert... halála után újjászületik az élőhalottakká, és interakció jön létre Corvus, Morrigan és Kira között.\nFőszerep: Lövő Fő tulajdonság: Ügyességi vonal: Harc a középvonalban Sebzés típusa: Fizikai sebzés\n\n**Előnyök**\n\n✓ A játék minden szakaszában releváns;\n✓ Kiváló hős Asgard számára;\n✓ Könnyű megszerezni és frissíteni a maximális csillagra;\n✓ Sok hatalmas sebzés;\n✓ Az egyik legjobb lövöldözős a játékban;\n✓ Irányítókészséggel rendelkezik;\n✓ Csapatot építhetsz e hős köré, mert képes az ellenfél hatalmas sebzésre és sebzésre; az egész ellenséges csapat egyszerre;\n✓ Az automatikus támadások, nem pedig a képességek okozta sebzés, ami miatt nem függ annyira az energiafelhalmozástól;\n✓ A felemelkedés 2. fokozata után fel tud támadni, ami miatt nem függ annyira Astarothtól, mint korábban.\n\n**Hátrányok**\n\n✗ Támogatási hősök kellenek;\n✗ Mindenképpen kell egy Winter skin, amit csak télen lehet beszerezni az akciók idején. események;\n✗ Elég gyorsan feltölti az ellenséges csapatot, így ha nem öl meg hősöket, akkor önmagában hal meg.\n✗ Sebezhető a kitérő csapatokkal szemben."
+    },
+    {
+      "title": "Készségek",
+      "level": 1,
+      "content": "Whirlwind of Blades – Kira elindít egy Blade Vortexet. A pengék egy távoli ellenséghez repülnek, és visszatérnek, sebzést okozva a teljes ösvényen, és 4 másodpercre elnémítják a visszatérő utat. Ascension Skill: Furious Bladesstorm A Bladestorm visszatérése után Kira 2 másodpercre az Enraged Soul hatását éri el.\n\nAngry Soul – Kira 5 másodperccel növeli a sebességét. Ascension Skill: Undying Enraged Soul Csatánként egyszer Kira feltámad halála után, és élőhalott lesz a csata végéig.\n\nDancing Blades – Passzív készség. Kira alapvető támadásai mindegyike képes ellenségről ellenségre csapni.\n\nPiercing Pain – Passzív készség. Ha Kira Basic Attackje teljesen áthatol az ellenség páncélján, további sebzést okoz nekik."
+    },
+    {
+      "title": "Hős tippek:",
+      "level": 1,
+      "content": ""
     },
     {
       "title": "A készségek szintre emelése",
-      "content": "Röviden:"
+      "level": 2,
+      "content": "Röviden:\n\nKészségek – Megjegyzések\nWhirlwind of Blades – Javasoljuk, hogy töltse le, ha van extra aranya. Ha letöltöd, akkor a többi készségekkel együtt, mert A csend effekt szintfüggő. Ellenkező esetben egyáltalán ne lépj fel a 130-as szintre, mert... Kira összes sebzése alaptámadásokból származik\nAngry Soul – Feltétlenül töltse le. %-kal növeli Kira támadási sebességét.\nDancing Blades – Feltétlenül töltse le. Lehetővé teszi, hogy egyszerre több hőst érjen el automatikus támadásokkal.\nPiercing Pain – Feltétlenül töltse le. További sebzést okoz minden ellenségnek, akinek a páncélján alapvető támadásokkal áthatol."
     },
     {
       "title": "Skinek",
-      "content": "Javasoljuk, hogy először frissítse a téli megjelenést a behatolás érdekében. páncél, ami jelentősen megnöveli a sebzést a negyedik képesség miatt. Az agility alapkinézetét kellene másodikként fejleszteni, mert... Kira a második a tank után. A bőr növeli Kira páncélját és fizikai támadását. Ha Kirának még elég túlélőképessége van, és nincs fizikai probléma. csapatok - először a fizikai megjelenést frissítik. támadás: Blooming Shape fizikai támadáshoz és Demonic Shape fizikai támadáshoz. Ebben az esetben ezek után a Basic megjelenés frissül, és mindenekelőtt. Ha sok fizikai személy van a szerveren. parancsok – az alap skin frissítésre kerül a fizikai skinek előtt. támadás, mert azonnal elérhető, ad a fizikai mellett. a támadások és a páncélok, valamint a felpumpálás költségei erőforrások szempontjából olcsóbbak, mint a fizikai skinek. támadás. A romantikus megjelenés nem prioritás, hiszen Kirának gyakrabban és korábban kellene használnia tudását. Utoljára a játék késői szakaszában frissítik fokozatosan, szükség szerint."
+      "level": 2,
+      "content": "Szükséges Skinek\nWinter Skin – áttörés. páncél\nVirágzó forma – fizikai támadás\nDémoni forma – fizikai támadás\nSzituációs megjelenés\nAlapforma - Agility\nRomantikus megjelenés - Egészség\n\nJavasoljuk, hogy először frissítse a téli megjelenést a behatolás érdekében. páncél, ami jelentősen megnöveli a sebzést a negyedik képesség miatt. Az agility alapkinézetét kellene másodikként fejleszteni, mert... Kira a második a tank után. A bőr növeli Kira páncélját és fizikai támadását. Ha Kirának még elég túlélőképessége van, és nincs fizikai probléma. csapatok - először a fizikai megjelenést frissítik. támadás: Blooming Shape fizikai támadáshoz és Demonic Shape fizikai támadáshoz. Ebben az esetben ezek után a Basic megjelenés frissül, és mindenekelőtt. Ha sok fizikai személy van a szerveren. parancsok – az alap skin frissítésre kerül a fizikai skinek előtt. támadás, mert azonnal elérhető, ad a fizikai mellett. a támadások és a páncélok, valamint a felpumpálás költségei erőforrások szempontjából olcsóbbak, mint a fizikai skinek. támadás. A romantikus megjelenés nem prioritás, hiszen Kirának gyakrabban és korábban kellene használnia tudását. Utoljára a játék késői szakaszában frissítik fokozatosan, szükség szerint."
     },
     {
       "title": "Szimbólum",
-      "content": "Szimbólumfrissítési prioritás:"
+      "level": 2,
+      "content": "Szimbólumfrissítési prioritás:\n\n1. Fizikai támadás – Ügyeljen arra, hogy először lendítsen a maximumig, mert az egész ellenséges csapatot ért sebzés (3. képesség) Kira alaptámadásától és behatolásától függ. Páncélt kapunk a megjelenésünkből. \n2. Áttörés. páncél – maximálisra növekszik a fizikai szimbólum után. támadj, hogy extra sebzést okozz a negyedik képességeddel. \n3. Ügyesség – Növeli a fizikai. Kira támadása és páncélja. Harmadik lengés. \n4. Egészség - 30-al nő. Növekszik, ha Kira nagyon gyorsan meghal. \n5. Páncél - Frissíts 30-ra, frissíts, ha Kira nagyon gyorsan meghal fizikai csapatok ellen."
     },
     {
       "title": "Műtárgyak",
-      "content": "A legrelevánsabb kisállat, amely kiváló bónuszokat ad a hősnek fizikai formában. támadások és ütések. páncél Vex\n\nCorvus - The Altar of Souls képesség lehetővé teszi, hogy megöld Kirát a támadások hatalmas sebzése miatt. \n\nLien – Az a képesség, amelyet Pacify bájban tart a hatalmas sebzés miatt. \n\nYasmin, K'arkh sérülései és Kira alacsony egészségi állapota miatt. \n\nPhobos – A bénulási készség egyetlen használat során megölheti Kirát\n\nCeleste és Morrigan nem engedik, hogy Kira feltámadjon. A kitéréses hősök problémásak lehetnek, mert... Kira nem üti el az ellenséges csapatot:\n\nKiváló shooter, amely ideális kezdő játékosok számára. A játék minden szakaszában releváns, és hatalmas mennyiségű hatalmas sebzést okoz. Még téli megjelenés nélkül is jó eredményeket mutat, ha megfelelően pumpálják. Ajánlott Irisszel fogadni, aki Kirával együtt nagyon gyorsan megöli az ellenséges tankot a Köd közelében. Jól párosul Astaroth-al a feltámadás miatt és Andvarival a K'arhopak ellen. Ezzel a hőssel lehetőség van Kritopak begyűjtésére, ha lehetséges megszerezni Jet és Sebastiant. Jó eredményeket mutat az élőhalottakkal, jó eredményeket mutat a tankoló Qing Mao-val. Csapat opciók Kira - Kiropak társaságában"
+      "level": 2,
+      "content": "Először 3 csillagosra töltjük le. Növeljük a sztárságot a második műtárgy után. \nA csillagbesorolást az első műterméktől a maximumig kapott három csillag elsőbbségi besorolása után emeljük. \nA sztárságot utoljára töltjük le. \nElőször is, a műtermékek szintjeit a tank javítja. Ha a tank tökéletesen megbirkózik a szerepével, átváltunk Kirára, és felpumpáljuk a műtárgyszinteket a maximumra. Visszatérünk a tankhoz, ha ismét túl gyorsan kezd esni, vagy ha Kirának minden műtárgya megvan 130-nál. Ha a tank Aurora, akkor az Aurora után növekszik a tárgyak szintje."
+    },
+    {
+      "title": "Háziállatok",
+      "level": 1,
+      "content": "A legrelevánsabb kisállat, amely kiváló bónuszokat ad a hősnek fizikai formában. támadások és ütések. páncél Vex"
+    },
+    {
+      "title": "Zavaros hősök",
+      "level": 1,
+      "content": "Corvus - The Altar of Souls képesség lehetővé teszi, hogy megöld Kirát a támadások hatalmas sebzése miatt. \n\nLien – Az a képesség, amelyet Pacify bájban tart a hatalmas sebzés miatt. \n\nYasmin, K'arkh sérülései és Kira alacsony egészségi állapota miatt. \n\nPhobos – A bénulási készség egyetlen használat során megölheti Kirát\n\nCeleste és Morrigan nem engedik, hogy Kira feltámadjon. A kitéréses hősök problémásak lehetnek, mert... Kira nem üti el az ellenséges csapatot:"
+    },
+    {
+      "title": "Következtetés",
+      "level": 1,
+      "content": "Kiváló shooter, amely ideális kezdő játékosok számára. A játék minden szakaszában releváns, és hatalmas mennyiségű hatalmas sebzést okoz. Még téli megjelenés nélkül is jó eredményeket mutat, ha megfelelően pumpálják. Ajánlott Irisszel fogadni, aki Kirával együtt nagyon gyorsan megöli az ellenséges tankot a Köd közelében. Jól párosul Astaroth-al a feltámadás miatt és Andvarival a K'arhopak ellen. Ezzel a hőssel lehetőség van Kritopak begyűjtésére, ha lehetséges megszerezni Jet és Sebastiant. Jól mutat az élőhalottak ellen, jó eredményeket mutat a tankoló Qing Mao-val. Csapat opciók Kira - Kiropak társaságában"
     }
   ]
 }

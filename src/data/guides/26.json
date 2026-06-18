@@ -4,23 +4,53 @@
   "sections": [
     {
       "title": "Általános áttekintés",
-      "content": "Lilith mechanikájában egyedülálló bűvész, aki egészségét arra használja, hogy megerősítse magát. A hős összes támadókészsége az ellenséges csapat közepére irányul, ahol általában a legvédtelenebb hősök állnak. Így Lilith képességei elkerülik a hátsó vonal hősének és az ellenséges tank védelmét. \n\nFőszerep: Mágus, Vezérlés Fő statisztika: Intelligencia Vonal: Harcol a hátsó vonalban Sebzés típusa: Mágikus sebzés, Igazi sebzés\n\nProfik\n\n✓ Könnyű megszerezni és frissíteni a maximális csillagra;✓ A játék bármely szakaszában releváns;✓ Sok behatolás. védelem a varázslat ellen;✓ Magas mágiajelzők. támadások;✓ Jó egészségi állapot és páncélparaméterek (2 megjelenés Páncélnál);✓ Irányítókészség van;✓ Behatolási műtárgy. védelem a varázslat ellen, ami népszerűvé teszi a varázscsomagban;✓ Sebzést okoz a központi hősöknek, ahol szinte mindig vannak hősök egy kis varázslattal. védekezés;✓ Kiváló teljesítményt mutat hosszú csatákban védekező csapatban. \n\nHátrányok\n\n✗ Ha nincs Martha a csomagban, Lilith ki van téve a Ju, Jorgen átigazolása stb. okozta sérüléseknek.✗ Nincs egészségbőr, amely köré a karakter mechanikája kötődik;✗ A csapatnak más sebző hősökre van szüksége, mert Lilith köré egyedül lehetetlen csapatot építeni;✗ Inkább támadó csapat, mint védekező csapat."
+      "level": 1,
+      "content": "Lilith mechanikájában egyedülálló bűvész, aki egészségét arra használja, hogy megerősítse magát. A hős összes támadókészsége az ellenséges csapat közepére irányul, ahol általában a legvédtelenebb hősök állnak. Így Lilith képességei elkerülik a hátsó vonal hősének és az ellenséges tank védelmét.\nFőszerep: Mágus, Vezérlés Fő statisztika: Intelligencia Vonal: Harcol a hátsó vonalban Sebzés típusa: Mágikus sebzés, Igazi sebzés\n\n**Előnyök**\n\n✓ Könnyű megszerezni és frissíteni a maximális csillagra;\n✓ A játék bármely szakaszában releváns;\n✓ Sok behatolás. védelem a varázslat ellen;\n✓ Magas mágiajelzők. támadások;\n✓ Jó egészségi állapot és páncélparaméterek (2 megjelenés Páncélnál);\n✓ Irányítókészség van;\n✓ Behatolási műtárgy. védelem a varázslat ellen, ami népszerűvé teszi a varázscsomagban;\n✓ Sebzést okoz a központi hősöknek, ahol szinte mindig vannak hősök egy kis varázslattal. védekezés;\n✓ Kiváló teljesítményt mutat hosszú csatákban védekező csapatban.\n\n**Hátrányok**\n\n✗ Ha nincs Martha a csomagban, Lilith ki van téve a Ju, Jorgen átigazolása stb. okozta sérüléseknek.\n✗ Nincs egészségbőr, amely köré a karakter mechanikája kötődik;\n✗ A csapatnak más sebző hősökre van szüksége, mert Lilith köré egyedül lehetetlen csapatot építeni;\n✗ Inkább támadó csapat, mint védekező csapat."
     },
     {
-      "title": "A készségek szintre emelése",
-      "content": "Röviden:"
+      "title": "Készségek",
+      "level": 1,
+      "content": "Seal of the Underworld – Lilith egy Pecsétet helyez a központi ellenségre, és felrobbantja, megsértve a célpontot és a közeli ellenségeket. Lilith minden hősütésnél 3%-kal növeli maximális és jelenlegi életerejét. Ascension Skill: Stunning Seal of the Inferno Az az ellenség, aki a legkevesebb sebzést szenvedi el a Seal of the Inferno-tól, további 5 másodpercig elkábodik.\n\nHell Rift – Lilith létrehoz egy pokolhasadékot a központi ellenség alatt, és mágikus sebzést okoz a célpontnak és a közeli ellenségeknek.\n\nFire Breath – Lilith kihányja a Fel Flame labdáját, amely a központi ellenség felé repül, és felrobban, csökkentve az ellenségek Magic Defense erejét a robbanás területén 6 másodpercre.\n\nObsession – Ha Lilithnek elegendő egészsége van, akkor az egyes képességek használata előtt feláldozza maximális életerejének 5%-át, és 5 másodpercre megnöveli a Magic Attack-jét a feláldozott életerővel. Lilith minimális életereje a birtoklás használatához: 90-25% a szintezéstől függően. Ascension Skill: Mass Possession A birtoklási triggerek pillanatában a Fire Breath által legyengült ellenfelek a maximális életerő 1%-ának megfelelő tiszta sebzést is kapnak, ami a kapott sebzés mértékével növeli Lilith Magic Attack-jét."
     },
     {
-      "title": "Skinek",
-      "content": "Mindenekelőtt javasolt a Predator Skin frissítése a Magic Attack számára. E megjelenés után az Alap megjelenés Intelligenciává növekszik. Ha nem lehetséges azonnal Magic Attack Skin beszerzése, először töltse le a Basic Skint. A harmadik megjelenés a többi játékos fizikai parancsainak számától függ. Ha az arénák/Grand Arenas fizikai TOP-jában. csapatok alapvetően – frissítsd az egyik skint: Star Skin for Armor vagy Winter Skin for Armor. Utána pedig egy Demonic megjelenés következik a Breaking Through-ban. védelem a varázslat ellen. Ezt követően az Armor fennmaradó megjelenése frissítésre kerül. Ha minden rendben van Lilith túlélésével, először a Demonic megjelenését frissítik, majd a páncél megjelenését."
-    },
-    {
-      "title": "Szimbólum",
+      "title": "Hős tippek:",
+      "level": 1,
       "content": ""
     },
     {
+      "title": "A készségek szintre emelése",
+      "level": 2,
+      "content": "Röviden:\n\nKészségek – Megjegyzések\nSeal of the Underworld – Feltétlenül töltse le. Lilith fő képessége, amely sebzést okoz, és növeli a hős maximális és aktuális életerejét, az első helyen áll.\nHell Rift – Javasoljuk, hogy töltse le, ha extra aranya van, a skill a negyedik helyen van prioritásban, és csak a csomag közepén és az első sorokban pótolja a sebzést.\nFire Breath – Javasoljuk, hogy töltse le, ha extra aranya van, a skill a harmadik helyen van prioritásban, és csak a csomag közepén és az első sorokban pótolja a sebzést.\nObsession – Feltétlenül töltse le, a karaktermechanika második fő képességét."
+    },
+    {
+      "title": "Skinek",
+      "level": 2,
+      "content": "Szükséges Skinek\nPredator Form - Magic Attack\nAlapvető megjelenés - Intelligencia\nCsillagforma – Páncél\nDémoni forma – Áttörés. védelem a varázslat ellen\nKisebb megjelenések\nWinter Skin - Armor\n\nMindenekelőtt javasolt a Predator Skin frissítése a Magic Attack számára. E megjelenés után az Alap megjelenés Intelligenciává növekszik. Ha nem lehetséges azonnal Magic Attack Skin beszerzése, először töltse le a Basic Skint. A harmadik megjelenés a többi játékos fizikai parancsainak számától függ. Ha az arénák/Grand Arenas fizikai TOP-jában. csapatok alapvetően – frissítsd az egyik skint: Star Skin for Armor vagy Winter Skin for Armor. Utána pedig egy Demonic megjelenés következik a Breaking Through-ban. védelem a varázslat ellen. Ezt követően az Armor fennmaradó megjelenése frissítésre kerül. Ha minden rendben van Lilith túlélésével, először a Demonic megjelenését frissítik, majd a páncél megjelenését."
+    },
+    {
+      "title": "Szimbólum",
+      "level": 2,
+      "content": "1. Egészség – A fő szimbólum, amelyet először le kell töltenie. Egy adott karakter mechanikája az egészség köré épül fel, így az egészség szimbóluma az első a prioritásban. \n2. Mágikus támadás - Növeli a képességekből származó sebzést, töltse le a másodikat. \n3. Intelligencia – Növeli a képességsebzést és a mágikus védelmet. Harmadik lengés, mert kevesebb magot ad. támad, mint az előző karakter, de növeli a túlélést a mágiából. csomagokat. \n4. Áttörés. védelem a varázslat ellen - Negyedik kileng, mert Lilith jelentős növekedést kap a műtárgya miatt. \n5. Varázslat elleni védelem – Ha a csomagban egy Arctalan is van, akkor ez a szimbólum akkor frissül, ha már az egész csapatot felminősítették."
+    },
+    {
       "title": "Műtárgyak",
-      "content": "Oliver - ha a házi kedvenc nem tankon van, az nagyban növeli a hős túlélőképességét, különösen hasznos egy védekező csapatban. A Merlin jó kisállat a sebzés növelésére, de leggyakrabban más, relevánsabb hősökön található. A keksz kiváló kisállat Martha elleni küzdelemhez. Horus – Tökéletesen segít a hősnek túlélni fizikai csapatokkal szemben. \n\nSebezhető a hősök ellen irányítással. Lien – Seduction Skill és Pacify Skill Lilith hatalmas sebzése miatt. Arachne - Hyper Jump Skill a vezérlő hatás miatt. \n\nIsaac – Tes'Lin High Voltage Module és Overdrive képességei segítenek megbirkózni a varázssebzést okozó hősökkel. \n\nRufus - Anti-Mag Tank. Ju és Kayla - Megtámadja az utolsó vonal hősét, gyorsabban meg tudja ölni Lilithet, mint ahogy életet halmoz. — Problémát jelent majd Lilithnek az energiafelvétel tilalma és a sebzés átirányítása. \n\nNem rossz hős érdekes mechanikával. Jól teljesít a védekező csapatokban, de támadásban gyengébb a klasszikus varázscsapatoknál. Műtermék jelenléte a behatoláshoz. védelem a mágiától és a mágiától való erős függés. A támadások csak a mágusok hősévé teszik. csomagokat. Lilith helyzete az utolsó sorban Helios és Martha között kiszolgáltatott helyzetbe hozza Jorgen, Ju és Kayla előtt. Ezt a helyzetet vagy Martha korrigálja, aki nem igazán illik Lilithhez, vagy Dorian, aki nagyon jó túlélőképességet biztosít ennek a hősnek, de nem javítja ki a sebezhetőséget Ju-ra. Hősök, akik jól kommunikálnak Lilithtel:\n\nEnnek eredményeként egy kiváló bűvész, aki kiegészíti a bűvészt. parancsok a szükséges paraméterekkel, de rosszabbak a klasszikus bűvészeknél. csapatok (Deer, Orion+Helios). Kiválóan alkalmas védekezésre a Grand Arena második csapatában. Tökéletesen passzol Dorianhoz."
+      "level": 2,
+      "content": "Legfeljebb három csillagra lendít elsőbbségben. Ezt követően a sztárság egyenletesen növekszik a második műtermékkel. Ha más karakterek is vannak a csapatban az áttörési műalkotással. varázslat elleni védelem, a csillagok ereje a második műtárgy után megnő. \nMiután az első műtárgy elérte a 3 csillagot, a csillagbesorolás egyenletesen változik vele. Ha van egy másik karakter a csapatban, akinek áttörési tárgya van. védelem a varázslat ellen – a sztárság Priorityben ingadozik. \nA sztárság ingadozása utolsó. \nA tárgyak szintje a tank után növekszik, a többi támadó hőssel egyenletesen. Egyes esetekben azt is frissítik utána elsőbbséggel, a támogató hősök előtt."
+    },
+    {
+      "title": "Háziállatok",
+      "level": 1,
+      "content": "Oliver - ha a házi kedvenc nem tankon van, az nagyban növeli a hős túlélőképességét, különösen hasznos egy védekező csapatban. A Merlin jó kisállat a sebzés növelésére, de leggyakrabban más, relevánsabb hősökön található. A keksz kiváló kisállat Martha elleni küzdelemhez. Horus – Tökéletesen segít a hősnek túlélni fizikai csapatokkal szemben."
+    },
+    {
+      "title": "Zavaros hősök",
+      "level": 1,
+      "content": "Sebezhető a hősök ellen irányítással. Lien – Seduction Skill és Pacify Skill Lilith hatalmas sebzése miatt. Arachne - Hyper Jump Skill a vezérlő hatás miatt. \n\nIsaac – Tes'Lin High Voltage Module és Overdrive képességei segítenek megbirkózni a varázssebzést okozó hősökkel. \n\nRufus - Anti-Mag Tank. Ju és Kayla - Megtámadja az utolsó vonal hősét, gyorsabban meg tudja ölni Lilithet, mint ahogy életet halmoz. — Problémát jelent majd Lilithnek az energiafelvétel tilalma és a sebzés átirányítása."
+    },
+    {
+      "title": "Következtetés",
+      "level": 1,
+      "content": "Nem rossz hős érdekes mechanikával. Jól teljesít a védekező csapatokban, de támadásban gyengébb a klasszikus varázscsapatoknál. Műtermék jelenléte a behatoláshoz. védelem a mágiától és a mágiától való erős függés. A támadások csak a mágusok hősévé teszik. csomagokat. Lilith helyzete az utolsó sorban Helios és Martha között kiszolgáltatott helyzetbe hozza őt Jorgen, Ju és Kayla előtt. Ezt a helyzetet vagy Martha korrigálja, aki nem igazán illik Lilithhez, vagy Dorian, aki nagyon jó túlélőképességet biztosít ennek a hősnek, de nem javítja ki a sebezhetőséget Ju-ra. Hősök, akik jól kommunikálnak Lilithtel:\n\nEnnek eredményeként egy kiváló bűvész, aki kiegészíti a bűvészt. parancsok a szükséges paraméterekkel, de rosszabbak a klasszikus bűvészeknél. csapatok (Deer, Orion+Helios). Kiválóan alkalmas védekezésre a Grand Arena második csapatában. Tökéletesen passzol Dorianhoz."
     }
   ]
 }

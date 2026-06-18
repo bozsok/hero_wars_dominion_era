@@ -4,23 +4,53 @@
   "sections": [
     {
       "title": "Általános áttekintés",
-      "content": "Nebula ideális támogató karakter. Az ilyen karakterek a csapatok 90%-ában kötelezőek. Az ő lendületével a támadó hősöd könnyedén megölheti az ellenséges csapatot. Nagyon gyakran használják egy csapatban egy támadó hőssel és Sebastiannal. \n\nFőszerep: Támogatás, Gyógyító Fő tulajdonság: Agility vonal: Harc a középső sávban Sérülés típusa: Fizikai sebzés\n\nProfik\n\n✓ Hatalmasan megnövekedett a Nebula mellett álló karaktered sebzése;✓ Eltávolítja a negatív hatásokat;✓ A játék bármely szakaszában releváns;✓ Nem a legnehezebb módja annak megszerzésének és a maximális csillagra való frissítésnek;✓ Energiát éget el az ellenséges hősök számára;✓ Ideális a csapatok 90%-ában, miközben az A hős a legnépszerűbb támogató. \n\nHátrányok\n\n✗ A Nebula helyes elhelyezése nagyon fontos, különben a rossz karakterek kapják a lendületet;✗ Sebezhető Amira, mert nem támadhat;✗ Alacsony túlélési képesség."
+      "level": 1,
+      "content": "Nebula ideális támogató karakter. Az ilyen karakterek a csapatok 90%-ában kötelezőek. Az ő lendületével a támadó hősöd könnyedén megölheti az ellenséges csapatot. Nagyon gyakran használják egy csapatban egy támadó hőssel és Sebastiannal.\nFőszerep: Támogatás, Gyógyító Fő tulajdonság: Agility vonal: Harc a középső sávban Sérülés típusa: Fizikai sebzés\n\n**Előnyök**\n\n✓ Hatalmasan megnövekedett a Nebula mellett álló karaktered sebzése;\n✓ Eltávolítja a negatív hatásokat;\n✓ A játék bármely szakaszában releváns;\n✓ Nem a legnehezebb módja annak megszerzésének és a maximális csillagra való frissítésnek;\n✓ Energiát éget el az ellenséges hősök számára;\n✓ Ideális a csapatok 90%-ában, miközben az A hős a legnépszerűbb támogató.\n\n**Hátrányok**\n\n✗ A Nebula helyes elhelyezése nagyon fontos, különben a rossz karakterek kapják a lendületet;\n✗ Sebezhető Amira, mert nem támadhat;\n✗ Alacsony túlélési képesség."
     },
     {
-      "title": "A készségek szintre emelése",
-      "content": "Röviden:"
+      "title": "Készségek",
+      "level": 1,
+      "content": "Astral Projection – A köd egy lassan mozgó lövedéket lő ki, amely aktiválva sebzést okoz, és eloszlatja az ellenség energiáját az érintett területen. A teljes sebzés és az elszórt energia egyenlő arányban oszlik meg az ellenfelek között. Felemelkedési készség: Az egyensúly asztrális kivetítése Az asztrális kivetítés kiváltja 2 szövetségesnek az egyensúly hatását, 5 másodpercre növelve a fizikai támadást és a mágikus támadást.\n\nSerenity – A Nebula helyreállítja két szomszédos szövetséges egészségét és eltávolítja róluk a negatív hatásokat Felemelkedési készség: Abszolút nyugalom Ha egy szövetséges negatív hatást kap a Serenity használatától számított 4 másodpercen belül, a Nebula megszünteti ezt a negatív hatást, és helyreállítja a hős egészségét.\n\nDisharmony – Sebzést okoz a legalacsonyabb életerővel rendelkező ellenségnek\n\nEquilibrium – A Nebula Basic Attacks most támogatási módba kapcsol. Minden alkalommal, amikor a köd kiold, 5 másodpercig. növeli az egyik szomszédos szövetséges fizikai és mágikus támadását."
     },
     {
-      "title": "Skinek",
-      "content": "A Romantic Skin fizikai támadásokhoz és a Winter Skin fizikai támadásokhoz kerül először frissítésre. Nebula esetében az erőnövekedés közvetlenül függ a fizikai támadásától, ezért mindenekelőtt a fizikai megjelenést kell javítania. támadás. A következőben az agility alap megjelenését frissítjük, mivel a fizikai támadás növekedése alacsonyabb, mint az előző skineknél. Ha nem tudja megszerezni a romantikus és téli megjelenést, először töltse le a Basicet. Az utolsó két kinézetnek egy funkciója van - a fizikai sérülések elleni védelem. A Spring Skin a kikerüléshez prioritás, mert bónusz energiát ad még akkor is, ha a Köd kikerüli. A Köd patrónusa gyakran Cain, aki a tavaszi megjelenéssel együtt jelentős túlélést biztosít a Ködnek. Az utolsó frissítés a Heavenly Appearance for Armor, amikor a fő csomagod összes többi megjelenése már frissítésre került."
-    },
-    {
-      "title": "Szimbólum",
+      "title": "Hős tippek:",
+      "level": 1,
       "content": ""
     },
     {
+      "title": "A készségek szintre emelése",
+      "level": 2,
+      "content": "Röviden:\n\nKészségek – Megjegyzések\nAstral Projection – Javasolt a szivattyúzás, ha fölösleges arany van. A készség energiát éget el az ellenséges hősöktől.\nSerenity – Feltétlenül pumpáljon, mert... a negatív hatások eltávolítása készségszinthez van kötve.\nDisharmony – Ez az utolsó, amelyet frissítettek e képesség alacsony hatékonysága miatt. Kisebb sebzést és kilengést okoz, ha extra aranyad van\nEquilibrium – Feltétlenül pumpáljon. Lehetővé teszi a Ködnek, hogy két szomszédos hőst csiszoljon."
+    },
+    {
+      "title": "Skinek",
+      "level": 2,
+      "content": "Szükséges Skinek\nRomantikus megjelenés – fizikai támadás\nTéli forma – fizikai támadás\nAlapforma - Agility\nVálasztható skinek\nTavaszi forma – Dodge\nÉgi forma - Páncél\n\nA Romantic Skin fizikai támadásokhoz és a Winter Skin fizikai támadásokhoz kerül először frissítésre. Nebula esetében az erőnövekedés közvetlenül függ a fizikai támadásától, ezért mindenekelőtt a fizikai megjelenést kell javítania. támadás. A következőben az agility alap megjelenését frissítjük, mivel a fizikai támadás növekedése alacsonyabb, mint az előző skineknél. Ha nem tudja megszerezni a romantikus és téli megjelenést, először töltse le a Basicet. Az utolsó két kinézetnek egy funkciója van - a fizikai sérülések elleni védelem. A Spring Skin a kikerüléshez prioritás, mert bónusz energiát ad még akkor is, ha a Köd kikerüli. A Köd patrónusa gyakran Cain, aki a tavaszi megjelenéssel együtt jelentős túlélést biztosít a Ködnek. Az utolsó frissítés a Heavenly Appearance for Armor, amikor a fő csomagod összes többi megjelenése már frissítésre került."
+    },
+    {
+      "title": "Szimbólum",
+      "level": 2,
+      "content": "1. Fizikai támadás – Ködök kötelező szimbóluma, mert növeli a szomszédos hősök sebzését. Lengés először a maximumig. \n2. Ügyesség – A szimbólum növeli a fizikai erőt. Köd támadása, így maximum másodikra ​​lendül. \n3. Egészség – Növeli a köd túlélőképességét. Minél tovább él, annál hosszabb ideig fognak a közeli hősök sebezni. Maximum harmadikra ​​lendül. \n4. Páncél – 30-al növekszik. Növekszik a főszereplők fő szimbólumainak felpumpálása után, vagy ha a Köd túl gyorsan meghal a fizikai sérülés következtében. parancsokat\n5. Védelem a mágiával szemben - 30-al nő. Növeli a főszereplők fő szimbólumainak felpumpálását, vagy ha a köd túl gyorsan meghal a varázslat miatt. parancsokat"
+    },
+    {
       "title": "Műtárgyak",
-      "content": "A Köd egyetlen patrónusa Káin. Azokban a csapatokban, ahol Cain egy másik hős patrónusa (Dante, Aurora stb.), Nebula patrónus nélkül marad. \n\nKira a támadásai által okozott hatalmas károk miatt. Dante az első képességéből származó hatalmas sebzés miatt. Yasmine és K'arch a sérüléseik miatt. Arachne - 2 irányító effektus (az egyik gyakran eltalálja az ellenséges csapat közepét, elkápráztatja a Ködöt, és nem engedi átadni a labdát egy másik karakternek). \n\nAmira - A készség Egy óvatlan kívánság megölheti Ködöt, mert... ő maga nagyon kevés kárt okoz, és nem tudja leütni az aranyat. \n\nKiváló karakter, amely jelentősen megerősítheti hőseit, és hatalmas mennyiségű sebzést tesz lehetővé. A sebzésen kívül a Nebula a gyógyítót is megerősítheti, így jobban meggyógyíthatja csapatát, ha a Köd után áll. Mindig legyen mellette 1-2 karakter, ami kárt okoz. \n\nA Nebula jelenleg a legnépszerűbb támadóhősök (K'arkh, Dante, Isail, Ju stb.) kötelező támogatása. Jupak Asgardban is kiválónak bizonyult. A fizikai csomag mellett kiváló lökést ad Celeste-nek a tankoló vadászgépek/lövők vagy az Orion ellen, hogy hatalmas sebzést okozzon az ellenséges csapatnak. \n\nJavasoljuk, hogy egy újoncot, mint karaktert a főcsapatba frissíts."
+      "level": 2,
+      "content": "3 csillagig hintáz, utána 1 és 3 egyenletesen lendít. \nLengések 1 és 3 után utolsók\nAz első műtermékkel egyidejűleg frissítik, miután elérte a három csillagot. \nAz Artefact szintje a Tank és Attack szint után emelkedik, de elsőbbséget élvez a többi támogató hőssel és gyógyítóval szemben. Azok. ha Sebastian a csapatban van, akkor a Nebula lesz az elsőbbség."
+    },
+    {
+      "title": "Háziállatok",
+      "level": 1,
+      "content": "A Köd egyetlen patrónusa Káin. Azokban a csapatokban, ahol Cain egy másik hős patrónusa (Dante, Aurora stb.), Nebula patrónus nélkül marad."
+    },
+    {
+      "title": "Zavaros hősök",
+      "level": 1,
+      "content": "Kira a támadásai által okozott hatalmas károk miatt. Dante az első képességéből származó hatalmas sebzés miatt. Yasmine és K'arch a sérüléseik miatt. Arachne - 2 irányító effektus (az egyik gyakran eltalálja az ellenséges csapat közepét, elképesztve a Ködöt, és nem engedi át a labdát egy másik karakternek). \n\nAmira - A készség Egy óvatlan kívánság megölheti Ködöt, mert... ő maga nagyon kevés kárt okoz, és nem tudja leütni az aranyat."
+    },
+    {
+      "title": "Következtetés",
+      "level": 1,
+      "content": "Kiváló karakter, amely jelentősen megerősítheti hőseit, és hatalmas mennyiségű sebzést tesz lehetővé. A sebzésen kívül a Nebula a gyógyítót is megerősítheti, így jobban meggyógyíthatja csapatát, ha a Köd után áll. Mindig legyen mellette 1-2 karakter, ami kárt okoz. \n\nA Nebula jelenleg a legnépszerűbb támadóhősök (K'arkh, Dante, Isail, Ju stb.) kötelező támogatása. Jupak Asgardban is kiválónak bizonyult. A fizikai csomag mellett kiváló lökést ad Celeste-nek a tankoló vadászgépek/lövők vagy az Orion ellen, hogy hatalmas sebzést okozzon az ellenséges csapatnak. \n\nJavasoljuk, hogy egy újoncot, mint karaktert a főcsapatba frissíts."
     }
   ]
 }

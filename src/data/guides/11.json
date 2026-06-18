@@ -4,23 +4,53 @@
   "sections": [
     {
       "title": "Általános áttekintés",
-      "content": "A Chubba jó irányító tank. Számos előnye van, de ennek a tanknak a nagyon szituációs használata nagyon körültekintővé teszi a csapat kiválasztását. Chubba az első képességével képes lenyelni az ellenséges tankot, és lehetővé teszi csapata számára, hogy gyenge védekezéssel öljön meg támadó hősöket. Jó túlélőképesség, kiváló páncélzat, jól teljesít a Grand Arénában és az SM-ben. \n\nFőszerep: Tank, Vezérlés Fő attribútum: Erővonal: Harc a frontvonalon Sebzés típusa: Fizikai sebzés, Pure Damage\n\nProfik\n\n✓ Az első képesség akár 6 másodpercre is képes kivonni egy ellenséges tankot a játékból, ezáltal az egész csapatát támadásnak teszi ki;✓ Nagyon jó páncél és védelem a mágikus jelzőkkel szemben;✓ Jó állapotjelzők;✓ A játék minden szakaszában releváns;✓ Könnyen megszerezhető és frissíthető a maximális irányítási képességre;✓ Egészségügyi képesség; Első képessége miatt jól megbirkózik Ju, Dante, Ismail stb. tankolásával;✓ Kiváló teljesítményt mutat a védekező csapatokban.\n\nHátrányok\n\n✗ Más népszerű tankokhoz képest nem növeli a csapat túlélőképességét (például Rufus, Aurora, Astaroth).✗ Téli páncél megjelenése nélkül védekezési paraméterekben sokkal gyengébb lesz a többi tanknál, mert három fizikai megjelenés tulajdonosa. támadások, amelyek nem elsődlegesek a tank számára.✗ Első képessége néha megzavarja az ellenség leküzdését."
+      "level": 1,
+      "content": "A Chubba jó irányító tank. Számos előnye van, de ennek a tanknak a nagyon szituációs használata nagyon körültekintővé teszi a csapat kiválasztását. Chubba az első képességével képes lenyelni az ellenséges tankot, és lehetővé teszi csapata számára, hogy gyenge védekezéssel öljön meg támadó hősöket. Jó túlélőképesség, kiváló páncélzat, jól teljesít a Grand Arénában és az SM-ben.\nFőszerep: Tank, Vezérlés Fő attribútum: Erővonal: Harc a frontvonalon Sebzés típusa: Fizikai sebzés, Pure Damage\n\n**Előnyök**\n\n✓ Az első képesség akár 6 másodpercre is képes kivonni egy ellenséges tankot a játékból, ezáltal az egész csapatát támadásnak teszi ki;\n✓ Nagyon jó páncél és védelem a mágikus jelzőkkel szemben;\n✓ Jó állapotjelzők;\n✓ A játék minden szakaszában releváns;\n✓ Könnyen megszerezhető és frissíthető a maximális irányítási képességre;\n✓ Egészségügyi képesség; Első képessége miatt jól megbirkózik Ju, Dante, Ismail stb. tankolásával;\n✓ Kiváló teljesítményt mutat a védekező csapatokban.\n\n**Hátrányok**\n\n✗ Más népszerű tankokhoz képest nem növeli a csapat túlélőképességét (például Rufus, Aurora, Astaroth).\n✗ Téli páncél megjelenése nélkül védekezési paraméterekben sokkal gyengébb lesz a többi tanknál, mert három fizikai megjelenés tulajdonosa. támadások, amelyek nem elsődlegesek a tank számára.\n✗ Első képessége néha megzavarja az ellenség leküzdését."
+    },
+    {
+      "title": "Készségek",
+      "level": 1,
+      "content": "Wild hunger – 6 másodpercig lenyeli az aktuális célt. Amíg a célpontot lenyeli, fokozatosan sebződik.\n\nBelching – Eltalálja a közeli ellenségeket, sebzést okoz és 4 másodpercig lelassítja őket.\n\nFat layer – Növeli a páncélt a hiányzó egészség arányában.\n\nBottomless belly – Most az elnyelt ellenség megemésztésével Chabba helyreállítja saját egészségét."
+    },
+    {
+      "title": "Hős tippek:",
+      "level": 1,
+      "content": ""
     },
     {
       "title": "A készségek szintre emelése",
-      "content": "Röviden:"
+      "level": 2,
+      "content": "Röviden:\n\nKészségek – Megjegyzések\nWild hunger – Letöltés javasolt. A képesség nem kötődik a szinthez, de a sebzés tisztán történik, és az életerő mennyisége, amelyet Chubba a negyedik képességével visszaállít, a sebzéstől függ.\nBelching – A készség nem fejlődik. Gyenge lassítás, gyenge sebzés, ami inkább feltölti az ellenfelet, mintsem hasznot hoz a csapatnak.\nFat layer – Feltétlenül töltse le. A készség növeli a hős túlélőképességét a fizikai támadásokkal szemben. csomag.\nBottomless belly – Biztosan letöltjük. Ez a képesség lehetővé teszi, hogy Chubba tovább éljen azáltal, hogy helyreállítja egészségét, amikor lenyeli a célpontot. A gyógyulás Chubba fizikai támadásától függ, ezért Chubba a legjobb ebben a csomagban. A fizikai támadási tárgyak jelentősen növelik Chubba gyógyulását."
     },
     {
       "title": "Skinek",
-      "content": "A Chubba számára a legfontosabb és legszükségesebb bőr a Winter Armor Skin. E skin nélkül Chubba már nem tud normálisan tankolni a játék közepétől. Ezután frissítenie kell az alapvető megjelenést az erősség érdekében. A megjelenés fokozza a fizikai. hős támadása, egészsége és csökkenti a kritikus találatok esélyét. találat. A fennmaradó három megjelenés a következő: - Démonikus megjelenés fizikai támadáshoz - Álarcos megjelenés fizikai támadáshoz - Keleti megjelenés fizikai támadáshoz Nincs értelme ezeket kiegyenlíteni. Kevés hasznuk van tanknak. Ezeket a bőröket úgy tervezték, hogy legalább némileg fokozzák Chubba egészségi állapotának helyreállítását, amikor lenyeli a célpontot. Ez az elhasznált erőkövek minimális növekedése. Frissítik őket, ha más szükséges hősök már javították megjelenésüket, és senki másnak nincs szüksége az erőkövekre."
+      "level": 2,
+      "content": "Szükséges Skinek\nWinter Skin - Armor\nAlapvető megjelenés - Erő\nVálasztható skinek\nDémoni forma – fizikai támadás\nÁlarcos forma – fizikai támadás\nKeleti forma – fizikai támadás\n\nA Chubba számára a legfontosabb és legszükségesebb bőr a Winter Armor Skin. E skin nélkül Chubba már nem tud normálisan tankolni a játék közepétől. Ezután frissítenie kell az alapvető megjelenést az erősség érdekében. A megjelenés fokozza a fizikai. hős támadása, egészsége és csökkenti a kritikus találatok esélyét. találat. A fennmaradó három megjelenés a következő: - Démonikus megjelenés fizikai támadáshoz - Álarcos megjelenés fizikai támadáshoz - Keleti megjelenés fizikai támadáshoz Nincs értelme ezeket kiegyenlíteni. Kevés hasznuk van tanknak. Ezeket a bőröket úgy tervezték, hogy legalább némileg növeljék Chubba egészségi állapotának helyreállítását, amikor lenyeli a célpontot. Ez az elhasznált erőkövek minimális növekedése. Frissítik őket, ha más szükséges hősök már javították megjelenésüket, és senki másnak nincs szüksége az erőkövekre."
     },
     {
       "title": "Szimbólum",
-      "content": "Karakterfejlesztési prioritás:"
+      "level": 2,
+      "content": "Karakterfejlesztési prioritás:\n\n1. Erő - A szimbólum növeli az egészséget, a fizikai. támadás, csökkenti a kritika fogadásának esélyét. fúj. Lengés először a maximumig. \n2. Páncél – Maximum másodpercig ér. Növeli a hős túlélőképességét a fizikai támadásokkal szemben. parancsokat\n3. Egészség – a harmadiktól a maximumig kileng. Növeli a hős túlélőképességét. \n4. Védelem a mágiával szemben - A szimbólum Celeste ellen vonatkozik, a negyedik helyen mozog a maximumig. \n5. Fizikai támadás – Ez a fizikai támadás szimbóluma, akárcsak Chubba 3 megjelenése, akkor frissül, ha a teljes főcsomagot már frissítették, és a legutolsó szakaszban frissítik."
     },
     {
       "title": "Műtárgyak",
-      "content": "Chubba számára a legfontosabb háziállat Oliver. \n\nMágus ellen rosszabbul mutat. parancsokat\n\nCeleste - Limbo Skill\n\nKönnyű alakjában Celeste felszabadít egy tisztító gömböt, amely eltávolítja/megakadályozza Chubba képességének – a Wild Hunger – használatát. Az Iris - Soul Exposure képesség tökéletes egy ellenséges tank megölésére. \n\nNem rossz tank sok csapat ellen. Kiváló olyan csapatok ellen, ahol a tank szerepét egy harcos játssza, vagy olyan csapatok ellen, ahol csak egy karakter van, aki képes tankolni. Téli forma nélkül a fizikai támadások sok sérülést kezdenek kapni. lyukasztóval csomagol. páncél. Jól megy Peppy-vel, de ismét, ha az ellenségnek csak egy tankoló karaktere van. Jól megbirkózik a Packekkel, ahol Dante vagy Ju tankként működik. A Chubba köré több csomag is építhető:\n\nJelenleg nem ő a legnépszerűbb hős, mert... az erős tankok elleni küzdelemhez ott van az Iris, a Celeste + Iris under Nebula pedig jól megbirkózik a tankoló vadászgépekkel/lövőkkel. De nem ő a legrosszabb, és ha nem a főcsapatban használod, akkor nagyon jó hős a Grand Arénában."
+      "level": 2,
+      "content": "Először letöltjük a 3 csillagért. Ezt követően mindhárom műtárgy csillagbesorolása egyenletesen ingadozik. \nMiután az első műtermékhez három csillagot pumpált, a csillagok száma egyenletesen növekszik mindhárom műtermék esetében. \nMiután az első műtermékhez három csillagot pumpált, a csillagok száma egyenletesen növekszik mindhárom műtermék esetében. \nA műtermékek szintje a klasszikus séma szerint növekszik: Először is, a tartály prioritást élvez, és az összes műtárgy szintje növekszik a tartály számára. Amint a tank jól tudja ellátni a szerepét (körülbelül a tárgyak lila szintjén), elsőbbséget élvez a tárgyak pumpálása a támadó hős felé. Chubba műtárgyainak szintje megemelkedik, ha a támadó hős már eléri a 130-as maximális szintet, vagy Chubba ismét túl gyorsan kezd meghalni."
+    },
+    {
+      "title": "Háziállatok",
+      "level": 1,
+      "content": "Chubba számára a legfontosabb háziállat Oliver."
+    },
+    {
+      "title": "Zavaros hősök",
+      "level": 1,
+      "content": "Mágus ellen rosszabbul mutat. parancsokat\n\nCeleste - Limbo Skill\n\nKönnyű formájában Celeste egy tisztító gömböt szabadít fel, amely eltávolítja/megakadályozza Chubba képességének – a Wild Hunger – használatát. Az Iris - Soul Exposure képesség tökéletes egy ellenséges tank megölésére."
+    },
+    {
+      "title": "Következtetés",
+      "level": 1,
+      "content": "Nem rossz tank sok csapat ellen. Kiváló olyan csapatok ellen, ahol a tank szerepét egy harcos játssza, vagy olyan csapatok ellen, ahol csak egy karakter van, aki képes tankolni. Téli forma nélkül a fizikai támadások sok sérülést kezdenek kapni. lyukasztóval csomagol. páncél. Jól megy Peppy-vel, de ismét, ha az ellenségnek csak egy tankoló karaktere van. Jól megbirkózik a Packekkel, ahol Dante vagy Ju tankként működik. A Chubba köré több csomag is építhető:\n\nJelenleg nem ő a legnépszerűbb hős, mert... az erős tankok elleni küzdelemhez ott van az Iris, a Celeste + Iris under Nebula pedig jól megbirkózik a tankoló vadászgépekkel/lövőkkel. De nem ő a legrosszabb, és ha nem a főcsapatban használod, akkor nagyon jó hős a Grand Arénában."
     }
   ]
 }

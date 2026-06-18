@@ -4,23 +4,53 @@
   "sections": [
     {
       "title": "Általános áttekintés",
-      "content": "Daredevil jó lövő, kiváló képességekkel. Daredevil leglenyűgözőbb tulajdonsága, hogy részben semmibe veszi az ellenséges hősök páncélját. Hatalmas sebzés, Kritikus találatok, Nagyon magas behatolás. a páncél jó karakterré teszi ezt a lövöldözőt, de vannak bizonyos hátrányai, amelyeket alább tárgyalunk. \n\nFőszerep: Lövő Fő tulajdonság: Ügyességi vonal: Harcol a hátsó vonalban Sebzés típusa: Fizikai sebzés, Tiszta sebzés\n\nProfik\n\n✓ A játék minden szakaszában releváns; ✓ van irányító készség; ✓ időszakos tiszta sebzés; ✓ jó kritikus mutatók. ütés és ütés. páncél;✓ Egyszerű módja annak, hogy megszerezze és frissítse a maximális csillagot. \n\nHátrányok\n\n✗ Mint minden kritikus találatot elérő lövöldöző, ő is sebezhető a Helios vagy Amira elleni csomagokkal szemben✗ Első képessége megosztja az ellenséges csapatot, ami bizonyos pillanatokban nem lehet túl sikeres;✗ Nem használható lövöldözősként klasszikus csapatokban Nebulával és Sebastiannal, mert Sebastian után áll, ellentétben más népszerű hősökkel;✗ A támadásban nincs sok sebzés más képességekben. a túlélésért (Kikerülés, Halhatatlanság, Sebzésblokkolás, Vámpírizmus), és nincs hatalmas azonnali sebzés, ami versenyképtelenné teszi a többi népszerű hőshöz képest."
+      "level": 1,
+      "content": "Daredevil jó lövő, kiváló képességekkel. Daredevil leglenyűgözőbb tulajdonsága, hogy részben semmibe veszi az ellenséges hősök páncélját. Hatalmas sebzés, Kritikus találatok, Nagyon magas behatolás. a páncél jó karakterré teszi ezt a lövöldözőt, de vannak bizonyos hátrányai, amelyeket alább tárgyalunk.\nFőszerep: Lövő Fő tulajdonság: Ügyességi vonal: Harcol a hátsó vonalban Sebzés típusa: Fizikai sebzés, Tiszta sebzés\n\n**Előnyök**\n\n✓ A játék minden szakaszában releváns;\n✓ van irányító készség;\n✓ időszakos tiszta sebzés;\n✓ jó kritikus mutatók. ütés és ütés. páncél;\n✓ Egyszerű módja annak, hogy megszerezze és frissítse a maximális csillagot.\n\n**Hátrányok**\n\n✗ Mint minden kritikus találatot elérő lövöldöző, ő is sebezhető a Helios vagy Amira elleni csomagokkal szemben\n✗ Első képessége megosztja az ellenséges csapatot, ami bizonyos pillanatokban nem lehet túl sikeres;\n✗ Nem használható lövöldözősként klasszikus csapatokban Nebulával és Sebastiannal, mert Sebastian után áll, ellentétben más népszerű hősökkel;\n✗ A támadásban nincs sok sebzés más képességekben. a túlélésért (Kikerülés, Halhatatlanság, Sebzésblokkolás, Vámpírizmus), és nincs hatalmas azonnali sebzés, ami versenyképtelenné teszi a többi népszerű hőshöz képest."
     },
     {
-      "title": "A készségek szintre emelése",
-      "content": "Röviden:"
+      "title": "Készségek",
+      "level": 1,
+      "content": "Big Boom! – Bombát indít az ellenséges csapat közepén, melynek robbanása sebzést okoz és 7 másodpercre felgyújtja. és eltolja az eltalált ellenfeleket.\n\nDischarge! Another discharge! – Áramütést okoz a közeli ellenségnek, és sebzést okoz. A célpont és a közeli ellenség 1 másodpercre elkábodik, támadásuk és mozgásuk sebessége pedig 3 másodpercre lelassul.\n\nWar – Gyújtólövedéket lő ki egy közeli ellenségre, sebzést okoz, és 5 másodpercre felgyújtja őket és a közeli ellenségeket.\n\nBloodlust – Daredevil figyelmen kívül hagyja az általa felgyújtott ellenségek páncélzatának egy részét."
     },
     {
-      "title": "Skinek",
-      "content": "A hősnek nincs fizikai megjelenése. támadást, ezért ajánlatos először letölteni azt, amelyik fokozza a sebzésünket - a Basic megjelenést az Agility számára. Az ügyesség növeli a páncélt és a fizikai erőt. egy hős támadása, növeli annak valószínűségét, hogy a hősöket kitéréssel ütik meg. A második a Hooligan Skint frissíti a Critical Hit Chance érdekében. Ezt követően a Health skinek frissítésre kerülnek: Romantic Health Skin vagy Spring Health Skin. A Sunny Anti-Magic Skin frissítésre kerül utoljára, amikor a hősök már kiegyenlítették fő skineiket."
-    },
-    {
-      "title": "Szimbólum",
+      "title": "Hős tippek:",
+      "level": 1,
       "content": ""
     },
     {
+      "title": "A készségek szintre emelése",
+      "level": 2,
+      "content": "Röviden:\n\nKészségek – Megjegyzések\nBig Boom! – A játék késői szakaszában ingadozik. Felgyújtja az ellenséget, így a következő 7 másodpercben figyelmen kívül hagyja az ilyen hősök páncélját, és jelentős károkat okoz. Egyes csapatokban egyáltalán nem lendül, ha a Daredevil-t automatikus támadásokon keresztül játsszák.\nDischarge! Another discharge! – A játék késői szakaszában ingadozik. Egy szinthez kötött kontrollkészség.\nWar – A játék késői szakaszában ingadozik. Több ellenséget is felgyújt, és a következő 5 másodpercben figyelmen kívül hagyja a páncéljukat, hatalmas sebzést okozva. Egyes csapatokban egyáltalán nem lendül, ha a Daredevil-t automatikus támadásokon keresztül játsszák.\nBloodlust – Feltétlenül töltse le prioritásként. Nagymértékben növeli a hős sebzését."
+    },
+    {
+      "title": "Skinek",
+      "level": 2,
+      "content": "Szükséges Skinek\nAlapforma - Agility\nBully Skin – Kritikus ütési esély\nRomantikus megjelenés – egészség\nSzituációs Skinek\nSpring Look – Egészség\nNapos forma - védelem a varázslat ellen\n\nA hősnek nincs fizikai megjelenése. támadást, ezért ajánlott először letölteni azt, amelyik fokozza a sebzésünket - az Agilityhoz készült Basic megjelenést. Az ügyesség növeli a páncélt és a fizikai erőt. egy hős támadása, növeli annak valószínűségét, hogy a hősöket kitéréssel ütik meg. A második a Hooligan Skint frissíti a Critical Hit Chance érdekében. Ezt követően a Health skinek frissítésre kerülnek: Romantic Health Skin vagy Spring Health Skin. A Sunny Anti-Magic Skin frissítésre kerül utoljára, amikor a hősök már kiegyenlítették fő skineiket."
+    },
+    {
+      "title": "Szimbólum",
+      "level": 2,
+      "content": "1. Fizikai támadás – Növeli a hős sebzését, elsőbbséget élvez a maximálisan. \n2. Ügyesség – A szimbólum növeli a hős sebzését, de kevesebbet, mint az előző szimbólum. Második a maximumig. \n3. Kritikus találati esély – Növekszik a fizikailag növelő szimbólumok után. maximális támadás. \n4. Áttörés. páncél – Negyediktől maximumig lendül, mert a negyedik képesség lehetővé teszi, hogy ne frissítse ezt a paramétert a legelején. \n5. Egészség – tartsa a maximumot. Általában, mint a legtöbb hős, ez is eléri a 30 szintet. Akkor lép fel, ha a hős gyorsan meghal."
+    },
+    {
       "title": "Műtárgyak",
-      "content": "Kiválóan alkalmas Vex pártfogására. Ha egy másik hős foglalja el, akkor Fenris vagy Albus használható. \n\nHelios – A Flame Retribution készség sok sebzést okoz Daredevilnek, amikor kritizál. kár. \n\nSebastian – Az Ode of Serenity készség eltávolítja az időszakos sebzést és blokkolja a kábítást. \n\nLien – Az a képesség, amelyet Pacify bájban tart a hatalmas sebzés miatt. \n\nPhobos – A bénulás képesség egy alkalommal megölheti Daredevilt, vagy energia nélkül hagyhatja. \n\nAmira – Az Impotens Rage képessége semlegesíti a kritikát. ütés, ami jelentősen csökkenti a karakter sebzését. A Pet Horus jól megbirkózik a kábító hatással. \n\nJó lövő, aki már a játék közepén, megfelelő szintezéssel képes nagy sebzést okozni a tankokban. Jól párosítható Irisszel, de elhelyezése miatt nem használható egy csapatban Nebulával és Sebastiannal is, hogy a Nebula's Ball-t Daredevilhez vigye. Nincs fizikai megjelenés. támadás, a játék késői szakaszában rosszabb a sebzés a többi népszerű hőshöz képest, nincsenek túlélési képességek. Kezdőknek nem ajánlott, még a Grand Arena második csapatának sem."
+      "level": 2,
+      "content": "Mi vagyunk az elsők, akik letöltik a 3 csillagot. Ezt követően a csillagok ereje egyenletesen ingadozik mindhárom műtárgy esetében. \nA csillagos értékelés egyenletesen változik mindhárom műtermék esetében. \nA csillagos értékelés egyenletesen változik mindhárom műtermék esetében. \nA tárgyak szintje a klasszikus séma szerint növekszik: Először is, a tartály növekszik. Amint a tank kezd jól megbirkózni a szerepével, elsőbbséget élvez a Daredevil. A tárgyak hozzáadódnak a tankhoz, ha a Daredevilnél az összes műtárgy 130-nál van, vagy a tank újra gyorsan haldoklik."
+    },
+    {
+      "title": "Háziállatok",
+      "level": 1,
+      "content": "Kiválóan alkalmas Vex pártfogására. Ha egy másik hős foglalja el, akkor Fenris vagy Albus használható."
+    },
+    {
+      "title": "Zavaros hősök",
+      "level": 1,
+      "content": "Helios – A Flame Retribution készség sok sebzést okoz Daredevilnek, amikor kritizál. kár. \n\nSebastian – Az Ode of Serenity készség eltávolítja az időszakos sebzést és blokkolja a kábítást. \n\nLien – Az a képesség, amelyet Pacify bájban tart a hatalmas sebzés miatt. \n\nPhobos – A bénulás képesség egy alkalommal megölheti Daredevilt, vagy energia nélkül hagyhatja. \n\nAmira – Az Impotens Rage képessége semlegesíti a kritikát. ütés, ami jelentősen csökkenti a karakter sebzését. A Pet Horus jól megbirkózik a kábító hatással."
+    },
+    {
+      "title": "Következtetés",
+      "level": 1,
+      "content": "Jó lövő, aki már a játék közepén, megfelelő szintezéssel képes nagy sebzést okozni a tankokban. Jól párosítható Irisszel, de elhelyezése miatt nem használható egy csapatban Nebulával és Sebastiannal is, hogy a Nebula's Ball-t Daredevilhez vigye. Nincs fizikai megjelenés. támadás, a játék késői szakaszában rosszabb a sebzés a többi népszerű hőshöz képest, nincsenek túlélési képességek. Kezdőknek nem ajánlott, még a Grand Arena második csapatának sem."
     }
   ]
 }

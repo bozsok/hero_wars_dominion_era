@@ -4,23 +4,53 @@
   "sections": [
     {
       "title": "Általános áttekintés",
-      "content": "Mojo jó támogató karakter egy varázscsapatnak. Leggyakrabban ideiglenes hősként használják, mert hatékonysága és sokoldalúsága gyengébb, mint a többi támogató hős. Ennek a hősnek a legjobb felhasználása az Outland. \n\nFőszerep: Mágus, Támogatás Fő Stat: Intelligence Line: Harc a középső sávban Sebzés típusa: Magic Damage\n\nProfik\n\n✓ Meg tudja gyógyítani az egész csapatot;✓ A játék minden szakaszában releváns a negyedik készség miatt;✓ Könnyen megszerezhető és a maximális csillagra fejleszthető;✓ Kiváló karakter az Outlanden való átjutáshoz;✓ Kiváló kiegészítője egy varázscsapatnak a játék korai szakaszában;✓ Irányítókészséggel rendelkezik;✓ A Mojo negyedik képessége működik, mert az Aakthárd halála után is Műtárgy. védelem a varázslat ellen. \n\nHátrányok\n\n✗ Nagyon gyenge gyógyulás;✗ A negyedik képesség véletlenszerűen választja ki a célpontot, és nem mindig sikerül;✗ Olyan csomagot igényel, amely rövid időn belül sok sebzést tud okozni;✗ Sebezhető a kontrollt birtokló karakterekkel szemben;✗ A Hórusz nagyon gyorsan töltődik Mojo harmadik képességének köszönhetően."
+      "level": 1,
+      "content": "Mojo jó támogató karakter egy varázscsapatnak. Leggyakrabban ideiglenes hősként használják, mert hatékonysága és sokoldalúsága gyengébb, mint a többi támogató hős. Ennek a hősnek a legjobb felhasználása az Outland.\nFőszerep: Mágus, Támogatás Fő Stat: Intelligence Line: Harc a középső sávban Sebzés típusa: Magic Damage\n\n**Előnyök**\n\n✓ Meg tudja gyógyítani az egész csapatot;\n✓ A játék minden szakaszában releváns a negyedik készség miatt;\n✓ Könnyen megszerezhető és a maximális csillagra fejleszthető;\n✓ Kiváló karakter az Outlanden való átjutáshoz;\n✓ Kiváló kiegészítője egy varázscsapatnak a játék korai szakaszában;\n✓ Irányítókészséggel rendelkezik;\n✓ A Mojo negyedik képessége működik, mert az Aakthárd halála után is Műtárgy. védelem a varázslat ellen.\n\n**Hátrányok**\n\n✗ Nagyon gyenge gyógyulás;\n✗ A negyedik képesség véletlenszerűen választja ki a célpontot, és nem mindig sikerül;\n✗ Olyan csomagot igényel, amely rövid időn belül sok sebzést tud okozni;\n✗ Sebezhető a kontrollt birtokló karakterekkel szemben;\n✗ A Hórusz nagyon gyorsan töltődik Mojo harmadik képességének köszönhetően."
+    },
+    {
+      "title": "Készségek",
+      "level": 1,
+      "content": "Wrath Totem – Létrehoz egy totemet, amely mágikus csavarokat lő az ellenséges csapatra 6 másodpercig. Ezalatt a Mojo nem támadhat és nem használhat készségeket.\n\nHealing spirits – Minden egyes szövetségest meggyógyít.\n\nCursed Bones – Reteszelést dob ​​a legközelebbi ellenségre, mágikus sebzést okozva, és elkábítja a célpontot. A töltés az egyik közeli ellenségre pattan, ha van ilyen, és összesen 8 találatot érhet el.\n\nDamage – Jelet helyez egy véletlenszerű ellenségre a csata elején. A jel minden 2 másodpercben mágikus sebzést okoz a célpontnak, attól függően, hogy a cél milyen sebzést kapott ezalatt."
+    },
+    {
+      "title": "Hős tippek",
+      "level": 1,
+      "content": ""
     },
     {
       "title": "A készségek szintre emelése",
-      "content": "Röviden:"
+      "level": 2,
+      "content": "Röviden:\n\nKészségek – Megjegyzések\nWrath Totem – Feltétlenül töltse le. A fő képesség, amely sok sebzést okoz. Korai stádiumban sok sebzést okoz, később Outlandben mutat hatékonyságot.\nHealing spirits – Javasoljuk, hogy töltse le, ha van extra aranya. Gyenge gyógyulás ebből a képességből.\nCursed Bones – Nem ajánlott letölteni. Szituációs képesség. Mojo egy „labdát” dob az ellenséges csapat felé, ami rövid kábítást ad, és egy másik karakterre pattan.\nDamage – Feltétlenül töltse le. A varázslat Mojo halála után is érvényben marad. Az Outland áthaladása ezzel a képességgel sokkal könnyebbé válik. Ahhoz, hogy ez a képesség a leghatékonyabb legyen, Mojo-nak erős bűvészcsapattal kell rendelkeznie, amely sok varázslatot képes leadni. kár"
     },
     {
       "title": "Skinek",
-      "content": "Először is, Mojo-nak ajánlott frissíteni a Magic Attack skineket. Ha sikerül beszerezni a téli akciók során. események Winter Appearance for Magic attack, akkor elkezdjük letölteni. Ha ez még nem lehetséges, töltse le a Cybernetic Appearance for Magic Attack alkalmazást. A következő frissítés az intelligencia alapvető megjelenése. Az Eastern Skin for Health és a Demonic Skin for Armor nem lesz olyan hatékony Outlandben. Ha Mojo-t használjuk főhősként egy csapatban (ami nem ajánlott), a megjelenéseket szükség esetén frissítik, hogy növeljék a hős túlélőképességét. A főbb megjelenések után az egészségügyi megjelenés frissül, és a páncél démoni megjelenése az utolsó frissítés."
+      "level": 2,
+      "content": "Szükséges Skinek\nTéli forma - Magic Attack\nKibernetikus megjelenés – mágikus támadás\nAlapvető megjelenés - Intelligencia\nSzituációs Skinek\nKeleti megjelenés - Egészség\nDémoni forma – Páncél\n\nElőször is, Mojo-nak ajánlott frissíteni a Magic Attack skineket. Ha sikerül beszerezni a téli akciók során. események Winter Appearance for Magic attack, akkor elkezdjük letölteni. Ha ez még nem lehetséges, töltse le a Cybernetic Appearance for Magic Attack alkalmazást. A következő frissítés az intelligencia alapvető megjelenése. Az Eastern Skin for Health és a Demonic Skin for Armor nem lesz olyan hatékony Outlandben. Ha Mojo-t használjuk főhősként egy csapatban (ami nem ajánlott), a megjelenéseket szükség esetén frissítik, hogy növeljék a hős túlélőképességét. A főbb megjelenések után az egészségügyi megjelenés frissül, a páncél démoni megjelenése pedig az utolsó frissítés."
     },
     {
       "title": "Szimbólum",
-      "content": "A karakterfrissítések prioritása a következő:"
+      "level": 2,
+      "content": "A karakterfrissítések prioritása a következő:\n\n1. Mágikus támadás – Növeli a sebzést az első képességtől kezdve. Lengés először a maximumig. \n2. Áttörés. védelem a varázslat ellen - Hasznos szimbólum, amely lehetővé teszi, hogy figyelmen kívül hagyja az ellenfél páncéljának egy részét. Maximum másodpercre lendít. \n3. Intelligencia – Növeli a varázslatot. támadás és védekezés a mágia ellen. \n4. Egészség – Outlandben a főnöki szint növekedésével nő. Nincs értelme pumpálni a szimbólumot, mert... Mojonak már késő lesz használnia a képességeit és áttörni. páncél műtárgy. \n5. Varázslat elleni védelem – Outland esetében a szimbólum nem kötelező. Más játékosokkal szemben 30-at ingadozik, és növekszik, ha Mojo túlélőképessége alacsony a bűvészekkel vívott csatákban."
     },
     {
       "title": "Műtárgyak",
-      "content": "A Mojo legnépszerűbb mecénásai a Biscuit, Horus és Mara. Általában olyan háziállatot helyeznek el, amely más hősök számára nem prioritás. \n\nIsaac – Tes'Lin High Voltage Module és Overdrive képességei segítenek megbirkózni a varázssebzést okozó hősökkel. \n\nCornelius – A tudomány Granite képessége megöli a hőst, ha a legtöbb intelligenciával rendelkezik. Az elnyomó rúna csökkenti a mágikus támadást, és a memóriavesztés használhatatlanná teheti Mojo-t hősként. \n\nSebastian – A nyugalom Ódája készség eltávolítja/megakadályozza a korrupció készség alkalmazását. Julius – a 9 Lives Mechanism képesség eltávolítja a korrupció képesség hatását egy szövetségesről, miután a szövetségesen lévő pajzsok eltűnnek. \n\nKiváló karakter, aki képes sok sebzést okozni, akinek van egy Artifactja a behatoláshoz. mágikus védelem, amely minden varázscsomaghoz tökéletes. Meglehetősen könnyű megszerezni és javítani. Negyedik képessége szinte garantáltan megöli a célba vett ellenséges hőst. Sajnos egy véletlenszerű hőst választanak ki, ami nem túl sikeres. A Mojo jól megy az Orion és Helios, Celeste, Lars és Krista, Satori és mások társaságában. \n\nJelenleg a hős nem releváns, és hatékonysága alacsonyabb, mint a többi támogató hős. A játékosok ideiglenes hősként vagy az Outland hőseként használják. Kezdő játékosoknak nem ajánlott csatlakozni a főcsapathoz."
+      "level": 2,
+      "content": "3 csillagra kell frissíteni, majd a csillag állapota a második műtermékkel együtt frissül. \nAz első műtermék három csillagának elérése után az első műtermékkel egyidejűleg frissítésre kerül. \nA sztárság az utolsó dolog, ami megingatható. \nHa a Mojo-t csak Outlandhez használjuk a negyedik készség kedvéért, akkor az összes főszereplő után nő a műtermékek szintje. Ha a Mojo-t más játékosok elleni csatában használod, az ereklye szintje a többi támogató hőssel párhuzamosan növekszik, a healer előtt, de a támadó hős és a tank után."
+    },
+    {
+      "title": "Háziállatok",
+      "level": 1,
+      "content": "A Mojo legnépszerűbb mecénásai a Biscuit, Horus és Mara. Általában olyan háziállatot helyeznek el, amely más hősök számára nem prioritás."
+    },
+    {
+      "title": "Zavaros hősök",
+      "level": 1,
+      "content": "Isaac – Tes'Lin High Voltage Module és Overdrive képességei segítenek megbirkózni a varázssebzést okozó hősökkel. \n\nCornelius – A tudomány Granite képessége megöli a hőst, ha a legtöbb intelligenciával rendelkezik. Az elnyomó rúna csökkenti a mágikus támadást, és a memóriavesztés használhatatlanná teheti Mojo-t hősként. \n\nSebastian – A nyugalom Ódája készség eltávolítja/megakadályozza a korrupció készség alkalmazását. Julius – a 9 Lives Mechanism képesség eltávolítja a korrupció képesség hatását egy szövetségesről, miután a szövetségesen lévő pajzsok eltűnnek."
+    },
+    {
+      "title": "Következtetés",
+      "level": 1,
+      "content": "Kiváló karakter, aki képes sok sebzést okozni, akinek van egy Artifactja a behatoláshoz. mágikus védelem, amely minden varázscsomaghoz tökéletes. Meglehetősen könnyű megszerezni és javítani. Negyedik képessége szinte garantáltan megöli a célba vett ellenséges hőst. Sajnos egy véletlenszerű hőst választanak ki, ami nem túl sikeres. A Mojo jól megy az Orion és Helios, Celeste, Lars és Krista, Satori és mások társaságában. \n\nJelenleg a hős nem releváns, és hatékonysága alacsonyabb, mint a többi támogató hős. A játékosok ideiglenes hősként vagy az Outland hőseként használják. Kezdő játékosoknak nem ajánlott csatlakozni a főcsapathoz."
     }
   ]
 }

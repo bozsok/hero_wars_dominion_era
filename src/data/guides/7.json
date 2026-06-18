@@ -4,67 +4,113 @@
   "sections": [
     {
       "title": "Általános áttekintés",
-      "content": "Thea a legelső gyógyító, akit a játék elején kapunk. Gyógyító és támogató képességekkel rendelkezik. Van egy különleges tulajdonsága - a Grove őrzői. Emiatt tökéletesen kombinálható egy másik Guardian - Alvanorral. Sajnos mind hatékonyságában, mind népszerűségében alulmúlja a többi gyógyítót. Theát egyedüli teljes értékű gyógyítóként használni erősen nem ajánlott, mert a gyógyulás mértékében lényegesen alulmúlja bármely más gyógyítót. \n\nFőszerep: Gyógyító, Támogatás Fő statisztika: Intelligencia Vonal: Sebzés típusa: Mágikus sebzés\n\nProfik\n\n✓ Releváns a játék elején;✓ Hasznos a torony elhaladásakor;✓ Az egyik első healer, akit a játék elején kapunk;✓ Irányítókészségekkel rendelkezik;✓ Könnyen frissíthető a maximális csillagra;✓ Két gyógyító képesség létezik;✓ Felgyorsítja azokat a szövetségeseket, akiknek kevés egészségük maradt, a Thea halála után is felgyorsítja a magzatot; csapatok;✓ Tökéletesen kombinálható a Guardians Groves-szal (Alvanor és Kai);✓ Jó támogató karakter. \n\nHátrányok\n\n✗ A leggyengébb gyógyulás az összes Healer között;✗ A csend effektus 3 másodpercig tart, ami nem elég az Arénának;✗ A negyedik képesség csak akkor működik, ha a Hősök egészsége alacsony;✗ Thea az utolsó sorba kerül, ami nem teszi lehetővé, hogy túlélje Ju/Keyla ütéseit és Jorgen megjelenésétől függő ütéseit.✗ Very. \n\nHárom fő irányvonal van egy hős szintre emelésére, ezért a cikk 3 részre oszlik."
+      "level": 1,
+      "content": "Thea a legelső gyógyító, akit a játék elején kapunk. Gyógyító és támogató képességekkel rendelkezik. Van egy különleges tulajdonsága - a Grove őrzői. Emiatt tökéletesen kombinálható egy másik Guardian - Alvanorral. Sajnos mind hatékonyságában, mind népszerűségében alulmúlja a többi gyógyítót. Theát egyedüli teljes értékű gyógyítóként használni erősen nem ajánlott, mert a gyógyulás mértékében lényegesen alulmúlja bármely más gyógyítót.\nFőszerep: Gyógyító, Támogatás Fő Stat: Intelligencia Vonal: Sebzés típusa: Mágikus sebzés\n\n**Előnyök**\n\n✓ Releváns a játék elején;\n✓ Hasznos a torony elhaladásakor;\n✓ Az egyik első healer, akit a játék elején kapunk;\n✓ Irányítókészségekkel rendelkezik;\n✓ Könnyen frissíthető a maximális csillagra;\n✓ Két gyógyító képesség létezik;\n✓ Felgyorsítja azokat a szövetségeseket, akiknek kevés egészségük maradt, a Thea halála után is felgyorsítja a magzatot; csapatok;\n✓ Tökéletesen kombinálható a Guardians Groves-szal (Alvanor és Kai);\n✓ Jó támogató karakter.\n\n**Hátrányok**\n\n✗ A leggyengébb gyógyulás az összes Healer között;\n✗ A csend effektus 3 másodpercig tart, ami nem elég az Arénának;\n✗ A negyedik képesség csak akkor működik, ha a Hősök egészsége alacsony;\n✗ Thea az utolsó sorba kerül, ami nem teszi lehetővé, hogy túlélje Ju/Keyla ütéseit és Jorgen megjelenésétől függő ütéseit.\n✗ Very."
+    },
+    {
+      "title": "Készségek",
+      "level": 1,
+      "content": "Sanctuary of the Sun – Thea gyógyító fénye mindenkihez eljut, akinek szüksége van rá. Meggyógyítja csapata összes tagját. Felemelkedési készség: A Nap áldott szentélye A Napszentélyből egy szövetséges által kapott minden túlzott gyógyulást pajzsgá alakítják, amely elnyeli a sebzést.\n\nRay of hope – Thea a legalacsonyabb egészségi állapotú szövetségesre összpontosítja erejét, meggyógyítva őket Felemelkedési képesség: Vakító reménysugár Miután Thea felhasználta gyógyító sugár képességét, a szövetséges célpontja 5 másodpercig 50%-kal kevesebb sebzést szenved el.\n\nVow of Silence – Thea tudja, hogyan kell titkolni, és erre kényszerítheti ellenségeit is. Elnémítja az ellenséget 3 másodpercre.\n\nSecond wind – Thea jelenléte még a súlyos sebesülteknek is reményt ad. Passzívan növeli a szövetségesek sebességét, ha egészségi állapotuk 30% alatt van"
+    },
+    {
+      "title": "Hős tippek:",
+      "level": 1,
+      "content": ""
     },
     {
       "title": "Thea – Támogatás",
+      "level": 2,
       "content": "Egy ilyen csapatban kell lennie egy második gyógyítónak (egy gyógyító képességgel rendelkező karakter is megfelelő), vagy egy olyan csapatnak, amely gyorsan megöli az ellenséges csapatot."
     },
     {
       "title": "A készségek szintre emelése",
-      "content": "Röviden:"
+      "level": 3,
+      "content": "Röviden:\n\nKészségek – Megjegyzések\nSanctuary of the Sun – Javasoljuk, hogy töltse le, ha van extra aranya. Már a játék közepén elveszti relevanciáját, mert túl kicsi a gyógyító mennyiség\nRay of hope – Letöltés ajánlott, mert... az Ascension 50%-kal csökkenti a bejövő sebzést.\nVow of Silence – Javasoljuk, hogy töltse le, ha van extra aranya. A negyedik képességgel kombinálva lehetővé teszi, hogy csapata gyorsabban használja képességeit, mint ellenfele.\nSecond wind – Biztosan letöltjük. A készség lehetővé teszi, hogy gyorsabban és gyakrabban használd hőseid képességeit (kivéve az elsőt)."
     },
     {
       "title": "Skinek",
-      "content": "Ha lehetősége van beszerezni egy Winter Skin for Armourt, akkor mindenképpen kezdje el vele. Megadja Theának azt a páncélt, amelyre szüksége van. Ellenkező esetben töltse le a Masquerade Skin for Health. Ezután töltse le az Alapvető megjelenést az intelligencia érdekében. \n\nA Guild War Skin és az Angelic Skin for Magic Attack frissítésre került utoljára, mert... Thea a csapatodban lesz, hogy felgyorsítsa a hősöket és csökkentse a sebzést, és nem a Heal."
+      "level": 3,
+      "content": "Szükséges Skinek\nWinter Skin - Armor\nMasquerade Look – Egészség\nAlapvető megjelenés - Intelligencia\nVálasztható skinek\nGuild War Skin - Magic Attack\nAngyali forma - Mágikus támadás\n\nHa lehetősége van beszerezni egy Winter Skin for Armourt, akkor mindenképpen kezdje el vele. Megadja Theának azt a páncélt, amelyre szüksége van. Ellenkező esetben töltse le a Masquerade Skin for Health. Ezután töltse le az Alapvető megjelenést az intelligencia érdekében. \n\nA Guild War Skin és az Angelic Skin for Magic Attack frissítésre került utoljára, mert... Thea a csapatodban lesz, hogy felgyorsítsa a hősöket és csökkentse a sebzést, és nem a Heal."
     },
     {
       "title": "Szimbólum",
-      "content": "Thea az utolsó/utolsó helyig fog állni, ezért nagy szüksége van a túlélésre."
+      "level": 3,
+      "content": "Thea az utolsó/utolsó helyig fog állni, ezért nagy szüksége van a túlélésre. \n\n1. Egészség – Növeli a hős túlélőképességét, először pumpálja a maximumot. \n2. Páncél – Növeli a hős túlélőképességét a fizikai támadásokkal szemben. csapatok, kilengések második a maximumig. \n3. Intelligencia – A szimbólum növeli a védelmet a varázslat és a mágia ellen. a hős támadása, ami további bónusz a csapatnak, mint nagyobb mennyiségű gyógyulás. Harmadik lengés a maximumig. \n4. Védelem a mágiával szemben - Csak nagyszámú varázslat esetén növekszik. parancsokat\n5. Magic attack - Frissítések, ha a főszereplők főszereplői már a maximumra vannak pumpálva."
     },
     {
       "title": "Thea – Gyógyító a Grove őrzői csomagban",
+      "level": 2,
       "content": "Thea, Alvanor, Kai csapata. Az egyetlen csomag, amelyben Thea teljes mértékben ki tudja használni gyógyító képességeit és a Felemelkedés Pajzsát, releváns lesz. Nem rossz csapat az Asgardnak, de nem a legjobb az Orion/Ju-hoz képest."
     },
     {
       "title": "A készségek szintre emelése",
-      "content": "Röviden:"
+      "level": 3,
+      "content": "Röviden:\n\nKészségek – Megjegyzések\nSanctuary of the Sun – Biztosan letöltjük. Az Ascension-ból lesz egy Shield, ami átalakul a túlzott gyógyulásból, ami Alvanor képességeinek köszönhetően sok lesz.\nRay of hope – Letöltés ajánlott, mert... az Ascension 50%-kal csökkenti a bejövő sebzést.\nVow of Silence – Javasoljuk, hogy töltse le, ha van extra aranya.\nSecond wind – Biztosan letöltjük. A készség lehetővé teszi, hogy gyorsabban és gyakrabban használd hőseid képességeit (kivéve az elsőt)."
     },
     {
       "title": "Skinek",
-      "content": "Ha lehetősége van beszerezni egy Winter Skin for Armourt, akkor mindenképpen kezdje el vele. Megadja Theának azt a páncélt, amelyre szüksége van. Ellenkező esetben töltse le a Masquerade Skin for Health. A Skins for Magic Attack letöltéséhez a következőket kell tenni:\n\n- Guild War Skin\n\n- Angyali megjelenés\n\nA varázslatos megjelenések után. a támadás alapvető megjelenését intelligenciává változtatja. \n\nUtoljára letölthető a Masquerade vagy a Winter, attól függően, hogy melyiket töltötték le először."
+      "level": 3,
+      "content": "Winter Skin - Armor\nGuild War Skin - Magic Attack\nAngyali forma - Mágikus támadás\nAlapvető megjelenés - Intelligencia\nMasquerade Look – Egészség\n\nHa lehetősége van beszerezni egy Winter Skin for Armourt, akkor mindenképpen kezdje el vele. Megadja Theának azt a páncélt, amelyre szüksége van. Ellenkező esetben töltse le a Masquerade Skin for Health. A Skins for Magic Attack letöltéséhez a következőket kell tenni:\n\n- Guild War Skin\n\n- Angyali megjelenés\n\nA varázslatos megjelenések után. a támadás alapvető megjelenését intelligenciává változtatja. \n\nUtoljára letölthető a Masquerade vagy a Winter, attól függően, hogy melyiket töltötték le először."
     },
     {
       "title": "Szimbólum",
-      "content": ""
+      "level": 3,
+      "content": "1. Egészség – Növeli a hős túlélőképességét, először pumpálja a maximumot. \n2. Páncél – Növeli a hős túlélőképességét a fizikai támadásokkal szemben. csapatok, kilengések második a maximumig. \n3. Mágikus támadás – A szimbólum harmadszor lendül a maximumig, mert egy ilyen csapatban Thea sokkal jobban fog gyógyulni. \n4. Intelligencia – A szimbólum növeli a védelmet a varázslat és a mágia ellen. hős támadás. Kevésbé növeli a gyógyulást, mint a szimbólum per mágus. támadás, így maximum a negyedikre lendül. \n5. Védelem a mágiával szemben - Csak nagyszámú varázslat esetén növekszik. parancsok Más esetekben a fő karakterek fő szimbólumainak pumpálása után nem pumpál / pumpál."
     },
     {
       "title": "Thea – Főállású egyedüli gyógyító a csapatban",
+      "level": 2,
       "content": "Egy csapat a Grand Arénába, amikor az erősebb healerek már elfoglaltak, és egy gyógyító hős kell a csapathoz. Nem a legjobb felhasználása Thea-nak, mert... a hős önmagában független gyógyítóként gyenge."
     },
     {
       "title": "A készségek szintre emelése",
-      "content": "Röviden:"
+      "level": 3,
+      "content": "Röviden:\n\nKészségek – Megjegyzések\nSanctuary of the Sun – Biztosan letöltjük.\nRay of hope – Biztosan letöltjük.\nVow of Silence – Javasoljuk, hogy töltse le, ha van extra aranya.\nSecond wind – Biztosan letöltjük. A készség lehetővé teszi, hogy gyorsabban és gyakrabban használd hőseid képességeit (kivéve az elsőt)."
     },
     {
       "title": "Skinek",
-      "content": "Ha lehetősége van beszerezni egy Winter Skin for Armourt, akkor mindenképpen kezdje el vele. Megadja Theának azt a páncélt, amelyre szüksége van. Ellenkező esetben töltse le a Masquerade Skin for Health. Folytassa a skinek frissítését, kezdve a Guild War Skin for Magic Attack-el. A negyedik megjelenéssel frissítjük az alap megjelenést az intelligencia számára, és végül az Angelic Appearance for Magic támadást."
+      "level": 3,
+      "content": "Winter Skin - Armor\nMasquerade Look – Egészség\nGuild War Skins - Magic Attack\nAlapvető megjelenés - Intelligencia\nAngyali forma – Mágikus támadás. \n\nHa lehetősége van beszerezni egy Winter Skin for Armourt, akkor mindenképpen kezdje el vele. Megadja Theának azt a páncélt, amelyre szüksége van. Ellenkező esetben töltse le a Masquerade Skin for Health. Folytassa a skinek frissítését, kezdve a Guild War Skin for Magic Attack-el. A negyedik megjelenéssel frissítjük az alap megjelenést az intelligencia számára, és végül az Angelic Appearance for Magic támadást."
     },
     {
       "title": "Szimbólum",
-      "content": ""
+      "level": 3,
+      "content": "1. Egészség - Mivel Thea áll az utolsó helyen, gyakran megütik Kayla/Ju/Jorgen és más karakterek, tehát minél egészségesebb, annál tovább fog élni. Tekintettel arra, hogy negyedik képessége függ hiányzó egészségi állapotától, magától felgyorsul. \n2. Mágikus támadás - Mivel Thea még mindig gyógyító, nagyon fontos gyógyító képességeinek erősítése. \n3. Páncél – A harmadik szimbólumot ugyanazon okból fejlesztik páncélra, amiért az Egészséget is. Ő áll utoljára, és túl kell élnie a fizikai sérüléseket (beleértve a tiszta sebzést is). \n4. Intelligencia – Az intelligencia a negyedik helyen áll, növeli a mágia és a mágia elleni védelmet. hős támadás. \n5. Varázslat elleni védelem – Ez az utolsó frissítés, mivel az Artifact már az egész csapatot jelentős védelmet nyújt a mágia ellen."
     },
     {
       "title": "Műtárgyak",
+      "level": 2,
+      "content": "Akár 3 csillagig frissítünk, ezt követően a második műtermékkel együtt frissül. \nMiután az első műterméket 3 csillagra emelte, egyenletesen lép fel az elsővel. \nLegutoljára a csillagokon hintázva\nA tárgyak szintje, mint szinte minden healer, a Tank, a támadó- és támogató hősök, a csapat legutolsója után növekszik."
+    },
+    {
+      "title": "Szinergia",
+      "level": 1,
       "content": ""
     },
     {
       "title": "Készségek kompatibilitása",
-      "content": ""
+      "level": 2,
+      "content": "Készségek - Szinergia - Kommentár\nPajzs\nCsökkenti annak a szövetségesnek a sérülését, akinek a legkevesebb egészsége van. A készség jól működik Axel 2. képességével. \nA kontroll hatások időtartama (csend)."
     },
     {
       "title": "Hero kompatibilitás",
-      "content": "- Megerősíti Thea hosszú hallgatását, lehetővé téve számára, hogy jobban harcoljon a bűvészekkel. csapatok. - Kiegészítő pajzs Julius számára, és ezzel megerősíti a hőst. - Kiválóan gyógyítja a klónokat. - Szinergia a Guardians of the Grove-nak köszönhetően. Alvanorral egy csapatban a fejlesztéseknek köszönhetően nagyon erős hőssé válik. \n\nSebastian – Az Ode of Serenity készség blokkolja a csend hatását. \n\nCornelius – A tudomány Granite képessége megöli a hőst, ha a legtöbb intelligenciával rendelkezik. Az elfojtás rúnája csökkenti a varázstámadást (Healing Thea). Ju - Az a képesség, amit látok, meg fogja ölni Theát. Kayla - mivel eltalálja az ellenség utolsó sorait. Jorgen fizikailag. csomag a Leprakészség miatt\n\nA Pet Horus Blocks remekül működik a Silence effektussal\n\nAz egyik első Healer, akit a játék elején kapunk. Mint fő gyógyító, veszít a gyógyulás tekintetében az összes többi gyógyítóval szemben; a gyógyítók értékelésében ő a leggyengébb hős. Azonban Thea-t a játékosok használhatják ideiglenes gyógyítóként, például Martha megszerzéséig, vagy teljes értékű gyógyítóként a Grove Guardian csapatában. Egy nagyszerű negyedik képesség lehetővé teszi a hősök számára, hogy képességeiket az ellenséges csapat előtt használják (Qing Mao vakja, Galahad töltése stb.). Jól megy Ju-val a játék korai szakaszában. Kezdő játékosoknak nem ajánlott a csapat fő gyógyítójának lenni; legjobb lenne Theát ideiglenes gyógyítónak használni, és a jövőben egy hatékonyabb hőssel helyettesíteni. \n\nA Thea csapatai a - Thea - Aktuális parancsok című cikkben találhatók"
+      "level": 2,
+      "content": "- Megerősíti Thea hosszú hallgatását, lehetővé téve számára, hogy jobban harcoljon a bűvészekkel. csapatok. - Kiegészítő pajzs Julius számára, és ezzel megerősíti a hőst. - Kiválóan gyógyítja a klónokat. - Szinergia a Guardians of the Grove-nak köszönhetően. Alvanorral egy csapatban a fejlesztéseknek köszönhetően nagyon erős hőssé válik."
+    },
+    {
+      "title": "Háziállatok",
+      "level": 1,
+      "content": "Népszerű háziállat. Különösen fontos, ha növelni kell Thea túlélőképességét. \nCsak akkor használható, ha fel kell gyorsítania a harmadik készség (csend) használatának gyakoriságát - a mágia ellen. parancsokat\nJelentősen fejleszti Thea harmadik képességét, így a csend effektus időtartama összesen 9 másodperc."
+    },
+    {
+      "title": "Zavaros hősök",
+      "level": 1,
+      "content": "Sebastian – Az Ode of Serenity készség blokkolja a csend hatását. \n\nCornelius – A tudomány Granite képessége megöli a hőst, ha a legtöbb intelligenciával rendelkezik. Az elfojtás rúnája csökkenti a varázstámadást (Healing Thea). Ju - Az a képesség, amit látok, meg fogja ölni Theát. Kayla - mivel eltalálja az ellenség utolsó sorait. Jorgen fizikailag. csomag a Leprakészség miatt\n\nA Pet Horus Blocks remekül működik a Silence effektussal"
+    },
+    {
+      "title": "Következtetés",
+      "level": 1,
+      "content": "Az egyik első Healer, akit a játék elején kapunk. Mint fő gyógyító, veszít a gyógyulás tekintetében az összes többi gyógyítóval szemben; a gyógyítók értékelésében ő a leggyengébb hős. Azonban Thea-t a játékosok használhatják ideiglenes gyógyítóként, amíg például Martha meg nem szerzik, vagy teljes értékű gyógyítóként a Grove Guardian csapatában. Egy nagyszerű negyedik képesség lehetővé teszi a hősök számára, hogy képességeiket az ellenséges csapat előtt használják (Qing Mao vakja, Galahad töltése stb.). Jól megy Ju-val a játék korai szakaszában. Kezdő játékosoknak nem ajánlott a csapat fő gyógyítójának lenni; legjobb lenne Theát ideiglenes gyógyítónak használni, és a jövőben egy hatékonyabb hőssel helyettesíteni. \n\nA Thea csapatai a - Thea - Aktuális parancsok című cikkben találhatók"
     }
   ]
 }

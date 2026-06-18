@@ -4,23 +4,53 @@
   "sections": [
     {
       "title": "Általános áttekintés",
-      "content": "Andvari kemény támogató karakter, aki gyakran fő tankként működik. Ennek a karakternek a fő előnye a szövetséges kihányása és megmozgatása elleni védelem. A gyakorlatban Andvari két fő szerepe a Tank és a Support Tank. Jól mutatja magát K'arkh és az Arctalan ellen. \n\nFőszerep: Támogatás, Irányítás Fő tulajdonság: Erővonal: Harc az élvonalban Sebzés típusa: Fizikai sebzés\n\nProfik\n\n✓ Védelem a szövetséges felhánytatása és visszaütése ellen;✓ olyan pajzsot alkalmaz, amely elnyeli a fizikai és tiszta sebzést;✓ rendelkezik irányítókészséggel;✓ jó fizikai sérülést okoz. sebzés;✓ Fizikai és varázscsomagban is remekül érzi magát. \n\nHátrányok\n\n✗ Nehéz frissíteni a maximális csillagra, különösen, ha a Nebula/Sebastian/K'arkh-val párhuzamosan szintezöl (Megosztott erőforrások);✗ Sebezhető a Satorival szemben a bónuszenergia miatt;✗ Nem olyan erős, mint a többi tank, ezért érzékeny a hatalmas sebzésekre."
+      "level": 1,
+      "content": "Andvari kemény támogató karakter, aki gyakran fő tankként működik. Ennek a karakternek a fő előnye a szövetséges kihányása és megmozgatása elleni védelem. A gyakorlatban Andvari két fő szerepe a Tank és a Support Tank. Jól mutatja magát K'arkh és az Arctalan ellen.\nFőszerep: Támogatás, Irányítás Fő tulajdonság: Erővonal: Harc az élvonalban Sebzés típusa: Fizikai sebzés\n\n**Előnyök**\n\n✓ Védelem a szövetséges felhánytatása és visszaütése ellen;\n✓ olyan pajzsot alkalmaz, amely elnyeli a fizikai és tiszta sebzést;\n✓ rendelkezik irányítókészséggel;\n✓ jó fizikai sérülést okoz. sebzés;\n✓ Fizikai és varázscsomagban is remekül érzi magát.\n\n**Hátrányok**\n\n✗ Nehéz frissíteni a maximális csillagra, különösen, ha a Nebula/Sebastian/K'arkh-val párhuzamosan szintezöl (Megosztott erőforrások);\n✗ Sebezhető a Satorival szemben a bónuszenergia miatt;\n✗ Nem olyan erős, mint a többi tank, ezért érzékeny a hatalmas sebzésekre."
+    },
+    {
+      "title": "Készségek",
+      "level": 1,
+      "content": "Fist of the Titan – Andvari hatalmas öklét szabadít a legközelebbi ellenségre, megsebesítve az ellenséget, és 3 másodpercre elkábítja őket és a közeli ellenségeket.\n\nLiving Earth – Passzív készség. Amíg Andvari életben van, megvédi magát és egy közeli szövetségesét, és a szövetségest részesíti előnyben a mozgástól és a kopogástól.\n\nStone Grip – Megidéz egy kőkezet, amely megragadja a legalacsonyabb életerővel rendelkező ellenséget. A kéz fizikai sérülést okoz, elkábítja az áldozatot és 2 másodpercre a földhöz láncolja.\n\nNatural Screen – Passzív készség. Védőkorlátot helyez a legalacsonyabb páncélzatú szövetségesre, elnyeli a fizikai és tiszta sebzést. Ebben az esetben a sorompó által védett hős bónusz energiát kap minden elnyelt sebzésért."
+    },
+    {
+      "title": "Hős tippek:",
+      "level": 1,
+      "content": ""
     },
     {
       "title": "A készségek szintre emelése",
-      "content": "Röviden:"
+      "level": 2,
+      "content": "Röviden:\n\nKészségek – Megjegyzések\nFist of the Titan – Feltétlenül töltse le. A szinthez kötött készség ellenőrzése\nLiving Earth – Feltétlenül töltse le. A Move/Knockback Defense szintfüggő.\nStone Grip – Feltétlenül töltse le. A szinthez kötött készség ellenőrzése\nNatural Screen – Letöltés javasolt. A képesség az életerő mennyiségétől függ, és minden szinten további 150 fizikai/tiszta sebzést blokkol. Nem a legnagyobb emelkedés, de ha van plusz aranyod, akkor ajánlott letölteni."
     },
     {
       "title": "Skinek",
-      "content": "Ha Andvari működik a fő tankként, akkor a Basic Skin for Strength lesz az első frissítés, amely után az Eastern Skin for Health, majd a Skin of the Dark Depths for Armor. Ha Támogató Tankként működik, akkor az Eastern Appearance for Health lesz az első, aki frissít, utána pedig a Basic Appearance for Strength és az Appearance of the Dark Depths for Armour. Minél tovább él Andvari, annál tovább védi meg szövetségesét az irányítástól, így először a túlélést javító látszatokat javítják. A negyedik űrlappal frissítheti a Star Form-ot a varázslat elleni védelem érdekében. A Winter Skin for Physical attack utoljára frissül, amikor a teljes csomagot már felpumpálták, és vannak extra Power Stone-ok. Andvari sebzése ellenére a csapat győzelme elsősorban azon múlik, hogy meddig él a Tank."
+      "level": 2,
+      "content": "Szükséges Skinek\nAlapvető megjelenés - Erő\nKeleti megjelenés - Egészség\nA sötét mélységek alakja - Páncél\nKisebb megjelenések\nCsillagforma – Mágikus védelem\nVálasztható skinek\nTéli forma – fizikai támadás\n\nHa Andvari működik a fő tankként, akkor a Basic Skin for Strength lesz az első frissítés, amely után az Eastern Skin for Health, majd a Skin of the Dark Depths for Armor. Ha Támogató Tankként működik, akkor az Eastern Appearance for Health lesz az első, aki frissít, utána pedig a Basic Appearance for Strength és az Appearance of the Dark Depths for Armour. Minél tovább él Andvari, annál tovább védi meg szövetségesét az irányítástól, így először a túlélést javító látszatokat javítják. A negyedik űrlappal frissítheti a Star Form-ot a varázslat elleni védelem érdekében. A Winter Skin for Physical attack utoljára frissül, amikor a teljes csomagot már felpumpálták, és vannak extra Power Stone-ok. Andvari sebzése ellenére a csapat győzelme elsősorban azon múlik, hogy meddig él a Tank."
     },
     {
       "title": "Szimbólum",
-      "content": "A karakterfrissítések prioritása a következő:"
+      "level": 2,
+      "content": "A karakterfrissítések prioritása a következő:\n\n1. Egészség – Minden tank/tankkarakter fontos jellemzője. Minél tovább él Andvari, annál tovább védi a csapatot. Növeli az akadály által elnyelt sebzést (4. készség). \n2. Erő – A szimbólum növeli Andvari egészségi állapotát és csökkenti a kritikus találatok valószínűségét. fúj. \n3. Páncél – A második fontos jellemző. Mivel az Andvarit főként a Carkh ellen használják, a szimbólum növeli a karakter túlélőképességét. \n4. Fizikai támadás – Szint feljebb, ha a főszereplők már szintet léptek. Növeli az 1. és 3. képességek sebzését, lehetővé téve, hogy végezzen az ellenséges hősökkel. \n5. Áttörés. páncél – Frissítések, ha a teljes főcsomagot már frissítették. Növeli az ellenséges hősöknek okozott sebzést az 1. és 3. képességből."
     },
     {
       "title": "Műtárgyak",
-      "content": "Andvari legnépszerűbb mecénása Olivér. A fennmaradó háziállatokat nagyon ritkán használják. Például Fenris lesz a mecénás, amikor egy védekező csapatot használnak egy másik tankkal és Andvarival támaszként. \n\nMágus ellen rosszabbul mutat. parancs.Satori – Az Inevitable Számonkérés készség több pontot dob ​​arra, aki továbbiakat kap. energia Andvari képességéből. Sebastian – The Ode of Serenity készség blokkolja Andvari kábítását. Iris – A Soul Exposure készség kiválóan alkalmas egy ellenséges tank megölésére. Amira – Az Illusory Union képesség felveszi Andvari negyedik képességét, amely elnyeli a fizikai képességet. és tiszta sebzés, ezáltal a leggyengébb szövetséges sebezhetővé válik. \n\nKiváló karakter, aki nagyban tud hozzájárulni a győzelemhez. Kiváló ellenfelek a K'arkh/Faceless csomaghoz. A megfelelő csapatban ki tud állni Lars és Krista ellen. Minimálisra csökkenti a mozgás és dobás effektusokon alapuló parancsok értékét. Működhet főtartályként és második támasztótartályként. Szinte mindig második tartályként működik a védőcsomagolásokban. Figyelembe véve a játékban lévő K'arkh-ek puszta számát, ez minden játékos számára kötelező. Sajnos nincs annyi védelmi jelzője, mint más tankoknak, ami sebezhetővé teszi például az Ismail azonnali súlyos sebzését. Jelenleg népszerű hős, mint egy tank Dante/Yasmin/Ju/Ismail társaságában. Kezdőknek ajánlott."
+      "level": 2,
+      "content": "Frissítsen 3 csillagra prioritásként, ezt követően a csillagos minősítés a harmadik műtermékkel együtt frissül. \nA Stardom utoljára frissül, mert... a páncélokon és a fizikai támadásokon való áttörés csak a hős ráadása, szerepét a hosszabb életre és a csapat védelmére alapozza. \nA sztárság egyenletesen ingadozik az első műalkotással. \nA tárgyak szintje megnő Andvari elsőbbségében, ha ő a fő tank. Ha másodlagos tank - párhuzamosan a második tankoló hőssel. Ha Andvari elkezdi normálisan elnyelni a sebzést, és nem esik gyorsan, akkor ajánlott támadó hősre váltani, és visszatérni Andvarihoz, amikor a támadó hős eléri a 130-as műtermék szintet, vagy amikor Andvari ismét túl gyorsan kezd esni."
+    },
+    {
+      "title": "Háziállatok",
+      "level": 1,
+      "content": "Andvari legnépszerűbb mecénása Olivér. A fennmaradó háziállatokat nagyon ritkán használják. Például Fenris lesz a mecénás, amikor egy védekező csapatot használnak egy másik tankkal és Andvarival támaszként."
+    },
+    {
+      "title": "Zavaros hősök",
+      "level": 1,
+      "content": "Mágus ellen rosszabbul mutat. parancs.Satori – Az Inevitable Számonkérés készség több pontot dob ​​arra, aki továbbiakat kap. energia Andvari képességéből. Sebastian – The Ode of Serenity készség blokkolja Andvari kábítását. Iris – A Soul Exposure készség kiválóan alkalmas egy ellenséges tank megölésére. Amira – Az Illusory Union képesség felveszi Andvari negyedik képességét, amely elnyeli a fizikai képességet. és tiszta sebzés, ezáltal a leggyengébb szövetséges sebezhetővé válik."
+    },
+    {
+      "title": "Következtetés",
+      "level": 1,
+      "content": "Kiváló karakter, aki nagyban tud hozzájárulni a győzelemhez. Kiváló ellenfelek a K'arkh/Faceless csomaghoz. A megfelelő csapatban ki tud állni Lars és Krista ellen. Minimálisra csökkenti a mozgás és dobás effektusokon alapuló parancsok értékét. Működhet főtartályként és második támasztótartályként. Szinte mindig második tartályként működik a védőcsomagolásokban. Figyelembe véve a játékban lévő K'arkh-ek puszta számát, ez minden játékos számára kötelező. Sajnos nincs annyi védelmi mutatója, mint más tankoknak, ami sérülékenysé teszi például az Ismail azonnali súlyos sebzését. Jelenleg népszerű hős, mint egy tank Dante/Yasmin/Ju/Ismail társaságában. Kezdőknek ajánlott."
     }
   ]
 }

@@ -4,23 +4,53 @@
   "sections": [
     {
       "title": "Általános áttekintés",
-      "content": "Pippi kiváló bűvész. Lehetővé teszi, hogy bármelyik tankodat olyan fegyverré alakítsd, amely egyszerre több ellenséges karaktert is megöl. A játék egyik legjobb képességével rendelkezik. Jelenleg nem irányító hős (Sebastián miatt), és gyakrabban használják Cleaver/Lutherrel a Grand Arénában. \n\nFőszerep: Mágus, Támogatás Fő Stat: Intelligencia Vonal: Harcol a hátsó vonalban Sebzés típusa: Mágikus sebzés\n\nProfik\n\n✓ Nagyon erős irányítással rendelkező hős;✓ A játék minden szakaszában releváns;✓ Jó karakter a Grand Arénában a második csapatban;✓ Hatalmas mennyiségű varázssebzést okoz. \n\nHátrányok\n\n✗ Nehéz megszerezni és frissíteni a maximális csillagra;✗ Az irányítási képességek csak megakadályozzák, hogy kárt okozzon;✗ Nagyon igényes a csomagra. Olyan karakterekkel kombinálható, mint Luther és Cleaver;✗ Szükségtelen képességei vannak, hacsak nincs kontrollra specializálódott falka;✗ Nagyon gyenge védekezés. Képtelen túlélni Jorgen átigazolását vagy Ju/Keyla támadásait;"
+      "level": 1,
+      "content": "Pippi kiváló bűvész. Lehetővé teszi, hogy bármelyik tankodat olyan fegyverré alakítsd, amely egyszerre több ellenséges karaktert is megöl. A játék egyik legjobb képességével rendelkezik. Jelenleg nem irányító hős (Sebastián miatt), és gyakrabban használják Cleaver/Lutherrel a Grand Arénában.\nFőszerep: Mágus, Támogatás Fő Stat: Intelligencia Vonal: Harcol a hátsó vonalban Sebzés típusa: Mágikus sebzés\n\n**Előnyök**\n\n✓ Nagyon erős irányítással rendelkező hős;\n✓ A játék minden szakaszában releváns;\n✓ Jó karakter a Grand Arénában a második csapatban;\n✓ Hatalmas mennyiségű varázssebzést okoz.\n\n**Hátrányok**\n\n✗ Nehéz megszerezni és frissíteni a maximális csillagra;\n✗ Az irányítási képességek csak megakadályozzák, hogy kárt okozzon;\n✗ Nagyon igényes a csomagra. Olyan karakterekkel kombinálható, mint Luther és Cleaver;\n✗ Szükségtelen képességei vannak, hacsak nincs kontrollra specializálódott falka;\n✗ Nagyon gyenge védekezés. Képtelen túlélni Jorgen átigazolását vagy Ju/Keyla támadásait;"
+    },
+    {
+      "title": "Készségek",
+      "level": 1,
+      "content": "Masquerade – Minden ellenfelet varázslattal üt, sebzést okozva, elkábítva, elvakítva vagy lelassítva az ellenséget 6 másodpercig. Ascension Skill: Uncanny Masquerade Most, amikor Pippi használja a Masquerade hatásait, az ellenség mindig mágikus sebzést kap. Ha az ellenség elkerüli a Masquerade hatását, akkor a képességet ismét alkalmazzák erre az ellenségre (de legfeljebb 3 alkalommal).\n\nCourage – Pajzsot helyez a szövetségesre 5 másodpercre. Amikor egy szövetséges sebzést szenved, a pajzs sebzést okoz a szövetséges közelében lévő ellenfeleknek. Ascension Skill: Bold Courage A Courage hatása alatt egy szövetséges egynegyedével kevesebb mágikus és fizikai sebzést szenved el. A kritikus találatokból a szövetségesnek okozott kár a felére csökken.\n\nPrank – Varázslattal lecsap a legközelebbi ellenségre, sebzést okozva és 3 másodpercre elkábítja őket.\n\nTrickster – A Tréfa dupla vagy négyszeres sebzést kap."
+    },
+    {
+      "title": "Hős tippek:",
+      "level": 1,
+      "content": ""
     },
     {
       "title": "A készségek szintre emelése",
-      "content": "Röviden: Parancs az irányításon keresztül: Parancs a mágián keresztül. kár:"
+      "level": 2,
+      "content": "Röviden:\n\nKészségek – Megjegyzések\nMasquerade – Nem ajánlott letölteni. A fő sebzést a Courage okozza, amit Pippi a tankra dob. Ha az ellenséges csapat elkábított, nem tudja eltalálni a tankot, és ha nem tudja eltalálni a tankot, akkor a Courage nem indít el és nem okoz sebzést. Lengések csak a kontroll alatt lévő csapatban.\nCourage – Szivattyúzáshoz kötelező. A fő kár ebből a képességből származik.\nPrank – Javasoljuk, hogy töltse le, ha van extra aranya. Az első képességgel ellentétben az irányítás csak az ellenséges tankra vonatkozik, ami nem kritikus, és csak a csapatot segíti.\nTrickster – Szint feljebb a második és harmadik képesség után. Mint fentebb említettük, a fő sebzést a Courage okozza, és a Tréfa csak egy ráadás."
     },
     {
       "title": "Skinek",
-      "content": "Ha a csapatodban vannak olyan karakterek, akik mágikus páncél behatolást biztosítanak, akkor először a Sweet Tooth Skin for Magic támadást frissítik, majd az Eastern Skint a behatolásért. védelem a varázslat ellen. Ha nincsenek ilyen karakterek, akkor az keleti megjelenés elsőként lendít a Breakthroughért. védelem a varázslat ellen, és utána az Édesszájú alakja. Az Alapvető megjelenés a harmadik helyen áll az intelligencia tekintetében. Az utolsó frissítés a Guild War Skin és a Demonic Skin az egészségért, mivel Pippi már rendelkezik egy kis védelemmel, ami amúgy sem teszi lehetővé, hogy sokáig éljen. Célja a csapatban, hogy egy pajzsot helyezzen a tankra, és hatalmas sebzést okozzon nekik. Mindkét skin feljebb lép a játék végén."
+      "level": 2,
+      "content": "Szükséges Skinek\nKeleti megjelenés - Áttörés. védelem a varázslat ellen\nÉdesszájú bőr – Mágikus támadás\nAlapvető megjelenés - Intelligencia\nSzituációs Skinek\nGuild War Skin - Egészség\nDémoni forma – egészség\n\nHa a csapatodban vannak olyan karakterek, akik mágikus páncél behatolást biztosítanak, akkor először a Sweet Tooth Skin for Magic támadást frissítik, majd az Eastern Skint a behatolásért. védelem a varázslat ellen. Ha nincsenek ilyen karakterek, akkor az keleti megjelenés elsőként lendít a Breakthroughért. védelem a varázslat ellen, és utána az Édesszájú alakja. Az Alapvető megjelenés a harmadik helyen áll az intelligencia tekintetében. Az utolsó frissítés a Guild War Skin és a Demonic Skin az egészségért, mivel Pippi már rendelkezik egy kis védelemmel, ami amúgy sem teszi lehetővé, hogy sokáig éljen. Célja a csapatban, hogy egy pajzsot helyezzen a tankra, és hatalmas sebzést okozzon nekik. Mindkét skin feljebb lép a játék végén."
     },
     {
       "title": "Szimbólum",
-      "content": "A karakterfrissítések prioritása a következő:"
+      "level": 2,
+      "content": "A karakterfrissítések prioritása a következő:\n\n1. Mágikus támadás – Mint a skineknél, itt is minden a hősök jelenlététől függ a csapatban, akik áthatolnak. mágikus védelem. Ha van ilyen, akkor először töltsük le a mágikus támadás szimbólumát. Ha nincsenek ilyen karakterek, akkor ezt a szimbólumot töltjük le másodikként. \n2. Áttörés. védelem a varázslat ellen – A skinekhez hasonlóan minden a behatolást biztosító karakterek jelenlététől függ a csapatban. mágikus védelem. Ha nincsenek ilyen karakterek, akkor először töltse le a Breaking szimbólumot. védelem a varázslat ellen. Ha vannak ilyen karakterek, akkor ezt a szimbólumot töltjük le másodikként. \n3. Intelligencia – A szimbólum növeli a varázslatot. támad a hősre, de a sebzés növekedése kisebb, mint az előző kettőnél, így maximum a harmadikra ​​lendül. \n4. Egészség - maximumra lendül, mert Pippi sebzése nem függ az energiafelhalmozódás mértékétől. \n5. Védelem a varázslat ellen - Csak akkor frissít, ha sok varázsló van a szerveren. A szimbólum nem prioritás, mert Pippinek van egy műtárgya, amely megvédi a varázslat ellen."
     },
     {
       "title": "Műtárgyak",
-      "content": "Pippi számára a legrelevánsabb kisállat Merlin, aki a tulajdonságok mellett felgyorsítja a készségek felhasználását. Kivételes esetekben Axelt helyezik el, ha Peppy a szélső vonalon van, vagy ha egy csapat hatalmas azonnali sebzést szenved ellened. \n\nIsaac – Tes'Lin High Voltage Module és Overdrive képességei segítenek megbirkózni a varázssebzést okozó hősökkel. \n\nSebastian - A Serenity Ódája készség blokkolja/megakadályozza a vezérlő effektusok alkalmazását. \n\nCornelius – A tudomány Granite képessége megöli a hőst, ha a legtöbb intelligenciával rendelkezik. \n\nLien – Az a képesség, amelyet Pacify bájban tart a hatalmas sebzés miatt. \n\nRufus - Anti-Mag Tank. A Julius - 9 Lives Mechanism képesség eltávolítja a szövetséges irányító hatását, miután a szövetségesen lévő pajzsok eltűnnek. - mivel az ellenség hátsó sorait támadja, ahol Pippi áll. \n\nKiváló bűvész, előnyeivel és hátrányaival egyaránt. Egy megfelelően kiválasztott csomagban Luther/Cleaverrel 2-3 karaktert képes megölni a pajzzsal. Nagyon alacsony a túlélési képessége, ezért nagyon nem ajánlott az utolsó sorba helyezni. Képtelen túlélni Jorgen átigazolását és Ju/Keyla támadásait. Néha megjelenik egy falkában az Orion+Heliosszal. Egy irányított csapatban megszűnik olyan karakter lenni, aki sok sebzést okoz, de támaszként kezd szolgálni. Megfelelő pumpálással az Ön javára változtathatja meg a csata menetét. Jelenleg rosszabbul teljesít Lutherrel a K'archs miatt, akik gyakran vannak egy csapatban az Arctalanokkal. Egy csapatban Cleaverrel gyengébb a hatékonysága, mint Jupak, akinek Cleaver jobban tetszik. A főcsapatban való szintlépéshez nem ajánlott, de tökéletes kiegészítő csomagnak a Grand Arena számára. Csapat opciók Pippivel - Peppipak"
+      "level": 2,
+      "content": "Frissítés először 3 csillagra. Utána a sztárság a második és harmadik műtermék után nő. \nMiután az első műterméket három csillagra pumpáltuk, egyenletesen pumpáljuk a harmadik műtermékkel. \nMiután az első műterméket háromcsillagosra frissítettük, a sztárságot a második műtermékkel frissítjük. \nHa Peppy az egyetlen támadó karakter a csapatban, akkor a tank után növekszik a tárgyak szintje. Ha támadó karakterek is vannak a csapatban, akkor a tárgyak szintje ugyanúgy növekszik, mint a többi támadó hős"
+    },
+    {
+      "title": "Háziállatok",
+      "level": 1,
+      "content": "Pippi számára a legrelevánsabb kisállat Merlin, aki a tulajdonságok mellett felgyorsítja a készségek felhasználását. Kivételes esetekben Axelt helyezik el, ha Peppy a szélső vonalon van, vagy ha egy csapat hatalmas azonnali sebzést szenved ellened."
+    },
+    {
+      "title": "Zavaros hősök",
+      "level": 1,
+      "content": "Isaac – Tes'Lin High Voltage Module és Overdrive képességei segítenek megbirkózni a varázssebzést okozó hősökkel. \n\nSebastian - A Serenity Ódája készség blokkolja/megakadályozza a vezérlő effektusok alkalmazását. \n\nCornelius – A tudomány Granite képessége megöli a hőst, ha a legtöbb intelligenciával rendelkezik. \n\nLien – Az a képesség, amelyet Pacify bájban tart a hatalmas sebzés miatt. \n\nRufus - Anti-Mag Tank. A Julius - 9 Lives Mechanism képesség eltávolítja a szövetséges irányító hatását, miután a szövetségesen lévő pajzsok eltűnnek. - mivel az ellenség hátsó sorait támadja, ahol Pippi áll."
+    },
+    {
+      "title": "Következtetés",
+      "level": 1,
+      "content": "Kiváló bűvész, előnyeivel és hátrányaival egyaránt. Egy megfelelően kiválasztott csomagban Luther/Cleaverrel 2-3 karaktert képes megölni a pajzzsal. Nagyon alacsony a túlélési képessége, ezért nagyon nem ajánlott az utolsó sorba helyezni. Képtelen túlélni Jorgen átigazolását és Ju/Keyla támadásait. Néha megjelenik egy falkában az Orion+Heliosszal. Egy irányított csapatban megszűnik olyan karakter lenni, aki sok sebzést okoz, de támaszként kezd szolgálni. Megfelelő pumpálással az Ön javára változtathatja meg a csata menetét. Jelenleg rosszabbul teljesít Lutherrel a K'archs miatt, akik gyakran vannak egy csapatban az Arctalanokkal. Egy csapatban Cleaverrel gyengébb a hatékonysága, mint Jupak, akinek Cleaver jobban tetszik. A főcsapatban való szintlépéshez nem ajánlott, de tökéletes kiegészítő csomagnak a Grand Arena számára. Csapat opciók Pippi - Peppipak segítségével"
     }
   ]
 }

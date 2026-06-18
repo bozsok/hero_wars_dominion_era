@@ -2,6 +2,13 @@
 
 Minden említésre méltó változtatás a projektben ebben a fájlban lesz rögzítve.
 
+## [0.5.6] - 2026-06-18
+
+### Megváltoztatva (Changed)
+- **Hősútmutatók struktúrájának és fordításának javítása:** Átalakítottuk a `scrape_heroes.js` scrapelőt, hogy a `H1` címsorokat is szekcióként ismerje fel (pl. Képességek, Hős tippek, Kisállatok, Összegzés), elkerülve a leírások elcsúszását. Beépítettük az első TOC elem előtti bevezető szövegek (beleértve a hős előnyeit és hátrányait) automatikus kinyerését „Általános áttekintés” néven, miközben az inline Yandex reklámokat és scripteket kiszűrjük. Beépítettük a táblázatok (`figure`/`table`) részletes beolvasását és formázását is, így a skinek, rúnák és műtárgyak prioritási táblázatai is megjelennek szöveges formában. Emellett a meglévő JSON útmutatókat egy helyi tisztító szkripttel refaktoráltuk (eltávolítottuk a reklámkód-maradványokat, javítottuk az „Előnyök”/„Hátrányok” fordítását, és a listaelemeket bullet pontok nélkül külön sorokba tördeltük) anélkül, hogy azokat újra le kellett volna tölteni a szerverről.
+- **Képességnevek angolul tartása és behelyettesítése:** A képességnevek fordítását külön angol nyelvű batch-csel végezzük, így a magyar magyarázatok mellett a képességek és a fejlesztési megjegyzések címei egységesen az angol játékelnevezéseket mutatják (pl. Strike of the Damned, Unity of the Damned) a korábbi részben magyarított kifejezések helyett.
+- **Kategóriák vizuális hierarchiája az Útmutató fülön:** A `HeroModal.jsx`-ben a szekciók szintje (level 1 vs. 2 és 3) alapján dinamikusan formázzuk a címeket: a fő kategóriák (H1) nagyobb betűméretet és border-bottom nélküli megjelenést kaptak, míg az al-kategóriák (H2 és H3) aláhúzott stílusban jelennek meg. Emellett az „Útmutató és gyakorlati tapasztalatok” főcím kiemelt stílust kapott (28px-es méret, arany szín és finom elválasztó vonal) a vizuális hierarchia tisztázása érdekében, valamint elhelyeztem mellette egy interaktív infó ikont és tooltipet, amely megjelöli a `moon-hero.site` forrást.
+
 ## [0.5.5] - 2026-06-18
 
 ### Megváltoztatva (Changed)

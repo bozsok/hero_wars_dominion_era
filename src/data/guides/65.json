@@ -4,51 +4,93 @@
   "sections": [
     {
       "title": "Általános áttekintés",
-      "content": "Általános információk a hősről: - Mind a 4 teknősnek közös egészség- és energiatartaléka van; - Nem lesznek mindig teljes erővel a csatatéren; - 12 másodpercenként megjelenik egy új teknős, és 20 másodperc múlva eltűnik; - Minden teknősnek megvannak a saját egyedi képességei. \n\nFőszerep: Harcos Fő attribútum: Agility vonal: Harc az élvonalban Sebzés típusa: Fizikai sebzés\n\nProfik\n\n✓ Műtermék a behatoláshoz. páncél, ami a hőst már fizikailag is relevánssá teszi. csapatok;✓ A hős tökéletes olyan csapatok ellen, ahol egy erős karakter ki van téve a fizikai támadásoknak. sebzés, harc az utolsó sorban (augusztus, Polaris, Thea);✓ A hős jó védekezési mutatókkal rendelkezik, ami lehetővé teszi, hogy másodlagos tankoló harcosként is használható legyen gyors csatákban;✓ Le tudja dobni az irányító effektusokat;✓ Visszaütési és irányítási képességei vannak, így a hős fő támadóként használható egy irányítással rendelkező csapatban; \n\nHátrányok\n\n✗ Az új hősök nem kapnak ilyen hamar skint, így az esemény befejezése után hatékonyságukban gyengébbek lehetnek, mint a többi karakter;✗ Jelenleg a hőst nem lehet megszerezni, kivéve az eseményben;✗ Nem teljesít jól a kitérésekkel vagy magas páncélzattal rendelkező csapatokkal szemben;✗ A behatolástól függ. páncél, ezért olyan hősökre van szükség, akik az egész csapatot ellátják ezzel a tulajdonsággal."
+      "level": 1,
+      "content": "Általános információk a hősről: - Mind a 4 teknősnek közös egészség- és energiatartaléka van; - Nem lesznek mindig teljes erővel a csatatéren; - 12 másodpercenként megjelenik egy új teknős, és 20 másodperc múlva eltűnik; - Minden teknősnek megvannak a saját egyedi képességei.\nFőszerep: Harcos Fő attribútum: Agility vonal: Harc az élvonalban Sebzés típusa: Fizikai sebzés\n\n**Előnyök**\n\n✓ Műtermék a behatoláshoz. páncél, ami a hőst már fizikailag is relevánssá teszi. csapatok;\n✓ A hős tökéletes olyan csapatok ellen, ahol egy erős karakter ki van téve a fizikai támadásoknak. sebzés, harc az utolsó sorban (augusztus, Polaris, Thea);\n✓ A hős jó védekezési mutatókkal rendelkezik, ami lehetővé teszi, hogy másodlagos tankoló harcosként is használható legyen gyors csatákban;\n✓ Le tudja dobni az irányító effektusokat;\n✓ Visszaütési és irányítási képességei vannak, így a hős fő támadóként használható egy irányítással rendelkező csapatban;\n\n**Hátrányok**\n\n✗ Az új hősök nem kapnak ilyen hamar skint, így az esemény befejezése után hatékonyságukban gyengébbek lehetnek, mint a többi karakter;\n✗ Jelenleg a hőst nem lehet megszerezni, kivéve az eseményben;\n✗ Nem teljesít jól a kitérésekkel vagy magas páncélzattal rendelkező csapatokkal szemben;\n✗ A behatolástól függ. páncél, ezért olyan hősökre van szükség, akik az egész csapatot ellátják ezzel a tulajdonsággal."
     },
     {
-      "title": "A készségek szintre emelése",
-      "content": "Röviden:"
+      "title": "Készségek",
+      "level": 1,
+      "content": "Kawabanga – Minden Teenage Mutant Ninja Turtle eldobja a vezérlőeffektusokat, és eltűnik a csatatérről. Ezután a Teknősök (akik részt vehetnek a csatában) egymás után rohannak be a csatába, és hajtják végre jellegzetes mozdulataikat. A technikák végrehajtása után azok a Teknősök, akik a képesség használata előtt ott voltak, a pályán maradnak. További hatás: A Teenage Mutant Ninja Turtles csatlakozik a csatához, miután az elkezdődött. Leo az első, aki belerohan a csatába, és végrehajtja jellegzetes mozdulatát. Leo jellegzetes lépése: A teknős beugrik az ellenséges csapat közepére, megpörgeti katanáját és fizikai sebzést okoz. 3 másodpercig másodpercenként sebzi az ellenséget a területen. Ezek után a szövetséges csapat élvonalába ugrik.\n\nDonnie's Tactics – Passzív készség. 12 másodpercenként egy új nindzsa teknős jelenik meg a csatatéren (azoktól, amelyekhez készségeket tanultak), és használja a jellegzetes mozdulatát. A teknős 20 másodpercig harcol, majd elhagyja a csatát. A tizenéves mutáns nindzsa teknősök egészségben és energiában osztoznak. A teknősök maximális életereje csata közben nem változtatható meg.További hatás: Donnie most is részt vesz a csatában, és végrehajtja a jellegzetes lépését. Donnie jellegzetes lépése: A teknős botjával eltalálja az elülső ellenséget, fizikai sérülést okozva neki. sebzés és kábítás 2 másodpercig, majd az ellenséget az ellenséges csapat közepe felé löki. A lökött ellenség és minden általa eltalált ellenség fizikai sebzést is kap. kár.Ascension Skill: Donnie's Smoke BombAmikor a Teenage Mutant Ninja Turtle elhagyja a csatateret, a közeli ellenségek 3 másodpercre megvakulnak.\n\nRaph's Fury – Passzív készség. Mostantól minden Teenage Mutant Ninja Turtle minden harmadik alaptámadása megerősített: további fizikai sebzést okoz. kárt okoz és 1 másodpercre elkábítja a célpontot. További hatás: Raph most is beszáll a harcba, és végrehajtja jellegzetes mozdulatát. Raph jellegzetes lépése: a legtávolabbi ellenség mögé ugrik, és az ellenséges csapat közepe felé löki, fizikai sebzést okozva. kár. Ezután visszatér a szövetséges csapat élvonalába, és minden ellenséget a levegőbe dobott, és fizikai sebzést okoz mindenkinek. kár.\n\nMikey's optimism – Passzív készség. Noha egynél több Teenage Mutant Ninja Turtle van a csatatéren, mindegyik 20%-kal kevesebb sebzést szenved el. Bónuszhatás: Mikey most is csatlakozik a harchoz, és végrehajtja jellegzetes mozdulatát. Mikey jellegzetes lépése: a legtávolabbi ellenség mögé ugrik, és gördeszkázik szövetségesei felé, miközben pizzát tart. Útközben összeütközik a központi ellenséggel, fizikai sebzést okozva. megsebzi az ellenséget a területen, és 1 másodpercre elkábítja őket. Pizzaszeleteket is szór, gyógyító szövetségeseket. Ezután visszatér a szövetséges csapat élvonalába. Ascension Skill: A Mikey's Secret Ingredient Szövetségesek, akiket a Mikey's Pizza gyógyít, 30%-os életlopó hatást érnek el 4 másodpercig.\n\nTreasures from the sewer – A tizenéves mutáns nindzsa teknősök időnként megtalálhatók a céh börtönében, és további jutalmakat biztosítanak. A jutalmak forrásokat tartalmaznak a titánok megerősítésére."
     },
     {
-      "title": "Skinek",
-      "content": "Jelenleg a hősnek csak Basic megjelenése van az Agility számára. A megjelenés növeli a páncélt, a fizikai. támadás, növeli annak esélyét, hogy az ellenséget kitérővel találja el, és csökkenti a kritikus találatok esélyét."
-    },
-    {
-      "title": "Szimbólum",
-      "content": "A karakterfrissítések prioritása a következő:"
-    },
-    {
-      "title": "Műtárgyak",
+      "title": "Hős tippek",
+      "level": 1,
       "content": ""
     },
     {
+      "title": "A készségek szintre emelése",
+      "level": 2,
+      "content": "Röviden:\n\nKészségek – Megjegyzések\nKawabanga – A skill nagyon erős, sok sebzést okoz egyszerre több ellenfélnek a csapat közepén. A készség sok sebzést okoz, és eltávolítja a vezérlőhatásokat a teknősökről. Hátránya, hogy nem mindig öli meg az ellenfeleket, így lehetővé teszi az ellenséges hősök számára, hogy válaszul ellentámadást hajtsanak végre. Csata közben nem nagyon lehet használni a fő készségeket, ezért a passzív képességek élveznek elsőbbséget. Az elsőbbséget tekintve a negyedik helyen állnak.\nDonnie's Tactics – Erős irányító készség. Sebzést okoz, elkábítja és a csapat közepére löki az elülső ellenséget. Hasznos készség, amely segít összehozni a hősöket. Második prioritásban.\nRaph's Fury – Messze a leghasznosabb készség. Passzívan növeli a teknősök sebzését az alapvető támadásokból, és lehetővé teszi az ellenség passzív elkábítását minden harmadik alaptámadásnál. Aktív hatás - távoli ellenség húzása a csapat közepébe. Donival együtt ez a két készség segít összevonni az egész csapatot és hasznos területirányítási készségeket használni. Az elsőbbség az első.\nMikey's optimism – Erős védekezési képesség. Ha 1-nél több teknős van a csatatéren, a sebzésük csökkent. Ezenkívül a készség lehetővé teszi egy ellenségcsoport elkábítását, ami 2 és 3 húzókészség esetén hasznos. Elsőbbségi szempontból a harmadik helyen áll.\nTreasures from the sewer – Red rangban oldja fel. Naponta 3-szor nyitható. Díjak:"
+    },
+    {
+      "title": "Skinek",
+      "level": 2,
+      "content": "Szükséges Skinek\nAlapforma - Agility\n\nJelenleg a hősnek csak Basic megjelenése van az Agility számára. A megjelenés növeli a páncélt, a fizikai. támadás, növeli annak esélyét, hogy az ellenséget kitérővel találja el, és csökkenti a kritikus találatok esélyét."
+    },
+    {
+      "title": "Szimbólum",
+      "level": 2,
+      "content": "A karakterfrissítések prioritása a következő:\n\n1. Áttörés. páncél – Kötelező szimbólum, amelyet először és a maximumra fejlesztenek. Jelentősen megnöveli a hős sebzését. \n2. Ügyesség – A második kötelező karakter. A szimbólum nem csak növeli a hős túlélőképességét (páncélt ad), hanem növeli a sebzést és annak esélyét is, hogy egy kitérővel eltalálják az ellenséget. Ha a hősnek jelenleg már jó a túlélése, akkor a második szimbólum fizikaira változik. támadás, az agilitáshoz pedig a harmadik. \n3. Fiz. támadás – Jelentősen növeli a hős sebzését. Egy szükséges szimbólum, és a harmadikra ​​lendül a maximumig. Ha a hősnek már jó a túlélési képessége, akkor az áttörés után a maximum második felé lendül. páncél. \n4. Páncél – Maximum negyedik szintig. A szimbólum növeli a hős páncélját. A játék késői szakaszában leng, mert... ha a hősnek jó a túlélése, akkor a szimbólum lelassítja a kapott sebzésből származó energia felhalmozódását. 30-al felemelhető és növelhető, ha a hős túl korán hal meg fizikai sérülés következtében. kárt\n5. Egészség – Az utolsó maximumra lendül. Óvatosan kell felpumpálnia a szimbólumot, és nem szabad túlpumpálnia a teknősöket, különben ritkábban kezdik használni a készségeket. 30-35 között ingadozik. Frissítésre kerül, ha a hős túl gyorsan kezd meghalni."
+    },
+    {
+      "title": "Műtárgyak",
+      "level": 2,
+      "content": "Először ★★★-re lendít. Ezt követően egyenletesen töltheti le mindhárom műterméket a csillagbesorolás szerint. Ha nincs elég erőforrás, a sztárság 2 és 3 műtárgy után nő. \nAz első ★★★ műtárgy elérése után mindenki egyenletesen oszlik el a csillagokon (ha van elegendő erőforrás). Más esetekben az első műtermék ★★★ után van kiegyenlítve, egyenletesen a 3. műtermékkel. \nIdeális esetben mindhárom műtárgy egyenletesen ingadozik a csillagok erejét tekintve. Erőforráshiány esetén a második és harmadik műterméket egyenletesen pumpálják. A második műtermék mindig prioritást élvez, majd a harmadik, és csak ezután az első. \nA tárgyak szintje nő a tank és a fő támadó hős után."
+    },
+    {
       "title": "Háziállatok",
-      "content": "Három háziállat védheti a teknősöket: az ellenfelektől függ, hogy melyik patrónt használja. — akkor használható, ha a hőst túlélő képességgel kell ellátni (regeneráció és páncél). - a fő házi kedvenc, amely leggyakrabban a mecénás. - akkor használatos, ha az ellenséges csapatnak Sebastian vagy 1-nél több gyógyítója van. \n\n- A pull képességek miatt ez segít Jorgennek több hőst eltalálni az első képességével. A harmadik képesség segít gyorsan megölni az utolsó sor hősét. - Az irányítás hőse. A teknősök irányításának (és ellökésének) képességeivel kombinálva tökéletesen kézben tudja tartani a csapatot. — Kiváló szinergia a teknősök irányító hatásának köszönhetően.+ — Aurora és Tristan kombinációját a Teknősök tökéletesen kiegészítik. A hős a behatolástól függ. páncél. Tristan pedig Aurora mögött szinte állandó ütésekkel látja el a csapatot. páncél. — Erősíti a teknősök harmadik képességét, aminek következtében a sebzés érezhetően megnő.+ — Qing Mao tankolása Aiden alatt szinte állandó behatolást biztosít a csapatnak. páncél a műtárgyból és a negyedik képességből, ami lehetővé teszi a Teknősök számára, hogy sok sebzést okozzanak, és Qing Mao sebzése alá vonják az ellenfeleket. - Cleaver ügyessége jól passzol a teknősök húzásához, így nagyon gyorsan megtörheti az ellenséges csapat alakulatát. - Kiváló védekező támogatás és megnövekedett kritika esélye. sztrájk a csapatért. - Kiváló szinergia Zirivel, mert a teknősök tökéletesen tudnak tankolni, amikor Ziri befurakszik. \n\n- Hősök kitérővel, mert... a kitérés megakadályozza, hogy a teknősök eltalálják az ellenfelet. - Cain kitérése a csapatért csökkenti annak valószínűségét, hogy a teknősök eltalálják az ellenfelet. - Megvédi a csapatot a rángatástól és az irányítástól, csökkentve a teknősök hatékonyságát. - véd a szövetségesek bevonulása ellen. - Megvédi a szövetségeseket a fizikai támadásoktól. támadások (auto-támadások), ami jelentősen csökkenti a teknősök sebzését, akiknek az öntámadása a károkozás fő eszköze. \n\nNéhány csapatopció, amelyek jó eredményeket mutattak a csatában."
+      "level": 2,
+      "content": "Három háziállat védheti a teknősöket: az ellenfelektől függ, hogy melyik patrónt használja. — akkor használható, ha a hőst túlélő képességgel kell ellátni (regeneráció és páncél). - a fő házi kedvenc, amely leggyakrabban a mecénás. - akkor használatos, ha az ellenséges csapatnak Sebastian vagy 1-nél több gyógyítója van."
+    },
+    {
+      "title": "Szinergia",
+      "level": 1,
+      "content": "- A pull képességek miatt ez segít Jorgennek több hőst eltalálni az első képességével. A harmadik képesség segít gyorsan megölni az utolsó sor hősét. - Az irányítás hőse. A teknősök irányításának (és ellökésének) képességeivel kombinálva tökéletesen kézben tudja tartani a csapatot. — Kiváló szinergia a teknősök irányító hatásának köszönhetően.+ — Aurora és Tristan kombinációját tökéletesen kiegészítik a Teknősök. A hős a behatolástól függ. páncél. Tristan pedig Aurora mögött szinte állandó ütésekkel látja el a csapatot. páncél. — Erősíti a teknősök harmadik képességét, aminek következtében a sebzés érezhetően megnő.+ — Qing Mao tankolása Aiden alatt szinte állandó behatolást biztosít a csapatnak. páncél a műtárgyból és a negyedik képességből, ami lehetővé teszi a Teknősök számára, hogy sok sebzést okozzanak, és Qing Mao sebzése alá vonják az ellenfeleket. - Cleaver ügyessége jól passzol a teknősök húzásához, így nagyon gyorsan megtörheti az ellenséges csapat alakulatát. - Kiváló védekező támogatás és megnövekedett kritika esélye. sztrájk a csapatért. - Kiváló szinergia Zirivel, mert a teknősök tökéletesen tudnak tankolni, amikor Ziri befurakszik."
+    },
+    {
+      "title": "Zavaros hősök",
+      "level": 1,
+      "content": "- Hősök kitérővel, mert... a kitérés megakadályozza, hogy a teknősök eltalálják az ellenfelet. - Cain kitérése a csapatért csökkenti annak valószínűségét, hogy a teknősök eltalálják az ellenfelet. - Megvédi a csapatot a rángatástól és az irányítástól, csökkentve a teknősök hatékonyságát. - véd a szövetségesek bevonulása ellen. - Megvédi a szövetségeseket a fizikai támadásoktól. támadások (auto-támadások), ami jelentősen csökkenti a teknősök sebzését, akiknek az öntámadása a károkozás fő eszköze."
+    },
+    {
+      "title": "Csapatok",
+      "level": 1,
+      "content": "Néhány csapatopció, amelyek jó eredményeket mutattak a csatában."
     },
     {
       "title": "Aurora+Tristan",
-      "content": "Aurora és Tristan erős kombinációja, amelyet a Teknősök által okozott irányítás és sebzés még tovább fokoz. Az Aurora túlélést biztosít a csapatnak a fizikai támadásokkal szemben. támadások (kitérő), Tristan folyamatos behatolást biztosít a csapatnak. páncél, teknősök sok sebzést okoznak, és egy pontra húzzák az ellenséges csapatot. Ugyanakkor Sebastian nemcsak a kontroll ellen véd, hanem a kritikát is növeli. csapás a hősökre. Az ötödik szituációs hős Helios páncéllal és védelemmel a kritikus ellen. ütések, Fafnir sebzéskezeléssel, Jet (Jelentősen megnöveli Tristan és Turtles sebzését, lehetővé téve számukra, hogy gyakori kritikus ütéseket tudjanak leadni), vagy Healer – Martha fizikai ellen. csapatok, Thea - bűvész ellen. parancsokat\n\nPélda parancs:"
+      "level": 2,
+      "content": "Aurora és Tristan erős kombinációja, amelyet a Teknősök által okozott irányítás és sebzés még tovább fokoz. Az Aurora túlélést biztosít a csapatnak a fizikai támadásokkal szemben. támadások (kitérő), Tristan folyamatos behatolást biztosít a csapatnak. páncél, teknősök sok sebzést okoznak, és egy pontra húzzák az ellenséges csapatot. Ugyanakkor Sebastian nemcsak a kontroll ellen véd, hanem a kritikát is növeli. csapás a hősökre. Az ötödik szituációs hős Helios páncéllal és védelemmel a kritikus ellen. ütések, Fafnir sebzéskezeléssel, Jet (Jelentősen megnöveli Tristan és Turtles sebzését, lehetővé téve számukra, hogy gyakori kritikus találatokat tudjanak adni), vagy Healer – Martha fizikai ellen. csapatok, Thea - bűvész ellen. parancsokat\n\nPélda parancs:"
     },
     {
       "title": "Csing Mao tankolása",
-      "content": "— Hatalmas áttörést produkáló csapat. páncél, jó túlélőképesség és erős sebzés. Qing Mao Aiden és Kain vezetése alatt folyamatosan aktiválja ereklyét, a Teknősökkel együtt taszítja el az ellenséget, és gyorsan megöli az egész ellenséges csapatot."
+      "level": 2,
+      "content": "— Hatalmas áttörést produkáló csapat. páncél, jó túlélőképesség és erős sebzés. Qing Mao Aiden és Kain irányítása alatt folyamatosan aktiválja ereklyét, a Teknősökkel együtt taszítja el az ellenséget, és gyorsan megöli az egész ellenséges csapatot."
     },
     {
       "title": "Arachne",
+      "level": 2,
       "content": ""
     },
     {
       "title": "Julius",
+      "level": 2,
       "content": ""
     },
     {
       "title": "Asgard",
+      "level": 2,
       "content": "— Asgard variáns parancsa Osha alatt"
     },
     {
       "title": "SM (mérnöki/lőtáv)",
-      "content": "- nagyon jó csapat az SM-hez a mérnöki vagy lőtéren. A mérnöki munkában a plusz energia miatt a csapat nagyon gyakran kezdi használni az első készségeket, aminek köszönhetően a műtermékek folyamatosan a csapaton vannak, és jelentősen megnő a túlélés. A lőtéren a sebzéscsökkentés remekül működik a teknősök 4. képességével, ezzel jelentősen növelve a túlélést. \n\nA Teenage Mutant Ninja Turtles egy nagyon érdekes hős egyedi mechanikával. Kiváló túlélőképesség, kiváló sebzés, sebzést okoz az összes ellenséges sornak. Hasznos műtárgy az áttöréshez. a foglalás fizikailag mindig releváns. csapat. A piros rangban lévő készség sokkal hasznosabb, mint Lara Croft megfelelője, mert lehetővé válik a titánok megerősítése és egy ingyenes totem megszerzése. A hősnek sok hasznos készsége van: kábítás, húzás, területi sérülés, kiváló túlélés. A támadások célpontjai az ellenség valamennyi rangja, ezáltal lehetővé válik, hogy nyomást gyakoroljon az egész csapatra. \n\nA hős kiválóan teljesít VG-ben, Arénában, GA-ban, de a Turtles legjobb felhasználása az SM."
+      "level": 2,
+      "content": "- nagyon jó csapat az SM-hez a mérnöki vagy lőtéren. A mérnöki munkában a plusz energia miatt a csapat nagyon gyakran kezdi használni az első készségeket, aminek köszönhetően a műtermékek folyamatosan a csapaton vannak, és jelentősen megnő a túlélés. A lőtéren a sebzéscsökkentés remekül működik a teknősök 4. képességével, ezzel jelentősen növelve a túlélést."
+    },
+    {
+      "title": "Következtetés",
+      "level": 1,
+      "content": "A Teenage Mutant Ninja Turtles egy nagyon érdekes hős egyedi mechanikával. Kiváló túlélőképesség, kiváló sebzés, sebzést okoz az összes ellenséges sornak. Hasznos műtárgy az áttöréshez. a foglalás fizikailag mindig releváns. csapat. A piros rangban lévő készség sokkal hasznosabb, mint Lara Croft megfelelője, mert lehetővé válik a titánok megerősítése és egy ingyenes totem megszerzése. A hősnek sok hasznos készsége van: kábítás, húzás, területi sérülés, kiváló túlélés. A támadások célpontjai az ellenség valamennyi rangja, ezáltal lehetővé válik, hogy nyomást gyakoroljon az egész csapatra. \n\nA hős kiválóan teljesít VG-ben, Arénában, GA-ban, de a Turtles legjobb felhasználása az SM."
     }
   ]
 }
