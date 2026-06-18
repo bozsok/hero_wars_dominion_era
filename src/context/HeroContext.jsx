@@ -363,11 +363,19 @@ export const HeroProvider = ({ children }) => {
       sortedHeroesObj[id] = myHeroes[id];
     });
 
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const day = String(now.getDate()).padStart(2, '0');
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const filename = `${year}.${month}.${day}_${hours}${minutes}`;
+
     // 1. JSON export letöltése
     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(sortedHeroesObj, null, 2));
     const downloadAnchorNode = document.createElement('a');
     downloadAnchorNode.setAttribute("href", dataStr);
-    downloadAnchorNode.setAttribute("download", "dominion_heroes_export.json");
+    downloadAnchorNode.setAttribute("download", `${filename}.json`);
     document.body.appendChild(downloadAnchorNode);
     downloadAnchorNode.click();
     downloadAnchorNode.remove();
@@ -378,7 +386,7 @@ export const HeroProvider = ({ children }) => {
       const textDataStr = "data:text/plain;charset=utf-8," + encodeURIComponent(textSummary);
       const textAnchorNode = document.createElement('a');
       textAnchorNode.setAttribute("href", textDataStr);
-      textAnchorNode.setAttribute("download", "dominion_heroes_summary.txt");
+      textAnchorNode.setAttribute("download", `${filename}.txt`);
       document.body.appendChild(textAnchorNode);
       textAnchorNode.click();
       textAnchorNode.remove();

@@ -2,6 +2,29 @@
 
 Minden említésre méltó változtatás a projektben ebben a fájlban lesz rögzítve.
 
+## [0.5.4] - 2026-06-18
+
+### Megváltoztatva (Changed)
+- **Zászló-fülek sorrendjének frissítése:** A hősök adatlapján (HeroModal.jsx) elhelyezkedő zászlós navigációs fülek sorrendje a játékosok igényeihez igazítva módosult: Info, Útmutató, Skills, Skins, Stats, Glyphs, Gift of the Elements, Artifacts, Ascension.
+
+## [0.5.3] - 2026-06-18
+
+### Hozzáadva (Added)
+- **Hős játékbeli specifikációk szótára (heroGameSpecs.json):** Új adatfájl hozzáadása, amely mind a 73 hős valós, játékbeli harcvonal-pozícióját (front/middle/back line) és szövetségi/faji különlegességét (Special: pl. Undead, Grove Keeper, Demon, Elf, Blessed, Chaos, Engineer) tartalmazza.
+
+### Megváltoztatva (Changed)
+- **Részletes játékbeli besorolások megjelenítése:** A hősök adatlapján (HeroModal.jsx) az Info fül alján elhelyezkedő statisztikai rész átalakításra került. Az elavult és hiányos dobozok helyett a játékhoz hű, részletes és strukturált bontásban jelenik meg a Harcvonal (Line), a Fő szerepkör (Main role), a Kiegészítő szerepkör (Additional role), a Szövetség (Special) és a Fő hős statisztika (Main hero stat). A kiegészítő szerepkör és a szövetség doboza dinamikusan jelenik meg: ha a hős nem rendelkezik ilyen tulajdonsággal a játékban, a megfelelő doboz nem renderelődik.
+
+## [0.5.2] - 2026-06-18
+
+### Megváltoztatva (Changed)
+- **Optimalizált és áthelyezett adatmásolás:** A hősök adatlapján található „Adatok másolása” gomb átkerült a bal oldali zászlók alól az „Info” lap jobb felső sarkába, a hős nevével és azonosítójával egy sorba, letisztultabbá téve az oldalsávot. A gomb mellé elhelyeztem egy stílusos arany infó ikont és egy részletes magyarázó tooltipet az AI-tanácsadás megkönnyítésére. A másolt JSON-adatokból eltávolítottam a sallangokat (például a hibás Google Drive kép-URL-eket és leírásokat), viszont kiegészítettem az aktuális szinten számított valós statisztikai értékekkel (`calculatedStats`).
+
+## [0.5.1] - 2026-06-18
+
+### Megváltoztatva (Changed)
+- **Dinamikus export fájlnevek:** Az exportált JSON-adatfájl és a narratív összefoglaló szövegfájl (summary) elnevezései a korábbi fix `dominion_heroes_export` és `dominion_heroes_summary` helyett dinamikusan, az exportálás pillanatában érvényes dátum és időpont alapján generálódnak `ÉÉÉÉ.HH.NN_ÓÓPP` formátumban (például `2026.06.18_2029.json` és `2026.06.18_2029.txt`).
+
 ## [0.5.0] - 2026-06-15
 
 ### Hozzáadva (Added)

@@ -3,6 +3,7 @@ import { HeroContext } from '../context/HeroContext';
 import InfoModal from './InfoModal';
 import { calculateHeroStats } from '../utils/statCalculator';
 import gameDictionary from '../data/gameDictionary.json' with { type: 'json' };
+import heroGameSpecs from '../data/heroGameSpecs.json' with { type: 'json' };
 
 const Ranks = [
   'White', 'Green', 'Green+1', 'Blue', 'Blue+1', 'Blue+2',
@@ -29,10 +30,10 @@ const FactionTranslations = {
 };
 
 const GLYPH_XP_PER_LEVEL = [
-  50,50,50,50,50, 80,80,80,80,80, 190,190,190,190,190,
-  220,220,220,220,220, 520,520,520,520,520, 590,590,590,590,590,
-  790,790,790,790,790, 870,870,870,870,870,
-  1970, 1970,1970,1970,1970, 3470,3470,3470,3470,3470
+  50, 50, 50, 50, 50, 80, 80, 80, 80, 80, 190, 190, 190, 190, 190,
+  220, 220, 220, 220, 220, 520, 520, 520, 520, 520, 590, 590, 590, 590, 590,
+  790, 790, 790, 790, 790, 870, 870, 870, 870, 870,
+  1970, 1970, 1970, 1970, 1970, 3470, 3470, 3470, 3470, 3470
 ];
 
 const HeroModal = ({ hero, onClose }) => {
@@ -40,7 +41,7 @@ const HeroModal = ({ hero, onClose }) => {
   const [heroData, setHeroData] = useState({ ...hero });
   const [activeTab, setActiveTab] = useState('info');
   const [infoType, setInfoType] = useState(null);
-  
+
   const [guideData, setGuideData] = useState(null);
   const [isGuideLoading, setIsGuideLoading] = useState(false);
 
@@ -85,6 +86,34 @@ const HeroModal = ({ hero, onClose }) => {
     };
   }, []);
 
+  const handleCopyData = () => {
+    const calculatedStats = calculateHeroStats(hero.id, heroData);
+
+    const cleanData = {
+      id: heroData.id,
+      name: heroData.name,
+      mainStat: heroData.mainStat,
+      roles: heroData.roles,
+      general: heroData.general,
+      items: heroData.items,
+      skills: heroData.skills,
+      artifacts: heroData.artifacts,
+      skins: heroData.skins,
+      glyphs: heroData.glyphs,
+      giftOfElements: heroData.giftOfElements,
+      ascension: heroData.ascension,
+      calculatedStats: calculatedStats ? {
+        power: calculatedStats.power,
+        primary: calculatedStats.primary,
+        secondary: calculatedStats.secondary
+      } : null
+    };
+
+    navigator.clipboard.writeText(JSON.stringify(cleanData, null, 2))
+      .then(() => alert('Adatok másolva a vágólapra!'))
+      .catch(err => console.error('Hiba a másoláskor: ', err));
+  };
+
   const renderInfoTab = () => {
     const desc = hero.description || {};
     return (
@@ -114,14 +143,53 @@ const HeroModal = ({ hero, onClose }) => {
               )}
             </div>
           </div>
-          <div className="modal-hero-text-wrapper">
-            <h2 className="modal-hero-name">
-              {hero.name}
-            </h2>
-            <div className="modal-hero-id">
-              #{hero.id}
+          <div className="modal-hero-text-wrapper" style={{ flex: 1 }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px' }}>
+                <h2 className="modal-hero-name" style={{ margin: 0 }}>
+                  {hero.name}
+                </h2>
+                <div className="modal-hero-id" style={{ margin: 0 }}>
+                  #{hero.id}
+                </div>
+              </div>
+
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <button
+                  className="action-btn btn-save"
+                  style={{
+                    background: 'linear-gradient(180deg, #b67532 0%, #8c521f 100%)',
+                    color: '#fff',
+                    border: '1px solid #feec5f',
+                    padding: '6px 12px',
+                    fontSize: '16px',
+                    borderRadius: '4px',
+                    cursor: 'pointer',
+                    boxShadow: '0 2px 4px rgba(0,0,0,0.3)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '4px'
+                  }}
+                  onClick={handleCopyData}
+                >
+                  <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>content_copy</span>
+                  Adatok másolása
+                </button>
+                <span
+                  className="material-symbols-outlined"
+                  style={{
+                    color: '#feec5f',
+                    cursor: 'help',
+                    fontSize: '28px'
+                  }}
+                  title="Ha csak ezen hős fejlesztésével kapcsolatban szeretnél tanácsot kérni egy AI-tól (pl. ChatGPT, Gemini), akkor nem kell a teljes exportfájlt feltöltened. Ezzel a gombbal vágólapra másolhatod a hős adatait, és közvetlenül beillesztheted a chatbe."
+                >
+                  info
+                </span>
+              </div>
             </div>
-            <div className="modal-hero-roles-header">
+
+            <div className="modal-hero-roles-header" style={{ marginTop: '8px' }}>
               <span className="hero-role-chip">{hero.mainStat || 'Ismeretlen'}</span>
               {(hero.roles || []).map(role => (
                 <span key={role} className="hero-role-chip">{role}</span>
@@ -164,14 +232,49 @@ const HeroModal = ({ hero, onClose }) => {
           </div>
         </div>
 
-        <div className="modal-hero-bottom-stats">
-          <div className="bottom-stat-box">
-            <strong className="bottom-stat-title">Fő Statisztika</strong>
-            <span className="bottom-stat-value">{hero.mainStat || 'Ismeretlen'}</span>
+        <div className="modal-hero-bottom-stats" style={{ display: 'flex', flexWrap: 'wrap', gap: '12px' }}>
+          {/* Harcvonal */}
+          <div className="bottom-stat-box" style={{ flex: '1 1 180px' }}>
+            <strong className="bottom-stat-title">Harcvonal (Line)</strong>
+            <span className="bottom-stat-value" style={{ color: '#fece86', fontWeight: 'bold' }}>
+              {(heroGameSpecs[hero.id]?.line) || 'Fights at the middle line'}
+            </span>
           </div>
-          <div className="bottom-stat-box">
-            <strong className="bottom-stat-title">Szerepkörök</strong>
-            <span className="bottom-stat-value">{(hero.roles || []).join(', ') || 'Ismeretlen'}</span>
+
+          {/* Fő szerepkör */}
+          <div className="bottom-stat-box" style={{ flex: '1 1 180px' }}>
+            <strong className="bottom-stat-title">Fő Szerepkör</strong>
+            <span className="bottom-stat-value">
+              Main role: {hero.roles[0] || 'Ismeretlen'}
+            </span>
+          </div>
+
+          {/* Kiegészítő szerepkör */}
+          {hero.roles[1] && (
+            <div className="bottom-stat-box" style={{ flex: '1 1 180px' }}>
+              <strong className="bottom-stat-title">Kiegészítő Szerepkör</strong>
+              <span className="bottom-stat-value">
+                Additional role: {hero.roles[1]}
+              </span>
+            </div>
+          )}
+
+          {/* Különlegesség */}
+          {heroGameSpecs[hero.id]?.special && (
+            <div className="bottom-stat-box" style={{ flex: '1 1 180px' }}>
+              <strong className="bottom-stat-title">Szövetség (Special)</strong>
+              <span className="bottom-stat-value">
+                Special: {heroGameSpecs[hero.id].special}
+              </span>
+            </div>
+          )}
+
+          {/* Fő statisztika */}
+          <div className="bottom-stat-box" style={{ flex: '1 1 180px' }}>
+            <strong className="bottom-stat-title">Fő Hős Statisztika</strong>
+            <span className="bottom-stat-value">
+              Main hero stat: {hero.mainStat || 'Ismeretlen'}
+            </span>
           </div>
         </div>
       </div>
@@ -190,17 +293,17 @@ const HeroModal = ({ hero, onClose }) => {
           <div className="guide-sections">
             {guideData.sections.map((sec, idx) => (
               <div key={idx} className="guide-section" style={{ marginBottom: '24px' }}>
-                <h4 style={{ 
-                  color: 'var(--primary)', 
-                  fontFamily: 'var(--font-title-md)', 
-                  fontSize: '18px', 
-                  borderBottom: '1px solid var(--surface-variant)', 
-                  paddingBottom: '8px', 
-                  marginBottom: '12px' 
+                <h4 style={{
+                  color: 'var(--primary)',
+                  fontFamily: 'var(--font-title-md)',
+                  fontSize: '18px',
+                  borderBottom: '1px solid var(--surface-variant)',
+                  paddingBottom: '8px',
+                  marginBottom: '12px'
                 }}>{sec.title}</h4>
-                <div style={{ 
-                  whiteSpace: 'pre-wrap', 
-                  color: 'var(--on-surface)', 
+                <div style={{
+                  whiteSpace: 'pre-wrap',
+                  color: 'var(--on-surface)',
                   lineHeight: '1.5',
                   fontSize: '14px'
                 }}>
@@ -218,7 +321,7 @@ const HeroModal = ({ hero, onClose }) => {
 
   const renderGeneralTab = () => {
     const calculatedStats = calculateHeroStats(hero.id, heroData);
-    
+
     const rankStr = heroData.items?.rank || 'White';
     let rankColorClass = 'white';
     if (rankStr.toLowerCase().includes('green')) rankColorClass = 'green';
@@ -235,7 +338,7 @@ const HeroModal = ({ hero, onClose }) => {
           {/* Bal oszlop: Alapadatok és Power banner */}
           <div className="modal-stat-column">
             <h3 className="tab-section-title">Hős állapota</h3>
-            
+
             {/* Játékbeli erő banner */}
             <div className="power-banner-card">
               <span className="premium-card-subtitle" style={{ color: '#fece86' }}>Játékbeli Erő (Power)</span>
@@ -258,7 +361,7 @@ const HeroModal = ({ hero, onClose }) => {
                   <span style={{ color: '#ccc' }}>Felszerelés Rang:</span>
                   <span className={`rank-badge-pill ${rankColorClass}`}>{rankStr}</span>
                 </div>
-                
+
                 {/* Soul Stones progress bar */}
                 <div style={{ marginTop: '4px' }}>
                   <div className="premium-progress-label">
@@ -267,7 +370,7 @@ const HeroModal = ({ hero, onClose }) => {
                   </div>
                   {starsCount < 6 && (
                     <div className="premium-progress-bar" style={{ marginTop: '4px' }}>
-                      <div 
+                      <div
                         className="premium-progress-fill"
                         style={{ width: `${((heroData.general?.soulStones || 0) / 300) * 100}%` }}
                       ></div>
@@ -277,11 +380,11 @@ const HeroModal = ({ hero, onClose }) => {
               </div>
             </div>
           </div>
-          
+
           {/* Jobb oszlop: Kalkulált tiszta passzív statisztikák */}
           <div className="modal-stat-column">
             <h3 className="tab-section-title">Kalkulált Tiszta Statisztikák (Felszerelések nélkül)</h3>
-            
+
             {calculatedStats ? (
               <div className="premium-stat-grid-2col">
                 <div className="premium-stat-row">
@@ -404,7 +507,7 @@ const HeroModal = ({ hero, onClose }) => {
   const renderSkinsOnlyTab = () => {
     const heroSkins = gameDictionary.heroes[heroData.id]?.skins || [];
     const defaultSkinInput = heroData.skins?.['default'] || 0;
-    
+
     return (
       <div className="modal-tab-content">
         <h3 className="tab-section-title">Skins (Kinézetek)</h3>
@@ -421,7 +524,7 @@ const HeroModal = ({ hero, onClose }) => {
                 <span>{defaultSkinInput === 60 ? 'MAX' : ''}</span>
               </div>
               <div className="premium-progress-bar">
-                <div 
+                <div
                   className={`premium-progress-fill ${defaultSkinInput === 60 ? 'max' : ''}`}
                   style={{ width: `${(defaultSkinInput / 60) * 100}%` }}
                 ></div>
@@ -431,8 +534,8 @@ const HeroModal = ({ hero, onClose }) => {
 
           {/* Egyedi skinek kártyái */}
           {heroSkins.map(skin => {
-            const skinVal = heroData.skins?.[skin.name] !== undefined 
-              ? heroData.skins[skin.name] 
+            const skinVal = heroData.skins?.[skin.name] !== undefined
+              ? heroData.skins[skin.name]
               : (skin.id !== undefined && heroData.skins?.[skin.id] !== undefined ? heroData.skins[skin.id] : 0);
             const isMax = skinVal === 60;
             return (
@@ -447,7 +550,7 @@ const HeroModal = ({ hero, onClose }) => {
                     <span>{isMax ? 'MAX' : ''}</span>
                   </div>
                   <div className="premium-progress-bar">
-                    <div 
+                    <div
                       className={`premium-progress-fill ${isMax ? 'max' : ''}`}
                       style={{ width: `${(skinVal / 60) * 100}%` }}
                     ></div>
@@ -463,15 +566,15 @@ const HeroModal = ({ hero, onClose }) => {
 
   const renderArtifactsOnlyTab = () => {
     const artifactWeapon = gameDictionary.heroes[heroData.id]?.artifactWeapon || {};
-    
+
     const weaponLvl = heroData.artifacts?.weapon?.level || 0;
     const weaponStars = heroData.artifacts?.weapon?.stars || 0;
-    
+
     const bookLvl = heroData.artifacts?.book?.level || 0;
     const bookStars = heroData.artifacts?.book?.stars || 0;
     const bookAttr1 = heroData.artifacts?.book?.attribute1 || 'armor';
     const bookAttr2 = heroData.artifacts?.book?.attribute2 || 'magicDefense';
-    
+
     const ringLvl = heroData.artifacts?.ring?.level || 0;
     const ringStars = heroData.artifacts?.ring?.stars || 0;
     const ringAttr = heroData.artifacts?.ring?.attribute || heroData.mainStat || 'Strength';
@@ -507,7 +610,7 @@ const HeroModal = ({ hero, onClose }) => {
                 <span>{weaponLvl === 100 ? 'MAX' : ''}</span>
               </div>
               <div className="premium-progress-bar">
-                <div 
+                <div
                   className={`premium-progress-fill ${weaponLvl === 100 ? 'max' : ''}`}
                   style={{ width: `${(weaponLvl / 100) * 100}%` }}
                 ></div>
@@ -530,7 +633,7 @@ const HeroModal = ({ hero, onClose }) => {
                 <span>{bookLvl === 100 ? 'MAX' : ''}</span>
               </div>
               <div className="premium-progress-bar">
-                <div 
+                <div
                   className={`premium-progress-fill ${bookLvl === 100 ? 'max' : ''}`}
                   style={{ width: `${(bookLvl / 100) * 100}%` }}
                 ></div>
@@ -553,7 +656,7 @@ const HeroModal = ({ hero, onClose }) => {
                 <span>{ringLvl === 100 ? 'MAX' : ''}</span>
               </div>
               <div className="premium-progress-bar">
-                <div 
+                <div
                   className={`premium-progress-fill ${ringLvl === 100 ? 'max' : ''}`}
                   style={{ width: `${(ringLvl / 100) * 100}%` }}
                 ></div>
@@ -582,7 +685,7 @@ const HeroModal = ({ hero, onClose }) => {
               <span>{isMax ? 'MAX' : ''}</span>
             </div>
             <div className="premium-progress-bar">
-              <div 
+              <div
                 className={`premium-progress-fill ${isMax ? 'max' : ''}`}
                 style={{ width: `${(goeLevel / 30) * 100}%` }}
               ></div>
@@ -605,7 +708,7 @@ const HeroModal = ({ hero, onClose }) => {
       Math.max(0, heroLevel - 40)
     ];
     const skillNames = ['1. Képesség (White)', '2. Képesség (Green)', '3. Képesség (Blue)', '4. Képesség (Violet)'];
-    
+
     return (
       <div className="modal-tab-content">
         <h3 className="tab-section-title">Képességek (Skills)</h3>
@@ -615,7 +718,7 @@ const HeroModal = ({ hero, onClose }) => {
             const maxLvl = maxLevels[idx];
             const isMax = maxLvl > 0 && skillLevel >= maxLvl;
             const isUnlocked = maxLvl > 0;
-            
+
             return (
               <div className="premium-card" key={idx} style={{ opacity: isUnlocked ? 1 : 0.5 }}>
                 <div className="premium-card-header">
@@ -629,7 +732,7 @@ const HeroModal = ({ hero, onClose }) => {
                       <span>{isMax ? 'MAX' : ''}</span>
                     </div>
                     <div className="premium-progress-bar">
-                      <div 
+                      <div
                         className={`premium-progress-fill ${isMax ? 'max' : ''}`}
                         style={{ width: `${maxLvl > 0 ? (skillLevel / maxLvl) * 100 : 0}%` }}
                       ></div>
@@ -680,7 +783,7 @@ const HeroModal = ({ hero, onClose }) => {
             const rawXp = parseInt(glyphsXpValues[idx]) || 0;
             const lvl = getGlyphLevel(rawXp);
             const isMax = lvl === 50;
-            
+
             return (
               <div className="premium-card" key={idx}>
                 <div className="premium-card-header">
@@ -693,7 +796,7 @@ const HeroModal = ({ hero, onClose }) => {
                     <span>{isMax ? 'MAX' : ''}</span>
                   </div>
                   <div className="premium-progress-bar">
-                    <div 
+                    <div
                       className={`premium-progress-fill ${isMax ? 'max' : ''}`}
                       style={{ width: `${(lvl / 50) * 100}%` }}
                     ></div>
@@ -712,14 +815,14 @@ const HeroModal = ({ hero, onClose }) => {
     const branchLevel = parseInt(heroData.ascension?.branch) || 0;
     const activeNodes = heroData.ascension?.nodes || [];
     const activeNodesCount = activeNodes.length;
-    
+
     const maxNodesPerRank = { '0': 0, 'I': 10, 'II': 11, 'III': 10, 'IV': 10, 'V': 10 };
     const maxNodes = maxNodesPerRank[ascensionRank] || 0;
-    
+
     const catalogHero = gameDictionary.heroes[heroData.id];
     const roles = catalogHero?.roles || heroData.roles || [];
     const primaryRole = roles[0] || 'Ismeretlen';
-    
+
     return (
       <div className="modal-tab-content">
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
@@ -728,7 +831,7 @@ const HeroModal = ({ hero, onClose }) => {
             <span className="material-symbols-outlined">help</span>
           </button>
         </div>
-        
+
         <div className="premium-card-grid">
           {/* Felemelkedési szint és csomópontok */}
           <div className="premium-card">
@@ -738,7 +841,7 @@ const HeroModal = ({ hero, onClose }) => {
                 {ascensionRank === '0' ? 'Nincs' : `Rank ${ascensionRank}`}
               </span>
             </div>
-            
+
             {ascensionRank !== '0' && (
               <div style={{ marginTop: '12px' }}>
                 <div className="premium-progress-label">
@@ -746,8 +849,8 @@ const HeroModal = ({ hero, onClose }) => {
                 </div>
                 <div className="ascension-node-indicator" style={{ marginTop: '8px' }}>
                   {[...Array(maxNodes)].map((_, i) => (
-                    <div 
-                      key={i} 
+                    <div
+                      key={i}
                       className={`ascension-node-dot ${i < activeNodesCount ? 'active' : ''}`}
                       title={i < activeNodesCount ? 'Feloldott csomópont' : 'Lezárt csomópont'}
                     ></div>
@@ -769,7 +872,7 @@ const HeroModal = ({ hero, onClose }) => {
                 <span>{branchLevel === 50 ? 'MAX' : ''}</span>
               </div>
               <div className="premium-progress-bar">
-                <div 
+                <div
                   className={`premium-progress-fill ${branchLevel === 50 ? 'max' : ''}`}
                   style={{ width: `${(branchLevel / 50) * 100}%` }}
                 ></div>
@@ -790,27 +893,13 @@ const HeroModal = ({ hero, onClose }) => {
         <div className="modal-outside-tabs">
           <div className={`modal-flag ${activeTab === 'info' ? 'active' : ''}`} onClick={() => setActiveTab('info')}>Info</div>
           <div className={`modal-flag ${activeTab === 'guide' ? 'active' : ''}`} onClick={() => setActiveTab('guide')}>Útmutató</div>
-          <div className={`modal-flag ${activeTab === 'stats' ? 'active' : ''}`} onClick={() => setActiveTab('stats')}>Stats</div>
           <div className={`modal-flag ${activeTab === 'skills' ? 'active' : ''}`} onClick={() => setActiveTab('skills')}>Skills</div>
           <div className={`modal-flag ${activeTab === 'skins' ? 'active' : ''}`} onClick={() => setActiveTab('skins')}>Skins</div>
-          <div className={`modal-flag ${activeTab === 'artifacts' ? 'active' : ''}`} onClick={() => setActiveTab('artifacts')}>Artifacts</div>
-          <div className={`modal-flag modal-flag-small-text ${activeTab === 'goe' ? 'active' : ''}`} onClick={() => setActiveTab('goe')}>Gift of the Elements</div>
+          <div className={`modal-flag ${activeTab === 'stats' ? 'active' : ''}`} onClick={() => setActiveTab('stats')}>Stats</div>
           <div className={`modal-flag ${activeTab === 'glyphs' ? 'active' : ''}`} onClick={() => setActiveTab('glyphs')}>Glyphs</div>
+          <div className={`modal-flag modal-flag-small-text ${activeTab === 'goe' ? 'active' : ''}`} onClick={() => setActiveTab('goe')}>Gift of the Elements</div>
+          <div className={`modal-flag ${activeTab === 'artifacts' ? 'active' : ''}`} onClick={() => setActiveTab('artifacts')}>Artifacts</div>
           <div className={`modal-flag ${activeTab === 'ascension' ? 'active' : ''}`} onClick={() => setActiveTab('ascension')}>Ascension</div>
-
-          <div className="modal-save-container" style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            <button 
-              className="action-btn btn-save" 
-              style={{ background: '#b67532', color: '#fff', border: '1px solid #feec5f' }}
-              onClick={() => {
-                navigator.clipboard.writeText(JSON.stringify(heroData, null, 2))
-                  .then(() => alert('Adatok másolva a vágólapra!'))
-                  .catch(err => console.error('Hiba a másoláskor: ', err));
-              }}
-            >
-              Adatok Másolása
-            </button>
-          </div>
         </div>
 
         <div className="modal-content gold-frame">

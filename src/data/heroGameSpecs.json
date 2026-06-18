@@ -1,0 +1,294 @@
+{
+  "1": {
+    "line": "Fights at the front line",
+    "special": "Elf"
+  },
+  "2": {
+    "line": "Fights at the front line",
+    "special": "Blessed"
+  },
+  "3": {
+    "line": "Fights at the middle line",
+    "special": null
+  },
+  "4": {
+    "line": "Fights at the front line",
+    "special": "Chaos, Demon"
+  },
+  "5": {
+    "line": "Fights at the middle line",
+    "special": "Grove Keeper, Elf"
+  },
+  "6": {
+    "line": "Fights at the back line",
+    "special": "Undead"
+  },
+  "7": {
+    "line": "Fights at the back line",
+    "special": "Grove Keeper, Elf"
+  },
+  "8": {
+    "line": "Fights at the back line",
+    "special": "Engineer"
+  },
+  "9": {
+    "line": "Fights at the middle line",
+    "special": null
+  },
+  "10": {
+    "line": "Fights at the back line",
+    "special": "Undead"
+  },
+  "11": {
+    "line": "Fights at the front line",
+    "special": null
+  },
+  "12": {
+    "line": "Fights at the middle line",
+    "special": null
+  },
+  "13": {
+    "line": "Fights at the back line",
+    "special": null
+  },
+  "14": {
+    "line": "Fights at the middle line",
+    "special": "Engineer"
+  },
+  "15": {
+    "line": "Fights at the back line",
+    "special": "Engineer"
+  },
+  "16": {
+    "line": "Fights at the middle line",
+    "special": null
+  },
+  "17": {
+    "line": "Fights at the middle line",
+    "special": null
+  },
+  "18": {
+    "line": "Fights at the middle line",
+    "special": null
+  },
+  "19": {
+    "line": "Fights at the middle line",
+    "special": "Elf"
+  },
+  "20": {
+    "line": "Fights at the back line",
+    "special": null
+  },
+  "21": {
+    "line": "Fights at the front line",
+    "special": "Blessed"
+  },
+  "22": {
+    "line": "Fights at the back line",
+    "special": "Chaos"
+  },
+  "23": {
+    "line": "Fights at the back line",
+    "special": null
+  },
+  "24": {
+    "line": "Fights at the front line",
+    "special": "Chaos"
+  },
+  "25": {
+    "line": "Fights at the front line",
+    "special": null
+  },
+  "26": {
+    "line": "Fights at the back line",
+    "special": "Chaos, Demon"
+  },
+  "27": {
+    "line": "Fights at the front line",
+    "special": "Blessed"
+  },
+  "28": {
+    "line": "Fights at the middle line",
+    "special": null
+  },
+  "29": {
+    "line": "Fights at the back line",
+    "special": null
+  },
+  "30": {
+    "line": "Fights at the back line",
+    "special": "Blessed"
+  },
+  "31": {
+    "line": "Fights at the back line",
+    "special": null
+  },
+  "32": {
+    "line": "Fights at the back line",
+    "special": null
+  },
+  "33": {
+    "line": "Fights at the middle line",
+    "special": null
+  },
+  "34": {
+    "line": "Fights at the middle line",
+    "special": null
+  },
+  "35": {
+    "line": "Fights at the middle line",
+    "special": "Chaos"
+  },
+  "36": {
+    "line": "Fights at the middle line",
+    "special": null
+  },
+  "37": {
+    "line": "Fights at the middle line",
+    "special": null
+  },
+  "38": {
+    "line": "Fights at the middle line",
+    "special": null
+  },
+  "39": {
+    "line": "Fights at the front line",
+    "special": null
+  },
+  "40": {
+    "line": "Fights at the middle line",
+    "special": null
+  },
+  "41": {
+    "line": "Fights at the middle line",
+    "special": null
+  },
+  "42": {
+    "line": "Fights at the front line",
+    "special": null
+  },
+  "43": {
+    "line": "Fights at the middle line",
+    "special": null
+  },
+  "44": {
+    "line": "Fights at the middle line",
+    "special": "Engineer"
+  },
+  "45": {
+    "line": "Fights at the middle line",
+    "special": null
+  },
+  "46": {
+    "line": "Fights at the back line",
+    "special": null
+  },
+  "47": {
+    "line": "Fights at the middle line",
+    "special": null
+  },
+  "48": {
+    "line": "Fights at the middle line",
+    "special": null
+  },
+  "49": {
+    "line": "Fights at the middle line",
+    "special": null
+  },
+  "50": {
+    "line": "Fights at the front line",
+    "special": "Undead"
+  },
+  "51": {
+    "line": "Fights at the middle line",
+    "special": "Undead"
+  },
+  "52": {
+    "line": "Fights at the middle line",
+    "special": "Engineer"
+  },
+  "53": {
+    "line": "Fights at the middle line",
+    "special": "Grove Keeper, Elf"
+  },
+  "54": {
+    "line": "Fights at the front line",
+    "special": "Blessed"
+  },
+  "55": {
+    "line": "Fights at the middle line",
+    "special": null
+  },
+  "56": {
+    "line": "Fights at the middle line",
+    "special": null
+  },
+  "57": {
+    "line": "Fights at the back line",
+    "special": null
+  },
+  "58": {
+    "line": "Fights at the middle line",
+    "special": "Chaos, Demon"
+  },
+  "59": {
+    "line": "Fights at the middle line",
+    "special": "Chaos, Demon"
+  },
+  "60": {
+    "line": "Fights at the front line",
+    "special": "Grove Keeper"
+  },
+  "61": {
+    "line": "Fights at the front line",
+    "special": "Engineer"
+  },
+  "62": {
+    "line": "Fights at the back line",
+    "special": null
+  },
+  "63": {
+    "line": "Fights at the back line",
+    "special": null
+  },
+  "64": {
+    "line": "Fights at the front line",
+    "special": null
+  },
+  "65": {
+    "line": "Fights at the front line",
+    "special": null
+  },
+  "66": {
+    "line": "Fights at the back line",
+    "special": null
+  },
+  "67": {
+    "line": "Fights at the back line",
+    "special": null
+  },
+  "68": {
+    "line": "Fights at the front line",
+    "special": null
+  },
+  "69": {
+    "line": "Fights at the middle line",
+    "special": null
+  },
+  "70": {
+    "line": "Fights at the front line",
+    "special": null
+  },
+  "71": {
+    "line": "Fights at the back line",
+    "special": null
+  },
+  "72": {
+    "line": "Fights at the front line",
+    "special": null
+  },
+  "73": {
+    "line": "Fights at the front line",
+    "special": null
+  }
+}
