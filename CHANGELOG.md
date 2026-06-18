@@ -2,6 +2,20 @@
 
 Minden említésre méltó változtatás a projektben ebben a fájlban lesz rögzítve.
 
+## [0.5.7] - 2026-06-18
+
+### Hozzáadva (Added)
+- **Gyorskereső a hősök listáján:** Új, nagyító ikonnal ellátott, stílusos keresőmezőt helyeztünk el a fejlécben, amely gépelés közben valós időben szűri a hősöket név szerint.
+- **Szerepkör és Szövetség szűrők:** Két új legördülő menü került beépítésre, amelyek segítségével szerepkör (pl. Tank, Mage) és a játékbeli szövetség/frakció (pl. Undead, Grove Keeper) alapján szűrhetők a hősök. A szűrők egymással és a névkeresővel is kumulatív módon együttműködnek.
+- **Dinamikus birtokolt hősök számlálója:** A korábbi statikus hősösszesítő helyett most a megidézett hősök és a teljes létszám aránya jelenik meg (pl. `Birtokolt: 45 / 73` formában).
+
+### Megváltoztatva (Changed)
+- **Kereső és szűrők stílusának igazítása:** Az akciósáv gombjai (Search, Role, Faction, Sort) egységes szélességet (190px) és tiszta balra igazítást kaptak. A gombkonténerek paddingjának nullázásával és az ikonok bal oldali margójának (16px) beállításával biztosítottuk, hogy az ikonok és a feliratok elkerüljék a 3D-s arany keretet és közvetlenül egymást követve, szorosan elrendezve jelenjenek meg.
+- **Oldalugrás megakadályozása szűréskor:** Kényszerítettük a függőleges görgetősáv állandó megjelenítését (`html { overflow-y: scroll; }`), így a szűrések miatti találatszám-csökkenés (és a görgetősáv eltűnése) nem okoz kellemetlen oldalirányú rángatózást/ugrálást a felületen.
+
+### Javítva (Fixed)
+- **Többes szövetségű hősök szűrési hibája:** Javítottuk a szövetség (Faction) szerinti szűrést, hogy szigorú egyezés helyett részleges egyezést (`includes`) vizsgáljon, így a több szövetséghez is tartozó hősök (pl. Astaroth: Chaos, Demon; Alvanor: Grove Keeper, Elf) is helyesen és hiánytalanul megjelennek a szűrt eredmények között.
+
 ## [0.5.6] - 2026-06-18
 
 ### Megváltoztatva (Changed)

@@ -81,6 +81,10 @@
   padding: 0;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 body {
   background-color: var(--body-bg);
   background-image: url('/ui/hatter.jpg');
@@ -635,17 +639,18 @@ body::before {
 .stat-chip {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-image: url('/ui/button.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
   height: 48px;
-  min-width: 175px;
-  padding: 0 16px;
+  width: 190px;
+  padding: 0;
   color: #eaddc5;
   font-weight: bold;
+  gap: var(--xs);
 }
 
 .stat-icon {
@@ -1255,8 +1260,11 @@ body::before {
 
 /* Dashboard additions */
 .dashboard-action-bar-inner {
-  padding: 0;
   overflow: hidden;
+}
+
+.dashboard-action-bar-inner .stat-icon {
+  margin-left: 16px;
 }
 
 .dashboard-filter-group {
@@ -1265,6 +1273,34 @@ body::before {
 
 .dashboard-select-option {
   background: #1a1009;
+}
+
+.dashboard-filter-select {
+  background: transparent;
+  border: none;
+  color: inherit;
+  padding: var(--sm) 0;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  font-family: var(--font-title-md);
+  font-size: 16px;
+  width: 100%;
+}
+
+.dashboard-search-input {
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: var(--sm) 0;
+  outline: none;
+  width: 100%;
+  font-family: var(--font-title-md);
+  font-size: 16px;
+}
+
+.dashboard-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .dashboard-stat-icon {
@@ -1387,11 +1423,11 @@ body::before {
   background: transparent;
   border: none;
   color: inherit;
-  padding: var(--sm) var(--md);
-  padding-left: var(--xs);
+  padding: var(--sm) 0;
   outline: none;
   cursor: pointer;
   appearance: none;
+  width: 100%;
 }
 
 .stat-chip {
