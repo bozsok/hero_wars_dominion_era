@@ -2,6 +2,11 @@
 
 Minden említésre méltó változtatás a projektben ebben a fájlban lesz rögzítve.
 
+## [0.5.5] - 2026-06-18
+
+### Megváltoztatva (Changed)
+- **Kalkulációk magyarázatának összevonása és pontosítása:** A hősök adatlapján a Statisztikák (Stats) lap alján lévő korábbi két különálló magyarázó kártyát egyetlen, teljes szélességű vízszintes infóboxszá vontuk össze. A szövegben egyértelműen tisztáztuk, hogy a játékbeli **Harci erő (Power)** pontos (mert a HAR-fájlból közvetlenül kiolvasható), míg a többi statisztika (köztük a magyar fordításban szintén „erő”-nek nevezett **Strength** tulajdonság) számított érték, amely a Céhfejlesztések és Kisállat-bónuszok hiánya miatt tér el a játéktól.
+
 ## [0.5.4] - 2026-06-18
 
 ### Megváltoztatva (Changed)

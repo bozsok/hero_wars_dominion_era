@@ -379,6 +379,8 @@ const HeroModal = ({ hero, onClose }) => {
                 </div>
               </div>
             </div>
+
+
           </div>
 
           {/* Jobb oszlop: Kalkulált tiszta passzív statisztikák */}
@@ -498,6 +500,33 @@ const HeroModal = ({ hero, onClose }) => {
                 </p>
               </div>
             )}
+          </div>
+        </div>
+
+        {/* Új, összevont infóbox a kalkulációkról és eltérésekről */}
+        <div style={{
+          marginTop: '20px',
+          padding: '16px',
+          backgroundColor: 'rgba(30, 33, 48, 0.6)',
+          border: '1px solid #3a3f58',
+          borderRadius: '6px',
+          fontSize: '13px',
+          lineHeight: '1.5',
+          color: '#ccc'
+        }}>
+          <strong style={{ color: '#fece86', display: 'block', fontSize: '14px', marginBottom: '8px' }}>
+            ℹ️ Fontos megjegyzés a statisztikák kalkulációjáról
+          </strong>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            <div>
+              <span style={{ color: '#feec5f', fontWeight: 'bold' }}>Játékbeli Harci erő (Power):</span> Ez a bal oldalon látható érték <strong style={{ color: '#fff' }}>pontos</strong>, mert a játékszerver ezt közvetlenül elküldi a HAR-fájlban.
+            </div>
+            <div>
+              <span style={{ color: '#feec5f', fontWeight: 'bold' }}>Kalkulált tulajdonságok / statisztikák:</span> A jobb oldali táblázatban látható értékek a nyers fejlesztési szintekből számított alapértékek. Ezek az értékek azért <strong style={{ color: '#fff' }}>alacsonyabbak a játékban látottaktól</strong>, mert nem tartalmazzák a <strong style={{ color: '#fff' }}>Céhfejlesztések (Guild Heart of Power)</strong> és a <strong style={{ color: '#fff' }}>Kisállat-pártfogók (Pet Patronage)</strong> által biztosított bónuszokat, amelyeket a szerver nem küld el a hős egyéni adataival együtt.
+            </div>
+            <div style={{ borderTop: '1px solid #3a3f58', paddingTop: '8px', color: '#a8ffb2' }}>
+              🚀 <strong>Jövőbeli fejlesztési lehetőség:</strong> Amint bevezetésre kerül a Kisállatok (Pets) és a Céh-adatok beolvasása, a program képes lesz kiszámítani ezeket a bónuszokat is, így a kalkulált statisztikák is teljesen meg fognak egyezni a játékbeli értékekkel.
+            </div>
           </div>
         </div>
       </div>
