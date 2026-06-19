@@ -202,6 +202,33 @@ export const HeroProvider = ({ children }) => {
   const [viewHeroes, setViewHeroes] = useState(null);
   const [isViewMode, setIsViewMode] = useState(false);
   const [sortMode, setSortMode] = useState('default');
+  const [playerProfile, setPlayerProfile] = useState(null);
+  const [playerTeams, setPlayerTeams] = useState(null);
+
+  // Profil és csapatok inicializálása
+  useEffect(() => {
+    const storedProfile = localStorage.getItem('heroWarsTrackerProfile');
+    if (storedProfile) {
+      try { setPlayerProfile(JSON.parse(storedProfile)); } catch(e) {}
+    }
+    const storedTeams = localStorage.getItem('heroWarsTrackerTeams');
+    if (storedTeams) {
+      try { setPlayerTeams(JSON.parse(storedTeams)); } catch(e) {}
+    }
+  }, []);
+
+  // Profil és csapatok mentése változáskor
+  useEffect(() => {
+    if (playerProfile) {
+      localStorage.setItem('heroWarsTrackerProfile', JSON.stringify(playerProfile));
+    }
+  }, [playerProfile]);
+
+  useEffect(() => {
+    if (playerTeams) {
+      localStorage.setItem('heroWarsTrackerTeams', JSON.stringify(playerTeams));
+    }
+  }, [playerTeams]);
 
   // Inicializálás Local Storage-ből és migráció
   useEffect(() => {
@@ -293,39 +320,58 @@ export const HeroProvider = ({ children }) => {
     }));
   };
 
-  const importBulkData = (newHeroesObj) => {
+  const importBulkData = (data) => {
     if (isViewMode) return;
-    setMyHeroes(prev => {
-      const updated = { ...prev };
+    
+    if (data && data.heroes) {
+      // Új HAR formátum
+      setMyHeroes(prev => {
+        const updated = { ...prev };
+        for (const key in updated) {
+          updated[key] = {
+            ...updated[key],
+            general: { ...(updated[key].general || {}), level: 0, stars: 1, power: 0, soulStones: 0 }
+          };
+        }
+        for (const key in data.heroes) {
+          updated[key] = {
+             ...updated[key],
+             ...data.heroes[key],
+             general: {
+               ...(updated[key]?.general || {}),
+               ...(data.heroes[key]?.general || {})
+             }
+          };
+        }
+        return updated;
+      });
       
-      // 1. Minden létező hőst inaktívra állítunk (szint=0, csillag=1, erő=0)
-      for (const key in updated) {
-        updated[key] = {
-          ...updated[key],
-          general: { 
-            ...(updated[key].general || {}), 
-            level: 0, 
-            stars: 1, 
-            power: 0, 
-            soulStones: 0 
-          }
-        };
-      }
-      
-      // 2. Rátöltjük a beimportált, ténylegesen birtokolt hősöket
-      for (const key in newHeroesObj) {
-        updated[key] = {
-           ...updated[key],
-           ...newHeroesObj[key],
-           general: {
-             ...(updated[key]?.general || {}),
-             ...(newHeroesObj[key]?.general || {})
-           }
-        };
-      }
-      
-      return updated;
-    });
+      if (data.profile) setPlayerProfile(data.profile);
+      if (data.teams) setPlayerTeams(data.teams);
+    } else {
+      // Régi formátum
+      const newHeroesObj = data;
+      setMyHeroes(prev => {
+        const updated = { ...prev };
+        for (const key in updated) {
+          updated[key] = {
+            ...updated[key],
+            general: { ...(updated[key].general || {}), level: 0, stars: 1, power: 0, soulStones: 0 }
+          };
+        }
+        for (const key in newHeroesObj) {
+          updated[key] = {
+             ...updated[key],
+             ...newHeroesObj[key],
+             general: {
+               ...(updated[key]?.general || {}),
+               ...(newHeroesObj[key]?.general || {})
+             }
+          };
+        }
+        return updated;
+      });
+    }
   };
 
   const exportData = () => {
@@ -449,7 +495,9 @@ export const HeroProvider = ({ children }) => {
       isViewMode,
       exitViewMode,
       sortMode,
-      setSortMode
+      setSortMode,
+      playerProfile,
+      playerTeams
     }}>
       {children}
     </HeroContext.Provider>

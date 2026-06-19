@@ -47,6 +47,11 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
         
         let heroData = null;
         let roleAscensionData = null;
+        let userData = null;
+        let inventoryData = null;
+        let teamData = null;
+        let clanData = null;
+        
         if (harData.log && harData.log.entries) {
           for (const entry of harData.log.entries) {
             if (entry.response && entry.response.content && entry.response.content.text) {
@@ -62,6 +67,22 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
                     const roleAscensionResult = parsed.results.find(r => r.ident === 'roleAscension_getAll');
                     if (roleAscensionResult && roleAscensionResult.result && roleAscensionResult.result.response) {
                       roleAscensionData = roleAscensionResult.result.response;
+                    }
+                    const userResult = parsed.results.find(r => r.ident === 'userGetInfo');
+                    if (userResult && userResult.result && userResult.result.response) {
+                      userData = userResult.result.response;
+                    }
+                    const inventoryResult = parsed.results.find(r => r.ident === 'inventoryGet');
+                    if (inventoryResult && inventoryResult.result && inventoryResult.result.response) {
+                      inventoryData = inventoryResult.result.response;
+                    }
+                    const teamResult = parsed.results.find(r => r.ident === 'teamGetAll');
+                    if (teamResult && teamResult.result && teamResult.result.response) {
+                      teamData = teamResult.result.response;
+                    }
+                    const clanResult = parsed.results.find(r => r.ident === 'clanGetInfo');
+                    if (clanResult && clanResult.result && clanResult.result.response) {
+                      clanData = clanResult.result.response;
                     }
                   }
                 } catch (e) {
@@ -194,7 +215,80 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
             newHeroesObj[id] = parsedHero;
           }
 
-          onImport(newHeroesObj);
+          // Játékos profil adatainak kigyűjtése
+          let profile = null;
+          if (userData) {
+            const vipPoints = parseInt(userData.vipPoints, 10) || 0;
+            let vipLevel = 0;
+            const vipThresholds = [
+              { lvl: 15, pts: 150000 },
+              { lvl: 14, pts: 80000 },
+              { lvl: 13, pts: 40000 },
+              { lvl: 12, pts: 20000 },
+              { lvl: 11, pts: 15000 },
+              { lvl: 10, pts: 10000 },
+              { lvl: 9, pts: 7000 },
+              { lvl: 8, pts: 5000 },
+              { lvl: 7, pts: 3000 },
+              { lvl: 6, pts: 2000 },
+              { lvl: 5, pts: 1000 },
+              { lvl: 4, pts: 500 },
+              { lvl: 3, pts: 300 },
+              { lvl: 2, pts: 100 },
+              { lvl: 1, pts: 10 }
+            ];
+            for (const t of vipThresholds) {
+              if (vipPoints >= t.pts) {
+                vipLevel = t.lvl;
+                break;
+              }
+            }
+
+            const staminaRefill = userData.refillable?.find(r => r.id === 1);
+            const currentStamina = staminaRefill ? staminaRefill.amount : 0;
+
+            profile = {
+              name: userData.name || 'Ismeretlen',
+              level: parseInt(userData.level, 10) || 1,
+              gold: parseInt(userData.gold, 10) || 0,
+              emeralds: parseInt(userData.starMoney, 10) || 0,
+              vipPoints,
+              vipLevel,
+              stamina: currentStamina,
+              league: (clanData && clanData.clan) ? clanData.clan.league : null,
+              avatarId: userData.avatarId || null,
+              coins: {
+                arena: inventoryData?.coin?.['1'] || 0,
+                grandArena: inventoryData?.coin?.['2'] || 0,
+                tower: inventoryData?.coin?.['3'] || 0,
+                outland: inventoryData?.coin?.['4'] || 0,
+                guild: inventoryData?.coin?.['5'] || 0,
+                tournament: inventoryData?.coin?.['18'] || 0,
+                soulCrystal: inventoryData?.coin?.['38'] || 0,
+                skinStoneInt: inventoryData?.coin?.['101'] || 0,
+                skinStoneStr: inventoryData?.coin?.['102'] || 0,
+                skinStoneAgi: inventoryData?.coin?.['103'] || 0,
+                skinStoneChest: inventoryData?.coin?.['104'] || 0
+              }
+            };
+          }
+
+          // Játékos csapatok kigyűjtése
+          let teams = null;
+          if (teamData) {
+            teams = {
+              mission: teamData.mission || [],
+              arena: teamData.arena || [],
+              grand: teamData.grand || [],
+              clanDefence: teamData.clanDefence_heroes || []
+            };
+          }
+
+          onImport({
+            heroes: newHeroesObj,
+            profile,
+            teams
+          });
           setSuccessMessage("Sikeres frissítés! Az adataid betöltődtek.");
         } else {
           setError("Nem találtam hős adatokat (heroGetAll) a HAR fájlban! Biztosan újratöltötted a játékot a mentés előtt?");

@@ -2,6 +2,55 @@
 
 Minden említésre méltó változtatás a projektben ebben a fájlban lesz rögzítve.
 
+## [0.5.12] - 2026-06-19
+
+### Megváltoztatva (Changed)
+- **Profilkép helyett Avatar ID megjelenítése:** A nem hős azonosítójú (egyedi vagy előfizetéses) profilképek helyett a program mostantól közvetlenül az `avatarId` számot (pl. `1294`) jeleníti meg a keret alatt egy stílusos, lekerekített, arany-barna radiális átmenettel rendelkező háttérben. Ezzel teljesen kiküszöböltük a nem támogatott vagy egyedi profilképek hibás/eltérő megjelenítését.
+
+## [0.5.11] - 2026-06-19
+
+### Javítva (Fixed)
+- **Klán liga szinkronizáció javítása:** Kijavítottuk a HAR importáló (`DataSyncModal.jsx`) hibáját, ahol a ligainformációt hibásan közvetlenül a `clanData.league` helyről kísérelte meg beolvasni a program. A helyes elérés a `clanData.clan.league`, amelynek átírásával az Arany Liga tagjai most már sikeresen megkapják a hozzájuk tartozó díszes liga-avatárkeretet a Dashboardon.
+- **Profil fejléc és képek méretezésének javítása:**
+  - A névszalag (`name.png`) és a VIP-szalag (`vip.png`) stílusát fixáltuk a natív méretükre (175x44px, illetve 159x44px), megszüntetve a korábbi csúnya torzulást és átméretezést.
+  - A szintjelző badge-et az eddigi kör alakú formáról a játékhoz hű, 3 számjegynek is elegendő helyet biztosító, fekvő kapszula (ellipszis) formájúvá alakítottuk (`border-radius: 12px; width: 46px; height: 24px;`).
+  - Az avatar keretet és a benne lévő profilképet összehangoltuk a keret valódi képarányával (96x101px), és az avatar képet maszkolva, tökéletesen a keret nyílása alatt, középre rendezve helyeztük el.
+  - A profil widget elemei között bevezettük a megfelelő függőleges eltartásokat (flex gap: 8px), valamint a widget szélességét 180px-re növeltük a túlcsordulások megelőzésére.
+
+## [0.5.10] - 2026-06-19
+
+### Hozzáadva (Added)
+- **Céh liga alapú dinamikus avatar keret:** A HAR fájl `clanGetInfo` válaszából kiolvassuk a játékos céhének ligáját (`league`), és ennek megfelelően dinamikusan a megfelelő keretet jelenítjük meg (`guild_war_gold_league_frame.webp`, `silver_league_frame`, `bronze_league_frame` vagy az alap `base_frame.webp`).
+- **Valós, játékon belüli grafikák alkalmazása:** Beépítettük a felhasználó által biztosított `name.png` (barna/arany névszalag) és `vip.png` (arany VIP sáv) képeket a profil widget háttereként.
+- **Helyes Valkűr avatar letöltése:** Letöltöttük a valódi, játékbeli `Browser Valkyrie Avatar.png` fájlt `avatar_default.webp` néven a Wikia CDN-ről, így a logó helyett a felhasználó saját Valkűr profilképe jelenik meg.
+
+### Megváltoztatva (Changed)
+- **Szintjelző badge stílusának finomhangolása:** A korábbi téglalap alakú szintbadge helyett egy szabályos kerek, fekete hátterű, vastag arany kerettel (`3.5px solid #d4af37`) és nagyobb betűmérettel rendelkező ellipszist alakítottunk ki, amely pontosan a játékbeli stílust követi, és élethűen ráfekszik az avatár keret aljára.
+
+## [0.5.9] - 2026-06-19
+
+### Hozzáadva (Added)
+- **Kompakt, játékbeli stílusú profil widget:** Bevezettük az avatar widgetet, amely egy kerek, díszes keretben (`avatar_frame.webp`) ábrázolja a felhasználó avatárját, az aljára rálógó szintjelzővel (`130`), alatta a név barna/arany szalagjával (`Fenrile`), legalul pedig a VIP szint arany szalagjával (`VIP 8`), pontosan megegyezve a játékbeli elrendezéssel.
+- **Kapszula stílusú erőforrás-kijelzés:** A smaragd, arany és energia értékeket a játékban látható, arany szegéllyel díszített sötét kapszulákba (pill) rendeztük el, bal oldalon kilógó ikonokkal és jobb oldalon egyedi plusz gombokkal.
+
+### Megváltoztatva (Changed)
+- **Dashboard fejléc elrendezése:** Összevontuk a korábbi különálló profil kártyát és erőforrás rácsot egyetlen kompakt, vízszintes fejléc sávba (`.dashboard-game-header`), amivel jelentős helyet spóroltunk meg a képernyőn, és sokkal élethűbbé tettük a Dashboard megjelenését.
+
+## [0.5.8] - 2026-06-19
+
+### Hozzáadva (Added)
+- **Megújult játékbeli stílusú Dashboard:** Létrehoztuk a *Hero Wars* sötét-arany vizuális világához hű új Dashboard felületet, amely tartalmazza a játékos profiladatatlapját (név, szint, VIP szint és pontok), a fő erőforrásokat (smaragd, arany, energia) és a játékon belüli egyéb fizetőeszközöket, bőrköveket.
+- **Aktív csapatok vizuális összeállítása:** A Dashboardon megjelenítettük a Hadjárat, az Aréna és a Grand Aréna (3 csapat) aktív felállásait a hősök és petek egyedi portréival, a hősök szintjének megfelelő rang-keretekkel.
+- **Kiterjesztett HAR adatimportálás:** A `DataSyncModal.jsx` importáló logikáját felkészítettük a `userGetInfo`, `inventoryGet` és `teamGetAll` válaszok beolvasására, így a HAR fájlból az összes profil, erőforrás, érme és csapatadat automatikusan szinkronizálódik és a Local Storage-ben perzisztálódik.
+- **Automatizált Wikia CDN ikonletöltő szkript:** Elkészült a `download_assets.js` segédszkript, amely a Wikia szervereiről MD5 hash alapú URL-generálással automatikusan letölti a szükséges 13 db játékbeli ikont WebP formátumban a `public/ui` könyvtárba.
+- **Többfüles navigációs struktúra:** Bevezettük az `activeTab` állapotot az `App.jsx` szintjén, így a megújult oldalsávval (`Sidebar.jsx`) zökkenőmentes váltást biztosítottunk a Dashboard és a Hősök listája (`Heroes`) fülek között.
+
+### Megváltoztatva (Changed)
+- **Erőforrás- és érmeikonok hivatkozásainak frissítése:** A `Dashboard.jsx` fájlban az összes `public/ui` könyvtárra hivatkozó ikon kiterjesztését `.png`-ről `.webp`-re módosítottuk, összhangban a Wikia CDN automatikusan optimalizált és letöltött WebP formátumú képeivel. Ezáltal az összes játékon belüli érme és alapanyag helyesen megjelenik a felületen.
+
+### Javítva (Fixed)
+- **Hős portrék keretből való kilógása a csapatoknál:** A `Dashboard.jsx` csapat-összeállítási szekciójában bevezettünk egy belső, `.team-member-portrait-inner` osztályú maszkoló konténert a hős portrék köré. A `Dashboard.css`-ben ezt a konténert `overflow: hidden` és `border-radius: 6px` tulajdonságokkal láttuk el, miközben a hős képét 100%-ra növeltük ezen belül. Ezáltal a hős képének sarkai a díszes rang-keret mögé vágódnak le, teljesen megszüntetve a kép sarkainak kilógását a keret átlátszó részei alatt.
+
 ## [0.5.7] - 2026-06-18
 
 ### Hozzáadva (Added)

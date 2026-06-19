@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const NAV_TEXTS = {
   Dashboard: 'Your progress at a glance.',
@@ -8,9 +8,7 @@ const NAV_TEXTS = {
   Settings: 'Configure your application.'
 };
 
-const Sidebar = () => {
-  const [activeTab, setActiveTab] = useState('Heroes');
-
+const Sidebar = ({ activeTab, setActiveTab }) => {
   return (
     <aside className="layout-sidebar">
 

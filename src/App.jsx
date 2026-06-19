@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
+import HeroesList from './components/HeroesList';
 import { HeroProvider, HeroContext } from './context/HeroContext';
 import DataSyncModal from './components/DataSyncModal';
 const ParticlesBackground = () => {
@@ -72,6 +73,7 @@ const ParticlesBackground = () => {
 
 function AppContent() {
   const [isImportOpen, setIsImportOpen] = React.useState(false);
+  const [activeTab, setActiveTab] = React.useState('Dashboard');
   const { importBulkData } = React.useContext(HeroContext);
 
   return (
@@ -80,8 +82,16 @@ function AppContent() {
       <Header 
         onOpenImport={() => setIsImportOpen(true)} 
       />
-      <Sidebar />
-      <Dashboard />
+      <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
+      {activeTab === 'Dashboard' && <Dashboard />}
+      {activeTab === 'Heroes' && <HeroesList />}
+      {activeTab !== 'Dashboard' && activeTab !== 'Heroes' && (
+        <main className="layout-main">
+          <div className="container" style={{ padding: '2rem', textAlign: 'center' }}>
+            <h2>{activeTab} menüpont hamarosan...</h2>
+          </div>
+        </main>
+      )}
       <DataSyncModal 
         isOpen={isImportOpen} 
         onClose={() => setIsImportOpen(false)} 
