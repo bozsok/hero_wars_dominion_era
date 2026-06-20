@@ -2,8 +2,22 @@
 
 Minden említésre méltó változtatás a projektben ebben a fájlban lesz rögzítve.
 
-## [0.5.13] - 2026-06-20
+## [0.5.14] - 2026-06-21
 
+### Hozzáadva (Added)
+- **Kiterjesztett nyersanyag-nyomonkövetés:** A korábbi erőforrások mellé sikeresen integráltunk 26 új, esszenciális játékelemet a rendszerbe, beleértve a titán és háziállat (pet) fejlesztési tárgyakat, trófeákat, valamint a katalizátorokat és varázsmagvakat.
+- **Tematikus erőforrás-csoportosítás:** Az áttekinthetőség érdekében az erőforrásokat logikai kategóriákba rendeztük (Általános & Boltok, Hősök & Bőrkövek, Ereklyék, Háziállatok, Titánok, Trófeák, Titán Völgy & Fa). A kategóriákat stílusos, vékony arany alsó szegéllyel ellátott címsorok (`resource-group-label`) választják el.
+- **Interaktív eszközleírások (Tooltipek):** Minden erőforrás-kapszula megkapta a játékbeli, pontos angol megnevezését (pl. *Artifact Chest Key*, *Clash of Worlds Trophy*) natív tooltipként, amely az egér rámutatásakor (hover) automatikusan megjelenik.
+
+### Megváltoztatva (Changed)
+- **Fejléc vizuális szeparációja:** A profil fejlécének hátterét és keretét leválasztottuk a fő konténerről. Ennek köszönhetően a profil-kártya (`player-profile-widget`) mostantól különálló "szigetként" emelkedik ki a bal felső sarokban a prémium kártyákhoz hasonló dizájnnal, míg az erőforrás-csoportok átlátszó alapon sorakoznak mellette.
+- **Függőleges igazítás javítása:** A megnövekedett erőforrás-lista miatti profil-lecsúszást orvosoltuk az igazítás (`align-items: flex-start`) módosításával, így a profil "sziget" fixen a bal felső sarokhoz van horgonyozva.
+
+### Javítva (Fixed)
+- **Nyersanyag ID-k mélyreható javítása:** Számos erőforrás (különösen a bőrkövek és a trófeák) értékének felcserélődését javítottuk. Egy speciális diagnosztikai szkripttel a teljes HAR adatszerkezetet rekurzívan elemeztük, és 100%-os pontossággal dekódoltuk a játék belső azonosítóit (pl. a bőrkövek nem a 101-103, hanem a 8-10-es azonosítókon szerepelnek). A `DataSyncModal` most már ezeket a hajszálpontos azonosítókat használja az adatok kinyerésére.
+- **"Soul Crystal" ikon-hiba (onError) eltávolítása:** Eltávolítottuk azt a megtévesztő hibakezelőt a `Dashboard.jsx`-ből, amely minden hiányzó vagy hibás nevű képfájl esetén egy Soul Crystal (Lélekkristály) ikont jelenített meg helyettesítőként. Az ikonok neveit szintén korrigáltuk a `public/ui` mappában ténylegesen megtalálható fájlokhoz (pl. `egg.webp`, `elemental.png`, `primal.png`, `key.png`).
+
+## [0.5.13] - 2026-06-20
 ### Megváltoztatva (Changed)
 - **Dinamikus 9-slice erőforrás-kapszulák:** A fő erőforrások (smaragd, arany, energia), valamint az összes érme és bőrkő megkapta az egyedi `sources.png` alapú 9-szeletes (`border-image`) hátteret. Ezzel a kapszulák szélessége dinamikusan, a bennük lévő számok hosszához igazodva tud növekedni, miközben a sarkok lekerekítése torzításmentes marad.
 - **Kompakt erőforrás-elrendezés:** A másodlagos erőforrásokat (érmék és bőrkövek) áthelyeztük közvetlenül az elsődleges erőforrás-sáv alá, egy közös függőleges konténerbe (`all-resources-wrapper`). Az elsődleges sáv vízszintes elrendezést kapott.

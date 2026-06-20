@@ -89,13 +89,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background: rgba(18, 14, 25, 0.5);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(212, 175, 55, 0.2);
-  border-radius: 16px;
-  padding: 1.5rem 2rem;
   margin-bottom: 2rem;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
   animation: fadeIn 0.4s ease-out;
   flex-wrap: wrap;
   gap: 2rem;
@@ -104,7 +98,7 @@
 /* Bal oldali profil és erőforrás csoport */
 .header-profile-resources-group {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 4rem;
 }
 
@@ -116,6 +110,14 @@
   width: 180px;
   position: relative;
   gap: 10px;
+
+  /* Sziget-szerű prémium stílus */
+  background: #1a1009;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
 }
 
 .avatar-circle-wrapper {
@@ -286,21 +288,11 @@
   object-fit: contain;
   filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.5));
   z-index: 2;
+  top: 8px;
 }
 
 .emerald-pill .pill-icon {
-  margin-top: -8px;
-  /* Egyedi igazítás a smaragdnak */
-}
-
-.gold-pill .pill-icon {
-  margin-top: -5px;
-  /* Egyedi igazítás a smaragdnak */
-}
-
-.energy-pill .pill-icon {
   margin-top: -3px;
-  /* Egyedi igazítás a smaragdnak */
 }
 
 .pill-value {
@@ -342,6 +334,21 @@
 .new-row-start {
   grid-column: 1;
   /* Ez kényszeríti ki, hogy az alsó sor első eleme a grid legelső oszlopában kezdődjön */
+}
+
+.resource-group-label {
+  grid-column: 1 / -1;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #d4af37;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+  padding-bottom: 0.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: -0.5rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+  width: 100%;
 }
 
 
