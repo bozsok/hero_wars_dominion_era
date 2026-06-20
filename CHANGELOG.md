@@ -2,6 +2,16 @@
 
 Minden említésre méltó változtatás a projektben ebben a fájlban lesz rögzítve.
 
+## [0.5.13] - 2026-06-20
+
+### Megváltoztatva (Changed)
+- **Dinamikus 9-slice erőforrás-kapszulák:** A fő erőforrások (smaragd, arany, energia), valamint az összes érme és bőrkő megkapta az egyedi `sources.png` alapú 9-szeletes (`border-image`) hátteret. Ezzel a kapszulák szélessége dinamikusan, a bennük lévő számok hosszához igazodva tud növekedni, miközben a sarkok lekerekítése torzításmentes marad.
+- **Kompakt erőforrás-elrendezés:** A másodlagos erőforrásokat (érmék és bőrkövek) áthelyeztük közvetlenül az elsődleges erőforrás-sáv alá, egy közös függőleges konténerbe (`all-resources-wrapper`). Az elsődleges sáv vízszintes elrendezést kapott.
+- **Tökéletes oszlopos igazítás CSS Griddel:** A másodlagos erőforrások két sorát egy közös CSS Grid rácsba helyeztük (`header-secondary-resources-group`), így a különböző szélességű kapszulák ellenére a felső és az alsó sor ikonjai mértani pontossággal, tökéletesen egymás alatt helyezkednek el.
+- **Egységes fehér tipográfia:** Eltávolítottuk az értékek színkódolását (zöld, arany, kék, és a bőrkövek egyedi színei). Mostantól minden erőforrás értéke hófehér színben, erős fekete árnyékolással (`text-shadow`) jelenik meg az egységes és letisztult megjelenés érdekében.
+- **Ikonok pixelpontos igazítása:** Az erőforrás-ikonok méretét visszaállítottuk az eredeti (100%-os) 75x75 pixeles natív felbontásukra. Emellett az ikonokat függőlegesen középre zártuk, és erősen balra toltuk (`left: -55px`), az egyes ikonoknál egyedi vertikális finomhangolásokkal kiegészítve, hogy tökéletesen elfedjék a kapszula bal oldali peremét.
+- **Felesleges elemek törlése:** Eltávolítottuk a használaton kívüli `+` gombokat az elsődleges erőforrások végéről, valamint a "Játékbeli Érmék" és "Bőrkövek (Skin Stones)" feliratokat a másodlagos sávok fölül.
+
 ## [0.5.12] - 2026-06-19
 
 ### Megváltoztatva (Changed)

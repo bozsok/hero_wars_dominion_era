@@ -88,17 +88,24 @@
 .dashboard-game-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   background: rgba(18, 14, 25, 0.5);
   backdrop-filter: blur(8px);
   border: 1px solid rgba(212, 175, 55, 0.2);
   border-radius: 16px;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   margin-bottom: 2rem;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
   animation: fadeIn 0.4s ease-out;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 2rem;
+}
+
+/* Bal oldali profil és erőforrás csoport */
+.header-profile-resources-group {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
 }
 
 /* Bal oldali avatár widget */
@@ -228,8 +235,8 @@
 
 .player-vip-banner span {
   font-family: 'Roboto Condensed', sans-serif;
-  color: #ffd700;
-  font-size: 20px;
+  color: #f1e656;
+  font-size: 24px;
   font-weight: 900;
   text-shadow: 0 2px 3px #000;
   letter-spacing: 1.5px;
@@ -237,217 +244,107 @@
   margin-bottom: 2px;
 }
 
-/* Jobb oldali erőforrás sáv */
+.all-resources-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Jobb oldali erőforrás sáv (most már profil mellett, egymás alatt) */
 .player-resources-bar {
   display: flex;
-  gap: 1.5rem;
+  flex-direction: row;
+  gap: 4.5rem;
+  /* Nagyobb térköz a kiálló ikonok miatt, megegyezően a többi sorral */
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .game-resource-pill {
-  background: linear-gradient(180deg, #2b1f1d 0%, #150f0e 100%);
-  border: 1.5px solid #d4af37;
-  border-radius: 18px;
-  height: 34px;
+  background: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 14px 14px;
+  border-image-source: url('./ui/sources.png');
+  border-image-slice: 14 14 fill;
+  border-image-repeat: stretch;
+
+  height: 50px;
+  min-width: 80px;
   display: flex;
   align-items: center;
   position: relative;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.8), 0 2px 4px rgba(0, 0, 0, 0.4);
-  min-width: 140px;
+  box-sizing: border-box;
 }
 
 .pill-icon {
   position: absolute;
-  left: -12px;
-  width: 38px;
-  height: 38px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -45px;
+  width: 75px;
+  height: 75px;
   object-fit: contain;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.5));
+  z-index: 2;
+}
+
+.emerald-pill .pill-icon {
+  margin-top: -8px;
+  /* Egyedi igazítás a smaragdnak */
+}
+
+.gold-pill .pill-icon {
+  margin-top: -5px;
+  /* Egyedi igazítás a smaragdnak */
+}
+
+.energy-pill .pill-icon {
+  margin-top: -3px;
+  /* Egyedi igazítás a smaragdnak */
 }
 
 .pill-value {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 15px;
+  color: #fff;
+  font-size: 28px;
   font-weight: bold;
-  padding-left: 28px;
-  padding-right: 32px;
+  padding: 5px 5px 10px 35px;
   letter-spacing: 0.5px;
-  width: 100%;
   text-align: right;
+  z-index: 3;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .stamina-max-pill {
   color: #888;
-  font-size: 11px;
+  font-size: 16.5px;
+  /* 11px * 1.5 */
   font-weight: normal;
 }
 
-.pill-plus-btn {
-  position: absolute;
-  right: 2px;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: linear-gradient(180deg, #74e04b 0%, #2f941d 100%);
-  border: 1px solid #ffd700;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 900;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-  transition: transform 0.1s, filter 0.15s;
-  padding: 0;
-  line-height: 1;
-}
 
-.pill-plus-btn:hover {
-  filter: brightness(1.15);
-  transform: scale(1.05);
-}
 
-.pill-plus-btn:active {
-  transform: scale(0.95);
-}
 
-/* Különböző izzások */
-.emerald-pill {
-  border-color: #2ed573;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(46, 213, 115, 0.15);
-}
 
-.emerald-text {
-  color: #2ed573;
-  text-shadow: 0 0 5px rgba(46, 213, 115, 0.2);
-}
 
-.gold-pill {
-  border-color: #ffa502;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(255, 165, 2, 0.15);
-}
 
-.gold-text {
-  color: #ffa502;
-  text-shadow: 0 0 5px rgba(255, 165, 2, 0.2);
-}
-
-.energy-pill {
-  border-color: #1e90ff;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(30, 144, 255, 0.15);
-}
-
-.energy-text {
-  color: #1e90ff;
-  text-shadow: 0 0 5px rgba(30, 144, 255, 0.2);
-}
-
-/* Alrácsok: Érmék és Bőrkövek */
-.dashboard-subgrids-container {
+/* Másodlagos erőforrások (Érmék, Bőrkövek) - Pill formátumban */
+.header-secondary-resources-group {
+  margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  margin-bottom: 2.5rem;
-}
-
-.dashboard-subgrid-box {
-  background: rgba(18, 14, 25, 0.7);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 10px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-}
-
-.subgrid-box-title {
-  font-family: 'Roboto Condensed', sans-serif;
-  color: #fff;
-  font-size: 1.2rem;
-  margin: 0 0 1.2rem 0;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  padding-bottom: 0.5rem;
-}
-
-.coins-list-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-}
-
-.coin-item-row {
-  display: flex;
+  grid-template-columns: repeat(6, max-content);
+  row-gap: 1.5rem;
+  column-gap: 4.5rem;
+  /* Nagyobb térköz, mert az ikonok 45px-et kilógnak balra */
   align-items: center;
-  background: rgba(255, 255, 255, 0.03);
-  padding: 0.6rem 1rem;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.02);
-  transition: background-color 0.15s;
 }
 
-.coin-item-row:hover {
-  background: rgba(255, 255, 255, 0.06);
+.new-row-start {
+  grid-column: 1;
+  /* Ez kényszeríti ki, hogy az alsó sor első eleme a grid legelső oszlopában kezdődjön */
 }
 
-.coin-item-icon {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
-  margin-right: 1rem;
-  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.4));
-}
 
-.coin-item-name {
-  color: #ddd;
-  font-size: 0.95rem;
-  font-weight: 500;
-  flex-grow: 1;
-}
-
-.coin-item-qty {
-  font-family: 'Roboto Condensed', sans-serif;
-  color: #fff;
-  font-size: 1.15rem;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-}
-
-/* Bőrkövek egyedi színei */
-.stone-intel-row {
-  border-left: 3px solid #b33939;
-}
-
-.stone-strength-row {
-  border-left: 3px solid #ff5252;
-}
-
-.stone-agility-row {
-  border-left: 3px solid #40a0ff;
-}
-
-.stone-chest-row {
-  border-left: 3px solid #ffbe76;
-}
-
-.intel-color {
-  color: #f06969;
-}
-
-.strength-color {
-  color: #ff5252;
-}
-
-.agility-color {
-  color: #40a0ff;
-}
-
-.chest-color {
-  color: #ffbe76;
-}
 
 /* Aktív csapatok bemutatása */
 .active-teams-section {

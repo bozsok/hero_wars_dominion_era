@@ -79,7 +79,7 @@ const Dashboard = () => {
   return (
     <main className="layout-main">
       <div className="container">
-        
+
         {isViewMode && (
           <div className="view-mode-warning">
             <h2 className="view-mode-title">Megtekintés Mód Aktív</h2>
@@ -87,118 +87,101 @@ const Dashboard = () => {
           </div>
         )}
 
-        {/* Játékbeli stílusú felső profil és erőforrás sáv */}
+        {/* Új Játékbeli Fejléc Sáv, benne minden erőforrással */}
         <div className="dashboard-game-header">
-          {/* Bal oldali profil widget */}
-          <div className="player-profile-widget">
-            <div className="avatar-circle-wrapper">
-              {isHeroAvatar ? (
-                <img src={avatarUrl} alt="Avatar" className="player-avatar-img" />
-              ) : (
-                <div className="player-avatar-id-text">{playerProfile.avatarId}</div>
+
+          {/* Bal oldali blokk: Profil és Alap Erőforrások (Egymás mellett) */}
+          <div className="header-profile-resources-group">
+            {/* Avatár Widget */}
+            <div className="player-profile-widget">
+              <div className="avatar-circle-wrapper">
+                {isHeroAvatar ? (
+                  <img src={avatarUrl} alt="Avatar" className="player-avatar-img" />
+                ) : (
+                  <div className="player-avatar-id-text">{playerProfile.avatarId}</div>
+                )}
+                <img src={frameUrl} alt="Frame" className="player-avatar-frame" />
+                <div className="player-level-badge">{playerProfile.level}</div>
+              </div>
+              <div className="player-name-banner">
+                <span>{playerProfile.name}</span>
+              </div>
+              {playerProfile.vipLevel > 0 && (
+                <div className="player-vip-banner">
+                  <span>VIP {playerProfile.vipLevel}</span>
+                </div>
               )}
-              <img src={frameUrl} alt="Frame" className="player-avatar-frame" />
-              <div className="player-level-badge">{playerProfile.level}</div>
-            </div>
-            <div className="player-name-banner">
-              <span>{playerProfile.name}</span>
-            </div>
-            {playerProfile.vipLevel > 0 && (
-              <div className="player-vip-banner">
-                <span>VIP {playerProfile.vipLevel}</span>
-              </div>
-            )}
-          </div>
-
-          {/* Jobb oldali erőforrás sáv */}
-          <div className="player-resources-bar">
-            {/* Smaragd */}
-            <div className="game-resource-pill emerald-pill">
-              <img src="./ui/emerald.webp" alt="Emerald" className="pill-icon" />
-              <span className="pill-value emerald-text">{formatNum(playerProfile.emeralds)}</span>
-              <button className="pill-plus-btn">+</button>
-            </div>
-            
-            {/* Arany */}
-            <div className="game-resource-pill gold-pill">
-              <img src="./ui/gold.webp" alt="Gold" className="pill-icon" />
-              <span className="pill-value gold-text">{formatNum(playerProfile.gold)}</span>
-              <button className="pill-plus-btn">+</button>
             </div>
 
-            {/* Energia */}
-            <div className="game-resource-pill energy-pill">
-              <img src="./ui/energy.webp" alt="Energy" className="pill-icon" />
-              <span className="pill-value energy-text">
-                {playerProfile.stamina} <span className="stamina-max-pill">/ {maxStamina}</span>
-              </span>
-              <button className="pill-plus-btn">+</button>
-            </div>
-          </div>
-        </div>
+            {/* Az összes erőforrás egy közös oszlopban, a profilkép mellett */}
+            <div className="all-resources-wrapper">
+              {/* Elsődleges erőforrások */}
+              <div className="player-resources-bar">
+                {/* Smaragd */}
+                <div className="game-resource-pill emerald-pill">
+                  <img src="./ui/emerald.webp" alt="Emerald" className="pill-icon" />
+                  <span className="pill-value">{formatNum(playerProfile.emeralds)}</span>
+                </div>
 
-        {/* Érmék és Bőrkövek rácsa */}
-        <div className="dashboard-subgrids-container">
-          {/* Érmék kártya */}
-          <div className="dashboard-subgrid-box">
-            <h3 className="subgrid-box-title">Játékbeli Érmék</h3>
-            <div className="coins-list-grid">
-              <div className="coin-item-row">
-                <img src="./ui/coin_1.webp" alt="Arena Coin" className="coin-item-icon" />
-                <span className="coin-item-name">Arena Coin</span>
-                <span className="coin-item-qty">{formatNum(playerProfile.coins?.arena)}</span>
-              </div>
-              <div className="coin-item-row">
-                <img src="./ui/coin_2.webp" alt="Grand Arena Coin" className="coin-item-icon" />
-                <span className="coin-item-name">Grand Arena Coin</span>
-                <span className="coin-item-qty">{formatNum(playerProfile.coins?.grandArena)}</span>
-              </div>
-              <div className="coin-item-row">
-                <img src="./ui/coin_3.webp" alt="Tower Coin" className="coin-item-icon" />
-                <span className="coin-item-name">Tower Coin</span>
-                <span className="coin-item-qty">{formatNum(playerProfile.coins?.tower)}</span>
-              </div>
-              <div className="coin-item-row">
-                <img src="./ui/coin_4.webp" alt="Outland Coin" className="coin-item-icon" />
-                <span className="coin-item-name">Outland Coin</span>
-                <span className="coin-item-qty">{formatNum(playerProfile.coins?.outland)}</span>
-              </div>
-              <div className="coin-item-row">
-                <img src="./ui/coin_18.webp" alt="Tournament Coin" className="coin-item-icon" />
-                <span className="coin-item-name">Tournament Coin</span>
-                <span className="coin-item-qty">{formatNum(playerProfile.coins?.tournament)}</span>
-              </div>
-              <div className="coin-item-row">
-                <img src="./ui/coin_38.webp" alt="Soul Crystal" className="coin-item-icon" />
-                <span className="coin-item-name">Soul Crystal</span>
-                <span className="coin-item-qty">{formatNum(playerProfile.coins?.soulCrystal)}</span>
-              </div>
-            </div>
-          </div>
+                {/* Arany */}
+                <div className="game-resource-pill gold-pill">
+                  <img src="./ui/gold.webp" alt="Gold" className="pill-icon" />
+                  <span className="pill-value">{formatNum(playerProfile.gold)}</span>
+                </div>
 
-          {/* Bőrkövek kártya */}
-          <div className="dashboard-subgrid-box">
-            <h3 className="subgrid-box-title">Bőrkövek (Skin Stones)</h3>
-            <div className="coins-list-grid">
-              <div className="coin-item-row stone-intel-row">
-                <img src="./ui/skin_stone_101.webp" alt="Intelligence Skin Stone" className="coin-item-icon" />
-                <span className="coin-item-name">Intelligencia bőr kő</span>
-                <span className="coin-item-qty intel-color">{formatNum(playerProfile.coins?.skinStoneInt)}</span>
+                {/* Energia */}
+                <div className="game-resource-pill energy-pill">
+                  <img src="./ui/energy.webp" alt="Energy" className="pill-icon" />
+                  <span className="pill-value">
+                    {playerProfile.stamina}
+                  </span>
+                </div>
               </div>
-              <div className="coin-item-row stone-strength-row">
-                <img src="./ui/skin_stone_102.webp" alt="Strength Skin Stone" className="coin-item-icon" />
-                <span className="coin-item-name">Erő bőr kő</span>
-                <span className="coin-item-qty strength-color">{formatNum(playerProfile.coins?.skinStoneStr)}</span>
-              </div>
-              <div className="coin-item-row stone-agility-row">
-                <img src="./ui/skin_stone_103.webp" alt="Agility Skin Stone" className="coin-item-icon" />
-                <span className="coin-item-name">Ügyesség bőr kő</span>
-                <span className="coin-item-qty agility-color">{formatNum(playerProfile.coins?.skinStoneAgi)}</span>
-              </div>
-              <div className="coin-item-row stone-chest-row">
-                <img src="./ui/skin_stone_104.webp" alt="Skin Stone Chest" className="coin-item-icon" />
-                <span className="coin-item-name">Bőrkő láda (Chest)</span>
-                <span className="coin-item-qty chest-color">{formatNum(playerProfile.coins?.skinStoneChest)}</span>
+
+              {/* Másodlagos erőforrások (Érmék és Bőrkövek) - Pill stílusban */}
+              <div className="header-secondary-resources-group">
+                <div className="game-resource-pill">
+                  <img src="./ui/coin_4.webp" alt="Outland Coin" className="pill-icon" />
+                  <span className="pill-value">{formatNum(playerProfile.coins?.outland)}</span>
+                </div>
+                <div className="game-resource-pill">
+                  <img src="./ui/skin_stone_101.png" alt="Intelligence Skin Stone" className="pill-icon" />
+                  <span className="pill-value">{formatNum(playerProfile.coins?.skinStoneInt)}</span>
+                </div>
+                <div className="game-resource-pill">
+                  <img src="./ui/skin_stone_102.png" alt="Strength Skin Stone" className="pill-icon" />
+                  <span className="pill-value">{formatNum(playerProfile.coins?.skinStoneStr)}</span>
+                </div>
+                <div className="game-resource-pill">
+                  <img src="./ui/skin_stone_103.png" alt="Agility Skin Stone" className="pill-icon" />
+                  <span className="pill-value">{formatNum(playerProfile.coins?.skinStoneAgi)}</span>
+                </div>
+
+                {/* Alsó sor (Új sor kezdete a gridben) */}
+                <div className="game-resource-pill new-row-start">
+                  <img src="./ui/coin_1.webp" alt="Arena Coin" className="pill-icon" />
+                  <span className="pill-value">{formatNum(playerProfile.coins?.arena)}</span>
+                </div>
+                <div className="game-resource-pill">
+                  <img src="./ui/coin_2.webp" alt="Grand Arena Coin" className="pill-icon" />
+                  <span className="pill-value">{formatNum(playerProfile.coins?.grandArena)}</span>
+                </div>
+                <div className="game-resource-pill">
+                  <img src="./ui/coin_3.webp" alt="Tower Coin" className="pill-icon" />
+                  <span className="pill-value">{formatNum(playerProfile.coins?.tower)}</span>
+                </div>
+                <div className="game-resource-pill">
+                  <img src="./ui/coin_18.png" alt="Tournament Coin" className="pill-icon" />
+                  <span className="pill-value">{formatNum(playerProfile.coins?.tournament)}</span>
+                </div>
+                <div className="game-resource-pill">
+                  <img src="./ui/coin_38.webp" alt="Soul Crystal" className="pill-icon" />
+                  <span className="pill-value">{formatNum(playerProfile.coins?.soulCrystal)}</span>
+                </div>
+                <div className="game-resource-pill">
+                  <img src="./ui/skin_stone_104.webp" alt="Skin Stone Chest" className="pill-icon" />
+                  <span className="pill-value">{formatNum(playerProfile.coins?.skinStoneChest)}</span>
+                </div>
               </div>
             </div>
           </div>
@@ -208,7 +191,7 @@ const Dashboard = () => {
         {playerTeams && (
           <div className="active-teams-section">
             <h2 className="active-teams-title">Aktív Csapatok Összeállítása</h2>
-            
+
             <div className="teams-grid-container">
               {/* Aréna csapat */}
               {playerTeams.arena && playerTeams.arena.length > 0 && (
@@ -232,10 +215,10 @@ const Dashboard = () => {
                           </div>
                         );
                       }
-                      
+
                       const hero = getHeroDetails(id);
                       if (!hero) return null;
-                      
+
                       const borderUrl = `./hero_borders/${(hero.items?.rank || 'White').toLowerCase()}.png`;
                       return (
                         <div key={`hero-${id}`} className="team-member-card">
@@ -276,10 +259,10 @@ const Dashboard = () => {
                           </div>
                         );
                       }
-                      
+
                       const hero = getHeroDetails(id);
                       if (!hero) return null;
-                      
+
                       const borderUrl = `./hero_borders/${(hero.items?.rank || 'White').toLowerCase()}.png`;
                       return (
                         <div key={`hero-mission-${id}`} className="team-member-card">
@@ -323,10 +306,10 @@ const Dashboard = () => {
                                 </div>
                               );
                             }
-                            
+
                             const hero = getHeroDetails(id);
                             if (!hero) return null;
-                            
+
                             const borderUrl = `./hero_borders/${(hero.items?.rank || 'White').toLowerCase()}.png`;
                             return (
                               <div key={`hero-grand-${tIdx}-${id}`} className="team-member-card">
