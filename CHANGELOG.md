@@ -8,6 +8,8 @@ Minden említésre méltó változtatás a projektben ebben a fájlban lesz rög
 - **Kiterjesztett nyersanyag-nyomonkövetés:** A korábbi erőforrások mellé sikeresen integráltunk 26 új, esszenciális játékelemet a rendszerbe, beleértve a titán és háziállat (pet) fejlesztési tárgyakat, trófeákat, valamint a katalizátorokat és varázsmagvakat.
 - **Tematikus erőforrás-csoportosítás:** Az áttekinthetőség érdekében az erőforrásokat logikai kategóriákba rendeztük (Általános & Boltok, Hősök & Bőrkövek, Ereklyék, Háziállatok, Titánok, Trófeák, Titán Völgy & Fa). A kategóriákat stílusos, vékony arany alsó szegéllyel ellátott címsorok (`resource-group-label`) választják el.
 - **Interaktív eszközleírások (Tooltipek):** Minden erőforrás-kapszula megkapta a játékbeli, pontos angol megnevezését (pl. *Artifact Chest Key*, *Clash of Worlds Trophy*) natív tooltipként, amely az egér rámutatásakor (hover) automatikusan megjelenik.
+- **Teljes Fiók-Pillanatkép (JSON Export):** A JSON export és a Megtekintő mód (Viewer mode) logikáját teljesen újraírtuk. A funkció immár nemcsak a hősöket, hanem a teljes profilt, az érméket, energiát és minden nyersanyagot kiment egy intelligens (formatVersion: 2) struktúrába, amit betöltéskor azonnal és maradéktalanul megjelenít a Dashboard felületén is.
+
 
 ### Megváltoztatva (Changed)
 - **Fejléc vizuális szeparációja:** A profil fejlécének hátterét és keretét leválasztottuk a fő konténerről. Ennek köszönhetően a profil-kártya (`player-profile-widget`) mostantól különálló "szigetként" emelkedik ki a bal felső sarokban a prémium kártyákhoz hasonló dizájnnal, míg az erőforrás-csoportok átlátszó alapon sorakoznak mellette.
@@ -16,6 +18,7 @@ Minden említésre méltó változtatás a projektben ebben a fájlban lesz rög
 ### Javítva (Fixed)
 - **Nyersanyag ID-k mélyreható javítása:** Számos erőforrás (különösen a bőrkövek és a trófeák) értékének felcserélődését javítottuk. Egy speciális diagnosztikai szkripttel a teljes HAR adatszerkezetet rekurzívan elemeztük, és 100%-os pontossággal dekódoltuk a játék belső azonosítóit (pl. a bőrkövek nem a 101-103, hanem a 8-10-es azonosítókon szerepelnek). A `DataSyncModal` most már ezeket a hajszálpontos azonosítókat használja az adatok kinyerésére.
 - **"Soul Crystal" ikon-hiba (onError) eltávolítása:** Eltávolítottuk azt a megtévesztő hibakezelőt a `Dashboard.jsx`-ből, amely minden hiányzó vagy hibás nevű képfájl esetén egy Soul Crystal (Lélekkristály) ikont jelenített meg helyettesítőként. Az ikonok neveit szintén korrigáltuk a `public/ui` mappában ténylegesen megtalálható fájlokhoz (pl. `egg.webp`, `elemental.png`, `primal.png`, `key.png`).
+- **JSON Export felesleges adatainak eltávolítása:** Az adatok exportálása során (a memóriában esetlegesen beragadt történelmi maradványok miatt) bekerültek a statikus katalógusadatok (pl. hős leírása, szerepköre, képe) is az exportált fájlba. Ezt javítottuk: mostantól a JSON export szigorúan csak a dinamikus, játékoshoz tartozó adatokat menti el, így a fájl mérete és tartalma letisztultabb lett.
 
 ## [0.5.13] - 2026-06-20
 ### Megváltoztatva (Changed)

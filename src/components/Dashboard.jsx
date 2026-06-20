@@ -16,7 +16,8 @@ const PET_NAMES = {
 };
 
 const Dashboard = () => {
-  const { heroes, playerProfile, playerTeams, isViewMode } = useContext(HeroContext);
+  const { heroes, playerProfile, playerTeams, isViewMode, viewProfile } = useContext(HeroContext);
+  const displayProfile = (isViewMode && viewProfile) ? viewProfile : playerProfile;
 
   // Segédfüggvény a hős részleteinek kiderítésére ID alapján
   const getHeroDetails = (heroId) => {
@@ -32,7 +33,7 @@ const Dashboard = () => {
     return num.toLocaleString('hu-HU');
   };
 
-  if (!playerProfile) {
+  if (!displayProfile) {
     return (
       <main className="layout-main">
         <div className="container dashboard-empty-container">
@@ -61,20 +62,20 @@ const Dashboard = () => {
       </main>
     );
   }
-  const maxStamina = 60 + playerProfile.level;
+  const maxStamina = 60 + displayProfile.level;
   let frameUrl = './ui/base_frame.webp';
-  if (playerProfile.league === 1 || playerProfile.league === '1') {
+  if (displayProfile.league === 1 || displayProfile.league === '1') {
     frameUrl = './ui/guild_war_gold_league_frame.webp';
-  } else if (playerProfile.league === 2 || playerProfile.league === '2') {
+  } else if (displayProfile.league === 2 || displayProfile.league === '2') {
     frameUrl = './ui/guild_war_silver_league_frame.webp';
-  } else if (playerProfile.league === 3 || playerProfile.league === '3') {
+  } else if (displayProfile.league === 3 || displayProfile.league === '3') {
     frameUrl = './ui/guild_war_bronze_league_frame.webp';
   }
 
   // Dinamikus avatar kiválasztása (hős portré vagy ID)
-  const avatarIdNum = playerProfile.avatarId ? parseInt(playerProfile.avatarId, 10) : 0;
+  const avatarIdNum = displayProfile.avatarId ? parseInt(displayProfile.avatarId, 10) : 0;
   const isHeroAvatar = avatarIdNum > 0 && avatarIdNum <= 73;
-  const avatarUrl = isHeroAvatar ? `./heroes/${playerProfile.avatarId}.png` : null;
+  const avatarUrl = isHeroAvatar ? `./heroes/${displayProfile.avatarId}.png` : null;
 
   return (
     <main className="layout-main">
@@ -98,17 +99,17 @@ const Dashboard = () => {
                 {isHeroAvatar ? (
                   <img src={avatarUrl} alt="Avatar" className="player-avatar-img" />
                 ) : (
-                  <div className="player-avatar-id-text">{playerProfile.avatarId}</div>
+                  <div className="player-avatar-id-text">{displayProfile.avatarId}</div>
                 )}
                 <img src={frameUrl} alt="Frame" className="player-avatar-frame" />
-                <div className="player-level-badge">{playerProfile.level}</div>
+                <div className="player-level-badge">{displayProfile.level}</div>
               </div>
               <div className="player-name-banner">
-                <span>{playerProfile.name}</span>
+                <span>{displayProfile.name}</span>
               </div>
-              {playerProfile.vipLevel > 0 && (
+              {displayProfile.vipLevel > 0 && (
                 <div className="player-vip-banner">
-                  <span>VIP {playerProfile.vipLevel}</span>
+                  <span>VIP {displayProfile.vipLevel}</span>
                 </div>
               )}
             </div>
@@ -120,20 +121,20 @@ const Dashboard = () => {
                 {/* Smaragd */}
                 <div className="game-resource-pill emerald-pill" title="Emerald">
                   <img src="./ui/emerald.webp" alt="Emerald" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.emeralds)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.emeralds)}</span>
                 </div>
 
                 {/* Arany */}
                 <div className="game-resource-pill gold-pill" title="Gold">
                   <img src="./ui/gold.webp" alt="Gold" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.gold)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.gold)}</span>
                 </div>
 
                 {/* Energia */}
                 <div className="game-resource-pill energy-pill" title="Energy">
                   <img src="./ui/energy.webp" alt="Energy" className="pill-icon" />
                   <span className="pill-value">
-                    {playerProfile.stamina}
+                    {displayProfile.stamina}
                   </span>
                 </div>
               </div>
@@ -144,157 +145,157 @@ const Dashboard = () => {
                 <div className="resource-group-label">Általános & Boltok</div>
                 <div className="game-resource-pill" title="Arena Coin">
                   <img src="./ui/coin_1.png" alt="Arena Coin" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.coins?.arena)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.coins?.arena)}</span>
                 </div>
                 <div className="game-resource-pill" title="Grand Arena Coin">
                   <img src="./ui/coin_2.png" alt="Grand Arena Coin" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.coins?.grandArena)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.coins?.grandArena)}</span>
                 </div>
                 <div className="game-resource-pill" title="Tower Coin">
                   <img src="./ui/coin_3.png" alt="Tower Coin" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.coins?.tower)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.coins?.tower)}</span>
                 </div>
                 <div className="game-resource-pill" title="Outland Coin">
                   <img src="./ui/coin_4.png" alt="Outland Coin" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.coins?.outland)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.coins?.outland)}</span>
                 </div>
                 <div className="game-resource-pill" title="Soul Coin">
                   <img src="./ui/soulCoin.png" alt="Soul Coin" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.coins?.soulCoin)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.coins?.soulCoin)}</span>
                 </div>
                 <div className="game-resource-pill" title="Friendship Chip">
                   <img src="./ui/friendshipChip.png" alt="Friendship Chip" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.coins?.friendshipChip)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.coins?.friendshipChip)}</span>
                 </div>
                 <div className="game-resource-pill" title="Bottled Energy">
                   <img src="./ui/bottledEnergy.png" alt="Bottled Energy" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.consumables?.bottledEnergy)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.consumables?.bottledEnergy)}</span>
                 </div>
                 <div className="game-resource-pill" title="Spark of Power">
                   <img src="./ui/sparkOfPower.png" alt="Spark of Power" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.consumables?.sparkOfPower)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.consumables?.sparkOfPower)}</span>
                 </div>
 
                 {/* Hősök & Bőrkövek (Heroes & Skins) */}
                 <div className="resource-group-label">Hősök & Bőrkövek</div>
                 <div className="game-resource-pill" title="Intelligence Skin Stone">
                   <img src="./ui/skin_stone_101.png" alt="Intelligence Skin Stone" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.coins?.skinStoneInt)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.coins?.skinStoneInt)}</span>
                 </div>
                 <div className="game-resource-pill" title="Strength Skin Stone">
                   <img src="./ui/skin_stone_102.png" alt="Strength Skin Stone" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.coins?.skinStoneStr)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.coins?.skinStoneStr)}</span>
                 </div>
                 <div className="game-resource-pill" title="Agility Skin Stone">
                   <img src="./ui/skin_stone_103.png" alt="Agility Skin Stone" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.coins?.skinStoneAgi)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.coins?.skinStoneAgi)}</span>
                 </div>
                 <div className="game-resource-pill" title="Soul Crystal">
                   <img src="./ui/coin_38.webp" alt="Soul Crystal" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.coins?.soulCrystal)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.coins?.soulCrystal)}</span>
                 </div>
 
                 {/* Ereklyék (Artifacts) */}
                 <div className="resource-group-label">Ereklyék (Artifacts)</div>
                 <div className="game-resource-pill" title="Artifact Coin">
                   <img src="./ui/artifactCoin.png" alt="Artifact Coin" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.coins?.artifactCoin)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.coins?.artifactCoin)}</span>
                 </div>
                 <div className="game-resource-pill" title="Artifact Chest Key">
                   <img src="./ui/key.png" alt="Artifact Chest Key" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.consumables?.artifactChestKey)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.consumables?.artifactChestKey)}</span>
                 </div>
                 <div className="game-resource-pill" title="Chaos Core">
                   <img src="./ui/chaosCore.png" alt="Chaos Core" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.consumables?.chaosCore)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.consumables?.chaosCore)}</span>
                 </div>
 
                 {/* Háziállatok (Pets) */}
                 <div className="resource-group-label">Háziállatok (Pets)</div>
                 <div className="game-resource-pill" title="Summoning Egg">
                   <img src="./ui/egg.png" alt="Summoning Egg" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.consumables?.petSummoningEgg)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.consumables?.petSummoningEgg)}</span>
                 </div>
                 <div className="game-resource-pill" title="Pet Potion">
                   <img src="./ui/petPotion.png" alt="Pet Potion" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.consumables?.petPotion)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.consumables?.petPotion)}</span>
                 </div>
 
                 {/* Titánok (Titans) */}
                 <div className="resource-group-label">Titánok (Titans)</div>
                 <div className="game-resource-pill" title="Titan Potion">
                   <img src="./ui/titanPotion.png" alt="Titan Potion" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.consumables?.titanPotion)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.consumables?.titanPotion)}</span>
                 </div>
                 <div className="game-resource-pill" title="Titan Skin Stone">
                   <img src="./ui/titanSkinStone.png" alt="Titan Skin Stone" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.coins?.titanSkinStone)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.coins?.titanSkinStone)}</span>
                 </div>
                 <div className="game-resource-pill" title="Titan Soul Coin">
                   <img src="./ui/titanSoulCoin.png" alt="Titan Soul Coin" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.coins?.titanSoulCoin)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.coins?.titanSoulCoin)}</span>
                 </div>
                 <div className="game-resource-pill" title="Summoning Sphere">
                   <img src="./ui/summoningSphere.png" alt="Summoning Sphere" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.coins?.summoningSphere)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.coins?.summoningSphere)}</span>
                 </div>
                 <div className="game-resource-pill" title="Titan Artifact Sphere">
                   <img src="./ui/titanArtifactSphere.png" alt="Titan Artifact Sphere" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.consumables?.titanArtifactSphere)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.consumables?.titanArtifactSphere)}</span>
                 </div>
                 <div className="game-resource-pill" title="Essence of the Elements">
                   <img src="./ui/essenceOfTheElements.png" alt="Essence of the Elements" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.consumables?.essenceOfTheElements)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.consumables?.essenceOfTheElements)}</span>
                 </div>
 
                 {/* Trófeák és Bajnokság (Trophies) */}
                 <div className="resource-group-label">Trófeák & Bajnokság (Trophies)</div>
                 <div className="game-resource-pill" title="Bronze Trophy">
                   <img src="./ui/bronzeTrophy.png" alt="Bronze Trophy" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.coins?.bronzeTrophy)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.coins?.bronzeTrophy)}</span>
                 </div>
                 <div className="game-resource-pill" title="Silver Trophy">
                   <img src="./ui/silverTrophy.png" alt="Silver Trophy" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.coins?.silverTrophy)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.coins?.silverTrophy)}</span>
                 </div>
                 <div className="game-resource-pill" title="Gold Trophy">
                   <img src="./ui/goldTrophy.png" alt="Gold Trophy" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.coins?.goldTrophy)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.coins?.goldTrophy)}</span>
                 </div>
                 <div className="game-resource-pill" title="Clash of Worlds Trophy">
                   <img src="./ui/clashOfWorldsTrophy.png" alt="Clash of Worlds Trophy" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.coins?.clashOfWorldsTrophy)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.coins?.clashOfWorldsTrophy)}</span>
                 </div>
                 <div className="game-resource-pill" title="Elemental Tournament Coin">
                   <img src="./ui/elementalTournamentCoin.png" alt="Elemental Tournament Coin" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.coins?.elementalTournamentCoin)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.coins?.elementalTournamentCoin)}</span>
                 </div>
                 <div className="game-resource-pill" title="Valor Emblem">
                   <img src="./ui/valorEmblem.png" alt="Valor Emblem" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.coins?.valorEmblem)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.coins?.valorEmblem)}</span>
                 </div>
 
                 {/* Titán Völgy & Fa (Titan Valley & Tree) */}
                 <div className="resource-group-label">Titán Völgy & Fa</div>
                 <div className="game-resource-pill" title="Golden Thread">
                   <img src="./ui/goldenThread.png" alt="Golden Thread" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.coins?.goldenThread)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.coins?.goldenThread)}</span>
                 </div>
                 <div className="game-resource-pill" title="Eternal Seed">
                   <img src="./ui/eternalSeed.png" alt="Eternal Seed" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.consumables?.eternalSeed)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.consumables?.eternalSeed)}</span>
                 </div>
                 <div className="game-resource-pill" title="Ancient Wisdom Crystal">
                   <img src="./ui/ancientWisdomCrystal.png" alt="Ancient Wisdom Crystal" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.consumables?.ancientWisdomCrystal)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.consumables?.ancientWisdomCrystal)}</span>
                 </div>
                 <div className="game-resource-pill" title="Elemental Catalyst">
                   <img src="./ui/elemental.png" alt="Elemental Catalyst" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.coins?.elementalCatalyst)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.coins?.elementalCatalyst)}</span>
                 </div>
                 <div className="game-resource-pill" title="Primal Catalyst">
                   <img src="./ui/primal.png" alt="Primal Catalyst" className="pill-icon" />
-                  <span className="pill-value">{formatNum(playerProfile.coins?.primalCatalyst)}</span>
+                  <span className="pill-value">{formatNum(displayProfile.coins?.primalCatalyst)}</span>
                 </div>
               </div>
             </div>

@@ -200,6 +200,7 @@ export const HeroContext = createContext();
 export const HeroProvider = ({ children }) => {
   const [myHeroes, setMyHeroes] = useState({});
   const [viewHeroes, setViewHeroes] = useState(null);
+  const [viewProfile, setViewProfile] = useState(null);
   const [isViewMode, setIsViewMode] = useState(false);
   const [sortMode, setSortMode] = useState('default');
   const [playerProfile, setPlayerProfile] = useState(null);
@@ -406,7 +407,19 @@ export const HeroProvider = ({ children }) => {
     });
     
     allHeroIds.forEach(id => {
-      sortedHeroesObj[id] = myHeroes[id];
+      const hero = myHeroes[id];
+      // Csak a dinamikus, játékoshoz tartozó adatokat mentjük ki, a statikus katalógus adatokat (név, leírás stb.) nem
+      sortedHeroesObj[id] = {
+        general: hero.general,
+        stats: hero.stats,
+        items: hero.items,
+        skills: hero.skills,
+        artifacts: hero.artifacts,
+        skins: hero.skins,
+        glyphs: hero.glyphs,
+        giftOfElements: hero.giftOfElements,
+        ascension: hero.ascension
+      };
     });
 
     const now = new Date();
@@ -418,7 +431,12 @@ export const HeroProvider = ({ children }) => {
     const filename = `${year}.${month}.${day}_${hours}${minutes}`;
 
     // 1. JSON export letöltése
-    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(sortedHeroesObj, null, 2));
+    const exportObject = {
+      formatVersion: 2,
+      profile: playerProfile,
+      heroes: sortedHeroesObj
+    };
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObject, null, 2));
     const downloadAnchorNode = document.createElement('a');
     downloadAnchorNode.setAttribute("href", dataStr);
     downloadAnchorNode.setAttribute("download", `${filename}.json`);
@@ -446,16 +464,21 @@ export const HeroProvider = ({ children }) => {
       const parsed = JSON.parse(jsonData);
       let viewData = {};
       
-      // Kezeljük, ha egy régi struktúrájú exportot töltene be
-      if (Array.isArray(parsed)) {
+      // Kezeljük a formátumokat (új formatVersion: 2 és régi struktúrák)
+      if (parsed.formatVersion === 2) {
+        viewData = parsed.heroes || {};
+        setViewProfile(parsed.profile || null);
+      } else if (Array.isArray(parsed)) {
         parsed.forEach(oldHero => {
           viewData[oldHero.id] = {
             ...defaultHeroState,
             stats: oldHero.stats ? { ...defaultHeroState.stats, ...oldHero.stats } : { ...defaultHeroState.stats }
           };
         });
+        setViewProfile(null);
       } else if (typeof parsed === 'object' && parsed !== null) {
         viewData = parsed;
+        setViewProfile(null);
       } else {
         alert('Hibás fájlformátum!');
         return;
@@ -471,6 +494,7 @@ export const HeroProvider = ({ children }) => {
   const exitViewMode = () => {
     setIsViewMode(false);
     setViewHeroes(null);
+    setViewProfile(null);
   };
 
   // Aktuális felhasználói adatok (saját vagy nézeti)
@@ -497,6 +521,7 @@ export const HeroProvider = ({ children }) => {
       sortMode,
       setSortMode,
       playerProfile,
+      viewProfile,
       playerTeams
     }}>
       {children}
