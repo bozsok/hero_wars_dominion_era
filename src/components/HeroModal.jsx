@@ -949,7 +949,7 @@ const HeroModal = ({ hero, onClose }) => {
       <div className="modal-wrapper">
         <div className="modal-outside-tabs">
           <div className={`modal-flag ${activeTab === 'info' ? 'active' : ''}`} onClick={() => setActiveTab('info')}>Info</div>
-          <div className={`modal-flag ${activeTab === 'guide' ? 'active' : ''}`} onClick={() => setActiveTab('guide')}>Útmutató</div>
+          <div className={`modal-flag ${activeTab === 'guide' ? 'active' : ''}`} onClick={() => setActiveTab('guide')}>Guide</div>
           <div className={`modal-flag ${activeTab === 'skills' ? 'active' : ''}`} onClick={() => setActiveTab('skills')}>Skills</div>
           <div className={`modal-flag ${activeTab === 'skins' ? 'active' : ''}`} onClick={() => setActiveTab('skins')}>Skins</div>
           <div className={`modal-flag ${activeTab === 'stats' ? 'active' : ''}`} onClick={() => setActiveTab('stats')}>Stats</div>

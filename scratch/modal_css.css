@@ -1,0 +1,27 @@
+/* ============================================================
+   HERO MODAL STYLE DASHBOARD WRAPPER
+   ============================================================ */
+
+.dashboard-page-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.dashboard-hero-modal-style-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1400px; /* Szélesebb, mint a 800px-es Hero adatlap */
+  min-height: 700px;
+}
+
+/* Felülírjuk az index.css .modal-content szabályait a Dashboardra szabva */
+.dashboard-content-frame {
+  max-width: none;
+  min-width: 0;
+  width: auto;
+  height: auto;
+  min-height: 700px;
+}

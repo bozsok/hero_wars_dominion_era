@@ -44,14 +44,16 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
     reader.onload = (e) => {
       try {
         const harData = JSON.parse(e.target.result);
-        
+
         let heroData = null;
         let roleAscensionData = null;
         let userData = null;
         let inventoryData = null;
         let teamData = null;
         let clanData = null;
-        
+        let arenaData = null;
+        let missionData = null;
+
         if (harData.log && harData.log.entries) {
           for (const entry of harData.log.entries) {
             if (entry.response && entry.response.content && entry.response.content.text) {
@@ -83,6 +85,14 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
                     const clanResult = parsed.results.find(r => r.ident === 'clanGetInfo');
                     if (clanResult && clanResult.result && clanResult.result.response) {
                       clanData = clanResult.result.response;
+                    }
+                    const arenaResult = parsed.results.find(r => r.ident === 'arenaGetAll');
+                    if (arenaResult && arenaResult.result && arenaResult.result.response) {
+                      arenaData = arenaResult.result.response;
+                    }
+                    const missionResult = parsed.results.find(r => r.ident === 'missionGetAll');
+                    if (missionResult && missionResult.result && missionResult.result.response) {
+                      missionData = missionResult.result.response;
                     }
                   }
                 } catch (e) {
@@ -257,6 +267,11 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
               stamina: currentStamina,
               league: (clanData && clanData.clan) ? clanData.clan.league : null,
               avatarId: userData.avatarId || null,
+              arenaPlace: arenaData ? parseInt(arenaData.arenaPlace, 10) || null : null,
+              grandPlace: arenaData ? parseInt(arenaData.grandPlace, 10) || null : null,
+              campaignLevel: (missionData && Array.isArray(missionData)) 
+                ? Math.max(...missionData.map(m => parseInt(m.id, 10) || 0), 0) 
+                : null,
               coins: {
                 arena: inventoryData?.coin?.['1'] || 0,
                 grandArena: inventoryData?.coin?.['2'] || 0,
@@ -335,7 +350,7 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
             <span className="material-symbols-outlined">close</span>
           </button>
         </div>
-        
+
         <div className="import-modal-body">
           {successMessage ? (
             <div className="sync-success-container">
@@ -345,14 +360,14 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
               </div>
               <p className="sync-success-prompt">Szeretnéd kimenteni az új állapotot egy JSON fájlba, hogy megoszd másokkal?</p>
               <div className="sync-success-actions">
-                <button 
-                  className="import-process-btn gold-gradient-btn sync-action-btn" 
+                <button
+                  className="import-process-btn gold-gradient-btn sync-action-btn"
                   onClick={() => { exportData(); setSuccessMessage(''); onClose(); }}
                 >
                   Új állapot kimentése (JSON Export)
                 </button>
-                <button 
-                  className="import-cancel-btn sync-action-btn" 
+                <button
+                  className="import-cancel-btn sync-action-btn"
                   onClick={() => { setSuccessMessage(''); onClose(); }}
                 >
                   Bezárás (Csak a saját gépemen használom)
@@ -363,7 +378,7 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
             <>
               <div className="sync-import-box">
                 <h4 className="sync-import-title">Importálás HAR-fájlból</h4>
-                
+
                 <div className="sync-instruction-box">
                   <strong className="sync-instruction-title">Hogyan készíts HAR-fájlt?</strong>
                   <ul className="sync-instruction-list">
@@ -373,11 +388,11 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
                     <li>Kattints a hálózati sáv tetején (a 'No throttling' mellett) a kis lefelé mutató nyílra (<strong>Export HAR...</strong>).</li>
                   </ul>
                 </div>
-                
+
                 <p className="sync-import-desc">Válaszd ki a böngészőből lementett <code>hero-wars.com.har</code> fájlt az azonnali betöltéshez.</p>
-                <input 
-                  type="file" 
-                  accept=".har" 
+                <input
+                  type="file"
+                  accept=".har"
                   onChange={handleFileUpload}
                   className="sync-file-input"
                 />
@@ -387,8 +402,8 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
 
               <div className="sync-export-box">
                 <p className="sync-export-desc">Ha csak le szeretnéd menteni a jelenlegi állásodat:</p>
-                <button 
-                  className="import-process-btn gold-gradient-btn sync-export-btn" 
+                <button
+                  className="import-process-btn gold-gradient-btn sync-export-btn"
                   onClick={() => { exportData(); onClose(); }}
                 >
                   Jelenlegi adatok mentése (Export)
@@ -397,7 +412,7 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
             </>
           )}
         </div>
-        
+
         {!successMessage && (
           <div className="import-modal-footer">
             <button className="import-cancel-btn" onClick={onClose}>Bezárás</button>

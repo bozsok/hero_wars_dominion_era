@@ -18,6 +18,7 @@
   max-width: 600px;
   text-align: center;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.5s ease-out;
 }
 
 .dashboard-welcome-icon {
@@ -89,14 +90,9 @@
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 2rem;
+  animation: fadeIn 0.4s ease-out;
   flex-wrap: wrap;
   gap: 2rem;
-  padding-top: 15px;
-  width: 100%;
-}
-
-.dashboard-resources-tab {
-  padding-left: 20px;
 }
 
 /* Bal oldali profil és erőforrás csoport */
@@ -104,14 +100,6 @@
   display: flex;
   align-items: flex-start;
   gap: 4rem;
-  width: 100%;
-}
-
-.all-resources-wrapper {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
 }
 
 /* Bal oldali avatár widget */
@@ -124,7 +112,7 @@
   gap: 10px;
 
   /* Sziget-szerű prémium stílus */
-  /* background: #1a1009; */
+  background: #1a1009;
   backdrop-filter: blur(8px);
   border: 1px solid rgba(212, 175, 55, 0.2);
   border-radius: 16px;
@@ -258,14 +246,19 @@
   margin-bottom: 2px;
 }
 
+.all-resources-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 /* Jobb oldali erőforrás sáv (most már profil mellett, egymás alatt) */
 .player-resources-bar {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  gap: 4.5rem;
+  /* Nagyobb térköz a kiálló ikonok miatt, megegyezően a többi sorral */
   align-items: center;
-  margin-bottom: 1rem;
-  width: 100%;
 }
 
 .game-resource-pill {
@@ -329,36 +322,18 @@
 
 /* Másodlagos erőforrások (Érmék, Bőrkövek) - Pill formátumban */
 .header-secondary-resources-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem 3rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(6, max-content);
+  row-gap: 1.5rem;
+  column-gap: 4.5rem;
+  /* Nagyobb térköz, mert az ikonok 45px-et kilógnak balra */
   align-items: center;
 }
 
 .new-row-start {
-  width: 100%;
-  height: 0;
-  margin: 0;
-}
-
-.dashboard-resources-tab {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding-left: 20px;
-}
-
-.resource-two-column-row {
-  display: flex;
-  gap: 2rem 6rem;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.resource-category-block {
-  flex: 0 1 auto;
-  display: flex;
-  flex-direction: column;
+  grid-column: 1;
+  /* Ez kényszeríti ki, hogy az alsó sor első eleme a grid legelső oszlopában kezdődjön */
 }
 
 .resource-group-label {
@@ -370,22 +345,23 @@
   letter-spacing: 1px;
   border-bottom: 1px solid rgba(212, 175, 55, 0.3);
   padding-bottom: 0.3rem;
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: -0.5rem;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
   width: 100%;
-}
-
-.heroes_skins {
-  margin-top: 3rem;
 }
 
 
 
 /* Aktív csapatok bemutatása */
 .active-teams-section {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  background: rgba(18, 14, 25, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2rem;
 }
 
 .active-teams-title {
@@ -402,13 +378,14 @@
 .teams-grid-container {
   display: flex;
   flex-direction: column;
-  /* gap: 2rem; */
+  gap: 2rem;
 }
 
 .team-row-showcase {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 8px;
+  padding: 1.2rem;
 }
 
 .team-row-header {
@@ -441,10 +418,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 135px;
+  width: 90px;
   text-align: center;
   transition: transform 0.2s;
-  padding-top: 12px;
 }
 
 .team-member-card:hover {
@@ -453,38 +429,27 @@
 
 .team-member-portrait-wrapper {
   position: relative;
-  width: 112px;
-  height: 112px;
-  margin-bottom: 8px;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 0.5rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   background: #111;
-  border-radius: 12px;
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .team-member-portrait-inner {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 92%;
+  height: 92%;
   border-radius: 6px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
-}
-
-.team-member-portrait-inner::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8), inset 0 0 40px rgba(0, 0, 0, 0.4);
-  pointer-events: none;
   z-index: 1;
 }
 
@@ -497,44 +462,33 @@
 
 .team-member-border {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 120px;
-  height: 120px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   z-index: 2;
   pointer-events: none;
+  /* A keret ne zavarja az egér eseményeket */
 }
 
 .team-member-level-badge {
   position: absolute;
-  top: -6px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 0px 2px;
-  min-width: 40px;
-  text-align: center;
-  background: #110c08;
+  bottom: -4px;
+  right: -4px;
+  background: #111;
   color: #fff;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 22px;
+  font-size: 0.7rem;
   font-weight: bold;
-  border-radius: 8px;
-  border: 3.5px solid var(--rank-current, #d4af37);
-  z-index: 4;
-  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.8);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 2px 4px;
+  border-radius: 4px;
+  border: 1px solid #d4af37;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .team-member-name {
-  color: var(--primary-fixed, #fff);
-  font-family: var(--font-title-md, 'Roboto Condensed', sans-serif);
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 28px;
+  color: #eee;
+  font-size: 0.75rem;
+  font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -544,14 +498,14 @@
 
 .team-member-power-label {
   color: #d4af37;
-  font-size: 13px;
+  font-size: 0.65rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .team-member-rank-label {
   color: #1e90ff;
-  font-size: 13px;
+  font-size: 0.65rem;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -576,18 +530,13 @@
   object-fit: contain;
 }
 
+/* Grand Arena kis portrés elrendezés */
 .grand-team-subrow {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.8rem;
-  padding: .2rem 0;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0.8rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-  width: 100%;
-}
-
-.grand-team-subrow:first-child {
-  padding-top: 0;
 }
 
 .grand-team-subrow:last-child {
@@ -597,11 +546,12 @@
 
 .grand-team-label-number {
   font-family: 'Roboto Condensed', sans-serif;
-  color: #d4af37;
-  font-size: 1rem;
+  color: #aaa;
+  font-size: 0.9rem;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 1px;
+  width: 80px;
+  flex-shrink: 0;
 }
 
 .small-portraits .team-member-card {
@@ -744,38 +694,17 @@
   padding-bottom: 1rem;
 }
 
-.teams-ranking-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-
-.teams-ranking-label {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 20px;
-  color: #f7e1b6;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-}
-
 .teams-ranking-info {
-  background-image: url('./ui/rank.png');
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 170px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 32px;
+  font-size: 1.3rem;
+  color: #d4af37;
   font-weight: bold;
-  color: #f7e1b6;
-  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.95);
-  line-height: 1;
-  padding-top: 3px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
 }
 
 .teams-category-buttons {
@@ -785,70 +714,32 @@
 
 /* Blue/Brown button styling inspired by the user's example */
 .team-cat-btn {
-  background-image: url('./ui/button.png');
-  background-size: 100% 100%;
-  background-position: center;
-  background-color: transparent;
-  border: none;
+  background: linear-gradient(180deg, #613e28, #3b2214);
+  border: 2px solid #2a160b;
+  border-radius: 8px;
   color: #f1e2c3;
-  padding: 0;
+  padding: 0.6rem 1.5rem;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 22px;
+  font-size: 1.1rem;
   font-weight: bold;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   cursor: pointer;
+  box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2), 0 4px 6px rgba(0, 0, 0, 0.5);
   transition: all 0.2s ease;
-  width: 190px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .team-cat-btn:hover {
-  filter: brightness(1.1);
+  background: linear-gradient(180deg, #744d34, #472a1a);
   transform: translateY(-1px);
 }
 
 .team-cat-btn.active {
-  background-image: url('./ui/button_green.png');
-  color: #fcf190;
-  filter: brightness(1.1);
-}
-
-.grand-member-hover-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(10, 8, 14, 0.35);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-  z-index: 5;
-  border-radius: 8px;
-  padding: 8px;
-  box-sizing: border-box;
-  pointer-events: none;
-}
-
-.team-member-portrait-wrapper:hover .grand-member-hover-overlay {
-  opacity: 1;
-}
-
-.grand-member-hover-overlay .team-member-name {
+  background: linear-gradient(180deg, #28557c, #132d47);
+  /* Blue theme for active */
+  border-color: #0b1a2e;
   color: #fff;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  white-space: normal;
-  text-align: center;
-  line-height: 1.2;
-  margin: 0;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.95);
+  box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.3), 0 0 15px rgba(40, 85, 124, 0.6);
 }
 
 .team-island-container {
@@ -880,7 +771,7 @@
 .grand-arena-row {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   gap: 1rem;
   background: rgba(255, 255, 255, 0.02);
   padding: 1.5rem;
@@ -896,33 +787,9 @@
   letter-spacing: 2px;
 }
 
-/* ============================================================
-   HERO MODAL STYLE DASHBOARD WRAPPER
-   ============================================================ */
-
-.dashboard-page-wrapper {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-}
-
-.dashboard-hero-modal-style-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
+.full-width-resources {
   width: 100%;
-  max-width: 1280px;
-  /* Szélesebb, mint a 800px-es Hero adatlap, de FHD-n még biztonságos */
-}
-
-/* Felülírjuk az index.css .modal-content szabályait a Dashboardra szabva */
-.dashboard-content-frame {
-  max-width: none;
-  min-width: 0;
-  width: auto;
-  height: 750px;
-}
-
-.dashboard-content-frame .modal-scroll-container {
-  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }

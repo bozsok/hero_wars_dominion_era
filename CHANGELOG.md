@@ -2,6 +2,22 @@
 
 Minden említésre méltó változtatás a projektben ebben a fájlban lesz rögzítve.
 
+## [0.5.16] - 2026-06-21
+
+### Megváltoztatva (Changed)
+- **Helyezés és kampányszint dizájn igazítása:** A Dashboard **Teams** fülén a helyezést ("My ranking:") és a kampányszintet ("Campaign Stage:") ábrázoló kijelzőt a játékbeli stílushoz igazítottuk. A feliratot a badge fölé helyeztük, magát a számértéket pedig a `public/ui/rank.png` kép alapú, szárnyas kapszula-jelvény közepébe írtuk be, a nem aktív fülek (pl. Overview) színét követő `#a09fa4` betűszínnel. A betűméret növelése után a számérték függőleges igazítását `line-height: 1` és `padding-bottom: 3px` hozzáadásával finomhangoltuk, hogy a gomb vizuális közepére kerüljön, kompenzálva a böngésző alapértelmezett betűmetrikáit.
+- **Kategóriaválasztó gombok átméretezése:** A Teams fülön lévő kategóriagombokat (Arena, Grand Arena, Campaign) megnöveltük a Hősök menüpont akciósávjának méretére. A gombok mostantól egységesen `190px` szélesek és `48px` magasak, a betűméretük pedig `16px`-re módosult a felesleges belső paddingek egyidejű eltávolításával.
+- **Grand Aréna nevek elrejtése és lebegő (hover) overlay bevezetése:** A Grand Aréna három csapatsorának függőleges helytakarékossága érdekében a portrék alatt megjelenő hős- és kisérőneveket kivettük az alap elrendezésből. Helyette hover (egérmutató ráhúzása) eseményre megjelenő, enyhén sötétített, lekerekített (`rgba(10, 8, 14, 0.85)`) overlay réteget vezettünk be a képek felett, amelyen a nevek fehér betűkkel, középre igazítva olvashatók. Ez a megoldás jelentős függőleges helyet szabadított fel, így a harmadik sor is teljes egészében láthatóvá vált.
+
+## [0.5.15] - 2026-06-21
+
+### Megváltoztatva (Changed)
+- **Csapattagok bélyegképeinek átméretezése és Grand Aréna elrendezés:** A Dashboard **Teams** fülén megjelenő hős- és háziállat-bélyegképek méretét a Hősök lap stílusához igazítottuk, de a 6 tagú csapatok sorban történő törésmentes megjelenése érdekében a standard méretnél 10%-kal kisebbre (`135px` kártyaszélesség, `112px` portré) méreteztük át. A szintjelvények és a rangszegélyek is megkapták a hősök lapján megszokott látványvilágot (lebegő elhelyezkedés és rangnak megfelelő színű keretek). A Grand Aréna felületén a felesleges `grand-arena-row` wrapper konténer és a csapatszámozások (`Team #1-3`) eltávolításával, a többi füllel megegyező `.team-row-showcase` szülő wrapper bevezetésével, valamint az első csapatsor felső paddingjének nullázásával (`.grand-team-subrow:first-child { padding-top: 0; }`) tökéletesen konzisztenssé és pixelpontossá tettük az elrendezést az Aréna és Campaign csapatokéval.
+
+### Javítva (Fixed)
+- **Aréna helyezések és kampányszint importálásának javítása:** Korrigáltuk a [DataSyncModal.jsx](file:///d:/dev/hero%20wars/src/components/DataSyncModal.jsx) fájlban a HAR-alapú adatimportálást. A rendszer mostantól sikeresen kiolvassa az `arenaGetAll` és a `missionGetAll` API-válaszokból a játékos aktuális aréna (`arenaPlace`) és grand aréna (`grandPlace`) helyezéseit, valamint a teljesített küldetésekből a legmagasabb szintet (`campaignLevel`), majd ezeket elmenti a játékos profiljába. Ennek eredményeképpen a Dashboard **Teams** ablakában a "My ranking:" és a "Campaign Stage:" feliratok mellett helyesen megjelennek a valós értékek a korábbi hiányjelek (`-`) helyett.
+
+
 ## [0.5.14] - 2026-06-21
 
 ### Hozzáadva (Added)
