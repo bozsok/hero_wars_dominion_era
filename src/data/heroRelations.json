@@ -1,0 +1,45 @@
+{
+  "synergies": [
+    {
+      "heroes": ["10", "12"],
+      "description": "Faceless ellenséget levegőbe repítő képessége és másoló trükkjei tökéletes alapot biztosítanak K'arkh pusztító csapásaihoz."
+    },
+    {
+      "heroes": ["50", "51"],
+      "description": "Corvus elszántan védi Morrigan-t a csatamezőn, miközben Morrigan élőholt csontváz-serege folyamatos nyomás alatt tartja a védelmet."
+    },
+    {
+      "heroes": ["58", "30"],
+      "description": "Fafnir rúnapajzsai és kovácsolt védelme szinte sebezhetetlenné teszik Artemist, aki így zavartalanul zúdíthat halálos nyílzáport az ellenségre."
+    },
+    {
+      "heroes": ["27", "21"],
+      "description": "Tristan fizikai páncéltörése és energiatámogatása utat nyit Yasmine villámgyors, kritikus méregtámadásainak."
+    },
+    {
+      "heroes": ["1", "53"],
+      "description": "Alvanor erdővédő áldása felerősíti Aurora és a többi Way of Nature hős kitérési esélyeit, miközben folyamatos gyógyítást biztosít."
+    },
+    {
+      "heroes": ["13", "34"],
+      "description": "Mojo és Jhu párosa klasszikus kombináció: Jhu a hátsó sort ritkítja, míg Mojo átkai (Hex) megsokszorozzák a célpontokra mért sebzést."
+    },
+    {
+      "heroes": ["8", "33"],
+      "description": "Elmir illúziói és gyors támadásai folyamatosan aktiválják Daredevil passzív lövéseit, így ketten együtt elképesztő fizikai tűzerőt képviselnek."
+    },
+    {
+      "heroes": ["32", "35"],
+      "description": "Celeste fény és sötét formáshadows váltakozása tökéletesen táplálja Satori rókabélyegeit, amellyel a mágus egyetlen csapással képes végezni a célpontokkal."
+    }
+  ],
+  "genericFactions": {
+    "Undead": "az Élőholtak (Undead) sötét és félelmetes serege",
+    "Elf": "az Elfek (Elf) ősi, kecses és természetközeli szövetsége",
+    "Blessed": "a Szentek (Blessed) áldott és igazságos ereje",
+    "Chaos": "a Káosz (Chaos) kiszámíthatatlan és mindent elsöprő pusztítása",
+    "Demon": "a Démonok (Demon) pokoli és könyörtelen tüze",
+    "Engineer": "a Mérnökök (Engineer) precíz gépezetei és technológiai fölénye",
+    "Grove Keeper": "a Liget Őrzőinek (Grove Keeper) erdővédő ereje"
+  }
+}

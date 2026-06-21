@@ -201,6 +201,7 @@ export const HeroProvider = ({ children }) => {
   const [myHeroes, setMyHeroes] = useState({});
   const [viewHeroes, setViewHeroes] = useState(null);
   const [viewProfile, setViewProfile] = useState(null);
+  const [viewTeams, setViewTeams] = useState(null);
   const [isViewMode, setIsViewMode] = useState(false);
   const [sortMode, setSortMode] = useState('default');
   const [playerProfile, setPlayerProfile] = useState(null);
@@ -434,6 +435,7 @@ export const HeroProvider = ({ children }) => {
     const exportObject = {
       formatVersion: 2,
       profile: playerProfile,
+      teams: playerTeams,
       heroes: sortedHeroesObj
     };
     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObject, null, 2));
@@ -468,6 +470,7 @@ export const HeroProvider = ({ children }) => {
       if (parsed.formatVersion === 2) {
         viewData = parsed.heroes || {};
         setViewProfile(parsed.profile || null);
+        setViewTeams(parsed.teams || null);
       } else if (Array.isArray(parsed)) {
         parsed.forEach(oldHero => {
           viewData[oldHero.id] = {
@@ -476,9 +479,11 @@ export const HeroProvider = ({ children }) => {
           };
         });
         setViewProfile(null);
+        setViewTeams(null);
       } else if (typeof parsed === 'object' && parsed !== null) {
         viewData = parsed;
         setViewProfile(null);
+        setViewTeams(null);
       } else {
         alert('Hibás fájlformátum!');
         return;
@@ -495,6 +500,7 @@ export const HeroProvider = ({ children }) => {
     setIsViewMode(false);
     setViewHeroes(null);
     setViewProfile(null);
+    setViewTeams(null);
   };
 
   // Aktuális felhasználói adatok (saját vagy nézeti)
@@ -522,7 +528,7 @@ export const HeroProvider = ({ children }) => {
       setSortMode,
       playerProfile,
       viewProfile,
-      playerTeams
+      playerTeams: isViewMode ? viewTeams : playerTeams
     }}>
       {children}
     </HeroContext.Provider>
