@@ -2,6 +2,26 @@
 
 Minden említésre méltó változtatás a projektben ebben a fájlban lesz rögzítve.
 
+## [0.5.19] - 2026-06-23
+
+### Megváltoztatva (Changed)
+- **Függőleges görgetés engedélyezése kizárólag a Coins & Sources fülön:** Bevezettünk egy dinamikus `.resources-scroll-active` CSS osztályt, amely csak a **Coins & Sources** fül (`activeTab === 'resources'`) kiválasztásakor kerül rá a `.modal-scroll-container` tárolóra. Ezzel az osztály segítségével felülírtuk a Dashboard globális görgetés-tiltását (`overflow-y: auto`), így a megnövekedett mennyiségű kategória (köztük az alul lévő Titan Valley is) elérhetővé vált a görgetősáv segítségével. A többi fülön (Overview, Teams) a függőleges görgetés továbbra is szigorúan tiltott marad az elrendezés stabilitásának megőrzése érdekében.
+
+## [0.5.18] - 2026-06-23
+
+### Megváltoztatva (Changed)
+- **GENERAL & SHOPS csoport átköltöztetése:** A `GENERAL & SHOPS` erőforráscsoportot eltávolítottuk az Overview fül fejlécéből. A csoport átkerült a **Coins & Sources** fül ablakába, a többi erőforrásblokk elé (legfelső pozíció). Ennek köszönhetően a fejlécben kizárólag a `HEROES & SKINS` csoport maradt meg.
+- **Térközök javítása a fejlécben:** A `HEROES & SKINS` csoporton korábban lévő `margin-top: 3rem` felső margót eltávolítottuk a `.heroes_skins` osztálynál, mivel a fejlécben ez lett a legelső és egyetlen csoport, így a felesleges felső térköz megszűnt.
+- **Erőforrás-kapszulák lekicsinyítése a Coins & Sources fülön:** A **Coins & Sources** fülön megjelenő összes erőforrás-pill (kapszula) és azok belső elemeinek (ikon, betűméret, border-width) méretét lecsökkentettük a függőleges erőforrás-pillek mintájára (magasság: `38px`, szélesség: `130px`, border: `10px`, betűméret: `19px`, ikon: `52px`). Az elemek közötti távolságot is szorosabbra vettük a fülön, így az összes érme és nyersanyag kényelmesen elfér a fix magasságú ablakban görgetés vagy túlfolyás nélkül.
+
+## [0.5.17] - 2026-06-23
+
+### Hozzáadva (Added)
+- **Tudástár (TUDAS_TAR.md) létrehozása:** Létrehoztunk egy központosított játékmechanikai és matematikai segédletet a projekt gyökerében. A dokumentum összegyűjti és strukturálja a böngészős *Hero Wars: Dominion Era* verzió visszafejtett formuláit: az ereklye szintlépési költségeit (130-as szintig), a rúnák (glyphs) fejlesztési és aranytáblázatát (50-es szintig), az elsődleges-másodlagos statisztikai átszámítási képleteket, a harci erő (power) súlyozási szorzóit, valamint az olyan speciális szabályokat, mint a Gift of the Elements (GoE) nem-lineáris eloszlása, az első ereklye-fegyver 0.5-ös szorzója és a képességszintek rangalapú eltolódásai.
+
+### Megváltoztatva (Changed)
+- **Erőforrás sáv visszahelyezése a szinergia jelentés fölé:** A smaragd, arany és energia kapszulákat tartalmazó sávot (`.player-resources-bar`) kivettük a bal oldali profil alól, és visszahelyeztük a jobb oldali `.all-resources-wrapper` konténerbe, közvetlenül a Dominion Elemzés (szinergia jelentés) fölé. Ezzel párhuzamosan eltávolítottuk a `.vertical-resources` osztályt, visszaállítva a kapszulák klasszikus vízszintes elrendezését és normál méretét.
+
 ## [0.5.16] - 2026-06-21
 
 ### Megváltoztatva (Changed)
@@ -12,6 +32,8 @@ Minden említésre méltó változtatás a projektben ebben a fájlban lesz rög
 - **Függőleges profil és erőforrás sáv elrendezése, valamint Layout Swap:** Az Overview fül fejlécében a fő erőforrások sávját (`.player-resources-bar`) a játékos profil widgete (`.player-profile-widget`) alá helyeztük át egy közös függőleges oszlopba (`.profile-left-column`), ahol a smaragd, arany és energia egymás alatt jelennek meg. Ezzel a jobb oldalon lévő szinergia-jelentés (Dominion Elemzés) feljebb került, közvetlenül a profil widget mellé egy vonalba, és kitölti a teljes magasságot. A nagyszámú másodlagos érme és kő kijelzője (`header-secondary-resources-group`) lekerült a fejléc alá a tágasabb alsó területre.
 - **Fő erőforrás kapszulák (pillek) lekicsinyítése:** Hogy a smaragd, arany és energia kapszulák esztétikusan elférjenek a 180px széles bal oldali profil oszlopban, lekicsinyítettük őket: magasságukat `38px`-re, szélességüket `130px`-re csökkentettük, a 9-szeletes (9-slice) szegélyvastagságot pedig `10px`-re állítottuk. Az ikonokat `52px`-re méreteztük át, balra tolásukat `-28px`-re csökkentettük, a betűméretet pedig `19px`-re vettük vissza a tökéletes, túlfolyás-mentes illeszkedés érdekében.
 - **Csapatok mentése és visszatöltése a JSON exportban:** Kibővítettük a JSON export logikáját (`exportData` a `HeroContext.jsx`-ben), így a HAR szinkronizációból származó csapatösszeállítások (Arena, Grand Arena, Campaign csapatok) is bekerülnek a kiexportált `.json` állományba a `"teams"` kulcs alá. A visszatöltéskor (`loadViewData`) beolvassuk a mentett csapatokat a `viewTeams` állapotba. A kontextus provider a `playerTeams` lekérésekor dinamikusan a megfelelő (saját vagy betöltött nézeti) csapatot adja vissza a komponenseknek. Ezzel megtekintő módban (Viewer mode) is láthatóvá válnak a barátok csapatfelállásai, és a Dominion Elemzés is az ő specifikus csapatszinergiáikat mutatja be.
+- **Statikus képútvonalak javítása a CSS-ben:** A `.player-name-banner`, `.player-vip-banner`, `.game-resource-pill`, `.teams-ranking-info` és `.team-cat-btn` osztályok háttérkép-hivatkozásait relatívról (`./ui/...`) abszolútra (`/ui/...`) javítottuk. Ez megszüntette a Vite buildeléskor jelentkező "didn't resolve at build time" figyelmeztetéseket a statikus public mappában lévő assetekre vonatkozóan, miközben a képek futási időben továbbra is hibátlanul betöltődnek.
+- **Üdvözlő kártya cím-levágásának javítása:** A `.dashboard-welcome-title` osztályhoz `line-height: 1.3` és `padding-top: 8px` értékeket adtunk hozzá. Ez megoldotta a cím felső részének levágását, ami a `-webkit-background-clip: text` maszkolás miatt jelentkezett, így a nagybetűs magyar ékezetek (pl. Ü, Ö) ismét teljes egészükben és hibátlanul megjelennek a felületen.
 
 ## [0.5.15] - 2026-06-21
 

@@ -137,7 +137,7 @@ const Dashboard = () => {
             <div className="modal-title-banner">Dashboard</div>
             <div className="modal-body-landscape">
               <div className="modal-panel">
-                <div className="modal-scroll-container">
+                <div className={`modal-scroll-container ${activeTab === 'resources' ? 'resources-scroll-active' : ''}`}>
 
                   {activeTab === 'overview' && (
                     <>
@@ -147,7 +147,7 @@ const Dashboard = () => {
                         {/* Bal oldali blokk: Profil és Alap Erőforrások (Egymás mellett) */}
                         <div className="header-profile-resources-group">
                           
-                          {/* Bal oldali oszlop: Profil és fő erőforrások egymás alatt */}
+                          {/* Bal oldali oszlop: Csak a profil widget */}
                           <div className="profile-left-column">
                             {/* Avatár Widget */}
                             <div className="player-profile-widget">
@@ -169,9 +169,12 @@ const Dashboard = () => {
                                 </div>
                               )}
                             </div>
+                          </div>
 
-                            {/* Elsődleges erőforrások - Függőlegesen elrendezve */}
-                            <div className="player-resources-bar vertical-resources">
+                          {/* Az összes erőforrás egy közös oszlopban, a profilkép mellett */}
+                          <div className="all-resources-wrapper">
+                            {/* Elsődleges erőforrások - Vízszintesen elrendezve */}
+                            <div className="player-resources-bar">
                               {/* Smaragd */}
                               <div className="game-resource-pill emerald-pill" title="Emerald">
                                 <img src="./ui/emerald.webp" alt="Emerald" className="pill-icon" />
@@ -192,10 +195,7 @@ const Dashboard = () => {
                                 </span>
                               </div>
                             </div>
-                          </div>
 
-                          {/* Az összes erőforrás egy közös oszlopban, a profilkép mellett */}
-                          <div className="all-resources-wrapper">
                             {/* Játékosi profil narratív jellemzése */}
                             <div className="dashboard-narrative-section" style={{ height: '100%', margin: 0, boxSizing: 'border-box' }}>
                               <div className="narrative-title-banner">DOMINION ELEMZÉS & SZINERGIA JELENTÉS</div>
@@ -209,41 +209,6 @@ const Dashboard = () => {
 
                       {/* Másodlagos erőforrások (Érmék és Bőrkövek) - Pill stílusban */}
                       <div className="header-secondary-resources-group">
-                        {/* Általános & Boltok (General & Shops) */}
-                        <div className="resource-group-label">GENERAL & SHOPS</div>
-                        <div className="game-resource-pill" title="Arena Coin">
-                          <img src="./ui/coin_1.png" alt="Arena Coin" className="pill-icon" />
-                          <span className="pill-value">{formatNum(displayProfile.coins?.arena)}</span>
-                        </div>
-                        <div className="game-resource-pill" title="Grand Arena Coin">
-                          <img src="./ui/coin_2.png" alt="Grand Arena Coin" className="pill-icon" />
-                          <span className="pill-value">{formatNum(displayProfile.coins?.grandArena)}</span>
-                        </div>
-                        <div className="game-resource-pill" title="Tower Coin">
-                          <img src="./ui/coin_3.png" alt="Tower Coin" className="pill-icon" />
-                          <span className="pill-value">{formatNum(displayProfile.coins?.tower)}</span>
-                        </div>
-                        <div className="game-resource-pill" title="Outland Coin">
-                          <img src="./ui/coin_4.png" alt="Outland Coin" className="pill-icon" />
-                          <span className="pill-value">{formatNum(displayProfile.coins?.outland)}</span>
-                        </div>
-                        <div className="game-resource-pill" title="Soul Coin">
-                          <img src="./ui/soulCoin.png" alt="Soul Coin" className="pill-icon" />
-                          <span className="pill-value">{formatNum(displayProfile.coins?.soulCoin)}</span>
-                        </div>
-                        <div className="game-resource-pill" title="Friendship Chip">
-                          <img src="./ui/friendshipChip.png" alt="Friendship Chip" className="pill-icon" />
-                          <span className="pill-value">{formatNum(displayProfile.coins?.friendshipChip)}</span>
-                        </div>
-                        <div className="game-resource-pill" title="Bottled Energy">
-                          <img src="./ui/bottledEnergy.png" alt="Bottled Energy" className="pill-icon" />
-                          <span className="pill-value">{formatNum(displayProfile.consumables?.bottledEnergy)}</span>
-                        </div>
-                        <div className="game-resource-pill" title="Spark of Power">
-                          <img src="./ui/sparkOfPower.png" alt="Spark of Power" className="pill-icon" />
-                          <span className="pill-value">{formatNum(displayProfile.consumables?.sparkOfPower)}</span>
-                        </div>
-
                         {/* Hősök & Bőrkövek (Heroes & Skins) */}
                         <div className="resource-group-label heroes_skins">HEROES & SKINS</div>
                         <div className="game-resource-pill" title="Intelligence Skin Stone">
@@ -268,6 +233,44 @@ const Dashboard = () => {
 
                   {activeTab === 'resources' && (
                     <div className="dashboard-resources-tab">
+                      <div className="resource-category-block">
+                        <div className="resource-group-label">GENERAL & SHOPS</div>
+                        <div className="header-secondary-resources-group">
+                          <div className="game-resource-pill" title="Arena Coin">
+                            <img src="./ui/coin_1.png" alt="Arena Coin" className="pill-icon" />
+                            <span className="pill-value">{formatNum(displayProfile.coins?.arena)}</span>
+                          </div>
+                          <div className="game-resource-pill" title="Grand Arena Coin">
+                            <img src="./ui/coin_2.png" alt="Grand Arena Coin" className="pill-icon" />
+                            <span className="pill-value">{formatNum(displayProfile.coins?.grandArena)}</span>
+                          </div>
+                          <div className="game-resource-pill" title="Tower Coin">
+                            <img src="./ui/coin_3.png" alt="Tower Coin" className="pill-icon" />
+                            <span className="pill-value">{formatNum(displayProfile.coins?.tower)}</span>
+                          </div>
+                          <div className="game-resource-pill" title="Outland Coin">
+                            <img src="./ui/coin_4.png" alt="Outland Coin" className="pill-icon" />
+                            <span className="pill-value">{formatNum(displayProfile.coins?.outland)}</span>
+                          </div>
+                          <div className="game-resource-pill" title="Soul Coin">
+                            <img src="./ui/soulCoin.png" alt="Soul Coin" className="pill-icon" />
+                            <span className="pill-value">{formatNum(displayProfile.coins?.soulCoin)}</span>
+                          </div>
+                          <div className="game-resource-pill" title="Friendship Chip">
+                            <img src="./ui/friendshipChip.png" alt="Friendship Chip" className="pill-icon" />
+                            <span className="pill-value">{formatNum(displayProfile.coins?.friendshipChip)}</span>
+                          </div>
+                          <div className="game-resource-pill" title="Bottled Energy">
+                            <img src="./ui/bottledEnergy.png" alt="Bottled Energy" className="pill-icon" />
+                            <span className="pill-value">{formatNum(displayProfile.consumables?.bottledEnergy)}</span>
+                          </div>
+                          <div className="game-resource-pill" title="Spark of Power">
+                            <img src="./ui/sparkOfPower.png" alt="Spark of Power" className="pill-icon" />
+                            <span className="pill-value">{formatNum(displayProfile.consumables?.sparkOfPower)}</span>
+                          </div>
+                        </div>
+                      </div>
+
                       <div className="resource-two-column-row">
                         <div className="resource-category-block">
                           <div className="resource-group-label">ARTIFACTS</div>
