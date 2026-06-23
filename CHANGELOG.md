@@ -2,9 +2,14 @@
 
 Minden említésre méltó változtatás a projektben ebben a fájlban lesz rögzítve.
 
-## [0.5.19] - 2026-06-23
+## [0.5.20] - 2026-06-23
 
-### Megváltoztatva (Changed)
+### Javítva (Fixed)
+- **Üdvözlő felirat levágásának javítása:** A Dashboard `.dashboard-welcome-title` osztályának `padding-top` és `line-height` értékeinek megnövelésével orvosoltuk a "ÜDVÖZÖL" szó levágását, amit a maszkolás (`background-clip: text`) okozott.
+- **Vite build képútvonalak feloldása:** Az összes CSS (`Dashboard.css` és `index.css`) fájlban az eszköz-elérési útvonalakat szigorúan abszolútra (perrel kezdődőre, pl. `/ui/name.png`) cseréltük, ezzel kiküszöbölve az `npm run build` során fellépő "didn't resolve at build time" hibákat.
+- **Modális háttér görgetésének (Overscroll) megakadályozása:** A `HeroModal.jsx`-ben a modal megnyitásakor immár nem csak a `document.body`, hanem a `document.documentElement` görgetése is tiltásra kerül (`overflow: hidden`), így kiküszöbölve a háttér zavaró görgetődését és ugrálását.
+
+## [0.5.19] - 2026-06-23### Megváltoztatva (Changed)
 - **Függőleges görgetés engedélyezése kizárólag a Coins & Sources fülön:** Bevezettünk egy dinamikus `.resources-scroll-active` CSS osztályt, amely csak a **Coins & Sources** fül (`activeTab === 'resources'`) kiválasztásakor kerül rá a `.modal-scroll-container` tárolóra. Ezzel az osztály segítségével felülírtuk a Dashboard globális görgetés-tiltását (`overflow-y: auto`), így a megnövekedett mennyiségű kategória (köztük az alul lévő Titan Valley is) elérhetővé vált a görgetősáv segítségével. A többi fülön (Overview, Teams) a függőleges görgetés továbbra is szigorúan tiltott marad az elrendezés stabilitásának megőrzése érdekében.
 
 ## [0.5.18] - 2026-06-23
