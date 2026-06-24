@@ -2,6 +2,17 @@
 
 Minden említésre méltó változtatás a projektben ebben a fájlban lesz rögzítve.
 
+## [0.5.21] - 2026-06-24
+
+### Hozzáadva (Added)
+- **Új Consumables (Fogyóeszközök) fül a Dashboardon:** Létrehoztunk egy teljesen új, dedikált fület a Dashboardon, amely a játékos raktárában (inventory) lévő fogyóeszközöket jeleníti meg. A felület egy elegáns CSS rács (Grid) elrendezést használ, négyzet alakú kártyákkal és a játékhoz hű, sötét, lekerekített kapszulás sárga mennyiségjelzőkkel. A fül megkapta a `Coins & Sources` füllel megegyező egységes függőleges görgetősávot (`.resources-scroll-active`).
+- **Consumables Backend API:** Megírtunk egy egyedi Vite middleware plugint (`dictionarySaverPlugin` a `vite.config.js`-ben), amely a `/api/save-dictionary` végponton keresztül biztosítja a böngészőből érkező POST kérések azonnali fájlba írását a `consumablesDictionary.json` állományba, átlépve a kliens-oldali localStorage korlátait.
+- **Interaktív Fogyóeszköz-azonosító (UI):** A Dashboard "Consumables" fülén a hiányzó és a felismert tárgyakra egyaránt kattintva megjelenik egy új modális ablak ("Tárgy elnevezése"). Itt a felhasználó közvetlenül elnevezheti a `#ID` alapján azonosítatlan tárgyait. A mentés gomb a háttérben azonnal felülírja a helyi JSON adatbázist, az UI pedig tooltip formájában megjeleníti az új nevet.
+- **Bővített Consumables szótár:** A `consumablesDictionary.json` kibővült közel 20 darab új fogyóeszközzel (rúnák, tapasztalati italok, nyersanyagok), miután lehetővé tettük a felületből történő közvetlen azonosításukat.
+
+### Megváltoztatva (Changed)
+- **Helyi Képbetöltés (Fallback mentesítés):** Teljesen kivezettük a Hero Wars Wiki külső elérését a fogyóeszközök dinamikus betöltésénél. Mostantól a Dashboard fixen és kizárólag a lokális `/consumables/{id}.png` képekre támaszkodik. A szótárból kiolvasott egyedi nevek immár csak vizuális azonosításra szolgálnak, nem generálnak kifelé irányuló MD5 hálózati kéréseket.
+
 ## [0.5.20] - 2026-06-23
 
 ### Javítva (Fixed)

@@ -1,0 +1,96 @@
+{
+  "1": {
+    "name": "Small enchantment rune"
+  },
+  "2": {
+    "name": "Common enchantment rune"
+  },
+  "3": {
+    "name": "Rare enchantment rune"
+  },
+  "4": {
+    "name": "Great enchantment rune"
+  },
+  "9": {
+    "name": "Smaller EXP potion"
+  },
+  "10": {
+    "name": "EXP potion"
+  },
+  "11": {
+    "name": "Big EXP potion"
+  },
+  "12": {
+    "name": "Huge EXP potion"
+  },
+  "20": {
+    "name": "Titan Potion"
+  },
+  "24": {
+    "name": "Spark of Power"
+  },
+  "29": {
+    "name": "Artifact Essence"
+  },
+  "30": {
+    "name": "Uncommon Artifact Essence"
+  },
+  "31": {
+    "name": "Rare Artifact Essence"
+  },
+  "33": {
+    "name": "Flawless Artifact Essence"
+  },
+  "34": {
+    "name": "Artifact Scroll"
+  },
+  "35": {
+    "name": "Uncommon Artifact Scroll"
+  },
+  "36": {
+    "name": "Rare Artifact Scroll"
+  },
+  "37": {
+    "name": "Superior Artifact Scroll"
+  },
+  "38": {
+    "name": "Chaos Core",
+    "wikiFile": "Chaos_Core.png"
+  },
+  "42": {
+    "name": "Bottled Energy (Alt)",
+    "wikiFile": "Bottled_Energy.png"
+  },
+  "45": {
+    "name": "Artifact Chest Key",
+    "wikiFile": "Artifact_Chest_Key.png"
+  },
+  "53": {
+    "name": "Essence of the Elements",
+    "wikiFile": "Essence_of_the_Elements.png"
+  },
+  "55": {
+    "name": "Titan Artifact Sphere",
+    "wikiFile": "Titan_Artifact_Sphere.png"
+  },
+  "85": {
+    "name": "Pet Potion",
+    "wikiFile": "Pet_Potion.png"
+  },
+  "88": {
+    "name": "Bottled Energy",
+    "wikiFile": "Bottled_Energy.png"
+  },
+  "90": {
+    "name": "Pet Summoning Egg",
+    "wikiFile": "Pet_Summoning_Egg.png"
+  },
+  "163": {
+    "name": "Ancient Wisdom Crystal",
+    "wikiFile": "Ancient_Wisdom_Crystal.png"
+  },
+  "164": {
+    "name": "Eternal Seed",
+    "wikiFile": "Eternal_Seed.png"
+  }
+}

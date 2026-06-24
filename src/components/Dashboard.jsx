@@ -1,6 +1,8 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import md5 from 'md5';
 import { HeroContext } from '../context/HeroContext';
 import { generateNarrativeProfile } from '../utils/narrativeGenerator';
+import consumablesDictionary from '../data/consumablesDictionary.json';
 import './Dashboard.css';
 
 const PET_NAMES = {
@@ -22,6 +24,57 @@ const Dashboard = () => {
 
   const [activeTab, setActiveTab] = useState('overview');
   const [activeTeamCategory, setActiveTeamCategory] = useState('arena');
+  const [identifyingItem, setIdentifyingItem] = useState(null);
+  const [customConsumables, setCustomConsumables] = useState({});
+
+  useEffect(() => {
+    const stored = localStorage.getItem('customConsumablesMap');
+    if (stored) {
+      try {
+        setCustomConsumables(JSON.parse(stored));
+      } catch (e) {
+        console.error('Hiba a localStorage parse közben:', e);
+      }
+    }
+  }, []);
+
+  const handleSaveIdentification = async (e) => {
+    e.preventDefault();
+    if (!identifyingItem) return;
+    
+    const rawName = identifyingItem.name ? identifyingItem.name.trim() : '';
+
+    if (rawName === '') {
+      const newMap = { ...customConsumables };
+      delete newMap[identifyingItem.id];
+      setCustomConsumables(newMap);
+      localStorage.setItem('customConsumablesMap', JSON.stringify(newMap));
+      setIdentifyingItem(null);
+      return;
+    }
+    
+    const newMap = {
+      ...customConsumables,
+      [identifyingItem.id]: {
+        name: rawName
+      }
+    };
+    setCustomConsumables(newMap);
+    localStorage.setItem('customConsumablesMap', JSON.stringify(newMap));
+    
+    try {
+      await fetch('/api/save-dictionary', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id: identifyingItem.id, name: rawName })
+      });
+      console.log(`Saved ${identifyingItem.id} to file via API.`);
+    } catch (err) {
+      console.error('Failed to save to backend API:', err);
+    }
+    
+    setIdentifyingItem(null);
+  };
 
   // Segédfüggvény a hős részleteinek kiderítésére ID alapján
   const getHeroDetails = (heroId) => {
@@ -131,13 +184,14 @@ const Dashboard = () => {
             <div className={`modal-flag ${activeTab === 'overview' ? 'active' : ''}`} onClick={() => setActiveTab('overview')}>Overview</div>
             <div className={`modal-flag ${activeTab === 'resources' ? 'active' : ''}`} onClick={() => setActiveTab('resources')}>Coins & Sources</div>
             <div className={`modal-flag ${activeTab === 'teams' ? 'active' : ''}`} onClick={() => setActiveTab('teams')}>Teams</div>
+            <div className={`modal-flag ${activeTab === 'consumables' ? 'active' : ''}`} onClick={() => setActiveTab('consumables')}>Consumables</div>
           </div>
 
           <div className="modal-content gold-frame dashboard-content-frame">
             <div className="modal-title-banner">Dashboard</div>
             <div className="modal-body-landscape">
               <div className="modal-panel">
-                <div className={`modal-scroll-container ${activeTab === 'resources' ? 'resources-scroll-active' : ''}`}>
+                <div className={`modal-scroll-container ${activeTab === 'resources' || activeTab === 'consumables' ? 'resources-scroll-active' : ''}`}>
 
                   {activeTab === 'overview' && (
                     <>
@@ -568,12 +622,74 @@ const Dashboard = () => {
                     </div>
                   )}
 
+                  {activeTab === 'consumables' && (
+                    <div className="dashboard-consumables-tab">
+                      <div className="consumables-grid">
+                        {displayProfile.inventory && Object.entries(displayProfile.inventory).map(([id, amount]) => {
+                          const customName = customConsumables[id]?.name || consumablesDictionary[id]?.name || '';
+                          const imgSrc = `/consumables/${id}.png`;
+                          
+                          return (
+                          <div key={id} className="consumable-item-card" onClick={() => setIdentifyingItem({ id, name: customName })} style={{ cursor: 'pointer' }} title={customName ? `${customName} (#${id})` : `Ismeretlen tárgy (#${id})`}>
+                            <div className="consumable-item-placeholder">
+                              <img 
+                                src={imgSrc} 
+                                alt={`Item ${id}`} 
+                                className="consumable-item-image"
+                                onError={(e) => {
+                                  e.target.style.display = 'none';
+                                  e.target.nextElementSibling.style.display = 'block';
+                                }}
+                                onLoad={(e) => {
+                                  e.target.style.display = 'block';
+                                  e.target.nextElementSibling.style.display = 'none';
+                                }}
+                              />
+                              <span className="consumable-item-id" style={{ display: 'block' }}>#{id}</span>
+                            </div>
+                            <div className="consumable-item-amount-wrapper">
+                              <span className="consumable-item-amount">{formatNum(amount)}</span>
+                            </div>
+                          </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      {identifyingItem && (
+        <div className="hero-modal-overlay">
+          <div className="hero-modal-content" style={{ maxWidth: '500px', height: 'auto', minHeight: 'auto' }}>
+            <button className="hero-modal-close" onClick={() => setIdentifyingItem(null)}>
+              <span className="material-symbols-outlined">close</span>
+            </button>
+            <div className="hero-modal-header" style={{ padding: '20px 20px 0 20px', borderBottom: 'none' }}>
+              <h2 className="hero-modal-name">Tárgy elnevezése (#{identifyingItem.id})</h2>
+            </div>
+            <form onSubmit={handleSaveIdentification} style={{ padding: '20px' }}>
+              <p style={{ color: '#eaddc5', marginBottom: '15px', fontFamily: '"Roboto Condensed", sans-serif' }}>
+                Add meg a tárgy pontos nevét (pl. "Small enchantment rune"). Ez a név el lesz mentve az ID mellé a memóriába.
+              </p>
+              <input 
+                type="text" 
+                value={identifyingItem.name || ''} 
+                onChange={(e) => setIdentifyingItem({ ...identifyingItem, name: e.target.value })}
+                placeholder="Pl: Small enchantment rune"
+                style={{ width: '100%', padding: '12px', marginBottom: '20px', background: '#0a0a0a', border: '1px solid #d4af37', color: '#fff', fontSize: '16px', borderRadius: '4px' }}
+                autoFocus
+              />
+              <button type="submit" className="hero-modal-tab active" style={{ width: '100%', textAlign: 'center', display: 'block', padding: '10px' }}>Név Mentése</button>
+            </form>
+          </div>
+        </div>
+      )}
     </main>
   );
 };

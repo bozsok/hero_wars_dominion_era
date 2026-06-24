@@ -1,7 +1,7 @@
 {
   "name": "hero-wars",
   "private": true,
-  "version": "0.5.19",
+  "version": "0.5.21",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,6 +13,7 @@
     "axios": "^1.17.0",
     "cheerio": "^1.2.0",
     "google-translate-api-x": "^10.7.3",
+    "md5": "^2.3.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
   },

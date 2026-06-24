@@ -309,7 +309,8 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
                 eternalSeed: inventoryData?.consumable?.['164'] || 0,
                 ancientWisdomCrystal: inventoryData?.consumable?.['163'] || 0,
                 essenceOfTheElements: inventoryData?.consumable?.['53'] || 0
-              }
+              },
+              inventory: inventoryData?.consumable || {}
             };
           }
 

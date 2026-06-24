@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Inventory Equipment",
+    "imageUrl": "https://static.wikia.nocookie.net/hero-wars/images/9/98/Inventory_Equipment.jpg"
+  },
+  {
+    "name": "Inventory Recipes",
+    "imageUrl": "https://static.wikia.nocookie.net/hero-wars/images/5/5f/Inventory_Recipes.jpg"
+  },
+  {
+    "name": "Inventory Consumable",
+    "imageUrl": "https://static.wikia.nocookie.net/hero-wars/images/9/90/Inventory_Consumable.jpg"
+  },
+  {
+    "name": "Inventory Coins",
+    "imageUrl": "https://static.wikia.nocookie.net/hero-wars/images/9/9b/Inventory_Coins.jpg"
+  },
+  {
+    "name": "Inventory Fragments",
+    "imageUrl": "https://static.wikia.nocookie.net/hero-wars/images/d/d9/Inventory_Fragments.jpg"
+  },
+  {
+    "name": "Inventory Soul Stones",
+    "imageUrl": "https://static.wikia.nocookie.net/hero-wars/images/d/dc/Inventory_Soul_Stones.jpg"
+  }
+]
