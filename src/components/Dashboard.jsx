@@ -20,15 +20,15 @@ const PET_NAMES = {
 };
 
 const Dashboard = () => {
-  const { 
-    heroes, 
-    playerProfile, 
-    playerTeams, 
-    isViewMode, 
+  const {
+    heroes,
+    playerProfile,
+    playerTeams,
+    isViewMode,
     viewProfile,
     customConsumables,
     customCoins,
-    saveCustomItem 
+    saveCustomItem
   } = useContext(HeroContext);
   const displayProfile = (isViewMode && viewProfile) ? viewProfile : playerProfile;
 
@@ -39,32 +39,32 @@ const Dashboard = () => {
   const handleSaveIdentification = async (e) => {
     e.preventDefault();
     if (!identifyingItem) return;
-    
+
     const rawName = identifyingItem.name ? identifyingItem.name.trim() : '';
 
     // Mentés a Contexten keresztül (state + localStorage)
     saveCustomItem(identifyingItem.id, rawName, identifyingItem.type);
-    
+
     if (isViewMode) {
       setIdentifyingItem(null);
       return;
     }
-    
+
     try {
       await fetch('/api/save-dictionary', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ 
-          id: identifyingItem.id, 
+        body: JSON.stringify({
+          id: identifyingItem.id,
           name: rawName,
-          type: identifyingItem.type 
+          type: identifyingItem.type
         })
       });
       console.log(`Saved ${identifyingItem.id} to file via API.`);
     } catch (err) {
       console.error('Failed to save to backend API:', err);
     }
-    
+
     setIdentifyingItem(null);
   };
 
@@ -98,17 +98,17 @@ const Dashboard = () => {
     const customName = customCoins[id]?.name || coinsDictionary[id]?.name || name;
 
     return (
-      <div 
-        key={key} 
-        className="consumable-item-card" 
+      <div
+        key={key}
+        className="consumable-item-card"
         onClick={() => setIdentifyingItem({ id, name: customName, type: 'coin' })}
         style={{ cursor: 'pointer' }}
         title={`${customName} (#${id})`}
       >
         <div className="consumable-item-placeholder">
-          <img 
-            src={imgSrc} 
-            alt={customName} 
+          <img
+            src={imgSrc}
+            alt={customName}
             className="consumable-item-image"
             onError={(e) => {
               e.target.style.display = 'none';
@@ -141,7 +141,7 @@ const Dashboard = () => {
   const renderNarrativeHTML = () => {
     const activeTeamForNarrative = getActiveTeamForNarrative();
     const narrativeText = generateNarrativeProfile(heroes, activeTeamForNarrative, displayProfile);
-    
+
     return narrativeText.split('\n\n').map((paragraph, index) => {
       const parts = paragraph.split('**');
       return (
@@ -228,7 +228,7 @@ const Dashboard = () => {
 
                         {/* Bal oldali blokk: Profil és Alap Erőforrások (Egymás mellett) */}
                         <div className="header-profile-resources-group">
-                          
+
                           {/* Bal oldali oszlop: Csak a profil widget */}
                           <div className="profile-left-column">
                             {/* Avatár Widget */}
@@ -317,6 +317,15 @@ const Dashboard = () => {
                     <div className="dashboard-resources-tab">
                       <div className="coins-resources-grid">
                         {(() => {
+                          const mappedCoinKeys = [
+                            'arena', 'grandArena', 'tower', 'outland', 'soulCoin', 'friendshipChip', 
+                            'skinStoneInt', 'skinStoneStr', 'skinStoneAgi', 'summoningSphere', 'artifactCoin', 
+                            'titanSoulCoin', 'elementalTournamentCoin', 'titanSkinStone', 'valorEmblem', 
+                            'soulCrystal', 'goldenThread', 'bronzeTrophy', 'silverTrophy', 'goldTrophy', 
+                            'clashOfWorldsTrophy', 'elementalCatalyst', 'primalCatalyst', 'exclusiveSkinCoin', 
+                            'energyCrystal', 'valorCoin', 'sapphireMedallion'
+                          ];
+
                           const coinsList = [
                             { id: '1', name: 'Arena Coin', amount: displayProfile.coins?.arena || 0 },
                             { id: '2', name: 'Grand Arena Coin', amount: displayProfile.coins?.grandArena || 0 },
@@ -346,6 +355,20 @@ const Dashboard = () => {
                             { id: '2266001092', name: 'Valor Coin', amount: displayProfile.coins?.valorCoin || 0 },
                             { id: '2266001093', name: 'Sapphire Medallion', amount: displayProfile.coins?.sapphireMedallion || 0 }
                           ];
+
+                          if (displayProfile.coins) {
+                            for (const [key, amount] of Object.entries(displayProfile.coins)) {
+                              if (!mappedCoinKeys.includes(key) && amount > 0) {
+                                const customName = customCoins[key]?.name || coinsDictionary[key]?.name || `Ismeretlen érme (#${key})`;
+                                coinsList.push({
+                                  id: key,
+                                  name: customName,
+                                  amount: amount
+                                });
+                              }
+                            }
+                          }
+
                           coinsList.sort((a, b) => parseInt(a.id, 10) - parseInt(b.id, 10));
                           return coinsList.map(coin => renderResourceCard(coin.id, coin.name, coin.amount));
                         })()}
@@ -534,29 +557,29 @@ const Dashboard = () => {
                         {displayProfile.inventory && Object.entries(displayProfile.inventory).map(([id, amount]) => {
                           const customName = customConsumables[id]?.name || consumablesDictionary[id]?.name || '';
                           const imgSrc = `./consumables/${id}.png`;
-                          
+
                           return (
-                          <div key={id} className="consumable-item-card" onClick={() => setIdentifyingItem({ id, name: customName })} style={{ cursor: 'pointer' }} title={customName ? `${customName} (#${id})` : `Ismeretlen tárgy (#${id})`}>
-                            <div className="consumable-item-placeholder">
-                              <img 
-                                src={imgSrc} 
-                                alt={`Item ${id}`} 
-                                className="consumable-item-image"
-                                onError={(e) => {
-                                  e.target.style.display = 'none';
-                                  e.target.nextElementSibling.style.display = 'block';
-                                }}
-                                onLoad={(e) => {
-                                  e.target.style.display = 'block';
-                                  e.target.nextElementSibling.style.display = 'none';
-                                }}
-                              />
-                              <span className="consumable-item-id" style={{ display: 'block' }}>#{id}</span>
+                            <div key={id} className="consumable-item-card" onClick={() => setIdentifyingItem({ id, name: customName })} style={{ cursor: 'pointer' }} title={customName ? `${customName} (#${id})` : `Ismeretlen tárgy (#${id})`}>
+                              <div className="consumable-item-placeholder">
+                                <img
+                                  src={imgSrc}
+                                  alt={`Item ${id}`}
+                                  className="consumable-item-image"
+                                  onError={(e) => {
+                                    e.target.style.display = 'none';
+                                    e.target.nextElementSibling.style.display = 'block';
+                                  }}
+                                  onLoad={(e) => {
+                                    e.target.style.display = 'block';
+                                    e.target.nextElementSibling.style.display = 'none';
+                                  }}
+                                />
+                                <span className="consumable-item-id" style={{ display: 'block' }}>#{id}</span>
+                              </div>
+                              <div className="consumable-item-amount-wrapper">
+                                <span className="consumable-item-amount">{formatNum(amount)}</span>
+                              </div>
                             </div>
-                            <div className="consumable-item-amount-wrapper">
-                              <span className="consumable-item-amount">{formatNum(amount)}</span>
-                            </div>
-                          </div>
                           );
                         })}
                       </div>
@@ -583,9 +606,9 @@ const Dashboard = () => {
               <p style={{ color: '#eaddc5', marginBottom: '15px', fontFamily: '"Roboto Condensed", sans-serif' }}>
                 Add meg a tárgy pontos nevét (pl. "Small enchantment rune"). Ez a név el lesz mentve az ID mellé a memóriába.
               </p>
-              <input 
-                type="text" 
-                value={identifyingItem.name || ''} 
+              <input
+                type="text"
+                value={identifyingItem.name || ''}
                 onChange={(e) => setIdentifyingItem({ ...identifyingItem, name: e.target.value })}
                 placeholder="Pl: Small enchantment rune"
                 style={{ width: '100%', padding: '12px', marginBottom: '20px', background: '#0a0a0a', border: '1px solid #d4af37', color: '#fff', fontSize: '16px', borderRadius: '4px' }}

@@ -4,6 +4,8 @@ import './ImportModal.css';
 import { calculateHeroStats } from '../utils/statCalculator.js';
 import heroesCatalog from '../data/heroesCatalog.json';
 import skinMapping from '../data/skinMapping.json';
+import coinsDictionary from '../data/coinsDictionary.json';
+import consumablesDictionary from '../data/consumablesDictionary.json';
 
 const RANKS = [
   'Ismeretlen', // 0 (nem használt)
@@ -30,13 +32,15 @@ const RANKS = [
 const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
   const [error, setError] = useState(null);
   const [successMessage, setSuccessMessage] = useState('');
-  const { exportData } = useContext(HeroContext);
+  const [unidentifiedItems, setUnidentifiedItems] = useState(null);
+  const { exportData, customCoins, customConsumables } = useContext(HeroContext);
 
   if (!isOpen) return null;
 
 
   const handleFileUpload = (event) => {
     setError(null);
+    setUnidentifiedItems(null);
     const file = event.target.files[0];
     if (!file) return;
 
@@ -63,35 +67,35 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
                   const parsed = JSON.parse(text);
                   if (parsed.results) {
                     const heroResult = parsed.results.find(r => r.ident === 'heroGetAll');
-                    if (heroResult && heroResult.result && heroResult.result.response) {
+                    if (!heroData && heroResult && heroResult.result && heroResult.result.response) {
                       heroData = heroResult.result.response;
                     }
                     const roleAscensionResult = parsed.results.find(r => r.ident === 'roleAscension_getAll');
-                    if (roleAscensionResult && roleAscensionResult.result && roleAscensionResult.result.response) {
+                    if (!roleAscensionData && roleAscensionResult && roleAscensionResult.result && roleAscensionResult.result.response) {
                       roleAscensionData = roleAscensionResult.result.response;
                     }
                     const userResult = parsed.results.find(r => r.ident === 'userGetInfo');
-                    if (userResult && userResult.result && userResult.result.response) {
+                    if (!userData && userResult && userResult.result && userResult.result.response) {
                       userData = userResult.result.response;
                     }
                     const inventoryResult = parsed.results.find(r => r.ident === 'inventoryGet');
-                    if (inventoryResult && inventoryResult.result && inventoryResult.result.response) {
+                    if (!inventoryData && inventoryResult && inventoryResult.result && inventoryResult.result.response) {
                       inventoryData = inventoryResult.result.response;
                     }
                     const teamResult = parsed.results.find(r => r.ident === 'teamGetAll');
-                    if (teamResult && teamResult.result && teamResult.result.response) {
+                    if (!teamData && teamResult && teamResult.result && teamResult.result.response) {
                       teamData = teamResult.result.response;
                     }
                     const clanResult = parsed.results.find(r => r.ident === 'clanGetInfo');
-                    if (clanResult && clanResult.result && clanResult.result.response) {
+                    if (!clanData && clanResult && clanResult.result && clanResult.result.response) {
                       clanData = clanResult.result.response;
                     }
                     const arenaResult = parsed.results.find(r => r.ident === 'arenaGetAll');
-                    if (arenaResult && arenaResult.result && arenaResult.result.response) {
+                    if (!arenaData && arenaResult && arenaResult.result && arenaResult.result.response) {
                       arenaData = arenaResult.result.response;
                     }
                     const missionResult = parsed.results.find(r => r.ident === 'missionGetAll');
-                    if (missionResult && missionResult.result && missionResult.result.response) {
+                    if (!missionData && missionResult && missionResult.result && missionResult.result.response) {
                       missionData = missionResult.result.response;
                     }
                   }
@@ -257,6 +261,74 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
             const staminaRefill = userData.refillable?.find(r => r.id === 1);
             const currentStamina = staminaRefill ? staminaRefill.amount : 0;
 
+            const coinIdToKey = {
+              '1': 'arena',
+              '2': 'grandArena',
+              '3': 'tower',
+              '4': 'outland',
+              '5': 'soulCoin',
+              '6': 'friendshipChip',
+              '8': 'skinStoneInt',
+              '9': 'skinStoneStr',
+              '10': 'skinStoneAgi',
+              '13': 'summoningSphere',
+              '14': 'artifactCoin',
+              '15': 'titanSoulCoin',
+              '18': 'elementalTournamentCoin',
+              '24': 'titanSkinStone',
+              '30': 'valorEmblem',
+              '38': 'soulCrystal',
+              '45': 'goldenThread',
+              '101': 'bronzeTrophy',
+              '102': 'silverTrophy',
+              '103': 'goldTrophy',
+              '104': 'clashOfWorldsTrophy',
+              '1084': 'elementalCatalyst',
+              '1085': 'primalCatalyst',
+              '2192001095': 'exclusiveSkinCoin',
+              '2266001091': 'energyCrystal',
+              '2266001092': 'valorCoin',
+              '2266001093': 'sapphireMedallion'
+            };
+
+            const coinsObj = {
+              arena: inventoryData?.coin?.['1'] || 0,
+              grandArena: inventoryData?.coin?.['2'] || 0,
+              tower: inventoryData?.coin?.['3'] || 0,
+              outland: inventoryData?.coin?.['4'] || 0,
+              soulCoin: inventoryData?.coin?.['5'] || 0,
+              friendshipChip: inventoryData?.coin?.['6'] || 0,
+              skinStoneInt: inventoryData?.coin?.['8'] || 0,
+              skinStoneStr: inventoryData?.coin?.['9'] || 0,
+              skinStoneAgi: inventoryData?.coin?.['10'] || 0,
+              summoningSphere: inventoryData?.coin?.['13'] || 0,
+              artifactCoin: inventoryData?.coin?.['14'] || 0,
+              titanSoulCoin: inventoryData?.coin?.['15'] || 0,
+              elementalTournamentCoin: inventoryData?.coin?.['18'] || 0,
+              titanSkinStone: inventoryData?.coin?.['24'] || 0,
+              valorEmblem: inventoryData?.coin?.['30'] || 0,
+              soulCrystal: inventoryData?.coin?.['38'] || 0,
+              goldenThread: inventoryData?.coin?.['45'] || 0,
+              bronzeTrophy: inventoryData?.coin?.['101'] || 0,
+              silverTrophy: inventoryData?.coin?.['102'] || 0,
+              goldTrophy: inventoryData?.coin?.['103'] || 0,
+              clashOfWorldsTrophy: inventoryData?.coin?.['104'] || 0,
+              elementalCatalyst: inventoryData?.coin?.['1084'] || 0,
+              primalCatalyst: inventoryData?.coin?.['1085'] || 0,
+              exclusiveSkinCoin: inventoryData?.coin?.['2192001095'] || 0,
+              energyCrystal: inventoryData?.coin?.['2266001091'] || 0,
+              valorCoin: inventoryData?.coin?.['2266001092'] || 0,
+              sapphireMedallion: inventoryData?.coin?.['2266001093'] || 0
+            };
+
+            if (inventoryData?.coin) {
+              for (const [coinId, amount] of Object.entries(inventoryData.coin)) {
+                if (!coinIdToKey[coinId] && amount > 0) {
+                  coinsObj[coinId] = amount;
+                }
+              }
+            }
+
             profile = {
               name: userData.name || 'Ismeretlen',
               level: parseInt(userData.level, 10) || 1,
@@ -269,40 +341,46 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
               avatarId: userData.avatarId || null,
               arenaPlace: arenaData ? parseInt(arenaData.arenaPlace, 10) || null : null,
               grandPlace: arenaData ? parseInt(arenaData.grandPlace, 10) || null : null,
-              campaignLevel: (missionData && Array.isArray(missionData)) 
-                ? Math.max(...missionData.map(m => parseInt(m.id, 10) || 0), 0) 
+              campaignLevel: (missionData && Array.isArray(missionData))
+                ? Math.max(...missionData.map(m => parseInt(m.id, 10) || 0), 0)
                 : null,
-              coins: {
-                arena: inventoryData?.coin?.['1'] || 0,
-                grandArena: inventoryData?.coin?.['2'] || 0,
-                tower: inventoryData?.coin?.['3'] || 0,
-                outland: inventoryData?.coin?.['4'] || 0,
-                soulCoin: inventoryData?.coin?.['5'] || 0,
-                friendshipChip: inventoryData?.coin?.['6'] || 0,
-                skinStoneInt: inventoryData?.coin?.['8'] || 0,
-                skinStoneStr: inventoryData?.coin?.['9'] || 0,
-                skinStoneAgi: inventoryData?.coin?.['10'] || 0,
-                summoningSphere: inventoryData?.coin?.['13'] || 0,
-                artifactCoin: inventoryData?.coin?.['14'] || 0,
-                titanSoulCoin: inventoryData?.coin?.['15'] || 0,
-                elementalTournamentCoin: inventoryData?.coin?.['18'] || 0,
-                titanSkinStone: inventoryData?.coin?.['24'] || 0,
-                valorEmblem: inventoryData?.coin?.['30'] || 0,
-                soulCrystal: inventoryData?.coin?.['38'] || 0,
-                goldenThread: inventoryData?.coin?.['45'] || 0,
-                bronzeTrophy: inventoryData?.coin?.['101'] || 0,
-                silverTrophy: inventoryData?.coin?.['102'] || 0,
-                goldTrophy: inventoryData?.coin?.['103'] || 0,
-                clashOfWorldsTrophy: inventoryData?.coin?.['104'] || 0,
-                elementalCatalyst: inventoryData?.coin?.['1084'] || 0,
-                primalCatalyst: inventoryData?.coin?.['1085'] || 0,
-                exclusiveSkinCoin: inventoryData?.coin?.['2192001095'] || 0,
-                energyCrystal: inventoryData?.coin?.['2266001091'] || 0,
-                valorCoin: inventoryData?.coin?.['2266001092'] || 0,
-                sapphireMedallion: inventoryData?.coin?.['2266001093'] || 0
-              },
+              coins: coinsObj,
               inventory: inventoryData?.consumable || {}
             };
+
+            const newUnidentifiedCoins = [];
+            for (const [coinId, amount] of Object.entries(coinsObj)) {
+              if (amount > 0) {
+                const isKnownKey = Object.values(coinIdToKey).includes(coinId) || coinIdToKey[coinId] !== undefined;
+                if (!isKnownKey) {
+                  const hasName = customCoins?.[coinId]?.name || coinsDictionary[coinId]?.name;
+                  if (!hasName) {
+                    newUnidentifiedCoins.push({ id: coinId, amount, type: 'coin' });
+                  }
+                }
+              }
+            }
+
+            const newUnidentifiedConsumables = [];
+            if (inventoryData?.consumable) {
+              for (const [itemId, amount] of Object.entries(inventoryData.consumable)) {
+                if (amount > 0) {
+                  const hasName = customConsumables?.[itemId]?.name || consumablesDictionary[itemId]?.name;
+                  if (!hasName) {
+                    newUnidentifiedConsumables.push({ id: itemId, amount, type: 'consumable' });
+                  }
+                }
+              }
+            }
+
+            if (newUnidentifiedCoins.length > 0 || newUnidentifiedConsumables.length > 0) {
+              setUnidentifiedItems({
+                coins: newUnidentifiedCoins,
+                consumables: newUnidentifiedConsumables
+              });
+            } else {
+              setUnidentifiedItems(null);
+            }
           }
 
           // Játékos csapatok kigyűjtése
@@ -350,6 +428,27 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
                 <span className="material-symbols-outlined sync-success-icon">check_circle</span>
                 {successMessage}
               </div>
+
+              {unidentifiedItems && (
+                <div className="unidentified-warning-box" style={{ marginTop: '15px', padding: '15px', background: 'rgba(212, 175, 55, 0.1)', border: '1px solid #d4af37', borderRadius: '4px', textAlign: 'left' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', color: '#d4af37', fontWeight: 'bold', marginBottom: '10px', fontFamily: '"Roboto Condensed", sans-serif' }}>
+                    <span className="material-symbols-outlined" style={{ marginRight: '8px' }}>warning</span>
+                    Új, még azonosítatlan elemeket találtunk a mentésben!
+                  </div>
+                  <p style={{ fontSize: '13px', color: '#eaddc5', margin: '0 0 10px 0', fontFamily: '"Noto Sans", sans-serif' }}>
+                    Az alábbi azonosítók nem szerepelnek a beépített szótárakban. Megjelentek a Coins és Consumables füleken; kattints rájuk a Dashboardon az elnevezésükhöz!
+                  </p>
+                  <ul style={{ fontSize: '13px', color: '#fff', margin: '0', paddingLeft: '20px', fontFamily: '"Noto Sans", sans-serif' }}>
+                    {unidentifiedItems.coins.map(c => (
+                      <li key={c.id} style={{ marginBottom: '4px' }}>Új érme (Coin) azonosító: <strong>#{c.id}</strong> ({c.amount.toLocaleString('hu-HU')} db)</li>
+                    ))}
+                    {unidentifiedItems.consumables.map(item => (
+                      <li key={item.id} style={{ marginBottom: '4px' }}>Új fogyóeszköz azonosító: <strong>#{item.id}</strong> ({item.amount.toLocaleString('hu-HU')} db)</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
               <p className="sync-success-prompt">Szeretnéd kimenteni az új állapotot egy JSON fájlba, hogy megoszd másokkal?</p>
               <div className="sync-success-actions">
                 <button
