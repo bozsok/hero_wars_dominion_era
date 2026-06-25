@@ -11,6 +11,7 @@ Minden említésre méltó változtatás a projektben ebben a fájlban lesz rög
 - **Coins és Consumables fülek margóinak egységesítése**: Bitre pontosan megegyezővé tettük a két fül stílusait a `Dashboard.css` fájlban. A `.dashboard-resources-tab` osztályról eltávolítottuk a `display: flex` és a `gap: 2rem` tulajdonságokat (így a Consumables-hez hasonlóan sima block elemként viselkedik `width: 100%` mellett), valamint a `.coins-resources-grid` paddingjeit is szinkronizáltuk a `.consumables-grid`-ével (`padding-bottom: 2rem;`), teljesen megszüntetve a felső 0.5rem eltolódást.
 
 ### Javítva (Fixed)
+- **Consumables képútvonalak javítása**: A Consumables fülön a képek elérési útját abszolútról relatívra (`./consumables/...`) változtattuk, hogy a projekt alkönyvtárból történő kiszolgálása esetén is helyesen töltődjenek be a képek az éles szerveren.
 - **Tárgyszótár pontosítása (88-as ID)**: A `consumablesDictionary.json` állományban a 88-as ID-hez társított téves „Bottled Energy” elnevezést a valós **„Lesser Hero Soul Stone Chest”**-re javítottuk a felhasználó visszajelzése alapján.
 - **DataSyncModal beolvasási logika korrekciója**: A `DataSyncModal.jsx` fájlban javítottuk a `bottledEnergy` beolvasási logikáját, teljesen eltávolítva a korábbi hibás 88-as és 42-es ID-kat (mivel a 88 a Lesser Hero Soul Stone Chest, a 42 pedig a Superior Artifact Metal).
 

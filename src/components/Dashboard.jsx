@@ -572,7 +572,7 @@ const Dashboard = () => {
                       <div className="consumables-grid">
                         {displayProfile.inventory && Object.entries(displayProfile.inventory).map(([id, amount]) => {
                           const customName = customConsumables[id]?.name || consumablesDictionary[id]?.name || '';
-                          const imgSrc = `/consumables/${id}.png`;
+                          const imgSrc = `./consumables/${id}.png`;
                           
                           return (
                           <div key={id} className="consumable-item-card" onClick={() => setIdentifyingItem({ id, name: customName })} style={{ cursor: 'pointer' }} title={customName ? `${customName} (#${id})` : `Ismeretlen tárgy (#${id})`}>
