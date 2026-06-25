@@ -4,6 +4,10 @@ Minden említésre méltó változtatás a projektben ebben a fájlban lesz rög
 
 ## [0.5.22] - 2026-06-25
 
+### Hozzáadva (Added)
+- **Átnevezett tárgyak és érmék exportálása/importálása**: Kibővítettük a JSON export és import logikáját a `HeroContext.jsx` fájlban, így a felhasználó által egyedileg elnevezett érmék (`customCoins`) és fogyóeszközök (`customConsumables`) is mentésre kerülnek a kiexportált JSON fájlba. Importáláskor vagy Megtekintő módban (Viewer mode) ezek az elnevezések is automatikusan visszatöltődnek a felületre és a localStorage-ba.
+- **Kibővített szöveges narratív profilösszegző (.txt export)**: A `.txt` exportfunkciót jelentősen továbbfejlesztettük a `HeroContext.jsx` fájlban. Az exportált fájl immár tartalmazza a játékos profiljának főbb adatait (név, szint, VIP-szint, arany, smaragd, energia, helyezések és liga), az aktív csapatok felállítását (Arena, Grand Arena, Campaign, Clan Defence) a hősök szintjével, erejével és a kisállatok (Pet) neveivel, valamint a 0-nál nagyobb egyenlegű érmék (Coins) és fogyóeszközök (Consumables) tételes listáját a megfelelő nevekkel.
+
 ### Megváltoztatva (Changed)
 - **Fülek sorrendjének átrendezése**: A Dashboard oldalsó füleinek sorrendjét megváltoztattuk (Overview -> Consumables -> Coins -> Teams), így a Consumables fül közvetlenül az Overview alatt és a Coins fül felett kapott helyet.
 - **Coins fül átnevezése és letisztítása**: A korábbi „Coins & Source” fül nevét átneveztük **Coins**-ra. Eltávolítottuk az összes kategória-csoportosítást és a hozzájuk tartozó `resource-group-label` elemeket a felületről a letisztultabb megjelenés érdekében.

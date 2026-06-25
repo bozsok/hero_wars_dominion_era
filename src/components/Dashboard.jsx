@@ -20,73 +20,34 @@ const PET_NAMES = {
 };
 
 const Dashboard = () => {
-  const { heroes, playerProfile, playerTeams, isViewMode, viewProfile } = useContext(HeroContext);
+  const { 
+    heroes, 
+    playerProfile, 
+    playerTeams, 
+    isViewMode, 
+    viewProfile,
+    customConsumables,
+    customCoins,
+    saveCustomItem 
+  } = useContext(HeroContext);
   const displayProfile = (isViewMode && viewProfile) ? viewProfile : playerProfile;
 
   const [activeTab, setActiveTab] = useState('overview');
   const [activeTeamCategory, setActiveTeamCategory] = useState('arena');
   const [identifyingItem, setIdentifyingItem] = useState(null);
-  const [customConsumables, setCustomConsumables] = useState({});
-  const [customCoins, setCustomCoins] = useState({});
 
-  useEffect(() => {
-    const stored = localStorage.getItem('customConsumablesMap');
-    if (stored) {
-      try {
-        setCustomConsumables(JSON.parse(stored));
-      } catch (e) {
-        console.error('Hiba a localStorage parse közben:', e);
-      }
-    }
-    const storedCoins = localStorage.getItem('customCoinsMap');
-    if (storedCoins) {
-      try {
-        setCustomCoins(JSON.parse(storedCoins));
-      } catch (e) {
-        console.error('Hiba a localStorage parse közben (coins):', e);
-      }
-    }
-  }, []);  const handleSaveIdentification = async (e) => {
+  const handleSaveIdentification = async (e) => {
     e.preventDefault();
     if (!identifyingItem) return;
     
     const rawName = identifyingItem.name ? identifyingItem.name.trim() : '';
-    const isCoin = identifyingItem.type === 'coin';
 
-    if (rawName === '') {
-      if (isCoin) {
-        const newMap = { ...customCoins };
-        delete newMap[identifyingItem.id];
-        setCustomCoins(newMap);
-        localStorage.setItem('customCoinsMap', JSON.stringify(newMap));
-      } else {
-        const newMap = { ...customConsumables };
-        delete newMap[identifyingItem.id];
-        setCustomConsumables(newMap);
-        localStorage.setItem('customConsumablesMap', JSON.stringify(newMap));
-      }
+    // Mentés a Contexten keresztül (state + localStorage)
+    saveCustomItem(identifyingItem.id, rawName, identifyingItem.type);
+    
+    if (isViewMode) {
       setIdentifyingItem(null);
       return;
-    }
-    
-    if (isCoin) {
-      const newMap = {
-        ...customCoins,
-        [identifyingItem.id]: {
-          name: rawName
-        }
-      };
-      setCustomCoins(newMap);
-      localStorage.setItem('customCoinsMap', JSON.stringify(newMap));
-    } else {
-      const newMap = {
-        ...customConsumables,
-        [identifyingItem.id]: {
-          name: rawName
-        }
-      };
-      setCustomConsumables(newMap);
-      localStorage.setItem('customConsumablesMap', JSON.stringify(newMap));
     }
     
     try {

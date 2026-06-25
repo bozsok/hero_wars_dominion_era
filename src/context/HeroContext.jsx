@@ -1,6 +1,8 @@
 import React, { createContext, useState, useEffect } from 'react';
 import heroesCatalog from '../data/heroesCatalog.json';
 import gameDictionary from '../data/gameDictionary.json';
+import coinsDictionary from '../data/coinsDictionary.json';
+import consumablesDictionary from '../data/consumablesDictionary.json';
 
 const defaultHeroState = {
   general: { level: 0, stars: 1, soulStones: 0, power: 0 },
@@ -21,9 +23,188 @@ const GLYPH_XP_PER_LEVEL = [
   1970, 1970,1970,1970,1970, 3470,3470,3470,3470,3470
 ];
 
-const generateNarrativeSummary = (myHeroes, sortMode) => {
-  let output = "DOMINION HŐSÖK FEJLETTSÉGI ÖSSZEGZŐ\n";
+const PET_NAMES = {
+  '6001': 'Oliver',
+  '6002': 'Albus',
+  '6003': 'Mara',
+  '6004': 'Patron',
+  '6005': 'Biscuit',
+  '6006': 'Merlin',
+  '6007': 'Axel',
+  '6008': 'Cain',
+  '6009': 'Khorus',
+  '6010': 'Fenris'
+};
+
+const generateNarrativeSummary = (myHeroes, sortMode, playerProfile, playerTeams, customCoins, customConsumables) => {
+  let output = "DOMINION NARRATÍV PROFIL ÖSSZEGZŐ\n";
   output += `Generálva: ${new Date().toLocaleString('hu-HU')}\n`;
+  output += "================================================================================\n\n";
+
+  if (playerProfile) {
+    output += "JÁTÉKOS PROFIL\n";
+    output += "================================================================================\n";
+    output += `Játékos név: ${playerProfile.name || 'Ismeretlen'}\n`;
+    output += `Szint: ${playerProfile.level || 1}\n`;
+    output += `VIP szint: ${playerProfile.vipLevel || 0}\n`;
+    output += `Arany: ${(playerProfile.gold || 0).toLocaleString('hu-HU')} Gold\n`;
+    output += `Smaragd: ${(playerProfile.emeralds || 0).toLocaleString('hu-HU')} Emerald\n`;
+    output += `Energia: ${playerProfile.stamina || 0}\n`;
+    if (playerProfile.league) {
+      const leagues = { '1': 'Gold League', '2': 'Silver League', '3': 'Bronze League' };
+      output += `Liga: ${leagues[playerProfile.league] || playerProfile.league}\n`;
+    }
+    if (playerProfile.arenaPlace) output += `Arena helyezés: ${playerProfile.arenaPlace}\n`;
+    if (playerProfile.grandPlace) output += `Grand Arena helyezés: ${playerProfile.grandPlace}\n`;
+    if (playerProfile.campaignLevel) output += `Hadjárat (Campaign) szint: ${playerProfile.campaignLevel}\n`;
+    output += "================================================================================\n\n";
+  }
+
+  const getHeroNameAndLevel = (heroId) => {
+    const idStr = heroId.toString();
+    const catalogHero = heroesCatalog.find(h => h.id === idStr || h.id == heroId);
+    const name = catalogHero?.name || `Hős #${heroId}`;
+    const level = myHeroes[idStr]?.general?.level || 0;
+    const power = myHeroes[idStr]?.general?.power || 0;
+    if (level > 0) {
+      return `${name} (${level}. szint, ${power.toLocaleString('hu-HU')} Power)`;
+    }
+    return `${name} (Nincs aktiválva / 0. szint)`;
+  };
+
+  const renderTeamMember = (memberId) => {
+    if (parseInt(memberId, 10) >= 6000) {
+      const petName = PET_NAMES[memberId] || `Pet #${memberId}`;
+      return `Kisállat (Pet): ${petName}`;
+    }
+    return getHeroNameAndLevel(memberId);
+  };
+
+  if (playerTeams) {
+    output += "AKTÍV CSAPATOK (TEAMS)\n";
+    output += "================================================================================\n";
+    
+    // Arena
+    if (playerTeams.arena && playerTeams.arena.length > 0) {
+      output += "* Arena Team:\n";
+      playerTeams.arena.forEach(memberId => {
+        output += `  - ${renderTeamMember(memberId)}\n`;
+      });
+      output += "\n";
+    }
+
+    // Grand Arena
+    if (playerTeams.grand && playerTeams.grand.length > 0) {
+      output += "* Grand Arena Teams:\n";
+      playerTeams.grand.forEach((gTeam, tIdx) => {
+        if (gTeam && gTeam.length > 0) {
+          output += `  - ${tIdx + 1}. csapat:\n`;
+          gTeam.forEach(memberId => {
+            output += `    - ${renderTeamMember(memberId)}\n`;
+          });
+        }
+      });
+      output += "\n";
+    }
+
+    // Campaign
+    if (playerTeams.mission && playerTeams.mission.length > 0) {
+      output += "* Campaign Team:\n";
+      playerTeams.mission.forEach(memberId => {
+        output += `  - ${renderTeamMember(memberId)}\n`;
+      });
+      output += "\n";
+    }
+
+    // Clan Defence
+    if (playerTeams.clanDefence && playerTeams.clanDefence.length > 0) {
+      output += "* Clan Defence Team:\n";
+      playerTeams.clanDefence.forEach(memberId => {
+        output += `  - ${renderTeamMember(memberId)}\n`;
+      });
+      output += "\n";
+    }
+    
+    output += "================================================================================\n\n";
+  }
+
+  if (playerProfile && playerProfile.coins) {
+    output += "ÉRMEK ÉS ERŐFORRÁSOK (COINS)\n";
+    output += "================================================================================\n";
+    
+    const coinsList = [
+      { id: '1', name: 'Arena Coin', key: 'arena' },
+      { id: '2', name: 'Grand Arena Coin', key: 'grandArena' },
+      { id: '3', name: 'Tower Coin', key: 'tower' },
+      { id: '4', name: 'Outland Coin', key: 'outland' },
+      { id: '5', name: 'Soul Coin', key: 'soulCoin' },
+      { id: '6', name: 'Friendship Chip', key: 'friendshipChip' },
+      { id: '8', name: 'Intelligence Skin Stone', key: 'skinStoneInt' },
+      { id: '9', name: 'Strength Skin Stone', key: 'skinStoneStr' },
+      { id: '10', name: 'Agility Skin Stone', key: 'skinStoneAgi' },
+      { id: '13', name: 'Summoning Sphere', key: 'summoningSphere' },
+      { id: '14', name: 'Artifact Coin', key: 'artifactCoin' },
+      { id: '15', name: 'Titan Soul Coin', key: 'titanSoulCoin' },
+      { id: '18', name: 'Elemental Tournament Coin', key: 'elementalTournamentCoin' },
+      { id: '24', name: 'Titan Skin Stone', key: 'titanSkinStone' },
+      { id: '30', name: 'Valor Emblem', key: 'valorEmblem' },
+      { id: '38', name: 'Soul Crystal', key: 'soulCrystal' },
+      { id: '45', name: 'Golden Thread', key: 'goldenThread' },
+      { id: '101', name: 'Bronze Trophy', key: 'bronzeTrophy' },
+      { id: '102', name: 'Silver Trophy', key: 'silverTrophy' },
+      { id: '103', name: 'Gold Trophy', key: 'goldTrophy' },
+      { id: '104', name: 'Clash of Worlds Trophy', key: 'clashOfWorldsTrophy' },
+      { id: '1084', name: 'Elemental Catalyst', key: 'elementalCatalyst' },
+      { id: '1085', name: 'Primal Catalyst', key: 'primalCatalyst' },
+      { id: '2192001095', name: 'Exclusive Skin Coin', key: 'exclusiveSkinCoin' },
+      { id: '2266001091', name: 'Energy Crystal', key: 'energyCrystal' },
+      { id: '2266001092', name: 'Valor Coin', key: 'valorCoin' },
+      { id: '2266001093', name: 'Sapphire Medallion', key: 'sapphireMedallion' }
+    ];
+
+    coinsList.sort((a, b) => parseInt(a.id, 10) - parseInt(b.id, 10));
+
+    let hasCoins = false;
+    coinsList.forEach(coin => {
+      const amount = playerProfile.coins[coin.key] || 0;
+      if (amount > 0) {
+        const customName = customCoins?.[coin.id]?.name || coinsDictionary[coin.id]?.name || coin.name;
+        output += `- ${customName} (#${coin.id}): ${amount.toLocaleString('hu-HU')} db\n`;
+        hasCoins = true;
+      }
+    });
+
+    if (!hasCoins) {
+      output += "Nincsenek aktív érmék a mentésben.\n";
+    }
+    
+    output += "================================================================================\n\n";
+  }
+
+  if (playerProfile && playerProfile.inventory) {
+    output += "FOGYÓESZKÖZÖK (CONSUMABLES)\n";
+    output += "================================================================================\n";
+    
+    const itemIds = Object.keys(playerProfile.inventory).sort((a, b) => parseInt(a, 10) - parseInt(b, 10));
+    let hasItems = false;
+    
+    itemIds.forEach(id => {
+      const amount = playerProfile.inventory[id] || 0;
+      if (amount > 0) {
+        const customName = customConsumables?.[id]?.name || consumablesDictionary[id]?.name || `Tárgy #${id}`;
+        output += `- ${customName} (#${id}): ${amount.toLocaleString('hu-HU')} db\n`;
+        hasItems = true;
+      }
+    });
+
+    if (!hasItems) {
+      output += "Nincsenek aktív fogyóeszközök a mentésben.\n";
+    }
+    
+    output += "================================================================================\n\n";
+  }
+
+  output += "RÉSZLETES HŐS FEJLETTSÉG\n";
   output += "================================================================================\n\n";
 
   const ownedHeroIds = Object.keys(myHeroes).filter(id => {
@@ -206,6 +387,46 @@ export const HeroProvider = ({ children }) => {
   const [sortMode, setSortMode] = useState('default');
   const [playerProfile, setPlayerProfile] = useState(null);
   const [playerTeams, setPlayerTeams] = useState(null);
+  const [customConsumables, setCustomConsumables] = useState({});
+  const [customCoins, setCustomCoins] = useState({});
+  const [viewCustomConsumables, setViewCustomConsumables] = useState(null);
+  const [viewCustomCoins, setViewCustomCoins] = useState(null);
+
+  // Custom érmék és fogyóeszközök betöltése indításkor
+  useEffect(() => {
+    const stored = localStorage.getItem('customConsumablesMap');
+    if (stored) {
+      try { setCustomConsumables(JSON.parse(stored)); } catch(e) {}
+    }
+    const storedCoins = localStorage.getItem('customCoinsMap');
+    if (storedCoins) {
+      try { setCustomCoins(JSON.parse(storedCoins)); } catch(e) {}
+    }
+  }, []);
+
+  const saveCustomItem = (id, name, type) => {
+    if (isViewMode) return;
+    const isCoin = type === 'coin';
+    if (isCoin) {
+      const newMap = { ...customCoins };
+      if (name === '') {
+        delete newMap[id];
+      } else {
+        newMap[id] = { name };
+      }
+      setCustomCoins(newMap);
+      localStorage.setItem('customCoinsMap', JSON.stringify(newMap));
+    } else {
+      const newMap = { ...customConsumables };
+      if (name === '') {
+        delete newMap[id];
+      } else {
+        newMap[id] = { name };
+      }
+      setCustomConsumables(newMap);
+      localStorage.setItem('customConsumablesMap', JSON.stringify(newMap));
+    }
+  };
 
   // Profil és csapatok inicializálása
   useEffect(() => {
@@ -350,6 +571,14 @@ export const HeroProvider = ({ children }) => {
       
       if (data.profile) setPlayerProfile(data.profile);
       if (data.teams) setPlayerTeams(data.teams);
+      if (data.customConsumables) {
+        setCustomConsumables(data.customConsumables);
+        localStorage.setItem('customConsumablesMap', JSON.stringify(data.customConsumables));
+      }
+      if (data.customCoins) {
+        setCustomCoins(data.customCoins);
+        localStorage.setItem('customCoinsMap', JSON.stringify(data.customCoins));
+      }
     } else {
       // Régi formátum
       const newHeroesObj = data;
@@ -436,7 +665,9 @@ export const HeroProvider = ({ children }) => {
       formatVersion: 2,
       profile: playerProfile,
       teams: playerTeams,
-      heroes: sortedHeroesObj
+      heroes: sortedHeroesObj,
+      customConsumables,
+      customCoins
     };
     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObject, null, 2));
     const downloadAnchorNode = document.createElement('a');
@@ -448,7 +679,7 @@ export const HeroProvider = ({ children }) => {
 
     // 2. Narratív TXT export letöltése
     try {
-      const textSummary = generateNarrativeSummary(myHeroes, sortMode);
+      const textSummary = generateNarrativeSummary(myHeroes, sortMode, playerProfile, playerTeams, customCoins, customConsumables);
       const textDataStr = "data:text/plain;charset=utf-8," + encodeURIComponent(textSummary);
       const textAnchorNode = document.createElement('a');
       textAnchorNode.setAttribute("href", textDataStr);
@@ -471,6 +702,8 @@ export const HeroProvider = ({ children }) => {
         viewData = parsed.heroes || {};
         setViewProfile(parsed.profile || null);
         setViewTeams(parsed.teams || null);
+        setViewCustomConsumables(parsed.customConsumables || {});
+        setViewCustomCoins(parsed.customCoins || {});
       } else if (Array.isArray(parsed)) {
         parsed.forEach(oldHero => {
           viewData[oldHero.id] = {
@@ -501,6 +734,8 @@ export const HeroProvider = ({ children }) => {
     setViewHeroes(null);
     setViewProfile(null);
     setViewTeams(null);
+    setViewCustomConsumables(null);
+    setViewCustomCoins(null);
   };
 
   // Aktuális felhasználói adatok (saját vagy nézeti)
@@ -528,7 +763,10 @@ export const HeroProvider = ({ children }) => {
       setSortMode,
       playerProfile,
       viewProfile,
-      playerTeams: isViewMode ? viewTeams : playerTeams
+      playerTeams: isViewMode ? viewTeams : playerTeams,
+      customConsumables: isViewMode ? (viewCustomConsumables || {}) : customConsumables,
+      customCoins: isViewMode ? (viewCustomCoins || {}) : customCoins,
+      saveCustomItem
     }}>
       {children}
     </HeroContext.Provider>

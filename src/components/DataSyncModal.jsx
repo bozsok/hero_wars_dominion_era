@@ -301,19 +301,6 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
                 valorCoin: inventoryData?.coin?.['2266001092'] || 0,
                 sapphireMedallion: inventoryData?.coin?.['2266001093'] || 0
               },
-              consumables: {
-                bottledEnergy: 0, // A Bottled Energy pontos ID-je jelenleg ismeretlen (korábban tévesen 88 és 42 volt megadva)
-                artifactChestKey: inventoryData?.consumable?.['45'] || 0,
-                titanArtifactSphere: inventoryData?.consumable?.['55'] || 0,
-                petSummoningEgg: inventoryData?.consumable?.['90'] || 0,
-                chaosCore: inventoryData?.consumable?.['38'] || 0,
-                petPotion: inventoryData?.consumable?.['85'] || 0,
-                titanPotion: inventoryData?.consumable?.['20'] || 0,
-                sparkOfPower: inventoryData?.consumable?.['24'] || 0,
-                eternalSeed: inventoryData?.consumable?.['164'] || 0,
-                ancientWisdomCrystal: inventoryData?.consumable?.['163'] || 0,
-                essenceOfTheElements: inventoryData?.consumable?.['53'] || 0
-              },
               inventory: inventoryData?.consumable || {}
             };
           }
