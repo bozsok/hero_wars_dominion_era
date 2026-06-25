@@ -96,8 +96,15 @@
   width: 100%;
 }
 
-.dashboard-resources-tab {
-  padding-left: 20px;
+
+
+.coins-resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 16px;
+  justify-content: center;
+  align-items: start;
+  padding-bottom: 2rem;
 }
 
 /* Bal oldali profil és erőforrás csoport */
@@ -388,10 +395,7 @@
 }
 
 .dashboard-resources-tab {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding-left: 20px;
+  width: 100%;
 }
 
 .resource-two-column-row {
@@ -1048,8 +1052,8 @@
 
 /* --- Consumables Tab --- */
 .dashboard-consumables-tab {
-  padding: 1rem 2rem;
   width: 100%;
+  /* No extra padding, matches Overview and Teams */
 }
 
 .consumables-grid {

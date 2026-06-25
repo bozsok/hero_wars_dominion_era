@@ -15,7 +15,8 @@ function dictionarySaverPlugin() {
             try {
               const data = JSON.parse(body);
               if (data.id && data.name !== undefined) {
-                const dictPath = path.resolve(process.cwd(), 'src/data/consumablesDictionary.json');
+                const filename = data.type === 'coin' ? 'coinsDictionary.json' : 'consumablesDictionary.json';
+                const dictPath = path.resolve(process.cwd(), 'src/data/' + filename);
                 let currentDict = {};
                 if (fs.existsSync(dictPath)) {
                   currentDict = JSON.parse(fs.readFileSync(dictPath, 'utf-8'));

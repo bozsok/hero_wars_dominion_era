@@ -38,6 +38,9 @@
   "31": {
     "name": "Rare Artifact Essence"
   },
+  "32": {
+    "name": "Superior Artifact Essence"
+  },
   "33": {
     "name": "Flawless Artifact Essence"
   },
@@ -54,43 +57,126 @@
     "name": "Superior Artifact Scroll"
   },
   "38": {
-    "name": "Chaos Core",
-    "wikiFile": "Chaos_Core.png"
+    "name": "Chaos Core"
+  },
+  "39": {
+    "name": "Artifact Metal"
+  },
+  "40": {
+    "name": "Uncommon Artifact Metal"
+  },
+  "41": {
+    "name": "Rare Artifact Metal"
   },
   "42": {
-    "name": "Bottled Energy (Alt)",
-    "wikiFile": "Bottled_Energy.png"
+    "name": "Superior Artifact Metal"
+  },
+  "43": {
+    "name": "Flawless Artifact Metal"
+  },
+  "44": {
+    "name": "Chaos Core"
   },
   "45": {
-    "name": "Artifact Chest Key",
-    "wikiFile": "Artifact_Chest_Key.png"
+    "name": "Artifact Chest Key"
+  },
+  "51": {
+    "name": "Skin Stone Chest"
   },
   "53": {
-    "name": "Essence of the Elements",
-    "wikiFile": "Essence_of_the_Elements.png"
+    "name": "Essence of the Elements"
   },
   "55": {
-    "name": "Titan Artifact Sphere",
-    "wikiFile": "Titan_Artifact_Sphere.png"
+    "name": "Titan Artifact Sphere"
+  },
+  "56": {
+    "name": "Honorable Guardian Box"
+  },
+  "62": {
+    "name": "Artifact Essence Chest"
+  },
+  "63": {
+    "name": "Artifact Scroll Chest"
+  },
+  "64": {
+    "name": "Artifact Metal Chest"
+  },
+  "65": {
+    "name": "Large Skin Stone Chest"
+  },
+  "71": {
+    "name": "Artifact Seal Chest"
+  },
+  "73": {
+    "name": "Absolute Artifact Scroll"
+  },
+  "74": {
+    "name": "Absolute Artifact Metal"
   },
   "85": {
-    "name": "Pet Potion",
-    "wikiFile": "Pet_Potion.png"
+    "name": "Pet Potion"
+  },
+  "86": {
+    "name": "Chaos Particle"
   },
   "88": {
-    "name": "Bottled Energy",
-    "wikiFile": "Bottled_Energy.png"
+    "name": "Lesser Hero Soul Stone Chest"
   },
   "90": {
-    "name": "Pet Summoning Egg",
-    "wikiFile": "Pet_Summoning_Egg.png"
+    "name": "Pet Summoning Egg"
+  },
+  "91": {
+    "name": "Pet Soul Chest"
+  },
+  "129": {
+    "name": "Flawless Artifact Chest"
+  },
+  "159": {
+    "name": "Star Mana"
   },
   "163": {
-    "name": "Ancient Wisdom Crystal",
-    "wikiFile": "Ancient_Wisdom_Crystal.png"
+    "name": "Ancient Wisdom Crystal"
   },
   "164": {
-    "name": "Eternal Seed",
-    "wikiFile": "Eternal_Seed.png"
+    "name": "Eternal Seed"
+  },
+  "169": {
+    "name": "Artifact Seal Chest"
+  },
+  "284": {
+    "name": "Rare Gift of Dominion"
+  },
+  "285": {
+    "name": "Epic Gift of Dominion"
+  },
+  "286": {
+    "name": "Legendary Gift of Dominion"
+  },
+  "287": {
+    "name": "Gleaming Seal Chest"
+  },
+  "296": {
+    "name": "Wish Crystal"
+  },
+  "313": {
+    "name": "Soul Casket"
+  },
+  "333": {
+    "name": "Light & Dark Titan Crown Chest"
+  },
+  "339": {
+    "name": "Absolute Artifact Chest"
+  },
+  "441": {
+    "name": "Hero Resource Chest"
+  },
+  "455": {
+    "name": "Titan Resource Chest"
+  },
+  "489": {
+    "name": "Chest of Patterns"
+  },
+  "492": {
+    "name": "Cosmic Titan Battle Chest"
   }
 }

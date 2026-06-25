@@ -2,6 +2,18 @@
 
 Minden említésre méltó változtatás a projektben ebben a fájlban lesz rögzítve.
 
+## [0.5.22] - 2026-06-25
+
+### Megváltoztatva (Changed)
+- **Fülek sorrendjének átrendezése**: A Dashboard oldalsó füleinek sorrendjét megváltoztattuk (Overview -> Consumables -> Coins -> Teams), így a Consumables fül közvetlenül az Overview alatt és a Coins fül felett kapott helyet.
+- **Coins fül átnevezése és letisztítása**: A korábbi „Coins & Source” fül nevét átneveztük **Coins**-ra. Eltávolítottuk az összes kategória-csoportosítást és a hozzájuk tartozó `resource-group-label` elemeket a felületről a letisztultabb megjelenés érdekében.
+- **Érmék ID szerinti rácsos elrendezése**: Az érméket egyetlen közös, dinamikusan tördelő rácsba (`coins-resources-grid`) rendeztük, amely a „Consumables” fülhöz teljesen hasonlóan `display: grid` alapú lett, így ott is pontosan 9 kártya jelenik meg egymás mellett, ID szerint numerikusan növekvő sorrendben.
+- **Coins és Consumables fülek margóinak egységesítése**: Bitre pontosan megegyezővé tettük a két fül stílusait a `Dashboard.css` fájlban. A `.dashboard-resources-tab` osztályról eltávolítottuk a `display: flex` és a `gap: 2rem` tulajdonságokat (így a Consumables-hez hasonlóan sima block elemként viselkedik `width: 100%` mellett), valamint a `.coins-resources-grid` paddingjeit is szinkronizáltuk a `.consumables-grid`-ével (`padding-bottom: 2rem;`), teljesen megszüntetve a felső 0.5rem eltolódást.
+
+### Javítva (Fixed)
+- **Tárgyszótár pontosítása (88-as ID)**: A `consumablesDictionary.json` állományban a 88-as ID-hez társított téves „Bottled Energy” elnevezést a valós **„Lesser Hero Soul Stone Chest”**-re javítottuk a felhasználó visszajelzése alapján.
+- **DataSyncModal beolvasási logika korrekciója**: A `DataSyncModal.jsx` fájlban javítottuk a `bottledEnergy` beolvasási logikáját, teljesen eltávolítva a korábbi hibás 88-as és 42-es ID-kat (mivel a 88 a Lesser Hero Soul Stone Chest, a 42 pedig a Superior Artifact Metal).
+
 ## [0.5.21] - 2026-06-24
 
 ### Hozzáadva (Added)

@@ -3,6 +3,7 @@ import md5 from 'md5';
 import { HeroContext } from '../context/HeroContext';
 import { generateNarrativeProfile } from '../utils/narrativeGenerator';
 import consumablesDictionary from '../data/consumablesDictionary.json';
+import coinsDictionary from '../data/coinsDictionary.json';
 import './Dashboard.css';
 
 const PET_NAMES = {
@@ -26,6 +27,7 @@ const Dashboard = () => {
   const [activeTeamCategory, setActiveTeamCategory] = useState('arena');
   const [identifyingItem, setIdentifyingItem] = useState(null);
   const [customConsumables, setCustomConsumables] = useState({});
+  const [customCoins, setCustomCoins] = useState({});
 
   useEffect(() => {
     const stored = localStorage.getItem('customConsumablesMap');
@@ -36,37 +38,66 @@ const Dashboard = () => {
         console.error('Hiba a localStorage parse közben:', e);
       }
     }
-  }, []);
-
-  const handleSaveIdentification = async (e) => {
+    const storedCoins = localStorage.getItem('customCoinsMap');
+    if (storedCoins) {
+      try {
+        setCustomCoins(JSON.parse(storedCoins));
+      } catch (e) {
+        console.error('Hiba a localStorage parse közben (coins):', e);
+      }
+    }
+  }, []);  const handleSaveIdentification = async (e) => {
     e.preventDefault();
     if (!identifyingItem) return;
     
     const rawName = identifyingItem.name ? identifyingItem.name.trim() : '';
+    const isCoin = identifyingItem.type === 'coin';
 
     if (rawName === '') {
-      const newMap = { ...customConsumables };
-      delete newMap[identifyingItem.id];
-      setCustomConsumables(newMap);
-      localStorage.setItem('customConsumablesMap', JSON.stringify(newMap));
+      if (isCoin) {
+        const newMap = { ...customCoins };
+        delete newMap[identifyingItem.id];
+        setCustomCoins(newMap);
+        localStorage.setItem('customCoinsMap', JSON.stringify(newMap));
+      } else {
+        const newMap = { ...customConsumables };
+        delete newMap[identifyingItem.id];
+        setCustomConsumables(newMap);
+        localStorage.setItem('customConsumablesMap', JSON.stringify(newMap));
+      }
       setIdentifyingItem(null);
       return;
     }
     
-    const newMap = {
-      ...customConsumables,
-      [identifyingItem.id]: {
-        name: rawName
-      }
-    };
-    setCustomConsumables(newMap);
-    localStorage.setItem('customConsumablesMap', JSON.stringify(newMap));
+    if (isCoin) {
+      const newMap = {
+        ...customCoins,
+        [identifyingItem.id]: {
+          name: rawName
+        }
+      };
+      setCustomCoins(newMap);
+      localStorage.setItem('customCoinsMap', JSON.stringify(newMap));
+    } else {
+      const newMap = {
+        ...customConsumables,
+        [identifyingItem.id]: {
+          name: rawName
+        }
+      };
+      setCustomConsumables(newMap);
+      localStorage.setItem('customConsumablesMap', JSON.stringify(newMap));
+    }
     
     try {
       await fetch('/api/save-dictionary', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ id: identifyingItem.id, name: rawName })
+        body: JSON.stringify({ 
+          id: identifyingItem.id, 
+          name: rawName,
+          type: identifyingItem.type 
+        })
       });
       console.log(`Saved ${identifyingItem.id} to file via API.`);
     } catch (err) {
@@ -98,6 +129,42 @@ const Dashboard = () => {
   const formatNum = (num) => {
     if (num === undefined || num === null) return '0';
     return num.toLocaleString('hu-HU');
+  };
+
+  const renderResourceCard = (id, name, amount) => {
+    const key = `coin_${id}`;
+    let imgSrc = `./coins/${id}.png`;
+    const customName = customCoins[id]?.name || coinsDictionary[id]?.name || name;
+
+    return (
+      <div 
+        key={key} 
+        className="consumable-item-card" 
+        onClick={() => setIdentifyingItem({ id, name: customName, type: 'coin' })}
+        style={{ cursor: 'pointer' }}
+        title={`${customName} (#${id})`}
+      >
+        <div className="consumable-item-placeholder">
+          <img 
+            src={imgSrc} 
+            alt={customName} 
+            className="consumable-item-image"
+            onError={(e) => {
+              e.target.style.display = 'none';
+              e.target.nextElementSibling.style.display = 'block';
+            }}
+            onLoad={(e) => {
+              e.target.style.display = 'block';
+              e.target.nextElementSibling.style.display = 'none';
+            }}
+          />
+          <span className="consumable-item-id" style={{ display: 'block' }}>#{id}</span>
+        </div>
+        <div className="consumable-item-amount-wrapper">
+          <span className="consumable-item-amount">{formatNum(amount)}</span>
+        </div>
+      </div>
+    );
   };
 
   const getActiveTeamForNarrative = () => {
@@ -182,9 +249,9 @@ const Dashboard = () => {
         <div className="dashboard-hero-modal-style-wrapper">
           <div className="modal-outside-tabs">
             <div className={`modal-flag ${activeTab === 'overview' ? 'active' : ''}`} onClick={() => setActiveTab('overview')}>Overview</div>
-            <div className={`modal-flag ${activeTab === 'resources' ? 'active' : ''}`} onClick={() => setActiveTab('resources')}>Coins & Sources</div>
-            <div className={`modal-flag ${activeTab === 'teams' ? 'active' : ''}`} onClick={() => setActiveTab('teams')}>Teams</div>
             <div className={`modal-flag ${activeTab === 'consumables' ? 'active' : ''}`} onClick={() => setActiveTab('consumables')}>Consumables</div>
+            <div className={`modal-flag ${activeTab === 'resources' ? 'active' : ''}`} onClick={() => setActiveTab('resources')}>Coins</div>
+            <div className={`modal-flag ${activeTab === 'teams' ? 'active' : ''}`} onClick={() => setActiveTab('teams')}>Teams</div>
           </div>
 
           <div className="modal-content gold-frame dashboard-content-frame">
@@ -287,162 +354,40 @@ const Dashboard = () => {
 
                   {activeTab === 'resources' && (
                     <div className="dashboard-resources-tab">
-                      <div className="resource-category-block">
-                        <div className="resource-group-label">GENERAL & SHOPS</div>
-                        <div className="header-secondary-resources-group">
-                          <div className="game-resource-pill" title="Arena Coin">
-                            <img src="./ui/coin_1.png" alt="Arena Coin" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.coins?.arena)}</span>
-                          </div>
-                          <div className="game-resource-pill" title="Grand Arena Coin">
-                            <img src="./ui/coin_2.png" alt="Grand Arena Coin" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.coins?.grandArena)}</span>
-                          </div>
-                          <div className="game-resource-pill" title="Tower Coin">
-                            <img src="./ui/coin_3.png" alt="Tower Coin" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.coins?.tower)}</span>
-                          </div>
-                          <div className="game-resource-pill" title="Outland Coin">
-                            <img src="./ui/coin_4.png" alt="Outland Coin" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.coins?.outland)}</span>
-                          </div>
-                          <div className="game-resource-pill" title="Soul Coin">
-                            <img src="./ui/soulCoin.png" alt="Soul Coin" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.coins?.soulCoin)}</span>
-                          </div>
-                          <div className="game-resource-pill" title="Friendship Chip">
-                            <img src="./ui/friendshipChip.png" alt="Friendship Chip" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.coins?.friendshipChip)}</span>
-                          </div>
-                          <div className="game-resource-pill" title="Bottled Energy">
-                            <img src="./ui/bottledEnergy.png" alt="Bottled Energy" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.consumables?.bottledEnergy)}</span>
-                          </div>
-                          <div className="game-resource-pill" title="Spark of Power">
-                            <img src="./ui/sparkOfPower.png" alt="Spark of Power" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.consumables?.sparkOfPower)}</span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="resource-two-column-row">
-                        <div className="resource-category-block">
-                          <div className="resource-group-label">ARTIFACTS</div>
-                          <div className="header-secondary-resources-group">
-                            <div className="game-resource-pill" title="Artifact Coin">
-                              <img src="./ui/artifactCoin.png" alt="Artifact Coin" className="pill-icon" />
-                              <span className="pill-value">{formatNum(displayProfile.coins?.artifactCoin)}</span>
-                            </div>
-                            <div className="game-resource-pill" title="Artifact Chest Key">
-                              <img src="./ui/key.png" alt="Artifact Chest Key" className="pill-icon" />
-                              <span className="pill-value">{formatNum(displayProfile.consumables?.artifactChestKey)}</span>
-                            </div>
-                            <div className="game-resource-pill" title="Chaos Core">
-                              <img src="./ui/chaosCore.png" alt="Chaos Core" className="pill-icon" />
-                              <span className="pill-value">{formatNum(displayProfile.consumables?.chaosCore)}</span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="resource-category-block">
-                          <div className="resource-group-label">PETS</div>
-                          <div className="header-secondary-resources-group">
-                            <div className="game-resource-pill" title="Summoning Egg">
-                              <img src="./ui/egg.png" alt="Summoning Egg" className="pill-icon" />
-                              <span className="pill-value">{formatNum(displayProfile.consumables?.petSummoningEgg)}</span>
-                            </div>
-                            <div className="game-resource-pill" title="Pet Potion">
-                              <img src="./ui/petPotion.png" alt="Pet Potion" className="pill-icon" />
-                              <span className="pill-value">{formatNum(displayProfile.consumables?.petPotion)}</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="resource-category-block">
-                        <div className="resource-group-label">TITANS</div>
-                        <div className="header-secondary-resources-group">
-                          <div className="game-resource-pill" title="Titan Potion">
-                            <img src="./ui/titanPotion.png" alt="Titan Potion" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.consumables?.titanPotion)}</span>
-                          </div>
-                          <div className="game-resource-pill" title="Titan Skin Stone">
-                            <img src="./ui/titanSkinStone.png" alt="Titan Skin Stone" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.coins?.titanSkinStone)}</span>
-                          </div>
-                          <div className="game-resource-pill" title="Titan Soul Coin">
-                            <img src="./ui/titanSoulCoin.png" alt="Titan Soul Coin" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.coins?.titanSoulCoin)}</span>
-                          </div>
-                          <div className="game-resource-pill" title="Summoning Sphere">
-                            <img src="./ui/summoningSphere.png" alt="Summoning Sphere" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.coins?.summoningSphere)}</span>
-                          </div>
-                          <div className="game-resource-pill" title="Titan Artifact Sphere">
-                            <img src="./ui/titanArtifactSphere.png" alt="Titan Artifact Sphere" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.consumables?.titanArtifactSphere)}</span>
-                          </div>
-                          <div className="game-resource-pill" title="Essence of the Elements">
-                            <img src="./ui/essenceOfTheElements.png" alt="Essence of the Elements" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.consumables?.essenceOfTheElements)}</span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="resource-category-block">
-                        <div className="resource-group-label">TROPHIES</div>
-                        <div className="header-secondary-resources-group">
-                          <div className="game-resource-pill" title="Bronze Trophy">
-                            <img src="./ui/bronzeTrophy.png" alt="Bronze Trophy" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.coins?.bronzeTrophy)}</span>
-                          </div>
-                          <div className="game-resource-pill" title="Silver Trophy">
-                            <img src="./ui/silverTrophy.png" alt="Silver Trophy" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.coins?.silverTrophy)}</span>
-                          </div>
-                          <div className="game-resource-pill" title="Gold Trophy">
-                            <img src="./ui/goldTrophy.png" alt="Gold Trophy" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.coins?.goldTrophy)}</span>
-                          </div>
-                          <div className="game-resource-pill" title="Clash of Worlds Trophy">
-                            <img src="./ui/clashOfWorldsTrophy.png" alt="Clash of Worlds Trophy" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.coins?.clashOfWorldsTrophy)}</span>
-                          </div>
-                          <div className="game-resource-pill" title="Elemental Tournament Coin">
-                            <img src="./ui/elementalTournamentCoin.png" alt="Elemental Tournament Coin" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.coins?.elementalTournamentCoin)}</span>
-                          </div>
-                          <div className="game-resource-pill" title="Valor Emblem">
-                            <img src="./ui/valorEmblem.png" alt="Valor Emblem" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.coins?.valorEmblem)}</span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="resource-category-block">
-                        <div className="resource-group-label">TITAN VALLEY</div>
-                        <div className="header-secondary-resources-group">
-                          <div className="game-resource-pill" title="Golden Thread">
-                            <img src="./ui/goldenThread.png" alt="Golden Thread" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.coins?.goldenThread)}</span>
-                          </div>
-                          <div className="game-resource-pill" title="Eternal Seed">
-                            <img src="./ui/eternalSeed.png" alt="Eternal Seed" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.consumables?.eternalSeed)}</span>
-                          </div>
-                          <div className="game-resource-pill" title="Ancient Wisdom Crystal">
-                            <img src="./ui/ancientWisdomCrystal.png" alt="Ancient Wisdom Crystal" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.consumables?.ancientWisdomCrystal)}</span>
-                          </div>
-                          <div className="game-resource-pill" title="Elemental Catalyst">
-                            <img src="./ui/elemental.png" alt="Elemental Catalyst" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.coins?.elementalCatalyst)}</span>
-                          </div>
-                          <div className="game-resource-pill" title="Primal Catalyst">
-                            <img src="./ui/primal.png" alt="Primal Catalyst" className="pill-icon" />
-                            <span className="pill-value">{formatNum(displayProfile.coins?.primalCatalyst)}</span>
-                          </div>
-                        </div>
+                      <div className="coins-resources-grid">
+                        {(() => {
+                          const coinsList = [
+                            { id: '1', name: 'Arena Coin', amount: displayProfile.coins?.arena || 0 },
+                            { id: '2', name: 'Grand Arena Coin', amount: displayProfile.coins?.grandArena || 0 },
+                            { id: '3', name: 'Tower Coin', amount: displayProfile.coins?.tower || 0 },
+                            { id: '4', name: 'Outland Coin', amount: displayProfile.coins?.outland || 0 },
+                            { id: '5', name: 'Soul Coin', amount: displayProfile.coins?.soulCoin || 0 },
+                            { id: '6', name: 'Friendship Chip', amount: displayProfile.coins?.friendshipChip || 0 },
+                            { id: '8', name: 'Intelligence Skin Stone', amount: displayProfile.coins?.skinStoneInt || 0 },
+                            { id: '9', name: 'Strength Skin Stone', amount: displayProfile.coins?.skinStoneStr || 0 },
+                            { id: '10', name: 'Agility Skin Stone', amount: displayProfile.coins?.skinStoneAgi || 0 },
+                            { id: '13', name: 'Summoning Sphere', amount: displayProfile.coins?.summoningSphere || 0 },
+                            { id: '14', name: 'Artifact Coin', amount: displayProfile.coins?.artifactCoin || 0 },
+                            { id: '15', name: 'Titan Soul Coin', amount: displayProfile.coins?.titanSoulCoin || 0 },
+                            { id: '18', name: 'Elemental Tournament Coin', amount: displayProfile.coins?.elementalTournamentCoin || 0 },
+                            { id: '24', name: 'Titan Skin Stone', amount: displayProfile.coins?.titanSkinStone || 0 },
+                            { id: '30', name: 'Valor Emblem', amount: displayProfile.coins?.valorEmblem || 0 },
+                            { id: '38', name: 'Soul Crystal', amount: displayProfile.coins?.soulCrystal || 0 },
+                            { id: '45', name: 'Golden Thread', amount: displayProfile.coins?.goldenThread || 0 },
+                            { id: '101', name: 'Bronze Trophy', amount: displayProfile.coins?.bronzeTrophy || 0 },
+                            { id: '102', name: 'Silver Trophy', amount: displayProfile.coins?.silverTrophy || 0 },
+                            { id: '103', name: 'Gold Trophy', amount: displayProfile.coins?.goldTrophy || 0 },
+                            { id: '104', name: 'Clash of Worlds Trophy', amount: displayProfile.coins?.clashOfWorldsTrophy || 0 },
+                            { id: '1084', name: 'Elemental Catalyst', amount: displayProfile.coins?.elementalCatalyst || 0 },
+                            { id: '1085', name: 'Primal Catalyst', amount: displayProfile.coins?.primalCatalyst || 0 },
+                            { id: '2192001095', name: 'Exclusive Skin Coin', amount: displayProfile.coins?.exclusiveSkinCoin || 0 },
+                            { id: '2266001091', name: 'Energy Crystal', amount: displayProfile.coins?.energyCrystal || 0 },
+                            { id: '2266001092', name: 'Valor Coin', amount: displayProfile.coins?.valorCoin || 0 },
+                            { id: '2266001093', name: 'Sapphire Medallion', amount: displayProfile.coins?.sapphireMedallion || 0 }
+                          ];
+                          coinsList.sort((a, b) => parseInt(a.id, 10) - parseInt(b.id, 10));
+                          return coinsList.map(coin => renderResourceCard(coin.id, coin.name, coin.amount));
+                        })()}
                       </div>
                     </div>
                   )}

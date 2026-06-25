@@ -295,10 +295,14 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
                 goldTrophy: inventoryData?.coin?.['103'] || 0,
                 clashOfWorldsTrophy: inventoryData?.coin?.['104'] || 0,
                 elementalCatalyst: inventoryData?.coin?.['1084'] || 0,
-                primalCatalyst: inventoryData?.coin?.['1085'] || 0
+                primalCatalyst: inventoryData?.coin?.['1085'] || 0,
+                exclusiveSkinCoin: inventoryData?.coin?.['2192001095'] || 0,
+                energyCrystal: inventoryData?.coin?.['2266001091'] || 0,
+                valorCoin: inventoryData?.coin?.['2266001092'] || 0,
+                sapphireMedallion: inventoryData?.coin?.['2266001093'] || 0
               },
               consumables: {
-                bottledEnergy: inventoryData?.consumable?.['88'] || inventoryData?.consumable?.['42'] || 0,
+                bottledEnergy: 0, // A Bottled Energy pontos ID-je jelenleg ismeretlen (korábban tévesen 88 és 42 volt megadva)
                 artifactChestKey: inventoryData?.consumable?.['45'] || 0,
                 titanArtifactSphere: inventoryData?.consumable?.['55'] || 0,
                 petSummoningEgg: inventoryData?.consumable?.['90'] || 0,
