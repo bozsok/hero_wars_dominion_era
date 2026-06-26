@@ -1,185 +1,254 @@
 {
   "1": {
-    "name": "Small enchantment rune"
+    "name": "Small enchantment rune",
+    "color": "white"
   },
   "2": {
-    "name": "Common enchantment rune"
+    "name": "Common enchantment rune",
+    "color": "green"
   },
   "3": {
-    "name": "Rare enchantment rune"
+    "name": "Rare enchantment rune",
+    "color": "blue"
   },
   "4": {
-    "name": "Great enchantment rune"
+    "name": "Great enchantment rune",
+    "color": "violet"
   },
   "9": {
-    "name": "Smaller EXP potion"
+    "name": "Smaller EXP potion",
+    "color": "white"
   },
   "10": {
-    "name": "EXP potion"
+    "name": "EXP potion",
+    "color": "green"
   },
   "11": {
-    "name": "Big EXP potion"
+    "name": "Big EXP potion",
+    "color": "blue"
   },
   "12": {
-    "name": "Huge EXP potion"
+    "name": "Huge EXP potion",
+    "color": "violet"
   },
   "20": {
-    "name": "Titan Potion"
+    "name": "Titan Potion",
+    "color": "white"
   },
   "24": {
-    "name": "Spark of Power"
+    "name": "Spark of Power",
+    "color": "white"
   },
   "29": {
-    "name": "Artifact Essence"
+    "name": "Artifact Essence",
+    "color": "white"
   },
   "30": {
-    "name": "Uncommon Artifact Essence"
+    "name": "Uncommon Artifact Essence",
+    "color": "green"
   },
   "31": {
-    "name": "Rare Artifact Essence"
+    "name": "Rare Artifact Essence",
+    "color": "blue"
   },
   "32": {
-    "name": "Superior Artifact Essence"
+    "name": "Superior Artifact Essence",
+    "color": "violet"
   },
   "33": {
-    "name": "Flawless Artifact Essence"
+    "name": "Flawless Artifact Essence",
+    "color": "orange"
   },
   "34": {
-    "name": "Artifact Scroll"
+    "name": "Artifact Scroll",
+    "color": "white"
   },
   "35": {
-    "name": "Uncommon Artifact Scroll"
+    "name": "Uncommon Artifact Scroll",
+    "color": "green"
   },
   "36": {
-    "name": "Rare Artifact Scroll"
+    "name": "Rare Artifact Scroll",
+    "color": "blue"
   },
   "37": {
-    "name": "Superior Artifact Scroll"
+    "name": "Superior Artifact Scroll",
+    "color": "violet"
   },
   "38": {
-    "name": "Chaos Core"
+    "name": "Chaos Core",
+    "color": "orange"
   },
   "39": {
-    "name": "Artifact Metal"
+    "name": "Artifact Metal",
+    "color": "white"
   },
   "40": {
-    "name": "Uncommon Artifact Metal"
+    "name": "Uncommon Artifact Metal",
+    "color": "green"
   },
   "41": {
-    "name": "Rare Artifact Metal"
+    "name": "Rare Artifact Metal",
+    "color": "blue"
   },
   "42": {
-    "name": "Superior Artifact Metal"
+    "name": "Superior Artifact Metal",
+    "color": "violet"
   },
   "43": {
-    "name": "Flawless Artifact Metal"
+    "name": "Flawless Artifact Metal",
+    "color": "orange"
   },
   "44": {
-    "name": "Chaos Core"
+    "name": "Chaos Core",
+    "color": "orange"
   },
   "45": {
-    "name": "Artifact Chest Key"
+    "name": "Artifact Chest Key",
+    "color": "violet"
   },
   "51": {
-    "name": "Skin Stone Chest"
+    "name": "Skin Stone Chest",
+    "color": "violet"
   },
   "53": {
-    "name": "Essence of the Elements"
+    "name": "Essence of the Elements",
+    "color": "violet"
   },
   "55": {
-    "name": "Titan Artifact Sphere"
+    "name": "Titan Artifact Sphere",
+    "color": "violet"
   },
   "56": {
-    "name": "Honorable Guardian Box"
+    "name": "Honorable Guardian Box",
+    "color": "orange"
   },
   "62": {
-    "name": "Artifact Essence Chest"
+    "name": "Artifact Essence Chest",
+    "color": "violet"
   },
   "63": {
-    "name": "Artifact Scroll Chest"
+    "name": "Artifact Scroll Chest",
+    "color": "violet"
   },
   "64": {
-    "name": "Artifact Metal Chest"
+    "name": "Artifact Metal Chest",
+    "color": "violet"
   },
   "65": {
-    "name": "Large Skin Stone Chest"
+    "name": "Large Skin Stone Chest",
+    "color": "violet"
   },
   "71": {
-    "name": "Artifact Seal Chest"
+    "name": "Artifact Seal Chest",
+    "color": "violet"
   },
   "73": {
-    "name": "Absolute Artifact Scroll"
+    "name": "Absolute Artifact Scroll",
+    "color": "red"
   },
   "74": {
-    "name": "Absolute Artifact Metal"
+    "name": "Absolute Artifact Metal",
+    "color": "red"
   },
   "85": {
-    "name": "Pet Potion"
+    "name": "Pet Potion",
+    "color": "violet"
   },
   "86": {
-    "name": "Chaos Particle"
+    "name": "Chaos Particle",
+    "color": "orange"
   },
   "88": {
-    "name": "Lesser Hero Soul Stone Chest"
+    "name": "Lesser Hero Soul Stone Chest",
+    "color": "orange"
   },
   "90": {
-    "name": "Pet Summoning Egg"
+    "name": "Pet Summoning Egg",
+    "color": "violet"
   },
   "91": {
-    "name": "Pet Soul Chest"
+    "name": "Pet Soul Chest",
+    "color": "orange"
   },
   "129": {
-    "name": "Flawless Artifact Chest"
+    "name": "Flawless Artifact Chest",
+    "color": "orange"
   },
   "148": {
-    "name": "Platinum Box"
+    "name": "Platinum Box",
+    "color": "orange"
   },
   "159": {
-    "name": "Star Mana"
+    "name": "Star Mana",
+    "color": "violet"
   },
   "163": {
-    "name": "Ancient Wisdom Crystal"
+    "name": "Ancient Wisdom Crystal",
+    "color": "violet"
   },
   "164": {
-    "name": "Eternal Seed"
+    "name": "Eternal Seed",
+    "color": "violet"
   },
   "169": {
-    "name": "Artifact Seal Chest"
+    "name": "Artifact Seal Chest",
+    "color": "violet"
+  },
+  "170": {
+    "name": "Random Vibrant Crystal",
+    "color": "white"
+  },
+  "171": {
+    "name": "Random radiant Crystal",
+    "color": "white"
   },
   "284": {
-    "name": "Rare Gift of Dominion"
+    "name": "Rare Gift of Dominion",
+    "color": "blue"
   },
   "285": {
-    "name": "Epic Gift of Dominion"
+    "name": "Epic Gift of Dominion",
+    "color": "violet"
   },
   "286": {
-    "name": "Legendary Gift of Dominion"
+    "name": "Legendary Gift of Dominion",
+    "color": "orange"
   },
   "287": {
-    "name": "Gleaming Seal Chest"
+    "name": "Gleaming Seal Chest",
+    "color": "violet"
   },
   "296": {
-    "name": "Wish Crystal"
+    "name": "Wish Crystal",
+    "color": "violet"
   },
   "313": {
-    "name": "Soul Casket"
+    "name": "Soul Casket",
+    "color": "violet"
   },
   "333": {
-    "name": "Light & Dark Titan Crown Chest"
+    "name": "Light & Dark Titan Crown Chest",
+    "color": "violet"
   },
   "339": {
-    "name": "Absolute Artifact Chest"
+    "name": "Absolute Artifact Chest",
+    "color": "orange"
   },
   "441": {
-    "name": "Hero Resource Chest"
+    "name": "Hero Resource Chest",
+    "color": "violet"
   },
   "455": {
-    "name": "Titan Resource Chest"
+    "name": "Titan Resource Chest",
+    "color": "violet"
   },
   "489": {
-    "name": "Chest of Patterns"
+    "name": "Chest of Patterns",
+    "color": "violet"
   },
   "492": {
-    "name": "Cosmic Titan Battle Chest"
+    "name": "Cosmic Titan Battle Chest",
+    "color": "violet"
   }
 }

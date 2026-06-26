@@ -2,6 +2,22 @@
 
 Minden említésre méltó változtatás a projektben ebben a fájlban lesz rögzítve.
 
+## [0.5.23] - 2026-06-26
+
+### Hozzáadva (Added)
+- **Ritkasági keretek a Consumables fülön**: A Consumables fülön megjelenő tárgyak kártyáira rákerül a ritkasági szintjüknek megfelelő színű PNG keret a `public/hero_borders` mappából (fehér, zöld, kék, lila, narancs, piros). A szín a `consumablesDictionary.json` fájl `color` mezőjéből származik.
+- **Egységes narancs keret a Coins fülön**: A Coins fülön minden érmekártya egységesen narancsszínű (`orange.png`) kerettel jelenik meg.
+- **Keretszín-választó a tárgyazonosító modálban**: A tárgy elnevezésére szolgáló felugró ablakban (Consumables fül) a név beviteli mező alatt megjelent egy „Keret színe" feliratú lenyíló lista, amellyel a felhasználó manuálisan kiválaszthatja a keret színét (White, Green, Blue, Violet, Orange, Red). A mentés gombra kattintva a választott szín a `consumablesDictionary.json` fájlba is elmentődik.
+- **`color` mező a `consumablesDictionary.json` szótárban**: Minden meglévő tárgyhoz hozzáadtuk a `"color"` mezőt a ritkasági szintjének megfelelő értékkel (white/green/blue/violet/orange/red).
+
+### Megváltoztatva (Changed)
+- **Tárgyazonosító modál megnyitása**: A tárgyakra és érmékre történő szimpla kattintás helyett mostantól csak tripla kattintásra (`e.detail === 3`) nyílik meg a név- és színválasztó modál. Ezzel elkerülhető a véletlen megnyitás, ezért a `cursor: pointer` stílust is eltávolítottuk a kártyákról.
+- **Kártyakeret vizuális megoldása**: A korábbi CSS-alapú keretet (`border: 2px solid #54462a`) lecseréltük PNG képalapú keretre (`.consumable-item-border` CSS osztály), amely abszolút pozícióval, `z-index: 3` rétegen, `pointer-events: none` beállítással jelenik meg a kártya fölött.
+- **Backend API bővítése**: A `vite.config.js` szótármentő végpontja (`/api/save-dictionary`) mostantól a `color` mezőt is fogadja és menti a szótárfájlba. Ha nem érkezik új szín, a meglévő `color` értéket megőrzi.
+- **`saveCustomItem` kontextus bővítése**: A `HeroContext.jsx` `saveCustomItem` függvénye mostantól fogadja a negyedik `color` paramétert, és a Consumables típusú tárgyaknál a localStorage-ba is elmenti.
+- **Görgetőkonténer finomhangolása**: A `.dashboard-content-frame .modal-scroll-container.resources-scroll-active` osztályhoz `padding: 5px` került, hogy a kinyúló keretek ne vágjanak bele a konténer szélébe.
+
+
 ## [0.5.22] - 2026-06-25
 
 ### Hozzáadva (Added)

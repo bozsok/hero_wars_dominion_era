@@ -404,7 +404,7 @@ export const HeroProvider = ({ children }) => {
     }
   }, []);
 
-  const saveCustomItem = (id, name, type) => {
+  const saveCustomItem = (id, name, type, color) => {
     if (isViewMode) return;
     const isCoin = type === 'coin';
     if (isCoin) {
@@ -421,7 +421,9 @@ export const HeroProvider = ({ children }) => {
       if (name === '') {
         delete newMap[id];
       } else {
-        newMap[id] = { name };
+        const entry = { name };
+        if (color) entry.color = color;
+        newMap[id] = entry;
       }
       setCustomConsumables(newMap);
       localStorage.setItem('customConsumablesMap', JSON.stringify(newMap));

@@ -1004,6 +1004,7 @@
 }
 
 .dashboard-content-frame .modal-scroll-container.resources-scroll-active {
+  padding: 5px;
   overflow-y: auto;
 }
 
@@ -1070,13 +1071,22 @@
   width: 90px;
   height: 90px;
   background-color: rgba(30, 25, 20, 0.8);
-  border: 2px solid #54462a;
   border-radius: 8px;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8), 0 4px 6px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+}
+
+.consumable-item-border {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  pointer-events: none;
+  z-index: 3;
+  object-fit: fill;
 }
 
 .consumable-item-placeholder {
@@ -1116,7 +1126,8 @@
 }
 
 .consumable-item-amount {
-  color: #f7e1b6; /* Sárgás arany */
+  color: #f7e1b6;
+  /* Sárgás arany */
   font-size: 14px;
   font-weight: bold;
   text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;

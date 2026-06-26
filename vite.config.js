@@ -21,8 +21,15 @@ function dictionarySaverPlugin() {
                 if (fs.existsSync(dictPath)) {
                   currentDict = JSON.parse(fs.readFileSync(dictPath, 'utf-8'));
                 }
-                currentDict[data.id] = { name: data.name };
+                const entry = { name: data.name };
+                if (data.color) {
+                  entry.color = data.color;
+                } else if (currentDict[data.id]?.color) {
+                  entry.color = currentDict[data.id].color;
+                }
+                currentDict[data.id] = entry;
                 fs.writeFileSync(dictPath, JSON.stringify(currentDict, null, 2), 'utf-8');
+
                 res.setHeader('Content-Type', 'application/json');
                 res.end(JSON.stringify({ success: true }));
               } else {

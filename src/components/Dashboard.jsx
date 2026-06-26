@@ -41,9 +41,10 @@ const Dashboard = () => {
     if (!identifyingItem) return;
 
     const rawName = identifyingItem.name ? identifyingItem.name.trim() : '';
+    const selectedColor = identifyingItem.color || '';
 
     // Mentés a Contexten keresztül (state + localStorage)
-    saveCustomItem(identifyingItem.id, rawName, identifyingItem.type);
+    saveCustomItem(identifyingItem.id, rawName, identifyingItem.type, selectedColor);
 
     if (isViewMode) {
       setIdentifyingItem(null);
@@ -51,14 +52,18 @@ const Dashboard = () => {
     }
 
     try {
+      const payload = {
+        id: identifyingItem.id,
+        name: rawName,
+        type: identifyingItem.type
+      };
+      if (identifyingItem.type !== 'coin' && selectedColor) {
+        payload.color = selectedColor;
+      }
       await fetch('/api/save-dictionary', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          id: identifyingItem.id,
-          name: rawName,
-          type: identifyingItem.type
-        })
+        body: JSON.stringify(payload)
       });
       console.log(`Saved ${identifyingItem.id} to file via API.`);
     } catch (err) {
@@ -101,8 +106,11 @@ const Dashboard = () => {
       <div
         key={key}
         className="consumable-item-card"
-        onClick={() => setIdentifyingItem({ id, name: customName, type: 'coin' })}
-        style={{ cursor: 'pointer' }}
+        onClick={(e) => {
+          if (e.detail === 3) {
+            setIdentifyingItem({ id, name: customName, type: 'coin' });
+          }
+        }}
         title={`${customName} (#${id})`}
       >
         <div className="consumable-item-placeholder">
@@ -121,6 +129,7 @@ const Dashboard = () => {
           />
           <span className="consumable-item-id" style={{ display: 'block' }}>#{id}</span>
         </div>
+        <img src="./hero_borders/orange.png" alt="" className="consumable-item-border" />
         <div className="consumable-item-amount-wrapper">
           <span className="consumable-item-amount">{formatNum(amount)}</span>
         </div>
@@ -557,9 +566,15 @@ const Dashboard = () => {
                         {displayProfile.inventory && Object.entries(displayProfile.inventory).map(([id, amount]) => {
                           const customName = customConsumables[id]?.name || consumablesDictionary[id]?.name || '';
                           const imgSrc = `./consumables/${id}.png`;
+                          const borderColor = customConsumables[id]?.color || consumablesDictionary[id]?.color || 'white';
+                          const borderSrc = `./hero_borders/${borderColor}.png`;
 
                           return (
-                            <div key={id} className="consumable-item-card" onClick={() => setIdentifyingItem({ id, name: customName })} style={{ cursor: 'pointer' }} title={customName ? `${customName} (#${id})` : `Ismeretlen tárgy (#${id})`}>
+                            <div key={id} className="consumable-item-card" onClick={(e) => {
+                              if (e.detail === 3) {
+                                setIdentifyingItem({ id, name: customName, color: borderColor });
+                              }
+                            }} title={customName ? `${customName} (#${id})` : `Ismeretlen tárgy (#${id})`}>
                               <div className="consumable-item-placeholder">
                                 <img
                                   src={imgSrc}
@@ -576,6 +591,7 @@ const Dashboard = () => {
                                 />
                                 <span className="consumable-item-id" style={{ display: 'block' }}>#{id}</span>
                               </div>
+                              <img src={borderSrc} alt="" className="consumable-item-border" />
                               <div className="consumable-item-amount-wrapper">
                                 <span className="consumable-item-amount">{formatNum(amount)}</span>
                               </div>
@@ -614,7 +630,24 @@ const Dashboard = () => {
                 style={{ width: '100%', padding: '12px', marginBottom: '20px', background: '#0a0a0a', border: '1px solid #d4af37', color: '#fff', fontSize: '16px', borderRadius: '4px' }}
                 autoFocus
               />
-              <button type="submit" className="hero-modal-tab active" style={{ width: '100%', textAlign: 'center', display: 'block', padding: '10px' }}>Név Mentése</button>
+              {identifyingItem.type !== 'coin' && (
+                <div style={{ marginBottom: '20px' }}>
+                  <label style={{ color: '#eaddc5', fontFamily: '"Roboto Condensed", sans-serif', display: 'block', marginBottom: '8px' }}>Keret színe</label>
+                  <select
+                    value={identifyingItem.color || 'white'}
+                    onChange={(e) => setIdentifyingItem({ ...identifyingItem, color: e.target.value })}
+                    style={{ width: '100%', padding: '12px', background: '#0a0a0a', border: '1px solid #d4af37', color: '#fff', fontSize: '16px', borderRadius: '4px' }}
+                  >
+                    <option value="white">⬜ White (Normal)</option>
+                    <option value="green">🟩 Green (Uncommon)</option>
+                    <option value="blue">🟦 Blue (Rare)</option>
+                    <option value="violet">🟪 Violet (Superior)</option>
+                    <option value="orange">🟧 Orange (Flawless)</option>
+                    <option value="red">🟥 Red (Absolute)</option>
+                  </select>
+                </div>
+              )}
+              <button type="submit" className="hero-modal-tab active" style={{ width: '100%', textAlign: 'center', display: 'block', padding: '10px' }}>Mentés</button>
             </form>
           </div>
         </div>
