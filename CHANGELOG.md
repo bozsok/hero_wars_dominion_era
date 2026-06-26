@@ -2,6 +2,17 @@
 
 Minden említésre méltó változtatás a projektben ebben a fájlban lesz rögzítve.
 
+## [0.5.24] - 2026-06-26
+
+### Hozzáadva (Added)
+- **Új `Overview` fül bevezetése**: Elkészült az `Overview.jsx` komponens, amely a jövőben a Dashboard feladatát fogja átvenni. Hozzáadtuk a bal oldali menüsávhoz (`Sidebar.jsx`). 
+- **Új `Overview.css` stíluslap**: Különálló, lokális stílusfájl az új fülhöz, amely mentes az inline stílusoktól.
+
+### Megváltoztatva (Changed)
+- **Képbetöltési villogás javítása**: A `Dashboard` és `Overview` füleken a `Consumables` és `Coins` kártyáknál eltávolítottuk az `onLoad` eseménykezelőt a képekről (`img` tagek). Így megszüntettük a "balról jobbra beúszó" optikai csalódást, amelyet a JavaScript DOM-manipulációs mikrokésleltetése okozott.
+- **Okos `onError` eseménykezelés**: A képeknél (a letört kép ikon elrejtésére szánt) szöveges fallback (a `#{id}`) mostantól alapértelmezetten rejtett (`display: none`), és csak akkor jelenik meg, ha az `onError` esemény lefut (pl. ha a képfájl 404-es hibát ad).
+- **Scrollbar elcsúszás javítása**: A `Dashboard` és `Overview` fülek fix görgetősávot (`overflow-y: scroll`) kaptak a kategóriaváltások (pl. Consumables -> Coins) okozta szélességugrálás elkerülésére.
+
 ## [0.5.23] - 2026-06-26
 
 ### Hozzáadva (Added)

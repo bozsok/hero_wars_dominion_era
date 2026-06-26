@@ -13,6 +13,10 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
     <aside className="layout-sidebar">
 
       <nav className="sidebar-nav">
+        <a href="#" className={`nav-item ${activeTab === 'Overview' ? 'active' : ''}`} onClick={(e) => { e.preventDefault(); setActiveTab('Overview'); }}>
+          <span className="material-symbols-outlined nav-icon">explore</span>
+          <span className="nav-text">Overview</span>
+        </a>
         <a href="#" className={`nav-item ${activeTab === 'Dashboard' ? 'active' : ''}`} onClick={(e) => { e.preventDefault(); setActiveTab('Dashboard'); }}>
           <span className="material-symbols-outlined nav-icon">dashboard</span>
           <span className="nav-text">Dashboard</span>

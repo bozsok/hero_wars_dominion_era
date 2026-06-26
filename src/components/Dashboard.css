@@ -102,7 +102,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
   gap: 16px;
-  justify-content: center;
   align-items: start;
   padding-bottom: 2rem;
 }
@@ -1005,7 +1004,7 @@
 
 .dashboard-content-frame .modal-scroll-container.resources-scroll-active {
   padding: 5px;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 /* NARRATIVE SECTION STYLES FOR OVERVIEW */
@@ -1061,7 +1060,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
   gap: 16px;
-  justify-content: center;
   align-items: start;
   padding-bottom: 2rem;
 }

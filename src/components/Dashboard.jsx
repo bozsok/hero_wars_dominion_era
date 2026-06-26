@@ -122,12 +122,8 @@ const Dashboard = () => {
               e.target.style.display = 'none';
               e.target.nextElementSibling.style.display = 'block';
             }}
-            onLoad={(e) => {
-              e.target.style.display = 'block';
-              e.target.nextElementSibling.style.display = 'none';
-            }}
           />
-          <span className="consumable-item-id" style={{ display: 'block' }}>#{id}</span>
+          <span className="consumable-item-id" style={{ display: 'none' }}>#{id}</span>
         </div>
         <img src="./hero_borders/orange.png" alt="" className="consumable-item-border" />
         <div className="consumable-item-amount-wrapper">
@@ -584,12 +580,8 @@ const Dashboard = () => {
                                     e.target.style.display = 'none';
                                     e.target.nextElementSibling.style.display = 'block';
                                   }}
-                                  onLoad={(e) => {
-                                    e.target.style.display = 'block';
-                                    e.target.nextElementSibling.style.display = 'none';
-                                  }}
                                 />
-                                <span className="consumable-item-id" style={{ display: 'block' }}>#{id}</span>
+                                <span className="consumable-item-id" style={{ display: 'none' }}>#{id}</span>
                               </div>
                               <img src={borderSrc} alt="" className="consumable-item-border" />
                               <div className="consumable-item-amount-wrapper">
