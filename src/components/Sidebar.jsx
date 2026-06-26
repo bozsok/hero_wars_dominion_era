@@ -5,6 +5,7 @@ const NAV_TEXTS = {
   Heroes: 'Heroes are the core of your team.',
   Titans: 'Titans rule the dungeon and guild wars.',
   Pets: 'Pets provide great help in battle.',
+  Teams: 'Manage your arena and campaign teams.',
   Settings: 'Configure your application.'
 };
 
@@ -32,6 +33,10 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
         <a href="#" className={`nav-item ${activeTab === 'Pets' ? 'active' : ''}`} onClick={(e) => { e.preventDefault(); setActiveTab('Pets'); }}>
           <img src="./ui/pet.png" alt="Pets" className="nav-icon" />
           <span className="nav-text">Pets</span>
+        </a>
+        <a href="#" className={`nav-item ${activeTab === 'Teams' ? 'active' : ''}`} onClick={(e) => { e.preventDefault(); setActiveTab('Teams'); }}>
+          <span className="material-symbols-outlined nav-icon">groups</span>
+          <span className="nav-text">Teams</span>
         </a>
         <a href="#" className={`nav-item ${activeTab === 'Settings' ? 'active' : ''}`} onClick={(e) => { e.preventDefault(); setActiveTab('Settings'); }}>
           <span className="material-symbols-outlined nav-icon">settings</span>

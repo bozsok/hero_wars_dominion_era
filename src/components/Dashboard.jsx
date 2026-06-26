@@ -6,19 +6,6 @@ import consumablesDictionary from '../data/consumablesDictionary.json';
 import coinsDictionary from '../data/coinsDictionary.json';
 import './Dashboard.css';
 
-const PET_NAMES = {
-  '6001': 'Oliver',
-  '6002': 'Albus',
-  '6003': 'Mara',
-  '6004': 'Patron',
-  '6005': 'Biscuit',
-  '6006': 'Merlin',
-  '6007': 'Axel',
-  '6008': 'Cain',
-  '6009': 'Khorus',
-  '6010': 'Fenris'
-};
-
 const Dashboard = () => {
   const {
     heroes,
@@ -33,7 +20,7 @@ const Dashboard = () => {
   const displayProfile = (isViewMode && viewProfile) ? viewProfile : playerProfile;
 
   const [activeTab, setActiveTab] = useState('overview');
-  const [activeTeamCategory, setActiveTeamCategory] = useState('arena');
+
   const [identifyingItem, setIdentifyingItem] = useState(null);
 
   const handleSaveIdentification = async (e) => {
@@ -217,7 +204,6 @@ const Dashboard = () => {
             <div className={`modal-flag ${activeTab === 'overview' ? 'active' : ''}`} onClick={() => setActiveTab('overview')}>Overview</div>
             <div className={`modal-flag ${activeTab === 'consumables' ? 'active' : ''}`} onClick={() => setActiveTab('consumables')}>Consumables</div>
             <div className={`modal-flag ${activeTab === 'resources' ? 'active' : ''}`} onClick={() => setActiveTab('resources')}>Coins</div>
-            <div className={`modal-flag ${activeTab === 'teams' ? 'active' : ''}`} onClick={() => setActiveTab('teams')}>Teams</div>
           </div>
 
           <div className="modal-content gold-frame dashboard-content-frame">
@@ -381,180 +367,6 @@ const Dashboard = () => {
                     </div>
                   )}
 
-                  {activeTab === 'teams' && (
-                    <div className="dashboard-teams-tab">
-
-                      {/* Aktív csapatok bemutatása */}
-                      {playerTeams && (
-                        <div className="active-teams-section">
-                          <div className="teams-top-bar">
-                            <div className="teams-ranking-wrapper">
-                              <span className="teams-ranking-label">
-                                {activeTeamCategory === 'campaign' ? 'Campaign Stage:' : 'My ranking:'}
-                              </span>
-                              <div className="teams-ranking-info">
-                                {activeTeamCategory === 'arena' && (displayProfile.arenaPlace || '-')}
-                                {activeTeamCategory === 'grand_arena' && (displayProfile.grandPlace || '-')}
-                                {activeTeamCategory === 'campaign' && (displayProfile.campaignLevel || '-')}
-                              </div>
-                            </div>
-                            <div className="teams-category-buttons">
-                              <button className={`team-cat-btn ${activeTeamCategory === 'arena' ? 'active' : ''}`} onClick={() => setActiveTeamCategory('arena')}>Arena</button>
-                              <button className={`team-cat-btn ${activeTeamCategory === 'grand_arena' ? 'active' : ''}`} onClick={() => setActiveTeamCategory('grand_arena')}>Grand Arena</button>
-                              <button className={`team-cat-btn ${activeTeamCategory === 'campaign' ? 'active' : ''}`} onClick={() => setActiveTeamCategory('campaign')}>Campaign</button>
-                            </div>
-                          </div>
-
-                          <div className="teams-grid-container">
-                            {/* Aréna csapat */}
-                            {activeTeamCategory === 'arena' && playerTeams.arena && playerTeams.arena.length > 0 && (
-                              <div className="team-row-showcase">
-                                <div className="team-row-header">
-                                  <span className="material-symbols-outlined team-header-icon">swords</span>
-                                  <span className="team-header-title">Arena Team</span>
-                                </div>
-                                <div className="team-members-list">
-                                  {playerTeams.arena.map((id, index) => {
-                                    if (id >= 6000) {
-                                      // Pet kártya renderelése
-                                      const petName = PET_NAMES[id] || `Pet #${id}`;
-                                      return (
-                                        <div key={`pet-${id}`} className="team-member-card pet-card">
-                                          <div className="team-member-portrait-wrapper border-pet">
-                                            <img src="./ui/pet.png" alt={petName} className="team-member-img" />
-                                          </div>
-                                          <span className="team-member-name">{petName}</span>
-                                          <span className="team-member-rank-label">Pet</span>
-                                        </div>
-                                      );
-                                    }
-
-                                    const hero = getHeroDetails(id);
-                                    if (!hero) return null;
-
-                                    const borderUrl = `./hero_borders/${(hero.items?.rank || 'White').toLowerCase()}.png`;
-                                    const rankClass = getRankColorClass(hero);
-                                    return (
-                                      <div key={`hero-${id}`} className="team-member-card">
-                                        <div className={`team-member-portrait-wrapper ${rankClass}`}>
-                                          <div className="team-member-portrait-inner">
-                                            <img src={`./heroes/${id}.png`} alt={hero.name} className="team-member-img" />
-                                          </div>
-                                          <img src={borderUrl} alt="Rank Border" className="team-member-border" />
-                                          <span className="team-member-level-badge">{hero.general?.level || 0}</span>
-                                        </div>
-                                        <span className="team-member-name">{hero.name}</span>
-                                        <span className="team-member-power-label">{formatNum(hero.general?.power)} Power</span>
-                                      </div>
-                                    );
-                                  })}
-                                </div>
-                              </div>
-                            )}
-
-                            {/* Hadjárat csapat */}
-                            {activeTeamCategory === 'campaign' && playerTeams.mission && playerTeams.mission.length > 0 && (
-                              <div className="team-row-showcase">
-                                <div className="team-row-header">
-                                  <span className="material-symbols-outlined team-header-icon">map</span>
-                                  <span className="team-header-title">Campaign Team</span>
-                                </div>
-                                <div className="team-members-list">
-                                  {playerTeams.mission.map((id, index) => {
-                                    if (id >= 6000) {
-                                      const petName = PET_NAMES[id] || `Pet #${id}`;
-                                      return (
-                                        <div key={`pet-mission-${id}`} className="team-member-card pet-card">
-                                          <div className="team-member-portrait-wrapper border-pet">
-                                            <img src="./ui/pet.png" alt={petName} className="team-member-img" />
-                                          </div>
-                                          <span className="team-member-name">{petName}</span>
-                                          <span className="team-member-rank-label">Pet</span>
-                                        </div>
-                                      );
-                                    }
-
-                                    const hero = getHeroDetails(id);
-                                    if (!hero) return null;
-
-                                    const borderUrl = `./hero_borders/${(hero.items?.rank || 'White').toLowerCase()}.png`;
-                                    const rankClass = getRankColorClass(hero);
-                                    return (
-                                      <div key={`hero-mission-${id}`} className="team-member-card">
-                                        <div className={`team-member-portrait-wrapper ${rankClass}`}>
-                                          <div className="team-member-portrait-inner">
-                                            <img src={`./heroes/${id}.png`} alt={hero.name} className="team-member-img" />
-                                          </div>
-                                          <img src={borderUrl} alt="Rank Border" className="team-member-border" />
-                                          <span className="team-member-level-badge">{hero.general?.level || 0}</span>
-                                        </div>
-                                        <span className="team-member-name">{hero.name}</span>
-                                        <span className="team-member-power-label">{formatNum(hero.general?.power)} Power</span>
-                                      </div>
-                                    );
-                                  })}
-                                </div>
-                              </div>
-                            )}
-
-                            {/* Grand Aréna 3 csapata */}
-                            {activeTeamCategory === 'grand_arena' && playerTeams.grand && playerTeams.grand.length > 0 && (
-                              <div className="team-row-showcase">
-                                <div className="team-row-header">
-                                  <span className="material-symbols-outlined team-header-icon">workspace_premium</span>
-                                  <span className="team-header-title">Grand Arena Teams</span>
-                                </div>
-                                <div className="grand-teams-vertical-list">
-                                  {playerTeams.grand.map((gTeam, tIdx) => (
-                                    <div key={`grand-team-${tIdx}`} className="grand-team-subrow">
-                                      <div className="team-members-list">
-                                        {gTeam.map((id, index) => {
-                                          if (id >= 6000) {
-                                            const petName = PET_NAMES[id] || `Pet #${id}`;
-                                            return (
-                                              <div key={`pet-grand-${tIdx}-${id}`} className="team-member-card pet-card">
-                                                <div className="team-member-portrait-wrapper border-pet">
-                                                  <img src="./ui/pet.png" alt={petName} className="team-member-img" />
-                                                  <div className="grand-member-hover-overlay">
-                                                    <span className="team-member-name">{petName}</span>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            );
-                                          }
-
-                                          const hero = getHeroDetails(id);
-                                          if (!hero) return null;
-
-                                          const borderUrl = `./hero_borders/${(hero.items?.rank || 'White').toLowerCase()}.png`;
-                                          const rankClass = getRankColorClass(hero);
-                                          return (
-                                            <div key={`hero-grand-${tIdx}-${id}`} className="team-member-card">
-                                              <div className={`team-member-portrait-wrapper ${rankClass}`}>
-                                                <div className="team-member-portrait-inner">
-                                                  <img src={`./heroes/${id}.png`} alt={hero.name} className="team-member-img" />
-                                                </div>
-                                                <img src={borderUrl} alt="Rank Border" className="team-member-border" />
-                                                <span className="team-member-level-badge">{hero.general?.level || 0}</span>
-                                                <div className="grand-member-hover-overlay">
-                                                  <span className="team-member-name">{hero.name}</span>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          );
-                                        })}
-                                      </div>
-                                    </div>
-                                  ))}
-                                </div>
-                              </div>
-                            )}
-                          </div>
-                        </div>
-                      )}
-
-                    </div>
-                  )}
 
                   {activeTab === 'consumables' && (
                     <div className="dashboard-consumables-tab">
@@ -602,13 +414,11 @@ const Dashboard = () => {
       </div>
 
       {identifyingItem && (
-        <div className="hero-modal-overlay">
-          <div className="hero-modal-content" style={{ maxWidth: '500px', height: 'auto', minHeight: 'auto' }}>
-            <button className="hero-modal-close" onClick={() => setIdentifyingItem(null)}>
-              <span className="material-symbols-outlined">close</span>
-            </button>
-            <div className="hero-modal-header" style={{ padding: '20px 20px 0 20px', borderBottom: 'none' }}>
-              <h2 className="hero-modal-name">Tárgy elnevezése (#{identifyingItem.id})</h2>
+        <div className="modal-overlay" style={{ zIndex: 9999 }}>
+          <div className="modal-content gold-frame" style={{ maxWidth: '500px', minWidth: '300px', height: 'auto', minHeight: 'auto', marginLeft: 0, padding: '20px', display: 'flex', flexDirection: 'column' }}>
+            <button className="modal-close-icon" onClick={() => setIdentifyingItem(null)} style={{ top: '-30px', right: '-30px', width: '40px', height: '40px' }}></button>
+            <div className="modal-title-banner" style={{ top: '-40px', fontSize: '20px', padding: '10px 20px' }}>
+              Tárgy elnevezése (#{identifyingItem.id})
             </div>
             <form onSubmit={handleSaveIdentification} style={{ padding: '20px' }}>
               <p style={{ color: '#eaddc5', marginBottom: '15px', fontFamily: '"Roboto Condensed", sans-serif' }}>
@@ -639,7 +449,7 @@ const Dashboard = () => {
                   </select>
                 </div>
               )}
-              <button type="submit" className="hero-modal-tab active" style={{ width: '100%', textAlign: 'center', display: 'block', padding: '10px' }}>Mentés</button>
+              <button type="submit" className="gold-gradient-btn" style={{ width: '100%', textAlign: 'center', display: 'block', padding: '10px' }}>Mentés</button>
             </form>
           </div>
         </div>

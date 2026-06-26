@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
 import Overview from './components/Overview';
 import HeroesList from './components/HeroesList';
+import Teams from './components/Teams';
 import { HeroProvider, HeroContext } from './context/HeroContext';
 import DataSyncModal from './components/DataSyncModal';
 const ParticlesBackground = () => {
@@ -87,7 +88,8 @@ function AppContent() {
       {activeTab === 'Dashboard' && <Dashboard />}
       {activeTab === 'Overview' && <Overview />}
       {activeTab === 'Heroes' && <HeroesList />}
-      {activeTab !== 'Dashboard' && activeTab !== 'Overview' && activeTab !== 'Heroes' && (
+      {activeTab === 'Teams' && <Teams />}
+      {activeTab !== 'Dashboard' && activeTab !== 'Overview' && activeTab !== 'Heroes' && activeTab !== 'Teams' && (
         <main className="layout-main">
           <div className="container" style={{ padding: '2rem', textAlign: 'center' }}>
             <h2>{activeTab} menüpont hamarosan...</h2>

@@ -13,11 +13,50 @@ const Overview = () => {
     isViewMode,
     viewProfile,
     customConsumables,
-    customCoins
+    customCoins,
+    saveCustomItem
   } = useContext(HeroContext);
 
   const displayProfile = (isViewMode && viewProfile) ? viewProfile : playerProfile;
   const [activeCategory, setActiveCategory] = useState('Consumables');
+  const [identifyingItem, setIdentifyingItem] = useState(null);
+
+  const handleSaveIdentification = async (e) => {
+    e.preventDefault();
+    if (!identifyingItem) return;
+
+    const rawName = identifyingItem.name ? identifyingItem.name.trim() : '';
+    const selectedColor = identifyingItem.color || '';
+
+    // Mentés a Contexten keresztül (state + localStorage)
+    saveCustomItem(identifyingItem.id, rawName, identifyingItem.type, selectedColor);
+
+    if (isViewMode) {
+      setIdentifyingItem(null);
+      return;
+    }
+
+    try {
+      const payload = {
+        id: identifyingItem.id,
+        name: rawName,
+        type: identifyingItem.type
+      };
+      if (identifyingItem.type !== 'coin' && selectedColor) {
+        payload.color = selectedColor;
+      }
+      await fetch('/api/save-dictionary', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      console.log(`Saved ${identifyingItem.id} to file via API.`);
+    } catch (err) {
+      console.error('Failed to save to backend API:', err);
+    }
+
+    setIdentifyingItem(null);
+  };
 
   // Categories based on user request
   const categories = [
@@ -157,7 +196,11 @@ const Overview = () => {
                     const borderSrc = `./hero_borders/${borderColor}.png`;
 
                     return (
-                      <div key={id} className="consumable-item-card" title={customName ? `${customName} (#${id})` : `Ismeretlen tárgy (#${id})`}>
+                      <div key={id} className="consumable-item-card" onClick={(e) => {
+                        if (e.detail === 3) {
+                          setIdentifyingItem({ id, name: customName, color: borderColor, type: 'consumable' });
+                        }
+                      }} title={customName ? `${customName} (#${id})` : `Ismeretlen tárgy (#${id})`}>
                         <div className="consumable-item-placeholder">
                           <img
                             src={imgSrc}
@@ -243,7 +286,11 @@ const Overview = () => {
                       const customName = customCoins[coin.id]?.name || coinsDictionary[coin.id]?.name || coin.name;
 
                       return (
-                        <div key={key} className="consumable-item-card" title={`${customName} (#${coin.id})`}>
+                        <div key={coin.id} className="consumable-item-card" onClick={(e) => {
+                          if (e.detail === 3) {
+                            setIdentifyingItem({ id: coin.id, name: customName, color: 'orange', type: 'coin' });
+                          }
+                        }} title={customName ? `${customName} (#${coin.id})` : `Ismeretlen érme (#${coin.id})`}>
                           <div className="consumable-item-placeholder">
                             <img
                               src={imgSrc}
@@ -279,6 +326,49 @@ const Overview = () => {
 
         </div>
       </div>
+
+      {identifyingItem && (
+        <div className="modal-overlay" style={{ zIndex: 9999 }}>
+          <div className="modal-content gold-frame" style={{ maxWidth: '500px', minWidth: '300px', height: 'auto', minHeight: 'auto', marginLeft: 0, padding: '20px', display: 'flex', flexDirection: 'column' }}>
+            <button className="modal-close-icon" onClick={() => setIdentifyingItem(null)} style={{ top: '-30px', right: '-30px', width: '40px', height: '40px' }}></button>
+            
+            <div className="modal-title-banner" style={{ top: '-40px', fontSize: '20px', padding: '10px 20px' }}>
+              Tárgy elnevezése (#{identifyingItem.id})
+            </div>
+            <form onSubmit={handleSaveIdentification} style={{ padding: '20px' }}>
+              <p style={{ color: '#eaddc5', marginBottom: '15px', fontFamily: '"Roboto Condensed", sans-serif' }}>
+                Add meg a tárgy pontos nevét (pl. "Small enchantment rune"). Ez a név el lesz mentve az ID mellé a memóriába.
+              </p>
+              <input
+                type="text"
+                value={identifyingItem.name || ''}
+                onChange={(e) => setIdentifyingItem({ ...identifyingItem, name: e.target.value })}
+                placeholder="Pl: Small enchantment rune"
+                style={{ width: '100%', padding: '12px', marginBottom: '20px', background: '#0a0a0a', border: '1px solid #d4af37', color: '#fff', fontSize: '16px', borderRadius: '4px' }}
+                autoFocus
+              />
+              {identifyingItem.type !== 'coin' && (
+                <div style={{ marginBottom: '20px' }}>
+                  <label style={{ color: '#eaddc5', fontFamily: '"Roboto Condensed", sans-serif', display: 'block', marginBottom: '8px' }}>Keret színe</label>
+                  <select
+                    value={identifyingItem.color || 'white'}
+                    onChange={(e) => setIdentifyingItem({ ...identifyingItem, color: e.target.value })}
+                    style={{ width: '100%', padding: '12px', background: '#0a0a0a', border: '1px solid #d4af37', color: '#fff', fontSize: '16px', borderRadius: '4px' }}
+                  >
+                    <option value="white">⚪ White (Normal)</option>
+                    <option value="green">🟢 Green (Uncommon)</option>
+                    <option value="blue">🔵 Blue (Rare)</option>
+                    <option value="violet">🟣 Violet (Superior)</option>
+                    <option value="orange">🟠 Orange (Flawless)</option>
+                    <option value="red">🔴 Red (Absolute)</option>
+                  </select>
+                </div>
+              )}
+              <button type="submit" className="gold-gradient-btn" style={{ width: '100%', textAlign: 'center', display: 'block', padding: '10px' }}>Mentés</button>
+            </form>
+          </div>
+        </div>
+      )}
     </main>
   );
 };

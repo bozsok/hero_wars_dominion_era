@@ -2,6 +2,15 @@
 
 Minden említésre méltó változtatás a projektben ebben a fájlban lesz rögzítve.
 
+## [0.5.25] - 2026-06-26
+
+### Hozzáadva (Added)
+- **Önálló Teams fül**: A korábban a `Dashboard` alatt megbújó csapatinformációk (Aréna, Grand Aréna, Campaign csapatok és petek) saját, dedikált menüpontot kaptak a bal oldali sávban (`Teams`). Elkészült a `Teams.jsx` és `Teams.css` fájl, így az alkalmazás szerkezete tisztább és átláthatóbb lett.
+
+### Megváltoztatva (Changed)
+- **Tárgyazonosító modál javítása**: Az `Overview` fülön is elérhetővé vált a tripla kattintásos tárgyelnevező és színező modálablak, amely onnan korábban lemaradt.
+- **Tárgyazonosító modál stílusainak helyreállítása**: A `Dashboard` és `Overview` füleken megjelenő modálablak hiányzó stílusait lecseréltük a meglévő globális CSS osztályokra (`modal-overlay`, `modal-content gold-frame`, `gold-gradient-btn`). Ennek köszönhetően a felugró ablak ismét tökéletesen középre igazítva, a megszokott arany kerettel jelenik meg, megszüntetve a bal alsó sarokba történő elcsúszást.
+
 ## [0.5.24] - 2026-06-26
 
 ### Hozzáadva (Added)
