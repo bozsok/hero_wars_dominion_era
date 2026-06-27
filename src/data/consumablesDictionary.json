@@ -31,13 +31,17 @@
     "name": "Huge EXP potion",
     "color": "violet"
   },
+  "17": {
+    "name": "Bottled Energy",
+    "color": "violet"
+  },
   "20": {
     "name": "Titan Potion",
-    "color": "white"
+    "color": "green"
   },
   "24": {
     "name": "Spark of Power",
-    "color": "white"
+    "color": "violet"
   },
   "29": {
     "name": "Artifact Essence",
@@ -76,7 +80,7 @@
     "color": "violet"
   },
   "38": {
-    "name": "Chaos Core",
+    "name": "Flawless Artifact Scroll",
     "color": "orange"
   },
   "39": {
@@ -105,7 +109,7 @@
   },
   "45": {
     "name": "Artifact Chest Key",
-    "color": "violet"
+    "color": "orange"
   },
   "51": {
     "name": "Skin Stone Chest",
@@ -117,7 +121,7 @@
   },
   "55": {
     "name": "Titan Artifact Sphere",
-    "color": "violet"
+    "color": "orange"
   },
   "56": {
     "name": "Honorable Guardian Box",
@@ -143,6 +147,10 @@
     "name": "Artifact Seal Chest",
     "color": "violet"
   },
+  "72": {
+    "name": "Absolute Artifact Essence",
+    "color": "red"
+  },
   "73": {
     "name": "Absolute Artifact Scroll",
     "color": "red"
@@ -157,7 +165,7 @@
   },
   "86": {
     "name": "Chaos Particle",
-    "color": "orange"
+    "color": "violet"
   },
   "88": {
     "name": "Lesser Hero Soul Stone Chest",
@@ -165,7 +173,7 @@
   },
   "90": {
     "name": "Pet Summoning Egg",
-    "color": "violet"
+    "color": "orange"
   },
   "91": {
     "name": "Pet Soul Chest",
@@ -181,35 +189,43 @@
   },
   "159": {
     "name": "Star Mana",
-    "color": "violet"
+    "color": "orange"
   },
   "163": {
     "name": "Ancient Wisdom Crystal",
-    "color": "violet"
+    "color": "orange"
   },
   "164": {
     "name": "Eternal Seed",
-    "color": "violet"
+    "color": "orange"
   },
   "169": {
     "name": "Artifact Seal Chest",
-    "color": "violet"
+    "color": "green"
   },
   "170": {
     "name": "Random Vibrant Crystal",
-    "color": "white"
+    "color": "blue"
   },
   "171": {
     "name": "Random radiant Crystal",
-    "color": "white"
+    "color": "violet"
+  },
+  "172": {
+    "name": "Random Insignia",
+    "color": "blue"
+  },
+  "173": {
+    "name": "Random greater Insignia",
+    "color": "violet"
   },
   "284": {
     "name": "Rare Gift of Dominion",
-    "color": "blue"
+    "color": "orange"
   },
   "285": {
     "name": "Epic Gift of Dominion",
-    "color": "violet"
+    "color": "orange"
   },
   "286": {
     "name": "Legendary Gift of Dominion",
@@ -235,6 +251,10 @@
     "name": "Absolute Artifact Chest",
     "color": "orange"
   },
+  "399": {
+    "name": "Prestige Trophy",
+    "color": "orange"
+  },
   "441": {
     "name": "Hero Resource Chest",
     "color": "violet"
@@ -243,12 +263,20 @@
     "name": "Titan Resource Chest",
     "color": "violet"
   },
+  "477": {
+    "name": "Chest of Patterns",
+    "color": "orange"
+  },
   "489": {
     "name": "Chest of Patterns",
-    "color": "violet"
+    "color": "orange"
   },
   "492": {
     "name": "Cosmic Titan Battle Chest",
     "color": "violet"
+  },
+  "493": {
+    "name": "Titan Upgrade Chest",
+    "color": "orange"
   }
 }
