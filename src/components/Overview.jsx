@@ -18,7 +18,7 @@ const Overview = () => {
   } = useContext(HeroContext);
 
   const displayProfile = (isViewMode && viewProfile) ? viewProfile : playerProfile;
-  const [activeCategory, setActiveCategory] = useState('Consumables');
+  const [activeCategory, setActiveCategory] = useState('All');
   const [identifyingItem, setIdentifyingItem] = useState(null);
 
   const handleSaveIdentification = async (e) => {
@@ -134,10 +134,10 @@ const Overview = () => {
       </div>
 
       <div className="container">
-        
+
         {/* Content grid */}
         <div className="overview-content-grid">
-          
+
           {/* Top Left: Profile */}
           <div className="overview-profile-cell">
             <div className="player-profile-widget">
@@ -169,6 +169,45 @@ const Overview = () => {
             </div>
           </div>
 
+          {/* Middle Row: Resources */}
+          <div className="overview-resources-cell">
+            <div className="player-resources-bar">
+              <div className="resource-group-label heroes_skins">GENERAL RESOURCES</div>
+              <div className="game-resource-pill emerald-pill" title="Emerald">
+                <img src="./ui/emerald.webp" alt="Emerald" className="pill-icon" />
+                <span className="pill-value">{formatNum(displayProfile.emeralds)}</span>
+              </div>
+              <div className="game-resource-pill gold-pill" title="Gold">
+                <img src="./ui/gold.webp" alt="Gold" className="pill-icon" />
+                <span className="pill-value">{formatNum(displayProfile.gold)}</span>
+              </div>
+              <div className="game-resource-pill energy-pill" title="Energy">
+                <img src="./ui/energy.webp" alt="Energy" className="pill-icon" />
+                <span className="pill-value">{displayProfile.stamina}</span>
+              </div>
+            </div>
+
+            <div className="player-resources-bar">
+              <div className="resource-group-label heroes_skins">HEROES & SKINS</div>
+              <div className="game-resource-pill" title="Intelligence Skin Stone">
+                <img src="./ui/skin_stone_101.png" alt="Intelligence Skin Stone" className="pill-icon" />
+                <span className="pill-value">{formatNum(displayProfile.coins?.skinStoneInt)}</span>
+              </div>
+              <div className="game-resource-pill" title="Strength Skin Stone">
+                <img src="./ui/skin_stone_102.png" alt="Strength Skin Stone" className="pill-icon" />
+                <span className="pill-value">{formatNum(displayProfile.coins?.skinStoneStr)}</span>
+              </div>
+              <div className="game-resource-pill" title="Agility Skin Stone">
+                <img src="./ui/skin_stone_103.png" alt="Agility Skin Stone" className="pill-icon" />
+                <span className="pill-value">{formatNum(displayProfile.coins?.skinStoneAgi)}</span>
+              </div>
+              <div className="game-resource-pill" title="Soul Crystal">
+                <img src="./ui/coin_38.webp" alt="Soul Crystal" className="pill-icon" />
+                <span className="pill-value">{formatNum(displayProfile.coins?.soulCrystal)}</span>
+              </div>
+            </div>
+          </div>
+
           {/* Bottom Left: Navigation Buttons */}
           <div className="overview-nav-cell">
             <div className="overview-nav-buttons">
@@ -187,10 +226,9 @@ const Overview = () => {
           {/* Bottom Right: Resources Grid */}
           <div className="overview-grid-cell">
             <div className="modal-scroll-container resources-scroll-active overview-scroll-container">
-              
-              {activeCategory === 'Consumables' && (
-                <div className="consumables-grid" key="consumables">
-                  {displayProfile.inventory && Object.entries(displayProfile.inventory).map(([id, amount]) => {
+
+              <div className="consumables-grid" key="all-resources">
+                {(activeCategory === 'All' || activeCategory === 'Consumables') && displayProfile.inventory && Object.entries(displayProfile.inventory).map(([id, amount]) => {
                     const customName = customConsumables[id]?.name || consumablesDictionary[id]?.name || '';
                     const imgSrc = `./consumables/${id}.png`;
                     const borderColor = customConsumables[id]?.color || consumablesDictionary[id]?.color || 'white';
@@ -221,18 +259,13 @@ const Overview = () => {
                       </div>
                     );
                   })}
-                </div>
-              )}
-
-              {activeCategory === 'Coins' && (
-                <div className="consumables-grid" key="coins">
-                  {(() => {
+                {(activeCategory === 'All' || activeCategory === 'Coins') && (() => {
                     const mappedCoinKeys = [
-                      'arena', 'grandArena', 'tower', 'outland', 'soulCoin', 'friendshipChip', 
-                      'skinStoneInt', 'skinStoneStr', 'skinStoneAgi', 'summoningSphere', 'artifactCoin', 
-                      'titanSoulCoin', 'elementalTournamentCoin', 'titanSkinStone', 'valorEmblem', 
-                      'soulCrystal', 'goldenThread', 'bronzeTrophy', 'silverTrophy', 'goldTrophy', 
-                      'clashOfWorldsTrophy', 'elementalCatalyst', 'primalCatalyst', 'exclusiveSkinCoin', 
+                      'arena', 'grandArena', 'tower', 'outland', 'soulCoin', 'friendshipChip',
+                      'skinStoneInt', 'skinStoneStr', 'skinStoneAgi', 'summoningSphere', 'artifactCoin',
+                      'titanSoulCoin', 'elementalTournamentCoin', 'titanSkinStone', 'valorEmblem',
+                      'soulCrystal', 'goldenThread', 'bronzeTrophy', 'silverTrophy', 'goldTrophy',
+                      'clashOfWorldsTrophy', 'elementalCatalyst', 'primalCatalyst', 'exclusiveSkinCoin',
                       'energyCrystal', 'valorCoin', 'sapphireMedallion'
                     ];
 
@@ -280,7 +313,7 @@ const Overview = () => {
                     }
 
                     coinsList.sort((a, b) => parseInt(a.id, 10) - parseInt(b.id, 10));
-                    
+
                     return coinsList.map(coin => {
                       const key = `coin_${coin.id}`;
                       let imgSrc = `./coins/${coin.id}.png`;
@@ -312,11 +345,10 @@ const Overview = () => {
                       );
                     });
                   })()}
-                </div>
-              )}
+              </div>
 
               {/* TBD categories will show up here */}
-              {categories.filter(c => c !== 'Consumables' && c !== 'Coins').includes(activeCategory) && (
+              {categories.filter(c => c !== 'All' && c !== 'Consumables' && c !== 'Coins').includes(activeCategory) && (
                 <div className="overview-tbd-message">
                   A(z) {activeCategory} kategória hamarosan érkezik!
                 </div>
@@ -332,7 +364,7 @@ const Overview = () => {
         <div className="modal-overlay naming-modal-overlay">
           <div className="modal-content gold-frame naming-modal">
             <button className="modal-close-icon naming-modal-close" onClick={() => setIdentifyingItem(null)}></button>
-            
+
             <div className="modal-title-banner naming-modal-title">
               Tárgy elnevezése (#{identifyingItem.id})
             </div>

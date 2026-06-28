@@ -2,6 +2,16 @@
 
 Minden említésre méltó változtatás a projektben ebben a fájlban lesz rögzítve.
 
+## [0.5.28] - 2026-06-28
+
+### Hozzáadva (Added)
+- **Erőforrás összesítő nézet az Overview-n**: A navigációs sáv 'All' kategóriája lett az alapértelmezett. Kiválasztásakor az összes eddigi erőforrás (jelenleg Fogyóeszközök és Érmék, később felszerelések, receptek stb.) ömlesztve, egyetlen megszakítás nélküli, folyamatos rácskonténerben (`consumables-grid`) jelenik meg a maximális áttekinthetőség érdekében.
+- **Központi erőforrás-sáv az Overview fülön**: A profil panel alatt és a navigációs gombok felett egy új, teljes szélességű sor került kialakításra (a grid ezáltal 3 sorosra bővült). Ebbe a sorba lettek vizuálisan átemelve a játékoshoz köthető elsődleges és másodlagos erőforrás statisztikák.
+
+### Megváltoztatva (Changed)
+- **Erőforrás sávok dizájnjának egységesítése**: Az elsődleges ("GENERAL RESOURCES") és másodlagos ("HEROES & SKINS") erőforrásokat tartalmazó csoportok megkapták ugyanazt a CSS osztályt (`player-resources-bar`). Ezzel megszüntettük a másodlagos csoport indokolatlanul elcsúszott bal oldali belső margóját (padding), így az ikonok csonkulás nélkül, tökéletesen szimmetrikus és letisztult elrendezésben jelennek meg.
+- **Profil Widget térköz elosztása**: A `player-profile-widget` a "beégetett" fix távolságok (`gap`) helyett flexibilis elosztásra (`justify-content: space-evenly`) váltott. Mivel a cella megkapta a 100%-os magasságot, az avatar, a névszalag és a VIP felirat mostantól automatikusan, matematikailag egyenletesen oszlanak el a rendelkezésre álló térben mindenféle manuális korrekció nélkül.
+
 ## [0.5.27] - 2026-06-28
 
 ### Megváltoztatva (Changed)
@@ -13,6 +23,7 @@ Minden említésre méltó változtatás a projektben ebben a fájlban lesz rög
 
 ### Javítva (Fixed)
 - **Overview fejléc vizuális hibája**: Az `Overview.jsx` fejléc bannerének reszponzív viselkedése javításra került. Eltávolítottuk az `object-fit: cover` szabályt a háttérképről, így ablakátméretezéskor és görgetéskor a kép többé nem vágódik le (megszüntetve a "Sidebar alá becsúszó" optikai csalódást), hanem folyamatosan, teljes szélességében látható marad. Továbbá a wrapper doboz szélességét pontos matematikai számítással (`width: calc(100% + 2 * var(--md))`) láttuk el, így a banner mindig tökéletesen és stabilan kitölti a rendelkezésre álló teret.
+
 ## [0.5.26] - 2026-06-28
 
 ### Megváltoztatva (Changed)

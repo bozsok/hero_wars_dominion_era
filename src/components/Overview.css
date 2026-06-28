@@ -63,7 +63,7 @@
 .overview-content-grid {
   display: grid;
   grid-template-columns: 180px 1fr;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto auto 1fr;
   gap: 20px;
   width: 100%;
   height: calc(100vh - 250px);
@@ -79,6 +79,10 @@
 .overview-profile-cell .player-profile-widget {
   background-color: rgba(255, 215, 0, 0.03);
   backdrop-filter: initial;
+  height: 100%;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+  gap: 0; /* Alapértelmezett gap felülírása a tiszta elosztásért */
 }
 
 /* Narratíva */
@@ -89,7 +93,7 @@
   height: auto;
   min-width: 150px;
   max-width: 1250px;
-  background-color: rgba(255, 215, 0, 0.03);
+  /* background-color: rgba(255, 215, 0, 0.03); */
   backdrop-filter: initial;
 }
 
@@ -97,10 +101,31 @@
   box-shadow: none;
 }
 
+/* Új Erőforrás Sor */
+.overview-resources-cell {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  background-color: rgba(255, 215, 0, 0.03);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  border-radius: 8px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.overview-resources-cell .player-resources-bar {
+  flex-wrap: wrap;
+}
+
 /* Navigációs Gombok */
 .overview-nav-cell {
   grid-column: 1 / 2;
-  grid-row: 2 / 3;
+  grid-row: 3 / 4;
   display: flex;
   flex-direction: column;
 }
@@ -110,7 +135,7 @@
 /* Grid Cell (Erőforrás konténer) */
 .overview-grid-cell {
   grid-column: 2 / 3;
-  grid-row: 2 / 3;
+  grid-row: 3 / 4;
   background-color: rgba(255, 215, 0, 0.03);
   backdrop-filter: initial;
   border: 1px solid rgba(212, 175, 55, 0.15);
