@@ -489,22 +489,7 @@ body::before {
   z-index: 1;
 }
 
-.layout-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 50;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 var(--lg);
-  height: 80px;
-  border: none;
-  border-bottom: 2px solid;
-  border-image: linear-gradient(to right, transparent, #b67532, #feec5f, #b67532, transparent) 1;
-  background-color: #1a1009;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
+
 
 .layout-sidebar {
   position: fixed;
@@ -515,7 +500,7 @@ body::before {
   /* 64 * 4px */
   display: flex;
   flex-direction: column;
-  padding-top: 80px;
+  padding-top: 0;
   padding-bottom: var(--base);
   border-right: 1px solid #463b34;
   /* border-image: linear-gradient(to bottom, transparent, #fcef5f, transparent) 1; */
@@ -526,8 +511,7 @@ body::before {
 
 .layout-main {
   margin-left: 256px;
-  padding-top: 112px;
-  /* 28 * 4px */
+  padding-top: 32px;
   padding-left: var(--md);
   padding-right: var(--md);
   padding-bottom: var(--lg);
@@ -553,40 +537,18 @@ body::before {
 }
 
 /* --- SEMANTIC COMPONENT CLASSES --- */
-/* Header */
-.header-logo-container {
+/* Sidebar logó */
+.sidebar-logo-container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: var(--md) var(--lg);
+  border-bottom: 1px solid #463b34;
 }
 
-.header-logo {
+.sidebar-logo {
   height: 40px;
   object-fit: contain;
-}
-
-.header-title-container {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.header-title {
-  font-family: var(--font-display-lg);
-  font-size: 48px;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.8);
-  transition: color 0.3s;
-}
-
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: var(--md);
-}
-
-.header-profile-icon {
-  font-size: 30px;
-  color: var(--primary-fixed);
-  cursor: pointer;
 }
 
 /* Dashboard */
@@ -1051,13 +1013,55 @@ body::before {
 .sidebar-actions {
   display: flex;
   flex-direction: column;
-  gap: var(--sm);
-  padding: var(--md);
+  gap: 0;
+  padding: 0;
+  border-top: 1px solid #463b34;
 }
 
-.return-btn {
+/* Sidebar akciógomb – a nav-item mintájára */
+.sidebar-action-item {
+  display: flex;
+  align-items: center;
+  gap: var(--sm);
+  padding: 0 var(--lg);
+  height: 55px;
+  color: #fece86;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 1;
   width: 100%;
-  background-color: var(--error);
+  text-align: left;
+  font-size: inherit;
+}
+
+.sidebar-action-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: linear-gradient(to right, #205e1b, #50ba34);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.sidebar-action-item:hover::before {
+  opacity: 0.4;
+}
+
+/* Return gomb piros hover */
+.sidebar-action-item.return-btn {
+  color: #ef4444;
+}
+
+.sidebar-action-item.return-btn::before {
+  background: linear-gradient(to right, #5e1b1b, #ba3434);
 }
 
 .image-btn {
@@ -1232,30 +1236,8 @@ body::before {
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.8);
 }
 
-/* Header additions */
-.header-title-view-mode {
-  color: #ef4444;
-}
-
-.return-btn {
-  padding: 8px 16px;
-  margin-right: 15px;
-}
-
 .hidden-file-input {
   display: none;
-}
-
-.view-mode-btn {
-  margin-right: 10px;
-}
-
-.header-profile-icon:not(.view-mode) {
-  margin-left: 10px;
-}
-
-.header-profile-icon.view-mode {
-  margin-left: 0;
 }
 
 /* Dashboard additions */

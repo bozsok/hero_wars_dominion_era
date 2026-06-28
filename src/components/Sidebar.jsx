@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext, useRef } from 'react';
+import { HeroContext } from '../context/HeroContext';
 
 const NAV_TEXTS = {
   Dashboard: 'Your progress at a glance.',
@@ -9,9 +10,29 @@ const NAV_TEXTS = {
   Settings: 'Configure your application.'
 };
 
-const Sidebar = ({ activeTab, setActiveTab }) => {
+const Sidebar = ({ activeTab, setActiveTab, onOpenImport }) => {
+  const { loadViewData, isViewMode, exitViewMode } = useContext(HeroContext);
+  const fileInputRef = useRef(null);
+
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        loadViewData(event.target.result);
+      };
+      reader.readAsText(file);
+    }
+    if (fileInputRef.current) fileInputRef.current.value = '';
+  };
+
   return (
     <aside className="layout-sidebar">
+
+      {/* Logó – a korábbi header-logo-container átemelve */}
+      <div className="sidebar-logo-container">
+        <img src="./ui/logo.png" alt="Logo" className="sidebar-logo" />
+      </div>
 
       <nav className="sidebar-nav">
         <a href="#" className={`nav-item ${activeTab === 'Overview' ? 'active' : ''}`} onClick={(e) => { e.preventDefault(); setActiveTab('Overview'); }}>
@@ -48,6 +69,44 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
         </div>
       </nav>
 
+      {/* Akciógombok – a korábbi header-actions átemelve, sidebar stílusban */}
+      <div className="sidebar-actions">
+        {isViewMode ? (
+          <button
+            className="sidebar-action-item return-btn"
+            onClick={exitViewMode}
+          >
+            <span className="material-symbols-outlined nav-icon">undo</span>
+            <span className="nav-text">Vissza a sajáthoz</span>
+          </button>
+        ) : (
+          <>
+            <input
+              type="file"
+              accept=".json"
+              ref={fileInputRef}
+              className="hidden-file-input"
+              onChange={handleFileChange}
+            />
+            <button
+              className="sidebar-action-item"
+              onClick={() => fileInputRef.current?.click()}
+              title="Megtekintő mód (Más JSON fájljának betöltése)"
+            >
+              <span className="material-symbols-outlined nav-icon">visibility</span>
+              <span className="nav-text">Megtekintés</span>
+            </button>
+            <button
+              className="sidebar-action-item"
+              onClick={onOpenImport}
+              title="Adatkezelés"
+            >
+              <span className="material-symbols-outlined nav-icon">sync</span>
+              <span className="nav-text">Adatszinkron</span>
+            </button>
+          </>
+        )}
+      </div>
 
     </aside>
   );

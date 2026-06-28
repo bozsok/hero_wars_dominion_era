@@ -157,11 +157,11 @@ const Dashboard = () => {
             <div className="dashboard-welcome-steps">
               <div className="welcome-step">
                 <span className="step-num">1</span>
-                <span>Kattints a jobb felső sarokban lévő <strong>Adatszinkronizáció</strong> gombra.</span>
+                <span>Kattints a bal oldali menüsorban lévő <strong>Adatszinkron</strong> gombra.</span>
               </div>
               <div className="welcome-step">
                 <span className="step-num">2</span>
-                <span>Kövesd az ott leírt lépéseket a hálózati HAR fájl mentéséhez.</span>
+                <span>Kövesd az ott leírt lépéseket a hálózati HAR fájl letöltéséhez.</span>
               </div>
               <div className="welcome-step">
                 <span className="step-num">3</span>
@@ -194,8 +194,8 @@ const Dashboard = () => {
 
         {isViewMode && (
           <div className="view-mode-warning">
-            <h2 className="view-mode-title">View Mode Active</h2>
-            <p>You are currently viewing a loaded database. Changes will not be saved. Click the "BACK TO MINE" button to exit.</p>
+            <h2 className="view-mode-title">Megtekintő mód aktív</h2>
+            <p>Az aktív adatbázis egy betöltött .json fájl tartalmát jeleníti meg. Ez nem a saját játékaid adatait tartalmazza. Ebben módban nem menthető adat. Válts vissza a sajátjaidhoz a "Vissza a sajáthoz" gombbal.</p>
           </div>
         )}
 
@@ -309,11 +309,11 @@ const Dashboard = () => {
                       <div className="coins-resources-grid">
                         {(() => {
                           const mappedCoinKeys = [
-                            'arena', 'grandArena', 'tower', 'outland', 'soulCoin', 'friendshipChip', 
-                            'skinStoneInt', 'skinStoneStr', 'skinStoneAgi', 'summoningSphere', 'artifactCoin', 
-                            'titanSoulCoin', 'elementalTournamentCoin', 'titanSkinStone', 'valorEmblem', 
-                            'soulCrystal', 'goldenThread', 'bronzeTrophy', 'silverTrophy', 'goldTrophy', 
-                            'clashOfWorldsTrophy', 'elementalCatalyst', 'primalCatalyst', 'exclusiveSkinCoin', 
+                            'arena', 'grandArena', 'tower', 'outland', 'soulCoin', 'friendshipChip',
+                            'skinStoneInt', 'skinStoneStr', 'skinStoneAgi', 'summoningSphere', 'artifactCoin',
+                            'titanSoulCoin', 'elementalTournamentCoin', 'titanSkinStone', 'valorEmblem',
+                            'soulCrystal', 'goldenThread', 'bronzeTrophy', 'silverTrophy', 'goldTrophy',
+                            'clashOfWorldsTrophy', 'elementalCatalyst', 'primalCatalyst', 'exclusiveSkinCoin',
                             'energyCrystal', 'valorCoin', 'sapphireMedallion'
                           ];
 

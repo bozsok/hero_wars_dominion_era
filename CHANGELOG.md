@@ -2,6 +2,22 @@
 
 Minden említésre méltó változtatás a projektben ebben a fájlban lesz rögzítve.
 
+## [0.5.26] - 2026-06-28
+
+### Megváltoztatva (Changed)
+- **Layout átszervezés – Header megszüntetése**: A teljes felső fejlécsáv (`layout-header`) eltávolításra került. A benne lévő elemek a bal oldali menüsávba (`layout-sidebar`) költöztek, így a fő tartalomterület jelentősen magasabb lett (a korábbi `padding-top: 112px` értékről `32px`-re csökkent).
+- **Logó áthelyezése a sidebar tetejére**: A korábban a fejlécben megjelenő logó (`header-logo-container`) átkerült a bal oldali menüsáv tetejére (`sidebar-logo-container`), saját elválasztó vonallal a navigációs menüpontoktól.
+- **Akciógombok áthelyezése a sidebar aljára**: A fejlécben elhelyezett akciógombok (Megtekintő mód, Adatszinkronizáció) a menüsáv aljára költöztek, a navigációs menüpontokhoz hasonló ikon + szöveges címke formátumban: 👁 „Megtekintés", 🔄 „Adatszinkron". Megtekintő módban a „Vissza a sajáthoz" gomb jelenik meg helyettük.
+- **Sidebar komponens bővítése**: A `Sidebar.jsx` átvette a megszüntetett `Header.jsx` teljes logikáját (fájlbetöltés, megtekintő mód kezelése, `useContext`, `useRef`). A komponens új `onOpenImport` propot kapott az adatszinkronizálós modal megnyitásához.
+- **Új `sidebar-action-item` CSS osztály**: A sidebar aljára került akciógombok saját, a `nav-item` mintáját követő stílust kaptak (zöld háttér-gradiens hover effekttel, a visszatérő gomb piros változattal).
+- **Dashboard üdvözlő szöveg frissítése**: A kezdőképernyő lépésenkénti útmutatójában a „jobb felső sarokban lévő Adatszinkronizáció" hivatkozás frissült a „bal oldali menüsorban lévő Adatszinkron" megfogalmazásra, az új elrendezésnek megfelelően.
+- **Dashboard megtekintő mód figyelmeztetés magyarítása**: A `Dashboard.jsx` „View Mode Active" angol nyelvű figyelmeztetése magyar szövegre cserélődött („Megtekintő mód aktív").
+
+### Eltávolítva (Removed)
+- **`Header.jsx` komponens**: A teljes fájl törlésre került, mivel minden funkciója a `Sidebar.jsx`-be olvadt.
+- **Fejléc CSS osztályok**: Eltávolításra kerültek a `.layout-header`, `.header-logo-container`, `.header-logo`, `.header-title-container`, `.header-title`, `.header-actions`, `.header-profile-icon`, `.header-title-view-mode`, `.view-mode-btn`, valamint a kapcsolódó `.header-profile-icon:not(.view-mode)` és `.header-profile-icon.view-mode` szelektorok.
+- **Profil ikon eltávolítása**: Az `account_circle` Material Icon (`header-profile-icon`) véglegesen törlésre került a felületről.
+
 ## [0.5.25] - 2026-06-26
 
 ### Hozzáadva (Added)

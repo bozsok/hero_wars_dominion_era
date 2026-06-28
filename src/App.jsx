@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Header from './components/Header';
+
 import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
 import Overview from './components/Overview';
@@ -81,10 +81,7 @@ function AppContent() {
   return (
     <div className="layout-app">
       <ParticlesBackground />
-      <Header 
-        onOpenImport={() => setIsImportOpen(true)} 
-      />
-      <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
+      <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} onOpenImport={() => setIsImportOpen(true)} />
       {activeTab === 'Dashboard' && <Dashboard />}
       {activeTab === 'Overview' && <Overview />}
       {activeTab === 'Heroes' && <HeroesList />}
