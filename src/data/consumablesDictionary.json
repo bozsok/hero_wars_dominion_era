@@ -219,6 +219,10 @@
     "name": "Random greater Insignia",
     "color": "violet"
   },
+  "215": {
+    "name": "Equipment Fragment Chest",
+    "color": "orange"
+  },
   "284": {
     "name": "Rare Gift of Dominion",
     "color": "orange"
@@ -242,6 +246,10 @@
   "313": {
     "name": "Soul Casket",
     "color": "violet"
+  },
+  "328": {
+    "name": "Titan of you choice",
+    "color": "orange"
   },
   "333": {
     "name": "Light & Dark Titan Crown Chest",
