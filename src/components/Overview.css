@@ -1,13 +1,11 @@
 /* --- HEADER --- */
 .overview-header-wrapper {
   position: relative;
-  width: calc(100% + (2 * var(--md)));
+  width: calc(100% + 2 * var(--md));
   margin-left: calc(-1 * var(--md));
-  margin-right: calc(-1 * var(--md));
-  margin-top: -24px;
-  height: 95px;
+  margin-top: -32px;
+  height: 80px;
   display: flex;
-  /* align-items: flex-end; */
   justify-content: center;
   margin-bottom: 20px;
 }
@@ -18,13 +16,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
   z-index: 1;
 }
 
 .overview-fg-layer {
   position: absolute;
-  bottom: -19px;
+  bottom: -16px;
   left: 50%;
   transform: translateX(-50%);
   max-height: 100%;
@@ -34,7 +31,7 @@
 
 .overview-title-banner {
   position: absolute;
-  bottom: 6px;
+  bottom: 3px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;

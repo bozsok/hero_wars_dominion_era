@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { HeroContext } from '../context/HeroContext';
-import './ImportModal.css';
+import './DataSyncModal.css';
 import { calculateHeroStats } from '../utils/statCalculator.js';
 import heroesCatalog from '../data/heroesCatalog.json';
 import skinMapping from '../data/skinMapping.json';
@@ -412,16 +412,14 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
   };
 
   return (
-    <div className="import-modal-overlay">
-      <div className="import-modal-content">
-        <div className="import-modal-header">
-          <h2>Adatkezelés (Szinkronizáció)</h2>
-          <button className="import-close-btn" onClick={onClose}>
-            <span className="material-symbols-outlined">close</span>
-          </button>
+    <div className="modal-overlay datasync-overlay">
+      <div className="modal-content gold-frame datasync-modal">
+        <button className="modal-close-icon datasync-close-icon" onClick={onClose}></button>
+        <div className="modal-title-banner datasync-title-banner">
+          Adatkezelés
         </div>
 
-        <div className="import-modal-body">
+        <div className="datasync-modal-body">
           {successMessage ? (
             <div className="sync-success-container">
               <div className="sync-success-message">
@@ -430,20 +428,20 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
               </div>
 
               {unidentifiedItems && (
-                <div className="unidentified-warning-box" style={{ marginTop: '15px', padding: '15px', background: 'rgba(212, 175, 55, 0.1)', border: '1px solid #d4af37', borderRadius: '4px', textAlign: 'left' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', color: '#d4af37', fontWeight: 'bold', marginBottom: '10px', fontFamily: '"Roboto Condensed", sans-serif' }}>
+                <div className="unidentified-warning-box">
+                  <div className="unidentified-warning-title">
                     <span className="material-symbols-outlined" style={{ marginRight: '8px' }}>warning</span>
                     Új, még azonosítatlan elemeket találtunk a mentésben!
                   </div>
-                  <p style={{ fontSize: '13px', color: '#eaddc5', margin: '0 0 10px 0', fontFamily: '"Noto Sans", sans-serif' }}>
+                  <p className="unidentified-warning-desc">
                     Az alábbi azonosítók nem szerepelnek a beépített szótárakban. Megjelentek a Coins és Consumables füleken; kattints rájuk a Dashboardon az elnevezésükhöz!
                   </p>
-                  <ul style={{ fontSize: '13px', color: '#fff', margin: '0', paddingLeft: '20px', fontFamily: '"Noto Sans", sans-serif' }}>
+                  <ul className="unidentified-warning-list">
                     {unidentifiedItems.coins.map(c => (
-                      <li key={c.id} style={{ marginBottom: '4px' }}>Új érme (Coin) azonosító: <strong>#{c.id}</strong> ({c.amount.toLocaleString('hu-HU')} db)</li>
+                      <li key={c.id}>Új érme (Coin) azonosító: <strong>#{c.id}</strong> ({c.amount.toLocaleString('hu-HU')} db)</li>
                     ))}
                     {unidentifiedItems.consumables.map(item => (
-                      <li key={item.id} style={{ marginBottom: '4px' }}>Új fogyóeszköz azonosító: <strong>#{item.id}</strong> ({item.amount.toLocaleString('hu-HU')} db)</li>
+                      <li key={item.id}>Új fogyóeszköz azonosító: <strong>#{item.id}</strong> ({item.amount.toLocaleString('hu-HU')} db)</li>
                     ))}
                   </ul>
                 </div>
@@ -452,13 +450,13 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
               <p className="sync-success-prompt">Szeretnéd kimenteni az új állapotot egy JSON fájlba, hogy megoszd másokkal?</p>
               <div className="sync-success-actions">
                 <button
-                  className="import-process-btn gold-gradient-btn sync-action-btn"
+                  className="gold-gradient-btn sync-action-btn"
                   onClick={() => { exportData(); setSuccessMessage(''); onClose(); }}
                 >
                   Új állapot kimentése (JSON Export)
                 </button>
                 <button
-                  className="import-cancel-btn sync-action-btn"
+                  className="gold-gradient-btn sync-action-btn"
                   onClick={() => { setSuccessMessage(''); onClose(); }}
                 >
                   Bezárás (Csak a saját gépemen használom)
@@ -494,7 +492,7 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
               <div className="sync-export-box">
                 <p className="sync-export-desc">Ha csak le szeretnéd menteni a jelenlegi állásodat:</p>
                 <button
-                  className="import-process-btn gold-gradient-btn sync-export-btn"
+                  className="gold-gradient-btn sync-export-btn"
                   onClick={() => { exportData(); onClose(); }}
                 >
                   Jelenlegi adatok mentése (Export)
@@ -503,12 +501,6 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
             </>
           )}
         </div>
-
-        {!successMessage && (
-          <div className="import-modal-footer">
-            <button className="import-cancel-btn" onClick={onClose}>Bezárás</button>
-          </div>
-        )}
       </div>
     </div>
   );

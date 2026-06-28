@@ -2,6 +2,16 @@
 
 Minden említésre méltó változtatás a projektben ebben a fájlban lesz rögzítve.
 
+## [0.5.27] - 2026-06-28
+
+### Megváltoztatva (Changed)
+- **DataSyncModal vizuális egységesítése**: A szinkronizációs ablak (`DataSyncModal`) a projekt általános fantasy stílusához igazodott. Arany keretet kapott, és a régi modern zöld/szürke dizájnját sötét, pergamen/arany (`#eaddc5`, `#d4af37`) színkódok és a 'Roboto Condensed' betűtípus váltotta fel.
+- **CSS fájlok szervezése**: Az `ImportModal.css` fájl átnevezésre került `DataSyncModal.css`-re, és az `index.css`-ből ide lettek átemelve az összes ehhez a modálhoz tartozó stílusok. Ezzel megszüntettük a projektben a szétszórt, duplikált CSS szerkezetet ezen a téren.
+- **Inline CSS kivezetése a modalokból**: Kigyomlálásra került a projektben tiltott inline CSS a "Tárgy elnevezése" (`Dashboard.jsx`, `Overview.jsx`), valamint a `DataSyncModal` ablakok konténereiből, gombjaiból, mezőiből és a `.dashboard-page-wrapper` elemből. Helyettük dedikált CSS osztályok (`.naming-modal`, `.naming-modal-form` stb.) kerültek definiálásra és bekötésre, jelentősen javítva a kód átláthatóságát.
+- **CSS specifikusság javítása és takarítás**: Eltávolításra került egy felesleges `.datasync-modal-body p` CSS szabály, ami korábban agresszíven felülírta a specifikus modal elemek (pl. `.sync-import-desc`) betűméretét.
+
+### Javítva (Fixed)
+- **Overview fejléc vizuális hibája**: Az `Overview.jsx` fejléc bannerének reszponzív viselkedése javításra került. Eltávolítottuk az `object-fit: cover` szabályt a háttérképről, így ablakátméretezéskor és görgetéskor a kép többé nem vágódik le (megszüntetve a "Sidebar alá becsúszó" optikai csalódást), hanem folyamatosan, teljes szélességében látható marad. Továbbá a wrapper doboz szélességét pontos matematikai számítással (`width: calc(100% + 2 * var(--md))`) láttuk el, így a banner mindig tökéletesen és stabilan kitölti a rendelkezésre álló teret.
 ## [0.5.26] - 2026-06-28
 
 ### Megváltoztatva (Changed)

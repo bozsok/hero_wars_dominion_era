@@ -328,15 +328,15 @@ const Overview = () => {
       </div>
 
       {identifyingItem && (
-        <div className="modal-overlay" style={{ zIndex: 9999 }}>
-          <div className="modal-content gold-frame" style={{ maxWidth: '500px', minWidth: '300px', height: 'auto', minHeight: 'auto', marginLeft: 0, padding: '20px', display: 'flex', flexDirection: 'column' }}>
-            <button className="modal-close-icon" onClick={() => setIdentifyingItem(null)} style={{ top: '-30px', right: '-30px', width: '40px', height: '40px' }}></button>
+        <div className="modal-overlay naming-modal-overlay">
+          <div className="modal-content gold-frame naming-modal">
+            <button className="modal-close-icon naming-modal-close" onClick={() => setIdentifyingItem(null)}></button>
             
-            <div className="modal-title-banner" style={{ top: '-40px', fontSize: '20px', padding: '10px 20px' }}>
+            <div className="modal-title-banner naming-modal-title">
               Tárgy elnevezése (#{identifyingItem.id})
             </div>
-            <form onSubmit={handleSaveIdentification} style={{ padding: '20px' }}>
-              <p style={{ color: '#eaddc5', marginBottom: '15px', fontFamily: '"Roboto Condensed", sans-serif' }}>
+            <form onSubmit={handleSaveIdentification} className="naming-modal-form">
+              <p className="naming-modal-desc">
                 Add meg a tárgy pontos nevét (pl. "Small enchantment rune"). Ez a név el lesz mentve az ID mellé a memóriába.
               </p>
               <input
@@ -344,16 +344,16 @@ const Overview = () => {
                 value={identifyingItem.name || ''}
                 onChange={(e) => setIdentifyingItem({ ...identifyingItem, name: e.target.value })}
                 placeholder="Pl: Small enchantment rune"
-                style={{ width: '100%', padding: '12px', marginBottom: '20px', background: '#0a0a0a', border: '1px solid #d4af37', color: '#fff', fontSize: '16px', borderRadius: '4px' }}
+                className="naming-modal-input naming-modal-input-margin"
                 autoFocus
               />
               {identifyingItem.type !== 'coin' && (
-                <div style={{ marginBottom: '20px' }}>
-                  <label style={{ color: '#eaddc5', fontFamily: '"Roboto Condensed", sans-serif', display: 'block', marginBottom: '8px' }}>Keret színe</label>
+                <div className="naming-modal-input-margin">
+                  <label className="naming-modal-label">Keret színe</label>
                   <select
                     value={identifyingItem.color || 'white'}
                     onChange={(e) => setIdentifyingItem({ ...identifyingItem, color: e.target.value })}
-                    style={{ width: '100%', padding: '12px', background: '#0a0a0a', border: '1px solid #d4af37', color: '#fff', fontSize: '16px', borderRadius: '4px' }}
+                    className="naming-modal-input"
                   >
                     <option value="white">⚪ White (Normal)</option>
                     <option value="green">🟢 Green (Uncommon)</option>
@@ -364,7 +364,7 @@ const Overview = () => {
                   </select>
                 </div>
               )}
-              <button type="submit" className="gold-gradient-btn" style={{ width: '100%', textAlign: 'center', display: 'block', padding: '10px' }}>Mentés</button>
+              <button type="submit" className="gold-gradient-btn naming-modal-btn">Mentés</button>
             </form>
           </div>
         </div>

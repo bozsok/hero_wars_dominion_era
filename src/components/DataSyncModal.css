@@ -1,0 +1,203 @@
+/* DataSyncModal – Gold-frame stílus */
+
+.datasync-overlay {
+  z-index: 9999;
+}
+
+/* A modal méretezése – felülírja a globális modal-content fix szélességét */
+.datasync-modal {
+  max-width: 600px;
+  min-width: 400px;
+  width: 90%;
+  height: auto;
+  min-height: auto;
+  margin-left: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Belső tartalom */
+.datasync-modal-body {
+  padding: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #eaddc5;
+}
+
+.datasync-modal-body code {
+  background: rgba(212, 175, 55, 0.15);
+  color: #d4af37;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+/* Hibaüzenet */
+.import-error {
+  color: #ff6b6b;
+  background-color: rgba(255, 68, 68, 0.1);
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 68, 68, 0.3);
+  font-size: 14px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Azonosítatlan elemek figyelmeztetés */
+.unidentified-warning-box {
+  margin-top: 15px;
+  padding: 15px;
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid #d4af37;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.unidentified-warning-title {
+  display: flex;
+  align-items: center;
+  color: #d4af37;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.unidentified-warning-desc {
+  font-size: 13px;
+  color: #eaddc5;
+  margin: 0 0 10px 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.unidentified-warning-list {
+  font-size: 13px;
+  color: #fff;
+  margin: 0;
+  padding-left: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.unidentified-warning-list li {
+  margin-bottom: 4px;
+}
+
+/* DataSyncModal additions */
+.sync-success-container {
+  padding: 10px;
+  text-align: center;
+}
+
+.sync-success-message {
+  background: linear-gradient(135deg, rgba(5, 150, 105, 0.3), rgba(5, 150, 105, 0.15));
+  border: 1px solid #059669;
+  color: #6ee7b7;
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.sync-success-icon {
+  font-size: 2em;
+  display: block;
+  margin-bottom: 10px;
+  color: #6ee7b7;
+}
+
+.sync-success-prompt {
+  color: #eaddc5;
+  margin-bottom: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.sync-success-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sync-action-btn {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  display: block;
+}
+
+.sync-import-box {
+  margin-bottom: 20px;
+  /* padding: 15px; */
+  /* background: rgba(212, 175, 55, 0.05); */
+  /* border-radius: 4px; */
+  /* border: 1px solid rgba(212, 175, 55, 0.3); */
+}
+
+.sync-import-title {
+  margin: 0 0 15px 0;
+  color: #d4af37;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 24px;
+}
+
+.sync-instruction-box {
+  margin-bottom: 20px;
+  font-size: 0.85em;
+  color: #eaddc5;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.sync-instruction-title {
+  display: block;
+  margin-bottom: 8px;
+  color: #d4af37;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+}
+
+.sync-instruction-list {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  color: #eaddc5;
+}
+
+.sync-import-desc {
+  margin: 0 0 15px 0;
+  font-size: 20px;
+  color: #eaddc5;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.sync-file-input {
+  color: #eaddc5;
+  width: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+}
+
+.sync-export-box {
+  margin-top: 10px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+  text-align: center;
+}
+
+.sync-export-desc {
+  margin: 0 0 10px 0;
+  font-size: 0.9em;
+  color: #eaddc5;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+}
+
+.sync-export-btn {
+  padding: 10px 20px;
+  font-size: 0.9em;
+}
