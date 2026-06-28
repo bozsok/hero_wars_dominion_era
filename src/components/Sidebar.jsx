@@ -39,10 +39,12 @@ const Sidebar = ({ activeTab, setActiveTab, onOpenImport }) => {
           <span className="material-symbols-outlined nav-icon">explore</span>
           <span className="nav-text">Overview</span>
         </a>
+        {/* 
         <a href="#" className={`nav-item ${activeTab === 'Dashboard' ? 'active' : ''}`} onClick={(e) => { e.preventDefault(); setActiveTab('Dashboard'); }}>
           <span className="material-symbols-outlined nav-icon">dashboard</span>
           <span className="nav-text">Dashboard</span>
         </a>
+        */}
         <a href="#" className={`nav-item ${activeTab === 'Heroes' ? 'active' : ''}`} onClick={(e) => { e.preventDefault(); setActiveTab('Heroes'); }}>
           <img src="./ui/hero.png" alt="Heroes" className="nav-icon" />
           <span className="nav-text">Heroes</span>

@@ -75,7 +75,7 @@ const ParticlesBackground = () => {
 
 function AppContent() {
   const [isImportOpen, setIsImportOpen] = React.useState(false);
-  const [activeTab, setActiveTab] = React.useState('Dashboard');
+  const [activeTab, setActiveTab] = React.useState('Overview');
   const { importBulkData } = React.useContext(HeroContext);
 
   return (

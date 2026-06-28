@@ -11,6 +11,15 @@ Minden említésre méltó változtatás a projektben ebben a fájlban lesz rög
 ### Megváltoztatva (Changed)
 - **Erőforrás sávok dizájnjának egységesítése**: Az elsődleges ("GENERAL RESOURCES") és másodlagos ("HEROES & SKINS") erőforrásokat tartalmazó csoportok megkapták ugyanazt a CSS osztályt (`player-resources-bar`). Ezzel megszüntettük a másodlagos csoport indokolatlanul elcsúszott bal oldali belső margóját (padding), így az ikonok csonkulás nélkül, tökéletesen szimmetrikus és letisztult elrendezésben jelennek meg.
 - **Profil Widget térköz elosztása**: A `player-profile-widget` a "beégetett" fix távolságok (`gap`) helyett flexibilis elosztásra (`justify-content: space-evenly`) váltott. Mivel a cella megkapta a 100%-os magasságot, az avatar, a névszalag és a VIP felirat mostantól automatikusan, matematikailag egyenletesen oszlanak el a rendelkezésre álló térben mindenféle manuális korrekció nélkül.
+- **Kezdőlap alapértelmezett átirányítása**: Az alkalmazás indulásakor az alapértelmezett, aktív menüpont a megszokott `Dashboard` helyett az `Overview` lett az átmeneti átszervezés miatt (`App.jsx`).
+- **Overview üdvözlőképernyőjének kibővítése**: Mivel az `Overview` lett az új kezdőlap, a korábbi csonka "üres állapot" üzenetet lecseréltük a Dashboardon megszokott, 3 lépéses, ikonokkal ellátott részletes útmutatóra, hogy az új felhasználókat azonnal segítse az adatszinkronizálásban.
+
+### Javítva (Fixed)
+- **HTML nyelv és fordítási bug**: Az `index.html` dokumentumban a nyelv deklarációját (`lang="en"`) magyarra (`lang="hu"`) cseréltük. Ezzel megszüntettük azt a zavaró böngészőviselkedést (főleg Chrome esetén), ahol a böngésző automatikusan felajánlotta a magyar nyelvű tartalom lefordítását, mivel tévesen angol oldalnak érzékelte azt.
+- **Böngészőfül címe (Title)**: A projekt `index.html` fájljában a sablonos és nyers `hero-wars` alapértelmezett cím helyett a beszédesebb, végleges `Dominion Tracker` nevet kapta meg az alkalmazás.
+
+### Eltávolítva (Removed)
+- **Dashboard menüpont elrejtése**: A `Sidebar.jsx`-ből ideiglenesen eltávolítottuk (kommentbe helyeztük) a `Dashboard` nézet navigációs gombját, hogy a fejlesztés alatt álló funkció egyelőre ne zavarja a felhasználói élményt.
 
 ## [0.5.27] - 2026-06-28
 

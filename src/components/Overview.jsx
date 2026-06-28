@@ -97,11 +97,25 @@ const Overview = () => {
       <main className="layout-main">
         <div className="container dashboard-empty-container">
           <div className="dashboard-welcome-card">
-            <span className="material-symbols-outlined dashboard-welcome-icon">dashboard</span>
+            <span className="material-symbols-outlined dashboard-welcome-icon">explore</span>
             <h1 className="dashboard-welcome-title">Üdvözöl a Dominion Tracker!</h1>
             <p className="dashboard-welcome-text">
-              Kérjük, szinkronizáld az adataidat a játékból kinyert HAR fájl segítségével.
+              Az adataid megtekintéséhez kérjük, szinkronizálj a játékból kinyert HAR fájl segítségével.
             </p>
+            <div className="dashboard-welcome-steps">
+              <div className="welcome-step">
+                <span className="step-num">1</span>
+                <span>Kattints a bal oldali menüsor alján lévő <strong>Adatszinkron</strong> gombra.</span>
+              </div>
+              <div className="welcome-step">
+                <span className="step-num">2</span>
+                <span>Kövesd az ott leírt lépéseket a hálózati HAR fájl letöltéséhez.</span>
+              </div>
+              <div className="welcome-step">
+                <span className="step-num">3</span>
+                <span>Töltsd fel a fájlt, és a Tracker azonnal életre kel a saját játékaid adataival!</span>
+              </div>
+            </div>
           </div>
         </div>
       </main>
