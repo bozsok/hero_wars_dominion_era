@@ -370,9 +370,11 @@ const Overview = () => {
 
             </div>
           </div>
-
         </div>
       </div>
+
+      {/* Eltartás az oldal alján */}
+      <div className="overview-footer-wrapper"></div>
 
       {identifyingItem && (
         <div className="modal-overlay naming-modal-overlay">

@@ -7,6 +7,7 @@ Minden említésre méltó változtatás a projektben ebben a fájlban lesz rög
 ### Hozzáadva (Added)
 - **Erőforrás összesítő nézet az Overview-n**: A navigációs sáv 'All' kategóriája lett az alapértelmezett. Kiválasztásakor az összes eddigi erőforrás (jelenleg Fogyóeszközök és Érmék, később felszerelések, receptek stb.) ömlesztve, egyetlen megszakítás nélküli, folyamatos rácskonténerben (`consumables-grid`) jelenik meg a maximális áttekinthetőség érdekében.
 - **Központi erőforrás-sáv az Overview fülön**: A profil panel alatt és a navigációs gombok felett egy új, teljes szélességű sor került kialakításra (a grid ezáltal 3 sorosra bővült). Ebbe a sorba lettek vizuálisan átemelve a játékoshoz köthető elsődleges és másodlagos erőforrás statisztikák.
+- **Alsó eltartás az Overview nézeten**: A Grid konténer teljes szélességében, a kártyák alatt egy letisztult, vizuális sallangok (sárga csík) nélküli eltartás (`overview-footer-wrapper`) kapott helyet, biztosítva, hogy a böngészőgörgető legalján kényelmes tér maradjon a tartalom alatt.
 
 ### Megváltoztatva (Changed)
 - **Erőforrás sávok dizájnjának egységesítése**: Az elsődleges ("GENERAL RESOURCES") és másodlagos ("HEROES & SKINS") erőforrásokat tartalmazó csoportok megkapták ugyanazt a CSS osztályt (`player-resources-bar`). Ezzel megszüntettük a másodlagos csoport indokolatlanul elcsúszott bal oldali belső margóját (padding), így az ikonok csonkulás nélkül, tökéletesen szimmetrikus és letisztult elrendezésben jelennek meg.
@@ -17,6 +18,7 @@ Minden említésre méltó változtatás a projektben ebben a fájlban lesz rög
 ### Javítva (Fixed)
 - **HTML nyelv és fordítási bug**: Az `index.html` dokumentumban a nyelv deklarációját (`lang="en"`) magyarra (`lang="hu"`) cseréltük. Ezzel megszüntettük azt a zavaró böngészőviselkedést (főleg Chrome esetén), ahol a böngésző automatikusan felajánlotta a magyar nyelvű tartalom lefordítását, mivel tévesen angol oldalnak érzékelte azt.
 - **Böngészőfül címe (Title)**: A projekt `index.html` fájljában a sablonos és nyers `hero-wars` alapértelmezett cím helyett a beszédesebb, végleges `Dominion Tracker` nevet kapta meg az alkalmazás.
+- **Overview rács túlcsordulásának javítása**: Kijavítottuk azt a vizuális hibát, aminek következtében a nagy mennyiségű kategóriagomb "kifolyt" az alsó peremen túlra. A Grid fix magasságát (`height`) rugalmas értékre (`min-height`) cseréltük, így a rács immár maradéktalanul, kifolyás nélkül képes magába foglalni a tartalmát, szükség esetén dinamikusan növelve a teljes oldal méretét.
 
 ### Eltávolítva (Removed)
 - **Dashboard menüpont elrejtése**: A `Sidebar.jsx`-ből ideiglenesen eltávolítottuk (kommentbe helyeztük) a `Dashboard` nézet navigációs gombját, hogy a fejlesztés alatt álló funkció egyelőre ne zavarja a felhasználói élményt.
