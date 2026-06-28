@@ -126,7 +126,8 @@ const Overview = () => {
       {/* Header section with double background images */}
       <div className="overview-header-wrapper">
         <img src="./ui/fuggony.jpg" alt="Curtain Background" className="overview-bg-layer" />
-        <img src="./ui/overview_bg.png" alt="Overview Background" className="overview-fg-layer" />
+        <div className="overview-yellow-line"></div>
+        <img src="./ui/overview_title.png" alt="Title Background" className="overview-title-bg" />
         <div className="overview-title-banner">
           Overview
         </div>
