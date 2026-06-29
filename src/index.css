@@ -496,7 +496,7 @@ body::before {
   left: 0;
   top: 0;
   height: 100%;
-  width: 256px;
+  width: 250px;
   /* 64 * 4px */
   display: flex;
   flex-direction: column;
@@ -920,22 +920,9 @@ body::before {
   height: 65px;
   color: #fece86;
   text-decoration: none;
-  transition: all 0.3s;
+  transition: all 0.05s ease-out;
   position: relative;
   z-index: 1;
-}
-
-.nav-item::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  background: linear-gradient(to right, #205e1b, #50ba34);
-  opacity: 0;
-  transition: all 0.3s;
 }
 
 .nav-item::after {
@@ -943,22 +930,24 @@ body::before {
   position: absolute;
   top: 0;
   left: 0;
+  right: -24px;
   bottom: 0;
-  width: 15px;
-  background-color: #61b842;
-  clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
-  opacity: 0;
-  transition: opacity 0.3s;
   z-index: -1;
+  background: linear-gradient(to right, #205e1b, #50ba34);
+  opacity: 1;
+  clip-path: polygon(0 0, calc(100% - 15px) 0, calc(100% - 15px) 100%, 0 100%);
+  transform: translateX(calc(-100% + 15px));
+  transition: transform 0.05s ease-out, clip-path 0.15s ease-out;
 }
 
-.nav-item:hover::before {
-  opacity: 0.4;
+.nav-item:hover {
+  background-color: rgba(97, 184, 66, 0.4);
 }
 
 .nav-item:hover::after {
-  opacity: 1;
-  background-color: #7bc144;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 15px) 100%, 0 100%);
+  transform: translateX(calc(-100% + 20px));
+  transition: transform 0.2s ease-out, clip-path 0.15s ease-out;
 }
 
 .nav-item.active {
@@ -969,15 +958,10 @@ body::before {
   color: #ffffff;
 }
 
-.nav-item.active::before {
-  opacity: 1;
-  right: -24px;
-  clip-path: polygon(0 0, 100% 0, calc(100% - 24px) 100%, 0 100%);
-}
-
 .nav-item.active::after {
-  opacity: 1;
-  background-color: #7bc144;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 15px) 100%, 0 100%);
+  transform: translateX(0);
+  transition: transform 0.05s ease-out, clip-path 0.05s ease-out;
 }
 
 .nav-icon {
