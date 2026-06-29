@@ -1,6 +1,6 @@
 /* Teams Tab Styles */
 
-.dashboard-teams-tab {
+.teams-tab {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;

@@ -46,11 +46,8 @@ const Teams = () => {
 
   return (
     <main className="layout-main">
-      <div className="dashboard-page-wrapper">
-        <div className="dashboard-hero-modal-style-wrapper">
-          <div className="modal-content gold-frame dashboard-content-frame">
-            <div className="modal-scroll-container resources-scroll-active">
-              <div className="dashboard-teams-tab">
+      <div className="container">
+        <div className="teams-tab">
                 {playerTeams && (
                   <div className="active-teams-section">
                     <div className="teams-top-bar">
@@ -219,9 +216,6 @@ const Teams = () => {
                   </div>
                 )}
               </div>
-            </div>
-          </div>
-        </div>
       </div>
     </main>
   );
