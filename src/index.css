@@ -964,6 +964,10 @@ body::before {
   transition: transform 0.05s ease-out, clip-path 0.05s ease-out;
 }
 
+.nav-item.closing::after {
+  transition: transform 0.05s ease-out, clip-path 0.05s ease-out;
+}
+
 .nav-icon {
   width: 32px;
   height: 32px;

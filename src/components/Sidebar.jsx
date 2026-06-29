@@ -1,5 +1,28 @@
-import React, { useContext, useRef } from 'react';
+import React, { useContext, useRef, useState, useLayoutEffect } from 'react';
 import { HeroContext } from '../context/HeroContext';
+
+const NavItem = ({ tabId, currentActiveTab, onClick, children }) => {
+  const isActive = currentActiveTab === tabId;
+  const prevIsActive = useRef(isActive);
+  const [isClosing, setIsClosing] = useState(false);
+
+  useLayoutEffect(() => {
+    if (!isActive && prevIsActive.current) {
+      setIsClosing(true);
+      const timer = setTimeout(() => setIsClosing(false), 100);
+      return () => clearTimeout(timer);
+    }
+    prevIsActive.current = isActive;
+  }, [isActive]);
+
+  const className = `nav-item ${isActive ? 'active' : ''} ${isClosing ? 'closing' : ''}`.trim();
+
+  return (
+    <a href="#" className={className} onClick={(e) => { e.preventDefault(); onClick(tabId); }}>
+      {children}
+    </a>
+  );
+};
 
 const NAV_TEXTS = {
   Dashboard: 'Your progress at a glance.',
@@ -35,36 +58,36 @@ const Sidebar = ({ activeTab, setActiveTab, onOpenImport }) => {
       </div>
 
       <nav className="sidebar-nav">
-        <a href="#" className={`nav-item ${activeTab === 'Overview' ? 'active' : ''}`} onClick={(e) => { e.preventDefault(); setActiveTab('Overview'); }}>
+        <NavItem tabId="Overview" currentActiveTab={activeTab} onClick={setActiveTab}>
           <span className="material-symbols-outlined nav-icon">explore</span>
           <span className="nav-text">Overview</span>
-        </a>
+        </NavItem>
         {/* 
-        <a href="#" className={`nav-item ${activeTab === 'Dashboard' ? 'active' : ''}`} onClick={(e) => { e.preventDefault(); setActiveTab('Dashboard'); }}>
+        <NavItem tabId="Dashboard" currentActiveTab={activeTab} onClick={setActiveTab}>
           <span className="material-symbols-outlined nav-icon">dashboard</span>
           <span className="nav-text">Dashboard</span>
-        </a>
+        </NavItem>
         */}
-        <a href="#" className={`nav-item ${activeTab === 'Heroes' ? 'active' : ''}`} onClick={(e) => { e.preventDefault(); setActiveTab('Heroes'); }}>
+        <NavItem tabId="Heroes" currentActiveTab={activeTab} onClick={setActiveTab}>
           <img src="./ui/hero.png" alt="Heroes" className="nav-icon" />
           <span className="nav-text">Heroes</span>
-        </a>
-        <a href="#" className={`nav-item ${activeTab === 'Titans' ? 'active' : ''}`} onClick={(e) => { e.preventDefault(); setActiveTab('Titans'); }}>
+        </NavItem>
+        <NavItem tabId="Titans" currentActiveTab={activeTab} onClick={setActiveTab}>
           <span className="material-symbols-outlined nav-icon">workspace_premium</span>
           <span className="nav-text">Titans</span>
-        </a>
-        <a href="#" className={`nav-item ${activeTab === 'Pets' ? 'active' : ''}`} onClick={(e) => { e.preventDefault(); setActiveTab('Pets'); }}>
+        </NavItem>
+        <NavItem tabId="Pets" currentActiveTab={activeTab} onClick={setActiveTab}>
           <img src="./ui/pet.png" alt="Pets" className="nav-icon" />
           <span className="nav-text">Pets</span>
-        </a>
-        <a href="#" className={`nav-item ${activeTab === 'Teams' ? 'active' : ''}`} onClick={(e) => { e.preventDefault(); setActiveTab('Teams'); }}>
+        </NavItem>
+        <NavItem tabId="Teams" currentActiveTab={activeTab} onClick={setActiveTab}>
           <span className="material-symbols-outlined nav-icon">groups</span>
           <span className="nav-text">Teams</span>
-        </a>
-        <a href="#" className={`nav-item ${activeTab === 'Settings' ? 'active' : ''}`} onClick={(e) => { e.preventDefault(); setActiveTab('Settings'); }}>
+        </NavItem>
+        <NavItem tabId="Settings" currentActiveTab={activeTab} onClick={setActiveTab}>
           <span className="material-symbols-outlined nav-icon">settings</span>
           <span className="nav-text">Settings</span>
-        </a>
+        </NavItem>
 
         <div className="sidebar-footer-text">
           {NAV_TEXTS[activeTab]}
