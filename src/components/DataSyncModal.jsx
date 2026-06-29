@@ -473,12 +473,13 @@ const DataSyncModal = ({ isOpen, onClose, onImport, heroes }) => {
                   <ul className="sync-instruction-list">
                     <li>Nyisd meg a játékot (várd meg amíg betölt).</li>
                     <li>Nyomj <strong>F12</strong>-t a billentyűzeteden, és válaszd a <strong>Network (Hálózat)</strong> fület.</li>
+                    <li>Bizonyosodj meg róla, hogy a szűrőknél a <strong>Mind (All)</strong> vagy <strong>Fetch/XHR</strong> van kiválasztva.</li>
                     <li>Nyomj egy <strong>F5</strong>-öt (Újratöltés), és várd meg amíg újra betölt a játék.</li>
                     <li>Kattints a hálózati sáv tetején (a 'No throttling' mellett) a kis lefelé mutató nyílra (<strong>Export HAR...</strong>).</li>
                   </ul>
                 </div>
 
-                <p className="sync-import-desc">Válaszd ki a böngészőből lementett <code>hero-wars.com.har</code> fájlt az azonnali betöltéshez.</p>
+                <p className="sync-import-desc">Válaszd ki a böngészőből lementett és elnevezett <code>.har</code> fájlt az azonnali betöltéshez.</p>
                 <input
                   type="file"
                   accept=".har"

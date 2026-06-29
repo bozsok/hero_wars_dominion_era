@@ -179,12 +179,20 @@
     "name": "Pet Soul Chest",
     "color": "orange"
   },
+  "92": {
+    "name": "Demon Doll",
+    "color": "orange"
+  },
   "129": {
     "name": "Flawless Artifact Chest",
     "color": "orange"
   },
   "148": {
     "name": "Platinum Box",
+    "color": "orange"
+  },
+  "153": {
+    "name": "Lesser Pet Soul Chest",
     "color": "orange"
   },
   "159": {
