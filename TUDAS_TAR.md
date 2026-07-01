@@ -53,25 +53,28 @@ Egy ereklye teljes kifejlesztése (1-ről 130. szintre) összesen **4 209 darab*
 ---
 
 ## II. Rúna (Glyph) Fejlesztési Költségek (1–50. szint)
-A rúnák fejlesztési pontjainak (Enchant points / XP) és aranyigényének táblázata a böngészős verzióban.
+Mivel az interneten keringő táblázatok sok esetben a mobilos verzióhoz tartoznak (amely a 40. szint után radikálisan eltér), az alábbi sávos bontás a **Dominion Era (böngészős)** verzió valós, játékból kinyert adatai alapján készült.
 
-### 1. Szintenkénti bontás
-*   **1–5. szint:** 50 XP / 1 500 Gold szintenként
-*   **6–10. szint:** 80 XP / 3 200 Gold szintenként
-*   **11–15. szint:** 190 XP / 13 300 Gold szintenként
-*   **16–20. szint:** 220 XP / 17 600 Gold szintenként
-*   **21–25. szint:** 520 XP / 46 800 Gold szintenként
-*   **26–30. szint:** 590 XP / 56 050 Gold szintenként
-*   **31–35. szint:** 790 XP / 75 050 Gold szintenként
-*   **36–40. szint:** 870 XP / 82 650 Gold szintenként
-*   **41. szint:** 1 970 XP / 187 150 Gold
-*   **42–45. szint:** 1 970 XP / 197 000 Gold szintenként
-*   **46–50. szint:** 3 470 XP / 347 000 Gold szintenként
+Egy **Great Enchantment Rune (Nagy bájoló rúna) = 300 XP-t (rúnapontot)** ad.
 
-### 2. Összesített Rúna Költség
-Egy rúna teljes kifejlesztése (1-ről 50. szintre):
-*   **Összesen szükséges XP:** 43 750 pont
-*   **Összesen szükséges Arany:** 4 190 900 Gold
+### 1. Sávos költségek és Aranyigény
+*Az alábbi táblázat az adott szint-sávra (nem kumulálva) mutatja a rúnakövek számát, a pontigényt, és az aranyköltséget.*
+
+| Szint-sáv | Szükséges Great Rune (csak adott sáv) | Rúnapont (XP) igény | Arany (Gold) költség | Összesen felhasznált Great Rune (0-tól) |
+| :--- | :--- | :--- | :--- | :--- |
+| **0–10. szint** | 7 db | 2 100 XP | 23 500 | 6,5 db |
+| **11–20. szint** | 20 db | 6 000 XP | 154 500 | 27 db |
+| **21–30. szint** | 56 db | 16 800 XP | 537 750 | 82,5 db |
+| **31–40. szint** | 83 db | 24 900 XP | 943 000 | 165,5 db |
+| **41–45. szint** | 98 db | 29 400 XP | 1 512 900 | 264 db |
+| **46–50. szint** | 174 db | 52 200 XP | 2 678 000 | 438 db |
+
+*Egy rúna teljes kimaxolása (0-ról 50. szintre) tehát összesen **438 db Great enchantment rune-t** (131 400 XP) emészt fel.*
+
+### 2. Játék-ökonómia és Költségnövekedés (Bottleneck elemzés)
+Az adatok rávilágítanak a játék (end-game) mesterségesen generált gazdasági szűk keresztmetszeteire (bottleneck), amivel a monetizációs hurok dolgozik:
+*   **A "Mid-game fal":** A 31. szinttől a 40. szintig tartó fejlesztés pontosan annyi erőforrást (83 db Nagy bájoló rúna) emészt fel, mint amennyibe a legeslegelejétől (0. szintről) a 30. szintre való eljutás került (7+20+56 = 83 db).
+*   **Az "End-game fal":** A legutolsó 5 szint (46-ról 50-re) kigazdálkodása (174 db Nagy bájoló rúna) drágább, mint a nulláról felhúzni egy rúnát a 40. szintre (166 db). Valójában az utolsó 5 szint teszi ki a teljes rúna-maxolás (438 db) költségének majdnem a 40%-át!
 
 ---
 
